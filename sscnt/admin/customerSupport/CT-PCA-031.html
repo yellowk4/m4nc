@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>삼성물산 관리자</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link type="text/css" rel="stylesheet" href="/css/admin.css" />
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<!--[if lt IE 9]>
+	<script src="/js/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="headerWrap">
+		<header>
+			<h1 class="logo"><img src="/images/admin/h1_logo.png" alt="삼성물산" /></h1>
+			<p class="member">
+				<strong class="txt"><span class="pointColor">미디어포스엔컴퍼니</span>님!</strong>
+				<button type="button" class="btnDefaultForm">로그아웃</button>
+			</p>
+		</header>
+	</div>
+
+	<div id="bodyWrap">
+		<nav class="menuWrap">
+			<ul class="gnbMenu">
+				<li><h2><a href="#none">관리자 관리</a></h2></li>
+				<li><h2><a href="#none">콘텐츠</a></h2></li>
+				<li>
+					<h2><a href="#none">IR 관리</a></h2>
+					<ul class="subMenu">
+						<li><a href="#none">공시정보</a></li>
+						<li><a href="#none">보고서</a></li>
+						<li><a href="#none">연간일정 및 이벤트</a></li>
+						<li><a href="#none">주주총회</a></li>
+						<li><a href="#none">주주환원</a></li>
+					</ul>
+				</li>
+				<li class="active">
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="subMenu">
+						<li><a href="#none">FAQ</a></li>
+						<li><a href="#none" class="active">고객문의</a></li>
+						<li><a href="#none">보안신고</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="contents">
+			<h2 class="contTit">고객문의</h2>
+
+			<div class="searchWrap">
+				<table class="defaultTable">
+					<caption>검색영역</caption>
+					<colgroup>
+						<col style="width:25%;" />
+						<col style="width:75%;" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">문의항목</th>
+							<td>
+								<select class="selectText">
+									<option selected="selected">전체</option>
+									<option>없음</option>
+									<option>IR</option>
+									<option>기타</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">관련분야</th>
+							<td>
+								<select class="selectText">
+									<option selected="selected">전체</option>
+									<option>기업인</option>
+									<option>자영업</option>
+									<option>연구원</option>
+									<option>"NGO/NPO"</option>
+									<option>정부기관</option>
+									<option>학생</option>
+									<option>투자자</option>
+									<option>기타</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">기간</th>
+							<td>
+								<p class="calendarArea">
+									<span class="cal"><input type="text" class="inputText" /><button type="button" class="btnCalendar"></button></span>
+									<span class="dashed">~</span>
+									<span class="cal"><input type="text" class="inputText" /><button type="button" class="btnCalendar"></button></span>
+								</p>
+								<p class="btnFormArea">
+									<button type="button" class="btnInputForm">오늘</button>
+									<button type="button" class="btnInputForm">1주일</button>
+									<button type="button" class="btnInputForm">15일</button>
+									<button type="button" class="btnInputForm">3개월</button>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">검색조건</th>
+							<td>
+								<select class="selectText">
+									<option selected="selected">제목</option>
+									<option>내용</option>
+								</select>
+								<input type="text" class="inputText" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="btnSearchArea">
+					<button type="button" class="btnSearch">검색</button>
+				</div>
+			</div>
+
+			<article class="tableBasicList">
+				<p class="txtTableInfo">입력하신 조건으로 총 <span class="pointColor">3</span>개의 결과 값이 검색되었습니다.</p>
+				<table class="defaultTable">
+					<caption>게시글 리스트 테이블</caption>
+					<colgroup>
+						<col style="width:10%;" />
+						<col style="width:15%;" />
+						<col style="width:15%;" />
+						<col style="width:35%;" />
+						<col style="width:10%;" />
+						<col style="width:15%;" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">문의항목</th>
+							<th scope="col">관련분야</th>
+							<th scope="col">제목</th>
+							<th scope="col">처리</th>
+							<th scope="col">작성일시</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>3</td>
+							<td>없음</td>
+							<td>기업인</td>
+							<td><p class="ellipsis"><a href="#none">[모집] 전직 기자 여러분을 모십니다!</a></p></td>
+							<td>완료</td>
+							<td>2015-12-17(22:17:19)</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>없음</td>
+							<td>기업인</td>
+							<td><p class="ellipsis"><a href="#none">[모집] 전직 기자 여러분을 모십니다!</a></p></td>
+							<td>완료</td>
+							<td>2015-12-17(22:17:19)</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>없음</td>
+							<td>기업인</td>
+							<td><p class="ellipsis"><a href="#none">[모집] 전직 기자 여러분을 모십니다!</a></p></td>
+							<td>완료</td>
+							<td>2015-12-17(22:17:19)</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+
+			<div class="pageArea">
+				<a href="#none" class="btnFirst"><span>처음</span></a>
+				<a href="#none" class="btnPrev"><span>이전</span></a>
+				<strong>1</strong>
+				<a href="#none">2</a>
+				<a href="#none">3</a>
+				<a href="#none">4</a>
+				<a href="#none">5</a>
+				<a href="#none">6</a>
+				<a href="#none">7</a>
+				<a href="#none">8</a>
+				<a href="#none">9</a>
+				<a href="#none" class="last">10</a>
+				<a href="#none" class="btnNext"><span>다음</span></a>
+				<a href="#none" class="btnLast"><span>마지막</span></a>
+			</div>
+		</section>
+	</div>
+</div>
+<script type="text/javascript" src="/js/admin.js"></script>
+</body>
+</html>

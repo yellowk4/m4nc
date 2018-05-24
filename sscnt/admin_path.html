@@ -1,0 +1,1043 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title> adminPath : 삼성물산 홈페이지 리뉴얼 </title>
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none}
+html{overflow-y:scroll}
+body{width:100%;font-family:"맑은 고딕","나눔고딕","돋움",Dotum;font-size:14px;color:#666}
+a,a:hover{color:#666;text-decoration:none}
+a:hover{color:#c00000}
+a:focus{outline:none;}
+#wrapper{min-width:980px;padding:1em}
+#sidebar,
+#contents{width:100%}
+#sidebar{margin-bottom:10px}
+#sidebar h1{margin-right:2em;padding-bottom:0.6em;font-size:22px;text-align:center;color:#000}
+#sidebar .tab{position:absolute;right:15px;top:18px}
+#sidebar .tab button{float:left;margin-left:5px}
+#sidebar .total{position:absolute;left:15px;top:18px;font-size:18px;font-weight:bold;color:#666}
+#sidebar .total > span span{margin:0 4px}
+#sidebar .total > span em{color:#999}
+#sidebar .menu{*zoom:1;padding:1em;background:#00aeef}
+#sidebar .menu:after{content:"";display:block;clear:both}
+#sidebar .menu a{font-size:14px;font-weight:bold;color:#fff}
+#sidebar .menu h2{float:left;margin-right:20px}
+#sidebar .menu h2 a{text-decoration:underline}
+#sidebar .menu ul{float:left}
+#sidebar .menu li{float:left;margin-right:1.5em}
+#contents .site{position:relative;border-top:1px solid #555}
+#contents .site:hover{background-color:#fff}
+#contents .site h2{padding:0.4em 0.6em 0.5em;font-size:16px;font-weight:normal;color:#999;line-height:1.9em;border-bottom:1px solid #e5e5e5;}
+#contents .site.off h2{background-color:#6f6f6f}
+#contents .site h2 strong,
+#contents .site h2 > span{padding-bottom:0.2px;font-style:normal;font-size:20px;color:#333;vertical-align:middle}
+#contents .site.off h2 strong,
+#contents .site.off h2 > span{color:#bbb}
+#contents .site h2 > span{font-weight:bold}
+#contents .site h2 > span span{margin:0 5px}
+#contents .site h2 > span em{color:#999}
+#contents .site h2 a.exp{display:inline-block;overflow:hidden;width:14px;height:14px;margin-right:8px;border:1px solid #aaa;text-align:center;color:#999;line-height:12px;vertical-align:middle;cursor:pointer}
+#contents .site h2 a.exp span{display:block;position:relative;*top:-5px;padding-bottom:5px;line-height:10px}
+#contents .site a.gotop{position:absolute;right:20px;top:13px;font-size:12px;color:#999}
+#contents .site .cont{padding:1em 2em 0 2em;*padding:1em 1em 0 2em;font-size:12px;line-height:1.7em}
+#contents .site .cont h3{border-bottom:#555 1px solid;padding-bottom:0.5em;margin-bottom:0.5em;font-size:1.5em}
+#contents .site .cont h3 strong{float:left}
+#contents .site .cont h3 a{float:right;font-size:0.7em;padding-right:1em}
+#contents .site .cont .tit,
+#contents .site .cont .url,
+#contents .site .cont .date,
+#contents .site .cont .txt{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;padding-left:1em;vertical-align:top}
+#contents .site .cont .tit{padding-left:0}
+#contents .site .cont .url{width:36%}
+#contents .site .cont .url a:hover{text-decoration:underline}
+#contents .site .cont .date{width:12%;font-size:11px}
+#contents .site .cont .txt{width:18%}
+#contents .site .cont .txt li{font-style:italic;color:#666}
+#contents .site .cont .txt ul.on li{/* list-style:decimal */}
+#contents .site .cont ul{line-height:23px}
+#contents .site .cont li{padding:3px 0;color:#333}
+#contents .site .cont li.on{background-color:#f2f2f2}
+#contents .site .cont li.del div{text-decoration:line-through;color:#ccc}
+#contents .site .cont li.del a{color:#ccc}
+#contents .site .cont li li{padding:0}
+#contents .site .cont li div.tit{width:26%;*padding-left:1.25%;;font-weight:bold}
+#contents .site .cont li div.tit:before{content:"";display:inline-block;padding-left:10px}
+#contents .site .cont li li div.tit{width:25%;padding-left:1%;*padding-left:2.25%;font-weight:normal}
+#contents .site .cont li li li div.tit{width:24%;padding-left:2%;*padding-left:3.2%}
+#contents .site .cont li li li li div.tit{width:23%;padding-left:3%;*padding-left:4.22%}
+#contents .site .cont li li li li li div.tit{width:22%;padding-left:4%;*padding-left:5.2%}
+#contents .site .date strong{margin-right:10px;font-weight:normal}
+#contents .site .today .date strong{color:red}
+#contents .site .date a{font-weight:bold;font-size:12px;cursor:help}
+#contents .site .date a:hover{color:#c00000}
+.footer{margin:10px 0;padding:10px 0;background-color:#00aeef;font-size:18px;text-align:center;color:#fff;line-height:1.25}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="sidebar">
+		<h1>삼성물산 홈페이지 리뉴얼</h1>
+		<div class="total"><strong>Total :</strong><span></span></div>
+		<div class="menu">
+			<h2><a href="#all">ALL</a></h2>
+			<ul>
+				<li><a href="#menu0">로그인</a></li>
+				<li><a href="#menu1">콘텐츠</a></li>
+				<li><a href="#menu2">IR 관리</a></li>
+				<li><a href="#menu3">고객지원</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="contents">
+		<!-- site start -->
+		<div id="menu0" class="site">
+			<h2><strong>로그인</strong><span></span></h2>
+			<a class="gotop" href="#">TOP</a>
+			<div class="cont">
+				<ul>
+					<li>
+						<div class="tit">사용자 로그인</div>
+						<div class="url">/admin/login/CT-PCA-001.html</div>
+						<div class="date">
+							<span>2016-03-04</span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="tit">관리자 관리</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">리스트</div>
+								<div class="url">/admin/login/CT-PCA-002.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/login/CT-PCA-003.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/login/CT-PCA-004.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">보기</div>
+								<div class="url">/admin/login/CT-PCA-005.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- site end -->
+
+		<!-- site start -->
+		<div id="menu1" class="site">
+			<h2><strong>콘텐츠</strong><span></span></h2>
+			<a class="gotop" href="#">TOP</a>
+			<div class="cont">
+				<ul>
+					<li>
+						<div class="tit">NEWS</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/news/CT-PCA-006.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/news/CT-PCA-007.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-08</span>
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-08] 조미정 : 첨부파일 스크립트 추가</li>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/news/CT-PCA-008.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-08</span>
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-08] 조미정 : 첨부파일 스크립트 추가</li>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">보기</div>
+								<div class="url">/admin/news/CT-PCA-009.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+									<span>2016-03-16</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 텍스트 추가</li>
+										<li>[2016-03-16] 조미정 : 내용항목의 div영역의 class ="editArea" 추가 </li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+                    <li>
+						<div class="tit">NOTICE</div>						
+					</li>
+                    <li>
+						<div class="tit">CSR NEWS</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/news/CT-PCA-050.html</div>
+								<div class="date">
+									<span>2016-08-25</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/news/CT-PCA-051.html</div>
+								<div class="date">
+									<span>2016-08-25</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/news/CT-PCA-052.html</div>
+								<div class="date">
+									<span>2016-08-25</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">보기</div>
+								<div class="url">/admin/news/CT-PCA-053.html</div>
+								<div class="date">
+									<span>2016-08-25</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- site end -->
+
+		<!-- site start -->
+		<div id="menu2" class="site">
+			<h2><strong>IR 관리</strong><span></span></h2>
+			<a class="gotop" href="#">TOP</a>
+			<div class="cont">
+				<ul>
+					<li>
+						<div class="tit">공시정보</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/IR/CT-PCA-010.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/IR/CT-PCA-011.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-08</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-08] 조미정 : 첨부파일 스크립트 추가 / 추가, 삭제 버튼 삭제</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/IR/CT-PCA-012.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-08</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-08] 조미정 : 첨부파일 스크립트 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">보기</div>
+								<div class="url">/admin/IR/CT-PCA-013.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+									<span>2016-03-16</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 텍스트 수정</li>
+										<li>[2016-03-16] 조미정 : 내용항목의 div영역의 class ="editArea" 추가 </li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="tit">보고서</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/IR/CT-PCA-014.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+									<span>2016-03-15</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-15] 이경주 : 종류 선택박스 옵션 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/IR/CT-PCA-015.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-08</span>
+									<span>2016-03-11</span>
+									<span>2016-03-15</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-08] 조미정 : 첨부파일 스크립트 추가</li>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-15] 이경주 : 종류 선택박스 옵션 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/IR/CT-PCA-016.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-08</span>
+									<span>2016-03-11</span>
+									<span>2016-03-15</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-08] 조미정 : 첨부파일 스크립트 추가</li>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-15] 이경주 : 종류 선택박스 옵션 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">보기</div>
+								<div class="url">/admin/IR/CT-PCA-017.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+									<span>2016-03-16</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 텍스트 수정</li>
+										<li>[2016-03-16] 조미정 : 내용항목의 div영역의 class ="editArea" 추가 </li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="tit">연간일정 및 이벤트</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/IR/CT-PCA-018.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+									<span>2016-03-28</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-28] 지정은 : 테이블 내 항목 추가 작업 (내용추가 1건)</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/IR/CT-PCA-019.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-08</span>
+									<span>2016-03-11</span>
+									<span>2016-03-28</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-08] 조미정 : 첨부파일 스크립트 추가</li>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-28] 지정은 : 테이블 내 항목 추가 작업 (내용추가 1건)</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/IR/CT-PCA-020.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-08</span>
+									<span>2016-03-11</span>
+									<span>2016-03-28</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-08] 조미정 : 첨부파일 스크립트 추가</li>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-28] 지정은 : 테이블 내 항목 추가 작업 (내용추가 1건)</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="tit">주주총회</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/IR/CT-PCA-021.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가,  테이블 너비사이즈 오류로 한줄수정</li>
+									</ul>
+								</div>
+							</li>
+							<li style="background-color:#ffa200;">
+								<div class="tit">[popup]미리보기</div>
+								<div class="url">/admin/IR/CT-PCA-022.html</div>
+								<div class="date">
+									<span>2016-03-09</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-09] 해당페이지는 윈도우 팝업으로 진행</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/IR/CT-PCA-023.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/IR/CT-PCA-024.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="tit">주주환원</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/IR/CT-PCA-025.html</div>
+								<div class="date">
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 검색영역 추가, 테이블 너비사이즈 오류로 한줄수정</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/IR/CT-PCA-026.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/IR/CT-PCA-027.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="tit">이사회/위원회 활동내용</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/IR/CT-PCA-040.html</div>
+								<div class="date">
+									<span>2016-05-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/IR/CT-PCA-041.html</div>
+								<div class="date">
+									<span>2016-05-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/IR/CT-PCA-042.html</div>
+								<div class="date">
+									<span>2016-05-11</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- site end -->
+
+		<!-- site start -->
+		<div id="menu3" class="site">
+			<h2><strong>고객지원</strong><span></span></h2>
+			<a class="gotop" href="#">TOP</a>
+			<div class="cont">
+				<ul>
+					<li>
+						<div class="tit">FAQ</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/customerSupport/CT-PCA-028.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+									<span>2016-03-15</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-15] 이경주 : 종류 선택박스 옵션 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">등록</div>
+								<div class="url">/admin/customerSupport/CT-PCA-029.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+									<span>2016-03-15</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-15] 이경주 : 종류 선택박스 옵션 추가</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">수정</div>
+								<div class="url">/admin/customerSupport/CT-PCA-030.html</div>
+								<div class="date">
+									<span>2016-03-04</span>
+									<span>2016-03-11</span>
+									<span>2016-03-15</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-11] 조미정 : 국/영문 선택박스 추가</li>
+										<li>[2016-03-15] 이경주 : 종류 선택박스 옵션 추가</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="tit">고객문의</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/customerSupport/CT-PCA-031.html</div>
+								<div class="date">
+									<span>2016-03-16</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">내용보기/처리등록</div>
+								<div class="url">/admin/customerSupport/CT-PCA-032.html</div>
+								<div class="date">
+									<span>2016-03-16</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-16] 조미정 : 내용항목의 div영역의 class ="editArea" 추가 </li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">아웃룩으로 전송되는 안내폼</div>
+								<div class="url">/admin/customerSupport/CT-PCA-035.html</div>
+								<div class="date">
+									<span>2016-03-28</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="tit">보안신고</div>
+						<div class="url"></div>
+						<div class="date">
+							<span></span>
+						</div>
+						<div class="txt">
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+						<ul>
+							<li>
+								<div class="tit">목록</div>
+								<div class="url">/admin/customerSupport/CT-PCA-033.html</div>
+								<div class="date">
+									<span>2016-03-16</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">내용보기/처리등록</div>
+								<div class="url">/admin/customerSupport/CT-PCA-034.html</div>
+								<div class="date">
+									<span>2016-03-16</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li>[2016-03-16] 조미정 : 내용항목의 div영역의 class ="editArea" 추가 </li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">아웃룩으로 전송되는 안내폼 </div>
+								<div class="url">/admin/customerSupport/CT-PCA-036.html</div>
+								<div class="date">
+									<span>2016-03-28</span>
+								</div>
+								<div class="txt">
+									<ul>
+										<li></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- site end -->
+	</div>
+	<div class="footer">Media4th&amp;Company</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#sidebar .menu ul li a').click(function(){
+		var viewBox = $(this).attr('href');
+		$('.site').hide();
+		$('.site' + viewBox).show();
+	});
+	$('.menu h2 a').click(function(){
+		$('.site').show();
+	});
+
+	$('.menu ul li').each(function(){
+		if($(this).find('a').attr('href') == "#" || $(this).find("a").attr("href") == ""){
+			var index = $('.menu ul li').index($(this)[0]);
+			$(this).find('> a').attr('href','#menu' + index);
+		}
+	});
+	$('.site').each(function() {
+		var index = $('.site').index($(this)[0]);
+		$(this).attr('id','menu' + index);
+	});
+	$('.url').each(function(){
+		var link = $(this).text(),
+			str = "";
+		if(link != null && link !=""){
+			str += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a>";
+			$(this).empty().html(str);
+		}
+	});
+
+	var now=new Date();
+	var year=now.getFullYear();
+	var month=now.getMonth()+1;
+	if (month<10) {
+		month="0"+month;
+	}
+	var date=now.getDate();
+	if (date<10) {
+		date="0"+date;
+	}
+	//alert(now+': '+year+', '+month+', '+date);
+	$('.date').each(function() {
+		var $date = $('> span', this),
+			str = "";
+		str += "<strong>" + $date.filter(':last').text() + "</strong>";
+		$date.filter(':not(:last)').each(function() {
+			str += "<a data-date=\"" + $(this).text() + "\">○</a>";
+		});
+		$date.filter(':last').each(function() {
+			str += "<a data-date=\"" + $(this).text() + "\">●</a>";
+		});
+		if($date.filter(':first').text() != "") {
+			$(this).empty().html(str);
+		}
+		var chkDay=$date.filter(':last').text().split(" ");
+		var chkDay2=chkDay[0].split("-");
+		//console.log(chkDay2[0]);
+		if ((chkDay2[0]==year)&&(chkDay2[1]==month)&&(chkDay2[2]==date)) {
+			$(this).parent().addClass('today');
+		}
+	});
+	/*
+	 $('.url a').click(function(){
+  		var $active = $(this).parent().parent().parent();
+  		$('li').removeAttr('style');
+  		$active.css({"background-color":"#888","color":"#fff"});
+  		$('.url a').removeAttr('style');
+  		$(this).css("color","#fff");
+  	});
+	*/
+
+	$('li > div').hover(function(){
+		$(this).parent('li').addClass('on');
+	}, function(){
+		$(this).parent('li').removeClass('on');
+	});
+	$('.date a').live('mouseenter', function(){
+		$(this).parent().find('strong').text($(this).attr('data-date'));
+	}).live('mouseleave', function(){
+		$(this).parent().find('strong').text($(this).parent().find('a:last').attr('data-date'));
+	});
+	$('.txt li').each(function(){
+		if (!$(this).text()=="") {
+			$(this).parent().addClass('on');
+		}
+	});
+	$('.site > h2').prepend('<a class=\"exp\"><span>-</span></a>');
+	$('.site > h2 .exp').toggle(function(){
+		$(this).find('span').text('+');
+		$(this).parents('.site').addClass('off').find('.cont').hide();
+	},function(){
+		$(this).find('span').text('-');
+		$(this).parents('.site').removeClass('off').find('.cont').show();
+	});
+	$('.site').each(function(){
+		var sum=0;
+		var sumMinus=0;
+		var count=0;
+		$(this).find('.url').each(function(){
+			if ($(this).html()!="") {
+				sum++;
+			} else {
+				sumMinus++;
+			}
+		});
+		$(this).find('.date').each(function(){
+			if ($(this).find('span').html()=="") {
+				count++;
+			}
+		});
+		count=sum+sumMinus-count;
+		str = "";
+		str += "<span>"+"("+count+"/"+sum+")"+"</span>"+"<em>"+parseInt(count/sum*100)+"%"+"</em>";
+		$(this).find('h2 > span').html(str);
+	});
+	$('.total').each(function(){
+		var sum=0;
+		var sumG=0;
+		var sumMinus=0;
+		var sumMinusG=0;
+		var count=0;
+		var countG=0;
+		$('#contents').find('.url').each(function(){
+			if ($(this).html()!="") {
+				sum++;
+			} else {
+				sumMinus++;
+			}
+		});
+		$('#contents .guide').find('.url').each(function(){
+			if ($(this).html()!="") {
+				sumG++;
+			} else {
+				sumMinusG++;
+			}
+		});
+		$('#contents').find('.date').each(function(){
+			if ($(this).find('span').html()=="") {
+				count++;
+			}
+		});
+		$('#contents .guide').find('.date').each(function(){
+			if ($(this).find('span').html()=="") {
+				countG++;
+			}
+		});
+		count=(sum-sumG)+(sumMinus-sumMinusG)-(count-countG);
+		sum=(sum-sumG);
+		str = "";
+		str += "<span>"+count+"/"+sum+"pages"+"</span>"+"<em>"+"("+parseInt(count/sum*100)+"%"+")"+"</em>";
+		$(this).find('> span').html(str);
+	});
+});
+</script>
+</body>
+</html>
