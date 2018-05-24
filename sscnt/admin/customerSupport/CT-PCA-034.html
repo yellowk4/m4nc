@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>삼성물산 관리자</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link type="text/css" rel="stylesheet" href="/css/admin.css" />
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<!--[if lt IE 9]>
+	<script src="/js/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="headerWrap">
+		<header>
+			<h1 class="logo"><img src="/images/admin/h1_logo.png" alt="삼성물산" /></h1>
+			<p class="member">
+				<strong class="txt"><span class="pointColor">미디어포스엔컴퍼니</span>님!</strong>
+				<button type="button" class="btnDefaultForm">로그아웃</button>
+			</p>
+		</header>
+	</div>
+
+	<div id="bodyWrap">
+		<nav class="menuWrap">
+			<ul class="gnbMenu">
+				<li><h2><a href="#none">관리자 관리</a></h2></li>
+				<li><h2><a href="#none">콘텐츠</a></h2></li>
+				<li>
+					<h2><a href="#none">IR 관리</a></h2>
+					<ul class="subMenu">
+						<li><a href="#none">공시정보</a></li>
+						<li><a href="#none">보고서</a></li>
+						<li><a href="#none">연간일정 및 이벤트</a></li>
+						<li><a href="#none">주주총회</a></li>
+						<li><a href="#none">주주환원</a></li>
+					</ul>
+				</li>
+				<li class="active">
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="subMenu">
+						<li><a href="#none">FAQ</a></li>
+						<li><a href="#none">고객문의</a></li>
+						<li><a href="#none" class="active">보안신고</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="contents">
+			<hgroup>
+				<h2 class="contTit">보안신고</h2>
+				<h3 class="subTit">신고 보기 및 담당자 메일전송</h3>
+			</hgroup>
+
+			<article class="tableBasicView">
+				<table class="defaultTable">
+					<caption>게시글 등록 테이블</caption>
+					<colgroup>
+						<col style="width:20%;" />
+						<col style="width:30%;" />
+						<col style="width:20%;" />
+						<col style="width:30%;" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">문의자 이름</th>
+							<td>없음</td>
+							<th scope="row">사용자 email</th>
+							<td>enter@test.com</td>
+						</tr>
+						<tr>
+							<th scope="row">연락처</th>
+							<td colspan="3">010-1111-1111</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td colspan="3">삼성물산에 질문 있어요.</td>
+						</tr>
+						<tr>
+							<th scope="row">내용<br />(400자 이내)</th>
+							<td colspan="3">
+								<div class="editArea">내용 텍스트</div><!-- 2016-03-16 : 한줄추가 -->
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">등록일자</th>
+							<td colspan="3">2016-02-23</td>
+						</tr>
+						<tr>
+							<th scope="row">담당자 이메일</th>
+							<td colspan="3">
+								<p class="emailArea"><input type="text" class="inputText" style="width:200px;" /><span class="txt">@Samsung.com</span></p>
+								<p class="txt">※ 담당자 이메일 입력 후 저장을 누르시면 담당자에게 문의 메일이 발송됩니다.</p>
+								<button type="button" class="btnInputForm">메일전송</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<div class="btnArea">
+				<button type="button" class="btnDefaultForm">목록</button>
+			</div>
+		</section>
+	</div>
+</div>
+<script type="text/javascript" src="/js/admin.js"></script>
+</body>
+</html>
