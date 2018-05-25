@@ -28,12 +28,12 @@
 		<nav class="menuWrap">
 			<ul class="gnbMenu">
 				<li><h2><a href="#none">관리자 관리</a></h2></li>
-				<li><h2><a href="#none">콘텐츠</a></h2></li>
-				<li class="active">
+				<li class="active"><h2><a href="#none">콘텐츠</a></h2></li>
+				<li>
 					<h2><a href="#none">IR 관리</a></h2>
 					<ul class="subMenu">
 						<li><a href="#none">공시정보</a></li>
-						<li><a href="#none" class="active">보고서</a></li>
+						<li><a href="#none">보고서</a></li>
 						<li><a href="#none">연간일정 및 이벤트</a></li>
 						<li><a href="#none">주주총회</a></li>
 						<li><a href="#none">주주환원</a></li>
@@ -51,7 +51,7 @@
 		</nav>
 
 		<section class="contents">
-			<h2 class="contTit">보고서</h2>
+			<h2 class="contTit">NOTICE</h2>
 
 			<div class="searchWrap">
 				<table class="defaultTable">
@@ -61,32 +61,15 @@
 						<col style="width:75%;" />
 					</colgroup>
 					<tbody>
-						<!-- //2018-05-24 송초롱 : 언어/종류 영역 분리, 셀렉박스 width값 조정 -->
 						<tr>
 							<th scope="row">언어</th>
-							<td colspan="3">
-								<!-- //2016-03-11 : 선택박스 추가 -->
-								<select class="selectText" style="width:169px;">
+							<td>
+								<select class="selectText">
 									<option selected="selected">국문</option>
 									<option>영문</option>
 								</select>
-								<!-- 2016-03-11 : 선택박스 추가// -->
 							</td>
 						</tr>
-						<tr>
-							<th scope="row">종류</th>
-							<td>
-								<select class="selectText" style="width:169px;">
-									<option selected="selected">전체</option>
-									<option>사업보고서</option>
-									<option>영업보고서</option>
-									<option>감사보고서</option>
-									<option>실적보고서</option>
-									<option>CSR 보고서</option>
-								</select>
-							</td>
-						</tr>
-						<!-- 2018-05-24 송초롱 : 언어/종류 영역 분리, 셀렉박스 width값 조정// -->
 						<tr>
 							<th scope="row">기간</th>
 							<td>
@@ -128,24 +111,16 @@
 					<caption>게시글 리스트 테이블</caption>
 					<colgroup>
 						<col style="width:5%;" />
-						<col style="width:8%;" />
-						<col style="width:12%;" />
-						<col style="width:5%;" />
-						<col style="width:5%;" />
-						<col style="width:30%;" />
 						<col style="width:10%;" />
-						<col style="width:10%;" />
+						<col style="width:50%;" />
 						<col style="width:15%;" />
+						<col style="width:20%;" />
 					</colgroup>
 					<thead>
 						<tr>
 							<th scope="col"><input type="checkBox" class="checkBox"></th>
 							<th scope="col">번호</th>
-							<th scope="col">종류</th>
-							<th scope="col">년도</th>
-							<th scope="col">분기</th>
-							<th scope="col">보고서명</th>
-							<th scope="col">다운로드수</th>
+							<th scope="col">제목</th>
 							<th scope="col">작성자</th>
 							<th scope="col">작성일시</th>
 						</tr>
@@ -154,34 +129,22 @@
 						<tr>
 							<td><input type="checkBox" class="checkBox"></td>
 							<td>3</td>
-							<td>사업보고서</td>
-							<td>2015</td>
-							<td>년간</td>
-							<td><p class="ellipsis"><a href="#none">2015년 사업보고서</a></p></td>
-							<td>100</td>
-							<td>IR</td>
+							<td><p class="ellipsis"><a href="#none">[모집] 전직 기자 여러분을 모십니다!</a></p></td>
+							<td>관리자</td>
 							<td>2015-12-17(22:17:19)</td>
 						</tr>
 						<tr>
 							<td><input type="checkBox" class="checkBox"></td>
 							<td>2</td>
-							<td>사업보고서</td>
-							<td>2015</td>
-							<td>년간</td>
-							<td><p class="ellipsis"><a href="#none">2015년 사업보고서</a></p></td>
-							<td>100</td>
-							<td>IR</td>
+							<td><p class="ellipsis"><a href="#none">[모집] 전직 기자 여러분을 모십니다!</a></p></td>
+							<td>관리자</td>
 							<td>2015-12-17(22:17:19)</td>
 						</tr>
 						<tr>
 							<td><input type="checkBox" class="checkBox"></td>
 							<td>1</td>
-							<td>사업보고서</td>
-							<td>2015</td>
-							<td>년간</td>
-							<td><p class="ellipsis"><a href="#none">2015년 사업보고서</a></p></td>
-							<td>100</td>
-							<td>IR</td>
+							<td><p class="ellipsis"><a href="#none">[모집] 전직 기자 여러분을 모십니다!</a></p></td>
+							<td>관리자</td>
 							<td>2015-12-17(22:17:19)</td>
 						</tr>
 					</tbody>
