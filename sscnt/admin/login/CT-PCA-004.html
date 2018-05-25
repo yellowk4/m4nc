@@ -93,11 +93,20 @@
 							<td>
 								<ul class="radioArea">
 									<li><input type="radio" class="radio" id="Y" /><label for="Y">승인</label></li>
-									<li><input type="radio" class="radio" id="N" /><label for="N">중지</label></li>
+									<li><input type="radio" class="radio" id="N" /><label for="N">미승인</label></li><!-- 2018-05-24 송초롱 : 텍스트 수정 -->
 								</ul>
 							</td>
 							<th scope="row">사용 권한</th>
-							<td><select class="selectText"><option>선택</option></select></td>
+							<td>
+								<!-- //2018-05-24 송초롱 : 텍스트, 체크박스 수정 -->
+								<ul class="checkWrap">
+									<li><input type="checkBox" class="chk" id="chk01"><label for="chk01">IR</label></li>
+									<li><input type="checkBox" class="chk" id="chk02"><label for="chk02">고객지원</label></li>
+									<li><input type="checkBox" class="chk" id="chk03"><label for="chk03">콘텐츠</label></li>
+									<li><input type="checkBox" class="chk" id="chk04"><label for="chk04">관리자관리</label></li>
+								</ul>
+								<!-- 2018-05-24 송초롱 : 텍스트, 체크박스 수정// -->
+							</td>
 						</tr>
 					</tbody>
 				</table>
