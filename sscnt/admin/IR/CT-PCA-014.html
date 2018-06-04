@@ -61,15 +61,21 @@
 						<col style="width:75%;" />
 					</colgroup>
 					<tbody>
+						<!-- //2018-05-24 송초롱 : 언어/종류 영역 분리, 셀렉박스 width값 조정 -->
 						<tr>
-							<th scope="row">종류</th>
-							<td>
+							<th scope="row">언어</th>
+							<td colspan="3">
 								<!-- //2016-03-11 : 선택박스 추가 -->
-								<select class="selectText" style="width:100px;">
+								<select class="selectText" style="width:169px;">
 									<option selected="selected">국문</option>
 									<option>영문</option>
 								</select>
 								<!-- 2016-03-11 : 선택박스 추가// -->
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">종류</th>
+							<td>
 								<select class="selectText" style="width:169px;">
 									<option selected="selected">전체</option>
 									<option>사업보고서</option>
@@ -80,6 +86,7 @@
 								</select>
 							</td>
 						</tr>
+						<!-- 2018-05-24 송초롱 : 언어/종류 영역 분리, 셀렉박스 width값 조정// -->
 						<tr>
 							<th scope="row">기간</th>
 							<td>
@@ -137,7 +144,7 @@
 							<th scope="col">종류</th>
 							<th scope="col">년도</th>
 							<th scope="col">분기</th>
-							<th scope="col">보고서명</th>
+							<th scope="col">보고서 명</th>
 							<th scope="col">다운로드수</th>
 							<th scope="col">작성자</th>
 							<th scope="col">작성일시</th>

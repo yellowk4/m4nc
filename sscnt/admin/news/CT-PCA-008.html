@@ -52,8 +52,8 @@
 
 		<section class="contents">
 			<hgroup>
-				<h2 class="contTit">News</h2>
-				<h3 class="subTit">게시글수정</h3>
+				<h2 class="contTit">NEWS</h2><!-- 2018-05-24 송초롱 : 텍스트 수정 -->
+				<h3 class="subTit">NEWS 수정</h3><!-- 2018-05-24 송초롱 : 텍스트 수정 -->
 			</hgroup>
 
 			<article class="tableBasicView">
@@ -66,26 +66,33 @@
 						<col style="width:30%;" />
 					</colgroup>
 					<tbody>
+						<!-- //2018-05-24 송초롱 : 언어/종류 영역 분리, 셀렉박스 width값 조정 -->
+						<tr>
+							<th scope="row">언어</th>
+							<td colspan="3">
+								<!-- //2016-03-11 : 선택박스 추가 -->
+								<select class="selectText" style="width:169px;">
+									<option selected="selected">국문</option>
+									<option>영문</option>
+								</select>
+								<!-- 2016-03-11 : 선택박스 추가// -->
+							</td>
+						</tr>
 						<tr>
 							<th scope="row">종류</th>
 							<td>
-							 <!-- //2016-03-11 : 선택박스 추가 -->
-							<select class="selectText" style="width:100px;">
-								<option selected="selected">국문</option>
-								<option>영문</option>
-							</select>
-							<!-- 2016-03-11 : 선택박스 추가// -->
-							<select class="selectText" style="width:169px;">
-								<option selected="selected">공지사항</option>
-								<option>건설부문</option>
-								<option>상사부문</option>
-								<option>패션부문</option>
-								<option>리조트부문</option>
-							</select>
+								<select class="selectText" style="width:169px;">
+									<option selected="selected">공지사항</option>
+									<option>건설부문</option>
+									<option>상사부문</option>
+									<option>패션부문</option>
+									<option>리조트부문</option>
+								</select>
 							</td>
 							<th scope="row">작성자</th>
 							<td>관리자</td>
 						</tr>
+						<!-- 2018-05-24 송초롱 : 언어/종류 영역 분리, 셀렉박스 width값 조정// -->
 						<tr>
 							<th scope="row">제목</th>
 							<td colspan="3"><input type="text" class="inputText" /></td>
@@ -98,6 +105,17 @@
 							<th scope="row">게시일자</th>
 							<td colspan="3"><p class="calendarArea"><span class="cal"><input type="text" class="inputText" /><button type="button" class="btnCalendar"></button></span><span class="txt">예) 2015-12-14</span></p></td>
 						</tr>
+						<!-- //2018-05-24 송초롱 : url영억 추가 -->
+						<tr>
+							<th scope="row">URL</th>
+							<td colspan="3">
+								<p class="urlArea">
+									<input type="text" class="inputText" />
+									<span class="txt">예) http://www.samsungcnt.com/eng/event/irEvent.do</span>
+								</p>
+							</td>
+						</tr>
+						<!-- 2018-05-24 송초롱 : url영역 추가// -->
 						<tr>
 							<th scope="row">썸네일이미지</th>
 							<td colspan="3">

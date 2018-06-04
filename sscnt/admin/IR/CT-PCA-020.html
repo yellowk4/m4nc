@@ -69,19 +69,13 @@
 						<!-- //2016-03-11 : 선택박스 추가 -->
 						<tr>
 							<th scope="row">언어</th>
-							<td>
+							<td colspan="3"><!-- 2018-05-25 송초롱 : colspan="3" 추가 -->
 								<select class="selectText" style="width:100px;">
 									<option selected="selected">국문</option>
 									<option>영문</option>
 								</select>
 							</td>
-							<th scope="row">오버뷰 노출유무</th> <!-- 2016-03-28 항목 추가 -->
-							<td>
-								<ul class="radioArea">
-									<li><input type="radio" class="radio" id="useN" checked="checked" /><label for="useN">사용안함</label></li>
-									<li><input type="radio" class="radio" id="useY" /><label for="useY">사용</label></li>
-								</ul>
-							</td> <!-- 2016-03-28 항목 추가 -->
+							<!-- 2018-05-25 송초롱 : 오버뷰 항목 삭제 -->
 						</tr>
 						<!-- 2016-03-11 : 선택박스 추가// -->
 						<tr>
@@ -102,8 +96,22 @@
 						</tr>
 						<tr>
 							<th scope="row">게시일자</th>
-							<td colspan="3"><p class="calendarArea"><span class="cal"><input type="text" class="inputText" /><button type="button" class="btnCalendar"></button></span><span class="txt">예) 2015-12-14</span></p></td> <!-- 2016-03-28 colspan 추가 -->
+							<td colspan="3">
+								<p class="calendarArea">
+									<span class="cal"><input type="text" class="inputText" /><button type="button" class="btnCalendar"></button></span>
+									<span class="txt">예) 2015-12-14</span>
+									<span class="checkWrap"><input type="checkBox" class="chk" id="chk01"><label for="chk01">Upcoming</label></span><!-- 2018-05-25 송초롱 : 체크박스 추가  -->
+								</p>
+							</td> <!-- 2016-03-28 colspan 추가 -->
 						</tr>
+						<!-- //2018-05-25 송초롱 : 장소 항목 추가 -->
+						<tr>
+							<th scope="row">장소</th>
+							<td colspan="3">
+								<input type="text" class="inputText">
+							</td>
+						</tr>
+						<!-- 2018-05-25 송초롱 : 장소 항목 추가// -->
 						<tr>
 							<th scope="row">항목 01</th>
 							<td colspan="3"> <!-- 2016-03-28 colspan 추가 -->

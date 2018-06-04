@@ -1,2490 +1,361 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<title>Path : 삼성물산 홈페이지 리뉴얼</title>
-<style type="text/css">
-*{margin:0;padding:0;list-style-type:none}
-html{overflow-y:scroll}
-body{width:100%;font-family:"맑은 고딕","나눔고딕","돋움",Dotum;font-size:14px;color:#666}
-a,a:hover{color:#666;text-decoration:none}
-a:hover{color:#c00000}
-a:focus{outline:none;}
-#wrapper{min-width:980px;padding:1em}
-#sidebar,
-#contents{width:100%}
-#sidebar{margin-bottom:10px}
-#sidebar h1{margin-right:2em;padding-bottom:0.6em;font-size:22px;text-align:center;color:#000}
-#sidebar .tab{position:absolute;right:15px;top:18px}
-#sidebar .tab button{float:left;margin-left:5px}
-#sidebar .total{position:absolute;left:15px;top:18px;font-size:18px;font-weight:bold;color:#666}
-#sidebar .total > span span{margin:0 4px}
-#sidebar .total > span em{color:#999}
-#sidebar .menu{*zoom:1;padding:1em;background:#00aeef}
-#sidebar .menu:after{content:"";display:block;clear:both}
-#sidebar .menu a{font-size:14px;font-weight:bold;color:#fff}
-#sidebar .menu h2{float:left;margin-right:20px}
-#sidebar .menu h2 a{text-decoration:underline}
-#sidebar .menu ul{float:left}
-#sidebar .menu li{float:left;margin-right:1.5em}
-#contents .site{position:relative;border-top:1px solid #555}
-#contents .site:hover{background-color:#fff}
-#contents .site h2{padding:0.4em 0.6em 0.5em;font-size:16px;font-weight:normal;color:#999;line-height:1.9em;border-bottom:1px solid #e5e5e5;}
-#contents .site.off h2{background-color:#6f6f6f}
-#contents .site h2 strong,
-#contents .site h2 > span{padding-bottom:0.2px;font-style:normal;font-size:20px;color:#333;vertical-align:middle}
-#contents .site.off h2 strong,
-#contents .site.off h2 > span{color:#bbb}
-#contents .site h2 > span{font-weight:bold}
-#contents .site h2 > span span{margin:0 5px}
-#contents .site h2 > span em{color:#999}
-#contents .site h2 a.exp{display:inline-block;overflow:hidden;width:14px;height:14px;margin-right:8px;border:1px solid #aaa;text-align:center;color:#999;line-height:12px;vertical-align:middle;cursor:pointer}
-#contents .site h2 a.exp span{display:block;position:relative;*top:-5px;padding-bottom:5px;line-height:10px}
-#contents .site a.gotop{position:absolute;right:20px;top:13px;font-size:12px;color:#999}
-#contents .site .cont{padding:1em 2em 0 2em;*padding:1em 1em 0 2em;font-size:12px;line-height:1.7em}
-#contents .site .cont h3{border-bottom:#555 1px solid;padding-bottom:0.5em;margin-bottom:0.5em;font-size:1.5em}
-#contents .site .cont h3 strong{float:left}
-#contents .site .cont h3 a{float:right;font-size:0.7em;padding-right:1em}
-#contents .site .cont .tit,
-#contents .site .cont .url,
-#contents .site .cont .date,
-#contents .site .cont .txt{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline;padding-left:1em;vertical-align:top}
-#contents .site .cont .tit{padding-left:0}
-#contents .site .cont .url{width:30%}
-#contents .site .cont .url a:hover{text-decoration:underline}
-#contents .site .cont .date{width:12%;font-size:11px}
-#contents .site .cont .txt{width:30%}
-#contents .site .cont .txt li{font-style:italic;color:#666}
-#contents .site .cont .txt ul.on li{/* list-style:decimal */}
-#contents .site .cont ul{line-height:23px}
-#contents .site .cont li{padding:3px 0;color:#333}
-#contents .site .cont li.on{background-color:#f2f2f2}
-#contents .site .cont li.del div{text-decoration:line-through;color:#ccc}
-#contents .site .cont li.del a{color:#ccc}
-#contents .site .cont li li{padding:0}
-#contents .site .cont li div.tit{width:20%;*padding-left:1.25%;;font-weight:bold}
-#contents .site .cont li div.tit:before{content:"";display:inline-block;padding-left:10px}
-#contents .site .cont li li div.tit{/*width:25%;*/padding-left:1%;*padding-left:2.25%;font-weight:normal}
-#contents .site .cont li li li div.tit{/*width:24%;*/padding-left:2%;*padding-left:3.2%}
-#contents .site .cont li li li li div.tit{/*width:23%;*/padding-left:3%;*padding-left:4.22%}
-#contents .site .cont li li li li li div.tit{/*width:22%;*/padding-left:4%;*padding-left:5.2%}
-#contents .site .date strong{margin-right:10px;font-weight:normal}
-#contents .site .today .date strong{color:red}
-#contents .site .date a{font-weight:bold;font-size:12px;cursor:help}
-#contents .site .date a:hover{color:#c00000}
-.footer{margin:10px 0;padding:10px 0;background-color:#00aeef;font-size:18px;text-align:center;color:#fff;line-height:1.25}
-</style>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>삼성물산 | Path</title>
+<link type="text/css" rel="stylesheet" href="./guide/inc/css/guide.css" />
+<script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="./guide/inc/js/guideUi.js"></script>
 </head>
 <body>
-<div id="wrapper">
-	<div id="sidebar">
-		<h1>삼성물산 홈페이지 리뉴얼</h1>
-		<div class="total"><strong>Total :</strong><span></span></div>
-		<div class="menu">
-			<h2><a href="#all">ALL</a></h2>
-			<ul>
-				<li><a href="#menu0">메인</a></li>
-				<li><a href="#menu1">Corporate</a></li>
-				<li><a href="#menu2">IR</a></li>
-				<li><a href="#menu3">Footer</a></li>
-			</ul>
+<div id="guideWrap">
+	<!-- Guide Header -->
+	<div id="guideHeader">
+		<div class="fl">
+			<h1>삼성물산</h1>
+			<p class="left">Path</p>
+		</div>
+		<div class="fr">
+			<div class="total"></div>
 		</div>
 	</div>
+	<!-- //Guide Header -->
 
-	<div id="contents">
-		<!-- site start -->
-		<div id="menu0" class="site">
-			<h2><strong>메인</strong><span></span></h2>
-			<a class="gotop" href="#">TOP</a>
-			<div class="cont">
-				<ul>
-					<li style="background:#f1deff;">
-						<div class="tit">메인</div>
-						<div class="url">/html/kor/main/CT-MAK-001.html</div>
-						<div class="date">
-							<span>2016-04-04</span>
-							<span>2016-04-07</span>
-							<span>2016-04-08</span>
-							<span>2016-04-11</span>
-							<span>2016-04-18</span>
-							<span>2016-04-21</span>
-							<span>2017-01-25</span>
-							<span>2017-07-24</span>
-							<span>2018-04-04</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>스크립트 이슈 상</li>
-								<li>[2016-03-15] GNB 디자인 수정 및 컨펌 대기 중</li>
-								<li>[2016-04-07] 지정은 : 디자인수정으로 인한 마크업 전체 수정</li>
-								<li>[2016-04-08] 지정은 : 모션 요건 변경으로 인한 .main 영역 마크업 수정</li>
-								<li>[2016-04-11] 지정은 : 모션 요건 변경으로 인한 .main 영역 마크업 수정</li>
-								<li>[2016-04-18] 지정은 : 뉴스영역 마크업 수정</li>
-								<li>[2016-04-21] 지정은 : 문구 수정 1건, 한줄 전체 수정 1건</li>
-								<li>[2017-01-25] 권재화 : 텍스트 수정</li>
-								<li>[2017-07-24] 권재화 : 메인 팝업창 로딩이벤트 추가</li>
-								<li>[2018-04-04] 권재화 : 뉴스 바로가기 링크 영역 세분화 수정</li>
-							</ul>
-						</div>
-					</li>
-                    <li style="background:#f1deff;">
-						<ul>
-                            <li>
-                                <div class="tit">[윈도우 팝업]시스템 개편 사전 안내</div>
-                                <div class="url">/html/kor/main/CT-MAK-002.html</div>
-                                <div class="date">
-                                    <span>2017-07-24</span>
-                                </div>
-                                <div class="txt">
-                                    <ul>
-                                        <li>[2017-07-24] 권재화 : 시스템 개편 사전 안내 팝업창 생성</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+	<!-- Path List -->
+	<div class="pathList">
+		<!-- Navi Menu -->
+		<div class="naviMenu"></div>
+		<!-- // Navi Menu -->
 
-					<li style="background:#f1deff;">
-						<div class="tit">공통 레이아웃 페이지</div>
-						<div class="url">/html/kor/layout.html</div>
-						<div class="date">
-							<span>2016-03-25</span>
-							<span>2016-03-28</span>
-							<span>2016-03-30</span>
-							<span>2016-04-01</span>
-							<span>2016-04-04</span>
-							<span>2016-04-05</span>
-							<span>2016-04-12</span>
-							<span>2016-04-19</span>
-							<span>2016-04-20</span>
-							<span>2016-04-21</span>
-							<span>2016-04-26</span>
-							<span>2016-08-25</span>
-							<span>2016-09-26</span>
-							<span>2017-03-09</span>
-							<span>2017-04-07</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>스크립트 이슈 상</li>
-								<li>PC와 테블릿은 동일한 디자인과 스크립트 적용 / 모바일에서 디자인 변경됨</li>
-								<li>1. GNB 스크립트 PC버전은 대메뉴 클릭 시 2depth메뉴까지 노출 / 모바일에서는 전체메뉴 아이콘 클릭 시 오른쪽에서 컨텐츠위로 열리며 노출</li>
-								<li>2. LNB 스크립트 3depth 메뉴까지 필요 / LNB는 테블릿부터 숨김처리</li>
-								<li>3. 하단 페밀리맵 클릭 시 페밀리사이트 메뉴 리스트 노출 / 모바일에서는 해당메뉴가 노출되지 않음</li>
-								<li>4. 모바일 전용 네비게이션 메뉴 노출, 3depth까지 확인됨, 각 뎁스베뉴 클릭 시 메뉴 리스트 열림 (해당메뉴 클릭 시 페이지로 이동)</li>
-								<li>[2016-03-28] 지정은 : (전체페이지 수정)<br /> GNB영역 IR메뉴 overview 영역 이미지 alt수정,<br /> 푸터 영역 Contact Us로 텍스트 수정(U대문자)</li>
-								<li>[2016-03-30] 지정은 : (전체페이지 수정)<br /> GNB영역 메뉴 텍스트 변경(재무비율/신용등급 -> 신용등급)</li>
-								<li>[2016-04-01] 지정은 : (전체페이지 수정)<br /> GNB영역, Footer 메뉴 대문자 변경(OVERVIEW, CONTACT US, CONTACT IR)</li>
-								<li>[2016-04-01] 지정은 : (전체페이지 수정)<br /> 검색영역(searchArea) 내의 마크업 순서 변경(닫기버튼이 p 아래로 이동)</li>
-								<li>[2016-04-04] 지정은 : (전체페이지 수정) GNB영역 닫기 버튼 마크업 추가</li>
-								<li>[2016-04-05] 지정은 : (전체페이지 수정) GNB영역 IR메뉴 overview 영역 이미지 alt수정, footer영역 familymap 전체 수정</li>
-								<li>[2016-04-12] 지정은 : (전체페이지 수정) footer영역 familymap 남성장학회 -> 삼성장학회</li>
-								<li>[2016-04-19] 지정은 : (전체페이지 수정) GNB IR 메뉴 영역 : 기업지배구조 &gt; 기타 위원회 메뉴 추가</li>
-								<li>[2016-04-20] 지정은 : (전체페이지 수정)<br/ >- CORPORATE 메뉴 영역 : CSR 경영 메뉴 삭제, 배너영역의 문구 수정 1건(CSR 보고서), 이미지 alt 수정 1건(CSR 보고서), 바로가기 버튼 -> 다운로드 버튼으로 수정(class, 텍스트, 마크업 수정)<br />- IR 메뉴 영역 : 배너영역의 문구 수정 1건(CSR 보고서), 이미지 alt 수정 1건(CSR 보고서), 바로가기 버튼 -> 다운로드 버튼으로 수정(class, 텍스트, 마크업 수정)</li>
-								<li>[2016-04-21] 지정은 : (전체페이지 수정)<br/ >- CORPORATE 메뉴 영역 : 이미지 alt 수정</li>
-								<li>[2016-04-26] 지정은 : (전체페이지 수정)<br/ >- CORPORATE 메뉴 영역 : CEO 메시지 메뉴 추가, - IR 메뉴 영역 : CEO 메시지 메뉴 삭제, IR 일정으로 메뉴명 변경 및 class삭제, 기존 뎁스 메뉴 삭제</li>
-                                <li>[2016-08-25] 권재화 : CORPORATE 메뉴 영역 : CSR-News 메뉴 추가</li>
-                                <li>[2016-09-26] 권재화 : CORPORATE 메뉴 영역 : CSR-서브메뉴 추가</li>
-                                <li>[2017-03-09] 권재화 : 패밀리사이트 - 삼성, 삼성채용사이트  삭제 </li>
-                                <li>[2017-04-07] 권재화 : 풋터 윤리경영 메뉴 추가</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- site end -->
+		<!-- Path -->
+		<table class="pathTbl">
+			<caption>Path List</caption>
+			<colgroup>
+				<col width="15%" />
+				<col width="15%" />
+				<col width="10%" />
+				<col width="10%" />
+				<col width="25%" />
+				<col width="7%" />
+				<col width="3%" />
+				<col width="15%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">Depth 1</th>
+					<th scope="col">Depth 2</th>
+					<th scope="col">Depth 3</th>
+					<th scope="col">Depth 4</th>
+					<th scope="col">URL</th>
+					<th scope="col">Date</th>
+					<th scope="col">State</th>
+					<th scope="col">Notice</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Guide -->
+				<tr>
+					<th class="dep1" scope="row" rowspan="3">
+						<p class="tit">Guide</p>
+					</th>
+					<td class="dep2">
+						<p class="tit">가이드 템플릿01</p>
+						<p class="txt">HTML 가이드 정의</p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url"><span>./guide/guide.html</span></td>
+					<td class="date">
+						<span>2017-04-10</span>
+					</td>
+					<td class="check">○</td>
+					<td class="txt">
+						<ul>
+							<li></li>
+						</ul>
+					</td>
+				</tr>
+				<!-- // Guide -->
 
-		<!-- site start -->
-		<div id="menu1" class="site">
-			<h2><strong>Corporate</strong><span></span></h2>
-			<a class="gotop" href="#">TOP</a>
-			<div class="cont">
-				<ul>
-					<li>
-						<div class="tit">Overview</div>
-						<div class="url">/html/kor/Corporate/CT-PCK-001.html</div>
-						<div class="date">
-							<span>2016-03-24</span>
-							<span>2016-03-30</span>
-							<span>2016-04-01</span>
-							<span>2016-04-04</span>
-							<span>2016-04-05</span>
-							<span>2016-04-12</span>
-							<span>2016-04-21</span>
-							<span>2016-04-22</span>
-							<span>2017-04-04</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[2016-03-30] 조미정 : 한줄수정 1건 (텍스트 수정)</li>
-								<li>[2016-04-01] 지정은 : (Corporate 전체페이지 수정)<br /> LNB(pc 및 모바일)영역 메뉴 대문자 변경(OVERVIEW, CONTACT US, CONTACT IR)</li>
-								<li>[2016-04-04] 이경주 : 마크업 전체 수정</li>
-								<li>[2016-04-05] 지정은 : 오타수정(2016-04-05 주석)</li>
-								<li>[2016-04-12] 지정은 : 텍스트수정(2016-04-12 주석)</li>
-								<li>[2016-04-21] 지정은 : 문구 수정 1건, 한줄 전체 수정 1건</li>
-								<li>[2016-04-21] 지정은 : 마크업 추가 및 위치 변경 1건</li>
-								<li>[2016-04-22] 지정은 : 조 다음 띄어쓰기 수정 3건</li>
-								<li>[2017-04-04] 권재화 : ’16년 기준 수치 수정</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">CEO 메시지</div>
-						<div class="url">/html/kor/Corporate/CT-PCK-026.html</div>
-						<div class="date">
-							<span>2016-03-28</span>
-							<span>2016-04-04</span>
-							<span>2016-04-26</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[2016-04-04] 지정은 : 디자인 수정반영으로 인한 전체 마크업 수정</li>
-								<li>[2016-04-26] 지정은 : - 폴더 : IR 에서 Corporate 로 이동 (ID는 동일), - &lt;head&gt;영역 : css명 변경, - 로케이션 영역 : 뎁스 CORPORATE 로 수정, - LNB 영역(모바일, PC) : CORPORATE 메뉴용으로 마크업 변경</li>
-								<li>[2016-04-26] 지정은 : 컨텐츠 영역 : 전체 마크업 수정</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">경영진</div>
-						<div class="url">/html/kor/Corporate/CT-PCK-002.html</div>
-						<div class="date">
-							<span>2016-03-23</span>
-							<span>2016-03-24</span>
-							<span>2016-04-26</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[2016-03-24] 지정은 : 이서현 사장으로 타이틀 및 alt 수정</li>
-								<li>[2016-04-26] 지정은 : 문구 삭제 1건(김봉영 사장 내용 중 '담당')</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">연혁</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
+				<!-- Guide02 -->
+				<tr>
+					<td class="dep2">
+						<p class="tit">가이드 템플릿02</p>
+						<p class="txt">component요소 모음</p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url"><span>./guide/guide02.html</span></td>
+					<td class="date">
+						<span>2017-04-10</span>
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
 						<ul>
-							<li>
-								<div class="tit">[윈도우 팝업]전체보기</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-003.html</div>
-								<div class="date">
-									<span>2016-03-28</span>
-									<span>2016-03-30</span>
-									<span>2016-04-04</span>
-									<span>2016-04-05</span>
-									<span>2016-04-12</span>
-									<span>2016-04-26</span>
-									<span>2017-03-20</span>
-									<span>2017-10-25</span>
-									<span>2018-03-20</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-30] 이경주 : 전체 페이지 마크업 추가 및 수정</li>
-										<li>[2016-04-04] 조미정 : 한줄수정 1건 (1938년 1월 -> 3월로 변경)</li>
-										<li>[2016-04-05] 이경주 : 2016년 내용 변경(2016-04-05 주석)</li>
-										<li>[2016-04-12] 지정은 : 내용 전체 수정(2016-04-12 주석)</li>
-										<li>[2016-04-26] 김혜지 : 내용 전체 수정(2016-04-26 주석)</li>
-										<li>[2017-03-20] 권재화 : 내용 수정</li>
-										<li>[2017-10-25] 권재화 : 연혁 추가</li>
-										<li>[2018-03-20] 권재화 : 연혁 추가</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[탭]연혁 : 한페이지에 작업진행</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-004.html</div>
-								<div class="date">
-									<span>2016-03-28</span>
-									<span>2016-03-30</span>
-									<span>2016-04-01</span>
-									<span>2016-04-04</span>
-									<span>2016-04-05</span>
-									<span>2016-04-07</span>
-									<span>2016-04-12</span>
-									<span>2016-04-15</span>
-									<span>2016-04-18</span>
-									<span>2016-04-22</span>
-									<span>2016-04-26</span>
-									<span>2016-04-27</span>
-									<span>2017-03-20</span>
-									<span>2017-10-25</span>
-									<span>2018-03-20</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>새로운 도약 : CT-PCK-004 / 글로벌 성장 : CT-PCK-005 / 구축과 발전 : CT-PCK-006 / 태동기 : CT-PCK-007</li>
-										<li>스크립트 : 탭 클릭시 해당하는 탭 컨텐츠 영역이 show 처리됨</li>
-										<li>[2016-03-30] 이경주 : 전체 페이지 마크업 추가 및 수정</li>
-										<li>[2016-04-01] 이경주 : 연혁 별 이미지 추가(15개) -주석표시</li>
-										<li>[2016-04-04] 조미정 : 한줄수정 1건 (1938년 1월 -> 3월로 변경)</li>
-										<li>[2016-04-05] 이경주 : 2016년 내용 변경(2016-04-05 주석)</li>
-										<li>[2016-04-07] 지정은 : 2009년 1월 내용 삭제</li>
-										<li>[2016-04-12] 지정은 : 내용 전체 수정(2016-04-12 주석)</li>
-										<li>[2016-04-15] 지정은 : 텍스트 수정 1건 (2001년 6월 내용. 누계-> 누적)</li>
-										<li>[2016-04-18] 지정은 : 오타수정 1건(글로별 -> 글로벌)</li>
-										<li>[2016-04-22] 지정은 : 일부 문구 삭제 3건, 일부 문구 수정 1건</li>
-										<li>[2016-04-26] 김혜지 : 내용 수정(탭 명 수정), 내용 전체 수정(2016-04-26 주석)</li>
-										<li>[2016-04-27] 지정은 : 문구 수정 2건</li>
-										<li>[2017-03-20] 권재화 : 내용 수정</li>
-										<li>[2017-10-25] 권재화 : 연혁 추가</li>
-										<li>[2018-03-20] 권재화 : 연혁 추가</li>
-									</ul>
-								</div>
-							</li>
+							<li></li>
 						</ul>
-					</li>
-					<li>
-						<div class="tit">사업영역</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">건설부문</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-008.html</div>
-								<div class="date">
-									<span>2016-03-23</span>
-									<span>2016-03-30</span>
-									<span>2016-04-15</span>
-									<span>2016-04-19</span>
-									<span>2016-04-21</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-30] 조미정 : 한줄수정 3건 (텍스트 수정)</li>
-										<li>[2016-04-15] 지정은 : 문구 일부 삭제 1건 (삼성물산 문구)</li>
-										<li>[2016-04-19] 지정은 : 문구 영역 전체 내용 수정 1건, 문구 수정 1건</li>
-										<li>[2016-04-21] 김혜지 : 한줄 수정 1건(텍스트 수정)</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">상사부문</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-009.html</div>
-								<div class="date">
-									<span>2016-03-23</span>
-									<span>2016-03-28</span>
-									<span>2016-04-15</span>
-									<span>2016-04-18</span>
-									<span>2016-04-21</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-28] 조미정 : 한줄수정 2건 (문구수정작업)</li>
-										<li>[2016-04-15] 지정은 : 문구 일부 삭제 1건 (삼성물산 문구)</li>
-										<li>[2016-04-18] 지정은 : 문구 일부 삭제 1건 : 마지막 쉼표(,) 삭제</li>
-										<li>[2016-04-21] 김혜지 : 한줄 수정 1건(텍스트 수정)</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">패션부문</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-010.html</div>
-								<div class="date">
-									<span>2016-03-23</span>
-									<span>2016-04-15</span>
-									<span>2016-04-21</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-04-15] 지정은 : 문구 일부 삭제 1건 (삼성물산 문구)</li>
-										<li>[2016-04-21] 지정은 : 문구 수정 6건</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">리조트부문</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-011.html</div>
-								<div class="date">
-									<span>2016-03-23</span>
-									<span>2016-03-28</span>
-									<span>2016-03-29</span>
-									<span>2016-04-05</span>
-									<span>2016-04-08</span>
-									<span>2016-04-15</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-28] 조미정 : 내용 삭제 (해당영역 삭제 요청으로 처리)</li>
-										<li>[2016-03-29] 이경주 : 상단영역 내용, 이미지 영역 수정</li>
-										<li>[2016-04-05] 지정은 : 텍스트수정(2016-04-05 주석)</li>
-										<li>[2016-04-08] 이경주 : 텍스트수정(2016-04-08 주석)</li>
-										<li>[2016-04-15] 지정은 : 문구 일부 삭제 1건 (삼성물산, 다채로운 문구)</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li class="del" style="background:#defcff;">
-						<div class="tit">CSR 경영</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">CSR 보고서</div>
-								<div class="url"><!-- /html/kor/Corporate/CT-PCK-014.html --></div>
-								<div class="date">
-									<span>2016-03-24</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요</li>
-										<li>[2016-04-20] 메뉴 삭제</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li style="background:#defcff;">
-						<div class="tit">CSR</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">Our CSR</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-107.html</div>
-								<div class="date">
-									<span>2016-09-06</span>
-									<span>2016-09-26</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-09-26] 권재화 : 텍스트 수정</li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">인사말</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-108.html</div>
-										<div class="date">
-											<span>2016-09-06</span>
-											<span>2017-08-24</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2017-08-24] 김혜지 : 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">비전 및 전략</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-109.html</div>
-										<div class="date">
-											<span>2016-09-06</span>
-											<span>2016-09-27</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-09-27] 권재화 : 텍스트 수정</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="tit">Act</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-110.html</div>
-								<div class="date">
-									<span>2016-09-06</span>
-									<span>2016-09-26</span>
-									<span>2017-08-24</span>
-									<span>2017-08-28</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-09-26] 권재화 : 페이지명 수정</li>
-										<li>[2017-08-24] 김혜지 : 마크업 수정</li>
-										<li>[2017-08-28] 김동하 : 마크업 수정</li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">환경을 먼저 생각하는 기업</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-114.html</div>
-										<div class="date">
-											<span>2016-09-06</span>
-											<span>2016-09-23</span>
-											<span>2017-08-25</span>
-											<span>2017-08-28</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-09-23] 권재화 : 내용 수정</li>
-												<li>[2017-08-25] 김혜지 : 마크업 수정</li>
-												<li>[2017-08-28] 김동하 : 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">최우선의 가치, 안전</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-111.html</div>
-										<div class="date">
-											<span>2016-09-06</span>
-											<span>2016-09-23</span>
-											<span>2017-08-24</span>
-											<span>2017-08-28</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-09-23] 권재화 : 내용 수정</li>
-												<li>[2017-08-24] 김혜지 : 마크업 수정</li>
-												<li>[2017-08-28] 김동하 : 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">기본 준수, 컴플라이언스</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-112.html</div>
-										<div class="date">
-											<span>2016-09-06</span>
-											<span>2017-08-25</span>
-											<span>2017-08-28</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2017-08-25] 김동하 : 마크업 수정</li>
-												<li>[2017-08-28] 김동하 : 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">상생을 위한 공동체 인식</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-113.html</div>
-										<div class="date">
-											<span>2016-09-06</span>
-											<span>2017-08-24</span>
-											<span>2017-08-28</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2017-08-24] 김혜지 : 마크업 수정</li>
-												<li>[2017-08-28] 김동하 : 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">새로운 기회의 장</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-117.html</div>
-										<div class="date">
-											<span>2017-08-24</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2017-08-24] 김혜지 : 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">아름다운 가치 공유</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-115.html</div>
-										<div class="date">
-											<span>2016-09-06</span>
-											<span>2016-09-26</span>
-											<span>2017-08-24</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-09-26] 권재화 : 페이지명 수정</li>
-												<li>[2017-08-24] 김동하 : 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="tit">News</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li></li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">[탭]전체</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-080.html</div>
-										<div class="date">
-											<span>2016-08-25</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li></li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[탭]지배구조</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-081.html</div>
-										<div class="date">
-											<span>2016-08-25</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li></li>
-											</ul>
-										</div>
-									</li>
-                                    <li>
-										<div class="tit">[탭]인권/노동</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-082.html</div>
-										<div class="date">
-											<span>2016-08-25</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li></li>
-											</ul>
-										</div>
-									</li>
-                                    <li>
-										<div class="tit">[탭]환경</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-083.html</div>
-										<div class="date">
-											<span>2016-08-25</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li></li>
-											</ul>
-										</div>
-									</li>
-                                    <li>
-										<div class="tit">[탭]공정운영관행</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-084.html</div>
-										<div class="date">
-											<span>2016-08-25</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li></li>
-											</ul>
-										</div>
-									</li>
-                                    <li>
-										<div class="tit">[탭]소비자이슈</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-085.html</div>
-										<div class="date">
-											<span>2016-08-25</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li></li>
-											</ul>
-										</div>
-									</li>
-                                    <li>
-										<div class="tit">[탭]지역사회</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-086.html</div>
-										<div class="date">
-											<span>2016-08-25</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="tit">뉴스 보기</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-016.html</div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>'뉴스-뉴스 보기'와 동일</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[윈도우팝업]뉴스 인쇄하기</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-017.html</div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>'뉴스-[윈도우팝업]뉴스 인쇄하기'와 동일</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[윈도우팝업] 메일 보내기 폼</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-100.html</div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>'뉴스-[윈도우팝업] 메일 보내기 폼'과 동일</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">아웃룩으로 전송되는 안내폼</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-101.html</div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>'뉴스-아웃룩으로 전송되는 안내폼'과 동일</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">Report</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-116.html</div>
-								<div class="date">
-									<span>2016-09-06</span>
-									<span>2016-10-05</span>
-									<span>2016-11-14</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-10-05] 권재화 : 텍스트 수정</li>
-										<li>[2016-11-14] 권재화 : 텍스트 수정</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li style="background:#defcff;">
-						<div class="tit">뉴스</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">뉴스 목록</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요</li>
-										<li>버튼클릭시 클래스 변경으로 UI 디자인 제어(썸네일형 : CT-PCK-015, 리스트형 : CT-PCK-090)</li>
-										<li>[2016-03-10] 썸네일형 게시물은 삭제하기로 협의</li>
-										<li>[2016-03-16] 개발과 상의 후 탭 영역 화면 ID 정의 필요</li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">[탭]전체</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-090.html</div>
-										<div class="date">
-											<span>2016-03-18</span>
-											<span>2016-03-21</span>
-											<span>2018-04-04</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-03-21] 이경주 : 리스트 텍스트 영역 마크업 수정</li>
-												<li>[2018-04-04] 권재화 : 뉴스카테고리 탭메뉴 방식 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[탭]건설부문</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-093.html</div>
-										<div class="date">
-											<span>2016-03-18</span>
-											<span>2016-03-21</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-03-21] 이경주 : 리스트 텍스트 영역 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[탭]상사부문</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-094.html</div>
-										<div class="date">
-											<span>2016-03-18</span>
-											<span>2016-03-21</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-03-21] 이경주 : 리스트 텍스트 영역 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[탭]패션부문</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-095.html</div>
-										<div class="date">
-											<span>2016-03-18</span>
-											<span>2016-03-21</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-03-21] 이경주 : 리스트 텍스트 영역 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[탭]리조트부문</div>
-										<div class="url">/html/kor/Corporate/CT-PCK-096.html</div>
-										<div class="date">
-											<span>2016-03-18</span>
-											<span>2016-03-21</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-03-21] 이경주 : 리스트 텍스트 영역 마크업 수정</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="tit">뉴스 보기</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-016.html</div>
-								<div class="date">
-									<span>2016-03-18</span>
-									<span>2016-03-21</span>
-									<span>2018-04-04</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요</li>
-										<li>[2016-03-11] 뉴스보기 하단 메일폼 레이어팝업은 일반팝업으로 변경할지 협의 중 (공통 : 해당 폼은 전체 컨텐츠에 적용될지 여부 같이 협의 중)</li>
-										<li>[2016-03-16] 개발과 상의 후 탭 영역 화면 ID 정의 필요</li>
-										<li>[2016-03-17] 기획과 상의 후 탭 영역은 삭제하기로 결정(SB반영적용)</li>
-										<li>[2016-03-21] 이경주 :  인쇄버튼 추가</li>
-										<li>[2018-04-04] 권재화 : 뉴스카테고리 탭메뉴 추가</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[윈도우팝업]뉴스 인쇄하기</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-017.html</div>
-								<div class="date">
-									<span>2016-03-21</span>
-									<span>2016-03-23</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요</li>
-										<li>해당 팝업은 모바일에서 노출되지 않음</li>
-										<li>[2016-03-07] 공통 : 모든 컨텐츠 인쇄하기 적용은 반응형 이슈로 일단 보류</li>
-										<li>[2016-03-23] 이경주 : 하단 버튼영역 추가</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[윈도우팝업] 메일 보내기 폼</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-100.html</div>
-								<div class="date">
-									<span>2016-03-28</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요</li>
-										<li>[2016-03-16] 화면 ID 정의 필요</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">아웃룩으로 전송되는 안내폼</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-101.html</div>
-								<div class="date">
-									<span>2016-03-28</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요</li>
-										<li>[2016-03-16] 화면 ID 정의 필요</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li style="background:#defcff;">
-						<div class="tit">소셜미디어</div>
-						<div class="url">/html/kor/Corporate/CT-PCK-018.html</div>
-						<div class="date">
-							<span>2016-03-28</span>
-							<span>2016-04-01</span>
-							<span>2016-04-21</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[개발] 우선작업 필요</li>
-								<li>[2016-03-28] 조미정 : 한줄삭제 1건, 한줄수정 5건 (갤러리 타입 내 타이틀과 텍스트는 2줄로 표현됩니다.)</li>
-								<li>[2016-04-01] 조미정 : 금일일자 한줄추가 4건 : h3 class="tit"로 검색하시면 됩니다.</li>
-								<li>[2016-04-21] 김혜지 : 한줄 수정 1건(텍스트 수정)</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">채용</div>
-						<div class="url">/html/kor/Corporate/CT-PCK-019.html</div>
-						<div class="date">
-							<span>2016-03-29</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-					</li>
-					<li style="background:#defcff;">
-						<div class="tit">Contact Us</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">[탭]오시는길 : 구글 맵 사용</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-020.html</div>
-								<div class="date">
-									<span>2016-03-23</span>
-									<span>2016-04-01</span>
-									<span>2017-12-29</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요</li>
-										<li>건설부문 : CT-PCK-020 / 상사부문 : CT-PCK-021 / 패션부문 : CT-PCK-022 / 리조트부문 : CT-PCK-023</li>
-										<li>스크립트 : 탭 클릭시 해당하는 탭 컨텐츠 영역이 show 처리됨</li>
-										<li>[2016-04-01] 지정은 : title, location 등(GNB,LNB,footer동일) 메뉴 대문자 변경(OVERVIEW, CONTACT US, CONTACT IR)</li>
-										<li>[2017-12-29] 권재화 : 팩스번호 수정</li>
-									</ul>
-								</div>
-							</li>
-							<li style="background:#f1deff;">
-								<div class="tit">고객문의</div>
-								<div class="url">/html/kor/Corporate/CT-PCK-024.html</div>
-								<div class="date">
-									<span>2016-03-24</span>
-									<span>2016-03-28</span>
-									<span>2016-04-01</span>
-									<span>2016-04-04</span>
-									<span>2016-04-06</span>
-									<span>2017-03-30</span>
-									<span>2018-05-17</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요 (문의하기 버튼 클릭시 폼테이블 노출됨)</li>
-										<li>스크립트 : 문의하기 버튼 클릭 시 고객정보 폼 테이블이 show 처리됨</li>
-										<li>[2016-03-24] 이경주 : IR 담당자 연락처 삭제</li>
-										<li>[2016-03-28] 조미정 : 관심분야 영역 추가 1건 / 문의내용 텍스트 건수 추가 1건</li>
-										<li>[2016-04-01] 지정은 : title, location 등(GNB,LNB,footer동일) 메뉴 대문자 변경(OVERVIEW, CONTACT US, CONTACT IR)</li>
-										<li>[2016-04-04] 이경주 : 고객문의바로가기 영역 마크업 수정(주석표시)</li>
-										<li>[2016-04-06] 지정은 : 이메일주소 input에 placeholder 삭제</li>
-										<li>[2017-03-30] 권재화 : 자동입력방지폼 추가</li>
-										<li>[2018-05-17] 권재화 : 링크 수정</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- site end -->
+					</td>
+				</tr>
+				<!-- // Guide02 -->
 
-		<!-- site start -->
-		<div id="menu2" class="site">
-			<h2><strong>IR</strong><span></span></h2>
-			<a class="gotop" href="#">TOP</a>
-			<div class="cont">
-				<ul>
-					<li style="background:#defcff;">
-						<div class="tit">Overview</div>
-						<div class="url">/html/kor/IR/CT-PCK-025.html</div>
-						<div class="date">
-							<span>2016-03-28</span>
-							<span>2016-03-29</span>
-							<span>2016-03-30</span>
-							<span>2016-04-01</span>
-							<span>2016-04-04</span>
-							<span>2016-04-07</span>
-							<span>2016-07-26</span>
-							<span>2016-10-24</span>
-							<span>2016-11-29</span>
-							<span>2017-01-25</span>
-							<span>2017-04-26</span>
-							<span>2018-01-08</span>
-							<span>2018-01-31</span>
-							<span>2018-04-25</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[개발] 우선작업 필요 (그래프가 적용되는 개발페이지)</li>
-								<li>[2016-03-15] 공통 : 기간선택 레이어 달력 폼은 모바일일때, 위치 설정 및 사이즈 이슈로 협의 중</li>
-								<li>[2016-03-29] 이경주 : 상단 비주얼영역 텍스트가 없을때, 이미지영역 추가</li>
-								<li>[2016-03-30] 지정은 : (IR 쪽 전체페이지 수정)<br /> LNB영역 메뉴 텍스트 변경(재무비율/신용등급 -> 신용등급)</li>
-								<li>[2016-04-01] 지정은 : (IR 전체페이지 수정)<br /> LNB(pc 및 모바일)영역 메뉴 대문자 변경(OVERVIEW, CONTACT US, CONTACT IR)</li>
-								<li>[2016-04-04] 지정은 : 디자인 수정반영으로 인한 마크업 수정(.dataWrap 영역)</li>
-								<li>[2016-04-07] 지정은 : iframe용 마크업 추가, 김혜지 : 내용 삭제</li>
-								<li>[2016-07-26] 권재화 : 상단 텍스트 수정</li>
-								<li>[2016-10-24] 권재화 : 상단 텍스트 수정</li>
-								<li>[2016-11-29] 권재화 : 텍스트 수정</li>
-								<li>[2017-01-25] 권재화 : 텍스트 수정</li>
-								<li>[2017-04-26] 권재화 : 텍스트 수정</li>
-								<li>[2018-01-08] 권재화 : 텍스트 수정</li>
-								<li>[2018-01-31] 권재화 : 텍스트 수정</li>
-								<li>[2018-04-25] 권재화 : 텍스트 수정</li>
-							</ul>
-						</div>
-					</li>
-					<!-- <li>
-						<div class="tit">CEO 메시지</div>
-						<div class="url">/html/kor/IR/CT-PCK-026.html</div>
-						<div class="date">
-							<span>2016-03-28</span>
-							<span>2016-04-04</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[2016-04-04] 지정은 : 디자인 수정반영으로 인한 전체 마크업 수정</li>
-							</ul>
-						</div>
-					</li> -->
-					<li>
-						<div class="tit">기업지배구조</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
+				<!-- 서브 레이아웃 -->
+				<tr>
+					<td class="dep2">
+						<p class="tit">가이드 템플릿03</p>
+						<p class="txt">layout 모음</p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url"><span>./guide/guide.html</span></td>
+					<td class="date">
+						<span>2017-04-10</span>
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
 						<ul>
-							<li>
-								<div class="tit">개요</div>
-								<div class="url">/html/kor/IR/CT-PCK-102.html</div>
-								<div class="date">
-									<span>2016-05-12</span>
-									<span>2016-05-17</span>
-									<span>2017-03-28</span>
-									<span>2018-03-27</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-05-17] 지정은 : tr 한줄 추가</li>
-										<li>[2017-03-28] 권재화 : 내용 수정</li>
-										<li>[2018-03-27] 권재화 : 내용 수정</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[탭]정관 : selectBox형</div>
-								<div class="url">/html/kor/IR/CT-PCK-027.html</div>
-								<div class="date">
-									<span>2016-03-28</span>
-									<span>2016-03-29</span>
-									<span>2016-03-30</span>
-									<span>2016-04-04</span>
-									<span>2016-04-05</span>
-									<span>2016-04-12</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>개정 : CT-PCK-027 / 1. 총칙 : CT-PCK-028 / 2. 주식 : CT-PCK-029 / 3. 주주총회 : CT-PCK-030 / 4. 이사, 이사회 및 위원회 : CT-PCK-031 / 5. 계산 : CT-PCK-032 / 6. 사채 : CT-PCK-033 / 7. 계열회사 등 특수관계인과의 거래 : CT-PCK-034 / 부칙 : CT-PCK-035</li>
-										<li>스크립트 : selectBox형 탭 클릭시 선택박스처럼 메뉴 리스트가 열리면서 해당하는 탭 컨텐츠 영역이 show 처리됨</li>
-										<li>[2016-03-29] 조미정 : 메뉴 활성화 클래스 삭제(한줄수정 1건)</li>
-										<li>[2016-03-30] 이경주,지정은 : 전체 페이지 오타 및 마크업 수정</li>
-										<li>[2016-04-05] 이경주,지정은 : 텍스트 및 띄어쓰기 수정 (주석표시)</li>
-										<li>[2016-04-12] 지정은 : 순서변경(개정이 제일 하단으로) 및 텍스트 수정</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">윤리강령</div>
-								<div class="url">/html/kor/IR/CT-PCK-105.html</div>
-								<div class="date">
-									<span>2016-05-12</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li></li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">이사회</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li></li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">구성(신규페이지)</div>
-										<div class="url">/html/kor/IR/CT-PCK-035.html</div>
-										<div class="date">
-                                            <span>2017-05-10</span>
-                                            <span>2017-05-30</span>
-                                            <span>2018-01-10</span>
-                                            <span>2018-02-12</span>
-											<span>2018-03-27</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2017-05-11] 김동하 : 구성 신규페이지 생성</li>
-												<li>[2017-05-30] 권재화 : 내용 수정</li>
-												<li>[2018-01-10] 권재화 : 내용 수정</li>
-												<li>[2018-02-12] 권재화 : 내용 수정</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">구성(기존페이지)</div>
-										<div class="url">/html/kor/IR/CT-PCK-036.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-											<span>2016-04-05</span>
-											<span>2016-04-12</span>
-											<span>2016-04-26</span>
-											<span>2016-05-10</span>
-											<span>2016-05-16</span>
-											<span>2016-10-06</span>
-											<span>2017-03-28</span>
-											<span>2017-03-29</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>사내이사 : CT-PCK-036 / 사외이사 : CT-PCK-037</li>
-												<li>[2016-03-15] 탭형태의 페이지에서 일반 리스트로 SB변경된 내용 확인</li>
-												<li>[2016-04-05] 지정은 : 텍스트수정(2016-04-05 주석)</li>
-												<li>[2016-04-12] 지정은 : 텍스트수정(2016-04-12 주석)</li>
-												<li>[2016-04-26] 지정은 : 마크업 전체 수정(주석영역)</li>
-												<li>[2016-05-10] 지정은 : 수정</li>
-												<li>[2016-05-16] 지정은 : 탭 마크업 추가(모바일용)</li>
-												<li>[2016-10-06] 권재화 : 학력,경력 자세히보기 팝업추가</li>
-												<li>[2017-03-28] 권재화 : 내용 수정</li>
-												<li>[2017-03-29] 권재화 : 내용 수정</li>
-												<li>[2017-05-10] 김동하 : 메뉴명 변경</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">운영 & 역할</div>
-										<div class="url">/html/kor/IR/CT-PCK-103.html</div>
-										<div class="date">
-                                            <span>2017-05-10</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2017-05-10] 김동하 : 신규페이지 추가/메뉴명 변경</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">활동내역 & 평가보상</div>
-										<div class="url">/html/kor/IR/CT-PCK-104.html</div>
-										<div class="date">
-											<span>2016-05-11</span>
-											<span>2016-05-16</span>
-                                            <span>2016-07-13</span>
-											<span>2018-03-27</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-05-16] 지정은 : 탭 마크업 추가(모바일용)</li>
-                                                <li>[2016-07-13] 권재화 : 문구추가</li>
-												<li>[2016-07-13] 김동하 : 내용추가/메뉴명 변경</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="tit">이사회 산하 위원회 : selectBox형 페이지 이동</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-16] 탭구조에서 4depth 매뉴구조로 변경 (모바일에서는 4depth 접근경로가 없어 PC와 모바일에서 selectBox형 탭 메뉴가 공통으로 적용)</li>
-										<li>스크립트 : selectBox형 탭 클릭시 선택박스처럼 메뉴 리스트가 열리면서 페이지 이동으로 처리됨</li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">개요</div>
-										<div class="url">/html/kor/IR/CT-PCK-037.html</div>
-										<div class="date">
-											<span>2017-05-08</span>
-											<span>2017-05-10</span>
-											<span>2017-05-30</span>
-											<span>2018-03-27</span>
-											<span>2018-05-02</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2017-05-10] 김동하 : 페이지 추가</li>
-												<li>[2017-05-30] 권재화 : 내용 수정</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-												<li>[2018-05-02] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">경영위원회</div>
-										<div class="url">/html/kor/IR/CT-PCK-038.html</div>
-										<div class="date">
-											<span>2016-03-28</span>
-											<span>2016-05-10</span>
-											<span>2017-05-30</span>
-											<span>2017-06-01</span>
-											<span>2018-01-10</span>
-											<span>2018-02-12</span>
-											<span>2018-03-27</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-05-10] 지정은 : 수정</li>
-												<li>[2017-05-30] 권재화 : 내용 수정</li>
-												<li>[2017-06-01] 권재화 : 내용 수정</li>
-												<li>[2018-01-10] 권재화 : 내용 수정</li>
-												<li>[2018-02-12] 권재화 : 내용 수정</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">감사위원회</div>
-										<div class="url">/html/kor/IR/CT-PCK-039.html</div>
-										<div class="date">
-											<span>2016-03-28</span>
-											<span>2016-05-10</span>
-											<span>2017-03-28</span>
-											<span>2018-01-23</span>
-											<span>2018-03-27</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-05-10] 지정은 : 수정</li>
-												<li>[2017-03-28] 권재화 : 내용 수정</li>
-												<li>[2018-01-23] 권재화 : 텍스트 수정</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">사외이사후보추천위원회</div>
-										<div class="url">/html/kor/IR/CT-PCK-040.html</div>
-										<div class="date">
-											<span>2016-03-28</span>
-											<span>2017-03-28</span>
-											<span>2017-06-27</span>
-											<span>2018-03-27</span>
-											<span>2018-05-02</span>
-											<span>2018-05-23</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-05-10] 지정은 : 수정</li>
-												<li>[2017-03-28] 권재화 : 내용 수정</li>
-												<li>[2017-06-27] 권재화 : 내용 추가</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-												<li>[2018-05-02] 권재화 : 내용 수정</li>
-												<li>[2018-05-23] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">보상위원회</div>
-										<div class="url">/html/kor/IR/CT-PCK-041.html</div>
-										<div class="date">
-											<span>2016-03-28</span>
-											<span>2016-05-10</span>
-                                            <span>2017-03-28</span>
-                                            <span>2017-05-30</span>
-											<span>2018-03-27</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-05-10] 지정은 : 수정</li>
-                                                <li>[2017-03-28] 권재화 : 내용 수정</li>
-                                                <li>[2017-05-30] 권재화 : 내용 수정</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">내부거래위원회</div>
-										<div class="url">/html/kor/IR/CT-PCK-042.html</div>
-										<div class="date">
-											<span>2016-03-28</span>
-											<span>2016-05-10</span>
-                                            <span>2017-03-28</span>
-											<span>2018-03-27</span>
-											<span>2018-05-02</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-05-10] 지정은 : 수정</li>
-                                                <li>[2017-03-28] 권재화 : 내용 수정</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-												<li>[2018-05-02] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">CSR위원회</div>
-										<div class="url">/html/kor/IR/CT-PCK-044.html</div>
-										<div class="date">
-											<span>2016-03-28</span>
-											<span>2016-04-07</span>
-											<span>2016-04-08</span>
-											<span>2016-04-12</span>
-											<span>2016-04-20</span>
-											<span>2016-05-10</span>
-											<span>2016-05-13</span>
-                                            <span>2017-03-28</span>
-											<span>2018-03-27</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-04-07] 이경주 : 내용 한줄 수정 (주석표시)</li>
-												<li>[2016-04-08] 최재훈 : 내용 수정</li>
-												<li>[2016-04-12] 지정은 : 텍스트 수정(2016-04-12 주석)</li>
-												<li>[2016-04-20] 지정은 : 버튼영역 마크업 추가</li>
-												<li>[2016-05-10] 지정은 : 수정</li>
-												<li>[2016-05-13] 정승욱 : 문구수정</li>
-                                                <li>[2017-03-28] 권재화 : 내용 수정</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="tit">기타 위원회</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-04-19] 기타 위원회 신규 생성 및 거버넌스위원회 이동</li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">거버넌스위원회</div>
-										<div class="url">/html/kor/IR/CT-PCK-043.html</div>
-										<div class="date">
-											<span>2016-03-28</span>
-											<span>2016-04-08</span>
-											<span>2016-04-12</span>
-											<span>2016-04-19</span>
-											<span>2016-05-10</span>
-                                            <span>2017-03-28</span>
-                                            <span>2017-05-30</span>
-                                            <span>2017-09-13</span>
-                                            <span>2018-01-08</span>
-											<span>2018-03-27</span>
-											<span>2018-05-02</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-04-08] 최재훈 : 내용 수정</li>
-												<li>[2016-04-12] 지정은 : 텍스트 수정(2016-04-12 주석)</li>
-												<li>[2016-04-19] 지정은 : 1. GNB IR 메뉴 영역 : 기타 위원회 메뉴 추가, 2. 로케이션 영역 : 뎁스 수정, 3. 모바일 LNB영역 : 메뉴명 수정, 메뉴 추가, 4. PC LNB영역 : 이사회 산하 위원회 안의 거버넌스 위원회 메뉴 삭제, 기타 위원회 메뉴 영역 추가, 5. 컨텐츠 영역 : 탭영역 삭제, 문구 수정 2건</li>
-												<li>[2016-05-10] 지정은 : 수정</li>
-                                                <li>[2017-03-28] 권재화 : 내용 수정</li>
-                                                <li>[2017-05-30] 권재화 : 내용 수정</li>
-                                                <li>[2017-09-13] 권재화 : 내용 수정</li>
-                                                <li>[2018-01-08] 권재화 : 문구 수정 및 추가</li>
-												<li>[2018-03-27] 권재화 : 내용 수정</li>
-												<li>[2018-05-02] 권재화 : 내용 수정</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="tit">외부감사인</div>
-								<div class="url">/html/kor/IR/CT-PCK-045.html</div>
-								<div class="date">
-									<span>2016-03-28</span>
-                                    <span>2016-07-13</span>
-									<span>2017-05-30</span>
-									<span>2018-03-27</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-07-13] 권재화 : 문구 추가</li>
-                                        <li>[2017-05-30] 권재화 : 내용 수정</li>
-										<li>[2018-03-27] 권재화 : 내용 수정</li>
-									</ul>
-								</div>
-							</li>
+							<li></li>
 						</ul>
-					</li>
-					<li style="background:#defcff;">
-						<div class="tit">공시정보</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">목록보기</div>
-								<div class="url">/html/kor/IR/CT-PCK-046.html</div>
-								<div class="date">
-									<span>2016-03-18</span>
-									<span>2016-03-23</span>
-									<span>2016-03-24</span>
-									<span>2016-04-06</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요</li>
-										<li>[2016-03-15] 공통 : 기간선택 레이어 달력 폼은 모바일일때, 위치 설정 및 사이즈 이슈로 협의 중</li>
-										<li>[2016-03-23] 버튼 영역 추가 : 내용 추가 1건</li>
-										<li>[2016-03-24] 지정은 : 기간선택 버튼, 키워드 영역 삭제</li>
-										<li>[2016-04-06] 지정은 : 아이프레임으로 변경(내용삭제 및 iframe 용 마크업 추가)</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">내용보기</div>
-								<div class="url">/html/kor/IR/CT-PCK-047.html</div>
-								<div class="date">
-									<span>2016-03-18</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요 (아이프레임으로 컨텐츠를 불러들이는 영역)</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<div class="tit">재무정보</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<ul>
-							<li style="background:#ffc9c9">
-								<div class="tit">요약재무재표</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-29] 해당페이지는 아이프레임으로 제공, 디자인 퍼블 작업 진행하지 않음</li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">[탭]분기</div>
-										<div class="url">/html/kor/IR/CT-PCK-048.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-											<span>2016-03-30</span>
-											<span>2016-04-06</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>차트는 영역만 잡아주세요.</li>
-												<li>[2016-03-15] SB에서 차트 삭제됨</li>
-												<li>[2016-03-16]분기 : CT-PCK-048 / 연간 : CT-PCK-050 (탭 메뉴로 변경)</li>
-												<li>스크립트 : 탭 클릭시 해당하는 탭 컨텐츠 영역이 show 처리됨</li>
-												<li>[2016-03-29] 컨텐츠를 뺀 레이아웃 영역만 제공함</li>
-												<li>[2016-03-30] 지정은 : moLnbWrap영역 메뉴 텍스트 변경(재무비율/신용등급 -> 신용등급)</li>
-												<li>[2016-04-06] 지정은 : iframe 용 마크업 추가</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[윈도우 팝업]지난 요약재무재표 보기/분기</div>
-										<div class="url">/html/kor/IR/CT-PCK-049.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>해당 팝업은 모바일에서 노출되지 않음</li>
-												<li>[2016-03-29] 해당메뉴는 작업하지 않음, 완료처리 함</li>
-											</ul>
-										</div>
-									</li>
-									<!--li>
-										<div class="tit">연간</div>
-										<div class="url">/html/kor/IR/CT-PCK-050.html</div>
-										<div class="date">
-											<span></span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li></li>
-											</ul>
-										</div>
-									</li-->
-									<li>
-										<div class="tit">[윈도우 팝업]지난 요약재무재표 보기/연간</div>
-										<div class="url">/html/kor/IR/CT-PCK-051.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>해당 팝업은 모바일에서 노출되지 않음</li>
-												<li>[2016-03-29] 해당메뉴는 작업하지 않음, 완료처리 함</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="tit">신용등급</div>
-								<div class="url">/html/kor/IR/CT-PCK-052.html</div>
-								<div class="date">
-									<span>2016-03-28</span>
-									<span>2016-03-30</span>
-									<span>2016-04-04</span>
-									<span>2016-04-06</span>
-									<span>2016-04-08</span>
-									<span>2016-04-20</span>
-									<span>2017-01-05</span>
-									<span>2018-05-10</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-30] 지정은 : 상단 title, 페이지 타이틀, location, moLnbWrap영역 등등<br />메뉴 텍스트 변경(재무비율/신용등급 -> 신용등급)</li>
-										<li>[2016-04-04] 이경주 : 내용 수정 (주석표시)</li>
-										<li>[2016-04-06] 이경주 : 내용 전체 수정</li>
-										<li>[2016-04-08] 최재훈 : 내용 전체 수정</li>
-										<li>[2016-04-20] 김혜지 : 국내 신용등급 체계 및 정의 테이블 Definition 내용 각 문장 뒤 마침표 삭제</li>
-										<li>[2017-01-05] 권재화 : 국내 신용등급 및 해외 신용등급 2016년말 셀 추가</li>
-										<li>[2018-05-10] 권재화 : 내용 수정</li>
-									</ul>
-								</div>
-							</li>
-							<li style="background:#defcff;">
-								<div class="tit">감사/검토보고서</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>영업보고서 : CT-PCK-053 / 사업보고서 : CT-PCK-054 / 감사/검토보고서 : CT-PCK-055</li>
-										<li>[2016-03-16] 탭구조에서 3depth 매뉴구조로 변경</li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">감사/검토보고서</div>
-										<div class="url">/html/kor/IR/CT-PCK-055.html</div>
-										<div class="date">
-											<span>2016-03-18</span>
-											<span>2016-03-22</span>
-											<span>2016-03-23</span>
-											<span>2016-03-24</span>
-											<span>2016-03-28</span>
-											<span>2016-03-30</span>
-											<span>2016-04-08</span>
-											<span>2016-04-12</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-03-22] 조미정 : 2014년 테이블 영역 삭제 / 한줄수정 1건, 내용추가 1건</li>
-												<li>[2016-03-23] 조미정 : 한줄추가 1건</li>
-												<li>[2016-03-24] 지정은 : 타이틀영역 1분기로 텍스트 수정</li>
-												<li>[2016-03-28] 조미정 : 텍스트 수정 (한줄수정 1건)</li>
-												<li>[2016-03-30] 지정은 : moLnbWrap영역 메뉴 텍스트 변경(재무비율/신용등급 -> 신용등급)</li>
-												<li>[2016-04-08] 지정은 : 내용삭제 2건(지난보고서 보기 tr 및 ul), 마크업 내용한줄 추가 1건</li>
-												<li>[2016-04-12] 지정은 : 텍스트수정 및 태그 삭제(2016-04-12 주석)</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[윈도우 팝업]지난 보고서</div>
-										<div class="url">/html/kor/IR/CT-PCK-091.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-											<span>2016-04-06</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>해당 팝업은 모바일에서 노출되지 않음</li>
-												<li>[2016-04-06] 지정은 : 텍스트 수정(2016-04-06 주석)</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li style="background:#defcff;">
-								<div class="tit">사업보고서</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li></li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">사업보고서</div>
-										<div class="url">/html/kor/IR/CT-PCK-053.html</div>
-										<div class="date">
-											<span>2016-03-23</span>
-											<span>2016-03-28</span>
-											<span>2016-03-30</span>
-											<span>2016-04-08</span>
-											<span>2016-04-12</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-03-28] 조미정 : 텍스트 수정 (한줄수정 1건)</li>
-												<li>[2016-03-30] 지정은 : moLnbWrap영역 메뉴 텍스트 변경(재무비율/신용등급 -> 신용등급)</li>
-												<li>[2016-04-08] 지정은 : 내용삭제 2건(지난보고서 보기 tr 및 ul), 마크업 내용한줄 추가 1건</li>
-												<li>[2016-04-12] 지정은 : 텍스트수정 및 태그 삭제(2016-04-12 주석)</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[윈도우 팝업]지난 보고서</div>
-										<div class="url">/html/kor/IR/CT-PCK-092.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-											<span>2016-04-06</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>해당 팝업은 모바일에서 노출되지 않음</li>
-												<li>[2016-04-06] 지정은 : 텍스트 수정(2016-04-06 주석)</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li style="background:#defcff;">
-								<div class="tit">실적발표</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li></li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">실적발표</div>
-										<div class="url">/html/kor/IR/CT-PCK-054.html</div>
-										<div class="date">
-											<span>2016-03-23</span>
-											<span>2016-03-24</span>
-											<span>2016-03-28</span>
-											<span>2016-03-30</span>
-											<span>2016-04-08</span>
-											<span>2016-04-12</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[2016-03-24] 지정은 : 타이틀영역 1분기로 텍스트 수정</li>
-												<li>[2016-03-28] 조미정 : 텍스트 수정 (한줄수정 1건)</li>
-												<li>[2016-03-30] 지정은 : moLnbWrap영역 메뉴 텍스트 변경(재무비율/신용등급 -> 신용등급)</li>
-												<li>[2016-04-08] 지정은 : 내용삭제 2건(지난보고서 보기 tr 및 ul), 마크업 내용한줄 추가 1건</li>
-												<li>[2016-04-12] 지정은 : 텍스트수정 및 태그 삭제(2016-04-12 주석)</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[윈도우 팝업]지난 보고서</div>
-										<div class="url">/html/kor/IR/CT-PCK-056.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-											<span>2016-04-06</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>해당 팝업은 모바일에서 노출되지 않음</li>
-												<li>[2016-04-06] 지정은 : 텍스트 수정(2016-04-06 주석)</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li style="background:#defcff;">
-						<div class="tit">IR 일정</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[개발] 우선작업 필요</li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">IR 일정</div>
-								<div class="url">/html/kor/IR/CT-PCK-057.html</div>
-								<div class="date">
-									<span>2016-03-19</span>
-									<span>2016-04-07</span>
-									<span>2016-04-18</span>
-									<span>2016-04-26</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>스크립트 : 아코디언 리스트</li>
-										<li>[2016-04-07] 이경주 : 기획 수정사항을 위한 마크업 수정</li>
-										<li>[2016-04-18] 지정은 : 버튼영역 마크업 추가 1건</li>
-										<li>[2016-04-26] 지정은 : - &lt;title&gt; 영역 : 메뉴명 변경, - 컨텐츠 타이틀 영역 : 메뉴명 변경, - 로케이션 영역 : 뎁스 삭제 및 메뉴명 변경, - 모바일 LNB 영역 : 메뉴명 변경 및 뎁스 메뉴 삭제, - PC LNB 영역 : 메뉴명 변경 및 class삭제, 뎁스 메뉴 삭제</li>
-									</ul>
-								</div>
-							</li>
-							<li class="del">
-								<div class="tit">실적발표</div>
-								<div class="url"><!-- /html/kor/IR/CT-PCK-058.html --></div>
-								<div class="date">
-									<span>2016-03-19</span>
-									<span>2016-04-26</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>스크립트 : 아코디언 리스트</li>
-										<li>[2016-04-26] 메뉴 삭제</li>
-									</ul>
-								</div>
-							</li>
-							<!--li>
-								<div class="tit">[윈도우 팝업]지난 실적정보</div>
-								<div class="url">/html/kor/IR/CT-PCK-059.html</div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li></li>
-									</ul>
-								</div>
-							</li-->
-						</ul>
-					</li>
-					<li>
-						<div class="tit">주식 및 주주정보</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">기본정보</div>
-								<div class="url">/html/kor/IR/CT-PCK-060.html</div>
-								<div class="date">
-									<span>2016-03-23</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li></li>
-									</ul>
-								</div>
-							</li>
-							<!--li>
-								<div class="tit">주주구성 : 차트포함</div>
-								<div class="url">/html/kor/IR/CT-PCK-061.html</div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>차트는 영역만 잡아주세요.</li>
-									</ul>
-								</div>
-							</li-->
-							<li style="background:#ffc9c9;">
-								<div class="tit">주가</div>
-								<div class="url"></div>
-								<div class="date">
-									<span></span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-29] 해당페이지는 아이프레임으로 제공, 디자인 퍼블 작업 진행하지 않음</li>
-									</ul>
-								</div>
-								<ul>
-									<li>
-										<div class="tit">[탭]일반주(보통주) : 차트포함</div>
-										<div class="url">/html/kor/IR/CT-PCK-062.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-											<span>2016-04-06</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[개발] 우선작업 필요 (차트는 영역만 잡아주세요.)</li>
-												<li>[2016-03-29] 컨텐츠를 뺀 레이아웃 영역만 제공함</li>
-												<li>[2016-04-06] 지정은 : iframe 용 마크업 추가</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[윈도우팝업]일반주 현재가</div>
-										<div class="url"></div>
-										<div class="date">
-											<span></span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>매일경제 iframe 을 이용한 POPUP : 해당팝업은 모바일에서 노출하지 않습니다.</li>
-												<li>[2016-03-29] 해당메뉴는 작업하지 않음, 완료처리 함</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[윈도우팝업]일반주 일자별 시세</div>
-										<div class="url"></div>
-										<div class="date">
-											<span></span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>매일경제 iframe 을 이용한 POPUP : 해당팝업은 모바일에서 노출하지 않습니다.</li>
-												<li>[2016-03-29] 해당메뉴는 작업하지 않음, 완료처리 함</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[탭]우선주 : 차트포함</div>
-										<div class="url">/html/kor/IR/CT-PCK-065.html</div>
-										<div class="date">
-											<span>2016-03-29</span>
-											<span>2016-04-06</span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>[개발] 우선작업 필요 (차트는 영역만 잡아주세요.)</li>
-												<li>[2016-03-29] 컨텐츠를 뺀 레이아웃 영역만 제공함</li>
-												<li>[2016-04-06] 지정은 : iframe 용 마크업 추가</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[윈도우팝업]우선주 현재가</div>
-										<div class="url"></div>
-										<div class="date">
-											<span></span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>매일경제 iframe 을 이용한 POPUP : 해당팝업은 모바일에서 노출하지 않습니다.</li>
-												<li>[2016-03-29] 해당메뉴는 작업하지 않음, 완료처리 함</li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<div class="tit">[윈도우팝업]우선주 일자별 시세</div>
-										<div class="url"></div>
-										<div class="date">
-											<span></span>
-										</div>
-										<div class="txt">
-											<ul>
-												<li>매일경제 iframe 을 이용한 POPUP : 해당팝업은 모바일에서 노출하지 않습니다.</li>
-												<li>[2016-03-29] 해당메뉴는 작업하지 않음, 완료처리 함</li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li style="background:#ffc9c9;">
-								<div class="tit">주가지표</div>
-								<div class="url">/html/kor/IR/CT-PCK-068.html</div>
-								<div class="date">
-									<span>2016-03-29</span>
-									<span>2016-04-06</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-29] 컨텐츠를 뺀 레이아웃 영역만 제공함</li>
-										<li>[2016-04-06] 지정은 : iframe 용 마크업 추가</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">주주구성</div>
-								<div class="url">/html/kor/IR/CT-PCK-061.html</div>
-								<div class="date">
-									<span>2016-04-04</span>
-									<span>2016-04-08</span>
-									<span>2016-04-12</span>
-									<span>2016-04-20</span>
-									<span>2016-04-26</span>
-									<span>2016-04-27</span>
-									<span>2018-04-04</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-04-08] 이경주 : 클래스명수정, 마크업 위치변경 (2개 금일날짜주석표시)</li>
-										<li>[2016-04-12] 지정은 : 텍스트 마크업 추가, 우선주 내용 삭제</li>
-										<li>[2016-04-20] 지정은 : 문구 수정 1건, 마크업 추가 2건</li>
-										<li>[2016-04-26] 김혜지 : 전체 내용 수정(2016-04-26 주석)</li>
-										<li>[2016-04-27] 지정은 : 이미지 alt 수정 1건, 문구 수정 1건</li>
-										<li>[2018-04-04] 권재화 : 내용 수정</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">주주총회</div>
-								<div class="url">/html/kor/IR/CT-PCK-069.html</div>
-								<div class="date">
-									<span>2016-03-23</span>
-									<span>2016-03-24</span>
-									<span>2016-04-04</span>
-									<span>2016-04-08</span>
-									<span>2016-10-05</span>
-									<span>2017-02-28</span>
-									<span>2017-03-20</span>
-									<span>2017-04-13</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-03-24] 이경주 : 정관변경 내용 수정 (해당일자로 주석표시)</li>
-										<li>[2016-04-04] 이경주 : 일부내용 수정 (해당일자로 주석표시)</li>
-										<li>[2016-04-08] 지정은 : th 텍스트 수정</li>
-										<li>[2016-10-05] 권재화 : 텍스트 수정</li>
-										<li>[2017-02-28] 권재화 : 제53기 주주총회 추가</li>
-										<li>[2017-03-20] 권재화 : 내용 수정</li>
-										<li>[2017-04-13] 권재화 : 제53기 주주총회결과 업데이트</li>
-									</ul>
-								</div>
-							</li>
-							<!-- <li class="del">
-								<div class="tit">주주환원</div>
-								<div class="url"></div>
-								<div class="date">
-									<span>2016-03-23</span>
-									<span>2016-04-04</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[2016-04-04] 조미정 : 한줄삭제 (h3 class="smallTit" 영역 삭제)</li>
-										<li>[2016-04-06] 메뉴삭제</li>
-									</ul>
-								</div>
-							</li> -->
-						</ul>
-					</li>
-					<li style="background:#defcff;">
-						<div class="tit">FAQ : 아코디언 리스트</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[2016-03-16] 개발과 상의 후 탭 영역 화면 ID 정의 필요</li>
-							</ul>
-						</div>
-						<ul>
-							<li>
-								<div class="tit">[탭]전체</div>
-								<div class="url">/html/kor/IR/CT-PCK-071.html</div>
-								<div class="date">
-									<span>2016.03.18</span>
-									<span>2016-04-20</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>스크립트 : 아코디언 리스트</li>
-										<li>[2016-04-20] 지정은 : 탭명 수정 2건('사항' 문구 삭제)</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[탭]기업정보</div>
-								<div class="url">/html/kor/IR/CT-PCK-097.html</div>
-								<div class="date">
-									<span>2016.03.18</span>
-									<span>2016-04-20</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>스크립트 : 아코디언 리스트</li>
-										<li>[2016-04-20] 지정은 : 탭명 수정 2건('사항' 문구 삭제)</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[탭]주식관련</div>
-								<div class="url">/html/kor/IR/CT-PCK-098.html</div>
-								<div class="date">
-									<span>2016.03.18</span>
-									<span>2016-04-20</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>스크립트 : 아코디언 리스트</li>
-										<li>[2016-04-20] 지정은 : 탭명 수정 2건('사항' 문구 삭제)</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<div class="tit">[탭]재무관련</div>
-								<div class="url">/html/kor/IR/CT-PCK-099.html</div>
-								<div class="date">
-									<span>2016.03.18</span>
-									<span>2016-04-20</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>스크립트 : 아코디언 리스트</li>
-										<li>[2016-04-20] 지정은 : 탭명 수정 2건('사항' 문구 삭제)</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<div class="tit">Contact IR</div>
-						<div class="url">/html/kor/IR/CT-PCK-072.html</div>
-						<div class="date">
-							<span>2016-03-23</span>
-							<span>2016-03-28</span>
-							<span>2016-04-01</span>
-							<span>2016-04-04</span>
-							<span>2016-04-08</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[2016-03-16] 해당메뉴 추가여부 협의중</li>
-								<li>[2016-03-28] 조미정 : 한줄삭제 1건 (홈페이지 문의 문구 삭제)</li>
-								<li>[2016-04-01] 지정은 : title, location 등(GNB,LNB,footer동일) 메뉴 대문자 변경(OVERVIEW, CONTACT US, CONTACT IR)</li>
-								<li>[2016-04-04] 조미정 : UI 변경 (금일 날짜 내용수정 영역)</li>
-								<li>[2016-04-08] 이경주 : 전화 문구 삭제</li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- site end -->
+					</td>
+				</tr>
+				<!-- // 서브 레이아웃 -->
 
-		<!-- site start -->
-		<div id="menu3" class="site">
-			<h2><strong>Footer</strong><span></span></h2>
-			<a class="gotop" href="#">TOP</a>
-			<div class="cont">
-				<ul>
-					<li>
-						<div class="tit">[윈도우 팝업]보안신고</div>
-						<div class="url"></div>
-						<div class="date">
-							<span></span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>해당 팝업은 모바일에서 노출되지 않음</li>
-								<li>[2016-03-23] 이경주 : footer영역 추가, btnArea 영역 footer안으로 위치 변경</li>
-							</ul>
-						</div>
+				<!-- 메인 -->
+				<tr>
+					<th class="dep1" scope="row" rowspan="1">
+						<p class="tit">메인</p>
+					</th>
+					<td class="dep2">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url">
+						<span>./html/kor/main/CNT_M_K.html</span>
+					</td>
+					<td class="date">
+						<span></span> <!-- YYYY-MM-DD : 형식으로 입력 -->
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
 						<ul>
-							<li>
-								<div class="tit">[윈도우 팝업]제보하기</div>
-								<div class="url">/html/kor/Footer/CT-PCK-073.html</div>
-								<div class="date">
-									<span>2016-03-21</span>
-									<span>2016-03-23</span>
-									<span>2016-04-05</span>
-									<span>2016-04-12</span>
-									<span>2018-03-30</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>해당 팝업은 모바일에서 노출되지 않음</li>
-										<li>[2016-03-23] 이경주 : footer영역 추가, btnArea 영역 footer안으로 위치 변경</li>
-										<li>[2016-04-05] 지정은 : 내용삭제 및 이메일주소 텍스트 및 mailto 변경 (2016-04-05 주석)</li>
-										<li>[2016-04-12] 지정은 : 텍스트수정(2016-04-12 주석)</li>
-										<li>[2018-03-30] 권재화 : 주소 수정</li>
-									</ul>
-								</div>
-							</li>
-							<li style="background:#defcff;">
-								<div class="tit">[윈도우 팝업]신고서 작성</div>
-								<div class="url">/html/kor/Footer/CT-PCK-074.html</div>
-								<div class="date">
-									<span>2016-03-18</span>
-									<span>2016-03-21</span>
-									<span>2016-03-23</span>
-									<span>2016-04-05</span>
-									<span>2016-04-15</span>
-								</div>
-								<div class="txt">
-									<ul>
-										<li>[개발] 우선작업 필요 (폼요소 테이블)</li>
-										<li>해당 팝업은 모바일에서 노출되지 않음</li>
-										<li>[2016-03-21] 이경주 : 내용영역 글자수 추가, 연락처 입력영역 마크업수정</li>
-										<li>[2016-03-23] 이경주 : footer영역 추가, btnArea 영역 footer안으로 위치 변경</li>
-										<li>[2016-04-05] 이경주 : 이메일주소 텍스트 및 mailto 변경 (2016-04-05 주석)</li>
-										<li>[2016-04-15] 지정은 : 자동입력방지 영역 마크업 추가</li>
-									</ul>
-								</div>
-							</li>
+							<li></li>
 						</ul>
-					</li>
-					<li>
-						<div class="tit">[윈도우 팝업]이메일주소무단수집거부</div>
-						<div class="url">/html/kor/Footer/CT-PCK-075.html</div>
-						<div class="date">
-							<span>2016-03-21</span>
-							<span>2016-03-23</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>해당 팝업은 모바일에서 노출되지 않음</li>
-								<li>[2016-03-23] 이경주 : footer영역 추가, btnArea 영역 footer안으로 위치 변경</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">[윈도우 팝업]법적 고지</div>
-						<div class="url">/html/kor/Footer/CT-PCK-076.html</div>
-						<div class="date">
-							<span>2016-03-21</span>
-							<span>2016-03-23</span>
-							<span>2016-04-05</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>해당 팝업은 모바일에서 노출되지 않음</li>
-								<li>[2016-03-23] 이경주 : footer영역 추가, btnArea 영역 footer안으로 위치 변경</li>
-								<li>[2016-04-05] 이경주 : 타이틀 영문으로 수정(2016-04-05 주석)</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">[윈도우 팝업]개인정보 취급방침</div>
-						<div class="url">/html/kor/Footer/CT-PCK-077.html</div>
-						<div class="date">
-							<span>2016-03-21</span>
-							<span>2016-04-05</span>
-							<span>2016-04-20</span>
-							<span>2016-04-25</span>
-							<span>2016-04-26</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<!-- <li>스크립트 : 아코디언 리스트</li> -->
-								<li>해당 팝업은 모바일에서 노출되지 않음</li>
-								<li>[2016-04-05] 이경주 : 마크업 전체 수정</li>
-								<li>[2016-04-20] 김혜지 : 내용 추가(제10조)</li>
-								<li>[2016-04-25] 김혜지 : 마크업 전체 수정</li>
-								<li>[2016-04-26] 지정은 : table col width값 수정 4건(2015년 9월 1일 내용 중)</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">SITEMAP</div>
-						<div class="url">/html/kor/Footer/CT-PCK-078.html</div>
-						<div class="date">
-							<span>2016-03-21</span>
-							<span>2016-03-30</span>
-							<span>2016-04-01</span>
-							<span>2016-04-19</span>
-							<span>2016-04-20</span>
-							<span>2016-04-26</span>
-							<span>2016-05-12</span>
-							<span>2016-09-23</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[2016-03-30] 지정은 : 메뉴명 수정 (주석표시)</li>
-								<li>[2016-04-01] 지정은 : title, location 등(GNB,LNB,footer동일) 메뉴 대문자 변경(OVERVIEW, CONTACT US, CONTACT IR)</li>
-								<li>[2016-04-19] 지정은 : 기타 위원회 메뉴 추가</li>
-								<li>[2016-04-20] 지정은 : CSR 경영 메뉴 삭제</li>
-								<li>[2016-04-26] 지정은 : IR 일정으로 메뉴명 변경 및 마크업 a로 변경, 뎁스 메뉴 삭제</li>
-								<li>[2016-05-12] 지정은 : 수정</li>
-								<li>[2016-09-23] 권재화 : CSR 추가</li>
-							</ul>
-						</div>
-					</li>
-					<li style="background:#defcff;">
-						<div class="tit">Search</div>
-						<div class="url">/html/kor/Footer/CT-PCK-079.html</div>
-						<div class="date">
-							<span>2016-03-21</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>해당 페이지는 모바일에서 노출되지 않음</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">Error</div>
-						<div class="url">/html/kor/Footer/CT-PCK-103.html</div>
-						<div class="date">
-							<span>2016-04-12</span>
-                            <span>2016-07-08</span>
-                            <span>2017-05-30</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li>[2016-07-08] 권재화 : 텍스트수정/추가 및 영문버튼 추가</li>
-                                <li>[2017-05-30] 권재화 : 내용 수정</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="tit">시스템 점검</div>
-						<div class="url">/html/kor/Footer/CT-PCK-106.html</div>
-						<div class="date">
-							<span>2016-05-12</span>
-						</div>
-						<div class="txt">
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- site end -->
+					</td>
+				</tr>
+				<!-- // 메인 -->
 
+				<!-- OUR BUSINESSES -->
+				<tr>
+					<th class="dep1" scope="row" rowspan="2">
+						<p class="tit">OUR BUSINESSES</p>
+					</th>
+					<td class="dep2">
+						<p class="tit">Overview</p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url">
+						<span>./html/kor/business/CNT_K_001.html</span>
+					</td>
+					<td class="date">
+						<span></span> <!-- YYYY-MM-DD : 형식으로 입력 -->
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
+						<ul>
+							<li></li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="dep2">
+						<p class="tit">연혁</p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url">
+						<span>./html/kor/business/CNT_K_003.html</span>
+					</td>
+					<td class="date">
+						<span></span> <!-- YYYY-MM-DD : 형식으로 입력 -->
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
+						<ul>
+							<li></li>
+						</ul>
+					</td>
+				</tr>
+				<!-- //OUR BUSINESSES -->
+
+				<!-- INVESTOR RELATIONS -->
+				<tr>
+					<th class="dep1" scope="row" rowspan="2">
+						<p class="tit">INVESTOR RELATIONS</p>
+					</th>
+					<td class="dep2">
+						<p class="tit">Overview</p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url">
+						<span>./html/kor/ir/CNT_K_038.html</span>
+					</td>
+					<td class="date">
+						<span></span> <!-- YYYY-MM-DD : 형식으로 입력 -->
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
+						<ul>
+							<li></li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="dep2">
+						<p class="tit">공시정보</p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url">
+						<span>./html/kor/ir/CNT_K_039.html</span>
+					</td>
+					<td class="date">
+						<span></span> <!-- YYYY-MM-DD : 형식으로 입력 -->
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
+						<ul>
+							<li></li>
+						</ul>
+					</td>
+				</tr>
+				<!-- //INVESTOR RELATIONS -->
+
+				<!-- CORPORATE GOVERNANCE  -->
+				<tr>
+					<th class="dep1" scope="row" rowspan="2">
+						<p class="tit">CORPORATE GOVERNANCE </p>
+					</th>
+					<td class="dep2">
+						<p class="tit">Overview</p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url">
+						<span>./html/kor/corporate/CNT_K_059.html</span>
+					</td>
+					<td class="date">
+						<span></span> <!-- YYYY-MM-DD : 형식으로 입력 -->
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
+						<ul>
+							<li></li>
+						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="dep2">
+						<p class="tit">정관</p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep3">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="dep4">
+						<p class="tit"></p>
+						<p class="txt"></p>
+					</td>
+					<td class="url">
+						<span>./html/kor/corporate/CNT_K_060.html</span>
+					</td>
+					<td class="date">
+						<span></span> <!-- YYYY-MM-DD : 형식으로 입력 -->
+					</td>
+					<td class="check"></td> <!-- 완료 체크 : 복붙 "○" 참고 -->
+					<td class="txt">
+						<ul>
+							<li></li>
+						</ul>
+					</td>
+				</tr>
+				<!-- //CORPORATE GOVERNANCE -->
+
+			</tbody>
+		</table>
+		<!-- // Path -->
 	</div>
-	<div class="footer">Media4th&amp;Company</div>
+	<!-- // Path List -->
+
+	<!-- Footer -->
+	<div id="footer">Media4th&amp;Company</div>
+	<!-- // Footer -->
 </div>
-
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#sidebar .menu ul li a').click(function(){
-		var viewBox = $(this).attr('href');
-		$('.site').hide();
-		$('.site' + viewBox).show();
-	});
-	$('.menu h2 a').click(function(){
-		$('.site').show();
-	});
-
-	$('.menu ul li').each(function(){
-		if($(this).find('a').attr('href') == "#" || $(this).find("a").attr("href") == ""){
-			var index = $('.menu ul li').index($(this)[0]);
-			$(this).find('> a').attr('href','#menu' + index);
-		}
-	});
-	$('.site').each(function() {
-		var index = $('.site').index($(this)[0]);
-		$(this).attr('id','menu' + index);
-	});
-	$('.url').each(function(){
-		var link = $(this).text(),
-			str = "";
-		if(link != null && link !=""){
-			str += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a>";
-			$(this).empty().html(str);
-		}
-	});
-
-	var now=new Date();
-	var year=now.getFullYear();
-	var month=now.getMonth()+1;
-	if (month<10) {
-		month="0"+month;
-	}
-	var date=now.getDate();
-	if (date<10) {
-		date="0"+date;
-	}
-	//alert(now+': '+year+', '+month+', '+date);
-	$('.date').each(function() {
-		var $date = $('> span', this),
-			str = "";
-		str += "<strong>" + $date.filter(':last').text() + "</strong>";
-		$date.filter(':not(:last)').each(function() {
-			str += "<a data-date=\"" + $(this).text() + "\">○</a>";
-		});
-		$date.filter(':last').each(function() {
-			str += "<a data-date=\"" + $(this).text() + "\">●</a>";
-		});
-		if($date.filter(':first').text() != "") {
-			$(this).empty().html(str);
-		}
-		var chkDay=$date.filter(':last').text().split(" ");
-		var chkDay2=chkDay[0].split("-");
-		//console.log(chkDay2[0]);
-		if ((chkDay2[0]==year)&&(chkDay2[1]==month)&&(chkDay2[2]==date)) {
-			$(this).parent().addClass('today');
-		}
-	});
-	/*
-	 $('.url a').click(function(){
-  		var $active = $(this).parent().parent().parent();
-  		$('li').removeAttr('style');
-  		$active.css({"background-color":"#888","color":"#fff"});
-  		$('.url a').removeAttr('style');
-  		$(this).css("color","#fff");
-  	});
-	*/
-
-	$('li > div').hover(function(){
-		$(this).parent('li').addClass('on');
-	}, function(){
-		$(this).parent('li').removeClass('on');
-	});
-	$('.date a').live('mouseenter', function(){
-		$(this).parent().find('strong').text($(this).attr('data-date'));
-	}).live('mouseleave', function(){
-		$(this).parent().find('strong').text($(this).parent().find('a:last').attr('data-date'));
-	});
-	$('.txt li').each(function(){
-		if (!$(this).text()=="") {
-			$(this).parent().addClass('on');
-		}
-	});
-	$('.site > h2').prepend('<a class=\"exp\"><span>-</span></a>');
-	$('.site > h2 .exp').toggle(function(){
-		$(this).find('span').text('+');
-		$(this).parents('.site').addClass('off').find('.cont').hide();
-	},function(){
-		$(this).find('span').text('-');
-		$(this).parents('.site').removeClass('off').find('.cont').show();
-	});
-	$('.site').each(function(){
-		var sum=0;
-		var sumMinus=0;
-		var count=0;
-		$(this).find('.url').each(function(){
-			if ($(this).html()!="") {
-				sum++;
-			} else {
-				sumMinus++;
-			}
-		});
-		$(this).find('.date').each(function(){
-			if ($(this).find('span').html()=="") {
-				count++;
-			}
-		});
-		count=sum+sumMinus-count;
-		str = "";
-		str += "<span>"+"("+count+"/"+sum+")"+"</span>"+"<em>"+parseInt(count/sum*100)+"%"+"</em>";
-		$(this).find('h2 > span').html(str);
-	});
-	$('.total').each(function(){
-		var sum=0;
-		var sumG=0;
-		var sumMinus=0;
-		var sumMinusG=0;
-		var count=0;
-		var countG=0;
-		$('#contents').find('.url').each(function(){
-			if ($(this).html()!="") {
-				sum++;
-			} else {
-				sumMinus++;
-			}
-		});
-		$('#contents .guide').find('.url').each(function(){
-			if ($(this).html()!="") {
-				sumG++;
-			} else {
-				sumMinusG++;
-			}
-		});
-		$('#contents').find('.date').each(function(){
-			if ($(this).find('span').html()=="") {
-				count++;
-			}
-		});
-		$('#contents .guide').find('.date').each(function(){
-			if ($(this).find('span').html()=="") {
-				countG++;
-			}
-		});
-		count=(sum-sumG)+(sumMinus-sumMinusG)-(count-countG);
-		sum=(sum-sumG);
-		str = "";
-		str += "<span>"+count+"/"+sum+"pages"+"</span>"+"<em>"+"("+parseInt(count/sum*100)+"%"+")"+"</em>";
-		$(this).find('> span').html(str);
-	});
-});
-</script>
 </body>
 </html>
