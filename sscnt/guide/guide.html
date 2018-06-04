@@ -8,7 +8,7 @@
 <title>Template | Guide</title>
 <link type="text/css" rel="stylesheet" href="./inc/css/shCoreDefault.css" />
 <link type="text/css" rel="stylesheet" href="./inc/css/guide.css" />
-<script type="text/javascript" src="../inc/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script> <!-- // 경로에 주의! -->
 <script type="text/javascript" src="./inc/js/shCore.js"></script>
 <script type="text/javascript" src="./inc/js/shBrushJScript.js"></script>
 <script type="text/javascript" src="./inc/js/guideUi.js"></script>
@@ -28,7 +28,7 @@
 		<div class="section">
 			<h2 class="guideTit">[웹] 하위 브라우저 지원 범위</h2>
 			<div class="info">
-				<p>예) Internet Explorer 8 ~</p>
+				<p>Internet Explorer 9 이상</p>
 			</div>
 		</div>
 		<!-- //Section -->
@@ -70,8 +70,25 @@
 				<li>백그라운드 - <em>bg_파일명</em></li>
 				<li>아이콘 - <em>ico_파일명</em></li>
 				<li>버튼 - <em>btn_파일명</em></li>
-				<li>기호 - <em>bul_파일명</em></li>
+				<li>기호 - <em>bu_파일명</em></li>
 			</ul>
+		</div>
+		<!-- //Section -->
+
+		<!-- Section -->
+		<div class="section">
+			<h2 class="guideTit">주석 표기법</h2>
+			<div class="info">
+				<p>한줄 주석과 묶음 주석 혼용 사용</p>
+			</div>
+			<div class="code">
+<pre class="brush: js;">
+	<!-- //2018-05-30 한줄 주석 -->
+
+	<!-- 2018-05-30 묶음 주석 시작 -->
+	<!-- //2018-05-30 묶음 주석 끝 -->
+</pre>
+			</div>
 		</div>
 		<!-- //Section -->
 
@@ -116,8 +133,8 @@
 			<div class="code">
 <pre class="brush: js;">
 	<div class="btn_left">
-		<a class="btn_green" href="javascript:void(0);">닫기</a>
-		<a class="btn_green" href="javascript:void(0);">네글자이상</a>
+		<a class="btn_green" href="javascript:;">닫기</a>
+		<a class="btn_green" href="javascript:;">네글자이상</a>
 	</div>
 </pre>
 			</div>

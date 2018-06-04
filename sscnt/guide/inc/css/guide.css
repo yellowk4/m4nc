@@ -56,8 +56,8 @@ a:hover{text-decoration:none;}
 .pathList {padding:50px 15px;}
 .pathList .naviMenu {margin-bottom:20px;}
 .pathList .naviMenu > ul:after {content:"";display:block;clear:both;}
-.pathList .naviMenu > ul > li {float:left;margin-left:12px;text-align:center;}
-.pathList .naviMenu > ul > li:first-child {margin-left:0;padding-left:0;}
+.pathList .naviMenu > ul > li {float:left;margin-left:12px;padding:10px;border:1px solid #f19407;text-align:center;box-sizing: border-box;}
+.pathList .naviMenu > ul > li:first-child {margin-left:0;}
 .pathList .naviMenu .allMenu,
 .pathList .naviMenu .menu {font-size:14px;font-family:ngB;color:#000;}
 .pathList .naviMenu .menu .countWrap .progress {font-size:12px;color:#777;}
@@ -71,7 +71,7 @@ a:hover{text-decoration:none;}
 .pathList .pathTbl tbody td > .txt {margin-top:5px;color:#888;}
 .pathList .pathTbl tr.on th,
 .pathList .pathTbl tr.on td {background:#f2f2f2;}
-.pathList .pathTbl .url a {color:#009e00;}
+.pathList .pathTbl .url a {color:#3300ff; font-size: 20px;}
 .pathList .pathTbl .url a:hover {text-decoration:underline;}
 .pathList .pathTbl .dep1 {font-family:ngB;}
 .pathList .pathTbl .dep2,
