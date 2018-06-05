@@ -37,10 +37,26 @@
 *****************************************************************************************************************************************/
 
 /* 공통 컨텐츠 타이틀 */
-.contTit {color:#1a4779;font-size:2.5rem;}
-.subTit {color:#1a4779;font-size:1.8rem;}
-.smallTit {color:#222;font-size:1.7rem;}
-.blueTit {color:#2a6eb6;font-size:1.6rem;}
+.visualTit {color: #333; font-size:5rem;}
+.popTit {color:#0c4da2; font-size:3.6rem; font-weight: 700;}
+.bigTit {color: #111; font-size:2.8rem;}
+.contTit {color: #111; font-size:2.4rem; font-weight: 700;}
+.subTit {color: #111; font-size:1.8rem;}
+.contTxt {color: #666; font-size:1.6rem;}
+.hintTxt {color: #999; font-size:1.6rem;}
+.subTxt {color: #777; font-size:1.4rem;}
+
+/* 컬러 설정 */
+.color01 {color: #0c4da2;}
+.color02 {color: #0075c2;}
+.color03 {color: #ea0000;}
+.color04 {color: #f1841a;}
+
+.mcolor01 {color: #111;}
+.mcolor02 {color: #333;}
+.mcolor03 {color: #555;}
+.mcolor04 {color: #777;}
+.mcolor05 {color: #999;}
 
 /* 공통 텍스트 스타일 */
 .boldTxt {font-weight:700;}
@@ -52,8 +68,6 @@
 .viewTit {} /* 보기 타이틀 */
 .termsTit {} /* 약관 타이틀 */
 .termsSubTit {} /* 약관 서브타이틀 */
-
-/* 팝업 타이틀 */
 
 /* 필수항목 */
 .essential {}

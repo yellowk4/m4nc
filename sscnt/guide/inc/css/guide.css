@@ -105,3 +105,16 @@ a:hover{text-decoration:none;}
 .listDot > li {margin-top:10px;padding-left:10px;background:url(../images/bul_dot_small.gif) no-repeat 0 6px;}
 .listDot > li em {color:#ff0000;}
 .listDot > li:first-child {margin-top:0;}
+
+.colorList {margin-bottom:10px;}
+.colorList li {display: table-cell; width: 100px; height: 100px; vertical-align: middle; text-align: center;}
+.colorList li.color01 {background: #0c4da2;}
+.colorList li.color02 {background: #0075c2;}
+.colorList li.color03 {background: #ea0000;}
+.colorList li.color04 {background: #f1841a;}
+.colorList li.mcolor01 {background: #111;}
+.colorList li.mcolor02 {background: #333;}
+.colorList li.mcolor03 {background: #555;}
+.colorList li.mcolor04 {background: #777;}
+.colorList li.mcolor05 {background: #999;}
+.colorList li span {color: #fff !important;}
