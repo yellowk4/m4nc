@@ -274,12 +274,12 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .pageArea a[class*="btn"]:hover {border: 1px solid #ccc;}
 .pageArea a[class*="btn"] span {font-size:0;position:absolute;top:-9999px;}
 .pageArea .btnFirst {background:url('/images/front/btn/btn_page_first_mo.png') no-repeat 50% 50%;margin-left:0;background-size:11px auto;}
-.pageArea .btnPrev {background:url('/images/front/btn/btn_page_prev_mo.png') no-repeat 50% 50%;margin-right:20px;background-size:6px auto}
-.pageArea .btnNext {background:url('/images/front/btn/btn_page_next_mo.png') no-repeat 50% 50%;margin-left:20px;background-size:6px auto}
+.pageArea .btnPrev {background:url('/images/front/btn/btn_page_prev_mo.png') no-repeat 50% 50%;margin-right:2%;background-size:6px auto}
+.pageArea .btnNext {background:url('/images/front/btn/btn_page_next_mo.png') no-repeat 50% 50%;margin-left:2%;background-size:6px auto}
 .pageArea .btnLast {background:url('/images/front/btn/btn_page_last_mo.png') no-repeat 50% 50%;background-size:11px auto}
-.pageArea .btnFirst.disable {background: #ddd url('/images/front/btn/btn_page_first_mo.png') no-repeat 50% 50%;margin-left:0;background-size:11px auto;}
-.pageArea .btnPrev.disable {background: #ddd url('/images/front/btn/btn_page_prev_mo.png') no-repeat 50% 50%;margin-right:20px;background-size:6px auto}
-.pageArea .btnNext.disable {background: #ddd url('/images/front/btn/btn_page_next_mo.png') no-repeat 50% 50%;margin-left:20px;background-size:6px auto}
+.pageArea .btnFirst.disable {background: #ddd url('/images/front/btn/btn_page_first_mo.png') no-repeat 50% 50%;background-size:11px auto;}
+.pageArea .btnPrev.disable {background: #ddd url('/images/front/btn/btn_page_prev_mo.png') no-repeat 50% 50%;background-size:6px auto}
+.pageArea .btnNext.disable {background: #ddd url('/images/front/btn/btn_page_next_mo.png') no-repeat 50% 50%;background-size:6px auto}
 .pageArea .btnLast.disable {background: #ddd url('/images/front/btn/btn_page_last_mo.png') no-repeat 50% 50%;background-size:11px auto}
 
 /*****************************************************************************************************************************************
@@ -486,12 +486,12 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	기본 레이아웃 초기값 설정
 	.wrap > .header + .contentsWrap + .footer
 *****************************************************************************************************************************************/
-.wrap {position:relative;overflow:hidden;}
+.wrap {position:relative; height: 100%;} /* overflow:hidden; */
 /*******************************************************************************************
 	최상단 영역 초기값 설정
 	.header > .container > header > .logo + .topMenuWrap + .btnMenuView + .megaMenu + .utility + .searchWrap
 ********************************************************************************************/
-.header {position:relative;}
+.header {position:relative; height: 104px;}
 	.header > .container {}
 
 	.logo a {display:block;width:99px;height:17px;margin-left:15px;padding:16px 0 17px;}
@@ -556,8 +556,8 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	컨텐츠영역 초기값 설정
 	#contentsWrap > container > .conTitWrap + .moLnbWrap + .pcLnbWrap + .contents
 ********************************************************************************************/
-#contentsWrap {position:relative;background-image:url('/images/front/common/bg_contit_mo.png');background-repeat: repeat-x;background-position:0 0;background-size:auto 60px;}
-	#contentsWrap > .container {}
+#contentsWrap {position:relative;background-image:url('/images/front/common/bg_contit_mo.png');background-repeat: repeat-x;background-position:0 0;background-size:auto 60px; min-height: 100%;}
+	#contentsWrap > .container {padding: 104px 0 100px; margin: -104px auto -100px;}
 
 /* 페이지 타이틀 영역 */
 .conTitWrap h2 {display:table-cell;height:60px;padding:0 15px;font-weight:700;font-size:1.8rem;line-height:1;color:#fff;vertical-align:middle;}
@@ -588,16 +588,16 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	하단영역 초기값 설정
 	.footer > container > .footMenuWrap + .copy + .familyWrap
 ********************************************************************************************/
-.footer {position:relative;margin-top:50px;padding-bottom:30px;border-top:1px solid #e6e6e6;}
-	.footer > .container {padding:0 15px;}
+.footer {position:relative; height: 100px; background: #4f4e5a;} /* margin-top:50px; padding-bottom:30px; */
+	.footer > .container {padding:0 50px;}
 
-	.footer .footMenuWrap {margin:11px 0 24px;}
+	.footer .footMenuWrap {} /* margin:11px 0 24px; */
 	.footer .footMenuWrap:after {content:"";display:block;clear:both;height:0;visibility:hidden;}
 		.footer .footMenuWrap li {display:none;float:left;position:relative;width:50%;text-align:center;}
 		.footer .footMenuWrap li:after {content:"";display:block;clear:both;position:absolute;left:0;top:50%;width:1px;height:10px;margin-top:-5px;background:#d9d9d9;}
 		.footer .footMenuWrap li.sitemap, .footer .footMenuWrap li.contact {display:block;}
 		.footer .footMenuWrap li.contact:after {display:none;}
-		.footer .footMenuWrap li > a {display:inline-block;padding:3px 0;font-size:1.3rem;}
+		.footer .footMenuWrap li > a {display:inline-block;padding:3px 0;font-size:13px; color: #fff;}
 
 	.footer .copy {padding:0 55px;font-size:1.2rem;text-align:center;}
 
@@ -927,12 +927,12 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.contents {font-size:1.6rem;}
 
 /* 하단영역 설정 */
-.footer {margin-top:60px;}
+.footer {} /* margin-top:60px; */
 	.footer > .container {}
 
-	.footer .footMenuWrap {margin:26px 0 5px;}
+	.footer .footMenuWrap {} /* margin:30px 0 10px; */
 		.footer .footMenuWrap li {display:block;width:auto;text-align:left;}
-		.footer .footMenuWrap li:after {height:12px;margin-top:-7px;background:#777;}
+		.footer .footMenuWrap li:after {height:12px;margin-top:-7px;background:#86858e;}
 		.footer .footMenuWrap li:first-child:after {display:none;}
 		.footer .footMenuWrap li.contact:after {display:block;}
 		.footer .footMenuWrap li > a {padding-right:8px;padding-left:8px;}
@@ -1195,7 +1195,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 /* 컨텐츠 영역 설정 */
 	#contentsWrap {}
 		#contentsWrap:after {content:"";display:block;clear:both;position:absolute;top:80px;width:100%;left:0;height:39px;border-bottom:1px solid #e2e2e2;background:#f0f0f0;}
-		#contentsWrap .container {max-width:1280px;margin:0 auto;}
+		#contentsWrap .container {max-width:1280px;} /* margin:0 auto; */
 		#contentsWrap .container:after {content:"";display:block;clear:both;height:0;visibility:hidden;}
 
 	/* 페이지 타이틀 영역 */
@@ -1421,4 +1421,61 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	height: 8px;
 	border-radius: 50%;
 	background: #0c4da2;
+  }
+
+/* selectbox */
+/*the container must be positioned relative:*/
+.custom-select {
+	position: relative;
+	/* font-family: Arial; */
+  }
+  .custom-select select {
+	display: none; /*hide original SELECT element:*/
+  }
+  .select-selected {
+	background-color: #fff;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+	position: absolute;
+	content: "";
+	top: 12px;
+	right: 10px;
+	width: 13px;
+	height: 7px;
+	border: 6px solid transparent;
+	/* border-color: red transparent transparent transparent; */
+	background: url(../images/front/icon/ico_arrow_open.png) no-repeat;
+	background-size: 13px 7px;
+  }
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+	/* border-color: transparent transparent red transparent; */
+	background: url(../images/front/icon/ico_arrow_close.png) no-repeat;
+	background-size: 13px 7px;
+	top: 11px;
+  }
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+	padding: 10px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+  }
+  .select-items div {border-top: 0 none; border-bottom: 0 none;}
+  .select-items div:last-child {border-bottom: 1px solid #ddd;}
+  /*style items (options):*/
+  .select-items {
+	position: absolute;
+	background-color: #fff;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+  }
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+	display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
   }
