@@ -42,7 +42,7 @@
 	src: url(/font/SamsungOne-700.eot);
 	src: local('.'),
 		 url(/font/SamsungOne-700.eot?#iefix) format('embedded-opentype'),
-		 url(/font/SamsungOne-700.woff) format('woff'),
+		 /*url(/font/SamsungOne-700.woff) format('woff'),*/
 		 url(/font/SamsungOne-700.ttf) format('truetype');
 }
 
