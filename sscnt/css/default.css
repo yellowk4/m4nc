@@ -1,30 +1,64 @@
 @charset "utf-8";
 /*****************************************************************************************************************************************
-	나눔바른고딕 폰트 사용법 : font-weight: 400; - 레귤러 / font-weight: 700; - 볼드
+	폰트 사용법 : font-weight: 400; - 레귤러 / font-weight: 700; - 볼드
 *****************************************************************************************************************************************/
 
 @font-face {
-	font-family:'NanumBarunGothic';
+	font-family:'NanumSquare';
 	font-style: normal;
 	font-weight: 400;
-	src: url(/font/NanumBarunGothic.eot);
+	src: url(/font/NanumSquareR.eot);
 	src: local('.'),
-		 url(/font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
-		 url(/font/NanumBarunGothic.woff) format('woff'),
-		 url(/font/NanumBarunGothic.ttf) format('truetype');
+		 url(/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+		 url(/font/NanumSquareR.woff) format('woff'),
+		 url(/font/NanumSquareR.ttf) format('truetype');
 }
 @font-face {
-	font-family:'NanumBarunGothic';
+	font-family:'NanumSquare';
 	font-style: normal;
 	font-weight: 700;
-	src: url(/font/NanumBarunGothicBold.eot);
+	src: url(/font/NanumSquareB.eot);
 	src: local('.'),
-		 url(/font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
-		 url(/font/NanumBarunGothicBold.woff) format('woff'),
-		 url(/font/NanumBarunGothicBold.ttf) format('truetype');
+		 url(/font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+		 url(/font/NanumSquareB.woff) format('woff'),
+		 url(/font/NanumSquareB.ttf) format('truetype');
 }
 
-html, body {height:100%;font-family:'NanumBarunGothic', san-serif;font-weight:400;font-size:16px;color:#555;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;} /* 나눔고딕 기본값을 초기값으로 지정, 아이폰 폰트 사이즈 변환방지 설정 */
+@font-face {
+	font-family:'SamsungOne';
+	font-style: normal;
+	font-weight: 200;
+	src: url(/font/SamsungOne-200.eot);
+	src: local('.'),
+		 url(/font/SamsungOne-200.eot?#iefix) format('embedded-opentype'),
+		 url(/font/SamsungOne-200.woff) format('woff'),
+		 url(/font/SamsungOne-200.ttf) format('truetype');
+}
+
+@font-face {
+	font-family:'SamsungOne';
+	font-style: normal;
+	font-weight: 700;
+	src: url(/font/SamsungOne-700.eot);
+	src: local('.'),
+		 url(/font/SamsungOne-700.eot?#iefix) format('embedded-opentype'),
+		 url(/font/SamsungOne-700.woff) format('woff'),
+		 url(/font/SamsungOne-700.ttf) format('truetype');
+}
+
+@font-face {
+	font-family:'SamsungOne';
+	font-style: normal;
+	font-weight: 800;
+	src: url(/font/SamsungOne-800.eot);
+	src: local('.'),
+		 url(/font/SamsungOne-800.eot?#iefix) format('embedded-opentype'),
+		 url(/font/SamsungOne-800.woff) format('woff'),
+		 url(/font/SamsungOne-800.ttf) format('truetype');
+}
+
+
+html, body {height:100%;font-family:'NanumSquare', san-serif;font-weight:400;font-size:16px;color:#555;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;} /* 나눔고딕 기본값을 초기값으로 지정, 아이폰 폰트 사이즈 변환방지 설정 */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,select,input,textarea,p,blockquote,th,td,figure,figcaption {margin:0;padding:0;}
 header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption {display:block;} /* html5 태그 초기 설정 값 */
 h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;}
@@ -59,7 +93,7 @@ a[class~="btn"] {vertical-align:middle;box-sizing:border-box;-moz-box-sizing:bor
 /*****************************************************************************************************************************************
 	form 요소 절대값 정의
 *****************************************************************************************************************************************/
-button {padding:0 0;font-family:'NanumBarunGothic';font-weight:400;vertical-align:middle;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;background-color:transparent;color:#777; outline: none;}
+button {padding:0 0;font-family:'NanumSquare', san-serif;font-weight:400;vertical-align:middle;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;background-color:transparent;color:#777; outline: none;}
 	button span {box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;}
 label {display:inline-block;vertical-align:middle;}
 
@@ -73,7 +107,7 @@ input[type="text"]::-ms-clear {display:none;} /* 익스 10, 11에서 입풋창�
 ::-moz-placeholder {color:#999;}/* Mozilla Firefox 19+ */
 :-ms-input-placeholder {color:#999;}/* Internet Explorer 10-11 */
 
-.inputText, .selectText, .textArea, .inputFile {width:100%;font-size:16px;font-family:'NanumBarunGothic';font-weight:400;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;} /* 익스 9부터 적용가능, 아이폰 둥근 모서리 설정빼기 */
+.inputText, .selectText, .textArea, .inputFile {width:100%;font-size:16px;font-family:'NanumSquare', san-serif;font-weight:400;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;} /* 익스 9부터 적용가능, 아이폰 둥근 모서리 설정빼기 */
 
 /*****************************************************************************************************************************************
 	화면 정렬 절대값
