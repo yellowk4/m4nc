@@ -542,8 +542,8 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	컨텐츠영역 초기값 설정
 	#contentsWrap > container > .conTitWrap + .moLnbWrap + .pcLnbWrap + .contents
 ********************************************************************************************/
-#contentsWrap {position:relative;background-image:url('/images/front/common/bg_contit_mo.png');background-repeat: repeat-x;background-position:0 0;background-size:auto 60px; min-height: 100%;}
-	#contentsWrap > .container {padding: 104px 0 100px; margin: -104px auto -100px;}
+#contentsWrap {position:relative; min-height: 100%;}
+	#contentsWrap > .container {max-width:1200px; padding: 104px 50px 100px; margin: -104px auto -100px; box-sizing: border-box;}
 
 /* 페이지 타이틀 영역 */
 .conTitWrap h2 {display:table-cell;height:60px;padding:0 15px;font-weight:700;font-size:1.8rem;line-height:1;color:#fff;vertical-align:middle;}
@@ -575,7 +575,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.footer > container > .footMenuWrap + .copy + .familyWrap
 ********************************************************************************************/
 .footer {position:relative; height: 100px; background: #4f4e5a;}
-.footer > .container {max-width:1200px;margin:0 auto;padding:30px 50px 0; box-sizing: border-box;}
+.footer > .container {position: relative;max-width:1200px;margin:0 auto;padding:30px 50px 0; box-sizing: border-box;}
 .footer .footMenuWrap {margin-bottom: 10px;}
 .footer .footMenuWrap ul {overflow: hidden; width: 100%;}
 .footer .footMenuWrap li {float:left; position: relative;}
@@ -589,7 +589,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.familyWrap.active .btnFamily {background-position:100% 100%;}
 	.familyWrap.active .familyArea {display:block;}
 
-	.familyWrap .btnFamily{position:absolute;top:33px;right:15px;width:20%;padding:11px 30px 7px 10px;border:1px solid #ddd;background:url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:1.2rem;color:#666;line-height:1;text-align:left;}
+	.familyWrap .btnFamily{position:absolute;top:33px;right:50px;width:20%;padding:11px 30px 7px 10px;border:1px solid #ddd;background:url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:1.2rem;color:#666;line-height:1;text-align:left;}
 
 	.familyWrap .familyArea {display:none;position:absolute;right:0;bottom:100%;z-index:150;margin:0 4px 0 6px;}
 	.familyArea .container {display:table;width:100%;table-layout:fixed;border:1px solid #d9d9d9;background-color:#fff;box-sizing:border-box;}
