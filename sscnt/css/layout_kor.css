@@ -449,7 +449,6 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 
 /*****************************************************************************************************************************************
 	common Layout - 공통적용되는 스타일은 작업하시면 안됩니다.
-
 	폰트사이즈 정의 - rem : 최상위 폰트정의 값에 상속 (사파리5+, 크롬, 파이어폭스 3.6+, 익스플로러9+) / em, % : 설정한 부모 폰트 사이즈에 상속
 	8px == 0.8rem, 0.8em, 80%
 	9px == 0.9rem, 0.9em, 90%
@@ -462,13 +461,11 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	16px == 1.6rem, 1.6em, 160%
 	17px == 1.7rem, 1.7em, 170%
 	18px == 1.8rem, 1.8em, 180%
-
 	화면 정렬 절대값
 	- 화면을 12개로 나누어 작업합니다.
 	- 열(row) 단위로 박스구성을 하며, 12개 조각으로 작업합니다.
 	- 모바일 최소사이즈(360px)는 대략 4개이고 테블릿 최소사이즈(768px)은 9개, 테블릿 최대 사이즈와 PC 컨텐츠 최소사이즈(1024px)는 12개 입니다.
 	- PC 최대사이즈는 1920px 이며, 컨텐츠는 7개가 추가되어 작업됩니다.
-
 	기본 레이아웃 초기값 설정
 	.wrap > .header + .contentsWrap + .footer
 *****************************************************************************************************************************************/
@@ -575,7 +572,11 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.footer > container > .footMenuWrap + .copy + .familyWrap
 ********************************************************************************************/
 .footer {position:relative; height: 100px; background: #4f4e5a;}
+<<<<<<< HEAD
 .footer > .container {position: relative;max-width:1200px;margin:0 auto;padding:30px 50px 0; box-sizing: border-box;}
+=======
+.footer > .container {max-width:1200px;margin:0 auto;padding:30px 50px 0; box-sizing: border-box;}
+>>>>>>> ami
 .footer .footMenuWrap {margin-bottom: 10px;}
 .footer .footMenuWrap ul {overflow: hidden; width: 100%;}
 .footer .footMenuWrap li {float:left; position: relative;}
@@ -589,7 +590,11 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.familyWrap.active .btnFamily {background-position:100% 100%;}
 	.familyWrap.active .familyArea {display:block;}
 
+<<<<<<< HEAD
 	.familyWrap .btnFamily{position:absolute;top:33px;right:50px;width:20%;padding:11px 30px 7px 10px;border:1px solid #ddd;background:url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:1.2rem;color:#666;line-height:1;text-align:left;}
+=======
+	.familyWrap .btnFamily{position:absolute;top:33px;right:15px;width:20%;padding:11px 30px 7px 10px;border:1px solid #ddd;background:url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:1.2rem;color:#666;line-height:1;text-align:left;}
+>>>>>>> ami
 
 	.familyWrap .familyArea {display:none;position:absolute;right:0;bottom:100%;z-index:150;margin:0 4px 0 6px;}
 	.familyArea .container {display:table;width:100%;table-layout:fixed;border:1px solid #d9d9d9;background-color:#fff;box-sizing:border-box;}

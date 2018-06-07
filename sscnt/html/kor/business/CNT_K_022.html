@@ -7,7 +7,7 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <link type="text/css" rel="stylesheet" href="/css/default.css" />
 <link type="text/css" rel="stylesheet" href="/css/layout_kor.css" />
-<link type="text/css" rel="stylesheet" href="/css/corporate.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
+<link type="text/css" rel="stylesheet" href="/css/business.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="/js/common.js"></script>
@@ -17,11 +17,7 @@
 <![endif]-->
 <body>
 <div id="skipnavi">
-<<<<<<< HEAD
-	<a href="#contentsWrap">본문 바로가기  </a>
-=======
 	<a href="#contentsWrap">본문 바로가기 go</a>
->>>>>>> af04636f0b597d1bbee0c70af5d3b518458cc93c
 </div>
 <div class="wrap">
 	<div class="header">
@@ -234,11 +230,29 @@
 				PC 메뉴 영역
 			</div>
 
-			<div id="CT-PCK-020" class="contents"> <!-- 페이지별 ID -->
-
-				페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-				<br /><br />
-
+			<div id="CNT_K_022" class="contents"> <!-- 페이지별 ID -->
+                <div class="initTab item7"> <!-- 탭 갯수에 따라 item 갯수 입력 -->
+                    <div class="tabCtrlWrap on"> <!-- current 클래스 있을 시 추가 -->
+                        <a href="javascript:;" class="tabCtrl current">전체</a>
+                        <a href="javascript:;" class="tabCtrl">지배구조</a>
+                        <a href="javascript:;" class="tabCtrl">인권/노동</a>
+                        <a href="javascript:;" class="tabCtrl">환경</a>
+                        <a href="javascript:;" class="tabCtrl">공정운영관행</a>
+                        <a href="javascript:;" class="tabCtrl">소비자이슈</a>
+                        <a href="javascript:;" class="tabCtrl">지역사회</a>
+                    </div>
+                
+                    <div class="tabViewWrap">
+                        <div class="tabView"></div>
+                        <div class="tabView" style="display: none;"></div>
+                        <div class="tabView" style="display: none;"></div>
+                        <div class="tabView" style="display: none;"></div>
+                        <div class="tabView" style="display: none;"></div>
+                        <div class="tabView" style="display: none;"></div>
+                        <div class="tabView" style="display: none;"></div>
+                        <div class="tabView" style="display: none;"></div>
+                    </div>
+                </div>
 			</div> <!-- // contents -->
 		</div>
 	</div> <!-- // contentsWrap -->
@@ -253,8 +267,8 @@
 						<li><a href="#none">Legal Notice</a></li>
 						<li><a href="#none">개인정보 취급방침</a></li>
                         <li class="ethic-manage">
-							<a href="#none" class="btnEthic">윤리경영</a>
-							<div class="ethicArea">
+                            <button type="button" class="btnEthic">윤리경영</button>
+                            <div class="ethicArea">
                                 <div class="container">
                                     <dl class="corp">
                                         <dt>윤리경영 사이트</dt>
@@ -271,12 +285,14 @@
                                 </div>
                             </div>
                         </li>
-						<li class="contact"><a href="#none">CONTACT US</a></li>
+						<li class="contact"><a href="#none">CONTACT US</a></li>  <!-- 2016-04-01 대문자로 수정-->
 						<li class="sitemap"><a href="#none">Sitemap</a></li>
 					</ul>
 				</div>
 
-				<p class="copy">Copyright (C) 2018 Samsung C&amp;T Corporation. All rights reserved</p>
+				<p class="copy">
+					<small>Copyright (C) 2018 Samsung C&amp;T Corporation. All rights reserved</small>
+				</p>
 
 				<div class="familyWrap"> <!-- .btnFamily 버튼 클릭시 다중클래스 active 추가 -->
 					<section>
