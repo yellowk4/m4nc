@@ -23,21 +23,8 @@
 		 url(/font/NanumBarunGothicBold.woff) format('woff'),
 		 url(/font/NanumBarunGothicBold.ttf) format('truetype');
 }
-/*****************************************************************************************************************************************
-	폰트사이즈 정의 - rem : 최상위 폰트정의 값에 상속 (사파리5+, 크롬, 파이어폭스 3.6+, 익스플로러9+) / em, % : 설정한 부모 폰트 사이즈에 상속
-	8px == 0.8rem, 0.8em, 80%
-	9px == 0.9rem, 0.9em, 90%
-	10px == 1rem, 1em, 100% : 기본 사이즈 설정 값
-	11px == 1.1rem, 1.1em, 110%
-	12px == 1.2rem, 1.2em, 120%
-	13px == 1.3rem, 1.3em, 130%
-	14px == 1.4rem, 1.4em, 140%
-	15px == 1.5rem, 1.5em, 150%
-	16px == 1.6rem, 1.6em, 160%
-	17px == 1.7rem, 1.7em, 170%
-	18px == 1.8rem, 1.8em, 180%
-*****************************************************************************************************************************************/
-html, body {height:100%;font-family:'NanumBarunGothic', san-serif;font-weight:400;font-size:10px;color:#555;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;} /* 나눔고딕 기본값을 초기값으로 지정, 아이폰 폰트 사이즈 변환방지 설정 */
+
+html, body {height:100%;font-family:'NanumBarunGothic', san-serif;font-weight:400;font-size:16px;color:#555;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;} /* 나눔고딕 기본값을 초기값으로 지정, 아이폰 폰트 사이즈 변환방지 설정 */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,select,input,textarea,p,blockquote,th,td,figure,figcaption {margin:0;padding:0;}
 header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption {display:block;} /* html5 태그 초기 설정 값 */
 h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;}
@@ -72,7 +59,7 @@ a[class~="btn"] {vertical-align:middle;box-sizing:border-box;-moz-box-sizing:bor
 /*****************************************************************************************************************************************
 	form 요소 절대값 정의
 *****************************************************************************************************************************************/
-button {padding:0 0;font-family:'NanumBarunGothic';font-weight:400;vertical-align:middle;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;background-color:transparent;color:#777;}
+button {padding:0 0;font-family:'NanumBarunGothic';font-weight:400;vertical-align:middle;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;background-color:transparent;color:#777; outline: none;}
 	button span {box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;}
 label {display:inline-block;vertical-align:middle;}
 
@@ -81,12 +68,12 @@ select[readonly='readonly'], input[readonly='readonly'], .readonly {background-c
 input[type="text"]::-ms-clear {display:none;} /* 익스 10, 11에서 입풋창에 생성되는 텍스트 삭제 버튼제어 */
 
 /* placeholder color 적용 */
-::-webkit-input-placeholder {color:#aaa;}/* WebKit, Blink, Edge */
-:-moz-placeholder {color:#aaa;} /* Mozilla Firefox 4 to 18 */
-::-moz-placeholder {color:#aaa;}/* Mozilla Firefox 19+ */
-:-ms-input-placeholder {color:#aaa;}/* Internet Explorer 10-11 */
+::-webkit-input-placeholder {color:#999;}/* WebKit, Blink, Edge */
+:-moz-placeholder {color:#999;} /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder {color:#999;}/* Mozilla Firefox 19+ */
+:-ms-input-placeholder {color:#999;}/* Internet Explorer 10-11 */
 
-.inputText, .selectText, .textArea, .inputFile {width:100%;font-size:1.6rem;font-family:'NanumBarunGothic';font-weight:400;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;} /* 익스 9부터 적용가능, 아이폰 둥근 모서리 설정빼기 */
+.inputText, .selectText, .textArea, .inputFile {width:100%;font-size:16px;font-family:'NanumBarunGothic';font-weight:400;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;} /* 익스 9부터 적용가능, 아이폰 둥근 모서리 설정빼기 */
 
 /*****************************************************************************************************************************************
 	화면 정렬 절대값
