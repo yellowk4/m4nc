@@ -243,18 +243,19 @@
 						<style>
 							.accordion {color: #444; cursor: pointer; padding: 42px 29px; width: 100%; border: none; border-top: 1px solid #d9d9d9; text-align: left; outline: none; font-size: 24px; transition: 0.4s; } 
 							.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;} 
-							.accordion:after { content: '\002B'; color: #777; float: right; font-weight: 400; margin-left: 5px; font-size: 30px; line-height: 1;} 
-							.active:after { content: "\2212"; font-size: 30px; line-height: 1; color: #0c4da2;}
+							.accordion:after { content: ''; display: block; width: 26px; height: 26px; float: right; background: url(/images/front/contents/open_CNT_K-048.png) no-repeat center;} 
+							.active:after { content: ""; background-image: url(/images/front/contents/close_CNT_K-048.png)}
 							.panel { padding: 0 29px; background-color: #fbfbfb; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;} 
 							.panel p {padding: 50px 0;}
 							.yearPlanDiv .planBu{padding-left: 16px; line-height: 30px; background: url(/images/front/contents/bu_CNT_K-048.jpg) no-repeat left 12px; box-sizing: border-box;}
 							.yearPlanDiv{clear: both; overflow: hidden; padding: 29px 0; border-bottom: 1px dashed #cbcbcb;}
 							.yearPlanDiv div{float: left; width: 50%;}
+							.yearPlanDiv.last{border-bottom: 0;}
 							.planBtn{text-align: right;}
 						</style>
 		
 						<button class="accordion active">2018년</button> <!-- "active" 클래스명 사용시 초기 아코디언 열림 -->
-						<div class="yearPlan panel" style="min-height: 350px;">
+						<div class="yearPlan panel">
 							<div class="yearPlanDiv">
 								<div class="planBu">
 									<strong class="subTit">2018년 04월 25일</strong><span class="upComing type1">Upcoming</span><br/>
@@ -274,7 +275,7 @@
 									<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
 								</div>
 							</div>
-							<div class="yearPlanDiv">
+							<div class="yearPlanDiv last">
 								<div class="planBu">
 									<strong class="subTit">2018년 01월 08일</strong><br/>
 									3개년(2017~2019년) 배당정책 발표
@@ -286,13 +287,15 @@
 						</div>
 						<button class="accordion">2017년</button>
 						<div class="yearPlan panel">
-							<div class="planBu">
-								<strong class="subTit">2018년 04월 25일</strong><span class="upComing">Upcoming</span><br/>
-								2018년 1분기 실적발표
-							</div>
-							<div class="planBtn">
-								<button class="fillBtn small"><span class="icoDownload"></span>자세히 보기</button>
-								<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
+							<div class="yearPlanDiv last">
+								<div class="planBu">
+									<strong class="subTit">2018년 04월 25일</strong><span class="upComing">Upcoming</span><br/>
+									2018년 1분기 실적발표
+								</div>
+								<div class="planBtn">
+									<button class="fillBtn small"><span class="icoDownload"></span>자세히 보기</button>
+									<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
+								</div>
 							</div>
 						</div>
 						
