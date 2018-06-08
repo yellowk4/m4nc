@@ -1,12 +1,14 @@
 @charset "utf-8";
 
+.contents {padding:30px 0 0 0}
+.text-hidden {overflow:hidden !important; clip:rect(1px, 1px, 1px, 1px) !important; position:absolute !important; width:1px !important; height:1px !important;}
 
 /* 사업영역 > 건설부문 */
+#CNT_K_008 {margin-bottom:80px;}
 .businessIntro {width:100%; overflow:hidden; margin-bottom:10px;}
 .businessIntro .bigTit {margin-bottom:40px;}
 .businessIntro p {margin-bottom:30px;}
-
-.constructionBnr {width:100%; overflow:hidden; margin-bottom:80px;}
+.constructionBnr {width:100%; overflow:hidden;}
 .constructionBnr ul li {float:left; width:353px; height:260px; overflow:hidden; text-align:center; padding-top:30px; color:#fff;}
 .constructionBnr ul li .title {display:inline-block; font-size:28px; padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #fff;}
 .constructionBnr ul li.titleBnr {width:100%; height:380px; overflow:hidden; background:url('/images/front/contents/bg_constructionBnr01.jpg') no-repeat left top; margin-bottom:20px; position:relative; text-align:left; padding:0;}
@@ -18,4 +20,53 @@
 .constructionBnr ul li.type02 {background:url('/images/front/contents/bg_constructionBnr03.jpg') no-repeat; margin:0 20px;}
 .constructionBnr ul li.type03 {background:url('/images/front/contents/bg_constructionBnr04.jpg') no-repeat;}
 
-/* 뉴스 */
+/* 뉴스 > 리스트 */
+#CNT_K_022 {margin-bottom:80px;}
+#CNT_K_022 .boardSelect {display:none;}
+#CNT_K_022 .tabCtrlWrap {margin-bottom:60px;}
+#CNT_K_022 .tabView {width:100%; overflow:hidden; margin-bottom:10px;}
+#CNT_K_022 .tabView ul li {width:100%; overflow:hidden; padding-bottom:30px; border-bottom:1px solid #d9d9d9; margin-bottom:30px}
+#CNT_K_022 .tabView ul li:last-child {border-color:#777777;}
+#CNT_K_022 .tabView ul li .thum {float:left; width:327px; height:200px; overflow:hidden; margin-right:40px;}
+#CNT_K_022 .tabView ul li .thum img {width:100%;} 
+#CNT_K_022 .tabView ul li .text {float:left; width:733px; height:200px; overflow:hidden; padding:35px 0; box-sizing:border-box;}
+#CNT_K_022 .tabView ul li .text .title {display:block; margin-bottom:20px; overflow:hidden; line-height:22px;}
+#CNT_K_022 .tabView ul li .text .title .boardTit {float:left; width:645px; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap: break-word; white-space: nowrap; color:#000}
+#CNT_K_022 .tabView ul li .partIcon01 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4b99ba; color:#4b99ba; text-align:center; font-size:13px; margin-right:5px;}
+#CNT_K_022 .tabView ul li .partIcon02 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4179d0; color:#4179d0; text-align:center; font-size:13px; margin-right:5px;}
+#CNT_K_022 .tabView ul li .partIcon03 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #93b615; color:#93b615; text-align:center; font-size:13px; margin-right:5px;}
+#CNT_K_022 .tabView ul li .partIcon04 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #765e93; color:#765e93; text-align:center; font-size:13px; margin-right:5px;}
+#CNT_K_022 .tabView ul li .partIcon05 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #f1751a; color:#f1751a; text-align:center; font-size:13px; margin-right:5px;}
+#CNT_K_022 .tabView ul li .partIcon06 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #b65515; color:#b65515; text-align:center; font-size:13px; margin-right:5px;}
+#CNT_K_022 .tabView ul li .text .textCont {line-height:26px; margin-bottom:20px;}
+#CNT_K_022 .tabView ul li .date {font-size:14px; color:#777777;}
+
+/* 뉴스 > 글보기 */
+#CNT_K_023 {margin-bottom:80px;}
+#CNT_K_023 .boardSelect {display:none;}
+
+
+@media screen and (max-width:1200px) {
+/* 뉴스 > 리스트 */
+#CNT_K_022 .tabView ul li .thum {width:30%; height:auto; margin-right:3%;}
+#CNT_K_022 .tabView ul li .text {width:67%; height:auto; padding:0;}
+#CNT_K_022 .tabView ul li .text .title .boardTit {width:calc(100% - 90px);}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:812px) {
+/* 뉴스 > 리스트 */
+#CNT_K_022 .tabCtrlWrap{display:none;}
+#CNT_K_022 .boardSelect {display:block;}
+#CNT_K_022 .boardSelect .selectTab .select button {border-radius:0; font-size:16px; border:2px solid #0c4da2; color:#0c4da2; font-weight:600; background:url('/images/front/icon/ico_board_arrow_open.png') no-repeat 97% center; background-size:20px}
+#CNT_K_022 .boardSelect .selectTab.active ul {border:2px solid #0c4da2; border-top:0;}
+#CNT_K_022 .boardSelect .selectTab ul li a {font-size:14px;}
+#CNT_K_022 .tabView ul li {padding-bottom:20px; border-bottom:1px solid #d9d9d9; margin-bottom:20px}
+#CNT_K_022 .tabView ul li .thum {float:none; width:100%; height:auto; margin:0 0 20px 0;}
+#CNT_K_022 .tabView ul li .text {float:none; width:100%; height:auto; padding:0;}
+#CNT_K_022 .tabView ul li .text .title {margin-bottom:10px;}
+#CNT_K_022 .tabView ul li .text .textCont {line-height:20px; font-size:14px; margin-bottom:10px;}
+#CNT_K_022 .tabView ul li .text .title .boardTit {display:block; width:100%; margin-top:8px;font-size:18px;}
+
+}
