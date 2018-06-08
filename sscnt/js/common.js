@@ -2,6 +2,15 @@ window.requestAnimatedFrame=function(){return window.requestAnimationFrame||wind
 
 function trace(){ try{ var args = [].join.call(arguments, ' '); console.log( "ui: "+args );}catch(e){ }  }
 
+var Utils = {
+	getMediaQuery: function(type){
+		return {
+			gnb: window.matchMedia("all and (max-width:1024px)"),
+		}[type];
+	}
+}
+
+
 var conApp = conApp || {},
 	gnbApp = gnbApp || {},
 	lnbApp = lnbApp || {},
@@ -465,39 +474,32 @@ mainApp.event = function(){
 
 // 메뉴
 gnbApp.event = function (){
+	$("#contentsWrap").hide();
+	$(".footer").hide();
+
+	gnbApp.$header = conApp.$wrap.find(".header");
 	gnbApp.$megaMenu = conApp.$wrap.find(".megaMenu");
 	gnbApp.$megaMenuContainer = gnbApp.$megaMenu.find(".container");
-	gnbApp.$megaMenuWrap = gnbApp.$megaMenuContainer.find(".menuWrap");
 	
 	gnbApp.$megaMenuShowBtn = conApp.$wrap.find(".btnMenuView");
 	gnbApp.$megaMenuHideBtn = gnbApp.$megaMenu.find(".btnMenuClose");
-	gnbApp.$megaMenuDepth = gnbApp.$megaMenu.find(".depth01>li>a");
-	gnbApp.$megaMenuDepth02 = gnbApp.$megaMenu.find(".depth02>li>a");
-	gnbApp.$megaMenuCloseBtn = gnbApp.$megaMenu.find(".btnGnbClose");
+	gnbApp.$megaMenuDepth = gnbApp.$megaMenu.find(".depth01 > li");
+	gnbApp.$megaMenuDepth02 = gnbApp.$megaMenu.find(".depth02 > li");
 	
 	gnbApp.$megaMenuShowEvent = function(e){
 		$("body").css("overflow-y","hidden");
-		gnbApp.$megaMenu.addClass("mobile");
-		
-		gnbApp.$megaMenu.addClass("active").show();
-		gnbApp.$megaMenu.find(".depth01>li.active").removeClass("active");
-		gnbApp.$megaMenu.find(".depth01>li:first").addClass("active");
-		//gnbApp.$megaMenu.find(".depth02>li.active").removeClass("active");
-		
+		gnbApp.$megaMenu.addClass("active");
 		TweenMax.set( gnbApp.$megaMenuContainer,{x:gnbApp.$megaMenuContainer.width(),force3D:true});
-		TweenMax.to( gnbApp.$megaMenuContainer, .5, { x:0 });
+		TweenMax.to( gnbApp.$megaMenuContainer, .5, { x:0, ease:Power1.easeOut });
 		
-		//gnbApp.$megaMenuDepth02.off("mouseenter",depth02);
-		//$("body").off("mouseenter",gnbApp.$megaMenuDepth02,depth02);
 	}
 	
 	gnbApp.$megaMenuHideEvent = function(e){
-		
 		TweenMax.to( gnbApp.$megaMenuContainer, .5, { 
 			x:gnbApp.$megaMenuContainer.width(),
 			onComplete:function(){
 				gnbApp.$megaMenuContainer.removeAttr("style");
-				gnbApp.$megaMenu.removeClass("active").hide();
+				gnbApp.$megaMenu.removeClass("active");
 				gnbApp.$megaMenu.find(".depth01>li.active").removeClass("active");
 				$("body").css("overflow","auto");
 			}
@@ -506,36 +508,74 @@ gnbApp.event = function (){
 		gnbApp.$megaMenu.removeClass("mobile");
 	}
 
-	gnbApp.$megaMenuClickEvent = function(e){
-		var $this = $(this);
-		var $prt = $this.parent();
-		
-		if($prt.hasClass("active")) return;
-		$prt.addClass("active");
-		$prt.siblings("li").removeClass("active");
+	gnbApp.$megaMenuClickEvent01 = function(e){
+		if(!$(this).hasClass("active")){
+			$(this).addClass("active").siblings().removeClass("active").find(".depth02 li").removeClass("active");
+		} else {
+			$(this).removeClass("active").find(".depth02 li").removeClass("active");
+		}
 	}
-	
-	gnbApp.$megaMenuOverEvent = function(e){
-		if(gnbApp.$megaMenu.hasClass("mobile")) return;
-		
-		var $this = $(this);
-		var $prt = $this.parent();
-		
-		if($this.hasClass("depth")) $prt.addClass("active");
-		$prt.siblings("li.active").removeClass("active");
-	}
-	
-	gnbApp.$megaMenuCloseEvent = function(e){
-		gnbApp.$megaMenu.find(".depth01>li.active").removeClass("active");
-	}
-	
 
-	gnbApp.$megaMenuShowBtn.on("click",gnbApp.$megaMenuShowEvent);
-	gnbApp.$megaMenuHideBtn.on("click",gnbApp.$megaMenuHideEvent);
-	gnbApp.$megaMenuDepth.on("click",gnbApp.$megaMenuClickEvent);
-	gnbApp.$megaMenuDepth02.on("mouseenter click",gnbApp.$megaMenuOverEvent);
-	gnbApp.$megaMenuCloseBtn.on("click",gnbApp.$megaMenuCloseEvent);
-	//gnbApp.$megaMenuDepthBtn03.on("mouseenter",gnbApp.$megaMenuOverEvent);
+	gnbApp.$megaMenuClickEvent02 = function(e){
+		if(!$(this).hasClass("active")){
+			$(this).addClass("active").siblings().removeClass("active")
+		} else {
+			$(this).removeClass("active");
+		}
+		e.stopPropagation();		
+	}
+
+	gnbApp.$megaMenuOverEvent01 = function(e){
+		gnbApp.$megaMenu.addClass("active");
+		$(this).addClass("active").siblings().removeClass("active").find(".depth02 li").removeClass("active")
+	}
+	gnbApp.$megaMenuOverEvent02 = function(e){
+		$(this).addClass("active").siblings().removeClass("active");
+		e.stopPropagation();	
+	}
+
+	gnbApp.$headerMouseLeaveHideEvent = function(){
+		gnbApp.$megaMenu.removeClass("active").find("li").removeClass("active");
+	}
+		
+	var mq = Utils.getMediaQuery('gnb');
+
+	mq.matches ? matched() : unMatched();
+
+	mq.addListener(function(mql){
+		mql.matches ? matched() : unMatched();
+	})
+
+	function matched(){
+		console.log('Mathced ! isNotPC');
+
+		gnbApp.$megaMenuDepth.off("mouseenter");
+		gnbApp.$megaMenuDepth02.off("mouseenter");
+		gnbApp.$header.off("mouseleave");
+
+		gnbApp.$megaMenuShowBtn.on("click",gnbApp.$megaMenuShowEvent);
+		gnbApp.$megaMenuHideBtn.on("click",gnbApp.$megaMenuHideEvent);
+		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
+		gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
+
+		
+	};
+
+	function unMatched(){
+		console.log('unMathced ! isPC')
+
+		gnbApp.$megaMenuShowBtn.off("click");
+		gnbApp.$megaMenuHideBtn.off("click");
+		gnbApp.$megaMenuDepth.off("click");
+		gnbApp.$megaMenuDepth02.off("click");
+
+		gnbApp.$megaMenuDepth.on("mouseenter", gnbApp.$megaMenuOverEvent01);
+		gnbApp.$megaMenuDepth02.on("mouseenter", gnbApp.$megaMenuOverEvent02);
+		gnbApp.$header.on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
+
+		gnbApp.$header.trigger("mouseleave")
+	}
+
 }
 
 
