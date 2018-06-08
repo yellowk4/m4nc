@@ -487,6 +487,7 @@ gnbApp.event = function (){
 	gnbApp.$megaMenuShowEvent = function(e){
 		$("body").css("overflow-y","hidden");
 		gnbApp.$megaMenu.addClass("active");
+		gnbApp.$megaMenuDepth.eq(0).addClass("active");
 		TweenMax.set( gnbApp.$megaMenuContainer,{x:gnbApp.$megaMenuContainer.width(),force3D:true});
 		TweenMax.to( gnbApp.$megaMenuContainer, .5, { x:0, ease:Power1.easeOut });
 		
