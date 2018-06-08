@@ -572,11 +572,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.footer > container > .footMenuWrap + .copy + .familyWrap
 ********************************************************************************************/
 .footer {position:relative; height: 100px; background: #4f4e5a;}
-<<<<<<< HEAD
 .footer > .container {position: relative;max-width:1200px;margin:0 auto;padding:30px 50px 0; box-sizing: border-box;}
-=======
-.footer > .container {max-width:1200px;margin:0 auto;padding:30px 50px 0; box-sizing: border-box;}
->>>>>>> ami
 .footer .footMenuWrap {margin-bottom: 10px;}
 .footer .footMenuWrap ul {overflow: hidden; width: 100%;}
 .footer .footMenuWrap li {float:left; position: relative;}
@@ -590,11 +586,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.familyWrap.active .btnFamily {background-position:100% 100%;}
 	.familyWrap.active .familyArea {display:block;}
 
-<<<<<<< HEAD
 	.familyWrap .btnFamily{position:absolute;top:33px;right:50px;width:20%;padding:11px 30px 7px 10px;border:1px solid #ddd;background:url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:1.2rem;color:#666;line-height:1;text-align:left;}
-=======
-	.familyWrap .btnFamily{position:absolute;top:33px;right:15px;width:20%;padding:11px 30px 7px 10px;border:1px solid #ddd;background:url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:1.2rem;color:#666;line-height:1;text-align:left;}
->>>>>>> ami
 
 	.familyWrap .familyArea {display:none;position:absolute;right:0;bottom:100%;z-index:150;margin:0 4px 0 6px;}
 	.familyArea .container {display:table;width:100%;table-layout:fixed;border:1px solid #d9d9d9;background-color:#fff;box-sizing:border-box;}
