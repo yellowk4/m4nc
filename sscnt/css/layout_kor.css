@@ -1021,6 +1021,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.menuWrap .depth01 > li:after {content:none;display:none;}
 	.menuWrap .depth01 > li.active:after {content:none;display:none;}
 	.menuWrap .depth01 > li.active > a {background-image:url('/images/front/icon/ico_megaactive_mo.png');color:#111;}
+	.menuWrap .depth01 > li.active:before {content:none;display:none;}
 	.menuWrap .depth01 > li.gnb01,.menuWrap .depth01 > li.gnb02,.menuWrap .depth01 > li.gnb03 {width:100%;}
 	.menuWrap .depthWrap {display:none;position:relative;}
 	.megaMenu.active .depthWrap {display:none;}
