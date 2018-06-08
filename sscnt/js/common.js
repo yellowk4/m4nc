@@ -474,8 +474,6 @@ mainApp.event = function(){
 
 // 메뉴
 gnbApp.event = function (){
-	$("#contentsWrap").hide();
-	$(".footer").hide();
 
 	gnbApp.$header = conApp.$wrap.find(".header");
 	gnbApp.$megaMenu = conApp.$wrap.find(".megaMenu");
