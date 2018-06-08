@@ -474,7 +474,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	최상단 영역 초기값 설정
 	.header > header > .logo + .topMenuWrap + .btnMenuView + .megaMenu + .utility
 ********************************************************************************************/
-.header {min-height:104px;background:#fff;box-sizing:border-box;}
+.header {position:relative;z-index:200;min-height:104px;background:#fff;box-sizing:border-box;}
 .header:before {content:"";display:block;clear:both;position:absolute;left:0;top:0;width:100%;height:30px;background:#15397b;}
 .header:after {content:"";display:block;clear:both;position:absolute;right:0;top:0;width:33%;height:30px;background:#0075c2;z-index:1;}
 .header > header {max-width:1200px;margin:0 auto;padding:0 50px;box-sizing:border-box;}
@@ -496,7 +496,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .header .btnMenuView {display:none;}
 
 /* 유틸 메뉴 */
-.utility {position:relative;float:right;margin:21px 0 0;text-align:right;}
+.utility {position:relative;float:right;margin:22px 0 0;text-align:right;}
 .utility ul {}
 .utility ul:after {content:"";display:block;clear:both;height:0;visibility:hidden;}
 .utility li {float:left;}
@@ -516,24 +516,25 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .megaMenu a {display:block;line-height:1.4;font-size:16px;font-weight:700;word-wrap:break-word;}
 .megaMenu .btnMenuClose {display:none;}
 
-.menuWrap {position:relative;margin:0 22% 0 19%;}
+.menuWrap {position:relative;margin:0 20%;}
 .menuWrap nav {}
 .menuWrap ul:after {content:"";display:block;clear:both;height:0;visibility:hidden;}
 .menuWrap .depth01 {}
 .menuWrap .depth01 > li {position:relative;float:left;}
 .menuWrap .depth01 > li:after {content:"";display:block;clear:both;position:absolute;top:74px;width:1px;height:1000%;background:#ddd;}
 .menuWrap .depth01 > li:first-child:after {display:none;}
-.menuWrap .depth01 > li > a {box-sizing:border-box;height:74px;padding:25px 0;text-align:center;letter-spacing:-0.015em;font-family:'SamsungOne', sans-serif;font-size:17px;color:#111;}
+.menuWrap .depth01 > li > a {box-sizing:border-box;height:74px;padding:25px 0;text-align:center;letter-spacing:-0.02em;font-family:'SamsungOne', sans-serif;font-size:17px;line-height:1.3;color:#111;}
 .menuWrap .depth01 > li.active {}
 .menuWrap .depth01 > li.active:after {width:100%;background:#fff;}
 .menuWrap .depth01 > li.active:first-child:after {display:block;}
+.menuWrap .depth01 > li.active:before {content:"";display:block;clear:both;position:absolute;top:70px;left:50%;z-index:1;width:80%;height:4px;margin-left:-40%;background:#0075c2;}
 .menuWrap .depth01 > li.active > a {color:#0075c2;}
 .menuWrap .depth01 > li.gnb01 {width:27%;}
 .menuWrap .depth01 > li.gnb02 {width:33%;}
 .menuWrap .depth01 > li.gnb03 {width:40%;}
 .menuWrap .depthWrap {position:absolute;left:0;z-index:100;width:100%;height:auto;}
 .megaMenu.active .depthWrap {display:block;}
-.depthWrap .depth02 {padding:0 15px;}	
+.depthWrap .depth02 {padding:30px 15px 0;}	
 .depthWrap .depth02 li {position:relative;}	
 .depthWrap .depth02 > li > a {position:relative;padding:5px 17px 5px 0;color:#333;}
 .depthWrap .depth02 > li > a:hover {color:#0075c2;}
@@ -931,7 +932,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 @media screen and (max-width:1024px) {
 
 	/* 최상단 영역 */
-	.header {position:fixed;width:100%;height:40px;min-height:auto;z-index:200;}
+	.header {position:fixed;width:100%;height:40px;min-height:auto;}
 	.header:before,.header:after {display:none;}
 	.header header {max-width:none;margin:0;padding:0;}
 		
@@ -980,7 +981,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.menuWrap .depth01 > li.gnb01,.menuWrap .depth01 > li.gnb02,.menuWrap .depth01 > li.gnb03 {width:100%;}
 	.menuWrap .depthWrap {display:none;position:relative;}
 	.megaMenu.active .depthWrap {display:none;}
-	.menuWrap .active .depthWrap {display:block;}
+	.menuWrap li.active .depthWrap {display:block;}
 	.depthWrap .depth02 {padding:0;}	
 	.depthWrap .depth02 li {border-top:1px solid #d9d9d9;}	
 	.depthWrap .depth02 > li:before {content:"";display:block;clear:both;width:100%;height:1px;background:#fff;}
