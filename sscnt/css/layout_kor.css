@@ -1035,6 +1035,10 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	
 	}
 /* 미디어퀴리 */
+@media screen and (max-width:1200px) {
+	#contentsWrap .searchWrap .searchArea {width: 40%;}
+	#contentsWrap .searchWrap .searchArea input {width: 60%;}
+}
 @media screen and (max-width:1024px) {
 	#contentsWrap .contentsTop .inner,
 	#contentsWrap .pcMenuWrap .inner {padding: 0 20px;}
