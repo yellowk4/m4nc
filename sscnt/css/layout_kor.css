@@ -548,7 +548,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 #contentsWrap .contentsTop .inner {max-width:1200px; padding:0 50px; margin:0 auto; box-sizing: border-box;}
 #contentsWrap .visualWrap {min-height: 312px; background: url(../images/front/common/pic_visual.jpg) no-repeat 50% 50%; background-size: cover;}
 #contentsWrap .visualWrap .visualTit {padding-top: 170px; color: #fff;}
-#contentsWrap .visualWrap .visualTit span {display: block; font-size: 30px; font-family:'SamsungOne', san-serif; font-weight: 700;}
+#contentsWrap .visualWrap .visualTit span {display: block; font-size: 30px; font-family:'SamsungOne', sans-serif; font-weight: 700;}
 #contentsWrap .searchWrap {position: absolute; top:0; left:0; width: 100%;padding: 13px 0; background: #0075c2; box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5); }
 #contentsWrap .searchWrap .hashtag {float: left;}
 #contentsWrap .searchWrap .hashtag li {float: left; margin-right: 10px;}
@@ -563,7 +563,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 #contentsWrap .pcMenuWrap .navbar {overflow: hidden;}
 #contentsWrap .pcMenuWrap .navbar a {float: left; color: #333; text-align: center; padding: 14px 16px;}
 #contentsWrap .pcMenuWrap .navbar .dropdown {float: left; overflow: hidden;}
-#contentsWrap .pcMenuWrap .navbar .dropdown .dropbtn {border: 0 none; color: white; padding: 14px 16px; background-color: inherit;}
+#contentsWrap .pcMenuWrap .navbar .dropdown .dropbtn {border: 0 none; color: #333; padding: 14px 16px; background-color: inherit;}
 #contentsWrap .pcMenuWrap .navbar a:hover, 
 #contentsWrap .pcMenuWrap .navbar .dropdown:hover, 
 #contentsWrap .pcMenuWrap .navbar .dropbtn:hover {background: red;}
