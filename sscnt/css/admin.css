@@ -1,0 +1,207 @@
+@charset "utf-8";
+@import url('/css/default.css');
+
+
+html, body {font-family:'돋움', san-serif;font-size:12px;color:#666;} /* admin font size 및 font-family 재정리 */
+/*****************************************************************************************************************************************
+	form
+*****************************************************************************************************************************************/
+.inputText, .selectText, .textArea, .inputFile, button {font-family:'돋움', san-serif;font-size:12px;}
+.textArea {padding:5px 5px;}
+
+/* input */
+.inputText {height:32px;padding:10px;border:1px solid #e0e0e0;font-size:12px;box-sizing:border-box;}
+	.inputArea {display:inline-block;}
+	.inputArea label {margin-right:10px;}
+	.inputArea .dashed {margin:0 10px;}
+	.inputArea .btnInputForm {margin-left:5px;}
+	.calendarArea + .inputArea {margin-left:20px;}
+	
+/* select */
+.selectText {padding:7px;border:1px solid #e0e0e0;}
+
+/* textArea */
+.textArea {border:1px solid #e0e0e0;}
+
+/* 파일찾기 */
+.btnInputForm {display:inline-block;height:32px;line-height:32px;background-color:#a0a0a0;font-weight:700;color:#fff;}
+.inputFile {}
+
+/* 날짜 및 검색 */
+.calendarArea {display:inline-block;}
+.calendarArea label {margin-right:10px;}
+.calendarArea span {display:inline-block;vertical-align:middle;}
+.calendarArea .cal .inputText {width:100px;}
+.calendarArea .dashed {display:inline-block;margin:0 10px;}
+.calendarArea .cal .btnCalendar {width:21px;height:23px;margin-left:10px;background:url("/images/admin/bg/icon_calendar.png") no-repeat 0 0;}
+.calendarArea .txt {display:inline-block;margin-left:10px;}
+
+
+/* 섬네일 이미지 */
+.fieldWrap .fileDelete .btnInputForm {width:80px;height:32px;margin-left:10px;line-height:32px;background-color:#bcbcbc;font-weight:700;}
+.fieldWrap .fileDelete .name {display:inline-block;margin-right:10px;font-weight:700;}
+.fieldWrap .fileWrap{position:relative;padding-left:150px;margin-top:5px;}
+.fieldWrap .fileWrap strong {position:absolute;top:50%;left:0px;margin-top:-5px;}
+.fieldWrap .fileWrap .fileArea {clear:both;}
+
+.fileArea {margin-top:5px;}
+.fileArea:first-child {margin-top:0px;}
+.fileArea .btnInputForm {display:inline-block;position:relative;width:90px;margin-left:10px;text-align:center;color:#fff;vertical-align:middle;background-color:#bcbcbc;}
+.fileArea .inputFile {position:absolute;left:0px;top:0px;width:90px;height:32px;opacity:0;filter: alpha(opacity=0);-ms-filter:"alpha(opacity=0)";-khtml-opacity:0;-moz-opacity:0;cursor:pointer;}
+.fileArea .txt {display:inline-block;margin-left:10px;vertical-align:middle;color:#444;}
+.fieldWrap .inputArea {display:block;margin-top:5px;margin-left:0px;}
+.fieldWrap .inputArea label {display:inline-block;width:140px;font-weight:700;}
+
+/* 아이디 중복 체크 */
+
+/* 이메일 주소 */
+.emailArea {}
+.emailArea .inputText {}
+.emailArea .at {display:inline-block;margin:0 10px;}
+.emailArea .selectText {margin-left:10px;}
+.emailArea .txt {margin-left:10px;vertical-align:middle;}
+.emailArea + .txt {margin-top:7px;} /* 이메일 폼 영역의 안내 텍스트가 있을 때 */
+.emailArea + .txt + .btnInputForm {float:right;margin-top:-42px;width:100px;} /* 이메일 폼 영역의 안내 텍스트의 폼버튼 요소가 있을 때 */
+
+/* 전화번호 */
+.phoneArea {}
+.phoneArea .selectText {}
+.phoneArea .inputText {}
+
+/* 라디오 버튼 정렬 */
+.radioArea {overflow:hidden;}
+	.radioArea li {float:left;margin-right:30px;}
+	.radioArea label {padding-left:10px;}
+
+/* 설명(예) */
+.exampleArea {}
+	.exampleArea .inputText {width:100px;}
+	.exampleArea .txt {display:inline-block;margin-left:10px;vertical-align:middle;}
+
+/*****************************************************************************************************************************************
+	title
+*****************************************************************************************************************************************/
+
+.contTit {position:relative;margin-bottom:25px;padding:0 0 24px 19px;font-size:20px;font-weight:700;color:#444;border-bottom:1px solid #eee;}
+.contTit:before {position:absolute;left:0px;top:5px;z-index:10;display:block;width:8px;height:8px;background-color:#0081c9;content:"";}
+.subTit {margin-bottom:20px;font-size:16px;font-weight:700;}
+
+/*****************************************************************************************************************************************
+	table
+	[테이블 구조안내]
+	 - 리스트 테이블 : .tableBasicList > .defaultTable >th + td
+	 - 보기, 등록 테이블 : .tableBasicView > .defaultTable > th + td
+	 - 달력 리스트 테이블 : .tableCalendarBasic > .defaultTable > th + td
+*****************************************************************************************************************************************/
+
+/* 최소단위 테이블 설정 */
+.defaultTable {width:100%;border:1px solid #d8d8d8;}
+.defaultTable tr:first-child {border-top:none;}
+.defaultTable tr {border-top:1px solid #efefef;}
+.defaultTable th, .defaultTable td {vertical-align:middle;word-wrap:break-word;}
+.defaultTable th {background-color:#f9f9f9;}
+.defaultTable thead th:first-child, .defaultTable tbody th:first-child, .defaultTable tbody td:first-child {border-left:none;}
+.defaultTable thead th {padding:18px 0;border-left:1px solid #efefef;}
+.defaultTable tbody th {padding:20px;text-align:left;border-left:1px solid #efefef;}
+.defaultTable tbody td {padding:7px;border-left:1px solid #efefef;}
+.defaultTable .ellipsis {text-align:left;}
+
+/* 테이블 상단 텍스트 */
+.txtTableInfo {margin-top:30px;margin-bottom:20px;font-size:14px;font-weight:700;}
+.txtTableInfo .pointColor {color:#e7511c;}
+
+/* 테이블 리스트 */
+.tableBasicList tbody td {padding:18px 10px;text-align:center;}
+
+/* 테이블 보기  */
+.tableBasicView .editArea img {width:100%;}
+
+/* 관리자 날짜 검색 영역 */
+.searchWrap .selectText {width:200px;}
+.searchWrap .inputText {width:300px;}
+.searchWrap .calendarArea {display:inline-block;}
+.searchWrap .btnFormArea {display:inline-block;margin-left:20px;}
+
+/*****************************************************************************************************************************************
+	btn, icon
+*****************************************************************************************************************************************/
+/* 기본 버튼 */
+.btnDefaultForm {display:inline-block;background-color:#154e7b;color:#fff;}
+/* 검색 */
+.btnSearchArea {padding:20px 0;text-align:center;border-bottom:1px solid #eee;}
+.btnSearchArea .btnSearch {display:inline-block;width:165px;padding:12px 0;font-size:14px;font-weight:700;background-color:#154e7b;color:#fff;}
+/* 등록, 취소 */
+.btnArea {margin-top:20px;text-align:right;}
+.btnArea button, .btnArea a {display:inline-block;padding:14px 0;font-weight:700;color:#fff;font-size:14px;vertical-align: middle;}
+.btnArea .btnSelectDelete {float:left;width:80px;background-color:#a0a0a0;color:#fff;}
+.btnArea .btnDefaultForm {width:140px;}
+.btnArea .btnSubForm {width:140px;background-color:#a0a0a0;}
+.btnArea .btnSub {padding:14px 20px;background-color:#a0a0a0;}
+.btnArea .btnSub:hover {text-decoration: none;}
+
+.btnFormArea .btnInputForm {width:80px;font-weight:700;}
+.btnFormArea .btnInputForm.active {background-color:#0081c9;}
+
+/*****************************************************************************************************************************************
+	pager
+*****************************************************************************************************************************************/
+.pageArea {margin-top:20px;padding:20px 0;border-top:1px solid #d8d8d8;border-bottom:1px solid #d8d8d8;text-align:center;background-color:#f9f9f9;font-size:0px;}
+.pageArea a, .pageArea strong {display:inline-block;width:30px;height:30px;line-height:30px;vertical-align:middle;border-right:1px solid #eee;font-size:12px;}
+.pageArea strong {color:#e7511c;}
+.pageArea .last {border-right:none;}
+.pageArea .btnFirst, .pageArea .btnPrev, .pageArea .btnNext, .pageArea .btnLast {overflow:hidden;border:1px solid #e0e0e0;background-color:#fff;background-position:50% 50%;background-repeat:no-repeat;text-indent:-9999px;}
+.pageArea .btnFirst {background-image:url("/images/admin/bg/icon_btnFirst.png");}
+.pageArea .btnPrev {margin:0 10px;background-image:url("/images/admin/bg/icon_btnPrev.png");}
+.pageArea .btnNext {margin:0 10px;background-image:url("/images/admin/bg/icon_btnNext.png");}
+.pageArea .btnLast {background-image:url("/images/admin/bg/icon_btnLast.png");}
+
+/*****************************************************************************************************************************************
+	layout
+*****************************************************************************************************************************************/
+#wrap {}
+
+/* header */
+#headerWrap {border-bottom:1px solid #e3e3e3;}
+#headerWrap header {width:1200px;margin:0 auto;padding:34px 0;display:block;}
+#headerWrap header:after {display:block;content:"";clear:both;}
+#headerWrap header .logo {float:left;}
+#headerWrap header .member{float:right;}
+#headerWrap header .member .btnDefaultForm {width:80px;margin-left:10px;padding:10px 0;}
+#headerWrap header .member .txt .pointColor {display:inline-block;margin-right:5px;color:#1881d4;}
+
+/* LNB */
+#bodyWrap {width:1200px;margin:40px auto 50px;}
+.menuWrap {width:190px;float:left;}
+.menuWrap a {text-decoration:none;}
+.menuWrap .gnbMenu > li {margin-bottom:1px;}
+.menuWrap .gnbMenu h2 a {display:block;padding:14px 0px 14px 20px;font-size:12px;font-weight:700;background-color:#e7e7e7;color:#444;}
+.menuWrap .gnbMenu h2 a:hover, .menuWrap .gnbMenu .active h2 a {background-color:#154e7b;color:#fff;}
+.menuWrap .gnbMenu .active .subMenu {display:block;}
+.menuWrap .subMenu {display:none;}
+.menuWrap .subMenu a {display:block;padding:14px 0px 14px 34px;border-bottom:1px solid #ededed;font-weight:700;background-image:url("/images/admin/bg/bg_subMenu_arw_off.png"); background-repeat:no-repeat;background-position:20px 17px;}
+.menuWrap .subMenu a:hover, .menuWrap .subMenu .active {background-image:url("/images/admin/bg/bg_subMenu_arw_on.png");color:#1881d4;}
+
+/* content */
+#bodyWrap .contents {padding-left:240px;}
+
+/* 로그인 */
+#loginWrap {position:relative;}
+	#loginWrap .txt {color:#777777;}
+	#loginWrap .container {position:absolute;left:50%;top:0;margin-left:-220px;margin-top:158px;}
+
+.formWrap {margin-top:25px;margin-bottom:20px;padding-bottom:25px;border:1px solid #e0e0e0;}
+	.formWrap ul {background-color:#f9f9f9;margin-bottom:25px;padding:30px 50px;}
+	.formWrap li + li {margin-top:8px;}
+	.formWrap label {width:98px;color:#444444;font-weight:bold;}
+	.formWrap .btnFormArea {text-align:center;}
+
+	.btnLoginForm {background-color:#154e7b;padding:13px 10px 11px 10px;width:250px;color:#ffffff;font-size:14px;font-weight:bold;}
+
+
+/* 2018-05-24 송초롱 : 수정css */
+.checkWrap{overflow:hidden;}
+.checkWrap li{float:left;margin-right:10px;}
+.checkWrap label{padding-left:6px;}
+.calendarArea .checkWrap{margin-left:10px;}
+.noticeArea .txt{display:inline-block;margin-top:10px;}
+.urlArea .txt{display:inline-block;margin-top:10px;}

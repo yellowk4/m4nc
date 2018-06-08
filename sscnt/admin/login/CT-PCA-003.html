@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>삼성물산 관리자</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link type="text/css" rel="stylesheet" href="/css/admin.css" />
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<!--[if lt IE 9]>
+	<script src="/js/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="headerWrap">
+		<header>
+			<h1 class="logo"><img src="/images/admin/h1_logo.png" alt="삼성물산" /></h1>
+			<p class="member">
+				<strong class="txt"><span class="pointColor">미디어포스엔컴퍼니</span>님!</strong>
+				<button type="button" class="btnDefaultForm">로그아웃</button>
+			</p>
+		</header>
+	</div>
+
+	<div id="bodyWrap">
+		<nav class="menuWrap">
+			<ul class="gnbMenu">
+				<li class="active"><h2><a href="#none">관리자 관리</a></h2></li>
+				<li><h2><a href="#none">콘텐츠</a></h2></li>
+				<li>
+					<h2><a href="#none">IR 관리</a></h2>
+					<ul class="subMenu">
+						<li><a href="#none">공시정보</a></li>
+						<li><a href="#none">보고서</a></li>
+						<li><a href="#none">연간일정 및 이벤트</a></li>
+						<li><a href="#none">주주총회</a></li>
+						<li><a href="#none">주주환원</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="#none">고객지원</a></h2>
+					<ul class="subMenu">
+						<li><a href="#none">FAQ</a></li>
+						<li><a href="#none">고객문의</a></li>
+						<li><a href="#none">보안신고</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="contents">
+			<hgroup>
+				<h2 class="contTit">관리자 관리</h2>
+				<h3 class="subTit">관리자 등록</h3>
+			</hgroup>
+
+			<article class="tableBasicView">
+				<table class="defaultTable">
+					<caption>게시글 등록 테이블</caption>
+					<colgroup>
+						<col style="width:20%;" />
+						<col style="width:30%;" />
+						<col style="width:20%;" />
+						<col style="width:30%;" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">아이디</th>
+							<td><p class="inputArea"><input type="text" class="inputText" style="width:186px;" /><button type="button" class="btnInputForm">ID 중복확인</button></p></td>
+							<th scope="row">비밀번호</th>
+							<td><input type="text" class="inputText" /></td>
+						</tr>
+						<tr>
+							<th scope="row">이메일주소</th>
+							<td colspan="3"><p class="emailArea"><input type="text" class="inputText" style="width:200px;" /><span class="at">@</span><input type="text" class="inputText" style="width:200px;" /><select class="selectText" style="width:200px;"><option>선택</option></select></p></td>
+						</tr>
+						<tr>
+							<th scope="row">이름</th>
+							<td><input type="text" class="inputText" /></td>
+							<th scope="row">소속</th>
+							<td><input type="text" class="inputText" /></td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호</th>
+							<td><p class="phoneArea"><select class="selectText" style="width:80px;"><option>선택</option></select><span class="dashed">-</span><input type="text" class="inputText" style="width:80px;" /><span class="dashed">-</span><input type="text" class="inputText" style="width:80px;" /></p></td>
+							<th scope="row">핸드폰번호</th>
+							<td><p class="phoneArea"><select class="selectText" style="width:80px;"><option>선택</option></select><span class="dashed">-</span><input type="text" class="inputText" style="width:80px;" /><span class="dashed">-</span><input type="text" class="inputText" style="width:80px;" /></p></td>
+						</tr>
+						<tr>
+							<th scope="row">승인여부</th>
+							<td>
+								<ul class="radioArea">
+									<li><input type="radio" class="radio" id="Y" /><label for="Y">승인</label></li>
+									<li><input type="radio" class="radio" id="N" /><label for="N">미승인</label></li><!-- 2018-05-24 송초롱 : 텍스트 수정 -->
+								</ul>
+							</td>
+							<th scope="row">사용 권한</th>
+							<td>
+								<!-- //2018-05-24 송초롱 : 텍스트, 체크박스 수정 -->
+								<ul class="checkWrap">
+									<li><input type="checkBox" class="chk" id="chk01"><label for="chk01">IR</label></li>
+									<li><input type="checkBox" class="chk" id="chk02"><label for="chk02">고객지원</label></li>
+									<li><input type="checkBox" class="chk" id="chk03"><label for="chk03">콘텐츠</label></li>
+									<li><input type="checkBox" class="chk" id="chk04"><label for="chk04">관리자관리</label></li>
+								</ul>
+								<!-- 2018-05-24 송초롱 : 텍스트, 체크박스 수정// -->
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<div class="btnArea">
+				<button type="button" class="btnDefaultForm">등록</button>
+				<button type="button" class="btnSubForm">취소</button>
+			</div>
+		</section>
+	</div>
+</div>
+<script type="text/javascript" src="/js/admin.js"></script>
+</body>
+</html>
