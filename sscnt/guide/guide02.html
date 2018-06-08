@@ -308,6 +308,21 @@
 				</div>
 
 				<br/><br/>
+
+				<div class="selectTab typeBlue"> <!-- "typeBlue" 클래스 추가 -->
+					<strong class="select"><button type="button">건설부문</button></strong>
+					<ul>
+						<li class="active"><a href="#none">건설부문</a></li>
+						<li><a href="#none">정도경영</a></li>
+						<li><a href="#none">임직원의 기본 윤리</a></li>
+						<li><a href="#none">임직원에 대한 책임</a></li>
+						<li><a href="#none">국가와 사회에 대한 책임</a></li>
+						<li><a href="#none">윤리강령 준수 의무</a></li>
+					</ul>
+				</div>
+
+				<br/><br/>
+
 				<div class="custom-select" style="width:200px;">
 					<select>
 						<option value="0">선택하세요</option>
@@ -321,7 +336,6 @@
 					/*look for any elements with the class "custom-select":*/
 					x = document.getElementsByClassName("custom-select");
 					for (i = 0; i < x.length; i++) {
-						console.log("AA");
 					selElmnt = x[i].getElementsByTagName("select")[0];
 					/*for each element, create a new DIV that will act as the selected item:*/
 					a = document.createElement("DIV");
@@ -471,11 +485,11 @@
 <pre class="brush: js;">
 	<style>
 		.accordion { background-color: #eee; color: #444; cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 15px; transition: 0.4s; } 
-		.active, .accordion:hover { background-color: #ccc; } 
+		.accordion.active, .accordion:hover { background-color: #ccc; } 
 		.accordion:after { content: '\002B'; color: #777; font-weight: bold; float: right; margin-left: 5px; } 
-		.active:after { content: "\2212"; }
-		.panel { padding: 0 18px; background-color: white; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;} 
-		.panel p {padding: 50px 0;}
+		.accordion.active:after { content: "\2212"; }
+		.accordion + .panel { padding: 0 18px; background-color: white; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;} 
+		.accordion + .panel p {padding: 50px 0;}
 	</style>
 
 	<script>
@@ -486,7 +500,7 @@
 
 			// 첫번째 아코디언 open
 			if (acc.eq(i).hasClass("active")) {
-				var panelOpen = $(".active").next();
+				var panelOpen = $(".accordion.active").next();
 				panelOpen.css({"max-height" : panelOpen.prop("scrollHeight") + "px"}); //열기
 			}
 
