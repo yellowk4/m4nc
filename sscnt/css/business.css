@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-.contents {padding:30px 0 0 0}
 .text-hidden {overflow:hidden !important; clip:rect(1px, 1px, 1px, 1px) !important; position:absolute !important; width:1px !important; height:1px !important;}
 
 /* 사업영역 > 건설부문 */
-#CNT_K_008 {margin-bottom:80px;}
 .businessIntro {width:100%; overflow:hidden; margin-bottom:10px;}
 .businessIntro .bigTit {margin-bottom:40px;}
 .businessIntro p {margin-bottom:30px;}
@@ -21,17 +19,16 @@
 .constructionBnr ul li.type03 {background:url('/images/front/contents/bg_constructionBnr04.jpg') no-repeat;}
 
 /* 뉴스 > 리스트 */
-#CNT_K_022 {margin-bottom:80px;}
 #CNT_K_022 .boardSelect {display:none;}
 #CNT_K_022 .tabCtrlWrap {margin-bottom:60px;}
 #CNT_K_022 .tabView {width:100%; overflow:hidden; margin-bottom:10px;}
 #CNT_K_022 .tabView ul li {width:100%; overflow:hidden; padding-bottom:30px; border-bottom:1px solid #d9d9d9; margin-bottom:30px}
 #CNT_K_022 .tabView ul li:last-child {border-color:#777777;}
-#CNT_K_022 .tabView ul li .thum {float:left; width:327px; height:200px; overflow:hidden; margin-right:40px;}
+#CNT_K_022 .tabView ul li .thum {float:left; width:30%; height:200px; overflow:hidden; margin-right:3%;}
 #CNT_K_022 .tabView ul li .thum img {width:100%;} 
-#CNT_K_022 .tabView ul li .text {float:left; width:733px; height:200px; overflow:hidden; padding:35px 0; box-sizing:border-box;}
+#CNT_K_022 .tabView ul li .text {float:left; width:67%; height:200px; overflow:hidden; padding:35px 0; box-sizing:border-box;}
 #CNT_K_022 .tabView ul li .text .title {display:block; margin-bottom:20px; overflow:hidden; line-height:22px;}
-#CNT_K_022 .tabView ul li .text .title .boardTit {float:left; width:645px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap; color:#000}
+#CNT_K_022 .tabView ul li .text .title .boardTit {float:left; width:calc(100% - 90px); overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap; color:#000}
 #CNT_K_022 .tabView ul li .partIcon01 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4b99ba; color:#4b99ba; text-align:center; font-size:13px; margin-right:5px;}
 #CNT_K_022 .tabView ul li .partIcon02 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4179d0; color:#4179d0; text-align:center; font-size:13px; margin-right:5px;}
 #CNT_K_022 .tabView ul li .partIcon03 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #93b615; color:#93b615; text-align:center; font-size:13px; margin-right:5px;}
@@ -42,15 +39,33 @@
 #CNT_K_022 .tabView ul li .date {font-size:14px; color:#777777;}
 
 /* 뉴스 > 글보기 */
-#CNT_K_023 {margin-bottom:80px;}
 #CNT_K_023 .boardSelect {display:none;}
+#CNT_K_023 .tabCtrlWrap {margin-bottom:60px;}
+.boardViewArea {width:100%; overflow:hidden;} 
+.boardViewArea .boardViewTit {width:100%; overflow:hidden; padding-bottom:30px; margin-bottom:30px; border-bottom:1px solid #d9d9d9}
+.boardViewArea .boardViewTit .boardTit {display:block; font-size:28px; color:#000; margin-bottom:20px;}
+.boardViewArea .boardViewTit .boardContInfo {font-size:14px;}
+.boardViewArea .boardViewTit .boardContInfo .date {padding-right:16px; margin-right:15px; background:url('/images/front/contents/bg_bar_board.jpg') no-repeat right center}
+.boardViewArea .boardContWrap {width:100%; overflow:hidden; padding-bottom:50px; border-bottom:1px solid #d9d9d9; line-height:26px; margin-bottom:50px;}
+.boardViewArea .boardContWrap p {margin-bottom:50px;}
+.boardViewArea .boardContWrap p img {width:100%;}
+.boardViewArea .boardContWrap p:last-child {margin-bottom:0;}
+.boardViewArea .boardViewbtnArea {width:100%; overflow:hidden; margin-bottom:50px;}
+.boardViewArea .boardViewbtnArea .utileBtn {float:left;}
+.boardViewArea .boardViewbtnArea .utileBtn a {display:inline-block; margin-right:8px;}
+.boardViewArea .boardViewbtnArea .listGo {float:right; width:140px; height:56px; line-height:56px; background:#0c4da2; text-align:center; color:#fff;}
+.boardViewArea .relationArticle {width:100%; overflow:hidden;}
+.boardViewArea .relationArticle .title {display:block; font-size:24px; color:#000; margin-bottom:20px;}
+.boardViewArea .relationArticle ul {border-top:1px solid #0c4da2; border-bottom:1px solid #777777;}
+.boardViewArea .relationArticle ul li {width:100%; height:50px; line-height:50px; overflow:hidden; background:#fbfbfb url('/images/front/icon/ico_listdot_type02.jpg') no-repeat 30px center; box-sizing:border-box; padding:0 30px 0 40px; border-bottom:1px solid #d9d9d9}
+.boardViewArea .relationArticle ul li:hover {background:#fbfbfb url('/images/front/icon/ico_listdot_type01.jpg') no-repeat 30px center;}
+.boardViewArea .relationArticle ul li .boardTit {float:left; width:calc(100% - 100px); margin-right:15px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap;}
+.boardViewArea .relationArticle ul li:hover .boardTit {color:#0c4da2}
+.boardViewArea .relationArticle ul li:last-child {border-bottom:0;}
 
-
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1024px) {
 /* 뉴스 > 리스트 */
-#CNT_K_022 .tabView ul li .thum {width:30%; height:auto; margin-right:3%;}
-#CNT_K_022 .tabView ul li .text {width:67%; height:auto; padding:0;}
-#CNT_K_022 .tabView ul li .text .title .boardTit {width:calc(100% - 90px);}
+#CNT_K_022 .tabView ul li .text {padding:10px 0;}
 
 }
 
@@ -59,7 +74,9 @@
 /* 뉴스 > 리스트 */
 #CNT_K_022 .tabCtrlWrap{display:none;}
 #CNT_K_022 .boardSelect {display:block;}
-#CNT_K_022 .boardSelect .selectTab .select button {border-radius:0; font-size:16px; border:2px solid #0c4da2; color:#0c4da2; font-weight:600; background:url('/images/front/icon/ico_board_arrow_open.png') no-repeat 97% center; background-size:20px}
+#CNT_K_022 .boardSelect .selectTab .select button {border-radius:0; font-size:16px; border:2px solid #0c4da2; color:#0c4da2; font-weight:600;}
+#CNT_K_022 .boardSelect .selectTab .select button:after {background-image:url('/images/front/icon/ico_board_arrow_open.png');}
+#CNT_K_022 .boardSelect .selectTab.active .select button:after {background-image:url('/images/front/icon/ico_board_arrow_close.png');}
 #CNT_K_022 .boardSelect .selectTab.active ul {border:2px solid #0c4da2; border-top:0;}
 #CNT_K_022 .boardSelect .selectTab ul li a {font-size:14px;}
 #CNT_K_022 .tabView ul li {padding-bottom:20px; border-bottom:1px solid #d9d9d9; margin-bottom:20px}
@@ -69,4 +86,22 @@
 #CNT_K_022 .tabView ul li .text .textCont {line-height:20px; font-size:14px; margin-bottom:10px;}
 #CNT_K_022 .tabView ul li .text .title .boardTit {display:block; width:100%; margin-top:8px;font-size:18px;}
 
+/* 뉴스 > 리스트 */
+#CNT_K_023 .tabCtrlWrap{display:none;}
+#CNT_K_023 .boardSelect {display:block;}
+#CNT_K_023 .boardSelect {display:block;}
+#CNT_K_023 .boardSelect .selectTab .select button {border-radius:0; font-size:16px; border:2px solid #0c4da2; color:#0c4da2; font-weight:600;}
+#CNT_K_023 .boardSelect .selectTab .select button:after {background-image:url('/images/front/icon/ico_board_arrow_open.png');}
+#CNT_K_023 .boardSelect .selectTab.active .select button:after {background-image:url('/images/front/icon/ico_board_arrow_close.png');}
+#CNT_K_023 .boardSelect .selectTab.active ul {border:2px solid #0c4da2; border-top:0;}
+#CNT_K_023 .boardSelect .selectTab ul li a {font-size:14px;}
+
+.boardViewArea .boardViewTit {padding-bottom:25px; margin-bottom:25px;}
+.boardViewArea .boardViewTit .boardTit {font-size:20px; margin-bottom:15px;}
+.boardViewArea .boardContWrap {margin-bottom:25px; font-size:14px; line-height:20px; padding-bottom:25px;}
+.boardViewArea .boardContWrap p {margin-bottom:20px}
+.boardViewArea .boardViewbtnArea .utileBtn {display:none;}
+.boardViewArea .boardViewbtnArea .listGo {width:30%; height:40px; line-height:40px;}
+.boardViewArea .relationArticle {display:none;}
+.boardViewArea .boardViewbtnArea {margin-bottom:0;}
 }
