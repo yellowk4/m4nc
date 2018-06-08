@@ -1037,9 +1037,10 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 /* 미디어퀴리 */
 @media screen and (max-width:1024px) {
 	#contentsWrap .contentsTop .inner,
-	#contentsWrap .pcMenuWrap .inner {padding: 0 40px;}
-	.contents {padding: 50px 40px;}
-	.footer > .container {padding: 30px 40px 0;}
+	#contentsWrap .pcMenuWrap .inner {padding: 0 20px;}
+	.contents {padding: 50px 20px;}
+	.footer > .container {padding: 30px 20px 0;}
+	#contentsWrap .searchWrap .searchArea input {width: 60%;}
 }
 @media screen and (max-width:812px) {
 	#contentsWrap .contentsTop {display: none;}
