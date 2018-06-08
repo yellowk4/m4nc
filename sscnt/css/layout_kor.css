@@ -947,3 +947,15 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
   .select-items div:hover, .same-as-selected {
 	background-color: rgba(0, 0, 0, 0.1);
   }
+
+/* 미디어퀴리 */
+@media screen and (max-width:1024px) {
+	#contentsWrap .contentsTop .inner,
+	#contentsWrap .pcMenuWrap .inner {padding: 0 40px;}
+	.contents {padding: 50px 40px;}
+	.footer > .container {padding: 30px 40px 0;}
+}
+@media screen and (max-width:812px) {
+	#contentsWrap .contentsTop {display: none;}
+	#contentsWrap .moMenuWrap {display: block;}
+}
