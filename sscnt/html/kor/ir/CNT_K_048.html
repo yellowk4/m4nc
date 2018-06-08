@@ -244,7 +244,7 @@
 					<div class="yearPlan panel">
 						<div class="yearPlanDiv">
 							<div class="planBu">
-								<strong class="subTit">2018년 04월 25일</strong><span class="upComing type1">Upcoming</span><br/>
+								<strong class="ypDate">2018년 04월 25일</strong><span class="upComing type1">Upcoming</span><br/>
 								2018년 1분기 실적발표
 							</div>
 							<div class="planBtn">
@@ -253,7 +253,7 @@
 						</div>
 						<div class="yearPlanDiv">
 							<div class="planBu">
-								<strong class="subTit">2018년 02월 01일</strong><br/>
+								<strong class="ypDate">2018년 02월 01일</strong><br/>
 								2017년 4분기 실적발표
 							</div>
 							<div class="planBtn">
@@ -263,7 +263,7 @@
 						</div>
 						<div class="yearPlanDiv last">
 							<div class="planBu">
-								<strong class="subTit">2018년 01월 08일</strong><br/>
+								<strong class="ypDate">2018년 01월 08일</strong><br/>
 								3개년(2017~2019년) 배당정책 발표
 							</div>
 							<div class="planBtn">
@@ -275,7 +275,7 @@
 					<div class="yearPlan panel">
 						<div class="yearPlanDiv last">
 							<div class="planBu">
-								<strong class="subTit">2018년 04월 25일</strong><br/>
+								<strong class="ypDate">2018년 04월 25일</strong><br/>
 								2018년 1분기 실적발표
 							</div>
 							<div class="planBtn">
@@ -393,27 +393,3 @@
 </div> <!-- // wrap -->
 </body>
 </html>
-
-<script>
-	var acc = $(".accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-
-		// 첫번째 아코디언 open
-		if (acc.eq(i).hasClass("active")) {
-			var panelOpen = $(".active").next();
-			panelOpen.css({"max-height" : panelOpen.prop("scrollHeight") + "px"}); //열기
-		}
-
-		acc.eq(i).on("click", function() {
-			$(this).toggleClass("active");
-			var panel = $(this).next();
-			if ( $(this).hasClass("active") ){
-				panel.css({"max-height" : panel.prop("scrollHeight") + "px"}); //열기
-			} else { 
-				panel.css({"max-height" : 0}); //닫기
-			} 
-		});
-	}
-</script>

@@ -236,9 +236,19 @@
 						<a href="javascript:;" class="tabCtrl current">전체</a>
 						<a href="javascript:;" class="tabCtrl">기업정보</a>
 						<a href="javascript:;" class="tabCtrl">주식관련</a>
-						<a href="javascript:;" class="tabCtrl">재무관련<br/>두줄처리</a>
+						<a href="javascript:;" class="tabCtrl">재무관련</a>
 					</div>
-				
+
+					<div class="selectTab">
+						<strong class="select"><button type="button">전체</button></strong>
+						<ul>
+							<li class="active"><a href="#none">전체</a></li>
+							<li><a href="#none">기업정보</a></li>
+							<li><a href="#none">주식관련</a></li>
+							<li><a href="#none">재무관련</a></li>
+						</ul>
+					</div>
+
 					<div class="tabViewWrap">
 						<div class="tabView">
 							<div class="faqWrap">
@@ -295,9 +305,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="tabView" style="width:100px; height: 100px; background:blue; display: none;"></div>
-						<div class="tabView" style="width:100px; height: 100px; background:black; display: none;"></div>
-						<div class="tabView" style="width:100px; height: 100px; background: green; display: none;"></div>
+						<div class="tabView" style="display: none;"></div>
+						<div class="tabView" style="display: none;"></div>
+						<div class="tabView" style="display: none;"></div>
 					</div>
 				</div>
 				
@@ -408,27 +418,3 @@
 </div> <!-- // wrap -->
 </body>
 </html>
-
-<script>
-	var acc = $(".accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-
-		// 첫번째 아코디언 open
-		if (acc.eq(i).hasClass("active")) {
-			var panelOpen = $(".active").next();
-			panelOpen.css({"max-height" : panelOpen.prop("scrollHeight") + "px"}); //열기
-		}
-
-		acc.eq(i).on("click", function() {
-			$(this).toggleClass("active");
-			var panel = $(this).next();
-			if ( $(this).hasClass("active") ){
-				panel.css({"max-height" : panel.prop("scrollHeight") + "px"}); //열기
-			} else { 
-				panel.css({"max-height" : 0}); //닫기
-			} 
-		});
-	}
-</script>
