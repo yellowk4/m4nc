@@ -683,14 +683,16 @@ conApp.selectTabEvent = function(){
 	
 	
 	function selectTab(){
-		if($selectTab.hasClass("active")){
-			$selectTab.removeClass("active");
+		var $this = $(this);
+
+		if($this.parents(".selectTab").hasClass("active")){
+			$this.parents(".selectTab").removeClass("active");
 			return;
 		}
 		
 		/* why */
 		setTimeout(function(){
-			$selectTab.addClass("active");
+			$this.parents(".selectTab").addClass("active");
 		},10);
 	}
 	
