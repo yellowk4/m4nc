@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* IR - IR일정 CNT_K_048 */
-.yearWrap{margin-bottom: 80px; border-bottom: 1px solid #777777;}
+.yearWrap{border-bottom: 1px solid #777777;}
 .yearPlanDiv{ padding: 21px 0; border-bottom: 1px dashed #cbcbcb;}
 .yearPlanDiv div{width: 100%;}
 .yearPlanDiv.last{border-bottom: 0;}
@@ -47,7 +47,7 @@
 
     /* IR - FAQ CNT_K_057 */
     #CNT_K_057 .tabCtrlWrap{display: table;}
-    .faqWrap{padding: 60px 0 80px;}
+    .faqWrap{padding-top: 60px;}
     .faqPart{display: block; padding-bottom: 10px; font-size: 16px; color: #0075c2;}
     .faqPartMo{display: none;}                            
 
