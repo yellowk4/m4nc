@@ -171,13 +171,14 @@
 .boardViewArea .boardViewbtnArea {margin-bottom:0;}
 
 /* CONTACT OUS > 고객문의 */
-.inquiryTit {height:auto; padding-left:0; background:none; font-size:18px; border-bottom:1px solid #dddddd; padding-bottom:30px; margin-bottom:30px; }
+#CNT_K_037 {padding:0;}
+.inquiryTit {padding:0 20px 30px 20px; height:auto; background:none; font-size:18px; border-bottom:1px solid #dddddd; margin-bottom:30px; box-sizing:border-box; }
 .inquiryTit .title {display:inline; font-size:18px; font-weight:600; line-height:24px;}
 .inquiryTit .title.color02 {margin-bottom:0px; color:#0c4da2}
 .inquiryTit p {font-size:14px; line-height:18px; margin:20px 0 30px;}
 .inquiryTit #inquiryOpen {width:40%; height:40px; line-height:40px; background:#0c4da2 url('/images/front/icon/ico_inquiry.png') no-repeat 15px center; padding-left:30px; box-sizing:border-box; color:#fff; font-size:15px;}
 
-.inquiryWriteWrap {width:100%; overflow:hidden; margin-bottom:30px; border-bottom:1px solid #d9d9d9; padding-bottom:30px}
+.inquiryWriteWrap {width:100%; overflow:hidden; margin-bottom:30px; border-bottom:1px solid #d9d9d9; padding:0 20px 30px 20px; box-sizing:border-box;}
 .inquiryWriteWrap .inquiryWriteTit {overflow:hidden; margin-bottom:10px;}
 .inquiryWriteWrap .inquiryWriteTit .title {font-size:17px; color:#000;}
 .inquiryWriteWrap .inquiryWriteTit .addNotice {font-size:12px; color:#777;}
@@ -203,8 +204,9 @@
 .personalInforAgree .buttonArea {text-align:center;}
 .personalInforAgree .buttonArea button {height:40px; line-height:40px; font-size:15px;}
 
+.partInquiry { padding:0 20px 30px 20px; box-sizing:border-box;}
 .partInquiry .title {font-size:17px; margin-bottom:10px;}
-.partInquiry ul li {float:left; width:49%; height:56px; line-height:56px; font-size:20px; padding-left:20px; box-sizing:border-box; margin-bottom:2%;}
+.partInquiry ul li {float:left; width:49%; height:40px; line-height:40px; font-size:16px; padding-left:20px; box-sizing:border-box; margin-bottom:2%;}
 .partInquiry ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
 .partInquiry ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:0;}
 .partInquiry ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
