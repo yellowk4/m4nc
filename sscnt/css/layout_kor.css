@@ -980,7 +980,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	/* 최상단 영역 */
 	.header {position:fixed;width:100%;height:70px;min-height:auto;}
 	.header:before,.header:after {display:none;}
-	.header header {max-width:none;margin:0;padding:0; border-bottom: 1px solid #c3c3c3;}
+	.header header {max-width:none;margin:0;padding:0; }
 		
 	.logo {top:0;}
 	.logo a {width: 162px; height: 28px; padding: 23px 0 23px 20px;}
@@ -1010,10 +1010,10 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.megaMenu > .container {position:fixed;width:100%;height:100%;z-index:1000;padding-bottom:40px;box-sizing:border-box;}
 	.megaMenu section {height:100%;max-width:none;padding:0;}
 	.megaMenu a {font-size:13px;}
-	.megaMenu .btnMenuClose {display:block;position:absolute;right:0;top:0;z-index:1005;width:70px;height:70px;background:#fff url('/images/front/btn/btn_menuclose_mo.png') no-repeat 50% 50%;background-size:15px;}
+	.megaMenu .btnMenuClose {display:block;position:absolute;right:0;top:0;z-index:1005;width:70px;height:69px;background:#fff url('/images/front/btn/btn_menuclose_mo.png') no-repeat 50% 50%;background-size:15px;}
 	.megaMenu .btnMenuClose span {font-size:0;position:absolute;top:-9999px;}
 	
-	.menuWrap {height:100%;margin:0;background:#fff;}
+	.menuWrap {height:100%;margin: -1px 0 0;background:#fff;}
 	.menuWrap nav {overflow-x:hidden;overflow-y:auto;height:100%;margin-top:70px;}
 	.menuWrap ul:after {content:"";display:block;clear:both;height:0;visibility:hidden;}
 	.menuWrap .depth01 {}
@@ -1060,19 +1060,20 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 }
 @media screen and (max-width:812px) {
 	#contentsWrap .contentsTop {display: none;}
+	.header header {border-bottom: 1px solid #c3c3c3;}
 	.header .moMenuWrap {display: block;}
 	#contentsWrap .pcMenuWrap {display: none;}
 	/* 모바일 메뉴 */
 	.moMenuWrap .location {position: relative;}
-	.moMenuWrap .location ol {padding: 10px 15px 9px 36px; background: #e7e7e7;}
+	.moMenuWrap .location ol {padding: 10px 0 9px 36px; background: #e7e7e7;}
 	.moMenuWrap .location ol:before {content:''; position: absolute; top:10px; left:15px; display:block; width:16px; height: 16px; background: url(../images/front/icon/icon_home.png) no-repeat; background-size: 16px 16px;}
 	.moMenuWrap .location ol li {float: left; margin-right: 4px; font-size: 12px; font-weight: 700; color: #333; line-height: 1.5;}
 	.moMenuWrap .location ol li:after {content:'>'; display: inline-block; margin-left: 3px; color: #999; vertical-align: middle;}
 	.moMenuWrap .location ol li:last-child:after {display: none;}
 	.moMenuWrap .location ol li.on {color: #377dd5;}
 
-	.header {height:40px;}
-	#contentsWrap > .container {padding-top: 40px; min-height: 100%;}
+	.header {height:auto;}
+	#contentsWrap > .container {padding-top: 0; min-height: 100%;}
 	#contentsWrap > .container .moLayout {padding-bottom: 187px;}
 	.contents {padding: 40px 20px 0;}
 	.logo a {display:block;width:105px;height:18px;padding:11px 0 11px 15px;}
@@ -1081,7 +1082,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.header .btnMenuView {display:block;position:absolute;right:0;top:0;width:40px;height:39px;background:#fff url('/images/front/btn/btn_menuview_mo.png') no-repeat 50% 50%;background-size:12px 12px;}
 	.utility ul {padding-right:13px;}
 	.menuWrap nav {margin-top: 40px;}
-	.megaMenu .btnMenuClose {width: 40px; height: 40px;}
+	.megaMenu .btnMenuClose {width: 40px; height: 39px;}
 
 	/* 본문 하단 모바일 영역 */
 	.contentsBtm {display: block; position: absolute; top: auto; bottom: 100px; left:0; background: #fff;}

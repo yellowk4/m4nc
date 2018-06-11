@@ -554,7 +554,7 @@ gnbApp.event = function (){
 
 	}
 
-	TweenMax.set($(".contents"), { paddingTop: gnbApp.$header.outerHeight(true) })
+	
 
 
 	var mq = Utils.getMediaQuery('gnb');
@@ -567,6 +567,8 @@ gnbApp.event = function (){
 
 	function matched(){
 		console.log('Mathced ! isNotPC');
+
+		TweenMax.set($(".contents"), { paddingTop: gnbApp.$header.outerHeight(true) })
 
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
 		gnbApp.$megaMenuDepth02.off("mouseenter focusin");
@@ -584,6 +586,8 @@ gnbApp.event = function (){
 
 	function unMatched(){
 		console.log('unMathced ! isPC')
+
+		$(".contents").removeAttr("style")
 
 		gnbApp.$megaMenuShowBtn.off("click");
 		gnbApp.$megaMenuHideBtn.off("click");
