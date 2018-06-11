@@ -762,9 +762,15 @@ conApp.selectTabEvent = function(){
 	$selectTabConList.eq(selectTabActiveIdx).show();
 	
 	
+	$selectTab.each(function(idx){
+		$(this).attr("data-idx", idx).find("li").each(function(){
+			TweenMax.set($(this), { attr: { 'data-owner-idx': idx } })
+		})
+	})
+
+
 	function selectTab(){
 		var $this = $(this);
-
 		if($this.parents(".selectTab").hasClass("active")){
 			$this.parents(".selectTab").removeClass("active");
 			return;
@@ -785,14 +791,16 @@ conApp.selectTabEvent = function(){
 		}
 		
 		var thisIdx =  $selectTabList.index($this.parent());
+		var ownerIdx = $(this).parent("li").data("owner-idx");
 		var thisTxt = $this.text();
 			$selectTabActive = $selectTabList.filter(".active");
 			selectTabActiveIdx = $selectTabList.index($selectTabActive);
-		
+
 		$selectTabActive.removeClass("active");
 		$this.parent().addClass("active");
 		
-		$selectTabBtn.text(thisTxt);
+		$selectTab.filter("[data-idx="+ownerIdx+"]").find($selectTabBtn).text(thisTxt);
+		
 		$selectTabActive.removeClass("active");
 		
 		$selectTabConList.eq(thisIdx).show();
