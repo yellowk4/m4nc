@@ -12,6 +12,7 @@
 .constructionBnr ul li.titleBnr {width:100%; height:380px; overflow:hidden; background:url('/images/front/contents/bg_constructionBnr01.jpg') no-repeat left top; margin-bottom:20px; position:relative; text-align:left; padding:0;}
 .constructionBnr ul li.titleBnr .titleBnrTxt {width:353px; height:380px; background:rgba(21,57,123,0.75); padding:25px; box-sizing:border-box;}
 .constructionBnr ul li.titleBnr .titleBnrTxt h4 {display:block; font-size:28px; line-height:36px; color:#fff; margin-bottom:20px;}
+.constructionBnr ul li.titleBnr .titleBnrTxt h4 span {display:block;}
 .constructionBnr ul li.titleBnr .titleBnrTxt p {color:#bbbbbb;}
 .constructionBnr ul li.titleBnr .addView {width:140px; height:54px; line-height:54px; background:#111 url('/images/front/icon/ico_arrow01.png') no-repeat 85px center; color:#fff; padding-left:20px; box-sizing:border-box; position:absolute; bottom:0; left:235px;}
 .constructionBnr ul li.type01 {background:url('/images/front/contents/bg_constructionBnr02.jpg') no-repeat;}
@@ -115,9 +116,29 @@
 
 /* 모바일 */
 @media screen and (max-width:812px) {
+  
+/* 사업영역 > 건설부문 */
+.businessIntro {width:100%; overflow:hidden; margin-bottom:10px;}
+.businessIntro .bigTit {font-size:15px; margin-bottom:26px;}
+.businessIntro p {margin-bottom:18px; font-size:13px;}
+.constructionBnr {width:100%; overflow:hidden;}
+.constructionBnr ul li {float:none; width:100%; height:100px; overflow:hidden; text-align:center; padding-top:25px; color:#fff;}
+.constructionBnr ul li .title {display:inline-block; font-size:14px; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #fff;}
+.constructionBnr ul li p {font-size:10px;}
+.constructionBnr ul li.titleBnr {width:100%; height:auto; background:none; margin-bottom:10px; position:relative; padding:0; text-align:center;}
+.constructionBnr ul li.titleBnr img {width:100%;}
+.constructionBnr ul li.titleBnr .titleBnrTxt {position:absolute; bottom:5px; left:0; width:100%; height:auto; background:rgba(21,57,123,0.75); padding:20px 13%; box-sizing:border-box;}
+.constructionBnr ul li.titleBnr .titleBnrTxt h4 {display:block; font-size:18px; line-height:18px; color:#fff; margin-bottom:10px;}
+.constructionBnr ul li.titleBnr .titleBnrTxt h4 span {display:inline;}
+.constructionBnr ul li.titleBnr .titleBnrTxt p {font-size:12px; margin-bottom:10px;color:#acc9ff;}
+.constructionBnr ul li.titleBnr .addView {display:inline-block; width:50%; height:27px; line-height:27px; background:#111 url('/images/front/icon/ico_arrow01.png') no-repeat 90% center; background-size:10px; color:#fff; font-size:10px; padding-left:0px; box-sizing:border-box; position:relative; bottom:auto; left:auto}
+.constructionBnr ul li.type01 {background:url('/images/front/contents/bg_constructionBnr02.jpg') no-repeat center center; background-size:100%; margin-bottom:10px;}
+.constructionBnr ul li.type02 {background:url('/images/front/contents/bg_constructionBnr03.jpg') no-repeat center center; background-size:100%; margin:0 0 10px 0;}
+.constructionBnr ul li.type03 {background:url('/images/front/contents/bg_constructionBnr04.jpg') no-repeat center center; background-size:100%;}
+
 /* 뉴스 > 리스트 */
 #CNT_K_022 .tabCtrlWrap{display:none;}
-#CNT_K_022 .boardSelect {display:block;}
+#CNT_K_022 .boardSelect {display:block; margin-bottom:20px;}
 #CNT_K_022 .boardSelect .selectTab .select button {border-radius:0; font-size:16px; border:2px solid #0c4da2; color:#0c4da2; font-weight:600;}
 #CNT_K_022 .boardSelect .selectTab .select button:after {background-image:url('/images/front/icon/ico_board_arrow_open.png');}
 #CNT_K_022 .boardSelect .selectTab.active .select button:after {background-image:url('/images/front/icon/ico_board_arrow_close.png');}
@@ -132,8 +153,7 @@
 
 /* 뉴스 > 리스트 */
 #CNT_K_023 .tabCtrlWrap{display:none;}
-#CNT_K_023 .boardSelect {display:block;}
-#CNT_K_023 .boardSelect {display:block;}
+#CNT_K_023 .boardSelect {display:block; margin-bottom:20px;}
 #CNT_K_023 .boardSelect .selectTab .select button {border-radius:0; font-size:16px; border:2px solid #0c4da2; color:#0c4da2; font-weight:600;}
 #CNT_K_023 .boardSelect .selectTab .select button:after {background-image:url('/images/front/icon/ico_board_arrow_open.png');}
 #CNT_K_023 .boardSelect .selectTab.active .select button:after {background-image:url('/images/front/icon/ico_board_arrow_close.png');}
