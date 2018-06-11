@@ -539,6 +539,24 @@ gnbApp.event = function (){
 		gnbApp.$megaMenu.removeClass("active").find("li").removeClass("active");
 	}
 		
+	gnbApp.scrollEventHandler = function(){
+		var sTop = $(this).scrollTop();
+
+		var headerHeight = $("header").outerHeight(true);
+
+		if(sTop >= headerHeight) {
+			TweenMax.to(gnbApp.$header, .35, { y: - headerHeight, ease:Power1.easeOut})			
+		} else {
+			TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut})
+			
+		}
+
+
+	}
+
+	TweenMax.set($(".contents"), { paddingTop: gnbApp.$header.outerHeight(true) })
+
+
 	var mq = Utils.getMediaQuery('gnb');
 
 	mq.matches ? matched() : unMatched();
@@ -560,6 +578,8 @@ gnbApp.event = function (){
 		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
 		gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
 	
+		$(window).on("scroll", gnbApp.scrollEventHandler)
+
 	};
 
 	function unMatched(){
@@ -594,8 +614,6 @@ gnbApp.event = function (){
 				gnbApp.$megaMenuDepth02.trigger("mouseenter");
 			}
 		})
-
-
 	}
 
 }
@@ -744,9 +762,15 @@ conApp.selectTabEvent = function(){
 	$selectTabConList.eq(selectTabActiveIdx).show();
 	
 	
+	$selectTab.each(function(idx){
+		$(this).attr("data-idx", idx).find("li").each(function(){
+			TweenMax.set($(this), { attr: { 'data-owner-idx': idx } })
+		})
+	})
+
+
 	function selectTab(){
 		var $this = $(this);
-
 		if($this.parents(".selectTab").hasClass("active")){
 			$this.parents(".selectTab").removeClass("active");
 			return;
@@ -767,14 +791,16 @@ conApp.selectTabEvent = function(){
 		}
 		
 		var thisIdx =  $selectTabList.index($this.parent());
+		var ownerIdx = $(this).parent("li").data("owner-idx");
 		var thisTxt = $this.text();
 			$selectTabActive = $selectTabList.filter(".active");
 			selectTabActiveIdx = $selectTabList.index($selectTabActive);
-		
+
 		$selectTabActive.removeClass("active");
 		$this.parent().addClass("active");
 		
-		$selectTabBtn.text(thisTxt);
+		$selectTab.filter("[data-idx="+ownerIdx+"]").find($selectTabBtn).text(thisTxt);
+		
 		$selectTabActive.removeClass("active");
 		
 		$selectTabConList.eq(thisIdx).show();
