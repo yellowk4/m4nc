@@ -599,6 +599,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
  #contentsWrap .pcMenuWrap .navbar .dropdown.on .dropdownCont {display: block;}
 
 .contents {max-width:1200px; padding:80px 50px; margin:0 auto; box-sizing: border-box;}
+.contentsBtm {display: none;}
 
 /* 페이지 타이틀 영역 */
 .conTitWrap h2 {display:table-cell;height:60px;padding:0 15px;font-weight:700;font-size:1.8rem;line-height:1;color:#fff;vertical-align:middle;}
@@ -630,6 +631,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .footer > .container {position: relative;max-width:1200px;margin:0 auto;padding:30px 50px 0; box-sizing: border-box;}
 .footer .footMenuWrap {margin-bottom: 10px;}
 .footer .footMenuWrap ul {overflow: hidden; width: 100%;}
+.footer .footMenuWrap ul.moLink {display: none;}
 .footer .footMenuWrap li {float:left; position: relative;}
 .footer .footMenuWrap li:after {content:"";display:block;clear:both;position:absolute;left:auto;right:0;top:50%;width:1px;height:10px;margin-top:-5px;background:#86858e;}
 .footer .footMenuWrap li:last-child:after {width: 0; height:0; background: none;}
@@ -641,7 +643,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.familyWrap.active .btnFamily {background-position:100% 100%;}
 	.familyWrap.active .familyArea {display:block;}
 
-	.familyWrap .btnFamily{position:absolute;top:33px;right:50px;width:20%;padding:11px 30px 7px 10px;border:1px solid #ddd;background:url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:1.2rem;color:#666;line-height:1;text-align:left;}
+	.familyWrap .btnFamily{position:absolute;top:33px;right:50px;width:20%;padding:10px 30px 8px 10px;border:1px solid #84838c;background: #4f4e5a url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:14px;color:#fff;line-height:1;text-align:left;}
 
 	.familyWrap .familyArea {display:none;position:absolute;right:0;bottom:100%;z-index:150;margin:0 4px 0 6px;}
 	.familyArea .container {display:table;width:100%;table-layout:fixed;border:1px solid #d9d9d9;background-color:#fff;box-sizing:border-box;}
@@ -969,10 +971,12 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
   /*****************************************************************************************************************************************
 	반응형 처리 (모바일)
 *****************************************************************************************************************************************/
-
-/* 모바일 */
+/* 미디어퀴리 */
+@media screen and (max-width:1200px) {
+	#contentsWrap .searchWrap .searchArea {width: 40%;}
+	#contentsWrap .searchWrap .searchArea input {width: 60%;}
+}
 @media screen and (max-width:1024px) {
-
 	/* 최상단 영역 */
 	.header {position:fixed;width:100%;height:70px;min-height:auto;}
 	.header:before,.header:after {display:none;}
@@ -1042,20 +1046,17 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.depthWrap .depth03 > li > a {padding:6px 15px 8px 40px;font-weight:400;color:#555;}
 	.depthWrap .depth03 > li > a:before {content:"-";display:block;clear:both;position:absolute;top:50%;left:32px;margin-top:-10px;}
 	.depthWrap .depth03 > li > a:hover {color:#555;}
-	
-	}
-/* 미디어퀴리 */
-@media screen and (max-width:1200px) {
-	#contentsWrap .searchWrap .searchArea {width: 40%;}
-	#contentsWrap .searchWrap .searchArea input {width: 60%;}
-}
-@media screen and (max-width:1024px) {
+
 	#contentsWrap .contentsTop .inner,
 	#contentsWrap .pcMenuWrap .inner {padding: 0 20px;}
 	.contents {padding: 40px 20px;}
 	.footer > .container {padding: 30px 20px 0;}
 	#contentsWrap .searchWrap .searchArea input {width: 60%;}
 	#contentsWrap > .container {padding: 70px 0 100px; margin: 0 0 -100px;}
+
+	/* 푸터 -모바일 + 태블릿 */
+	.familyWrap .btnFamily {right: 20px; width: 15%;}
+	
 }
 @media screen and (max-width:812px) {
 	#contentsWrap .contentsTop {display: none;}
@@ -1071,7 +1072,9 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.moMenuWrap .location ol li.on {color: #377dd5;}
 
 	.header {height:40px;}
-	#contentsWrap > .container {padding-top: 40px;}
+	#contentsWrap > .container {padding-top: 40px; min-height: 100%;}
+	#contentsWrap > .container .moLayout {padding-bottom: 187px;}
+	.contents {padding: 40px 20px 0;}
 	.logo a {display:block;width:105px;height:18px;padding:11px 0 11px 15px;}
 	.utility:after {content:"";display:block;clear:both;position:absolute;right:0;top:11px;width:1px;height:10px;background:#ccc;}
 	.utility a {padding:10px 2px;font-size:14px;color:#333;}
@@ -1079,4 +1082,27 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.utility ul {padding-right:13px;}
 	.menuWrap nav {margin-top: 40px;}
 	.megaMenu .btnMenuClose {width: 40px; height: 40px;}
+
+	/* 본문 하단 모바일 영역 */
+	.contentsBtm {display: block; position: absolute; top: auto; bottom: 100px; left:0; background: #fff;}
+	.contentsBtm .viewTop {text-align: center;}
+	.contentsBtm .viewTop a {display:inline-block; position:relative; padding: 20px; font-size: 11px; font-weight: 700;  font-family:'SamsungOne', sans-serif; color: #333;}
+	.contentsBtm .viewTop a:after {display:block; content:''; position: absolute; top:22px; left: auto; right:5px; width: 10px; height: 10px; background: url(/images/front/icon/ico_top.png) no-repeat; background-size: 10px 10px;}
+	.contentsBtm .moAcco {border-top: 1px solid #434757;}
+	.contentsBtm .moAcco button {padding: 12px 15px; width: 100%; border-bottom: 1px solid #e3e4eb; outline: none; color: #333; cursor: pointer; font-size: 15px; font-weight: 700; font-family: 'SamsungOne', sans-serif; text-align: left; transition: 0.4s;}
+	/* .contentsBtm .moAcco button.active,
+	.contentsBtm .moAcco button:hover {background-color: #ccc;} */
+	.contentsBtm .moAcco button:after {content: ''; display: block; float: right; margin-top: 3px; width: 13px; height: 13px; background: url(/images/front/icon/ico_acco_plus.png) no-repeat; background-size: 13px 13px;} 
+	.contentsBtm .moAcco button.active:after {background-image: url(/images/front/icon/ico_acco_minus.png);}
+	.contentsBtm .moAcco button + .panel {padding: 0 15px; background-color: white; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
+	.contentsBtm .moAcco button + .panel p {padding: 20px 0;}
+
+	/* 푸터 */
+	.footer > .container {padding-top: 20px;}
+	.footer .familyWrap {display: none;}
+	.footer .footMenuWrap ul {display: none;}
+	.footer .footMenuWrap ul.moLink {display: block; text-align: center;}
+	.footer .footMenuWrap ul.moLink li {float: none; display: inline-block;}
+	.footer .copy {text-align: center;}
+	.footer .block {display: block !important;}
 }
