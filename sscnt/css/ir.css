@@ -17,6 +17,7 @@
 
 /* IR - FAQ CNT_K_057 */
 #CNT_K_057 .tabCtrlWrap{display: none;}
+#CNT_K_057 .tabViewWrap{margin-top: 20px;}
 .faqPartMo{display: inline-block; color: #0075c2;}
 .faqPart{display: none;}
 
