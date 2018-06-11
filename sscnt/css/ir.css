@@ -67,8 +67,9 @@
     #CNT_K_057 .selectTab{display: block;} /* FAQ selectBox */
 
     /* 아코디언 */
-    .accordion {padding: 18px 15px; font-size: 17px; line-height: 25px;} 
-    .accordion:after {right: 15px; margin-top: -7px;  width: 14px; height: 14px;} 
+    .accordion {padding: 18px 15px; font-size: 17px; line-height: 25px;}
+    .accordion:after, .accordion.active:after{right: 13px; margin-top: -6.5px; width: 13px; height: 13px; background-image: url(/images/front/icon/ico_acco_minus.png); background-size: 13px 13px;} 
+    .accordion.active:after{background-image: url(/images/front/icon/ico_acco_plus.png);}
 }
 						
 
