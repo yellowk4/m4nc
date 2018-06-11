@@ -10,6 +10,7 @@
 .constructionBnr ul li {float:left; width:353px; height:260px; overflow:hidden; text-align:center; padding-top:30px; color:#fff;}
 .constructionBnr ul li .title {display:inline-block; font-size:28px; padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #fff;}
 .constructionBnr ul li.titleBnr {width:100%; height:380px; overflow:hidden; background:url('/images/front/contents/bg_constructionBnr01.jpg') no-repeat left top; margin-bottom:20px; position:relative; text-align:left; padding:0;}
+.constructionBnr ul li.titleBnr img {display:none;}
 .constructionBnr ul li.titleBnr .titleBnrTxt {width:353px; height:380px; background:rgba(21,57,123,0.75); padding:25px; box-sizing:border-box;}
 .constructionBnr ul li.titleBnr .titleBnrTxt h4 {display:block; font-size:28px; line-height:36px; color:#fff; margin-bottom:20px;}
 .constructionBnr ul li.titleBnr .titleBnrTxt h4 span {display:block;}
@@ -126,7 +127,7 @@
 .constructionBnr ul li .title {display:inline-block; font-size:14px; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #fff;}
 .constructionBnr ul li p {font-size:10px;}
 .constructionBnr ul li.titleBnr {width:100%; height:auto; background:none; margin-bottom:10px; position:relative; padding:0; text-align:center;}
-.constructionBnr ul li.titleBnr img {width:100%;}
+.constructionBnr ul li.titleBnr img {display:block; width:100%;}
 .constructionBnr ul li.titleBnr .titleBnrTxt {position:absolute; bottom:5px; left:0; width:100%; height:auto; background:rgba(21,57,123,0.75); padding:20px 13%; box-sizing:border-box;}
 .constructionBnr ul li.titleBnr .titleBnrTxt h4 {display:block; font-size:18px; line-height:18px; color:#fff; margin-bottom:10px;}
 .constructionBnr ul li.titleBnr .titleBnrTxt h4 span {display:inline;}
