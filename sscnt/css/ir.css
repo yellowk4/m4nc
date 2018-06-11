@@ -1,66 +1,72 @@
 @charset "utf-8";
 
 /* IR - IR일정 CNT_K_048 */
-.yearWrap{border-bottom: 1px solid #777777;}
-.yearPlanDiv{ padding: 21px 0; border-bottom: 1px dashed #cbcbcb;}
-.yearPlanDiv div{width: 100%;}
+.planWrap{padding-left: 603px; background: url(../images/front/contents/bg_CNT_K_048.png) no-repeat 140px top;}
+.planDl{padding-bottom: 88px;}
+.planDl .planTit{font-size: 38px; font-weight: bold; line-height: 55px; vertical-align: top;}
+.planDate{padding-bottom: 39px; font-size: 24px;}
+.yearPlanDiv{clear: both; overflow: hidden; padding: 34px 0; border-bottom: 1px dashed #cbcbcb;}
+.yearPlanDiv div{float: left; width: 50%;}
 .yearPlanDiv.last{border-bottom: 0;}
-.yearPlanDiv .planBu{padding-left: 16px; font-size: 14px; line-height: 30px; background: url(/images/front/contents/bu_CNT_K-048.jpg) no-repeat left 12px; box-sizing: border-box;}
-.ypDate{font-size: 15px;}
-.planDl{padding-bottom: 26px;}
-.planDl .planTit{font-size: 25px; font-weight: bold; line-height: 55px; vertical-align: top;}
-.planDate{padding-bottom: 22px; font-size: 18px;}
+.planBu{padding-left: 16px; line-height: 30px; background: url(/images/front/contents/bu_CNT_K-048.jpg) no-repeat left 12px; box-sizing: border-box; color: #555555;}
+.ypDate{font-size: 18px; color: #111111;}
 .upComing{display: inline-block; padding: 0 3px; line-height: 20px; border: 1px solid #f8c18c; color: #f1841a; background-color: #fff; font-size: 13px;}
 .upComing.type1{margin-left: 14px;}
-.planBtn{margin-top: 15px;}
-.yearWrap .accordion {font-weight: 600;} /* IR일정 아코디언*/
+.planBtn{margin-top: 10px; text-align: right;}
+.yearWrap{border-bottom: 1px solid #777777;}
+.yearWrap .panel{padding: 0 29px;} /* IR일정 아코디언*/
+.yearWrap .accordion {font-weight: 600;} 
 
 /* IR - FAQ CNT_K_057 */
-#CNT_K_057 .tabCtrlWrap{display: none;}
-#CNT_K_057 .tabViewWrap{margin-top: 20px;}
-.faqPartMo{display: inline-block; color: #0075c2;}
-.faqPart{display: none;}
+.faqWrap{padding-top: 60px;}
+.faqPart{display: block; padding-bottom: 10px; font-size: 16px; color: #0075c2;}
+.faqPartMo{display: none; color: #0075c2;}
+.faqWrap .panel{padding-left: 84px; line-height: 27px; border-bottom: 1px solid #eaeaea; background: url(../images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
+.faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(../images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
 
-.faqWrap .accordion {padding: 13px 52px 13px 15px;}/* FAQ 아코디언*/
-.faqWrap .panel {line-height: 27px; border-bottom: 1px solid #eaeaea;}
-.faqWrap .panel.last{border-bottom: 1px solid #777777;}
+/* 2depth selectBox */
+#CNT_K_057 .selectTab{display: none;} /* FAQ selectBox */
 
 /* 아코디언 */
-.accordion {position: relative; color: #444; cursor: pointer; padding: 18px 15px; width: 100%; border: none; border-top: 1px solid #d9d9d9; text-align: left; outline: none; font-size: 17px; line-height: 25px; word-break: keep-all; transition: 0.4s; } 
-.accordion.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;} 
-.accordion:after {position: absolute; right: 15px; top: 50%; margin-top: -7px; z-index: 1; content: ''; display: block; width: 14px; height: 14px; float: right; background: url(/images/front/contents/open_CNT_K-048.png) no-repeat center;} 
+.accordion {position: relative; color: #444; cursor: pointer; padding: 44px 29px 44px 30px; font-size: 24px; width: 100%; border: none; border-top: 1px solid #d9d9d9; text-align: left; outline: none; word-break: keep-all; transition: 0.4s; } 
+.accordion.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;}
+.accordion:after{position: absolute; right: 29px; top: 50%; z-index: 1; content: ''; display: block; margin-top: -13px; width: 26px; height: 26px; float: right; background: url(/images/front/contents/open_CNT_K-048.png) no-repeat center;}
 .accordion.active:after { content: ""; background-image: url(/images/front/contents/close_CNT_K-048.png)}
 .panel { padding: 0 15px; background-color: #fbfbfb; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;} 
 .panel p {padding: 50px 0;}
 
-@media screen and (min-width:812px){
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
     /* IR - IR일정 CNT_K_048 */
-    .planWrap{min-height: 292px; padding-left: 603px; background: url(../images/front/contents/bg_CNT_K_048.png) no-repeat 140px top;}
-    .yearPlanDiv{clear: both; overflow: hidden; padding: 34px 0;}
-    .yearPlanDiv div{float: left; width: 50%;}
-    .planBu{font-size: 16px;}
-    .ypDate{font-size: 18px;}
-    .planDl .planTit{font-size: 38px;}
-    .planBtn{text-align: right;}
-    .planDate{padding-bottom: 39px; font-size: 24px;}
-    .yearWrap .panel{padding: 0 29px;}
+    .planWrap{padding-left: 0; background-image: none;}
+    .planDl{padding-bottom: 26px;}
+    .planDl .planTit{font-size: 25px;}
+    .planDate{padding-bottom: 22px; font-size: 18px;}
+    .yearPlanDiv{ padding: 21px 0;}
+    .yearPlanDiv div{float: none; width: 100%;}
+    .planBu{font-size: 14px;}
+    .ypDate{font-size: 15px;}
+    .planBtn{text-align: left; margin-top: 15px;}
+    .yearWrap .panel{padding: 0 15px;} /* IR일정 아코디언*/
 
     /* IR - FAQ CNT_K_057 */
-    #CNT_K_057 .tabCtrlWrap{display: table;}
-    .faqWrap{padding-top: 60px;}
-    .faqPart{display: block; padding-bottom: 10px; font-size: 16px; color: #0075c2;}
-    .faqPartMo{display: none;}                            
+    #CNT_K_057 .tabCtrlWrap{display: none;}
+    .faqWrap{padding-top: 20px;}
+    .faqPartMo{display: inline-block;}
+    .faqPart{display: none;}
 
-    .faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(../images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
-    .faqWrap .panel{padding-left: 84px; background: url(../images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;}
+    .faqWrap .panel{padding: 0 15px; font-size: 13px;} /* FAQ 아코디언*/
+    .faqWrap .panel.last{border-bottom: 1px solid #777777;}
+    .faqWrap .accordion {padding: 13px 52px 13px 15px; font-size: 15px;}
+    .faqWrap .accordion, .faqWrap .panel{background-image: none;}
+
+    /* 2depth selectBox */
+    #CNT_K_057 .selectTab{display: block;} /* FAQ selectBox */
 
     /* 아코디언 */
-    .accordion{padding: 44px 29px 44px 30px; font-size: 24px;}
-    .accordion:after{right: 29px; margin-top: -13px; width: 26px; height: 26px;}
-    
-
-    /* selectBox */
-    .selectTab{display: none;}
+    .accordion {padding: 18px 15px; font-size: 17px; line-height: 25px;} 
+    .accordion:after {right: 15px; margin-top: -7px;  width: 14px; height: 14px;} 
 }
 						
 
