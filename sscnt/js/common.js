@@ -536,10 +536,13 @@ gnbApp.event = function (){
 	}
 
 	gnbApp.$headerMouseLeaveHideEvent = function(){
+		if(isFocused) return;
 		gnbApp.$megaMenu.removeClass("active").find("li").removeClass("active");
 	}
 		
 	var mq = Utils.getMediaQuery('gnb');
+
+	var isFocused = false;
 
 	mq.matches ? matched() : unMatched();
 
@@ -577,14 +580,17 @@ gnbApp.event = function (){
 		gnbApp.$header.trigger("mouseleave")
 
 		gnbApp.$megaMenuDepth.on("focusin", function(){
+			isFocused = true;
 			$(this).trigger("mouseenter")
 		})
 
 		gnbApp.$megaMenuDepth02.on("focusin", function(){
+			isFocused = true;
 			$(this).trigger("mouseenter")
 		})
 
 		gnbApp.$utility.find("li").eq(0).on("focusin", function(){
+			isFocused = false;
 			gnbApp.$header.trigger("mouseleave")
 		})
 
