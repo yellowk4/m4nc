@@ -539,6 +539,24 @@ gnbApp.event = function (){
 		gnbApp.$megaMenu.removeClass("active").find("li").removeClass("active");
 	}
 		
+	gnbApp.scrollEventHandler = function(){
+		var sTop = $(this).scrollTop();
+
+		var headerHeight = $("header").outerHeight(true);
+
+		if(sTop >= headerHeight) {
+			TweenMax.to(gnbApp.$header, .35, { y: - headerHeight, ease:Power1.easeOut})			
+		} else {
+			TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut})
+			
+		}
+
+
+	}
+
+	TweenMax.set($(".contents"), { paddingTop: gnbApp.$header.outerHeight(true) })
+
+
 	var mq = Utils.getMediaQuery('gnb');
 
 	mq.matches ? matched() : unMatched();
@@ -560,6 +578,8 @@ gnbApp.event = function (){
 		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
 		gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
 	
+		$(window).on("scroll", gnbApp.scrollEventHandler)
+
 	};
 
 	function unMatched(){
@@ -594,8 +614,6 @@ gnbApp.event = function (){
 				gnbApp.$megaMenuDepth02.trigger("mouseenter");
 			}
 		})
-
-
 	}
 
 }
