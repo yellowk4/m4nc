@@ -474,8 +474,6 @@ mainApp.event = function(){
 
 // 메뉴
 gnbApp.event = function (){
-	$("#contentsWrap").hide();
-	$(".footer").hide();
 
 	gnbApp.$header = conApp.$wrap.find(".header");
 	gnbApp.$megaMenu = conApp.$wrap.find(".megaMenu");
@@ -489,6 +487,7 @@ gnbApp.event = function (){
 	gnbApp.$megaMenuShowEvent = function(e){
 		$("body").css("overflow-y","hidden");
 		gnbApp.$megaMenu.addClass("active");
+		gnbApp.$megaMenuDepth.eq(0).addClass("active");
 		TweenMax.set( gnbApp.$megaMenuContainer,{x:gnbApp.$megaMenuContainer.width(),force3D:true});
 		TweenMax.to( gnbApp.$megaMenuContainer, .5, { x:0, ease:Power1.easeOut });
 		
@@ -723,14 +722,16 @@ conApp.selectTabEvent = function(){
 	
 	
 	function selectTab(){
-		if($selectTab.hasClass("active")){
-			$selectTab.removeClass("active");
+		var $this = $(this);
+
+		if($this.parents(".selectTab").hasClass("active")){
+			$this.parents(".selectTab").removeClass("active");
 			return;
 		}
 		
 		/* why */
 		setTimeout(function(){
-			$selectTab.addClass("active");
+			$this.parents(".selectTab").addClass("active");
 		},10);
 	}
 	
