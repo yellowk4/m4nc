@@ -484,6 +484,8 @@ gnbApp.event = function (){
 	gnbApp.$megaMenuDepth = gnbApp.$megaMenu.find(".depth01 > li");
 	gnbApp.$megaMenuDepth02 = gnbApp.$megaMenu.find(".depth02 > li");
 	
+	gnbApp.$utility = conApp.$wrap.find(".utility");
+
 	gnbApp.$megaMenuShowEvent = function(e){
 		$("body").css("overflow-y","hidden");
 		gnbApp.$megaMenu.addClass("active");
@@ -548,16 +550,16 @@ gnbApp.event = function (){
 	function matched(){
 		console.log('Mathced ! isNotPC');
 
-		gnbApp.$megaMenuDepth.off("mouseenter");
-		gnbApp.$megaMenuDepth02.off("mouseenter");
+		gnbApp.$megaMenuDepth.off("mouseenter focusin");
+		gnbApp.$megaMenuDepth02.off("mouseenter focusin");
+		gnbApp.$utility.find("li").eq(0).off("focusin")
 		gnbApp.$header.off("mouseleave");
 
 		gnbApp.$megaMenuShowBtn.on("click",gnbApp.$megaMenuShowEvent);
 		gnbApp.$megaMenuHideBtn.on("click",gnbApp.$megaMenuHideEvent);
 		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
 		gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
-
-		
+	
 	};
 
 	function unMatched(){
@@ -573,6 +575,20 @@ gnbApp.event = function (){
 		gnbApp.$header.on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
 
 		gnbApp.$header.trigger("mouseleave")
+
+		gnbApp.$megaMenuDepth.on("focusin", function(){
+			$(this).trigger("mouseenter")
+		})
+
+		gnbApp.$megaMenuDepth02.on("focusin", function(){
+			$(this).trigger("mouseenter")
+		})
+
+		gnbApp.$utility.find("li").eq(0).on("focusin", function(){
+			gnbApp.$header.trigger("mouseleave")
+		})
+
+
 	}
 
 }
