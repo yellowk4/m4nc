@@ -1077,7 +1077,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 
 	.header {height:auto;}
 	#contentsWrap > .container {padding-top: 0; min-height: 100%;}
-	#contentsWrap > .container .moLayout {padding-bottom: 187px;}
+	/* #contentsWrap > .container .moLayout {padding-bottom: 187px;} */
 	.contents {padding: 40px 20px 0;}
 	.logo a {display:block;width:105px;height:18px;padding:11px 0 11px 15px;}
 	.utility:after {content:"";display:block;clear:both;position:absolute;right:0;top:11px;width:1px;height:10px;background:#ccc;}
@@ -1088,7 +1088,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.megaMenu .btnMenuClose {width: 40px; height: 39px;}
 
 	/* 본문 하단 모바일 영역 */
-	.contentsBtm {display: block; position: absolute; top: auto; bottom: 100px; left:0; background: #fff;}
+	.contentsBtm {display: block; background: #fff;} /* position: absolute; top: auto; bottom: 100px; left:0; */
 	.contentsBtm .viewTop {text-align: center;}
 	.contentsBtm .viewTop a {display:inline-block; position:relative; padding: 20px; font-size: 11px; font-weight: 700;  font-family:'SamsungOne', sans-serif; color: #333;}
 	.contentsBtm .viewTop a:after {display:block; content:''; position: absolute; top:22px; left: auto; right:5px; width: 10px; height: 10px; background: url(/images/front/icon/ico_top.png) no-repeat; background-size: 10px 10px;}
