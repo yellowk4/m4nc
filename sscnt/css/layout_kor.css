@@ -1067,10 +1067,11 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	#contentsWrap .pcMenuWrap {display: none;}
 	/* 모바일 메뉴 */
 	.moMenuWrap .location {position: relative;}
-	.moMenuWrap .location ol {padding: 10px 0 9px 36px; background: #e7e7e7;}
-	.moMenuWrap .location ol:before {content:''; position: absolute; top:10px; left:15px; display:block; width:16px; height: 16px; background: url(/images/front/icon/icon_home.png) no-repeat; background-size: 16px 16px;}
+	.moMenuWrap .location ol {padding: 10px 0 9px 25px; background: #e7e7e7;}
+	.moMenuWrap .location ol:before {content:''; position: absolute; top:10px; left:6px; display:block; width:16px; height: 16px; background: url(/images/front/icon/icon_home.png) no-repeat; background-size: 16px 16px;}
 	.moMenuWrap .location ol li {float: left; margin-right: 4px; font-size: 12px; font-weight: 700; color: #333; line-height: 1.5;}
 	.moMenuWrap .location ol li:after {content:'>'; display: inline-block; margin-left: 3px; color: #999; vertical-align: middle;}
+	.moMenuWrap .location ol li:last-child {margin-right:0;}
 	.moMenuWrap .location ol li:last-child:after {display: none;}
 	.moMenuWrap .location ol li.on {color: #377dd5;}
 
