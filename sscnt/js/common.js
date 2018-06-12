@@ -824,23 +824,22 @@ conApp.selectTabEvent = function(){
 //아코디언
 conApp.accordionEvent = function(){
 	
-	$accordion = conApp.$body.find(".accordionList");
-	$accordionList = $accordion.find(">ul>li");
-	
-	function accordionView(){
-		var $this = $(this);
-		var $prt = $this.parent();
-		
-		if($prt.hasClass("active")){
-			$prt.toggleClass("active");
-		}else{
-			//siblings removeClass 일시
-			//$accordionList.filter(".active").removeClass("active");
-			$prt.addClass("active");
+	var $accordion = $(".accordion"),
+		$accordionFirst = $accordion.eq(0);
+
+	$accordionFirst.addClass("active").next().css({ maxHeight: $accordionFirst.next().prop("scrollHeight") })
+
+	$accordion.on("click", function(){
+		var $next = $(this).next();
+
+		if($(this).toggleClass("active").hasClass("active")) {
+			$next.css({maxHeight: $next.prop("scrollHeight") })
+		} else {
+			$next.css({maxHeight:0})
 		}
-	}
+	})
+
 	
-	$accordionList.on("click",">a",accordionView);
 }
 
 // 열려있는 select닫아주기
@@ -990,7 +989,7 @@ $(function() {
 	if (hasJqObject(conApp.$wrap.find(".btnFamily"))){ conApp.familySite();} //family
 	if (hasJqObject(conApp.$body.find(".defaultTab"))){ conApp.defaultTabEvent();} //defaulTab
 	if (hasJqObject(conApp.$body.find(".selectTab"))){ conApp.selectTabEvent();} //selectTab
-	if (hasJqObject(conApp.$body.find(".accordionList"))){ conApp.accordionEvent();} //accordion
+	if (hasJqObject(conApp.$body.find(".accordion"))){ conApp.accordionEvent();} //accordion
 	if (hasJqObject(conApp.$body.find(".btnDefaultForm"))){ conApp.formToggle();} //formToggle
 	if (hasJqObject(conApp.$body.find(".btnSearchView"))){ conApp.btnSearchView();} //formToggle
 	if (hasJqObject(conApp.$body.find(".layerList"))){ conApp.layerEvent();} //layerPopup
