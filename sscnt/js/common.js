@@ -618,6 +618,8 @@ gnbApp.event = function (){
 				gnbApp.$megaMenuDepth02.trigger("mouseenter");
 			}
 		})
+
+		$(window).off("scroll")
 	}
 
 }
