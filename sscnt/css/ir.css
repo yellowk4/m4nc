@@ -54,7 +54,7 @@
 .accordion.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;}
 .accordion:after{position: absolute; right: 29px; top: 50%; z-index: 1; content: ''; display: block; margin-top: -13px; width: 26px; height: 26px; float: right; background: url(/images/front/contents/ico_open_CNT_K-048.png) no-repeat center;}
 .accordion.active:after { content: ""; background-image: url(/images/front/contents/ico_close_CNT_K-048.png)}
-.panel { padding: 0 15px; background-color: #fbfbfb; /*max-height: 0;*/ overflow: hidden; transition: max-height 0.2s ease-out;}
+.panel { padding: 0 15px; background-color: #fbfbfb; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
 .accordion + .panel .panelIn {padding: 41px 0;}
 
 /* button */
