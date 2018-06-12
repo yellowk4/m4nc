@@ -625,46 +625,42 @@ gnbApp.event = function (){
 
 // 왼쪽메뉴
 lnbApp.event = function(){
-	lnbApp.$pcLnbWrap = $(".pcLnbWrap");
-	lnbApp.$pcLnbList = lnbApp.$pcLnbWrap.find(".pcLnb>li");
-	lnbApp.$pcLnbDepth = lnbApp.$pcLnbWrap.find(".depth");
+	lnbApp.$pcLnbWrap = $(".pcMenuWrap");
+	lnbApp.$pcLnbDepth = lnbApp.$pcLnbWrap.find(".dropdown");
 	
-	lnbApp.$moLnbWrap = $(".moLnbWrap");
-	lnbApp.$moLnbDiv = lnbApp.$moLnbWrap.find(".flexContainer>div");
-	lnbApp.$moLnbSelect = lnbApp.$moLnbWrap.find(".select");
+	// lnbApp.$moLnbWrap = $(".moLnbWrap");
+	// lnbApp.$moLnbDiv = lnbApp.$moLnbWrap.find(".flexContainer>div");
+	// lnbApp.$moLnbSelect = lnbApp.$moLnbWrap.find(".select");
 	
 	lnbApp.$pcLnbListEvent = function(e){
-		var $this = $(this);
-		var $prt = $this.parent("li");
 		
-		if($prt.hasClass("active")){
-			$prt.toggleClass("active");
+		var $this = $(this);
+	
+		if($this.hasClass("active")){
+			$this.toggleClass("active");
 			return;
 		}
-		
-		
-		lnbApp.$pcLnbList.filter(".active").removeClass("active");
-		$prt.addClass("active");
+		$this.addClass("active");
 	}
 	
-	lnbApp.$moLnbListEvent = function(e){
-		var $this = $(this);
-		if($this.closest("div").hasClass("active")){
-			$this.closest("div").toggleClass("active")
-			return;
-		}
-		lnbApp.$moLnbDiv.filter(".active").removeClass("active");
+	// lnbApp.$moLnbListEvent = function(e){
+	// 	var $this = $(this);
+	// 	if($this.closest("div").hasClass("active")){
+	// 		$this.closest("div").toggleClass("active")
+	// 		return;
+	// 	}
+	// 	lnbApp.$moLnbDiv.filter(".active").removeClass("active");
 		
-		// conApp.openSelectHide
-		setTimeout(function(){
-			$this.closest("div").addClass("active");
-		},10);
+	// 	// conApp.openSelectHide
+	// 	setTimeout(function(){
+	// 		$this.closest("div").addClass("active");
+	// 	},10);
 		
-	}
+	// }
 	
 	
 	lnbApp.$pcLnbDepth.on("click",lnbApp.$pcLnbListEvent);
-	lnbApp.$moLnbSelect.on("click",lnbApp.$moLnbListEvent);
+	//lnbApp.$moLnbSelect.on("click",lnbApp.$moLnbListEvent);
 	
 	//setTimeout(lnbApp.$moLnbListEvent(),10));
 }
@@ -981,7 +977,7 @@ $(function() {
 	}
 	/* if (hasJqObject(conApp.$wrap.find(".main"))){ mainApp.event();} */
 	if (hasJqObject(conApp.$wrap.find(".megaMenu"))){ gnbApp.event();} //gnb
-	if (hasJqObject(conApp.$wrap.find(".pcLnbWrap"))){ lnbApp.event();} //lnb
+	if (hasJqObject(conApp.$wrap.find(".pcMenuWrap"))){ lnbApp.event();} //lnb
     if (hasJqObject(conApp.$wrap.find(".btnEthic"))){ conApp.ethicManage();} //Ethic : 2017-04-07 추가
 	if (hasJqObject(conApp.$wrap.find(".btnFamily"))){ conApp.familySite();} //family
 	if (hasJqObject(conApp.$body.find(".defaultTab"))){ conApp.defaultTabEvent();} //defaulTab

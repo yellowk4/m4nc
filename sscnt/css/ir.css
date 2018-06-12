@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* IR - IR일정 CNT_K_048 */
-.planWrap{padding-left: 603px; background: url(../images/front/contents/bg_CNT_K_048.png) no-repeat 140px top;}
+.planWrap{padding-left: 603px; background: url(/images/front/contents/bg_CNT_K_048.png) no-repeat 140px top;}
 .planDl{padding-bottom: 88px;}
 .planDl .planTit{font-size: 38px; font-weight: bold; line-height: 55px; vertical-align: top;}
 .planDate{padding-bottom: 39px; font-size: 24px;}
@@ -21,8 +21,8 @@
 .faqWrap{padding-top: 60px;}
 .faqPart{display: block; padding-bottom: 10px; font-size: 16px; color: #0075c2;}
 .faqPartMo{display: none; color: #0075c2;}
-.faqWrap .panel{padding-left: 84px; line-height: 27px; border-bottom: 1px solid #eaeaea; background: url(../images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
-.faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(../images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
+.faqWrap .panel{padding-left: 84px; line-height: 27px; border-bottom: 1px solid #eaeaea; background: url(/images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
+.faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(/images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
 
 /* 2depth selectBox */
 #CNT_K_057 .selectTab{display: none;} /* FAQ selectBox */
