@@ -1,8 +1,36 @@
 @charset "utf-8";
 
 .text-hidden {overflow:hidden !important; clip:rect(1px, 1px, 1px, 1px) !important; position:absolute !important; width:1px !important; height:1px !important;}
+/* 사업부문별 바로가기 */
+.businessUnitGo {width:100%; overflow:hidden;}
+.businessUnitGo .title {display:block; margin-bottom:30px; font-size:24px; color:#000;}
+.businessUnitGo ul li {float:left; width:23%; height:56px; line-height:56px; font-size:20px; padding-left:20px; box-sizing:border-box;}
+.businessUnitGo ul li a {color:#fff;}
+.businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
+.businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
+.businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
+.businessUnitGo ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center;}
 
-/* 사업영역 > 건설부문 */
+
+/* 연혁 */
+#CNT_K_003 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
+.historyTit {font-size:28px; margin-bottom:40px; color:#000}
+.historyTitDetail {line-height:28px; margin-bottom:40px;}
+.historyBtnWrap {text-align:right; margin-bottom:40px; overflow:hidden;}
+.historyBtnWrap a {display:inline-block; width:206px; height:56px; line-height:56px; text-align:center; color:#fff; font-size:18px; background:#0c4da2;}
+.historyList {overflow:hidden; border-top:1px solid #0c4da2;}
+.historyList > li {padding:50px 0; border-bottom:1px solid #d9d9d9; overflow:hidden;}
+.historyList > li .year {float:left; font-size:36px; color:#000; margin-right:196px; font-weight:600;}
+.historyList > li .monthList {float:left;}
+.historyList > li .monthList > li {overflow:hidden; margin-bottom:40px;}
+.historyList > li .monthList > li:last-child {margin-bottom:0;}
+.historyList > li .monthList > li .month {float:left; font-size:24px; margin-right:50px; font-weight:600; color:#0c4da2;}
+.historyList > li .monthList > li .detailList {float:left; overflow:hidden; color:#333333;}
+.historyList > li .monthList > li .detailList li {margin-bottom:8px;}
+
+#CNT_K_003 .initTab {margin-bottom:50px;}
+
+/* 사업영역 > 건설부문 */ 
 .businessIntro {width:100%; overflow:hidden; margin-bottom:10px;}
 .businessIntro .bigTit {margin-bottom:40px;}
 .businessIntro p {margin-bottom:30px;}
@@ -19,6 +47,61 @@
 .constructionBnr ul li.type01 {background:url('/images/front/contents/bg_constructionBnr02.jpg') no-repeat;}
 .constructionBnr ul li.type02 {background:url('/images/front/contents/bg_constructionBnr03.jpg') no-repeat; margin:0 20px;}
 .constructionBnr ul li.type03 {background:url('/images/front/contents/bg_constructionBnr04.jpg') no-repeat;}
+
+/* CSR > 인사말 */
+#CNT_K_013 .initTab  {width:100%; overflow:hidden; margin-bottom:60px;}
+.greetingWrap {padding-bottom:40px; border-bottom:1px solid #777777; margin-bottom:40px;  color:#333}
+.greetingWrap h4 {font-size:28px; line-height:42px; color:#000; margin-bottom:40px;}
+.greetingWrap h4 span {display:block;}
+.greetingWrap p {line-height:28px; margin-bottom:20px;}
+.greetingWrap p.last {margin-bottom:50px;}
+.greetingWrap .signature {text-align:right; color:#111}
+.greetingWrap .signature span {display:block; line-height:28px;}
+.greetingWrap .signature span.appellation {margin-bottom:20px;}
+.greetingWrap .signature .name {font-weight:600; color:#333;}
+.greetingWrap .signature .name img {vertical-align:middle; margin-left:20px;}
+.greetingBtnWrap {text-align:right;}
+.greetingBtnWrap a {display:inline-block; line-height:40px; color:#fff;}
+
+/* CSR > 비전 및 전략 */
+#CNT_K_014 .initTab  {width:100%; overflow:hidden; margin-bottom:60px;}
+.visionStrategy {color:#333}
+.visionStrategy h4 {font-size:28px; line-height:42px; color:#000; margin-bottom:40px;}
+.visionStrategy p {line-height:28px; margin-bottom:20px;}
+.visionStrategy p.last {margin-bottom:50px;}
+.visionStrategy table {width:100%; table-layout:fixed; border-top:1px solid #0c4da2; margin-bottom:50px;}
+.visionStrategy table th {text-align:left; padding:35px 0; font-size:24px; color:#111; border-bottom:1px solid #d9d9d9;}
+.visionStrategy table td {text-align:left; padding:35px 0; color:#333; border-bottom:1px solid #d9d9d9;}
+.visionStrategy table td .imgSlogan {display:block; margin-bottom:20px;}
+.visionStrategy table td .last {margin:0;}
+.visionStrategy table th.last, .visionStrategy table td.last { border-bottom:1px solid #777777}
+
+/* CSR > ACT */
+#CNT_K_016 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
+.actMainTitle {font-size:28px; padding-bottom:40px; border-bottom:1px solid #0c4da2; color:#000; margin-bottom:40px;}
+
+.actContsWrap {width:100%; overflow:hidden; padding-bottom:10px; margin-bottom:40px; border-bottom:1px solid #d9d9d9;}
+.actContsWrap.last {padding:0; margin:0; border:0;}
+.actContsWrap .actTit {display:block; font-size:24px; margin-bottom:20px; color:#111; font-weight:600;}
+.actContsWrap p {line-height:28px; margin-bottom:25px;}
+.actContsWrap p.last {margin:0;}
+.actContsWrap p.gray {color:#777; margin-bottom:15px;}
+
+.actConts {width:100%; overflow:hidden; padding-bottom:10px; margin-bottom:40px; border-bottom:1px dashed #d9d9d9;}
+.actConts .actSubTit {font-size:18px;}
+.actConts .imgArea {overflow:hidden; margin-bottom:30px;}
+.actConts .imgArea .imgCont01 {float:left;}
+.actConts .imgArea .imgCont01 {float:right;}
+.actConts .imgList {overflow:hidden; margin-bottom:30px;}
+.actConts .imgList li {float:left; width:353px; height:260px; overflow:hidden; position: relative; margin-right:20px; padding:0;}
+.actConts .imgList li .name {display:block; width:100%; height:50px; line-height:50px;  position:absolute; bottom:0; left:0; text-align:center; color:#fff; background:rgba(21,57,123,0.75);}
+.actConts .imgList li.last {margin:0;}
+.actConts table {width:100%; table-layout:fixed; border-top:1px solid #0c4da2}
+.actConts table th {height:60px; background:#f8f8f8; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9;}
+.actConts table td {height:60px; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; text-align:center;}
+.actConts table th.last, .actConts table td.last {border-right:0;}
+
+.actConts.last {padding:0; margin:0; border:0;}
 
 /* 뉴스 > 리스트 */
 #CNT_K_022 .boardSelect {display:none;}
@@ -100,14 +183,6 @@
 .personalInforAgree .agreeArea {display:block; margin-bottom:50px;}
 .personalInforAgree .buttonArea {text-align:center;}
 
-.partInquiry {width:100%; overflow:hidden;}
-.partInquiry .title {display:block; margin-bottom:30px; font-size:24px; color:#000;}
-.partInquiry ul li {float:left; width:23%; height:56px; line-height:56px; font-size:20px; padding-left:20px; box-sizing:border-box;}
-.partInquiry ul li a {color:#fff;}
-.partInquiry ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
-.partInquiry ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
-.partInquiry ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
-.partInquiry ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center;}
 
 @media screen and (max-width:1024px) {
 /* 뉴스 > 리스트 */
@@ -117,6 +192,13 @@
 
 /* 모바일 */
 @media screen and (max-width:812px) {
+/* 사업부문별 바로가기 */
+#CNT_K_037 .businessUnitGo {padding:0 20px 30px 20px; box-sizing:border-box;}
+.businessUnitGo .title {font-size:17px; margin-bottom:10px;}
+.businessUnitGo ul li {float:left; width:49%; height:40px; line-height:40px; font-size:16px; padding-left:20px; box-sizing:border-box; margin-bottom:2%;}
+.businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
+.businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:0;}
+.businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
   
 /* 사업영역 > 건설부문 */
 .businessIntro {width:100%; overflow:hidden; margin-bottom:10px;}
@@ -204,10 +286,5 @@
 .personalInforAgree .buttonArea {text-align:center;}
 .personalInforAgree .buttonArea button {height:40px; line-height:40px; font-size:15px;}
 
-.partInquiry { padding:0 20px 30px 20px; box-sizing:border-box;}
-.partInquiry .title {font-size:17px; margin-bottom:10px;}
-.partInquiry ul li {float:left; width:49%; height:40px; line-height:40px; font-size:16px; padding-left:20px; box-sizing:border-box; margin-bottom:2%;}
-.partInquiry ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
-.partInquiry ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:0;}
-.partInquiry ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
+
 }
