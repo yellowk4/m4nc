@@ -824,10 +824,7 @@ conApp.selectTabEvent = function(){
 //아코디언
 conApp.accordionEvent = function(){
 	
-	var $accordion = $(".accordion"),
-		$accordionFirst = $accordion.eq(0);
-
-	$accordionFirst.addClass("active").next().css({ maxHeight: $accordionFirst.next().prop("scrollHeight") })
+	var $accordion = $(".accordion");
 
 	$accordion.on("click", function(){
 		var $next = $(this).next();
@@ -838,6 +835,15 @@ conApp.accordionEvent = function(){
 			$next.css({maxHeight:0})
 		}
 	})
+
+	$accordion.each(function(){
+		if($(this).hasClass("active")){
+			$(this).trigger("click")
+		}
+
+	})
+
+	
 
 	
 }
