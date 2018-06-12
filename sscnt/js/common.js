@@ -568,7 +568,13 @@ gnbApp.event = function (){
 	function matched(){
 		console.log('Mathced ! isNotPC');
 
-		TweenMax.set($(".contents"), { paddingTop: gnbApp.$header.outerHeight(true) })
+		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true)); 
+		TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
+		
+		// $(window).on("resize", function(){ 
+		// 	vh = Math.round(((gnbApp.$header.outerHeight(true) + 40) * 100) / $(window).outerHeight(true));
+		// 	TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
+		// })
 
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
 		gnbApp.$megaMenuDepth02.off("mouseenter focusin");
