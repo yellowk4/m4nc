@@ -989,7 +989,7 @@ $(function() {
 	if (hasJqObject(conApp.$wrap.find(".btnFamily"))){ conApp.familySite();} //family
 	if (hasJqObject(conApp.$body.find(".defaultTab"))){ conApp.defaultTabEvent();} //defaulTab
 	if (hasJqObject(conApp.$body.find(".selectTab"))){ conApp.selectTabEvent();} //selectTab
-	if (hasJqObject(conApp.$body.find(".accordionList"))){ conApp.accordionEvent();} //accordion
+	if (hasJqObject(conApp.$body.find(".accordion"))){ conApp.accordionEvent();} //accordion
 	if (hasJqObject(conApp.$body.find(".btnDefaultForm"))){ conApp.formToggle();} //formToggle
 	if (hasJqObject(conApp.$body.find(".btnSearchView"))){ conApp.btnSearchView();} //formToggle
 	if (hasJqObject(conApp.$body.find(".layerList"))){ conApp.layerEvent();} //layerPopup
