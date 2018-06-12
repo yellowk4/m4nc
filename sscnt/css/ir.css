@@ -1,19 +1,22 @@
 @charset "utf-8";
 /* IR - 감사보고서 CNT_K_042 */
-.reportTit{padding: 40px 0 77px 604px; background: url(/images/front/contents/bg_CNT_K_048.png) no-repeat 142px 0;}
+ .reportTit{padding: 40px 0 77px 604px; background: url(/images/front/contents/bg_CNT_K_048.png) no-repeat 142px 0;}
 .reportTit dt{padding-bottom: 40px; font-size: 42px; color: #0075c2;}
 .reportTit dt span{color: #0c4da2;}
-.reportFile{border-top: 1px solid #0c4da2;}
+/*.reportFile{border-top: 1px solid #0c4da2;}
 .reportFile dl{clear: both; overflow: hidden; border-bottom: 1px solid #d9d9d9;}
 .reportFile dl.last{border-bottom: 1px solid #777777;}
 .reportFile dt, .reportFile dd{float: left;}
 .reportFile dt{width: 14%; font-size: 24px; color: #111111; text-align: center; line-height: 100px; background-color: #fbfbfb;}
 .reportFile dd{width: 86%;}
 .reportBtn{padding: 30px 0 0 40px;}
-.reportBtn button{margin-right: 10px;}
+.reportBtn button{margin-right: 10px;} */
 .rightBtn{padding: 20px 0; text-align: right;}
 .grayBox{padding: 21px 17px; margin-top: 20px; background-color: #f8f8f8; font-size: 14px; color: #555555;}
 .pText{line-height: 28px;}
+
+#CNT_K_042 .defaultTable th{background-color: #fbfbfb; font-size: 24px; color: #111111; line-height: 100px;}
+#CNT_K_042 .btnArea{padding-left: 40px;}
 
 
 /* IR - IR일정 CNT_K_048 */
@@ -72,9 +75,11 @@
 .pointGray{color: #777777;}
 
 /* table */
-.tableBasicList {border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
+.tableBasicList, .tableBasicView {border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
 .tableBasicList thead th{padding: 23px 10px;}
 .tableBasicList th, .tableBasicList td {padding: 20px 10px; line-height: 28px; color: #555555;}
+
+
 
 /*  */
 .btnShortLink, a.btnShortLink{font-size: 14px;}
@@ -86,6 +91,11 @@
 @media screen and (max-width: 1024px){
     /* margin 좌우 -20px */
     .tabViewWrap, .yearWrap{margin: 0 -20px;}
+
+    /* IR - 감사보고서 CNT_K_042 */
+    #CNT_K_042 .btnArea{padding-left: 10px;}
+    #CNT_K_042 .btnArea button{margin-bottom: 10px;}
+    #CNT_K_042 .btnArea button.last{margin-bottom: 0;}
 
     /* IR - IR일정 CNT_K_048 */
     .planWrap{padding-left: 0; background-image: none;}
@@ -107,7 +117,7 @@
     .faqPart{display: none;}
 
     .faqWrap .panel{padding: 0 15px; font-size: 13px;} /* FAQ 아코디언*/
-    .faqWrap .accordion + .panel p {padding: 14px 0;}
+    .faqWrap .accordion + .panel .panelIn {padding: 14px 0;}
     .faqWrap .accordion {padding: 13px 52px 13px 15px; font-size: 15px;}
     .faqWrap .accordion, .faqWrap .panel{background-image: none;}
 
