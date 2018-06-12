@@ -129,8 +129,8 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .fillBtn.disable, .blankBtn.disable, .fillBtn.small.disable {background:#ddd !important; color: #c4c4c4 !important;}
 
 /* 버튼 내 아이콘 모음 */
-.fillBtn .icoDownload {display: inline-block; width:19px; height: 17px; margin-right: 15px; background: url(../images/front/icon/ico_download01.png) no-repeat; vertical-align: middle;}
-.fillBtn.disable .icoDownload {background-image: url(../images/front/icon/ico_download01_disable.png)}
+.fillBtn .icoDownload {display: inline-block; width:19px; height: 17px; margin-right: 15px; background: url(/images/front/icon/ico_download01.png) no-repeat; vertical-align: middle;}
+.fillBtn.disable .icoDownload {background-image: url(/images/front/icon/ico_download01_disable.png)}
 
 .blankBtn {display:inline-block;padding:0 20px;min-width:140px; height: 56px; border: 1px solid #ccc; background:#fff;color:#555;font-size:18px;}
 .blankBtn:hover {background:#f8f8f8;}
@@ -368,7 +368,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 
 /* 셀렉트박스(4뎁스메뉴) -블루타입 */
 .selectTab.typeBlue {}
-.selectTab.typeBlue .select button {background: #377dd5; color:#fff;}
+.selectTab.typeBlue .select button {border: 1px solid #377dd5; background: #377dd5; color:#fff;}
 .selectTab.typeBlue .select button:after {content:''; position: absolute; top:17px; left: auto; right:15px; display:inline-block; width: 10px; height: 5px; background:url('/images/front/icon/ico_arrowBlue_open.png') no-repeat 98% 50%;background-size:10px 5px;}
 .selectTab.typeBlue.active .select button:after {background-image:url('/images/front/icon/ico_arrowBlue_close.png');}
 
@@ -564,7 +564,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 #contentsWrap > .container {padding: 104px 0 100px; margin: -104px 0 -100px;}
 #contentsWrap .contentsTop {position: relative;}
 #contentsWrap .contentsTop .inner {max-width:1200px; padding:0 50px; margin:0 auto; box-sizing: border-box;}
-#contentsWrap .visualWrap {min-height: 312px; background: url(../images/front/common/pic_visual.jpg) no-repeat 50% 50%; background-size: cover;}
+#contentsWrap .visualWrap {min-height: 312px; background: url(/images/front/common/pic_visual.jpg) no-repeat 50% 50%; background-size: cover;}
 #contentsWrap .visualWrap .visualTit {padding-top: 170px; color: #fff;}
 #contentsWrap .visualWrap .visualTit span {display: block; font-size: 30px; font-family:'SamsungOne', sans-serif; font-weight: 700;}
 #contentsWrap .searchWrap {position: absolute; top:0; left:0; width: 100%;padding: 13px 0; background: #0075c2; box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5); }
@@ -574,8 +574,8 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 #contentsWrap .searchWrap .searchArea {float: right; width: 50%; text-align: right;}
 #contentsWrap .searchWrap .searchArea input {max-width: 410px; height: 47px;  border-radius: 5px;}
 #contentsWrap .searchWrap .searchArea input:focus {border: 1px solid #fff; border-radius: 5px; color:#333;}
-#contentsWrap .searchWrap .searchArea .searchBtn {width: 45px; height: 45px; margin-left: 7px;  background: url(../images/front/btn/btn_search.png) no-repeat;}
-#contentsWrap .moMenuWrap {display: none;}
+#contentsWrap .searchWrap .searchArea .searchBtn {width: 45px; height: 45px; margin-left: 7px;  background: url(/images/front/btn/btn_search.png) no-repeat;}
+.header .moMenuWrap {display: none;}
 #contentsWrap .pcMenuWrap {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box;}
 #contentsWrap .pcMenuWrap .inner {max-width:1200px; padding:0 50px; margin:0 auto; box-sizing: border-box;}
 #contentsWrap .pcMenuWrap .navbar {overflow: hidden;}
@@ -583,22 +583,25 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 #contentsWrap .pcMenuWrap .navbar a:first-child {padding-left: 0;}
 #contentsWrap .pcMenuWrap .navbar .dropdown {float: left; overflow: hidden;}
 #contentsWrap .pcMenuWrap .navbar .dropdown .dropbtn {padding: 15px; color: #333; font-size: 16px;}
-#contentsWrap .pcMenuWrap .navbar .dropdown .dropbtn .dropdownIcon {display: inline-block; width: 13px; height: 7px; margin-left: 10px; background: url(../images/front/icon/ico_dropdown_off.png) no-repeat; background-size: 100%;}
+#contentsWrap .pcMenuWrap .navbar .dropdown .dropbtn .dropdownIcon {display: inline-block; width: 13px; height: 7px; margin-left: 10px; background: url(/images/front/icon/ico_dropdown_off.png) no-repeat; background-size: 100%;}
 #contentsWrap .pcMenuWrap .navbar .dropdown:hover .dropbtn .dropdownIcon,
-#contentsWrap .pcMenuWrap .navbar .dropdown.on .dropbtn .dropdownIcon {background-image: url(../images/front/icon/ico_dropdown_on.png);}
+#contentsWrap .pcMenuWrap .navbar .dropdown.on .dropbtn .dropdownIcon,
+#contentsWrap .pcMenuWrap .navbar .dropdown.active .dropbtn .dropdownIcon {background-image: url(/images/front/icon/ico_dropdown_on.png);}
 #contentsWrap .pcMenuWrap .navbar a:hover, 
 #contentsWrap .pcMenuWrap .navbar .dropdown:hover, 
 #contentsWrap .pcMenuWrap .navbar .dropbtn:hover {color: #0075c2;}
 #contentsWrap .pcMenuWrap .navbar a.on, 
-#contentsWrap .pcMenuWrap .navbar .dropdown.on .dropbtn {color: #0075c2;}
+#contentsWrap .pcMenuWrap .navbar .dropdown.on .dropbtn,
+#contentsWrap .pcMenuWrap .navbar .dropdown.active .dropbtn {color: #0075c2;}
 #contentsWrap .pcMenuWrap .navbar .dropdown .dropdownCont {display: none; position: absolute; background-color: #fff; min-width: 106px; padding: 20px 15px; border: 1px solid #ddd; box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.07); z-index: 1;}
 #contentsWrap .pcMenuWrap .navbar .dropdown .dropdownCont a {float: none; display: block; color: #333; padding: 0; margin-bottom: 15px; font-size: 14px; text-align: left;}
 #contentsWrap .pcMenuWrap .navbar .dropdown .dropdownCont a:last-child {margin-bottom: 0;}
 #contentsWrap .pcMenuWrap .navbar .dropdown .dropdownCont a:before {content:'-'; display: inline-block; margin-right: 5px;}
 #contentsWrap .pcMenuWrap .navbar .dropdown .dropdownCont a:hover {color: #0075c2;}
- #contentsWrap .pcMenuWrap .navbar .dropdown.on .dropdownCont {display: block;}
+ #contentsWrap .pcMenuWrap .navbar .dropdown.active .dropdownCont {display: block;}
 
 .contents {max-width:1200px; padding:80px 50px; margin:0 auto; box-sizing: border-box;}
+.contentsBtm {display: none;}
 
 /* 페이지 타이틀 영역 */
 .conTitWrap h2 {display:table-cell;height:60px;padding:0 15px;font-weight:700;font-size:1.8rem;line-height:1;color:#fff;vertical-align:middle;}
@@ -630,6 +633,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .footer > .container {position: relative;max-width:1200px;margin:0 auto;padding:30px 50px 0; box-sizing: border-box;}
 .footer .footMenuWrap {margin-bottom: 10px;}
 .footer .footMenuWrap ul {overflow: hidden; width: 100%;}
+.footer .footMenuWrap ul.moLink {display: none;}
 .footer .footMenuWrap li {float:left; position: relative;}
 .footer .footMenuWrap li:after {content:"";display:block;clear:both;position:absolute;left:auto;right:0;top:50%;width:1px;height:10px;margin-top:-5px;background:#86858e;}
 .footer .footMenuWrap li:last-child:after {width: 0; height:0; background: none;}
@@ -641,7 +645,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.familyWrap.active .btnFamily {background-position:100% 100%;}
 	.familyWrap.active .familyArea {display:block;}
 
-	.familyWrap .btnFamily{position:absolute;top:33px;right:50px;width:20%;padding:11px 30px 7px 10px;border:1px solid #ddd;background:url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:1.2rem;color:#666;line-height:1;text-align:left;}
+	.familyWrap .btnFamily{position:absolute;top:33px;right:50px;width:20%;padding:10px 30px 8px 10px;border:1px solid #84838c;background: #4f4e5a url('/images/front/icon/ico_familymap_pc.png') no-repeat 100% 13px;font-size:14px;color:#fff;line-height:1;text-align:left;}
 
 	.familyWrap .familyArea {display:none;position:absolute;right:0;bottom:100%;z-index:150;margin:0 4px 0 6px;}
 	.familyArea .container {display:table;width:100%;table-layout:fixed;border:1px solid #d9d9d9;background-color:#fff;box-sizing:border-box;}
@@ -931,13 +935,13 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	height: 7px;
 	border: 6px solid transparent;
 	/* border-color: red transparent transparent transparent; */
-	background: url(../images/front/icon/ico_arrow_open.png) no-repeat;
+	background: url(/images/front/icon/ico_arrow_open.png) no-repeat;
 	background-size: 13px 7px;
   }
   /*point the arrow upwards when the select box is open (active):*/
   .select-selected.select-arrow-active:after {
 	/* border-color: transparent transparent red transparent; */
-	background: url(../images/front/icon/ico_arrow_close.png) no-repeat;
+	background: url(/images/front/icon/ico_arrow_close.png) no-repeat;
 	background-size: 13px 7px;
 	top: 11px;
   }
@@ -969,14 +973,16 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
   /*****************************************************************************************************************************************
 	반응형 처리 (모바일)
 *****************************************************************************************************************************************/
-
-/* 모바일 */
+/* 미디어퀴리 */
+@media screen and (max-width:1200px) {
+	#contentsWrap .searchWrap .searchArea {width: 40%;}
+	#contentsWrap .searchWrap .searchArea input {width: 60%;}
+}
 @media screen and (max-width:1024px) {
-
 	/* 최상단 영역 */
 	.header {position:fixed;width:100%;height:70px;min-height:auto;}
 	.header:before,.header:after {display:none;}
-	.header header {max-width:none;margin:0;padding:0;}
+	.header header {max-width:none;margin:0;padding:0; }
 		
 	.logo {top:0;}
 	.logo a {width: 162px; height: 28px; padding: 23px 0 23px 20px;}
@@ -1002,11 +1008,11 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	/* 메뉴영역 설정 */
 	.megaMenu {display:none;}
 	.megaMenu.active {display:block;}
-	.megaMenu.active > .container {top:0;min-height:auto;border-bottom:none;background:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+	.megaMenu.active > .container {top:0;border-bottom:none;background:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
 	.megaMenu > .container {position:fixed;width:100%;height:100%;z-index:1000;padding-bottom:40px;box-sizing:border-box;}
 	.megaMenu section {height:100%;max-width:none;padding:0;}
 	.megaMenu a {font-size:13px;}
-	.megaMenu .btnMenuClose {display:block;position:absolute;right:0;top:0;z-index:1005;width:70px;height:70px;background:#fff url('/images/front/btn/btn_menuclose_mo.png') no-repeat 50% 50%;background-size:15px;}
+	.megaMenu .btnMenuClose {display:block;position:absolute;right:0;top:0;z-index:1005;width:70px;height:69px;background:#fff url('/images/front/btn/btn_menuclose_mo.png') no-repeat 50% 50%;background-size:15px;}
 	.megaMenu .btnMenuClose span {font-size:0;position:absolute;top:-9999px;}
 	
 	.menuWrap {height:100%;margin:0;background:#fff;}
@@ -1042,41 +1048,66 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.depthWrap .depth03 > li > a {padding:6px 15px 8px 40px;font-weight:400;color:#555;}
 	.depthWrap .depth03 > li > a:before {content:"-";display:block;clear:both;position:absolute;top:50%;left:32px;margin-top:-10px;}
 	.depthWrap .depth03 > li > a:hover {color:#555;}
-	
-	}
-/* 미디어퀴리 */
-@media screen and (max-width:1200px) {
-	#contentsWrap .searchWrap .searchArea {width: 40%;}
-	#contentsWrap .searchWrap .searchArea input {width: 60%;}
-}
-@media screen and (max-width:1024px) {
+
 	#contentsWrap .contentsTop .inner,
 	#contentsWrap .pcMenuWrap .inner {padding: 0 20px;}
 	.contents {padding: 40px 20px;}
 	.footer > .container {padding: 30px 20px 0;}
 	#contentsWrap .searchWrap .searchArea input {width: 60%;}
 	#contentsWrap > .container {padding: 70px 0 100px; margin: 0 0 -100px;}
+
+	/* 푸터 -모바일 + 태블릿 */
+	.familyWrap .btnFamily {right: 20px; width: 15%;}
+	
 }
 @media screen and (max-width:812px) {
 	#contentsWrap .contentsTop {display: none;}
-	#contentsWrap .moMenuWrap {display: block;}
+	#contentsWrap > .container {padding-top: 40px;}
+	.header header {border-bottom: 1px solid #c3c3c3;}
+	.header .moMenuWrap {display: block;}
 	#contentsWrap .pcMenuWrap {display: none;}
 	/* 모바일 메뉴 */
 	.moMenuWrap .location {position: relative;}
-	.moMenuWrap .location ol {padding: 10px 15px 9px 36px; border-top: 1px solid #c3c3c3; background: #e7e7e7;}
-	.moMenuWrap .location ol:before {content:''; position: absolute; top:10px; left:15px; display:block; width:16px; height: 16px; background: url(../images/front/icon/icon_home.png) no-repeat; background-size: 16px 16px;}
+	.moMenuWrap .location ol {padding: 10px 0 9px 25px; background: #e7e7e7;}
+	.moMenuWrap .location ol:before {content:''; position: absolute; top:10px; left:6px; display:block; width:16px; height: 16px; background: url(/images/front/icon/icon_home.png) no-repeat; background-size: 16px 16px;}
 	.moMenuWrap .location ol li {float: left; margin-right: 4px; font-size: 12px; font-weight: 700; color: #333; line-height: 1.5;}
 	.moMenuWrap .location ol li:after {content:'>'; display: inline-block; margin-left: 3px; color: #999; vertical-align: middle;}
+	.moMenuWrap .location ol li:last-child {margin-right:0;}
 	.moMenuWrap .location ol li:last-child:after {display: none;}
 	.moMenuWrap .location ol li.on {color: #377dd5;}
 
-	.header {height:40px;}
-	#contentsWrap > .container {padding-top: 40px;}
+	.header {height:auto;}
+	/* #contentsWrap > .container {padding-top: 0; min-height: 100%;} */
+	/* #contentsWrap > .container .moLayout {padding-bottom: 187px;} */
+	.contents {padding: 40px 20px 0; min-height: 211px;}
 	.logo a {display:block;width:105px;height:18px;padding:11px 0 11px 15px;}
 	.utility:after {content:"";display:block;clear:both;position:absolute;right:0;top:11px;width:1px;height:10px;background:#ccc;}
 	.utility a {padding:10px 2px;font-size:14px;color:#333;}
-	.header .btnMenuView {display:block;position:absolute;right:0;top:0;width:40px;height:40px;background:#fff url('/images/front/btn/btn_menuview_mo.png') no-repeat 50% 50%;background-size:12px 12px;}
+	.header .btnMenuView {display:block;position:absolute;right:0;top:0;width:40px;height:39px;background:#fff url('/images/front/btn/btn_menuview_mo.png') no-repeat 50% 50%;background-size:12px 12px;}
 	.utility ul {padding-right:13px;}
 	.menuWrap nav {margin-top: 40px;}
-	.megaMenu .btnMenuClose {width: 40px; height: 40px;}
+	.megaMenu .btnMenuClose {width: 40px; height: 39px;}
+
+	/* 본문 하단 모바일 영역 */
+	.contentsBtm {display: block; background: #fff;} /* position: absolute; top: auto; bottom: 100px; left:0; */
+	.contentsBtm .viewTop {text-align: center;}
+	.contentsBtm .viewTop a {display:inline-block; position:relative; padding: 20px; font-size: 11px; font-weight: 700;  font-family:'SamsungOne', sans-serif; color: #333;}
+	.contentsBtm .viewTop a:after {display:block; content:''; position: absolute; top:22px; left: auto; right:5px; width: 10px; height: 10px; background: url(/images/front/icon/ico_top.png) no-repeat; background-size: 10px 10px;}
+	.contentsBtm .moAcco {border-top: 1px solid #434757;}
+	.contentsBtm .moAcco button {padding: 12px 15px; width: 100%; border-bottom: 1px solid #e3e4eb; outline: none; color: #333; cursor: pointer; font-size: 15px; font-weight: 700; font-family: 'SamsungOne', sans-serif; text-align: left; transition: 0.4s;}
+	/* .contentsBtm .moAcco button.active,
+	.contentsBtm .moAcco button:hover {background-color: #ccc;} */
+	.contentsBtm .moAcco button:after {content: ''; display: block; float: right; margin-top: 3px; width: 13px; height: 13px; background: url(/images/front/icon/ico_acco_plus.png) no-repeat; background-size: 13px 13px;} 
+	.contentsBtm .moAcco button.active:after {background-image: url(/images/front/icon/ico_acco_minus.png);}
+	.contentsBtm .moAcco button + .panel {padding: 0 15px; background-color: white; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
+	.contentsBtm .moAcco button + .panel p {padding: 20px 0;}
+
+	/* 푸터 */
+	.footer > .container {padding-top: 20px;}
+	.footer .familyWrap {display: none;}
+	.footer .footMenuWrap ul {display: none;}
+	.footer .footMenuWrap ul.moLink {display: block; text-align: center;}
+	.footer .footMenuWrap ul.moLink li {float: none; display: inline-block;}
+	.footer .copy {text-align: center;}
+	.footer .block {display: block !important;}
 }

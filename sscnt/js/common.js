@@ -484,6 +484,8 @@ gnbApp.event = function (){
 	gnbApp.$megaMenuDepth = gnbApp.$megaMenu.find(".depth01 > li");
 	gnbApp.$megaMenuDepth02 = gnbApp.$megaMenu.find(".depth02 > li");
 	
+	gnbApp.$utility = conApp.$wrap.find(".utility");
+
 	gnbApp.$megaMenuShowEvent = function(e){
 		$("body").css("overflow-y","hidden");
 		gnbApp.$megaMenu.addClass("active");
@@ -537,6 +539,24 @@ gnbApp.event = function (){
 		gnbApp.$megaMenu.removeClass("active").find("li").removeClass("active");
 	}
 		
+	gnbApp.scrollEventHandler = function(){
+		var sTop = $(this).scrollTop();
+
+		var headerHeight = $("header").outerHeight(true);
+
+		if(sTop >= headerHeight) {
+			TweenMax.to(gnbApp.$header, .35, { y: - headerHeight, ease:Power1.easeOut})			
+		} else {
+			TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut})
+			
+		}
+
+
+	}
+
+	
+
+
 	var mq = Utils.getMediaQuery('gnb');
 
 	mq.matches ? matched() : unMatched();
@@ -548,20 +568,32 @@ gnbApp.event = function (){
 	function matched(){
 		console.log('Mathced ! isNotPC');
 
-		gnbApp.$megaMenuDepth.off("mouseenter");
-		gnbApp.$megaMenuDepth02.off("mouseenter");
+		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true)); 
+		TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
+		
+		// $(window).on("resize", function(){ 
+		// 	vh = Math.round(((gnbApp.$header.outerHeight(true) + 40) * 100) / $(window).outerHeight(true));
+		// 	TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
+		// })
+
+		gnbApp.$megaMenuDepth.off("mouseenter focusin");
+		gnbApp.$megaMenuDepth02.off("mouseenter focusin");
+		gnbApp.$utility.find("li").eq(0).off("focusin")
 		gnbApp.$header.off("mouseleave");
 
 		gnbApp.$megaMenuShowBtn.on("click",gnbApp.$megaMenuShowEvent);
 		gnbApp.$megaMenuHideBtn.on("click",gnbApp.$megaMenuHideEvent);
 		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
 		gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
+	
+		$(window).on("scroll", gnbApp.scrollEventHandler)
 
-		
 	};
 
 	function unMatched(){
 		console.log('unMathced ! isPC')
+
+		$(".contents").removeAttr("style")
 
 		gnbApp.$megaMenuShowBtn.off("click");
 		gnbApp.$megaMenuHideBtn.off("click");
@@ -573,6 +605,27 @@ gnbApp.event = function (){
 		gnbApp.$header.on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
 
 		gnbApp.$header.trigger("mouseleave")
+
+		gnbApp.$megaMenuDepth.on("focusin", function(){
+			$(this).trigger("mouseenter")
+		})
+
+		gnbApp.$megaMenuDepth02.on("focusin", function(){
+			$(this).trigger("mouseenter")
+		})
+
+		gnbApp.$utility.find("li").eq(0).on("focusin", function(){
+			gnbApp.$header.trigger("mouseleave");
+		})
+
+		gnbApp.$utility.find("li").on("keydown", function(e){
+			if(e.shiftKey && e.keyCode === 9){
+				gnbApp.$megaMenuDepth.trigger("mouseenter");
+				gnbApp.$megaMenuDepth02.trigger("mouseenter");
+			}
+		})
+
+		$(window).off("scroll")
 	}
 
 }
@@ -580,46 +633,42 @@ gnbApp.event = function (){
 
 // 왼쪽메뉴
 lnbApp.event = function(){
-	lnbApp.$pcLnbWrap = $(".pcLnbWrap");
-	lnbApp.$pcLnbList = lnbApp.$pcLnbWrap.find(".pcLnb>li");
-	lnbApp.$pcLnbDepth = lnbApp.$pcLnbWrap.find(".depth");
+	lnbApp.$pcLnbWrap = $(".pcMenuWrap");
+	lnbApp.$pcLnbDepth = lnbApp.$pcLnbWrap.find(".dropdown");
 	
-	lnbApp.$moLnbWrap = $(".moLnbWrap");
-	lnbApp.$moLnbDiv = lnbApp.$moLnbWrap.find(".flexContainer>div");
-	lnbApp.$moLnbSelect = lnbApp.$moLnbWrap.find(".select");
+	// lnbApp.$moLnbWrap = $(".moLnbWrap");
+	// lnbApp.$moLnbDiv = lnbApp.$moLnbWrap.find(".flexContainer>div");
+	// lnbApp.$moLnbSelect = lnbApp.$moLnbWrap.find(".select");
 	
 	lnbApp.$pcLnbListEvent = function(e){
-		var $this = $(this);
-		var $prt = $this.parent("li");
 		
-		if($prt.hasClass("active")){
-			$prt.toggleClass("active");
+		var $this = $(this);
+	
+		if($this.hasClass("active")){
+			$this.toggleClass("active");
 			return;
 		}
-		
-		
-		lnbApp.$pcLnbList.filter(".active").removeClass("active");
-		$prt.addClass("active");
+		$this.addClass("active");
 	}
 	
-	lnbApp.$moLnbListEvent = function(e){
-		var $this = $(this);
-		if($this.closest("div").hasClass("active")){
-			$this.closest("div").toggleClass("active")
-			return;
-		}
-		lnbApp.$moLnbDiv.filter(".active").removeClass("active");
+	// lnbApp.$moLnbListEvent = function(e){
+	// 	var $this = $(this);
+	// 	if($this.closest("div").hasClass("active")){
+	// 		$this.closest("div").toggleClass("active")
+	// 		return;
+	// 	}
+	// 	lnbApp.$moLnbDiv.filter(".active").removeClass("active");
 		
-		// conApp.openSelectHide
-		setTimeout(function(){
-			$this.closest("div").addClass("active");
-		},10);
+	// 	// conApp.openSelectHide
+	// 	setTimeout(function(){
+	// 		$this.closest("div").addClass("active");
+	// 	},10);
 		
-	}
+	// }
 	
 	
 	lnbApp.$pcLnbDepth.on("click",lnbApp.$pcLnbListEvent);
-	lnbApp.$moLnbSelect.on("click",lnbApp.$moLnbListEvent);
+	//lnbApp.$moLnbSelect.on("click",lnbApp.$moLnbListEvent);
 	
 	//setTimeout(lnbApp.$moLnbListEvent(),10));
 }
@@ -721,9 +770,15 @@ conApp.selectTabEvent = function(){
 	$selectTabConList.eq(selectTabActiveIdx).show();
 	
 	
+	$selectTab.each(function(idx){
+		$(this).attr("data-idx", idx).find("li").each(function(){
+			TweenMax.set($(this), { attr: { 'data-owner-idx': idx } })
+		})
+	})
+
+
 	function selectTab(){
 		var $this = $(this);
-
 		if($this.parents(".selectTab").hasClass("active")){
 			$this.parents(".selectTab").removeClass("active");
 			return;
@@ -744,14 +799,16 @@ conApp.selectTabEvent = function(){
 		}
 		
 		var thisIdx =  $selectTabList.index($this.parent());
+		var ownerIdx = $(this).parent("li").data("owner-idx");
 		var thisTxt = $this.text();
 			$selectTabActive = $selectTabList.filter(".active");
 			selectTabActiveIdx = $selectTabList.index($selectTabActive);
-		
+
 		$selectTabActive.removeClass("active");
 		$this.parent().addClass("active");
 		
-		$selectTabBtn.text(thisTxt);
+		$selectTab.filter("[data-idx="+ownerIdx+"]").find($selectTabBtn).text(thisTxt);
+		
 		$selectTabActive.removeClass("active");
 		
 		$selectTabConList.eq(thisIdx).show();
@@ -767,23 +824,28 @@ conApp.selectTabEvent = function(){
 //아코디언
 conApp.accordionEvent = function(){
 	
-	$accordion = conApp.$body.find(".accordionList");
-	$accordionList = $accordion.find(">ul>li");
-	
-	function accordionView(){
-		var $this = $(this);
-		var $prt = $this.parent();
-		
-		if($prt.hasClass("active")){
-			$prt.toggleClass("active");
-		}else{
-			//siblings removeClass 일시
-			//$accordionList.filter(".active").removeClass("active");
-			$prt.addClass("active");
+	var $accordion = $(".accordion");
+
+	$accordion.on("click", function(){
+		var $next = $(this).next();
+
+		if($(this).toggleClass("active").hasClass("active")) {
+			$next.css({maxHeight: $next.prop("scrollHeight") })
+		} else {
+			$next.css({maxHeight:0})
 		}
-	}
+	})
+
+	$accordion.each(function(){
+		if($(this).hasClass("active")){
+			$(this).trigger("click")
+		}
+
+	})
+
 	
-	$accordionList.on("click",">a",accordionView);
+
+	
 }
 
 // 열려있는 select닫아주기
@@ -928,12 +990,12 @@ $(function() {
 	}
 	/* if (hasJqObject(conApp.$wrap.find(".main"))){ mainApp.event();} */
 	if (hasJqObject(conApp.$wrap.find(".megaMenu"))){ gnbApp.event();} //gnb
-	if (hasJqObject(conApp.$wrap.find(".pcLnbWrap"))){ lnbApp.event();} //lnb
+	if (hasJqObject(conApp.$wrap.find(".pcMenuWrap"))){ lnbApp.event();} //lnb
     if (hasJqObject(conApp.$wrap.find(".btnEthic"))){ conApp.ethicManage();} //Ethic : 2017-04-07 추가
 	if (hasJqObject(conApp.$wrap.find(".btnFamily"))){ conApp.familySite();} //family
 	if (hasJqObject(conApp.$body.find(".defaultTab"))){ conApp.defaultTabEvent();} //defaulTab
 	if (hasJqObject(conApp.$body.find(".selectTab"))){ conApp.selectTabEvent();} //selectTab
-	if (hasJqObject(conApp.$body.find(".accordionList"))){ conApp.accordionEvent();} //accordion
+	if (hasJqObject(conApp.$body.find(".accordion"))){ conApp.accordionEvent();} //accordion
 	if (hasJqObject(conApp.$body.find(".btnDefaultForm"))){ conApp.formToggle();} //formToggle
 	if (hasJqObject(conApp.$body.find(".btnSearchView"))){ conApp.btnSearchView();} //formToggle
 	if (hasJqObject(conApp.$body.find(".layerList"))){ conApp.layerEvent();} //layerPopup

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>보안신고센터 : 삼성물산</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<link type="text/css" rel="stylesheet" href="/css/default.css" />
+<link type="text/css" rel="stylesheet" href="/css/popup_kor.css" />
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<!--[if lt IE 9]>
+	<script src="/js/html5.js"></script>
+	<script src="/js/respond.js"></script>
+<![endif]-->
+<script type="text/javascript">
+</script>
+<body>
+
+<div class="popWrap"> <!-- 팝업사이즈 800*  -->
+	<header class="popHeader">
+		<h1 class="popTit">보안신고센터</h1>
+	</header>
+	<div id="CT-PCK-074" class="popContWrap">
+		<h2 class="popContTit">신고서 작성하기</h2>
+		<article class="popGrayWrap">
+			<div class="formView">
+				<form action="">
+					<table class="defaultTable">
+						<caption>보안 신고 작성</caption>
+						<colgroup>
+							<col style="width:17%" />
+							<col style="width:auto" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row"><label>제목</label> <span class="compulsory">필수항목</span></th>
+								<td><input type="text" name="" class="inputText" /></td>
+							</tr>
+							<tr>
+								<th scope="row"><label>내용</label> <span class="compulsory">필수항목</span></th>
+								<td>
+									<textarea class="textArea"></textarea>
+									<span class="limit">1000 자</span> <!-- 2016-03-21 추가 -->
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label>이름</label></th>
+								<td><input type="text" name="" class="inputText" /></td>
+							</tr>
+							<tr>
+								<th scope="row"><label>연락처</label></th>
+								<td>
+									<p class="boxPhone"><!-- 2016-03-21 연락처 입력 영역 마크업 수정 -->
+										<input type="text" name="" title="연락처 앞자리" class="inputText">
+										<span class="unit">-</span>
+										<input type="text" name="" title="연락처 중간자리" class="inputText">
+										<span class="unit">-</span>
+										<input type="text" name="" title="연락처 끝자리" class="inputText">
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label>이메일</label></th>
+								<td><input type="text" name="" class="inputText"></td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</article>
+
+		<h2 class="popContTit">개인정보 수집 및 이용에 관한 동의</h2>
+		<article class="popGrayWrap">
+			<p>※ 본 개인정보의 수집, 이용 등에 대한 상세한 내용은 삼성물산 홈페이지(<a href="http://www.samsungcnt.com" title="삼성물산 홈페이지 새창으로 바로가기" target="_blank" >www.samsungcnt.com</a>)에 공개된 &lt;개인정보 취급방침&gt;을 참조하시기 바랍니다.</p>
+
+			<div class="termsArea">
+				<h3 class="popBlueTit">1. 수집하는 개인정보의 항목 및 수집방법</h3>
+
+				<h4 class="popSmallTit">(1) 수집항목</h4>
+				<ul class="defaultGrayDotList">
+					<li>필수 사항 : 없음</li>
+					<li>선택 사항 : 이름, 연락처, 이메일</li>
+					<li>동의를 거부할 권리 및 동의 거부에 따른 불이익<br />
+						<span class="dashed">- 정보 수집에 대한 동의를 거부할 권리가 있으며, 동의하지 않더라고 보안제보를 입력하시는데 제약은 없습니다. (무기명 제보 가능)<br />
+							단, 동의를 거부하실 경우 제보 민원을 적기에 처리하지 못할 수 있습니다.</span>
+					</li>
+				</ul>
+
+				<h4 class="popSmallTit">(2) 수집방법</h4>
+				<ul class="defaultGrayDotList">
+					<li>회사는 다음과 같은 방법으로 개인정보를 수집합니다. <br />
+						<span class="dashed">- 홈페이지 '보안신고센터(제보)' 메뉴</span>
+					</li>
+				</ul>
+
+				<h3 class="popBlueTit">2. 개인정보의 수집 및 이용목적</h3>
+
+				<ul class="defaultGrayDotList">
+					<li>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다. <br />
+						<span class="dashed">- 제보민원 처리 및 결과 회신</span>
+					</li>
+				</ul>
+
+				<h3 class="popBlueTit">3. 수집한 개인정보의 보유ㆍ이용기간</h3>
+				<p>개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 법률에 의해 보존의무가 있는 경우에는 법령이 지정한 일정기간 보존합니다.</p>
+			</div>
+		</article>
+
+		<p class="popSmallTit">본인은 상기 기재된 개인정보 수집&middot;이용 내용에 동의합니다.</p>
+		<ul class="radioArea">
+			<li><input type="radio" id="agree" name="check"> <label for="agree">동의</label></li>
+			<li><input type="radio" id="disagree" name="check"> <label for="disagree">동의안함</label></li>
+		</ul>
+
+		<p>신고 내용은 보안이 유지되며, 제보자의 신원또한 철저히 보호 됩니다.</p>
+		<p>익명신고의 경우 <a href="mailto:security_secc@samsung.com" title="익명신고 메일보내기">security_secc@samsung.com</a>으로 전송 가능합니다.</p> <!-- 2016-04-05 : 이메일 주소 수정 -->
+		<p><span class="compulsory">필수항목</span> 표시는 필수 기입 항목입니다.</p>
+
+		<!-- 2016-04-15 마크업 추가 -->
+		<div class="autoEntry">
+			<p class="popSmallTit">자동입력방지</p>
+			<span id=""><img src="/images/front/common/img_sample_entry.png" alt="" /></span> <!-- 이미지영역 -->
+			<input type="text" class="inputText" title="자동입력방지 내용 입력(좌측내용을 입력하세요.)" />
+			<button class="btnRefresh"><span class="iconRefresh"></span>새로고침</button>
+		</div>
+	</div>
+	<footer class="popFooter"><!-- 2016-03-23 footer영역 추가, btnArea 영역 footer안으로 위치 변경 -->
+		<div class="btnArea">
+			<button type="button" class="btnDefaultForm">등록하기</button>
+			<button type="button" class="btnSubForm">다시쓰기</button>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
