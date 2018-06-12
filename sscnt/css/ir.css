@@ -18,11 +18,11 @@
 .yearWrap .accordion {font-weight: 600;} 
 
 /* IR - FAQ CNT_K_057 */
-.faqWrap{padding-top: 60px;}
+.faqWrap{padding-top: 60px; border-bottom: 1px solid #777777;}
 .faqPart{display: block; padding-bottom: 10px; font-size: 16px; color: #0075c2;}
 .faqPartMo{display: none; color: #0075c2;}
-.faqWrap .panel{padding-left: 84px; line-height: 27px; border-bottom: 1px solid #eaeaea; background: url(/images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
-.faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(/images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
+.faqWrap .panel{padding-left: 84px; line-height: 27px; background: url(../images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
+.faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(../images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
 
 /* 2depth selectBox */
 #CNT_K_057 .selectTab{display: none;} /* FAQ selectBox */
@@ -30,13 +30,16 @@
 /* 아코디언 */
 .accordion {position: relative; color: #444; cursor: pointer; padding: 44px 29px 44px 30px; font-size: 24px; width: 100%; border: none; border-top: 1px solid #d9d9d9; text-align: left; outline: none; word-break: keep-all; transition: 0.4s; } 
 .accordion.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;}
-.accordion:after{position: absolute; right: 29px; top: 50%; z-index: 1; content: ''; display: block; margin-top: -13px; width: 26px; height: 26px; float: right; background: url(/images/front/contents/open_CNT_K-048.png) no-repeat center;}
-.accordion.active:after { content: ""; background-image: url(/images/front/contents/close_CNT_K-048.png)}
+.accordion:after{position: absolute; right: 29px; top: 50%; z-index: 1; content: ''; display: block; margin-top: -13px; width: 26px; height: 26px; float: right; background: url(/images/front/contents/ico_open_CNT_K-048.png) no-repeat center;}
+.accordion.active:after { content: ""; background-image: url(/images/front/contents/ico_close_CNT_K-048.png)}
 .panel { padding: 0 15px; background-color: #fbfbfb; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
 .accordion + .panel p {padding: 41px 0;}
 
 /* MOBILE */
 @media screen and (max-width: 1024px){
+    /* margin 좌우 -20px */
+    .tabViewWrap, .yearWrap{margin: 0 -20px;}
+
     /* IR - IR일정 CNT_K_048 */
     .planWrap{padding-left: 0; background-image: none;}
     .planDl{padding-bottom: 26px;}
@@ -57,7 +60,6 @@
 
     .faqWrap .panel{padding: 0 15px; font-size: 13px;} /* FAQ 아코디언*/
     .faqWrap .accordion + .panel p {padding: 14px 0;}
-    .faqWrap .panel.last{border-bottom: 1px solid #777777;}
     .faqWrap .accordion {padding: 13px 52px 13px 15px; font-size: 15px;}
     .faqWrap .accordion, .faqWrap .panel{background-image: none;}
 
@@ -65,8 +67,8 @@
     #CNT_K_057 .selectTab{display: block;} /* FAQ selectBox */
 
     /* 아코디언 */
-    .accordion {padding: 18px 15px; font-size: 17px; line-height: 25px;} 
-    .accordion:after {right: 15px; margin-top: -7px;  width: 14px; height: 14px;} 
+    .accordion {padding: 18px 15px; font-size: 17px; line-height: 25px;}
+    .accordion:after, .accordion.active:after{right: 13px; margin-top: -6.5px; width: 13px; height: 13px; background-size: 13px 13px;}
 }
 						
 

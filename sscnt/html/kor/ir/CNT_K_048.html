@@ -20,7 +20,7 @@
 	<a href="#contentsWrap">본문 바로가기  </a>
 </div>
 <div class="wrap">
-	<div class="header">
+	<div class="header" style="height:auto">
 		<header>
 			<h1 class="logo">
 				<a href="#none"><img src="/images/front/common/img_logo.png" alt="삼성물산" /></a>
@@ -159,145 +159,169 @@
 				</ul>
 			</div>
 		</header>
+		<div class="moMenuWrap">
+			<div class="location">
+				<ol class="clfix">
+					<li>INVESTOR RELATIONS</li>
+					<li class="on">IR일정</li>
+				</ol>
+			</div>
+			<div class="selectTab typeBlue">
+				<strong class="select"><button type="button"></button></strong>
+				<ul>
+					<li class="active"><a href="#none">Overview</a></li>
+					<li><a href="#none">공시정보</a></li>
+					<li><a href="#none">재무정보</a></li>
+					<li><a href="#none">IR일정</a></li>
+					<li><a href="#none">주식 및 주주정보</a></li>
+					<li><a href="#none">FAQ</a></li>
+					<li><a href="#none">CONTACT IR</a></li>
+				</ul>
+			</div>
+		</div>
 	</div> <!-- // header -->
 
 	<div id="contentsWrap">
 		<div class="container">
-			<div class="contentsTop">
-				<div class="visualWrap">
-					<div class="inner">
-						<h3 class="visualTit">
-							IR일정 <span>INVESTOR RELATIONS</span>
-						</h3>
-					</div>
-				</div>
-				<div class="searchWrap">
-					<div class="inner clfix">
-						<ul class="hashtag">
-							<li><a href="javascript:;">#IR</a></li>
-							<li><a href="javascript:;">#CSR</a></li>
-							<li><a href="javascript:;">#주주정보</a></li>
-							<li><a href="javascript:;">#기업지배구조</a></li>
-						</ul>
-						<div class="searchArea">
-							<input type="text" class="inputText" title="무엇을 찾아드릴까요?" id="" name="" placeholder="무엇을 찾아드릴까요?">
-							<button class="searchBtn"><span class="blind">검색</span></button>
-						</div>
-					</div>
-				</div>
-			</div>
 			
+			<div class="moLayout">
+				<div class="contentsTop">
+					<div class="visualWrap">
+						<div class="inner">
+							<h3 class="visualTit">
+								IR일정 <span>INVESTOR RELATIONS</span>
+							</h3>
+						</div>
+					</div>
+					<div class="searchWrap">
+						<div class="inner clfix">
+							<ul class="hashtag">
+								<li><a href="javascript:;">#IR</a></li>
+								<li><a href="javascript:;">#CSR</a></li>
+								<li><a href="javascript:;">#주주정보</a></li>
+								<li><a href="javascript:;">#기업지배구조</a></li>
+							</ul>
+							<div class="searchArea">
+								<input type="text" class="inputText" title="무엇을 찾아드릴까요?" id="" name="" placeholder="무엇을 찾아드릴까요?">
+								<button class="searchBtn"><span class="blind">검색</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			<div class="moMenuWrap">
-				<div class="location">
-					<ol class="clfix">
-						<li>INVESTOR RELATIONS</li>
-						<li class="on">IR일정</li>
-					</ol>
+				
+
+				<div class="pcMenuWrap">
+					<div class="navbar inner"><a href="javascript:;" class="">overview</a> <!-- 활성화 시 "on" 추가 -->
+						<a href="javascript:;">공시정보</a>
+						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
+							<button class="dropbtn">재무정보 <i class="dropdownIcon"></i></button>
+							<div class="dropdownCont">
+								<a href="#">요약재무제표</a>
+								<a href="#">신용등급</a>
+								<a href="#">감사/검토보고서</a>
+								<a href="#">사업보고서</a>
+								<a href="#">실적발표 자료</a>
+							</div>
+						</div>
+						<a href="javascript:;">IR일정</a>
+						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
+							<button class="dropbtn">주식 및 주주정보 <i class="dropdownIcon"></i></button>
+							<div class="dropdownCont">
+								<a href="#">기본정보</a>
+								<a href="#">주가정보</a>
+								<a href="#">주가지표</a>
+								<a href="#">주주구성</a>
+								<a href="#">주주총회</a>
+								<a href="#">주주환원</a>
+							</div>
+						</div>
+						<a href="javascript:;">FAQ</a>
+						<a href="javascript:;">CONTACT IR</a>
+					</div>
 				</div>
-				<div class="selectTab typeBlue">
-					<strong class="select"><button type="button"></button></strong>
-					<ul>
-						<li class="active"><a href="#none">Overview</a></li>
-						<li><a href="#none">공시정보</a></li>
-						<li><a href="#none">재무정보</a></li>
-						<li><a href="#none">IR일정</a></li>
-						<li><a href="#none">주식 및 주주정보</a></li>
-						<li><a href="#none">FAQ</a></li>
-						<li><a href="#none">CONTACT IR</a></li>
-					</ul>
-				</div>
+
+				<div id="CNT_K_048" class="contents"> <!-- 페이지별 ID -->
+					<div class="planWrap">
+						<p><span class="upComing">Upcoming</span></p>
+						<dl class="planDl">
+							<dt class="planTit color01">2018년 <span class="color02">1분기</span> 실적발표</dt>
+							<dd class="planDate">2018년 04월 25일</dd>
+							<dd><button class="fillBtn"><span class="icoDownload"></span>첨부파일 다운로드</button></dd>
+						</dl>
+					</div>
+					<div class="yearWrap">
+						<button class="accordion active">2018년</button> <!-- "active" 클래스명 사용시 초기 아코디언 열림 -->
+						<div class="yearPlan panel">
+							<div class="yearPlanDiv">
+								<div class="planBu">
+									<strong class="ypDate">2018년 04월 25일</strong><span class="upComing type1">Upcoming</span><br/>
+									2018년 1분기 실적발표
+								</div>
+								<div class="planBtn">
+									<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
+								</div>
+							</div>
+							<div class="yearPlanDiv">
+								<div class="planBu">
+									<strong class="ypDate">2018년 02월 01일</strong><br/>
+									2017년 4분기 실적발표
+								</div>
+								<div class="planBtn">
+									<button class="fillBtn small"><span class="icoDownload"></span>자세히 보기</button>
+									<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
+								</div>
+							</div>
+							<div class="yearPlanDiv last">
+								<div class="planBu">
+									<strong class="ypDate">2018년 01월 08일</strong><br/>
+									3개년(2017~2019년) 배당정책 발표
+								</div>
+								<div class="planBtn">
+									<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
+								</div>
+							</div>
+						</div>
+						<button class="accordion">2017년</button>
+						<div class="yearPlan panel">
+							<div class="yearPlanDiv last">
+								<div class="planBu">
+									<strong class="ypDate">2018년 04월 25일</strong><br/>
+									2018년 1분기 실적발표
+								</div>
+								<div class="planBtn">
+									<button class="fillBtn small"><span class="icoDownload"></span>자세히 보기</button>
+									<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div> <!-- // contents -->
 			</div>
 
-			<div class="pcMenuWrap">
-				<div class="navbar inner">
-					<a href="javascript:;" class="">overview</a> <!-- 활성화 시 "on" 추가 -->
-					<a href="javascript:;">공시정보</a>
-					<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-						<button class="dropbtn">재무정보 <i class="dropdownIcon"></i></button>
-						<div class="dropdownCont">
-							<a href="#">요약재무제표</a>
-							<a href="#">신용등급</a>
-							<a href="#">감사/검토보고서</a>
-							<a href="#">사업보고서</a>
-							<a href="#">실적발표 자료</a>
-						</div>
-					</div>
-					<a href="javascript:;">IR일정</a>
-					<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-						<button class="dropbtn">주식 및 주주정보 <i class="dropdownIcon"></i></button>
-						<div class="dropdownCont">
-							<a href="#">기본정보</a>
-							<a href="#">주가정보</a>
-							<a href="#">주가지표</a>
-							<a href="#">주주구성</a>
-							<a href="#">주주총회</a>
-							<a href="#">주주환원</a>
-						</div>
-					</div>
-					<a href="javascript:;">FAQ</a>
-					<a href="javascript:;">CONTACT IR</a>
+		</div> <!-- // container -->
+
+		<div class="contentsBtm">
+			<p class="viewTop"><a href="javascript:;">BACK TO TOP</a></p>
+			<div class="moAcco">
+				<button class="">OUR BUSINESSES</button>
+				<div class="panel">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+				<button>INVESTOR RELATIONS</button>
+				<div class="panel">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+				<button>CORPORATE GOVERNANCE</button>
+				<div class="panel">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 			</div>
-
-			<div id="CNT_K_048" class="contents"> <!-- 페이지별 ID -->
-				<div class="planWrap">
-					<p><span class="upComing">Upcoming</span></p>
-					<dl class="planDl">
-						<dt class="planTit color01">2018년 <span class="color02">1분기</span> 실적발표</dt>
-						<dd class="planDate">2018년 04월 25일</dd>
-						<dd><button class="fillBtn"><span class="icoDownload"></span>첨부파일 다운로드</button></dd>
-					</dl>
-				</div>
-				<div class="yearWrap">
-					<button class="accordion active">2018년</button> <!-- "active" 클래스명 사용시 초기 아코디언 열림 -->
-					<div class="yearPlan panel">
-						<div class="yearPlanDiv">
-							<div class="planBu">
-								<strong class="ypDate">2018년 04월 25일</strong><span class="upComing type1">Upcoming</span><br/>
-								2018년 1분기 실적발표
-							</div>
-							<div class="planBtn">
-								<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
-							</div>
-						</div>
-						<div class="yearPlanDiv">
-							<div class="planBu">
-								<strong class="ypDate">2018년 02월 01일</strong><br/>
-								2017년 4분기 실적발표
-							</div>
-							<div class="planBtn">
-								<button class="fillBtn small"><span class="icoDownload"></span>자세히 보기</button>
-								<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
-							</div>
-						</div>
-						<div class="yearPlanDiv last">
-							<div class="planBu">
-								<strong class="ypDate">2018년 01월 08일</strong><br/>
-								3개년(2017~2019년) 배당정책 발표
-							</div>
-							<div class="planBtn">
-								<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
-							</div>
-						</div>
-					</div>
-					<button class="accordion">2017년</button>
-					<div class="yearPlan panel">
-						<div class="yearPlanDiv last">
-							<div class="planBu">
-								<strong class="ypDate">2018년 04월 25일</strong><br/>
-								2018년 1분기 실적발표
-							</div>
-							<div class="planBtn">
-								<button class="fillBtn small"><span class="icoDownload"></span>자세히 보기</button>
-								<button class="fillBtn small"><span class="icoDownload"></span>첨부파일 다운로드</button>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div> <!-- // contents -->
 		</div>
+
 	</div> <!-- // contentsWrap -->
 
 	<div class="footer">
@@ -331,9 +355,13 @@
 						<li class="contact"><a href="#none">CONTACT US</a></li>
 						<li class="sitemap"><a href="#none">Sitemap</a></li>
 					</ul>
+					<ul class="moLink">
+						<li><a href="#none">오시는 길</a></li>
+						<li><a href="#none">고객문의</a></li>
+					</ul>
 				</div>
 
-				<p class="copy">Copyright (C) 2018 Samsung C&amp;T Corporation. All rights reserved</p>
+				<p class="copy">Copyright (C) 2018 Samsung C&amp;T Corporation. <span class="block">All rights reserved</span></p>
 
 				<div class="familyWrap"> <!-- .btnFamily 버튼 클릭시 다중클래스 active 추가 -->
 					<section>
