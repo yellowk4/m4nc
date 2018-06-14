@@ -536,7 +536,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .depthWrap .depth02 {padding:30px 15px 0;}	
 .depthWrap .depth02 li {position:relative;}	
 .depthWrap .depth02 > li > a {position:relative;padding:5px 17px 5px 0;color:#333;}
-.depthWrap .depth02 > li > a:hover {color:#0075c2;}
+.depthWrap .depth02 > li > a:hover, .depthWrap .depth02 > li > a:focus {color:#0075c2;}
 .depthWrap .depth02 > li > .depth {background-image:url('/images/front/icon/ico_megaplus_pc.png');background-repeat:no-repeat;background-position:100% 50%;}
 .depthWrap .depth02 > li.active {}
 .depthWrap .depth02 > li.active > a {color:#0075c2;}
@@ -545,7 +545,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .depthWrap .depth02 > li.active .depth03 {display:block;}
 .depthWrap .depth03 > li > a {padding:5px 0px 5px 24px;font-weight:400;font-size:14px;color:#555;}
 .depthWrap .depth03 > li > a:before {content:"-";display:block;clear:both;position:absolute;top:5px;left:15px;}
-.depthWrap .depth03 > li > a:hover {color:#0075c2;text-decoration:underline;}
+.depthWrap .depth03 > li > a:hover,.depthWrap .depth03 > li > a:focus {color:#0075c2;text-decoration:underline;}
 
 /*******************************************************************************************
 	컨텐츠영역 초기값 설정
@@ -1045,7 +1045,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.depthWrap .depth02 > li:before {content:"";display:block;clear:both;width:100%;height:1px;background:#fff;}
 	.depthWrap .depth02 > li:first-child {border-color:#ccc;}
 	.depthWrap .depth02 > li > a {position:relative;padding:7px 15px;background-color:#f2f2f2;}
-	.depthWrap .depth02 > li > a:hover {color:#333;}
+	.depthWrap .depth02 > li > a:hover,.depthWrap .depth02 > li > a:focus {color:#333;}
 	.depthWrap .depth02 > li > .depth {background-image:url('/images/front/icon/ico_megaplus_mo.png');background-repeat:no-repeat;background-position:100% 50%;background-size:28px 13px;}
 	.depthWrap .depth02 > li.active {border-color:#0c4da2;}
 	.depthWrap .depth02 > li.active:before {background:#0c4da2;}
@@ -1055,7 +1055,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.depthWrap .depth02 > li.active .depth03 > li:first-child {border-color:#0c4da2;}
 	.depthWrap .depth03 > li > a {padding:7px 15px 7px 42px;font-weight:400;color:#555;}
 	.depthWrap .depth03 > li > a:before {content:"-";display:block;clear:both;position:absolute;top:50%;left:32px;margin-top:-10px;}
-	.depthWrap .depth03 > li > a:hover {color:#555;text-decoration:none;}
+	.depthWrap .depth03 > li > a:hover,.depthWrap .depth03 > li > a:focus {color:#555;text-decoration:none;}
 
 	#contentsWrap .contentsTop .inner,
 	#contentsWrap .pcMenuWrap .inner {padding: 0 20px;}
@@ -1095,7 +1095,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.header .btnMenuView {display:block;position:absolute;right:0;top:0;width:40px;height:39px;background:#fff url('/images/front/btn/btn_menuview_mo.png') no-repeat 50% 50%;background-size:12px 12px;}
 	.utility ul {padding-right:13px;}
 	.menuWrap nav {margin-top: 40px;}
-	.megaMenu .btnMenuClose {width: 40px; height: 39px;}
+	.megaMenu .btnMenuClose {width: 40px; height: 39px;background-size:12px;}
 	.menuWrap .depth01 > li:first-child {border-top:none;}
 
 	/* 본문 하단 모바일 영역 */
