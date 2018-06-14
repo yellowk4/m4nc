@@ -530,10 +530,10 @@ gnbApp.event = function (){
 		gnbApp.$megaMenu.addClass("active");
 		$(this).addClass("active").siblings().removeClass("active").find(".depth02 li").removeClass("active")
 	}
-	gnbApp.$megaMenuOverEvent02 = function(e){
-		$(this).addClass("active").siblings().removeClass("active");
-		e.stopPropagation();	
-	}
+	// gnbApp.$megaMenuOverEvent02 = function(e){
+	// 	$(this).addClass("active").siblings().removeClass("active");
+	// 	e.stopPropagation();	
+	// }
 
 	gnbApp.$headerMouseLeaveHideEvent = function(){
 		gnbApp.$megaMenu.removeClass("active").find("li").removeClass("active");
@@ -565,6 +565,9 @@ gnbApp.event = function (){
 		mql.matches ? matched() : unMatched();
 	})
 
+	gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
+	
+
 	function matched(){
 		console.log('Mathced ! isNotPC');
 
@@ -577,15 +580,13 @@ gnbApp.event = function (){
 		// })
 
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
-		gnbApp.$megaMenuDepth02.off("mouseenter focusin");
 		gnbApp.$utility.find("li").eq(0).off("focusin")
 		gnbApp.$header.off("mouseleave");
 
 		gnbApp.$megaMenuShowBtn.on("click",gnbApp.$megaMenuShowEvent);
 		gnbApp.$megaMenuHideBtn.on("click",gnbApp.$megaMenuHideEvent);
 		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
-		gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
-	
+		
 		$(window).on("scroll", gnbApp.scrollEventHandler)
 
 	};
@@ -610,10 +611,6 @@ gnbApp.event = function (){
 			$(this).trigger("mouseenter")
 		})
 
-		gnbApp.$megaMenuDepth02.on("focusin", function(){
-			$(this).trigger("mouseenter")
-		})
-
 		gnbApp.$utility.find("li").eq(0).on("focusin", function(){
 			gnbApp.$header.trigger("mouseleave");
 		})
@@ -627,7 +624,6 @@ gnbApp.event = function (){
 
 		$(window).off("scroll")
 	}
-
 }
 
 
