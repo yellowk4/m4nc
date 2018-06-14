@@ -1028,7 +1028,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.menuWrap nav {overflow-x:hidden;overflow-y:auto;height:100%;margin-top:70px;}
 	.menuWrap .depth01 {}
 	.menuWrap .depth01 > li {float:none;border-bottom:1px solid #ccc;}
-	/* .menuWrap .depth01 > li:first-child {border-top:1px solid #ccc;}	 */
+	.menuWrap .depth01 > li:first-child {border-top:1px solid #ccc;}
 	.menuWrap .depth01 > li.active {}
 	.menuWrap .depth01 > li > a {height:auto;padding:10px 15px;background:#fff url('/images/front/icon/ico_megaplus_mo.png') no-repeat 100% 50%;background-size:28px 13px;font-size:15px;text-align:left;}
 	.menuWrap .depth01 > li > a:hover {color:#111;}
@@ -1096,12 +1096,14 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.utility ul {padding-right:13px;}
 	.menuWrap nav {margin-top: 40px;}
 	.megaMenu .btnMenuClose {width: 40px; height: 39px;}
+	.menuWrap .depth01 > li:first-child {border-top:none;}
 
 	/* 본문 하단 모바일 영역 */
 	.contentsBtm {display: block; background: #fff;} /* position: absolute; top: auto; bottom: 100px; left:0; */
 	.contentsBtm .viewTop {text-align: center;}
-	.contentsBtm .viewTop a {display:inline-block; position:relative; padding: 20px; font-size: 11px; font-weight: 700;  font-family:'SamsungOne', sans-serif; color: #333;}
-	.contentsBtm .viewTop a:after {display:block; content:''; position: absolute; top:22px; left: auto; right:5px; width: 10px; height: 10px; background: url(/images/front/icon/ico_top.png) no-repeat; background-size: 10px 10px;}
+	.contentsBtm .viewTop a {display:inline-block; position:relative; padding: 20px; font-size: 12px; font-weight: 700;  font-family:'SamsungOne', sans-serif; color: #333;}
+	.contentsBtm .viewTop a:after {display:block; content:''; position: absolute; top:23px; left: auto; right:4px; width: 11px; height: 11px; background: url(/images/front/icon/ico_top.png) no-repeat; background-size: 11px 11px;}
+
 	.contentsBtm .moAcco {border-top: 1px solid #434757;}
 	.contentsBtm .moAcco button {padding: 12px 15px; width: 100%; border-bottom: 1px solid #e3e4eb; outline: none; color: #333; cursor: pointer; font-size: 15px; font-weight: 700; font-family: 'SamsungOne', sans-serif; text-align: left; transition: 0.4s;}
 	/* .contentsBtm .moAcco button.active,
@@ -1110,6 +1112,8 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.contentsBtm .moAcco button.active:after {background-image: url(/images/front/icon/ico_acco_minus.png);}
 	.contentsBtm .moAcco button + .panel {padding: 0 15px; background-color: white; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
 	.contentsBtm .moAcco button + .panel p {padding: 20px 0;}
+
+	.contentsBtm .moAcco.menuWrap a {display: block; font-weight: 700; word-wrap: break-word;}
 
 	/* 푸터 */
 	.footer > .container {padding-top: 20px;}
