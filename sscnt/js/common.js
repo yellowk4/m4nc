@@ -547,7 +547,9 @@ gnbApp.event = function (){
 		if(sTop >= headerHeight) {
 			TweenMax.to(gnbApp.$header, .35, { y: - headerHeight, ease:Power1.easeOut})			
 		} else {
-			TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut})
+			TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut, onComplete:function(){
+				gnbApp.$header.removeAttr("style");
+			}})
 			
 		}
 
