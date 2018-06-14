@@ -481,9 +481,9 @@ gnbApp.event = function (){
 	
 	gnbApp.$megaMenuShowBtn = conApp.$wrap.find(".btnMenuView");
 	gnbApp.$megaMenuHideBtn = gnbApp.$megaMenu.find(".btnMenuClose");
-	gnbApp.$megaMenuDepth = gnbApp.$megaMenu.find(".depth01 > li");
-	gnbApp.$megaMenuDepth02 = gnbApp.$megaMenu.find(".depth02 > li");
-	
+	gnbApp.$megaMenuDepth = $(".depth01 > li");
+	gnbApp.$megaMenuDepth02 = $(".depth02 > li");
+
 	gnbApp.$utility = conApp.$wrap.find(".utility");
 
 	gnbApp.$megaMenuShowEvent = function(e){
