@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* corporate 정관 CNT_K_051 */
+.titleBox:after{content: ''; display: block; clear: both; overflow: hidden;}
+.titleBox .left, .titleBox .right {float: left; width: 50%;}
+.titleBox .right{text-align: right;}
+.titleBox .selectTab .select button{padding: 19px 32px 18px 19px; max-width: 445px; font-size: 18px; font-weight: 600; color: #333333;}
+.titleBox .selectTab .select button:after{top: 24px; right: 19px;}
+.titleBox .selectTab ul{top: 58px; max-width: 445px;}
+.corporate{padding-top: 50px;}
+.corporate h4{padding-bottom: 12px; font-size: 20px;}
+.corporate .txt{line-height: 1.6;}
+
+#CNT_K_051 .txt + ul {margin-top: 5px;}
+#CNT_K_051 .numList, #CNT_K_051 .roundNumList, #CNT_K_051 .sub{padding: 5px 0;}
+#CNT_K_051 .numList.pT0, #CNT_K_051 .roundNumList.pT0{padding: 0;}
+#CNT_K_051 .numList > li {list-style-type: decimal; text-indent: 0; margin-left: 32px; line-height: 1.8;}
+#CNT_K_051 .roundNumList > li {padding-left: 18px; text-indent: -18px; line-height: 1.8;}
+#CNT_K_051 .revision ul {overflow: hidden;}
+#CNT_K_051 .revision ul li {float: left; width: 33%; line-height: 1.6;}
+#CNT_K_051 .defaultGrayDotList li {background-position: 0 10px;}
+.mt_40{margin-top: 40px;}
+
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+    /* corporate 정관 CNT_K_051 */
+    .titleBox .left{float: none; width: 100%;}
+    .titleBox .right {display: none;}
+}

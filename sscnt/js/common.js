@@ -481,9 +481,9 @@ gnbApp.event = function (){
 	
 	gnbApp.$megaMenuShowBtn = conApp.$wrap.find(".btnMenuView");
 	gnbApp.$megaMenuHideBtn = gnbApp.$megaMenu.find(".btnMenuClose");
-	gnbApp.$megaMenuDepth = gnbApp.$megaMenu.find(".depth01 > li");
-	gnbApp.$megaMenuDepth02 = gnbApp.$megaMenu.find(".depth02 > li");
-	
+	gnbApp.$megaMenuDepth = $(".depth01 > li");
+	gnbApp.$megaMenuDepth02 = $(".depth02 > li");
+
 	gnbApp.$utility = conApp.$wrap.find(".utility");
 
 	gnbApp.$megaMenuShowEvent = function(e){
@@ -530,10 +530,10 @@ gnbApp.event = function (){
 		gnbApp.$megaMenu.addClass("active");
 		$(this).addClass("active").siblings().removeClass("active").find(".depth02 li").removeClass("active")
 	}
-	gnbApp.$megaMenuOverEvent02 = function(e){
-		$(this).addClass("active").siblings().removeClass("active");
-		e.stopPropagation();	
-	}
+	// gnbApp.$megaMenuOverEvent02 = function(e){
+	// 	$(this).addClass("active").siblings().removeClass("active");
+	// 	e.stopPropagation();	
+	// }
 
 	gnbApp.$headerMouseLeaveHideEvent = function(){
 		gnbApp.$megaMenu.removeClass("active").find("li").removeClass("active");
@@ -547,7 +547,9 @@ gnbApp.event = function (){
 		if(sTop >= headerHeight) {
 			TweenMax.to(gnbApp.$header, .35, { y: - headerHeight, ease:Power1.easeOut})			
 		} else {
-			TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut})
+			TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut, onComplete:function(){
+				gnbApp.$header.removeAttr("style");
+			}})
 			
 		}
 
@@ -565,6 +567,9 @@ gnbApp.event = function (){
 		mql.matches ? matched() : unMatched();
 	})
 
+	gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
+	
+
 	function matched(){
 		console.log('Mathced ! isNotPC');
 
@@ -577,15 +582,13 @@ gnbApp.event = function (){
 		// })
 
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
-		gnbApp.$megaMenuDepth02.off("mouseenter focusin");
 		gnbApp.$utility.find("li").eq(0).off("focusin")
 		gnbApp.$header.off("mouseleave");
 
 		gnbApp.$megaMenuShowBtn.on("click",gnbApp.$megaMenuShowEvent);
 		gnbApp.$megaMenuHideBtn.on("click",gnbApp.$megaMenuHideEvent);
 		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
-		gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
-	
+		
 		$(window).on("scroll", gnbApp.scrollEventHandler)
 
 	};
@@ -610,10 +613,6 @@ gnbApp.event = function (){
 			$(this).trigger("mouseenter")
 		})
 
-		gnbApp.$megaMenuDepth02.on("focusin", function(){
-			$(this).trigger("mouseenter")
-		})
-
 		gnbApp.$utility.find("li").eq(0).on("focusin", function(){
 			gnbApp.$header.trigger("mouseleave");
 		})
@@ -627,7 +626,6 @@ gnbApp.event = function (){
 
 		$(window).off("scroll")
 	}
-
 }
 
 
@@ -703,8 +701,8 @@ conApp.familySite = function(){
 //default 탭 : complete
 conApp.defaultTabEvent = function(){
 	var $defaultTab = conApp.$body.find(".defaultTab");
-	var $defaultTabList = $defaultTab.find("li");
-	var $defaultTabActive = $defaultTabList.filter(".active");
+	var $defaultTabList = $defaultTab.find(".tabCtrlWrap > a");
+	var $defaultTabActive = $defaultTabList.filter(".current");
 	var defaultTabActiveIdx = $defaultTabList.index($defaultTabActive);
 	var $defaultTabCon = conApp.$body.find(".defaultTabCon");
 	var $defaultTabConList = $defaultTabCon.find("article");
@@ -718,21 +716,25 @@ conApp.defaultTabEvent = function(){
 	function defaultTab(){
 		var $this = $(this);
 		
-		if($this.parent().hasClass("active")){
-			$defaultTab.removeClass("active");
+		if($this.hasClass("current")){
+			
+			$defaultTab.removeClass("current");
 			return;
 		}
 		
-		currentIdx = $defaultTabList.index($this.parent());
-		$defaultTabActive = $defaultTabList.filter(".active");
-		defaultTabActiveIdx = $defaultTabList.index($defaultTabActive);
+		currentIdx = $defaultTabList.index($this);
+		//$defaultTabActive = $defaultTabList.filter(".active");
+		//defaultTabActiveIdx = $defaultTabList.index($defaultTabActive);
 		
-		$this.parent().addClass("active");
+		$this.addClass("current");
+		console.log( $defaultTabActive );
 		
-		$defaultTabActive.removeClass("active");
+		console.log( defaultTabActiveIdx );
+		$this.siblings().removeClass("current");
 		
+		$defaultTabConList.hide();
 		$defaultTabConList.eq(currentIdx).show();
-		$defaultTabConList.eq(defaultTabActiveIdx).hide();
+		
 		
 		$defaultTabBtn.text($this.text());
 		
@@ -750,7 +752,7 @@ conApp.defaultTabEvent = function(){
 		},10)
 	}
 	
-	$defaultTabList.on("click","a",defaultTab);
+	$defaultTabList.on("click",defaultTab);
 	$defaultTabBtn.on("click",defaultTabMo);
 }
 
