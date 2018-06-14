@@ -126,50 +126,56 @@
 			<div class="">
 					<br/><br/>
 
-					<div class="initTab">
+					<!-- 탭 2개일 경우 모바일화면에서 변경되지 않음! -->
+					<div class="defaultTab ">
+						<strong class="select">
+							<button type="button">전체</button>
+						</strong>
 						<div class="tabCtrlWrap on"> <!-- current 클래스 있을 시 추가 -->
 							<a href="javascript:;" class="tabCtrl current">전체</a>
 							<a href="javascript:;" class="tabCtrl">기업정보</a>
-						</div>
-					
-						<div class="tabViewWrap">
-							<div class="tabView" style="width:100px; height: 100px; background:red; display: none;"></div>
-							<div class="tabView" style="width:100px; height: 100px; background:blue; display: none;"></div>
 						</div>
 					</div>
-					
-					<br/><br/>
 
-					<div class="initTab item3">
-						<div class="tabCtrlWrap on"> <!-- current 클래스 있을 시 추가 -->
-							<a href="javascript:;" class="tabCtrl current">전체</a>
-							<a href="javascript:;" class="tabCtrl">기업정보</a>
-							<a href="javascript:;" class="tabCtrl">주식관련</a>
-						</div>
-					
-						<div class="tabViewWrap">
-							<div class="tabView" style="width:100px; height: 100px; background:red; display: none;"></div>
-							<div class="tabView" style="width:100px; height: 100px; background:blue; display: none;"></div>
-							<div class="tabView" style="width:100px; height: 100px; background:black; display: none;"></div>
-						</div>
+					<!-- 탭 한페이지로 구성시 -->
+					<div class="defaultTabCon">
+						<article>
+							전체 내용1
+						</article>
+						<article>
+							기업정보 내용2
+						</article>
 					</div>
 
 					<br/><br/>
 
-					<div class="initTab item4"> <!-- 탭 갯수에 따라 item 갯수 입력 -->
+					<!-- 모바일 화면일 경우: select로 변환됨 -->
+					<div class="defaultTab moChange">
+						<strong class="select">
+							<button type="button">전체</button>
+						</strong>
 						<div class="tabCtrlWrap on"> <!-- current 클래스 있을 시 추가 -->
 							<a href="javascript:;" class="tabCtrl current">전체</a>
 							<a href="javascript:;" class="tabCtrl">기업정보</a>
 							<a href="javascript:;" class="tabCtrl">주식관련</a>
-							<a href="javascript:;" class="tabCtrl">재무관련<br/>두줄처리</a>
+							<a href="javascript:;" class="tabCtrl">재무관련</a>
 						</div>
-					
-						<div class="tabViewWrap">
-							<div class="tabView" style="width:100px; height: 100px; background:red; display: none;"></div>
-							<div class="tabView" style="width:100px; height: 100px; background:blue; display: none;"></div>
-							<div class="tabView" style="width:100px; height: 100px; background:black; display: none;"></div>
-							<div class="tabView" style="width:100px; height: 100px; background: green; display: none;"></div>
-						</div>
+					</div>
+
+					<!-- 탭 한페이지로 구성시 -->
+					<div class="defaultTabCon">
+						<article>
+							전체 내용1
+						</article>
+						<article>
+							기업정보 내용2
+						</article>
+						<article>
+							주식관련 내용3
+						</article>
+						<article>
+							재무관련 내용4
+						</article>
 					</div>
 
 			</div>

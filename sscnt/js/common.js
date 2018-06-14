@@ -699,8 +699,8 @@ conApp.familySite = function(){
 //default 탭 : complete
 conApp.defaultTabEvent = function(){
 	var $defaultTab = conApp.$body.find(".defaultTab");
-	var $defaultTabList = $defaultTab.find("li");
-	var $defaultTabActive = $defaultTabList.filter(".active");
+	var $defaultTabList = $defaultTab.find(".tabCtrlWrap > a");
+	var $defaultTabActive = $defaultTabList.filter(".current");
 	var defaultTabActiveIdx = $defaultTabList.index($defaultTabActive);
 	var $defaultTabCon = conApp.$body.find(".defaultTabCon");
 	var $defaultTabConList = $defaultTabCon.find("article");
@@ -714,21 +714,25 @@ conApp.defaultTabEvent = function(){
 	function defaultTab(){
 		var $this = $(this);
 		
-		if($this.parent().hasClass("active")){
-			$defaultTab.removeClass("active");
+		if($this.hasClass("current")){
+			
+			$defaultTab.removeClass("current");
 			return;
 		}
 		
-		currentIdx = $defaultTabList.index($this.parent());
-		$defaultTabActive = $defaultTabList.filter(".active");
-		defaultTabActiveIdx = $defaultTabList.index($defaultTabActive);
+		currentIdx = $defaultTabList.index($this);
+		//$defaultTabActive = $defaultTabList.filter(".active");
+		//defaultTabActiveIdx = $defaultTabList.index($defaultTabActive);
 		
-		$this.parent().addClass("active");
+		$this.addClass("current");
+		console.log( $defaultTabActive );
 		
-		$defaultTabActive.removeClass("active");
+		console.log( defaultTabActiveIdx );
+		$this.siblings().removeClass("current");
 		
+		$defaultTabConList.hide();
 		$defaultTabConList.eq(currentIdx).show();
-		$defaultTabConList.eq(defaultTabActiveIdx).hide();
+		
 		
 		$defaultTabBtn.text($this.text());
 		
@@ -746,7 +750,7 @@ conApp.defaultTabEvent = function(){
 		},10)
 	}
 	
-	$defaultTabList.on("click","a",defaultTab);
+	$defaultTabList.on("click",defaultTab);
 	$defaultTabBtn.on("click",defaultTabMo);
 }
 
