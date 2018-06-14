@@ -1,6 +1,7 @@
 @charset "utf-8";
 .borderBt{border-bottom: 1px solid #777777;}
-.defaultGrayDot{background: url(/images/front/icon/ico_grayDot.png) no-repeat 0 7px; background-size: 3px; padding-left: 10px;}
+.grayDotTxt{background-position: 0 7px;}
+
 /* IR - 신용등급 CNT_K_031 */
 #CNT_K_031 .contTit, #CNT_K_031 .color01{padding-bottom: 15px;}
 #CNT_K_031 .color01{padding-top: 50px; font-size: 20px; line-height: 1.6;}
@@ -26,7 +27,7 @@
 .yearPlanDiv{clear: both; overflow: hidden; padding: 34px 0; border-bottom: 1px dashed #cbcbcb;}
 .yearPlanDiv div{float: left; width: 50%;}
 .yearPlanDiv.last{border-bottom: 0;}
-.planBu{padding-left: 16px; line-height: 1.6; background: url(/images/front/contents/bu_CNT_K-048.jpg) no-repeat left 12px; box-sizing: border-box; color: #555555;}
+.planBu{padding-left: 16px; line-height: 1.6; background: url(/images/front/contents/bu_CNT_K-038.jpg) no-repeat left 12px; box-sizing: border-box; color: #555555;}
 .ypDate{color: #111111; font-size: 18px; vertical-align: middle;}
 .upComing{display: inline-block; padding: 0 3px; border: 1px solid #f8c18c; background-color: #fff; color: #f1841a; font-size: 13px; line-height: 20px; vertical-align: middle;}
 .upComing.type1{margin-left: 14px;}
@@ -45,10 +46,7 @@
 /* IR - 주주총회 CNT_K_043 */
 #CNT_K_043 .panel{padding: 0 30px;}
 .listTit{padding-bottom: 10px; color: #111111; font-size: 18px; line-height: 1.6;}
-.listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 1px 12px; color: #555555; line-height: 1.6;}
-
-/* 2depth selectBox */
-#CNT_K_045 .selectTab, #CNT_K_046 .selectTab, #CNT_K_047 .selectTab, #CNT_K_048 .selectTab{display: none;} /* FAQ selectBox */
+.listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type01.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
 
 /* 아코디언 */
 .accordion {position: relative; cursor: pointer; padding: 44px 29px 44px 30px; width: 100%; border: none; border-top: 1px solid #d9d9d9; color: #444; font-size: 24px; text-align: left; outline: none; word-break: keep-all; transition: 0.4s; } 
@@ -59,7 +57,7 @@
 .accordion + .panel .panelIn {padding: 41px 0;}
 
 /* button */
-.whiteBtn.small {padding: 0 15px; min-width: initial; height: 40px; background: #ffffff; border: 1px solid #555; font-size: 14px;}
+.whiteBtn.small {padding: 0 15px; min-width: 147px; height: 40px; background: #ffffff; border: 1px solid #555; font-size: 14px;}
 .whiteBtn .icoDownload{display: inline-block; width: 19px; height: 17px; margin-right: 6px; background: url(/images/front/icon/ico_download02.png)no-repeat; vertical-align: middle;}
 .whiteBtn {display: inline-block; padding: 0 20px; min-width: 140px; height: 56px; background: #ffffff; color: #333333; font-size: 18px;}
 .fillBtn .icoMore{display: inline-block; width: 15px; height: 17px; margin-right: 6px; background: url(/images/front/icon/icoMore01.png) no-repeat; vertical-align: middle;}
@@ -107,8 +105,7 @@
     .yearWrap .panel{padding: 0 15px;} /* IR일정 아코디언*/
 
     /* IR - FAQ CNT_K_045 */
-    #CNT_K_045 .tabCtrlWrap, #CNT_K_046 .tabCtrlWrap, #CNT_K_047 .tabCtrlWrap, #CNT_K_048 .tabCtrlWrap{display: none;}
-    .faqWrap{padding-top: 20px;}
+    .faqWrap{margin: 0 -20px; padding-top: 0;}
     .faqPartMo{display: inline-block;}
     .faqPart{display: none;}
 
@@ -117,8 +114,6 @@
     .faqWrap .accordion {padding: 13px 52px 13px 15px; font-size: 15px;}
     .faqWrap .accordion, .faqWrap .panel{background-image: none;}
 
-    /* 2depth selectBox */
-    #CNT_K_045 .selectTab, #CNT_K_046 .selectTab, #CNT_K_047 .selectTab, #CNT_K_048 .selectTab{display: block;} /* FAQ selectBox */
 
     /* 아코디언 */
     .accordion {padding: 18px 15px; font-size: 17px; line-height: 1.4;}
