@@ -1037,7 +1037,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.menuWrap nav {overflow-x:hidden;overflow-y:auto;height:100%;margin-top:70px;}
 	.menuWrap .depth01 {}
 	.menuWrap .depth01 > li {float:none;border-bottom:1px solid #ccc;}
-	/* .menuWrap .depth01 > li:first-child {border-top:1px solid #ccc;}	 */
+	.menuWrap .depth01 > li:first-child {border-top:1px solid #ccc;}
 	.menuWrap .depth01 > li.active {}
 	.menuWrap .depth01 > li > a {height:auto;padding:10px 15px;background:#fff url('/images/front/icon/ico_megaplus_mo.png') no-repeat 100% 50%;background-size:28px 13px;font-size:15px;text-align:left;}
 	.menuWrap .depth01 > li > a:hover {color:#111;}
@@ -1105,6 +1105,7 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.utility ul {padding-right:13px;}
 	.menuWrap nav {margin-top: 40px;}
 	.megaMenu .btnMenuClose {width: 40px; height: 39px;}
+	.menuWrap .depth01 > li:first-child {border-top:none;}
 
 	/* 본문 하단 모바일 영역 */
 	.contentsBtm {display: block; background: #fff;} /* position: absolute; top: auto; bottom: 100px; left:0; */
