@@ -312,19 +312,12 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 .tableCalendarBasic th {}
 .tableCalendarBasic td {}
 
-/* 전체 감싸는 영역 */
-.initTab {}
-.initTab .tabCtrlWrap {display: table; width: 100%;}
-.initTab .tabCtrlWrap a {display: table-cell; width: 50%; height: 60px; background: #f8f8f8; border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; vertical-align: middle; text-align: center; box-sizing: border-box;}
+/* 탭 */
+.initTab .tabCtrlWrap {display: table; width: 100%; table-layout: fixed;}
+.initTab .tabCtrlWrap a {display: table-cell; height: 60px; background: #f8f8f8; border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; vertical-align: middle; text-align: center; box-sizing: border-box;}
 .initTab .tabCtrlWrap a:first-child {border-left: 1px solid #d9d9d9;}
 .initTab .tabCtrlWrap.on a {border-bottom: 2px solid #0c4da2;}
 .initTab .tabCtrlWrap a.current {border: 2px solid #0c4da2; border-bottom: 0 none; background: #fff; color: #0c4da2;}
-.initTab.item3 .tabCtrlWrap a {width: 33.33%}
-.initTab.item4 .tabCtrlWrap a {width: 25%}
-.initTab.item5 .tabCtrlWrap a {width: 20%}
-.initTab.item6 .tabCtrlWrap a {width: 16.66%}
-.initTab.item7 .tabCtrlWrap a {width: 14.28%}
-
 /*****************************************************************************************************************************************
 	Ul style
 	[탭 스타일 구조안내]
@@ -338,15 +331,13 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 		- 게시물 리스트 (아코디언) : .accordionList > ul > li
 *****************************************************************************************************************************************/
 /* defaultTab */
+.defaultTab .select {display: none;}
 .defaultTab {position:relative;margin-bottom:20px;}
-	.defaultTab ul {display:none;position:absolute;left:0;top:36px;z-index:5;width:100%;padding:3px 0;border-right:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-radius:0 0 3px 3px;background-color:#fafafa;}
-	.defaultTab.active ul {display:block;}
-	.defaultTab li {}
-	.defaultTab a, .defaultTab button {display:block;font-size:1.5rem;line-height:1.5;word-wrap:break-word;}
-	.defaultTab a {padding:8px 16px;}
-	.defaultTab li.active a, .defaultTab li a:hover {color:#2a6eb6;}
-	.defaultTab .select button {display:block;width:100%;padding:7px 51px 6px 16px;border:1px solid #d9d9d9;border-radius:3px;background:url('/images/front/icon/ico_tabarrow_off.png') no-repeat 100% 50%;background-size:35px 11px;color:#555;text-align:left;}
-	.defaultTab.active .select button {border-radius:3px 3px 0 0;background-image:url('/images/front/icon/ico_tabarrow_on.png');}
+	.defaultTab .tabCtrlWrap {display: table; width: 100%; table-layout: fixed;}
+	.defaultTab .tabCtrlWrap a {display: table-cell; height: 60px; background: #f8f8f8; border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; vertical-align: middle; text-align: center; box-sizing: border-box;}
+	.defaultTab .tabCtrlWrap a:first-child {border-left: 1px solid #d9d9d9;}
+	.defaultTab .tabCtrlWrap.on a {border-bottom: 2px solid #0c4da2;}
+	.defaultTab .tabCtrlWrap a.current {border: 2px solid #0c4da2; border-bottom: 0 none; background: #fff; color: #0c4da2;}
 
 /* defaultTabCon - 상세 내용 */
 .defaultTabCon {position:relative;}
@@ -1129,4 +1120,18 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.footer .footMenuWrap ul.moLink li {float: none; display: inline-block;}
 	.footer .copy {text-align: center;}
 	.footer .block {display: block !important;}
+
+	/* 탭 */
+	.defaultTab.moChange .select {display: block;}
+	.defaultTab.moChange .select button {display: block;overflow: hidden;position: relative;width: 100%;padding: 10px 23px 10px 10px;border: 1px solid #ddd;color: #555;text-align: left;text-overflow: ellipsis;white-space: nowrap;font-size: 16px;}
+	.defaultTab.moChange .select button:after {content: '';position: absolute;top: 15px;left: auto;right: 10px;display: inline-block;width: 13px;height: 7px;background: url(/images/front/icon/ico_arrow_open.png) no-repeat;background-size: 13px 7px;}
+	
+	.defaultTab.moChange .tabCtrlWrap {display: none;}
+	.defaultTab.moChange.active .tabCtrlWrap {display: block; border: 1px solid #ddd; border-top: 0 none; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;} 
+	.defaultTab.moChange.active .tabCtrlWrap a {display: block; padding: 10px; height: auto; border:0 none; text-align: left;}
+	.defaultTab.moChange.active .tabCtrlWrap a.current {background: #f8f8f8;}
+	.defaultTab.moChange.active .tabCtrlWrap a:hover {color: #0c4da2;}
+	.defaultTab.moChange.active .tabCtrlWrap {}
+	.defaultTab.moChange.active .select button:after {background-image: url(/images/front/icon/ico_arrow_close.png);}
+	
 }
