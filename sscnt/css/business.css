@@ -26,6 +26,7 @@
 .historyList > li .monthList > li .month {float:left; font-size:24px; margin-right:50px; font-weight:600; color:#0c4da2;}
 .historyList > li .monthList > li .detailList {float:left; overflow:hidden; color:#333333;}
 .historyList > li .monthList > li .detailList li {margin-bottom:8px;}
+#CNT_K_003 .defaultTabCon {margin-bottom:50px;}
 
 /* 사업영역 > 건설부문 / 상사부문 / 패션부문 / 리조트 부문 */
 .businessAreaIntro {width:100%; overflow:hidden; margin-bottom:10px;}
@@ -52,7 +53,6 @@
 .businessAreaBnr ul li.type06 {background:url('/images/front/contents/bg_CNT_K_006_04.jpg') no-repeat; margin-bottom:2%;}
 .businessAreaBnr ul li.type07 {width:49%; background:url('/images/front/contents/bg_CNT_K_006_05.jpg') no-repeat; margin-right:2%}
 .businessAreaBnr ul li.type08 {width:49%; background:url('/images/front/contents/bg_CNT_K_006_06.jpg') no-repeat;}
-
 
 /* CSR > 인사말 */
 #CNT_K_010 .tabCtrlWrap  {width:100%; overflow:hidden; margin-bottom:60px;}
@@ -96,19 +96,20 @@
 .actConts .imgArea {overflow:hidden; margin-bottom:30px;}
 .actConts .imgArea .imgCont01 {float:left; width:49%; margin-right:2%;}
 .actConts .imgArea .imgCont02 {float:left; width:49%;}
+.actConts .imgArea.type02 .imgCont01 {float:left; width:66%; margin-right:2%;}
+.actConts .imgArea.type02 .imgCont02 {float:left; width:32%;}
 .actConts .imgArea img {width:100%;}
 .actConts .imgList {overflow:hidden; margin-bottom:30px;}
-.actConts .imgList li {float:left; width:32%; height:260px; overflow:hidden; position: relative; margin-right:2%; padding:0;}
-.actConts .imgList li img {height:100%;}
-.actConts .imgList li.type01 {width:39%;}
-.actConts .imgList li.type02 {width:25%;}
+.actConts .imgList li {float:left; width:32%; overflow:hidden; position: relative; margin-right:2%; padding:0;}
+.actConts .imgList li.type01 {width:38.4%;}
+.actConts .imgList li.type02 {width:25.6%;}
+.actConts .imgList li img {width:100%;}
 .actConts .imgList li .name {display:block; width:100%; height:50px; line-height:50px;  position:absolute; bottom:0; left:0; text-align:center; color:#fff; background:rgba(21,57,123,0.75);}
 .actConts .imgList li.last {margin:0;}
 .actConts table {width:100%; table-layout:fixed; border-top:1px solid #0c4da2}
 .actConts table th {height:60px; background:#f8f8f8; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9;}
 .actConts table td {height:60px; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; text-align:center;}
 .actConts table th.last, .actConts table td.last {border-right:0;}
-
 .actConts.last {padding:0; margin:0; border:0;}
 
 /* 뉴스 > 리스트 */
