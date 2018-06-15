@@ -626,6 +626,22 @@ gnbApp.event = function (){
 
 		$(window).off("scroll")
 	}
+
+	// 리사이즈 이벤트 후처리
+	$(window).resize(function() {
+		if(this.resizeTO) {
+			clearTimeout(this.resizeTO);
+		}
+
+		this.resizeTO = setTimeout(function() {
+			$(this).trigger('resizeEnd');
+		}, 300);
+	});
+
+	$(window).on('resizeEnd', function() {
+		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true)); 
+		TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
+	});
 }
 
 
@@ -977,21 +993,6 @@ conApp.layerEvent = function(){
     $(window).on("resize",onResize);
     
 }
-
-// 리사이즈 이벤트 후처리
-$(window).resize(function() {
-	if(this.resizeTO) {
-		clearTimeout(this.resizeTO);
-	}
-
-	this.resizeTO = setTimeout(function() {
-		$(this).trigger('resizeEnd');
-	}, 300);
-});
-
-$(window).on('resizeEnd', function() {
-	location.reload();
-});
 
 $(function() {
 	conApp.$body = $("body");
