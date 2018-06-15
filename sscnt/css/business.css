@@ -39,12 +39,14 @@
 .businessAreaBnr ul li.titleBnr {width:100%; height:380px; overflow:hidden; margin-bottom:20px; position:relative; text-align:left; padding:0;}
 .businessAreaBnr ul li.titleBnr.build {background:url('/images/front/contents/bg_CNT_K_005_01.jpg') no-repeat left top;}
 .businessAreaBnr ul li.titleBnr.trade {background:url('/images/front/contents/bg_CNT_K_006_01.jpg') no-repeat left top;}
+.businessAreaBnr ul li.titleBnr.fashion {background:url('/images/front/contents/bg_CNT_K_007_01.jpg') no-repeat left top;}
+.businessAreaBnr ul li.titleBnr.resort {background:url('/images/front/contents/bg_CNT_K_008_01.jpg') no-repeat left top;}
 .businessAreaBnr ul li.titleBnr img {display:none;}
 .businessAreaBnr ul li.titleBnr .titleBnrTxt {width:353px; height:380px; background:rgba(21,57,123,0.75); padding:25px; box-sizing:border-box;}
 .businessAreaBnr ul li.titleBnr .titleBnrTxt h4 {display:block; font-size:28px; line-height:1.4; color:#fff; margin-bottom:20px;}
 .businessAreaBnr ul li.titleBnr .titleBnrTxt h4 span {display:block;}
 .businessAreaBnr ul li.titleBnr .titleBnrTxt p {color:#bbbbbb; line-height:1.4}
-.businessAreaBnr ul li.titleBnr .addView {width:140px; height:54px; line-height:54px; background:#111 url('/images/front/icon/ico_arrow01.png') no-repeat 85px center; color:#fff; padding-left:20px; box-sizing:border-box; position:absolute; bottom:0; left:235px;}
+.businessAreaBnr ul li.titleBnr .addView {width:190px; height:54px; line-height:56px; background:#111 url('/images/front/icon/ico_arrow01.png') no-repeat 89% center; color:#fff; padding-left:2%; box-sizing:border-box; position:absolute; bottom:0; left:235px; text-align:left;}
 .businessAreaBnr ul li.type01 {background:url('/images/front/contents/bg_CNT_K_005_02.jpg') no-repeat;}
 .businessAreaBnr ul li.type02 {background:url('/images/front/contents/bg_CNT_K_005_03.jpg') no-repeat; margin:0 2%;}
 .businessAreaBnr ul li.type03 {background:url('/images/front/contents/bg_CNT_K_005_04.jpg') no-repeat;}
@@ -53,6 +55,13 @@
 .businessAreaBnr ul li.type06 {background:url('/images/front/contents/bg_CNT_K_006_04.jpg') no-repeat; margin-bottom:2%;}
 .businessAreaBnr ul li.type07 {width:49%; background:url('/images/front/contents/bg_CNT_K_006_05.jpg') no-repeat; margin-right:2%}
 .businessAreaBnr ul li.type08 {width:49%; background:url('/images/front/contents/bg_CNT_K_006_06.jpg') no-repeat;}
+.businessAreaBnr ul li.type09 {background:url('/images/front/contents/bg_CNT_K_007_02.jpg') no-repeat;}
+.businessAreaBnr ul li.type10 {background:url('/images/front/contents/bg_CNT_K_007_03.jpg') no-repeat; margin:0 2%;}
+.businessAreaBnr ul li.type11 {background:url('/images/front/contents/bg_CNT_K_007_04.jpg') no-repeat;}
+.businessAreaBnr ul li.type12 {background:url('/images/front/contents/bg_CNT_K_008_02.jpg') no-repeat;}
+.businessAreaBnr ul li.type13 {background:url('/images/front/contents/bg_CNT_K_008_03.jpg') no-repeat; margin:0 2%;}
+.businessAreaBnr ul li.type14 {background:url('/images/front/contents/bg_CNT_K_008_04.jpg') no-repeat;}
+
 
 /* CSR > 인사말 */
 #CNT_K_010 .tabCtrlWrap  {width:100%; overflow:hidden; margin-bottom:60px;}
@@ -99,14 +108,20 @@
 .actConts .imgArea.type02 .imgCont01 {float:left; width:66%; margin-right:2%;}
 .actConts .imgArea.type02 .imgCont02 {float:left; width:32%;}
 .actConts .imgArea img {width:100%;}
-.actConts .imgList {overflow:hidden; margin-bottom:30px;}
+.actConts .imgList {width:100%; overflow:hidden; margin-bottom:30px;}
 .actConts .imgList li {float:left; width:32%; overflow:hidden; position: relative; margin-right:2%; padding:0;}
 .actConts .imgList li.type01 {width:38.4%;}
 .actConts .imgList li.type02 {width:25.6%;}
-.actConts .imgList li img {width:100%;}
+.actConts .imgList li img {width:100%; vertical-align:top;}
 .actConts .imgList li .name {display:block; width:100%; height:50px; line-height:50px;  position:absolute; bottom:0; left:0; text-align:center; color:#fff; background:rgba(21,57,123,0.75);}
-.actConts .imgList li.last {margin:0;}
-.actConts table {width:100%; table-layout:fixed; border-top:1px solid #0c4da2}
+.actConts .imgList li:last-child {margin:0;}
+.actConts .imgTxtList {width:100%; overflow:hidden; margin-bottom:30px;}
+.actConts .imgTxtList li {display:table; margin-bottom:30px;}
+.actConts .imgTxtList li:last-child {margin:0;}
+.actConts .imgTxtList li .imgCont {width:48%; display:table-cell; padding-right:3%;}
+.actConts .imgTxtList li .imgCont img {width:100%;}
+.actConts .imgTxtList li .txtCont {width:49%; display:table-cell; vertical-align: middle;}
+.actConts table {width:100%; table-layout:fixed; border-top:1px solid #0c4da2; margin-bottom:30px;}
 .actConts table th {height:60px; background:#f8f8f8; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9;}
 .actConts table td {height:60px; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; text-align:center;}
 .actConts table th.last, .actConts table td.last {border-right:0;}
@@ -218,7 +233,7 @@
 .businessAreaIntro .bigTit {font-size:20px; margin-bottom:26px;}
 .businessAreaIntro p {margin-bottom:18px;}
 .businessAreaBnr {width:100%; overflow:hidden;}
-.businessAreaBnr ul li {float:none; width:100%; height:auto; overflow:hidden; text-align:center; padding:25px 0; color:#fff;}
+.businessAreaBnr ul li {float:none; width:100%; height:auto; overflow:hidden; text-align:center; padding:40px 0; color:#fff;}
 .businessAreaBnr ul li .title {display:inline-block; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #fff; font-size:20px;}
 .businessAreaBnr ul li.titleBnr {width:100%; height:auto; background:none; margin-bottom:10px; position:relative; padding:0; text-align:center;}
 .businessAreaBnr ul li.titleBnr img {display:block; width:100%;}
@@ -226,7 +241,7 @@
 .businessAreaBnr ul li.titleBnr .titleBnrTxt h4 {display:block; font-size:18px; color:#fff; margin-bottom:10px;}
 .businessAreaBnr ul li.titleBnr .titleBnrTxt h4 span {display:inline;}
 .businessAreaBnr ul li.titleBnr .titleBnrTxt p {margin-bottom:10px; color:#acc9ff;}
-.businessAreaBnr ul li.titleBnr .addView {display:inline-block; width:50%; height:32px; line-height:32px; background:#111 url('/images/front/icon/ico_arrow01.png') no-repeat 90% center; background-size:10px; color:#fff; font-size:14px; padding-left:0px; box-sizing:border-box; position:relative; bottom:auto; left:auto}
+.businessAreaBnr ul li.titleBnr .addView {display:inline-block; width:55%; height:40px; line-height:40px; background:#111 url('/images/front/icon/ico_arrow01.png') no-repeat 90% center; background-size:15px; color:#fff; font-size:14px; box-sizing:border-box; position:relative; bottom:auto; left:auto; padding-left:6%;}
 .businessAreaBnr ul li.type01 {background:url('/images/front/contents/bg_CNT_K_005_02.jpg') no-repeat center center; background-size:100%; margin-bottom:10px;}
 .businessAreaBnr ul li.type02 {background:url('/images/front/contents/bg_CNT_K_005_03.jpg') no-repeat center center; background-size:100%; margin:0 0 10px 0;}
 .businessAreaBnr ul li.type03 {background:url('/images/front/contents/bg_CNT_K_005_04.jpg') no-repeat center center; background-size:100%;}
@@ -235,6 +250,34 @@
 .businessAreaBnr ul li.type06 {background:url('/images/front/contents/bg_CNT_K_006_04.jpg') no-repeat center center; background-size:100%; margin-bottom:10px;}
 .businessAreaBnr ul li.type07 {width:100%; background:url('/images/front/contents/bg_CNT_K_006_05.jpg') no-repeat center center; background-size:100%; margin:0 0 10px 0;}
 .businessAreaBnr ul li.type08 {width:100%; background:url('/images/front/contents/bg_CNT_K_006_06.jpg') no-repeat center center; background-size:100%; margin-bottom:10px;}
+.businessAreaBnr ul li.type09 {background:url('/images/front/contents/bg_CNT_K_007_02.jpg') no-repeat center top; background-size:100%; margin-bottom:10px;}
+.businessAreaBnr ul li.type10 {background:url('/images/front/contents/bg_CNT_K_007_03.jpg') no-repeat center top; background-size:100%; margin:0 0 10px 0;}
+.businessAreaBnr ul li.type11 {background:url('/images/front/contents/bg_CNT_K_007_04.jpg') no-repeat center top; background-size:100%;}
+.businessAreaBnr ul li.type12 {background:url('/images/front/contents/bg_CNT_K_008_02.jpg') no-repeat center center; background-size:100%; margin-bottom:10px;}
+.businessAreaBnr ul li.type13 {background:url('/images/front/contents/bg_CNT_K_008_03.jpg') no-repeat center center; background-size:100%; margin:0 0 10px 0;}
+.businessAreaBnr ul li.type14 {background:url('/images/front/contents/bg_CNT_K_008_04.jpg') no-repeat center center; background-size:100%;}
+
+
+/* CSR > ACT */
+.actConts .imgArea .imgCont01 {display:block; float:none; width:100%; margin:0 0 20px 0;}
+.actConts .imgArea .imgCont02 {display:block; float:none; width:100%;}
+.actConts .imgArea.type02 .imgCont01 {display:block; float:none; width:100%; margin:0 0 20px 0;}
+.actConts .imgArea.type02 .imgCont02 {display:block; float:none; width:100%;}
+.actConts .imgArea img {width:100%;}
+.actConts .imgList {width:100%; overflow:hidden; margin-bottom:30px;}
+.actConts .imgList li {float:none; width:100%; margin-right:0; margin-bottom:20px;}
+.actConts .imgList li.type01 {width:100%;}
+.actConts .imgList li.type02 {width:100%;}
+.actConts .imgTxtList li {display:block; margin-bottom:30px;}
+.actConts .imgTxtList li:last-child {margin:0;}
+.actConts .imgTxtList li .imgCont {width:100%; display:block; padding-right:0%; margin-bottom:20px;}
+.actConts .imgTxtList li .imgCont img {width:100%;}
+.actConts .imgTxtList li .txtCont {width:100%; display:block;}
+.actConts table {width:100%; table-layout:fixed; border-top:1px solid #0c4da2; margin-bottom:30px;}
+.actConts table th {height:60px; background:#f8f8f8; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9;}
+.actConts table td {height:60px; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; text-align:center;}
+.actConts table th.last, .actConts table td.last {border-right:0;}
+.actConts.last {padding:0; margin:0; border:0;}
 
 /* 뉴스 > 리스트 */
 #CNT_K_013 .tabCtrlWrap{display:none;}
