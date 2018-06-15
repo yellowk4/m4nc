@@ -27,7 +27,7 @@
 .yearPlanDiv{clear: both; overflow: hidden; padding: 34px 0; border-bottom: 1px dashed #cbcbcb;}
 .yearPlanDiv div{float: left; width: 50%;}
 .yearPlanDiv.last{border-bottom: 0;}
-.planBu{padding-left: 16px; line-height: 1.6; background: url(/images/front/contents/bu_CNT_K-038.jpg) no-repeat left 12px; box-sizing: border-box; color: #555555;}
+.planBu{padding-left: 16px; line-height: 1.6; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat left 12px; box-sizing: border-box; color: #555555;}
 .ypDate{color: #111111; font-size: 18px; vertical-align: middle;}
 .upComing{display: inline-block; padding: 0 3px; border: 1px solid #f8c18c; background-color: #fff; color: #f1841a; font-size: 13px; line-height: 20px; vertical-align: middle;}
 .upComing.type1{margin-left: 14px;}
@@ -50,10 +50,10 @@
 
 /* COMMON STYLE */
 /* 아코디언 */
-.accordion {position: relative; cursor: pointer; padding: 44px 29px 44px 30px; width: 100%; border: none; border-top: 1px solid #d9d9d9; color: #444; font-size: 24px; text-align: left; outline: none; word-break: keep-all; transition: 0.4s; } 
+.accordion {position: relative; cursor: pointer; padding: 44px 29px 44px 30px; width: 100%; border: none; border-top: 1px solid #d9d9d9; color: #111; font-size: 24px; text-align: left; outline: none; word-break: keep-all; transition: 0.4s; } 
 .accordion.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;}
-.accordion:after{position: absolute; right: 29px; top: 50%; z-index: 1; content: ''; display: block; margin-top: -13px; width: 26px; height: 26px; float: right; background: url(/images/front/contents/ico_open_CNT_K-048.png) no-repeat center;}
-.accordion.active:after { content: ""; background-image: url(/images/front/contents/ico_close_CNT_K-048.png)}
+.accordion:after{position: absolute; right: 29px; top: 50%; z-index: 1; content: ''; display: block; margin-top: -13px; width: 26px; height: 26px; float: right; background: url(/images/front/icon/ico_gray_plus.png) no-repeat center;}
+.accordion.active:after { content: ""; background-image: url(/images/front/icon/ico_blue_minus.png)}
 .panel { padding: 0 15px; background-color: #fbfbfb; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
 .accordion + .panel .panelIn {padding: 41px 0;}
 
@@ -95,6 +95,7 @@
     #CNT_K_032 .btnArea button.last{margin-bottom: 0;}
     .reportTit{padding: 0 0 26px 0; background-image: none;}
     .reportTit dt{font-size: 25px; padding-bottom: 22px;}
+    #CNT_K_032 .defaultTable th{font-size: 18px;}
 
     /* IR - IR일정 CNT_K_038 */
     .planWrap{padding-left: 0; background-image: none;}
@@ -133,7 +134,7 @@
     /* button */
     .whiteBtn.small, .fillBtn.small{width: 100%; padding: 0;}
 }
-						
+	
 
 
 
