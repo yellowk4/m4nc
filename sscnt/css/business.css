@@ -156,8 +156,6 @@
 .boardViewArea .relationArticle ul li .boardTit {float:left; width:calc(100% - 100px); margin-right:15px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap;}
 .boardViewArea .relationArticle ul li:hover .boardTit {color:#0c4da2; text-decoration:underline;}
 .boardViewArea .relationArticle ul li:last-child {border-bottom:0;}
-.boardViewArea .boardShareList {border-top:1px solid #d9d9d9; border-bottom:1px solid #d9d9d9; overflow:hidden; padding:15px 0; text-align:center;}
-.boardViewArea .boardShareList li {display:inline-block; margin:0 15px;}
 
 /* CONTACT OUS > 고객문의 */
 .inquiryTit {width:100%; height:315px; overflow:hidden; padding-left:370px; box-sizing:border-box; background:url('/images/front/contents/tit_CNT_K_027.png')no-repeat left center; margin-bottom:70px;}
