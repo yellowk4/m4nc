@@ -646,6 +646,7 @@ lnbApp.event = function(){
 			$this.toggleClass("active");
 			return;
 		}
+		$this.siblings().removeClass("active")
 		$this.addClass("active");
 	}
 	
