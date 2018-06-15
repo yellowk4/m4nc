@@ -1,6 +1,6 @@
 @charset "utf-8";
 .borderBt{border-bottom: 1px solid #777777;}
-.grayDotTxt{background-position: 0 7px;}
+.grayDotTxt{background-position: 0 7px; font-size: 16px;}
 
 /* IR - 신용등급 CNT_K_031 */
 #CNT_K_031 .contTit, #CNT_K_031 .color01{padding-bottom: 15px;}
