@@ -126,6 +126,7 @@
 .actConts table td {height:60px; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; text-align:center;}
 .actConts table th.last, .actConts table td.last {border-right:0;}
 .actConts.last {padding:0; margin:0; border:0;}
+.actConts .mImg {display:none;}
 
 /* 뉴스 > 리스트 */
 #CNT_K_013 .boardSelect {display:none;}
@@ -278,6 +279,8 @@
 .actConts table td {height:60px; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; text-align:center;}
 .actConts table th.last, .actConts table td.last {border-right:0;}
 .actConts.last {padding:0; margin:0; border:0;}
+.actConts .pcImg {display:none;}
+.actConts .mImg {display:block;}
 
 /* 뉴스 > 리스트 */
 #CNT_K_013 .tabCtrlWrap{display:none;}
