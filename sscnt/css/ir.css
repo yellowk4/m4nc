@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* visual bg */
-#contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_03.jpg);}
+#contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_02.jpg);}
 
 /* IR - 신용등급 CNT_K_031 */
 #CNT_K_031 .contTit, #CNT_K_031 .color01{padding-bottom: 15px;}

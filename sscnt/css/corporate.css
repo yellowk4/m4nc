@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/* visual bg */
+#contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_03.jpg);}
+
 /* corporate 정관 CNT_K_051 */
 .titleBox:after{content: ''; display: block; clear: both; overflow: hidden;}
 .titleBox .left, .titleBox .right {float: left; width: 50%;}
