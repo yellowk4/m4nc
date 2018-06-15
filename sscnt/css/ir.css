@@ -83,7 +83,7 @@
     /* IR - 감사보고서 CNT_K_032 */
     #CNT_K_032 .btnArea{padding-left: 10px;}
     #CNT_K_032 .btnArea button{margin-bottom: 10px;}
-    #CNT_K_032 .btnArea button.last{margin-bottom: 0;}
+    #CNT_K_032 .btnArea button:nth-child(3), #CNT_K_032 .btnArea button.last{margin-bottom: 0;}
     .reportTit{padding: 0 0 26px 0; background-image: none;}
     .reportTit dt{font-size: 25px; padding-bottom: 22px;}
     #CNT_K_032 .defaultTable th{font-size: 18px;}
@@ -116,13 +116,14 @@
     .accordion:after, .accordion.active:after{right: 13px; margin-top: -6.5px; width: 13px; height: 13px; background-size: 13px 13px;}
 
     /* button */
-    .whiteBtn.small, .fillBtn.small{width: 48%; padding: 0 1%;}
+    #CNT_K_032 .btnArea .whiteBtn.small{width: 48%; padding: 0 1%;}
     .mobileML, .whiteBtn .icoDownload{margin-right: 1%;}
 }
 
 @media screen and (max-width: 640px){
     /* button */
-    .whiteBtn.small, .fillBtn.small{width: 100%; padding: 0;}
+    #CNT_K_032 .btnArea .whiteBtn.small{width: 100%; padding: 0;}
+    #CNT_K_032 .btnArea button:nth-child(3){margin-bottom: 10px;}
 }
 	
 
