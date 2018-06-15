@@ -1143,6 +1143,20 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 	.defaultTab.moChange.active .tabCtrlWrap a:hover {color: #0c4da2;}
 	.defaultTab.moChange.active .tabCtrlWrap {}
 	.defaultTab.moChange.active .select button:after {background-image: url(/images/front/icon/ico_arrow_close.png);}
+
+	/* 탭 -뉴스화면 */
+	.defaultTab.moChange2 .tabCtrlWrap {overflow: hidden; display: block;}
+	.defaultTab.moChange2 .tabCtrlWrap a {float: left; display: table; width: 32%;margin: 0 2% 2% 0; border: 1px solid #d9d9d9;}
+	.defaultTab.moChange2 .tabCtrlWrap a:nth-child(3n) {margin-right: 0;}
+	.defaultTab.moChange2 .tabCtrlWrap a span {display: table-cell; vertical-align: middle;}
+	.defaultTab.moChange2 .tabCtrlWrap a.current {border-top: 2px solid #377dd5;}
+
+	/* 본문 하단 이메일/페이스북/인쇄하기 */
+	.shareList {padding: 8px 0 7px;}
+	.shareList li button {width: 30px; height: 30px;}
+	.shareList li.email button, .shareList li.email button:hover {background-size: auto 15px; }
+	.shareList li.facebook button, .shareList li.facebook button:hover {background-size: auto 15px; }
+	.shareList li.print button, .shareList li.print button:hover {background-size: auto 15px; }
 	
 }
 
