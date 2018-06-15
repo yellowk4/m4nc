@@ -16,7 +16,7 @@
 *****************************************************************************************************************************************/
 
 /* 페이지 내 기본 버튼 */
-.btnDefault, a.btnDefault {display:inline-block;width:242px;padding:17px 20px 16px;background-color:#105d99;color:#ffffff;font-size:16px;border-radius:3px;}
+.btnDefault, a.btnDefault {display:inline-block;width:220px;padding:18px 20px 19px;background-color:#0c4da2;color:#ffffff;font-size:16px;}
 /* 페이지 내 기본 서브버튼 */
 .btnSub, a.btnSub {display:inline-block;background-color:#fff;border:1px solid #105d99;padding:16px 19px 15px;color:#105d99;font-size:16px;border-radius:3px;}
 /* 전송버튼 */
@@ -43,14 +43,14 @@
 .defaultTable .ellipsis {text-align:left;}
 
 /* 기본 리스트 타입 */
-.tableBasicList {border-top:2px solid #434343;}
+.tableBasicList {border-top:1px solid #0c4da2;border-bottom:1px solid #777777}
 .tableBasicList th {font-weight:400;}
 .tableBasicList th, .tableBasicList td {border-left:1px solid #d9d9d9;background-color:#fff;text-align:center;}
 .tableBasicList tr th:first-child, .tableBasicList tr td:first-child {border-left:0;}
-.tableBasicList thead th {height:30px;padding:5px 15px;border-bottom:1px solid #d9d9d9;background-color:#f0f0f0;color:#222;}
-.tableBasicList tbody th, .tableBasicList tbody td {padding:10px 15px;border-bottom:1px solid #d9d9d9;}
+.tableBasicList thead th {height:62px;border-bottom:1px solid #ddd;background-color:#f8f8f8;color:#111;font-weight:700}
+.tableBasicList tbody th, .tableBasicList tbody td {padding:20px 15px;border-bottom:1px solid #ddd;}
 .tableBasicList tbody th {background-color:#fafafa;}
-
+.tableBasicList tbody tr:last-child td {border-bottom:0}
 /* 보기, 등록 페이지 */
 .tableBasicView {border-top:1px solid #434343;border-bottom:1px solid #ccc;}
 .tableBasicView th {height:39px;padding:0 10px;border-top:1px solid #d9d9d9;border-right:1px solid #d9d9d9;color:#333;}
@@ -73,13 +73,18 @@
 
 /* .defaultGrayDotList */
 .defaultGrayDotList {}
-	.defaultGrayDotList > li {background:url('/images/front/icon/ico_grayDot.png') no-repeat 0 9px;background-size: 3px;padding-left:10px;}
+	.defaultGrayDotList > li {background:url('/images/front/icon/ico_grayDot.png') no-repeat 0 10px;background-size: 3px;padding-left:10px;}
 	.defaultGrayDotList > li .dashed {display:inline-block;padding-left:14px;text-indent:-14px;}
-
+	.subNumList .defaultGrayDotList > li,
+	#privacy04 .defaultGrayDotList > li,
+	.defaultGrayDotList.lineDot > li {background:url('/images/front/icon/ico_grayLine.png') no-repeat 0 9px;background-size:7px 1px;padding-left:10px;}
+	#CT-PCK-077 .depth02 li {text-indent:0 !important}
+	#CT-PCK-077 .depth02  .defaultGrayDotList {margin:5px 0;margin-left:-20px;}
+	.m10 {margin:5px 0 !important}
 /* dashList */
 .dashList {}
-	.dashList > li {position:relative;margin-top:3px;padding-left:13px;line-height:1.4;}
-	.dashList > li:before {content:"-";display:block;clear:both;position:absolute;top:1px;left:0;}
+	.dashList > li {position:relative;margin-top:3px;padding-left:19px;line-height:1.4;}
+	.dashList > li:before {content:"--";display:block;clear:both;position:absolute;top:1px;left:0;}
 	.dashList > li:first-child {margin-top:0;}
 
 /* radioArea */
@@ -107,16 +112,18 @@
 .serachList li .result ul li .location span:first-child {padding-left:0;margin-left:0;background:none;}
 
 /* selectTab */
-.selectTab {position:relative;margin-bottom:30px;}
-	.selectTab ul {display:none;position:absolute;top:41px;left:0;z-index:5;width:100%;padding:17px 0;border-right:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-radius:0 0 3px 3px;background-color:#fafafa;}
+.selectTab {position:relative;}
+	.selectTab ul {display:none;position:absolute;top:39px;left:0;z-index:5;width:100%;padding:3px 0;border:1px solid #ddd;background-color:#fafafa;}
 	.selectTab.active ul {display:block;}
 	.selectTab li {}
-	.selectTab a, .selectTab button {display:block;font-size:18px;line-height:1.5;word-wrap:break-word;}
-	.selectTab a {padding:4px 20px;}
+	.selectTab a, .selectTab button {display:block;word-wrap:break-word;}
+	.selectTab a {padding: 10px;}
 	.selectTab li.active a, .selectTab li a:hover {color:#2a6eb6;}
-	.selectTab .select button {display:block;overflow:hidden;width:100%;padding:7px 54px 6px 20px;border:1px solid #d9d9d9;border-radius:3px;background:url('/images/front/icon/ico_tabarrow_off.png') no-repeat 100% 50%;background-size:35px 11px;
-	color:#555;text-align:left;text-overflow:ellipsis;white-space:nowrap;}
-	.selectTab.active .select button {border-radius:3px 3px 0 0;background-image:url('/images/front/icon/ico_tabarrow_on.png');}
+	.selectTab .select button {display:block;overflow:hidden; position: relative; width:100%;padding:0 23px 0 10px;border:1px solid #ddd;
+	color:#555;text-align:left;text-overflow:ellipsis;white-space:nowrap; font-size: 16px;height:41px;}
+	.selectTab .select button:after {content:''; position: absolute; top:0; left: auto; right:10px; display:inline-block; width: 13px; height:41px; background:url('/images/front/icon/ico_arrow_open.png') center no-repeat;background-size:13px 7px}
+	.selectTab.active .select button:after {background-image:url('/images/front/icon/ico_arrow_close.png');}
+
 
 /* selectTabCon - 상세 내용 */
 .selectTabCon {position:relative;}
@@ -128,14 +135,14 @@
 
 /* 공통 일반팝업 레이아웃 */
 .popWrap {position:relative;overflow:hidden;}
-.popWrap .popHeader {padding:50px 50px 0;background:#fff;box-sizing:border-box;}
-.popWrap .popContWrap {max-height:366px;padding:28px 50px 0;font-size:16px;line-height:1.6;overflow:auto;box-sizing:border-box;}
+.popWrap .popHeader {padding:50px 45px 0;background:#fff;box-sizing:border-box;}
+.popWrap .popContWrap {max-height:366px;padding:0px 45px 0;margin-top:28px;font-size:16px;line-height:1.6;overflow:auto;box-sizing:border-box;}
 .popWrap .btnArea {padding:40px 0 50px;text-align:center;}
 .popWrap .btnArea a, .popWrap .btnArea button {margin:0 7px; min-width: 218px;}
 
 /* 팝업 타이틀 */
 .popTit {color:#0c4da2;font-size:42px;font-weight:700;line-height:1;}
-.popContTit {color:#111;font-size:24px;margin-bottom:8px;}
+.popContTit {color:#111;font-size:18px;margin-bottom:8px;font-weight:700}
 .popSmallTit {color:#222;font-size:16px;}
 .popBlueTit {color:#2a6eb6;font-size:18px;}
 
@@ -179,11 +186,11 @@
 #CT-PCK-077 .subNumList02 > li > p {text-indent:0;}
 #CT-PCK-077 .defaultGrayDotList > li {text-indent:0 !important;}
 #CT-PCK-077 .tableBasicList {margin:10px 0 25px -20px;text-indent:0;}
-#CT-PCK-077 .tableBasicList tbody {color:#777;}
-#CT-PCK-077 .selectTab {width:460px;}
+#CT-PCK-077 .tableBasicList tbody {color:#555;}
+#CT-PCK-077 .selectTab {width:428px;margin-bottom:29px}
 #CT-PCK-077 .privacy {margin-top:20px;margin-bottom:-20px;}
 #CT-PCK-077 .privacyList {margin-top:20px;margin-left:10px;}
-#CT-PCK-077 .privacyList > li a {border-bottom:2px solid #909090;line-height:28px;color:#222;}
+#CT-PCK-077 .privacyList > li a {border-bottom:2px solid #b6b6b6;line-height:28px;color:#555;}
 #CT-PCK-077 .privacyCon {margin-bottom:50px;margin-left:10px;}
 #CT-PCK-077 .privacyCon .tit {margin:31px 0 11px;font-size:18px;color:#2a6eb6;}
 
@@ -227,9 +234,9 @@
 #CT-MAK-002 .popContWrap .popGrayWrap li:before {content: '·';position: relative;left: -7px;top: 0px;}
 
 
-
-
-
+#CT-PCK-077 .privacyList2015 .privacyList {margin-left:0}
+#CT-PCK-077 .privacyList2015 .privacyList {margin-top:15px}
+#CT-PCK-077 .privacyList2015 .privacyCon .tit {margin-left:-13px}
 /* 프린트 */
 @media print {
 	#CT-PCK-017 .btnArea {display:none;}	
