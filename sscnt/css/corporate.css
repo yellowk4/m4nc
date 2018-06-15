@@ -19,6 +19,8 @@
 #CNT_K_051 .revision ul {overflow: hidden;}
 #CNT_K_051 .revision ul li {float: left; width: 33%; line-height: 1.6;}
 #CNT_K_051 .defaultGrayDotList li {background-position: 0 10px;}
+
+/* margin */
 .mt_40{margin-top: 40px;}
 
 
