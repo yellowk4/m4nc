@@ -40,8 +40,6 @@
 .faqWrap .panel{padding-left: 84px; line-height: 1.6; background: url(/images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
 .faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(/images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
 
-/* IR - 주주총회 CNT_K_043 */
-
 /* COMMON STYLE */
 /* 아코디언 */
 .accordion {position: relative; cursor: pointer; padding: 44px 29px 44px 30px; width: 100%; border: none; border-top: 1px solid #d9d9d9; color: #111; font-size: 24px; text-align: left; outline: none; word-break: keep-all; transition: 0.4s; } 
