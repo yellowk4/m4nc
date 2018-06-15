@@ -977,7 +977,20 @@ conApp.layerEvent = function(){
     
 }
 
+// 리사이즈 이벤트 후처리
+$(window).resize(function() {
+	if(this.resizeTO) {
+		clearTimeout(this.resizeTO);
+	}
 
+	this.resizeTO = setTimeout(function() {
+		$(this).trigger('resizeEnd');
+	}, 300);
+});
+
+$(window).on('resizeEnd', function() {
+	location.reload();
+});
 
 $(function() {
 	conApp.$body = $("body");

@@ -10,9 +10,9 @@
 .inputText:focus, .selectText:focus, .textArea:focus {border:1px solid #0c4da2; color:#0c4da2;}
 input:disabled {background: #f8f8f8; color: #c4c4c4;}
 
-.inputText {-webkit-appearance:none;} /* 입력 폼 */
+input, .inputText {-webkit-appearance:none; -webkit-border-radius: 0;} /* 입력 폼 */
 .selectText {} /* 선택박스 폼 */
-.textArea {-webkit-appearance:none;} /* 텍스트 영역 */
+textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍스트 영역 */
 .inputFile {} /* 첨부파일 폼 */
 
 /* 폼요소 영역 */
@@ -220,12 +220,17 @@ input:disabled {background: #f8f8f8; color: #c4c4c4;}
 	.popBtnFormArea a, .popBtnFormArea button {margin-left:6px;}
 /* 윈도우 팝업 내 조회 영역의 버튼 */
 .popBtnInquiryArea {text-align:center;}
-/* 로그인 영역의 버튼영역 */
-.shareList li {float: left; margin-right: 10px;}
-.shareList li:last-child {margin-right: 0;}
 
 /* 본문 하단 이메일/페이스북/인쇄하기 */
-.shareList {}
+.shareList {padding: 13px 0 10px; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; text-align: center;}
+.shareList li {display: inline-block; margin: 0 15px;}
+.shareList li button {display: block; width: 48px; height: 48px; border-radius: 50%;}
+.shareList li.email button {background: #e1e1e1 url(/images/front/icon/icon_email.png) no-repeat 50% 50%; background-size: 22px 22px; transition: 0.3s ease-out; border: 1px solid #e1e1e1; box-sizing: border-box;}
+.shareList li.facebook button {background: #e1e1e1 url(/images/front/icon/icon_facebook.png) no-repeat 50% 50%; background-size: 12px 22px; transition: 0.3s ease-out; border: 1px solid #e1e1e1; box-sizing: border-box;}
+.shareList li.print button {background: #e1e1e1 url(/images/front/icon/icon_print.png) no-repeat 50% 50%; background-size: 21px 22px; transition: 0.3s ease-out; border: 1px solid #e1e1e1; box-sizing: border-box;}
+.shareList li.email button:hover {background: #fff url(/images/front/icon/icon_email_on.png) no-repeat 50% 50%; background-size: 22px 22px; border: 1px solid #0075c2; box-sizing: border-box;}
+.shareList li.facebook button:hover {background: #fff url(/images/front/icon/icon_facebook_on.png) no-repeat 50% 50%; background-size: 12px 22px; border: 1px solid #0075c2; box-sizing: border-box;}
+.shareList li.print button:hover {background: #fff url(/images/front/icon/icon_print_on.png) no-repeat 50% 50%; background-size: 21px 22px; border: 1px solid #0075c2; box-sizing: border-box;}
 
 /* 다운로드 아이콘 */
 .iconDownLoad {background:url("/images/front/icon/ico_downLoad.png") no-repeat center top;background-size:100%;}
