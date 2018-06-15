@@ -1,6 +1,7 @@
 @charset "utf-8";
-.borderBt{border-bottom: 1px solid #777777;}
-.grayDotTxt{background-position: 0 7px; font-size: 16px;}
+
+/* visual bg */
+#contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_03.jpg);}
 
 /* IR - 신용등급 CNT_K_031 */
 #CNT_K_031 .contTit, #CNT_K_031 .color01{padding-bottom: 15px;}
@@ -17,7 +18,6 @@
 
 #CNT_K_032 .defaultTable th{background-color: #fbfbfb; color: #111111; font-size: 24px; line-height: 100px;}
 #CNT_K_032 .btnArea{padding-left: 40px;}
-
 
 /* IR - IR일정 CNT_K_038 */
 .planWrap{padding-left: 603px; background: url(/images/front/contents/bg_CNT_K_038.png) no-repeat 140px top;}
@@ -46,8 +46,9 @@
 /* IR - 주주총회 CNT_K_043 */
 #CNT_K_043 .panel{padding: 0 30px;}
 .listTit{padding-bottom: 10px; color: #111111; font-size: 18px; line-height: 1.6;}
-.listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type01.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
+.listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
 
+/* COMMON STYLE */
 /* 아코디언 */
 .accordion {position: relative; cursor: pointer; padding: 44px 29px 44px 30px; width: 100%; border: none; border-top: 1px solid #d9d9d9; color: #444; font-size: 24px; text-align: left; outline: none; word-break: keep-all; transition: 0.4s; } 
 .accordion.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;}
@@ -72,9 +73,13 @@
 .tableBasicList th{background-color: #f8f8f8;}
 .tableBasicList th, .tableBasicList td {padding: 20px 10px; color: #555555; line-height: 1.6;}
 
-
 /* 바로가기 버튼 */
 .btnShortLink, a.btnShortLink{font-size: 14px;}
+/* content inner border-bottom */
+.borderBt{border-bottom: 1px solid #777777;}
+/* grayDot customize */
+.grayDotTxt{background-position: 0 7px; font-size: 16px;}
+
 
 
 
