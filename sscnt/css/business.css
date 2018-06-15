@@ -173,6 +173,27 @@
 .boardViewArea .relationArticle ul li:hover .boardTit {color:#0c4da2; text-decoration:underline;}
 .boardViewArea .relationArticle ul li:last-child {border-bottom:0;}
 
+/* 소셜미디어 */
+.socialTit {overflow:hidden; margin-bottom:40px; font-size:28px; line-height:1.4; color:#333333;}
+.socialTit span {display:block;}
+.socialConts {overflow:hidden; margin-bottom:50px;}
+.socialConts .imgArea {width:50%; position:relative;}
+.socialConts .imgArea img {width:100%;}
+.socialConts .imgArea .part {display:block; position:absolute; top:0; left:0; width:25%; height:56px; line-height:56px; text-align:center; color:#fff; font-size:18px;}
+.socialConts .imgArea .part.type01 {background:#4b9abb}
+.socialConts .imgArea .part.type02 {background:#4179d0}
+.socialConts .imgArea .part.type03 {background:#93b614}
+.socialConts .imgArea .part.type04 {background:#765d94}
+.socialConts .txtArea {width:46%; padding-top:60px;}
+.socialConts .txtArea .title {display:block; font-size:24px; line-height:1.4; color:#111; margin-bottom:24px;}
+.socialConts .txtArea p {margin-bottom:30px; line-height:1.6; color:#555555}
+.socialConts .txtArea .date {font-size:14px; color:#777777}
+.socialConts .imgArea {float:left; margin-right:4%;}
+.socialConts .txtArea {float:right;}
+.socialConts.type02 .imgArea {float:right; margin-right:0;}
+.socialConts.type02 .txtArea {float:left; margin-right:4%;}
+.socialConts.last {margin-bottom:70px;}
+
 /* CONTACT OUS > 고객문의 */
 .inquiryTit {width:100%; height:315px; overflow:hidden; padding-left:370px; box-sizing:border-box; background:url('/images/front/contents/tit_CNT_K_027.png')no-repeat left center; margin-bottom:70px;}
 .inquiryTit .title {display:block; font-size:42px; font-weight:600; line-height:50px;}
@@ -184,11 +205,11 @@
 .inquiryWriteWrap .inquiryWriteTit {overflow:hidden; margin-bottom:20px;}
 .inquiryWriteWrap .inquiryWriteTit .title {float:left; font-size:34px; color:#000;}
 .inquiryWriteWrap .inquiryWriteTit .addNotice {float:right; color:#777;}
-.inquiryWriteWrap ul.inquiryWrite {width:100%; border-top:1px solid #0c4da2; margin-bottom:50px;}
-.inquiryWriteWrap ul.inquiryWrite li {width:100%; overflow:hidden; border-bottom:1px solid #d9d9d9;}
+.inquiryWriteWrap ul.inquiryWrite {width:100%; border-top:1px solid #0c4da2; margin-bottom:50px; overflow:hidden;}
+.inquiryWriteWrap ul.inquiryWrite li {width:100%; box-sizing:border-box; clear: both;}
 .inquiryWriteWrap ul.inquiryWrite li .textWrite {height:232px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeTit {float:left; width:20%; line-height:80px; background:#f8f8f8; padding-left:20px; color: #000000; box-sizing:border-box;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont {float:left; width:80%; padding:20px 40px; box-sizing:border-box; position:relative;}
+.inquiryWriteWrap ul.inquiryWrite li .writeTit {float:left; width:20%; line-height:80px; background:#f8f8f8; padding-left:20px; color: #000000; box-sizing:border-box; border-bottom:1px solid #d9d9d9;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont {float:left; width:80%; padding:20px 40px; box-sizing:border-box; position:relative; border-bottom:1px solid #d9d9d9;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont input[type="text"] {width:100%; height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont input.email {float:left; width:30%;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont input.prevention {float:left; width:186px; margin-right:10px;}
@@ -196,7 +217,7 @@
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .selectTab {float:left; width:170px; margin-left:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .preventionImg {float:left; height:40px; overflow:hidden; margin-right:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .refresh {float:left; width:104px; height:40px; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 12px center; text-align:left; padding-left:38px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont textarea {border:1px solid #dddddd; width:100%; height:190px; box-sizing:border-box; padding:10px;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont textarea {border:1px solid #dddddd; width:100%; height:191px; box-sizing:border-box; padding:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .txtCount {position:absolute; bottom:30px; right:50px;}
 
 .personalInforAgree {width:100%; overflow:hidden;}
@@ -312,6 +333,18 @@
 .boardViewArea .boardViewbtnArea .listGo {width:30%; height:40px; line-height:40px;}
 .boardViewArea .relationArticle {display:none;}
 .boardViewArea .boardViewbtnArea {margin-bottom:0;}
+
+/* 소셜미디어 */
+.socialTit {font-size:20px; margin-bottom:20px;}
+.socialTit span {display:inline;} 
+.socialConts .imgArea .part {width:35%; height:35px; line-height:35px; font-size:16px;}
+.socialConts .imgArea {width:100%; float:none; margin-right:0%;}
+.socialConts .txtArea {width:100%; float:none; }
+.socialConts .txtArea .title {font-size:18px; margin-bottom:15px;}
+.socialConts .txtArea p {margin-bottom:15px;}
+.socialConts.type02 .imgArea {width:100%; float:none;}
+.socialConts.type02 .txtArea {width:100%; float:none; margin-right:0%;}
+.socialConts .txtArea {padding-top:20px;}
 
 /* CONTACT OUS > 고객문의 */
 #CNT_K_027 {padding:0;}
