@@ -13,7 +13,7 @@
 .reportTit dt{padding-bottom: 40px; color: #0075c2; font-size: 42px;}
 .reportTit dt span{color: #0c4ca3;}
 .rightBtn{padding: 20px 0; text-align: right;}
-.grayBox{padding: 21px 17px; margin-top: 20px; background-color: #f8f8f8; color: #555555; font-size: 14px;}
+.grayBox{padding: 21px 17px; margin-top: 20px; background-color: #f8f8f8; color: #555555; font-size: 14px; line-height: 1.4;}
 #CNT_K_032 .defaultTable th{background-color: #fbfbfb; color: #111111; font-size: 24px; line-height: 100px;}
 #CNT_K_032 .btnArea{padding-left: 40px;}
 
@@ -66,14 +66,15 @@
 /* content inner border-bottom */
 .borderBt{border-bottom: 1px solid #777777;}
 /* grayDot customize */
-.grayDotTxt{background-position: 0 7px; font-size: 16px;} 
+.grayDotTxt{background-position: 0 9px; font-size: 16px; line-height: 1.4;}
 .planBu{padding-left: 16px; line-height: 1.6; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat left 12px; box-sizing: border-box; color: #555555;}
 /* list dot */
 .listTit{padding-bottom: 10px; color: #111111; font-size: 18px; line-height: 1.6;}
 .listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
 /* margin */
 .mt_70{margin-top: 70px;}
-
+/* pText */
+.pText{line-height: 1.4;}
 
 /* MOBILE */
 @media screen and (max-width: 1024px){

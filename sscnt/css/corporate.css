@@ -12,8 +12,8 @@
 .titleBox .selectTab ul{top: 58px; max-width: 445px;}
 .corporate{padding-top: 50px;}
 .corporate h4{padding-bottom: 12px; font-size: 20px;}
-.corporate .txt{line-height: 1.6;}
-
+.corporate .txt{line-height: 1.8;}
+/* numList */
 #CNT_K_051 .txt + ul {margin-top: 5px;}
 #CNT_K_051 .numList, #CNT_K_051 .roundNumList, #CNT_K_051 .sub{padding: 5px 0;}
 #CNT_K_051 .numList.pT0, #CNT_K_051 .roundNumList.pT0{padding: 0;}
@@ -23,6 +23,7 @@
 #CNT_K_051 .revision ul li {float: left; width: 33%; line-height: 1.6;}
 #CNT_K_051 .defaultGrayDotList li {background-position: 0 10px;}
 
+/* COMMON STYLE */
 /* margin */
 .mt_40{margin-top: 40px;}
 
