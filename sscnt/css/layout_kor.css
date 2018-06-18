@@ -1175,6 +1175,9 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 	.shareList li.email button, .shareList li.email button:hover {background-size: auto 15px; }
 	.shareList li.facebook button, .shareList li.facebook button:hover {background-size: auto 15px; }
 	.shareList li.print button, .shareList li.print button:hover {background-size: auto 15px; }
+
+	/* 소셜미디어 아이콘 */
+	.socialMedia li {margin-right: 0;}
 	
 }
 
