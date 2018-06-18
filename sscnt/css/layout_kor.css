@@ -592,6 +592,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* ÌÖçÏ
 #contentsWrap .searchWrap .searchArea .searchBtn {width: 45px; height: 45px; margin-left: 7px;  background: url(/images/front/btn/btn_search.png) no-repeat;}
 .header .moMenuWrap {display: none;}
 #contentsWrap .pcMenuWrap {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box;}
+#contentsWrap .pcMenuWrap.fixed {position: fixed; top:177px; left:0; width: 100%; background: #fff;}
 #contentsWrap .pcMenuWrap .inner {max-width:1200px; padding:0 50px; margin:0 auto; box-sizing: border-box;}
 #contentsWrap .pcMenuWrap .navbar {overflow: hidden;}
 #contentsWrap .pcMenuWrap .navbar a {float: left; color: #333; padding: 15px;}
