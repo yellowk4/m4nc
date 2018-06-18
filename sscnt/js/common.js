@@ -557,6 +557,8 @@ gnbApp.event = function (){
 	}
 
 	gnbApp.headerFixedScrollEventHandler = function(){
+		gnbApp.$header.trigger("mouseleave");
+
 		var sTop = $(this).scrollTop();
 
 		var $searchWrap = conApp.$wrap.find(".searchWrap"),
@@ -646,7 +648,8 @@ gnbApp.event = function (){
 			}
 		})
 
-		$(window).off("scroll").on("scroll", gnbApp.headerFixedScrollEventHandler)
+		$(window).off("scroll").on("scroll", gnbApp.headerFixedScrollEventHandler);
+		conApp.$body.removeAttr("style");
 	}
 
 	// 리사이즈 이벤트 후처리
