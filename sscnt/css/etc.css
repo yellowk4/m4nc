@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* visual bg */
-#contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_04.jpg);}
+#contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_03.jpg);}
 
 /* etc - Site map */
 #CNT_K_065:after{content: ''; display: block; clear: both; overflow: hidden;}
