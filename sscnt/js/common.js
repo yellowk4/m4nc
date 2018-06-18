@@ -997,12 +997,18 @@ conApp.layerEvent = function(){
 //PC화면 헤더 고정
 conApp.headerFixed = function(){
 	console.log("BB");
+	var searchArea = $(".searchWrap"),
+		pcMenuArea = $(".pcMenuWrap"),
+		sticky = pcMenuArea.offsetTop;
+	
 	
 
-	$(window).scroll( function (){
-		console.log("CC");
-		if (window.pageYOffset >= sticky) {
-			searchArea.addClass("fixed");
+	$(document).on("scroll", function (){
+		console.log(sticky);
+		searchArea.addClass("fixed");
+
+		if ($(document).scrollTop() >= sticky) {
+			console.log("dd");
 			pcMenuArea.addClass("sticky");
 		} else {
 			pcMenuArea.removeClass("sticky");
@@ -1019,6 +1025,7 @@ $(function() {
 	
 	if(conApp.width > 1024){
 		if (hasJqObject(conApp.$wrap.find(".intro"))){ introApp.event();}
+		console.log("AA" + hasJqObject(conApp.$wrap.find(".pcMenuWrap")) );
 		if (hasJqObject(conApp.$wrap.find(".pcMenuWrap"))){ conApp.headerFixed();}
 	}else{
 		if (hasJqObject(conApp.$wrap.find(".main"))){ mainApp.event();}
