@@ -565,7 +565,7 @@ gnbApp.event = function (){
 			$pcMenuWrap = conApp.$wrap.find(".pcMenuWrap");
 
 
-		console.log('scrollTop: '+ sTop, 'offsetTop: '+ $pcMenuWrap.prop('offsetTop'), 'offset.top: '+ $pcMenuWrap.offset().top)
+		//console.log('scrollTop: '+ sTop, 'offsetTop: '+ $pcMenuWrap.prop('offsetTop'), 'offset.top: '+ $pcMenuWrap.offset().top)
 
 		if( sTop >= 1) {
 			$searchWrap.addClass("fixed")
