@@ -617,6 +617,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
  #contentsWrap .pcMenuWrap .navbar .dropdown.active .dropdownCont {display: block;}
 
 .contents {max-width:1200px; padding:80px 50px; margin:0 auto; box-sizing: border-box;}
+.contents p {word-break: keep-all;}
 .contentsBtm {display: none;}
 
 /* 페이지 타이틀 영역 */
