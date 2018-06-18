@@ -51,8 +51,8 @@
 }
 @media screen and (max-width:812px) { 
     #CNT_K_065 article {float:none;width:100%;padding:0 !important}
-    .sMapTit {font-size:18px;margin-bottom:10px}
-    .smDepth02 > li > a {font-size: 16px;font-weight:700;color: #111;padding:10px 15px;}
+    .sMapTit {font-size:18px;margin-bottom:10px;padding-bottom:15px}
+    .smDepth02 > li > a {font-size: 16px;color: #111;padding:10px 15px;}
     .smDepth02 li:last-child ul {border-bottom:0}
     .smDepth03 {padding:10px 15px;}
     .smDepth03 li a {font-size:15px;}
