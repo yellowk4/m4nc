@@ -85,7 +85,7 @@
 .greetingWrap .signature .name {font-weight:600; color:#333;}
 .greetingWrap .signature .name img {vertical-align:middle; margin-left:20px;}
 .greetingBtnWrap {text-align:right;}
-.greetingBtnWrap a {display:inline-block; line-height:40px; color:#fff;}
+.greetingBtnWrap a {display:inline-block; line-height:40px; color:#fff; text-align:center;}
 
 .visionStrategy {color:#333}
 .visionStrategy h4 {font-size:28px; color:#000; margin-bottom:40px;}
