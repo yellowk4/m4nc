@@ -597,9 +597,10 @@ gnbApp.event = function (){
 	function matched(){
 		console.log('Mathced ! isNotPC');
 
-		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true)); 
-		TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
-		
+		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
+		var gap = Math.round((14 * 100) / $(window).outerHeight(true));
+		TweenMax.set($(".contents"), { paddingTop: (vh - gap) + 'vh' })
+	
 		// $(window).on("resize", function(){ 
 		// 	vh = Math.round(((gnbApp.$header.outerHeight(true) + 40) * 100) / $(window).outerHeight(true));
 		// 	TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
