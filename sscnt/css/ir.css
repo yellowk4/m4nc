@@ -118,7 +118,9 @@
 
     /* button */
     #CNT_K_032 .btnArea .whiteBtn.small, #CNT_K_038 .whiteBtn.small{width: 48%; padding: 0 1%;}
-    .mobileML, .whiteBtn .icoDownload{margin-right: 1%;}
+
+    /* notiTxt */
+    .notiTxt{display: block;}
 }
 
 @media screen and (max-width: 640px){
@@ -127,7 +129,12 @@
     #CNT_K_032 .btnArea button:nth-child(3){margin-bottom: 10px;}
     #CNT_K_038 .whiteBtn.small{margin-bottom: 10px;}
 }
-	
+
+@media screen and (max-width: 375px){
+    /* button */
+    .btnArea .btnShortLink{margin-bottom: 5px;}
+    .whiteBtn.small{width: 100%; min-width: auto; margin-top: 5px;}
+}
 
 
 
