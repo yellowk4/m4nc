@@ -556,6 +556,29 @@ gnbApp.event = function (){
 
 	}
 
+	gnbApp.headerFixedScrollEventHandler = function(){
+		var sTop = $(this).scrollTop();
+
+		var $searchWrap = conApp.$wrap.find(".searchWrap"),
+			$pcMenuWrap = conApp.$wrap.find(".pcMenuWrap");
+
+
+		console.log('scrollTop: '+ sTop, 'offsetTop: '+ $pcMenuWrap.prop('offsetTop'), 'offset.top: '+ $pcMenuWrap.offset().top)
+
+		if( sTop >= 1) {
+			$searchWrap.addClass("fixed")
+		} else {
+			$searchWrap.removeClass("fixed")
+		}
+
+		if( sTop >= gnbApp.$header.outerHeight(true) + $(".contentsTop").outerHeight(true) ) {
+			$pcMenuWrap.addClass("fixed")
+		} else {
+			$pcMenuWrap.removeClass("fixed");
+		}
+
+	}
+
 	
 
 
@@ -589,7 +612,7 @@ gnbApp.event = function (){
 		gnbApp.$megaMenuHideBtn.on("click",gnbApp.$megaMenuHideEvent);
 		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
 		
-		$(window).on("scroll", gnbApp.scrollEventHandler)
+		$(window).off("scroll").on("scroll", gnbApp.scrollEventHandler)
 
 	};
 
@@ -624,7 +647,7 @@ gnbApp.event = function (){
 			}
 		})
 
-		$(window).off("scroll")
+		$(window).off("scroll").on("scroll", gnbApp.headerFixedScrollEventHandler)
 	}
 
 	// 리사이즈 이벤트 후처리
@@ -994,29 +1017,6 @@ conApp.layerEvent = function(){
     
 }
 
-//PC화면 헤더 고정
-conApp.headerFixed = function(){
-	console.log("BB");
-	var searchArea = $(".searchWrap"),
-		pcMenuArea = $(".pcMenuWrap"),
-		sticky = pcMenuArea.offsetTop;
-	
-	
-
-	$(document).on("scroll", function (){
-		console.log(sticky);
-		searchArea.addClass("fixed");
-
-		if ($(document).scrollTop() >= sticky) {
-			console.log("dd");
-			pcMenuArea.addClass("sticky");
-		} else {
-			pcMenuArea.removeClass("sticky");
-		}
-	});
-	
-}
-
 $(function() {
 	conApp.$body = $("body");
 	conApp.$wrap = $(".wrap");
@@ -1025,8 +1025,6 @@ $(function() {
 	
 	if(conApp.width > 1024){
 		if (hasJqObject(conApp.$wrap.find(".intro"))){ introApp.event();}
-		console.log("AA" + hasJqObject(conApp.$wrap.find(".pcMenuWrap")) );
-		if (hasJqObject(conApp.$wrap.find(".pcMenuWrap"))){ conApp.headerFixed();}
 	}else{
 		if (hasJqObject(conApp.$wrap.find(".main"))){ mainApp.event();}
 	}
