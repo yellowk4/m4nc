@@ -994,6 +994,23 @@ conApp.layerEvent = function(){
     
 }
 
+//PC화면 헤더 고정
+conApp.headerFixed = function(){
+	console.log("BB");
+	
+
+	$(window).scroll( function (){
+		console.log("CC");
+		if (window.pageYOffset >= sticky) {
+			searchArea.addClass("fixed");
+			pcMenuArea.addClass("sticky");
+		} else {
+			pcMenuArea.removeClass("sticky");
+		}
+	});
+	
+}
+
 $(function() {
 	conApp.$body = $("body");
 	conApp.$wrap = $(".wrap");
@@ -1002,6 +1019,7 @@ $(function() {
 	
 	if(conApp.width > 1024){
 		if (hasJqObject(conApp.$wrap.find(".intro"))){ introApp.event();}
+		if (hasJqObject(conApp.$wrap.find(".pcMenuWrap"))){ conApp.headerFixed();}
 	}else{
 		if (hasJqObject(conApp.$wrap.find(".main"))){ mainApp.event();}
 	}
