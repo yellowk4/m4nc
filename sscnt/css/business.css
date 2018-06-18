@@ -5,11 +5,20 @@
 .businessUnitGo {width:100%; overflow:hidden;}
 .businessUnitGo .title {display:block; margin-bottom:30px; font-size:24px; color:#000;}
 .businessUnitGo ul li {float:left; width:23%; height:56px; line-height:56px; font-size:20px; padding-left:20px; box-sizing:border-box;}
-.businessUnitGo ul li a {color:#fff;}
+.businessUnitGo ul li a {display:block; width:100%; height:100%; color:#fff;}
 .businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
 .businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
 .businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
 .businessUnitGo ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center;}
+
+/* 연관정보 바로가기 */
+.relationInfo  {width:100%; overflow:hidden;}
+.relationInfo .title {display:block; margin-bottom:30px; font-size:24px; color:#000;}
+.relationInfo ul li {float:left; width:23%; height:54px; line-height:56px; font-size:18px; box-sizing:border-box; background:#e1e1e1; border:1px solid #bbbbbb; text-align:center; margin-right:2.66%; cursor:pointer;} 
+.relationInfo ul li:hover {border:1px solid #0c4da2; background:#fff;}
+.relationInfo ul li:last-child {margin-right:0;}
+.relationInfo ul li a {color:#333333; font-weight:600;}
+.relationInfo ul li:hover a {color:#0c4da2;}
 
 /* 연혁 */
 #CNT_K_003 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
@@ -199,23 +208,26 @@
 /* 소셜미디어 */
 .socialTit {overflow:hidden; margin-bottom:40px; font-size:28px; line-height:1.4; color:#333333;}
 .socialTit span {display:block;}
-.socialConts {overflow:hidden; margin-bottom:50px;}
+.socialConts {overflow:hidden; margin-bottom:50px;position:relative;}
 .socialConts .imgArea {width:50%; position:relative;}
-.socialConts .imgArea img {width:100%;}
+.socialConts .imgArea img {width:100%; vertical-align:top;}
 .socialConts .imgArea .part {display:block; position:absolute; top:0; left:0; width:25%; height:56px; line-height:56px; text-align:center; color:#fff; font-size:18px;}
 .socialConts .imgArea .part.type01 {background:#4b9abb}
 .socialConts .imgArea .part.type02 {background:#4179d0}
 .socialConts .imgArea .part.type03 {background:#93b614}
 .socialConts .imgArea .part.type04 {background:#765d94}
-.socialConts .txtArea {width:46%; padding-top:60px;}
+.socialConts .txtArea {width:46%; padding-top:50px;}
 .socialConts .txtArea .title {display:block; font-size:24px; line-height:1.4; color:#111; margin-bottom:24px;}
 .socialConts .txtArea p {margin-bottom:30px; line-height:1.6; color:#555555}
-.socialConts .txtArea .date {font-size:14px; color:#777777}
+.socialConts .txtArea .date {font-size:14px; color:#777777; display:block;}
 .socialConts .imgArea {float:left; margin-right:4%;}
 .socialConts .txtArea {float:right;}
 .socialConts.type02 .imgArea {float:right; margin-right:0;}
 .socialConts.type02 .txtArea {float:left; margin-right:4%;}
 .socialConts.last {margin-bottom:70px;}
+.socialConts .txtArea .socialMedia {position:absolute; bottom:0; left:54%;}
+.socialConts.type02 .txtArea .socialMedia {position:absolute; bottom:0; left:0;}
+#CNT_K_021 .shareList {margin-bottom:60px;}
 
 /* CONTACT OUS > 고객문의 */
 .inquiryTit {width:100%; height:315px; overflow:hidden; padding-left:370px; box-sizing:border-box; background:url('/images/front/contents/tit_CNT_K_027.png')no-repeat left center; margin-bottom:70px;}
@@ -260,6 +272,20 @@
 /* 뉴스 > 리스트 */
 #CNT_K_013 .tabView ul li .text {padding:10px 0;}
 
+/* 소셜미디어 */
+.socialTit {font-size:20px; margin-bottom:20px;}
+.socialTit span {display:inline;} 
+.socialConts .imgArea .part {width:35%; height:35px; line-height:35px; font-size:16px;}
+.socialConts .imgArea {width:100%; float:none; margin-right:0%;}
+.socialConts .txtArea {width:100%; float:none; }
+.socialConts .txtArea .title {font-size:18px; margin-bottom:15px;}
+.socialConts .txtArea p {margin-bottom:15px;}
+.socialConts .txtArea .date {display:block; margin-bottom:30px;}
+.socialConts.type02 .imgArea {width:100%; float:none;}
+.socialConts.type02 .txtArea {width:100%; float:none; margin-right:0%;}
+.socialConts .txtArea {padding-top:20px;}
+.socialConts .txtArea .socialMedia {position:relative; bottom:0; left:0;}
+.socialConts.type02 .txtArea .socialMedia {position:relative; bottom:0; left:0;}
 
 }
 
@@ -272,6 +298,14 @@
 .businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
 .businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:0;}
 .businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
+
+/* 연관정보 바로가기 */
+.relationInfo .title {display:block; margin-bottom:10px; font-size:20px; color:#000;}
+.relationInfo ul li {float:left; width:49%; height:40px; line-height:40px; font-size:18px; margin:0 2% 2% 0; font-size:16px;} 
+.relationInfo ul li:hover {border:1px solid #0c4da2; background:#fff;}
+.relationInfo ul li:nth-child(2n) {margin-right:0;}
+.relationInfo ul li a {color:#333333; font-weight:600;}
+.relationInfo ul li:hover a {color:#0c4da2;}
   
 /* 사업영역 > 건설부문 / 상사부문 / 패션부문 / 리조트 부문 */
 .businessAreaIntro {width:100%; overflow:hidden; margin-bottom:10px;}
@@ -301,7 +335,6 @@
 .businessAreaBnr ul li.type12 {background:url('/images/front/contents/bg_CNT_K_008_02.jpg') no-repeat center center; background-size:100%; margin-bottom:10px;}
 .businessAreaBnr ul li.type13 {background:url('/images/front/contents/bg_CNT_K_008_03.jpg') no-repeat center center; background-size:100%; margin:0 0 10px 0;}
 .businessAreaBnr ul li.type14 {background:url('/images/front/contents/bg_CNT_K_008_04.jpg') no-repeat center center; background-size:100%;}
-
 
 .actMainWrap .actMenuList > li {float:none; width:100%; margin:0 0 40px 0; min-height:auto;}
 
@@ -359,17 +392,7 @@
 .boardViewArea .relationArticle {display:none;}
 .boardViewArea .boardViewbtnArea {margin-bottom:0;}
 
-/* 소셜미디어 */
-.socialTit {font-size:20px; margin-bottom:20px;}
-.socialTit span {display:inline;} 
-.socialConts .imgArea .part {width:35%; height:35px; line-height:35px; font-size:16px;}
-.socialConts .imgArea {width:100%; float:none; margin-right:0%;}
-.socialConts .txtArea {width:100%; float:none; }
-.socialConts .txtArea .title {font-size:18px; margin-bottom:15px;}
-.socialConts .txtArea p {margin-bottom:15px;}
-.socialConts.type02 .imgArea {width:100%; float:none;}
-.socialConts.type02 .txtArea {width:100%; float:none; margin-right:0%;}
-.socialConts .txtArea {padding-top:20px;}
+
 
 /* CONTACT OUS > 고객문의 */
 #CNT_K_027 {padding:0;}
