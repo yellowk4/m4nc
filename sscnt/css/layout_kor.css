@@ -232,6 +232,21 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 .shareList li.facebook button:hover {background: #fff url(/images/front/icon/icon_facebook_on.png) no-repeat 50% 50%; background-size: 12px 22px; border: 1px solid #0075c2; box-sizing: border-box;}
 .shareList li.print button:hover {background: #fff url(/images/front/icon/icon_print_on.png) no-repeat 50% 50%; background-size: 21px 22px; border: 1px solid #0075c2; box-sizing: border-box;}
 
+/* 소셜미디어 아이콘 */
+.socialMedia {}
+.socialMedia li {display: inline-block; margin-right: 10px;}
+.socialMedia li button {display: block; width: 56px; height: 56px; border: 1px solid #e1e1e1;}
+.socialMedia li.facebook button {background: #fff url(/images/front/icon/sm_facebook.png) no-repeat 50% 50%; background-size: auto 21px; transition: 0.3s ease-out; box-sizing: border-box;}
+.socialMedia li.blog button {background: #fff url(/images/front/icon/sm_blog.png) no-repeat 50% 50%; background-size: auto 19px; transition: 0.3s ease-out; box-sizing: border-box;}
+.socialMedia li.youtube button {background: #fff url(/images/front/icon/sm_youtube.png) no-repeat 50% 50%; background-size: auto 17px; transition: 0.3s ease-out; box-sizing: border-box;}
+.socialMedia li.twitter button {background: #fff url(/images/front/icon/sm_twitter.png) no-repeat 50% 50%; background-size: auto 17px; transition: 0.3s ease-out; box-sizing: border-box;}
+.socialMedia li.instagram button {background: #fff url(/images/front/icon/sm_instagram.png) no-repeat 50% 50%; background-size: auto 18px; transition: 0.3s ease-out; box-sizing: border-box;}
+.socialMedia li.facebook button:hover {background: #48659d url(/images/front/icon/sm_facebook_on.png) no-repeat 50% 50%; background-size: auto 21px; transition: 0.3s ease-out; border: 1px solid #48659d; box-sizing: border-box;}
+.socialMedia li.blog button:hover {background: #28a931 url(/images/front/icon/sm_blog_on.png) no-repeat 50% 50%; background-size: auto 19px; transition: 0.3s ease-out; border: 1px solid #28a931; box-sizing: border-box;}
+.socialMedia li.youtube button:hover {background: #d12b2d url(/images/front/icon/sm_youtube_on.png) no-repeat 50% 50%; background-size: auto 17px; transition: 0.3s ease-out; border: 1px solid #d12b2d; box-sizing: border-box;}
+.socialMedia li.twitter button:hover {background: #2aa9de url(/images/front/icon/sm_twitter_on.png) no-repeat 50% 50%; background-size: auto 17px; transition: 0.3s ease-out; border: 1px solid #2aa9de; box-sizing: border-box;}
+.socialMedia li.instagram button:hover {background: #d91d50 url(/images/front/icon/sm_instagram_on.png) no-repeat 50% 50%; background-size: auto 18px; transition: 0.3s ease-out; border: 1px solid #d91d50; box-sizing: border-box;}
+
 /* 다운로드 아이콘 */
 .iconDownLoad {background:url("/images/front/icon/ico_downLoad.png") no-repeat center top;background-size:100%;}
 /* 바로가기 아이콘 */
