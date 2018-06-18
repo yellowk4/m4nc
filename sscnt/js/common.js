@@ -570,8 +570,7 @@ gnbApp.event = function (){
 		} else {
 			$searchWrap.removeClass("fixed")
 		}
-
-		if( sTop >= gnbApp.$header.outerHeight(true) + $(".contentsTop").outerHeight(true) ) {
+		if( sTop > ($(".contentsTop").outerHeight(true) - $(".searchWrap").outerHeight(true)) ) {
 			$pcMenuWrap.addClass("fixed")
 		} else {
 			$pcMenuWrap.removeClass("fixed");
