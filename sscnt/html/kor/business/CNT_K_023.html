@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>고객문의 : 삼성물산</title>
+<title>오시는 길 : 삼성물산</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
@@ -190,7 +190,7 @@
 					<div class="visualWrap">
 						<div class="inner">
 							<h3 class="visualTit">
-								고객문의 <span><i class="home">home</i>OUR BUSINESSES</span>
+								오시는 길 <span><i class="home">home</i>OUR BUSINESSES</span>
 							</h3>
 						</div>
 					</div>
@@ -222,7 +222,7 @@
 								<a href="#">리조트부문</a>
 							</div>
 						</div>
-						<div class="dropdown on"> <!-- 활성화 시 "on" 추가 -->
+						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
 							<button class="dropbtn">CSR <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
 								<a href="#">Our CSR</a>
@@ -234,7 +234,7 @@
 						<a href="javascript:;">뉴스</a>
 						<a href="javascript:;">소셜미디어</a>
 						<a href="javascript:;">채용</a>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
+						<div class="dropdown on"> <!-- 활성화 시 "on" 추가 -->
 							<button class="dropbtn">Contact Us <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
 								<a href="#">오시는길</a>
@@ -243,83 +243,54 @@
 						</div>
 					</div>
 				</div>
-				<div id="CNT_K_027" class="contents"> <!-- 페이지별 ID -->
-					<div class="inquiryTit">
-						<span class="title color01">삼성물산 홈페이지를</span>
-						<span class="title color02">방문해 주셔서 감사합니다.</span>
-						<p>문의가 있으시면 아래 버튼을 클릭하신 후 내용 및 정확한 이메일 정보를 남겨주십시오.<br /> 최대한 신속하게 답변 드리도록 하겠습니다. 감사합니다.</p>
-						<button type="button" id="inquiryOpen">문의하기</button>
-					</div>        
-					<div class="inquiryWriteWrap" style="display:none;">
-						<h4 class="text-hidden">삼성물산 고객문의 글쓰기</h4>
-						<div class="inquiryWriteTit">
-							<span class="title">고객정보</span>
-							<span class="addNotice">&#42; 전 항목 필수 입력 사항입니다.</span>
+        <div id="CNT_K_023" class="contents"> <!-- 페이지별 ID -->
+					<div class="defaultTab moChange">
+						<strong class="select">
+							<button type="button">전체</button>
+						</strong>
+						<div class="tabCtrlWrap on"> <!-- current 클래스 있을 시 추가 -->
+							<a href="javascript:;" class="tabCtrl current">건설부문</a>
+              <a href="javascript:;" class="tabCtrl">상사부문</a>
+              <a href="javascript:;" class="tabCtrl">패션부문</a>
+              <a href="javascript:;" class="tabCtrl">리조트부문</a>
 						</div>
-						<ul class="inquiryWrite">
-							<li>
-								<span class="writeTit">이메일 주소</span>
-								<div class="writeCont">
-									<input type="text" id="" name="" class="email" placeholder="아이디입력" /><span class="unit"> @ </span> <input type="text" id="" name="" class="email" placeholder="이메일 도메인 입력"/> 
-									<div class="selectTab">
-										<strong class="select"><button type="button">선택하세요</button></strong>
-										<ul>
-											<li class="active"><a href="#none">선택하세요</a></li>
-											<li><a href="#none">선택하세요</a></li>                    
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<span class="writeTit">제목</span>
-								<div class="writeCont"><input type="text" id="" name="" /></div>
-							</li>
-							<li class="textWrite">
-								<span class="writeTit textWrite">문의 내용</span>
-								<div class="writeCont">
-									<textarea></textarea>
-									<span class="txtCount">0/1000 bytes</span>
-								</div>							
-							</li>
-							<li>
-								<span class="writeTit">자동입력방지</span>
-								<div class="writeCont">
-									<span class="preventionImg"><img src="/images/front/contents/img_CNT_K_027.jpg" alt="자동입력방지 이미지" /></span>
-									<input type="text" id="" name="" class="prevention" />
-									<button type="button" class="refresh">새로고침</button>
-								</div>
-							</li>
-						</ul>
-						<h4 class="text-hidden">개인정보 활용동의</h4>
-						<div class="personalInforAgree">
-							<span class="title color01">&#91;필수&#93; 개인정보 활용동의</span>
-							<p>삼성물산은 고객님들이 의견 접수와 관련하여 성실한 답변을 드리기 위해 필요한 최소한의 개인정보를 수집하고 있습니다.</p>
-							<div class="graybox">
-								<ul>
-									<li>&#183; 수집 항목 : 이메일</li>                                                                           
-									<li>&#183; 수집 및 이용목적 : 접수 문의에 대한 답변/안내</li>
-									<li>&#183; 보유 및 이용기간 : 수집∙이용 목적 달성 시 까지</li>
-								</ul>
-								<span class="notice color03">※ 문의에 대한 답변을 위해서 필요한 최소한의 개인정보 이므로 동의를 해 주셔야 서비스를 이용하실 수 있습니다.</span>
-							</div>
-							<span class="agreeArea">
-								<label class="checkboxWrap"> 위 사항에 동의합니다.
-									<input type="checkbox" />
-									<span class="checkmark"></span>
-								</label>              
-							</span>
-							<div class="buttonArea"><button type="button" class="fillBtn">완료</button></div>
-						</div>          
 					</div>
-					<div class="businessUnitGo">
-						<h4 class="title">사업부문별 고객문의 바로가기</h4>
+					<div class="mapArea">
+						<h4 class="title">건설부문</h4>
 						<ul>
-							<li class="type01"><a href="http://www.secc.co.kr/html/customer/counsel_write.asp" target="_blank">건설부문</a></li>
-							<li class="type02"><a href="http://www.samsungcnt.com/KR/trading/co/106020/form.do" target="_blank">상사부문</a></li>
-							<li class="type03"><a href="http://www.samsungfashion.com/contents/customer.jsp#tabs?main=1" target="_blank">패션부문</a></li>
-							<li class="type04"><a href="http://rnc.samsungcnt.com/etc/supprt/index.html" target="_blank">리조트부문</a></li>
+							<li>
+								<spna class="title">주소</spna>
+								<span class="txt">서울특별시 강동구 상일로 6길 26</span>
+							</li>
+							<li>
+								<spna class="title">전화</spna>
+								<span class="txt">02-2145-5114</span>
+							</li>
+							<li>
+								<spna class="title">팩스</spna>
+								<span class="txt">02-2145-6450</span>
+							</li>
 						</ul>
+						<div class="mapCont">
+							<!-- 1. 약도 노드 -->
+							<div id="daumRoughmapContainer1529367306277" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+							<!-- 2. 설치 스크립트 -->
+							<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://spi.maps.daum.net/imap/map_js_init/roughmapLoader.js"></script>
+							<!-- 3. 실행 스크립트 -->
+							<script charset="UTF-8">
+								new daum.roughmap.Lander({
+									"timestamp" : "1529367306277",
+									"key" : "onbj",
+									"mapWidth" : "100%",
+									"mapHeight" : "417"
+								}).render();
+							</script>
+						</div>						
 					</div>
+					<ul class="shareList">
+						<li class="email"><button><span class="blind">이메일</span></button></li>
+						<li class="facebook"><button><span class="blind">페이스북</span></button></li>
+					</ul>
 				</div> <!-- // contents -->
 				<div class="contentsBtm">
 					<p class="viewTop"><a href="javascript:;">BACK TO TOP</a></p>
@@ -447,12 +418,5 @@
 	</div>
 </div> <!-- // footer -->
 </div> <!-- // wrap -->
-<script>
-	var $inquiryOpen = $('#inquiryOpen'),
-			$inquiryWrite = $('.inquiryWriteWrap');
-	$inquiryOpen.on('click', function(){
-		$inquiryWrite.show();
-	})
-</script>
 </body>
 </html>
