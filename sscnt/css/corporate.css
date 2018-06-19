@@ -74,9 +74,15 @@
     line-height: 1.6;
 }
 
+/* pc block > mobile inline */
+#CNT_K_053 .bigTit > span {display: block;}
+
 /* MOBILE */
 @media screen and (max-width: 1024px){
     /* corporate 정관 CNT_K_051 */
     .titleBox .left{float: none; width: 100%;}
     .titleBox .right {display: none;}
+
+    /* pc block > mobile inline */
+    #CNT_K_053 .bigTit > span {display: inline;}
 }
