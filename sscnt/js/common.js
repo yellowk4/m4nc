@@ -1043,18 +1043,21 @@ conApp.layerEvent = function(){
 
 conApp.imgTabEvent = function(){
 	var wrapperClass = '.dirListBox',
+		imgClass = '.dirListImg',
 		anchorClass = '.dirListName',
 		activeClass = 'active',
 		offClass = 'off';
 
-	$(anchorClass).on("click", function(){
+	var handler = function(){
 		if($(this).parent(wrapperClass).toggleClass(activeClass).hasClass(activeClass)) {
 			$(this).parent(wrapperClass).removeClass(offClass).siblings().removeClass(activeClass).addClass(offClass);
 		} else {
 			$(this).parent(wrapperClass).siblings().removeClass(offClass);
 		}
+	}
 
-	})
+	$(anchorClass).on("click", handler)
+	$(imgClass).on("click", handler)
 
 
 }
