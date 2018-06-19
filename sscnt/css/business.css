@@ -1,9 +1,12 @@
 @charset "utf-8";
 
+/* 공통 CSS */
 .text-hidden {overflow:hidden !important; clip:rect(1px, 1px, 1px, 1px) !important; position:absolute !important; width:1px !important; height:1px !important;}
+.shareList {margin-bottom:60px;}
+
 /* 사업부문별 바로가기 */
-.businessUnitGo {width:100%; overflow:hidden;}
-.businessUnitGo .title {display:block; margin-bottom:30px; font-size:24px; color:#000;}
+.businessUnitGo {width:100%; overflow:hidden; margin-bottom:60px;}
+.businessUnitGo .title {display:block; margin-bottom:30px; font-size:24px; color:#000; font-weight:600;}
 .businessUnitGo ul li {float:left; width:23%; height:56px; line-height:56px; font-size:20px; padding-left:20px; box-sizing:border-box;}
 .businessUnitGo ul li a {display:block; width:100%; height:100%; color:#fff;}
 .businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
@@ -105,7 +108,8 @@
 
 
 /* CSR > 인사말 */
-#CNT_K_009 .tabCtrlWrap  {width:100%; overflow:hidden; margin-bottom:60px;}
+#CNT_K_009 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
+#CNT_K_009 .defaultTabCon {width:100%; overflow:hidden; margin-bottom:60px;}
 .csrTitle {overflow:hidden; margin-bottom:100px;}
 .csrTitle h4 {font-size:28px; line-height:1.6; color:#000; margin-bottom:40px;}
 .csrTitle p {line-height:1.6; margin-bottom:20px;}
@@ -139,6 +143,7 @@
 
 /* CSR > ACT */
 #CNT_K_011 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
+.actMainWrap {margin-bottom:15px;}
 .actMainWrap h4 {font-size:28px; margin-bottom:40px; color:#111;}
 .actMainWrap p {line-height:1.6; margin-bottom:25px;}
 .actMainWrap p.type01 {margin-bottom:50px;}
@@ -162,6 +167,7 @@
 
 /* CSR > ACT */
 #CNT_K_012 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
+#CNT_K_012 .defaultTabCon {width:100%; overflow:hidden; margin-bottom:30px;}
 .actMainTitle {font-size:28px; padding-bottom:40px; border-bottom:1px solid #0c4da2; color:#000; margin-bottom:40px;}
 
 .actContsWrap {width:100%; overflow:hidden; padding-bottom:10px; margin-bottom:40px; border-bottom:1px solid #d9d9d9;}
@@ -201,12 +207,14 @@
 
 /* CSR > CSR News > 리스트 */
 #CNT_K_013 .tabCtrlWrap {margin-bottom:60px;}
+#CNT_K_013 .pageArea {margin-bottom:60px;}
 
 /* CSR > CSR News > 글보기 */
 #CNT_K_014 .tabCtrlWrap {margin-bottom:60px;}
 
 /* 뉴스 > 리스트 */
 #CNT_K_016 .tabCtrlWrap {margin-bottom:60px;}
+#CNT_K_016 .pageArea {margin-bottom:60px;}
 
 /* 뉴스 > 글보기 */
 #CNT_K_017 .tabCtrlWrap {margin-bottom:60px;}
@@ -249,7 +257,7 @@
 .socialConts.last {margin-bottom:70px;}
 .socialConts .txtArea .socialMedia {position:absolute; bottom:0; left:54%;}
 .socialConts.type02 .txtArea .socialMedia {position:absolute; bottom:0; left:0;}
-#CNT_K_021 .shareList {margin-bottom:60px;}
+
 
 /* CONTACT OUS > 오시는 길*/
 #CNT_K_023 .defaultTab, #CNT_K_024 .defaultTab, #CNT_K_025 .defaultTab, #CNT_K_026 .defaultTab {margin-bottom:60px;}
