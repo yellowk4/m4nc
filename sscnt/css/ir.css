@@ -78,6 +78,8 @@
 .mt_60{margin-top: 60px;}
 /* pText */
 .pText{line-height: 1.4;}
+/* 연관정보 바로가기 */
+.relationInfo{margin-top: 60px;}
 
 /* MOBILE */
 @media screen and (max-width: 1024px){

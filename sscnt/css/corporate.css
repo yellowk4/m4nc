@@ -3,6 +3,19 @@
 /* visual bg */
 #contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_03.jpg);}
 
+/* corporate Overview CNT_K_050 */
+.overviewTit {overflow:hidden;}
+.overviewTit h4 {font-size:28px; line-height:1.4; color:#111; margin-bottom:40px;}
+.overviewTit h4 span {display:block;}
+.overviewTit p {margin-bottom:40px;}
+.overviewCont .buttonArea {text-align:right; margin-bottom:60px;}
+#CNT_K_050 .tableBasicList {border-bottom:1px solid #777777; margin-bottom:20px;}
+#CNT_K_050 .tableBasicList th {height:60px; box-sizing:border-box;}
+#CNT_K_050 .tableBasicList td {height:60px; box-sizing:border-box;}
+#CNT_K_050 .tableBasicList td.title {text-align:left; padding-left:20px;}
+#CNT_K_050 .gray {display:block; margin-bottom:80px; color:#777777;}
+.overviewCont h4 {font-size:24px; margin-bottom:20px; font-weight:600; color:#111}
+
 /* corporate 정관 CNT_K_051 */
 .titleBox .left, .titleBox .right {float: left; width: 50%;}
 .titleBox .right{text-align: right;}
@@ -32,7 +45,7 @@
 .dirListName:after{content: ''; position: absolute; right: 30px; top: 50%; margin-top: -13px; display: block; width: 26px; height: 26px; background: url(/images/front/icon/ico_gray_plus.png) no-repeat ;}
 .dirListBox.active .dirListName:after{background-image: url(/images/front/icon/ico_blue_minus.png);}
 .dirListName span{display: inline-block; padding-bottom: 9px; font-size: 24px;}
-.directCon{display: none; margin-top: 10px; padding: 30px; background-color: #fbfbfb; border-bottom: 1px solid #d9d9d9;} /* 내용숨김 */
+.directCon{display: none; position: relative; z-index: 1; width: 1040px; margin-top: 10px; padding: 30px; background-color: #fbfbfb; border-bottom: 1px solid #d9d9d9;} /* 내용숨김 */
 .dirInfo.first{padding-bottom: 30px; margin-bottom: 30px; border-bottom: 2px dotted #dbdbdb;}
 .dirInfo .dot{display: inline-block; padding-left: 16px; padding-right: 60px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat left 8px;}
 .dirInfo .subTit{display: inline-block; padding-bottom: 12px;}
@@ -47,6 +60,7 @@
 /* corporate 운영&역할 CNT_K_054 */
 #CNT_K_054 .mt_50{margin-top: 40px;}
 #CNT_K_054 .mb_80{margin-bottom: 80px;}
+
 
 /* directCon normal */
 .dirListImg{position: relative; max-height: 368px; overflow: hidden;}
@@ -88,6 +102,9 @@
 
     /* corporate 이사회 구성 CNT_K_053 */
     #CNT_K_053 .topBox .txt{padding-top: 20px;}
+    .directCon{position: static; width: auto;}
+    .dirListBox{float: none; width: 100%; margin-bottom: 30px;}
+    .dirListBox.middle{margin: 0 0 30px;}
 
     /* pc block > mobile inline */
     #CNT_K_053 .bigTit > span {display: inline;}
