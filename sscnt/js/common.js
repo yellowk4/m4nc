@@ -5,7 +5,9 @@ function trace(){ try{ var args = [].join.call(arguments, ' '); console.log( "ui
 var Utils = {
 	getMediaQuery: function(type){
 		return {
-			gnb: window.matchMedia("all and (max-width:1024px)"),
+			pc: window.matchMedia("(min-width:1024px)"),
+			tablet: window.matchMedia("(min-width:812px) and (max-width:1023px)"),
+			mobile: window.matchMedia("all and (max-width:811px)")
 		}[type];
 	}
 }
@@ -580,56 +582,48 @@ gnbApp.event = function (){
 
 	}
 
+	/* @mediaQuery
+	 *
+	 * PC: window.matchMedia("(min-width:1024px) and all")
+	 * TABLET: window.matchMedia("(min-width:812px) and (max-width:1023px)")
+	 * 
+	 */
 	
+	var pcMQ = Utils.getMediaQuery('pc'),
+		tabletMQ = Utils.getMediaQuery('tablet');
 
+	function init(){
 
-	var mq = Utils.getMediaQuery('gnb');
+		// default Click Event
+		gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
 
-	mq.matches ? matched() : unMatched();
+		if(pcMQ.matches) { // PC 해상도 일 때
+			matchedIsPC();
+		} else { // PC 해상도가 아닐 때
+			tabletMQ.matches ? matchedIsTablet() : matchedIsMobile();
+		}
 
-	mq.addListener(function(mql){
-		mql.matches ? matched() : unMatched();
-	})
+		pcMQ.addListener(function(mql){
+			mql.matches && matchedIsPC();
+		})
 
-	gnbApp.$megaMenuDepth02.on("click", gnbApp.$megaMenuClickEvent02);
-	
+		tabletMQ.addListener(function(mql){
+			mql.matches ? matchedIsTablet() : pcMQ.matches ? matchedIsPC() : matchedIsMobile();
+		})
 
-	function matched(){
-		console.log('Mathced ! isNotPC');
+	}
 
-		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
-		var gap = Math.round((14 * 100) / $(window).outerHeight(true));
-		TweenMax.set($(".contents"), { paddingTop: (vh - gap) + 'vh' })
-	
-		// $(window).on("resize", function(){ 
-		// 	vh = Math.round(((gnbApp.$header.outerHeight(true) + 40) * 100) / $(window).outerHeight(true));
-		// 	TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
-		// })
+	init();
 
-		gnbApp.$megaMenuDepth.off("mouseenter focusin");
-		gnbApp.$utility.find("li").eq(0).off("focusin")
-		gnbApp.$header.off("mouseleave");
-
-		gnbApp.$megaMenuShowBtn.on("click",gnbApp.$megaMenuShowEvent);
-		gnbApp.$megaMenuHideBtn.on("click",gnbApp.$megaMenuHideEvent);
-		gnbApp.$megaMenuDepth.on("click", gnbApp.$megaMenuClickEvent01);
-		
-		$(window).off("scroll").on("scroll", gnbApp.scrollEventHandler)
-
-	};
-
-	function unMatched(){
-		console.log('unMathced ! isPC')
+	function matchedIsPC(){
+		console.log('pcMQ: '+ pcMQ.matches)
 
 		$(".contents").removeAttr("style")
-
 		gnbApp.$megaMenuShowBtn.off("click");
 		gnbApp.$megaMenuHideBtn.off("click");
 		gnbApp.$megaMenuDepth.off("click");
-		gnbApp.$megaMenuDepth02.off("click");
 
 		gnbApp.$megaMenuDepth.on("mouseenter", gnbApp.$megaMenuOverEvent01);
-		gnbApp.$megaMenuDepth02.on("mouseenter", gnbApp.$megaMenuOverEvent02);
 		gnbApp.$header.on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
 
 		gnbApp.$header.trigger("mouseleave")
@@ -651,6 +645,33 @@ gnbApp.event = function (){
 
 		$(window).off("scroll").on("scroll", gnbApp.headerFixedScrollEventHandler);
 		conApp.$body.removeAttr("style");
+	};
+
+	function matchedIsTablet(){
+		console.log('tabletMQ: '+ tabletMQ.matches)
+
+		$(window).off("scroll");
+		$(".serachWrap").removeClass("fixed");
+		$(".pcMenuWrap").removeClass("fixed");
+
+		gnbApp.$megaMenuDepth.off("mouseenter focusin");
+		gnbApp.$utility.find("li").eq(0).off("focusin")
+		gnbApp.$header.off("mouseleave");
+
+		gnbApp.$megaMenuShowBtn.off().on("click",gnbApp.$megaMenuShowEvent);
+		gnbApp.$megaMenuHideBtn.off().on("click",gnbApp.$megaMenuHideEvent);
+		gnbApp.$megaMenuDepth.off().on("click", gnbApp.$megaMenuClickEvent01);
+
+	}
+	
+	function matchedIsMobile(){
+		console.log('tabletMQ: '+ tabletMQ.matches)
+
+		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
+		var gap = Math.round((14 * 100) / $(window).outerHeight(true));
+		TweenMax.set($(".contents"), { paddingTop: (vh - gap) + 'vh' })
+
+		$(window).on("scroll", gnbApp.scrollEventHandler);
 	}
 
 	// 리사이즈 이벤트 후처리
@@ -1020,6 +1041,25 @@ conApp.layerEvent = function(){
     
 }
 
+conApp.imgTabEvent = function(){
+	var wrapperClass = '.dirListBox',
+		anchorClass = '.dirListName',
+		activeClass = 'active',
+		offClass = 'off';
+
+	$(anchorClass).on("click", function(){
+		if($(this).parent(wrapperClass).toggleClass(activeClass).hasClass(activeClass)) {
+			$(this).parent(wrapperClass).removeClass(offClass).siblings().removeClass(activeClass).addClass(offClass);
+		} else {
+			$(this).parent(wrapperClass).siblings().removeClass(offClass);
+		}
+
+	})
+
+
+}
+
+
 $(function() {
 	conApp.$body = $("body");
 	conApp.$wrap = $(".wrap");
@@ -1042,6 +1082,8 @@ $(function() {
 	if (hasJqObject(conApp.$body.find(".btnDefaultForm"))){ conApp.formToggle();} //formToggle
 	if (hasJqObject(conApp.$body.find(".btnSearchView"))){ conApp.btnSearchView();} //formToggle
 	if (hasJqObject(conApp.$body.find(".layerList"))){ conApp.layerEvent();} //layerPopup
+	if (hasJqObject(conApp.$body.find(".directorList"))){ conApp.imgTabEvent(); } // 위원회 image Tab Toggle
+
 	conApp.openSelectHide();
 	
 	
