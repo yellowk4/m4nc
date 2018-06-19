@@ -132,7 +132,7 @@
 .visionStrategy p.last {margin-bottom:50px;}
 .visionStrategy table {width:100%; table-layout:fixed; border-top:1px solid #0c4da2; margin-bottom:50px;}
 .visionStrategy table th {text-align:left; padding:35px 0; font-size:24px; color:#111; border-bottom:1px solid #d9d9d9;}
-.visionStrategy table td {text-align:left; padding:35px 0; color:#333; border-bottom:1px solid #d9d9d9;}
+.visionStrategy table td {text-align:left; padding:35px 0 35px 15px; color:#333; border-bottom:1px solid #d9d9d9;}
 .visionStrategy table td .imgSlogan {display:block; margin-bottom:20px;}
 .visionStrategy table td .last {margin:0;}
 .visionStrategy table th.last, .visionStrategy table td.last { border-bottom:1px solid #777777}
@@ -351,13 +351,13 @@
 .boardViewArea .boardViewbtnArea .utileBtn {display:none;}
 .boardViewArea .boardViewbtnArea .listGo {width:30%; height:40px; line-height:40px;}
 .boardViewArea .relationArticle {display:none;}
-.boardViewArea .boardViewbtnArea {margin-bottom:0;}
+.boardViewArea .boardViewbtnArea {margin-bottom:30px;}
   
 /* 사업영역 > 건설부문 / 상사부문 / 패션부문 / 리조트 부문 */
-.businessAreaIntro {width:100%; overflow:hidden; margin-bottom:10px;}
-.businessAreaIntro .bigTit {font-size:20px; margin-bottom:26px;}
-.businessAreaIntro p {margin-bottom:18px;}
-.businessAreaBnr {width:100%; overflow:hidden; margin-bottom:35px;}
+.businessAreaIntro {width:100%; overflow:hidden; margin-bottom:15px;}
+.businessAreaIntro .bigTit {font-size:21px; margin-bottom:20px;}
+.businessAreaIntro p {margin-bottom:15px; line-height: 1.5;}
+.businessAreaBnr {width:100%; overflow:hidden; margin-bottom:30px;}
 .businessAreaBnr ul li {float:none; width:100%; height:auto; overflow:hidden; text-align:center; padding:40px 0; color:#fff;}
 .businessAreaBnr ul li .title {display:inline-block; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #fff; font-size:20px;}
 .businessAreaBnr ul li.titleBnr {width:100%; height:auto; background:none; margin-bottom:10px; position:relative; padding:0; text-align:center;}
@@ -399,13 +399,13 @@
 .mailPopWrap .writeForm .writeCont .selectTab {float:left; width:100%; margin:2% 0 0 0;}
 
 /* CSR > ACT */
-.actConts .imgArea .imgCont01 {display:block; float:none; width:100%; margin:0 0 20px 0;}
-.actConts .imgArea .imgCont02 {display:block; float:none; width:100%;}
+.actConts .imgArea .imgCont01 {display:block; float:none; width:100%; margin:0 0 10px 0; line-height: 0;}
+.actConts .imgArea .imgCont02 {display:block; float:none; width:100%; line-height: 0;}
 .actConts .imgArea.type02 .imgCont01 {display:block; float:none; width:100%; margin:0 0 20px 0;}
 .actConts .imgArea.type02 .imgCont02 {display:block; float:none; width:100%;}
 .actConts .imgArea img {width:100%;}
-.actConts .imgList {width:100%; overflow:hidden; margin-bottom:30px;}
-.actConts .imgList li {float:none; width:100%; margin-right:0; margin-bottom:20px;}
+.actConts .imgList {width:100%; overflow:hidden; margin-bottom:20px;}
+.actConts .imgList li {float:none; width:100%; margin-right:0; margin-bottom:10px;}
 .actConts .imgList li.type01 {width:100%;}
 .actConts .imgList li.type02 {width:100%;}
 .actConts .imgTxtList li {display:block; margin-bottom:30px;}
@@ -414,8 +414,8 @@
 .actConts .imgTxtList li .imgCont img {width:100%;}
 .actConts .imgTxtList li .txtCont {width:100%; display:block;}
 .actConts table {width:100%; table-layout:fixed; border-top:1px solid #0c4da2; margin-bottom:30px;}
-.actConts table th {height:60px; background:#f8f8f8; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9;}
-.actConts table td {height:60px; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; text-align:center;}
+.actConts table th {height:40px; background:#f8f8f8; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; color: #111; font-size: 15px; box-sizing: border-box;}
+.actConts table td {height:auto; padding:13px 10px; border-bottom:1px solid #d9d9d9; border-right:1px solid #d9d9d9; text-align:center; font-size: 15px;}
 .actConts table th.last, .actConts table td.last {border-right:0;}
 .actConts.last {padding:0; margin:0; border:0;}
 .actConts .pcImg {display:none;}
@@ -463,5 +463,33 @@
 .personalInforAgree .buttonArea {text-align:center;}
 .personalInforAgree .buttonArea button {height:40px; line-height:40px;}
 
+/*모바일*/
+.csrTitle h4 {margin-bottom: 20px; font-size: 21px; line-height: 1.4; color: #333;}
+.csrTitle p.last {margin-bottom:30px;}
+.csrTitle {margin-bottom: 40px;}
+#CNT_K_009 .tabCtrlWrap {margin-bottom: 0;}
+.greetingWrap h4, .visionStrategy h4, .actMainWrap h4 {margin-bottom: 20px; font-size: 21px; line-height: 1.4; color:#333;}
+.greetingWrap p {margin-bottom: 15px; line-height: 1.5;}
+.greetingWrap p.last {margin-bottom: 20px;}
+.greetingWrap {padding-bottom: 20px; margin-bottom: 20px;}
+.greetingBtnWrap {text-align: center;}
+.visionStrategy p {margin-bottom: 15px; line-height: 1.5;}
+.visionStrategy p.last {margin-bottom: 20px;}
+.visionStrategy table col {width: 20% !important;}
+.visionStrategy table col:last-child {width: 80% !important;}
+.visionStrategy table th {padding:15px 0 12px;}
+.visionStrategy table td {padding:15px 0 12px 15px;}
+.visionStrategy table {margin-bottom: 20px;}
+#CNT_K_003 .tabCtrlWrap, #CNT_K_011 .tabCtrlWrap {margin-bottom: 0;}
+.actMainWrap p {margin-bottom: 15px;}
+.actMainWrap p.color01 {font-size: 16px;}
+.actMainWrap p.type01, .actMainWrap .imgArea {margin-bottom: 30px;}
+.actMainWrap .actMenuList > li .title {padding-bottom: 5px; margin-bottom: 10px; font-weight: 700;}
+.actMainWrap .actMenuList > li {margin-bottom: 30px;}
+.actMainTitle {font-size: 21px; padding-bottom: 20px; margin-bottom: 20px;}.actContsWrap .actTit {margin-bottom: 15px; font-size: 18px; font-weight: 700;}
+.actContsWrap p {margin-bottom: 15px;}
+.actContsWrap {padding-bottom: 5px; margin-bottom: 20px;}
+.actConts .actSubTit {font-size: 16px;}
+.actConts {padding-bottom: 5px; margin-bottom: 20px;}
 
 }

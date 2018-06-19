@@ -42,7 +42,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 /* 공통 컨텐츠 타이틀 */
 .visualTit {color: #333; font-size:50px;}
 .popTit {color:#0c4da2; font-size:36px; font-weight: 700;}
-.bigTit {color: #111; font-size:28px;}
+.bigTit {color: #333; font-size:28px;}
 .contTit {color: #111; font-size:24px; font-weight: 700;}
 .subTit {color: #111; font-size:18px;}
 .contTxt {color: #666; font-size:16px;}
@@ -510,7 +510,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 .logo a img {width:100%;}
 
 /* PC에서만 보이는 탑 사업부문 메뉴 */
-.topMenuWrap {position:relative;z-index:199;height:30px;background:#15397b;}
+.topMenuWrap {position:relative;z-index:200;height:30px;background:#15397b;}
 .topMenuWrap:after {content:"";display:block;clear:both;height:0;visibility:hidden;}
 .topMenuWrap ul {float:right;height:30px;background:#0075c2;}
 .topMenuWrap ul li {float:left;position:relative;}
@@ -1023,7 +1023,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 	/* 최상단 영역 */
 	.header {position:fixed;width:100%;min-height:auto;}
 	.header:before,.header:after {display:none;}
-	.header header {max-width:none;margin:0;padding:0;height:70px;}
+	.header header {max-width:none;margin:0;padding:0;height:70px; border-bottom: 1px solid #c3c3c3;}
 		
 	.logo {top:0;}
 	.logo a {width: 162px; height: 28px; padding: 21px 0 21px 20px;}
@@ -1105,15 +1105,15 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 	#contentsWrap .contentsTop {display: none;}
 	#contentsWrap > .container {padding-top: 40px;}
 	.header {height:auto;}
-	.header header {height:40px;border-bottom: 1px solid #c3c3c3;}
+	.header header {height:40px;}
 	.header .moMenuWrap {display: block;}
 	#contentsWrap .pcMenuWrap {display: none;}
 	/* 모바일 메뉴 */
 	.moMenuWrap .location {position: relative;}
 	.moMenuWrap .location ol {padding: 10px 10px 9px 40px; background: #e7e7e7;}
-	.moMenuWrap .location ol:before {content:''; position: absolute; top:10px; left:17px; display:block; width:16px; height: 16px; background: url(/images/front/icon/icon_home.png) no-repeat; background-size: 16px 16px;}
-	.moMenuWrap .location ol li {float: left; margin-right: 4px; font-size: 12px; font-weight: 700; color: #333; line-height: 1.5;}
-	.moMenuWrap .location ol li:after {content:'>'; display: inline-block; margin-left: 3px; color: #999; vertical-align: middle;}
+	.moMenuWrap .location ol:before {content:''; position: absolute; top:10px; left:17px; display:block; width:13px; height: 14px; background: url(/images/front/icon/icon_home.png) no-repeat; background-size: 100%;}
+	.moMenuWrap .location ol li {float: left; margin-right: 4px; font-size: 13px; color: #333; line-height: 1.5;}
+	.moMenuWrap .location ol li:after {content:''; display: inline-block; margin-left: 4px; width: 6px; height: 10px; background: url(/images/front/common/bul_location.png) no-repeat; background-size: auto 10px;}
 	.moMenuWrap .location ol li:last-child {margin-right:0;}
 	.moMenuWrap .location ol li:last-child:after {display: none;}
 	.moMenuWrap .location ol li.on {color: #377dd5;}
@@ -1150,7 +1150,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 
 
 	/* 푸터 */
-	.footer > .container {padding-top: 20px;}
+	.footer > .container {padding-top: 15px;}
 	.footer .familyWrap {display: none;}
 	.footer .footMenuWrap ul {display: none;}
 	.footer .footMenuWrap ul.moLink {display: block; text-align: center;}
@@ -1180,7 +1180,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 
 	/* 본문 하단 이메일/페이스북/인쇄하기 */
 	.shareList {padding: 8px 0 7px;}
-	.shareList li button {width: 30px; height: 30px;}
+	.shareList li button {width: 33px; height: 33px;}
 	.shareList li.email button, .shareList li.email button:hover {background-size: auto 15px; }
 	.shareList li.facebook button, .shareList li.facebook button:hover {background-size: auto 15px; }
 	.shareList li.print button, .shareList li.print button:hover {background-size: auto 15px; }
@@ -1192,7 +1192,13 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 	.relationInfo {display: none;}
 
 	/* 모바일 가이드 정리 */
-	html, body, .historyTitDetail {line-height: 1.5 !important;}
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,select,input,textarea,p,blockquote,th,td,figure,figcaption {line-height: 1.5 !important;}
+	.contents .historyTit {margin-bottom: 20px;}
+	.contents .historyTitDetail {margin-bottom: 15px; line-height: 1.5 !important;}
+	.contents .historyBtnWrap {margin: 30px 0; text-align: center;}
+	.contents .historyBtnWrap a {width: auto; min-width: 100px; padding: 0 20px; height: 45px; line-height: 45px; font-size: 16px;}
+	.defaultTab .tabCtrlWrap a {height: 40px; font-size: 15px;}
+	
 
 }
 

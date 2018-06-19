@@ -85,6 +85,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;}
 img,legend,fieldset,button {border:none;}
 input,select,textarea {font-family:inherit;font-size:inherit;*font-weight:inherit;vertical-align:middle;} /* 기본 설정값으로 초기화 */
 table {border-collapse:collapse;table-layout:fixed;}
+table th, table td {word-break: keep-all;}
 caption,legend {width:0;height:0;line-height:0;visibility:hidden;font-size:0;} /* 사용하지 않는 전제 조건 */
 ul,ol,li {list-style-type:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;} /* 익스 9부터 적용가능 */
 hr {display:none;}
