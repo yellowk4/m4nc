@@ -144,7 +144,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 /* 연관정보 바로가기 -버튼 */
 .relationInfo .contTit {margin-bottom: 20px;}
 .relationInfo .buttonWrap {overflow: hidden; width: 100%;}
-.relationInfo .buttonWrap .blankBtn {float: left; min-width: auto; width: 260px; padding: 0 10px; margin-right: 20px; border: 1px solid #bbb; background: #e1e1e1; color: #333; transition: 0.2s ease-out;}
+.relationInfo .buttonWrap .blankBtn {float: left; min-width: auto; width: 23.5%; padding: 0 10px; margin-right: 2%; border: 1px solid #bbb; background: #e1e1e1; color: #333; transition: 0.2s ease-out;}
 .relationInfo .buttonWrap .blankBtn:last-child {margin-right: 0;}
 .relationInfo .buttonWrap .blankBtn:hover {background: #fff; border: 1px solid #0c4da2; color: #0c4da2;}
 
@@ -1187,7 +1187,10 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 
 	/* 소셜미디어 아이콘 */
 	.socialMedia li {margin-right: 0;}
-	
+
+	/* 연관정보 바로가기 */
+	.relationInfo {display: none;}
+
 }
 
 @media screen and (max-width:320px) {
