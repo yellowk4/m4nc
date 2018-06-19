@@ -501,7 +501,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 ********************************************************************************************/
 .header {position:fixed; left:0; top:0; width:100%; z-index:200;min-height:104px;background:#fff;box-sizing:border-box;}
 .header:before {content:"";display:block;clear:both;position:absolute;left:0;top:0;width:100%;height:30px;background:#15397b;}
-.header:after {content:"";display:block;clear:both;position:absolute;right:0;top:0;width:33%;height:30px;background:#0075c2;z-index:1;}
+.header:after {content:"";display:block;clear:both;position:absolute;right:0;top:0;width:33%;height:30px;background:#0075c2;z-index:199;}
 .header > header {max-width:1200px;margin:0 auto;padding:0 50px;box-sizing:border-box;}
 .header > header:after {content:"";display:block;clear:both;height:0;visibility:hidden;}
 
@@ -510,7 +510,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 .logo a img {width:100%;}
 
 /* PC에서만 보이는 탑 사업부문 메뉴 */
-.topMenuWrap {position:relative;z-index:2;height:30px;background:#15397b;}
+.topMenuWrap {position:relative;z-index:199;height:30px;background:#15397b;}
 .topMenuWrap:after {content:"";display:block;clear:both;height:0;visibility:hidden;}
 .topMenuWrap ul {float:right;height:30px;background:#0075c2;}
 .topMenuWrap ul li {float:left;position:relative;}
@@ -552,7 +552,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 .menuWrap .depth01 > li.active {}
 .menuWrap .depth01 > li.active:after {width:100%;background:#fff;}
 .menuWrap .depth01 > li.active:first-child:after {display:block;}
-.menuWrap .depth01 > li.active:before {content:"";display:block;clear:both;position:absolute;top:70px;left:50%;z-index:1;width:80%;height:4px;margin-left:-40%;background:#0075c2;}
+.menuWrap .depth01 > li.active:before {content:"";display:block;clear:both;position:absolute;top:70px;left:50%;z-index:199;width:80%;height:4px;margin-left:-40%;background:#0075c2;}
 .menuWrap .depth01 > li.active > a {color:#0075c2;}
 .menuWrap .depth01 > li.gnb01 {width:27%;}
 .menuWrap .depth01 > li.gnb02 {width:33%;}
@@ -588,7 +588,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 #contentsWrap .visualWrap .visualTit span .home:after {content:''; display: block; position:absolute; top:5px; left: auto; right:0; width: 7px; height: 15px; background: url(/images/front/common/bul_arrow.png) no-repeat; background-size: auto 15px;}
 #contentsWrap .visualWrap .visualTit span em {margin-top: -5px;}
 #contentsWrap .searchWrap {position: absolute; top:0; left:0; width: 100%;padding: 13px 0; background: #0075c2; box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);}
-#contentsWrap .searchWrap.fixed {position: fixed; top: 104px; z-index: 1;}
+#contentsWrap .searchWrap.fixed {position: fixed; top: 104px; z-index: 199;}
 #contentsWrap .searchWrap .hashtag {float: left;}
 #contentsWrap .searchWrap .hashtag li {float: left; margin-right: 10px;}
 #contentsWrap .searchWrap .hashtag li a {display: block; padding: 10px 20px; border: 1px solid #66acda; border-radius: 25px;  color: #fff; font-size: 18px;}
@@ -598,7 +598,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 #contentsWrap .searchWrap .searchArea .searchBtn {width: 45px; height: 45px; margin-left: 7px;  background: url(/images/front/btn/btn_search.png) no-repeat;}
 .header .moMenuWrap {display: none;}
 #contentsWrap .pcMenuWrap {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box;}
-#contentsWrap .pcMenuWrap.fixed {position: fixed; top:177px; left:0; width: 100%; background: #fff; z-index: 1;}
+#contentsWrap .pcMenuWrap.fixed {position: fixed; top:177px; left:0; width: 100%; background: #fff; z-index: 199;}
 #contentsWrap .pcMenuWrap .inner {max-width:1200px; padding:0 50px; margin:0 auto; box-sizing: border-box;}
 #contentsWrap .pcMenuWrap .navbar {overflow: hidden;}
 #contentsWrap .pcMenuWrap .navbar a {float: left; color: #333; padding: 15px;}
@@ -1190,6 +1190,9 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 
 	/* 연관정보 바로가기 */
 	.relationInfo {display: none;}
+
+	/* 모바일 가이드 정리 */
+	html, body, .historyTitDetail {line-height: 1.5 !important;}
 
 }
 
