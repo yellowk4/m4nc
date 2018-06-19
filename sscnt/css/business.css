@@ -11,15 +11,6 @@
 .businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
 .businessUnitGo ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center;}
 
-/* 연관정보 바로가기  */
-/* .relationInfo  {width:100%; overflow:hidden;}
-.relationInfo .title {display:block; margin-bottom:30px; font-size:24px; color:#000;}
-.relationInfo ul li {float:left; width:23%; height:54px; line-height:56px; font-size:18px; box-sizing:border-box; background:#e1e1e1; border:1px solid #bbbbbb; text-align:center; margin-right:2.66%; cursor:pointer;} 
-.relationInfo ul li:hover {border:1px solid #0c4da2; background:#fff;}
-.relationInfo ul li:last-child {margin-right:0;}
-.relationInfo ul li a {color:#333333; font-weight:600;}
-.relationInfo ul li:hover a {color:#0c4da2;} */
-
 /* 공통 게시판 리스트 */
 .baordList {width:100%; overflow:hidden; margin-bottom:10px;}
 .baordList ul li {width:100%; overflow:hidden; padding-bottom:30px; border-bottom:1px solid #d9d9d9; margin-bottom:30px}
@@ -343,14 +334,6 @@
 .businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
 .businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:0;}
 .businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
-
-/* 연관정보 바로가기 */
-.relationInfo .title {display:block; margin-bottom:10px; font-size:20px; color:#000;}
-.relationInfo ul li {float:left; width:49%; height:40px; line-height:40px; font-size:18px; margin:0 2% 2% 0; font-size:16px;} 
-.relationInfo ul li:hover {border:1px solid #0c4da2; background:#fff;}
-.relationInfo ul li:nth-child(2n) {margin-right:0;}
-.relationInfo ul li a {color:#333333; font-weight:600;}
-.relationInfo ul li:hover a {color:#0c4da2;}
 
 /* 공통 게시판 리스트 */
 .baordList ul li {padding-bottom:20px; border-bottom:1px solid #d9d9d9; margin-bottom:20px}
