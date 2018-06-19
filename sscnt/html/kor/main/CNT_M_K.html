@@ -10,11 +10,14 @@
 <link type="text/css" rel="stylesheet" href="/css/main.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="/js/swiper.min.js"></script>
 <script type="text/javascript" src="/js/common.js"></script>
 <!--[if lt IE 9]>
 	<script src="/js/html5.js"></script>
 	<script src="/js/respond.js"></script>
 <![endif]-->
+
+</head>
 <body>
 <div id="skipnavi">
 	<a href="#contentsWrap">본문 바로가기  </a>
@@ -163,10 +166,48 @@
 
 	<div id="contentsWrap">
 		<div class="container">
-
-			<!-- <div>
-				비주얼영역
-			</div> -->
+			<!-- main visual -->
+			<div class="mainVisual swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide visual01">
+						<div class="inner">
+							<div class="ttlWrap">
+								<p class="big">[공간]</p>
+								<p class="small">가치를 더하다</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide visual02">
+						<div class="inner">
+							<div class="ttlWrap">
+								<p class="big">[네트워크]</p>
+								<p class="small">가치를 더하다</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide visual03">
+						<div class="inner">
+							<div class="ttlWrap">
+								<p class="big">[아름다움]</p>
+								<p class="small">가치를 더하다</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide visual04">
+						<div class="inner">
+							<div class="ttlWrap">
+								<p class="big">[행복]</p>
+								<p class="small">가치를 더하다</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-page-wrap">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-counter"></div>
+				</div>
+			</div>
 
 			<div class="searchWrap">
 				<div class="inner clfix">
@@ -188,7 +229,8 @@
 					<div class="inner">
 						<div class="titWrap">
 							<h3><span>NEWS</span>ROOM</h3>
-							<a href="#" class="icoTitMore"><span class="blind">이동</span></a>
+							<a href="#" class="icoTitMore koNewRoomLink"><span class="blind">국문 NEWS ROOM 이동</span></a>
+							<a href="#" class="icoTitMore engNewRoomLink"><span class="blind">영문 NEWS ROOM 이동</span></a>
 						</div>
 						<div class="cont">
 							<ul>
@@ -211,8 +253,9 @@
 									<a href="#" target="_blank" class="icoMore">자세히보기</a>
 								</li>
 								<li>
-									<span class="sector">COPORATE</span>
-									<p>삼성물산 래미안, 캠핑 아카데미 입주민 체험활동</p>
+									<span class="sector">CORPORATE</span>
+									<span class="eng">ENG</span>
+									<p>Celebrating 80 Years of Business: By Giving Back</p>
 									<span class="date">2018.04.30</span>
 									<a href="#" target="_blank" class="icoMoreSite">자세히보기</a>
 								</li>
@@ -309,22 +352,13 @@
 								<li><a href="#"><span>보고서</span></a></li>
 								<li><a href="#"><span>주주환원</span></a></li>
 							</ul>
-							<ul class="stockInfo">
-								<li>
-									<strong>주가정보</strong>
-									<span class="stockTxt01">(현재가 KRW)</span>
-									<p>129,000</p>
-									<span class="stockTxt02">전일대비 +1500원 (+1.18%)</span>
-								</li>
-								<li>
-									<strong>거래량(주)</strong>
-									<p>353,662</p>
-								</li>
-								<li>
-									<strong>거래량(주)</strong>
-									<p>353,662</p>
-								</li>
-							</ul>
+							<div class="stockInfo">
+								<div class="iframeArea">
+									<iframe src="http://asia.tools.euroland.com/tools/ticker/scrolling/?companycode=kr-028260&v=static&lang=ko-kr" ; id="euroland_frame_id"
+									 width="100%" height="388" scrolling="no" frameborder="0">
+									</iframe>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -554,5 +588,32 @@
 		</div>
 	</div> <!-- // footer -->
 </div> <!-- // wrap -->
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView:'auto',
+		autoplay: {
+			delay: 3500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		on: {
+			init: function () {
+				var len = this.slides.length; // total
+				var counter = $('.swiper-counter');
+				var count = $('<span class="count">1</span><span class="total"> / '+ len +'</span>');
+				counter.append(count);
+			},
+			slideChangeTransitionStart: function () {
+				var index = swiper.activeIndex + 1; // 현재 활성화 idx
+				$('.count').text(index);
+			}
+		}
+	});
+	
+
+</script>
 </body>
 </html>

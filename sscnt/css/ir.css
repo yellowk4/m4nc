@@ -9,7 +9,9 @@
 #CNT_K_031 p{margin-top: 20px;}
 
 /* IR - 감사보고서 CNT_K_032 */
-.reportTit{padding: 40px 0 77px 604px; background: url(/images/front/contents/bg_CNT_K_038.png) no-repeat 142px 0;}
+.reportimg, .reportTit{float: left;}
+.reportimg{width: 438px; /* 이미지교체되면 width 없애기 */ padding: 0 70px 0 95px; text-align: center;}
+.reportTit{padding: 40px 0 77px;}
 .reportTit dt{padding-bottom: 40px; color: #0075c2; font-size: 42px;}
 .reportTit dt span{color: #0c4ca3;}
 .rightBtn{padding: 20px 0; text-align: right;}
@@ -18,11 +20,12 @@
 #CNT_K_032 .btnArea{padding-left: 40px;}
 
 /* IR - IR일정 CNT_K_038 */
-.planWrap{padding-left: 603px; background: url(/images/front/contents/bg_CNT_K_038.png) no-repeat 140px top;}
+.planImg, .plan{float: left;}
+.planImg{padding: 0 122px 0 8.02%;}
 .planDl{padding-bottom: 88px;}
 .planDl .planTit{font-size: 38px; font-weight: bold; line-height: 1.6; vertical-align: top;}
 .planDate{padding-bottom: 39px; font-size: 24px;}
-.yearPlanDiv{clear: both; overflow: hidden; padding: 34px 0; border-bottom: 1px dashed #cbcbcb;}
+.yearPlanDiv{padding: 34px 0; border-bottom: 1px dashed #cbcbcb;}
 .yearPlanDiv div{float: left; width: 50%;}
 .yearPlanDiv.last{border-bottom: 0;}
 .ypDate{color: #111111; font-size: 18px; vertical-align: middle;}
@@ -49,9 +52,9 @@
 .panel { padding: 0 15px; background-color: #fbfbfb; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
 .accordion + .panel .panelIn {padding: 41px 0;}
 /* button */
-.whiteBtn.small {padding: 0 15px; min-width: 147px; height: 40px; background: #ffffff; border: 1px solid #555; font-size: 14px;}
+.whiteBtn.small {padding: 0 15px; height: 40px; background: #ffffff; border: 1px solid #555; font-size: 14px;}
 .whiteBtn .icoDownload{display: inline-block; width: 19px; height: 17px; margin-right: 6px; background: url(/images/front/icon/ico_download02.png)no-repeat; vertical-align: middle;}
-.whiteBtn {display: inline-block; padding: 0 20px; min-width: 140px; height: 56px; background: #ffffff; color: #333333; font-size: 18px;}
+.whiteBtn {display: inline-block; padding: 0 20px; height: 56px; background: #ffffff; color: #333333; font-size: 18px;}
 .fillBtn .icoMore{display: inline-block; width: 15px; height: 17px; margin-right: 6px; background: url(/images/front/icon/icoMore01.png) no-repeat; vertical-align: middle;}
 .whiteBtn .icoMore{display: inline-block; width: 15px; height: 17px; margin-right: 6px; background: url(/images/front/icon/icoMore02.png) no-repeat; vertical-align: middle;}
 /* PDF icon */
@@ -85,12 +88,15 @@
     #CNT_K_032 .btnArea{padding-left: 10px;}
     #CNT_K_032 .btnArea button{margin-bottom: 10px;}
     #CNT_K_032 .btnArea button:nth-child(3), #CNT_K_032 .btnArea button.last{margin-bottom: 0;}
-    .reportTit{padding: 0 0 26px 0; background-image: none;}
+    .reportimg, .reportTit{float: none;}
+    .reportimg{display: none;}
+    .reportTit{padding: 0 0 26px;}
     .reportTit dt{font-size: 25px; padding-bottom: 22px;}
     #CNT_K_032 .defaultTable th{font-size: 18px;}
 
     /* IR - IR일정 CNT_K_038 */
-    .planWrap{padding-left: 0; background-image: none;}
+    .planImg, .plan{float: none;}
+    .planImg{display: none;}
     .planDl{padding-bottom: 26px;}
     .planDl .planTit{font-size: 25px;}
     .planDate{padding-bottom: 22px; font-size: 18px;}
