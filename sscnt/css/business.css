@@ -11,14 +11,55 @@
 .businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
 .businessUnitGo ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center;}
 
-/* 연관정보 바로가기 */
-.relationInfo  {width:100%; overflow:hidden;}
+/* 연관정보 바로가기  */
+/* .relationInfo  {width:100%; overflow:hidden;}
 .relationInfo .title {display:block; margin-bottom:30px; font-size:24px; color:#000;}
 .relationInfo ul li {float:left; width:23%; height:54px; line-height:56px; font-size:18px; box-sizing:border-box; background:#e1e1e1; border:1px solid #bbbbbb; text-align:center; margin-right:2.66%; cursor:pointer;} 
 .relationInfo ul li:hover {border:1px solid #0c4da2; background:#fff;}
 .relationInfo ul li:last-child {margin-right:0;}
 .relationInfo ul li a {color:#333333; font-weight:600;}
-.relationInfo ul li:hover a {color:#0c4da2;}
+.relationInfo ul li:hover a {color:#0c4da2;} */
+
+/* 공통 게시판 리스트 */
+.baordList {width:100%; overflow:hidden; margin-bottom:10px;}
+.baordList ul li {width:100%; overflow:hidden; padding-bottom:30px; border-bottom:1px solid #d9d9d9; margin-bottom:30px}
+.baordList ul li:last-child {border-color:#777777;}
+.baordList ul li .thum {float:left; width:30%; height:200px; overflow:hidden; margin-right:3%;}
+.baordList ul li .thum img {width:100%;} 
+.baordList ul li .text {float:left; width:67%; height:200px; overflow:hidden; padding:35px 0; box-sizing:border-box;}
+.baordList ul li .text .title {display:block; margin-bottom:20px; overflow:hidden; line-height:22px;}
+.baordList ul li .text .title .boardTit {float:left; width:calc(100% - 90px); overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap; color:#000}
+.baordList ul li .partIcon01 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4b99ba; color:#4b99ba; text-align:center; font-size:13px; margin-right:5px;}
+.baordList ul li .partIcon02 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4179d0; color:#4179d0; text-align:center; font-size:13px; margin-right:5px;}
+.baordList ul li .partIcon03 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #93b615; color:#93b615; text-align:center; font-size:13px; margin-right:5px;}
+.baordList ul li .partIcon04 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #765e93; color:#765e93; text-align:center; font-size:13px; margin-right:5px;}
+.baordList ul li .partIcon05 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #f1751a; color:#f1751a; text-align:center; font-size:13px; margin-right:5px;}
+.baordList ul li .partIcon06 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #b65515; color:#b65515; text-align:center; font-size:13px; margin-right:5px;}
+.baordList ul li .text .textCont {line-height:1.6; margin-bottom:20px;}
+.baordList ul li .date {font-size:14px; color:#777777;}
+
+/* 공통 게시판 글보기 */
+.boardViewArea {width:100%; overflow:hidden;} 
+.boardViewArea .boardViewTit {width:100%; overflow:hidden; padding-bottom:30px; margin-bottom:30px; border-bottom:1px solid #d9d9d9; line-height:1.4}
+.boardViewArea .boardViewTit .boardTit {display:block; font-size:28px; color:#111; margin-bottom:20px;}
+.boardViewArea .boardViewTit .boardContInfo {font-size:14px; color:#777;}
+.boardViewArea .boardViewTit .boardContInfo .date {padding-right:16px; margin-right:15px; background:url('/images/front/contents/bg_CNT_K_014.jpg') no-repeat right center}
+.boardViewArea .boardContWrap {width:100%; overflow:hidden; padding-bottom:50px; border-bottom:1px solid #d9d9d9; line-height:1.6; margin-bottom:40px;}
+.boardViewArea .boardContWrap p {font-size:16px; color:#555; line-height:1.6; margin-bottom:50px;}
+.boardViewArea .boardContWrap p img {width:100%;}
+.boardViewArea .boardContWrap p:last-child {margin-bottom:0;}
+.boardViewArea .boardViewbtnArea {width:100%; overflow:hidden; margin-bottom:50px;}
+.boardViewArea .boardViewbtnArea .utileBtn {float:left;}
+.boardViewArea .boardViewbtnArea .utileBtn a {display:inline-block; margin-right:8px;}
+.boardViewArea .boardViewbtnArea .listGo {float:right; width:140px; height:56px; line-height:56px; background:#0c4da2; text-align:center; color:#fff;}
+.boardViewArea .relationArticle {width:100%; overflow:hidden; margin-bottom:80px;}
+.boardViewArea .relationArticle .title {display:block; font-size:24px; color:#111; margin-bottom:20px;}
+.boardViewArea .relationArticle ul {border-top:1px solid #0c4da2; border-bottom:1px solid #777777;}
+.boardViewArea .relationArticle ul li {width:100%; height:60px; line-height:60px; overflow:hidden; background:#fbfbfb url('/images/front/icon/ico_listdot_type02.jpg') no-repeat 30px center; box-sizing:border-box; padding:0 30px 0 40px; border-bottom:1px solid #d9d9d9;}
+.boardViewArea .relationArticle ul li:hover {background:#fbfbfb url('/images/front/icon/ico_listdot_type01.jpg') no-repeat 30px center;}
+.boardViewArea .relationArticle ul li .boardTit {float:left; width:calc(100% - 100px); margin-right:15px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap;}
+.boardViewArea .relationArticle ul li:hover .boardTit {color:#0c4da2; text-decoration:underline;}
+.boardViewArea .relationArticle ul li:last-child {border-bottom:0;}
 
 /* 연혁 */
 #CNT_K_003 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
@@ -73,7 +114,14 @@
 
 
 /* CSR > 인사말 */
-#CNT_K_010 .tabCtrlWrap  {width:100%; overflow:hidden; margin-bottom:60px;}
+#CNT_K_009 .tabCtrlWrap  {width:100%; overflow:hidden; margin-bottom:60px;}
+.csrTitle {overflow:hidden; margin-bottom:100px;}
+.csrTitle h4 {font-size:28px; line-height:1.6; color:#000; margin-bottom:40px;}
+.csrTitle p {line-height:1.6; margin-bottom:20px;}
+.csrTitle p.last {margin-bottom:70px;}
+.csrTitle .imgArea {display:block;}
+.csrTitle .imgArea img {width:100%;}
+
 .greetingWrap {padding-bottom:40px; border-bottom:1px solid #777777; margin-bottom:40px;  color:#333}
 .greetingWrap h4 {font-size:28px; line-height:1.6; color:#000; margin-bottom:40px;}
 .greetingWrap h4 span {display:block;}
@@ -85,7 +133,7 @@
 .greetingWrap .signature .name {font-weight:600; color:#333;}
 .greetingWrap .signature .name img {vertical-align:middle; margin-left:20px;}
 .greetingBtnWrap {text-align:right;}
-.greetingBtnWrap a {display:inline-block; line-height:40px; color:#fff;}
+.greetingBtnWrap a {display:inline-block; line-height:40px; color:#fff; text-align:center;}
 
 .visionStrategy {color:#333}
 .visionStrategy h4 {font-size:28px; color:#000; margin-bottom:40px;}
@@ -160,50 +208,33 @@
 .actConts.last {padding:0; margin:0; border:0;}
 .actConts .mImg {display:none;}
 
-/* 뉴스 > 리스트 */
-#CNT_K_013 .boardSelect {display:none;}
+/* CSR > CSR News > 리스트 */
 #CNT_K_013 .tabCtrlWrap {margin-bottom:60px;}
-#CNT_K_013 .tabView {width:100%; overflow:hidden; margin-bottom:10px;}
-#CNT_K_013 .tabView ul li {width:100%; overflow:hidden; padding-bottom:30px; border-bottom:1px solid #d9d9d9; margin-bottom:30px}
-#CNT_K_013 .tabView ul li:last-child {border-color:#777777;}
-#CNT_K_013 .tabView ul li .thum {float:left; width:30%; height:200px; overflow:hidden; margin-right:3%;}
-#CNT_K_013 .tabView ul li .thum img {width:100%;} 
-#CNT_K_013 .tabView ul li .text {float:left; width:67%; height:200px; overflow:hidden; padding:35px 0; box-sizing:border-box;}
-#CNT_K_013 .tabView ul li .text .title {display:block; margin-bottom:20px; overflow:hidden; line-height:22px;}
-#CNT_K_013 .tabView ul li .text .title .boardTit {float:left; width:calc(100% - 90px); overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap; color:#000}
-#CNT_K_013 .tabView ul li .partIcon01 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4b99ba; color:#4b99ba; text-align:center; font-size:13px; margin-right:5px;}
-#CNT_K_013 .tabView ul li .partIcon02 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4179d0; color:#4179d0; text-align:center; font-size:13px; margin-right:5px;}
-#CNT_K_013 .tabView ul li .partIcon03 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #93b615; color:#93b615; text-align:center; font-size:13px; margin-right:5px;}
-#CNT_K_013 .tabView ul li .partIcon04 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #765e93; color:#765e93; text-align:center; font-size:13px; margin-right:5px;}
-#CNT_K_013 .tabView ul li .partIcon05 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #f1751a; color:#f1751a; text-align:center; font-size:13px; margin-right:5px;}
-#CNT_K_013 .tabView ul li .partIcon06 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #b65515; color:#b65515; text-align:center; font-size:13px; margin-right:5px;}
-#CNT_K_013 .tabView ul li .text .textCont {line-height:1.6; margin-bottom:20px;}
-#CNT_K_013 .tabView ul li .date {font-size:14px; color:#777777;}
+
+/* CSR > CSR News > 글보기 */
+#CNT_K_014 .tabCtrlWrap {margin-bottom:60px;}
+
+/* 뉴스 > 리스트 */
+#CNT_K_016 .tabCtrlWrap {margin-bottom:60px;}
 
 /* 뉴스 > 글보기 */
-#CNT_K_014 .boardSelect {display:none;}
-#CNT_K_014 .tabCtrlWrap {margin-bottom:60px;}
-.boardViewArea {width:100%; overflow:hidden;} 
-.boardViewArea .boardViewTit {width:100%; overflow:hidden; padding-bottom:30px; margin-bottom:30px; border-bottom:1px solid #d9d9d9; line-height:1.4}
-.boardViewArea .boardViewTit .boardTit {display:block; font-size:28px; color:#111; margin-bottom:20px;}
-.boardViewArea .boardViewTit .boardContInfo {font-size:14px; color:#777;}
-.boardViewArea .boardViewTit .boardContInfo .date {padding-right:16px; margin-right:15px; background:url('/images/front/contents/bg_CNT_K_014.jpg') no-repeat right center}
-.boardViewArea .boardContWrap {width:100%; overflow:hidden; padding-bottom:50px; border-bottom:1px solid #d9d9d9; line-height:1.6; margin-bottom:40px;}
-.boardViewArea .boardContWrap p {font-size:16px; color:#555; line-height:1.6; margin-bottom:50px;}
-.boardViewArea .boardContWrap p img {width:100%;}
-.boardViewArea .boardContWrap p:last-child {margin-bottom:0;}
-.boardViewArea .boardViewbtnArea {width:100%; overflow:hidden; margin-bottom:50px;}
-.boardViewArea .boardViewbtnArea .utileBtn {float:left;}
-.boardViewArea .boardViewbtnArea .utileBtn a {display:inline-block; margin-right:8px;}
-.boardViewArea .boardViewbtnArea .listGo {float:right; width:140px; height:56px; line-height:56px; background:#0c4da2; text-align:center; color:#fff;}
-.boardViewArea .relationArticle {width:100%; overflow:hidden; margin-bottom:80px;}
-.boardViewArea .relationArticle .title {display:block; font-size:24px; color:#111; margin-bottom:20px;}
-.boardViewArea .relationArticle ul {border-top:1px solid #0c4da2; border-bottom:1px solid #777777;}
-.boardViewArea .relationArticle ul li {width:100%; height:60px; line-height:60px; overflow:hidden; background:#fbfbfb url('/images/front/icon/ico_listdot_type02.jpg') no-repeat 30px center; box-sizing:border-box; padding:0 30px 0 40px; border-bottom:1px solid #d9d9d9;}
-.boardViewArea .relationArticle ul li:hover {background:#fbfbfb url('/images/front/icon/ico_listdot_type01.jpg') no-repeat 30px center;}
-.boardViewArea .relationArticle ul li .boardTit {float:left; width:calc(100% - 100px); margin-right:15px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap;}
-.boardViewArea .relationArticle ul li:hover .boardTit {color:#0c4da2; text-decoration:underline;}
-.boardViewArea .relationArticle ul li:last-child {border-bottom:0;}
+#CNT_K_017 .tabCtrlWrap {margin-bottom:60px;}
+
+/* 뉴스 > 팝업 이메일 공유*/
+.mailPopWrap {width:100%; overflow:hidden; padding:50px 45px; box-sizing:border-box;}
+.mailPopWrap h1 {font-size:28px; color:#0c4da2; margin-bottom:30px;}
+.mailPopWrap h2 {font-size:24px; margin-bottom:20px; color:#000;}
+.mailPopWrap .receiveArea {overflow:hidden; margin-bottom:30px;}
+.mailPopWrap .sendArea {overflow:hidden; margin-bottom:50px;}
+.mailPopWrap .writeForm {width:100%; display:inline-block; margin-bottom:5px;}
+.mailPopWrap .writeForm .writeTit {float:left; width:15%; line-height:40px;}
+.mailPopWrap .writeForm .writeCont {float:left; width:85%;}
+.mailPopWrap .writeForm .writeCont input[type="text"] {width:100%; height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
+.mailPopWrap .writeForm .writeCont input.email {float:left; width:32%;}
+.mailPopWrap .writeForm .writeCont .unit {float:left; width:3%; text-align:center; line-height:40px;}
+.mailPopWrap .writeForm .writeCont .selectTab {float:left; width:32%; margin-left:1%;}
+.mailPopWrap .buttonArea {text-align:center;}
+.mailPopWrap .buttonArea button {margin:0 8px;}
 
 /* 소셜미디어 */
 .socialTit {overflow:hidden; margin-bottom:40px; font-size:28px; line-height:1.4; color:#333333;}
@@ -228,6 +259,19 @@
 .socialConts .txtArea .socialMedia {position:absolute; bottom:0; left:54%;}
 .socialConts.type02 .txtArea .socialMedia {position:absolute; bottom:0; left:0;}
 #CNT_K_021 .shareList {margin-bottom:60px;}
+
+/* CONTACT OUS > 오시는 길*/
+#CNT_K_023 .defaultTab, #CNT_K_024 .defaultTab, #CNT_K_025 .defaultTab, #CNT_K_026 .defaultTab {margin-bottom:60px;}
+.mapArea {width:100%; overflow:hidden; margin-bottom:50px;}
+.mapArea h4 {font-size:24px; padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #d9d9d9; color:#111;}
+.mapArea ul {margin-bottom:10px; overflow:hidden;}
+.mapArea ul li {background:url('/images/front/icon/ico_listdot_type02.jpg') no-repeat left center; padding-left:1%; overflow:hidden; margin-bottom:15px; box-sizing:border-box;}
+.mapArea ul li .title {float:left; width:7%;}
+.mapArea ul li .txt {float:left; width:92%;}
+#daumRoughmapContainer1529367306277 {width:100%;}
+#daumRoughmapContainer1529374030672 {width:100%;}
+#daumRoughmapContainer1529373780025 {width:100%;}
+#daumRoughmapContainer1529374689705 {width:100%;}
 
 /* CONTACT OUS > 고객문의 */
 .inquiryTit {width:100%; height:315px; overflow:hidden; padding-left:370px; box-sizing:border-box; background:url('/images/front/contents/tit_CNT_K_027.png')no-repeat left center; margin-bottom:70px;}
@@ -269,8 +313,9 @@
 /* 사업영역 > 건설부문*/
 .businessAreaIntro .bigTit span {display:inline;}
 
-/* 뉴스 > 리스트 */
-#CNT_K_013 .tabView ul li .text {padding:10px 0;}
+/* 공통 게시판 리스트 */
+.baordList ul li .text {padding:0; height:auto;}
+.baordList ul li .thum {height:auto;}
 
 /* 소셜미디어 */
 .socialTit {font-size:20px; margin-bottom:20px;}
@@ -306,6 +351,24 @@
 .relationInfo ul li:nth-child(2n) {margin-right:0;}
 .relationInfo ul li a {color:#333333; font-weight:600;}
 .relationInfo ul li:hover a {color:#0c4da2;}
+
+/* 공통 게시판 리스트 */
+.baordList ul li {padding-bottom:20px; border-bottom:1px solid #d9d9d9; margin-bottom:20px}
+.baordList ul li .thum {float:none; width:100%; height:auto; margin:0 0 20px 0;}
+.baordList ul li .text {float:none; width:100%; height:auto; padding:0;}
+.baordList ul li .text .title {margin-bottom:10px;}
+.baordList ul li .text .textCont {margin-bottom:10px;}
+.baordList ul li .text .title .boardTit {display:block; width:100%; margin-top:8px; font-size:18px;}
+
+/* 공통 게시판 글보기 */
+.boardViewArea .boardViewTit {padding-bottom:25px; margin-bottom:25px;}
+.boardViewArea .boardViewTit .boardTit {font-size:20px; margin-bottom:15px;}
+.boardViewArea .boardContWrap {margin-bottom:25px; padding-bottom:25px;}
+.boardViewArea .boardContWrap p {margin-bottom:20px}
+.boardViewArea .boardViewbtnArea .utileBtn {display:none;}
+.boardViewArea .boardViewbtnArea .listGo {width:30%; height:40px; line-height:40px;}
+.boardViewArea .relationArticle {display:none;}
+.boardViewArea .boardViewbtnArea {margin-bottom:0;}
   
 /* 사업영역 > 건설부문 / 상사부문 / 패션부문 / 리조트 부문 */
 .businessAreaIntro {width:100%; overflow:hidden; margin-bottom:10px;}
@@ -338,6 +401,20 @@
 
 .actMainWrap .actMenuList > li {float:none; width:100%; margin:0 0 40px 0; min-height:auto;}
 
+
+/* 뉴스 > 팝업 이메일 공유*/
+.mailPopWrap {padding:6%;}
+.mailPopWrap h1 {font-size:20px; color:#0c4da2; margin-bottom:30px;}
+.mailPopWrap h2 {font-size:18px; margin-bottom:10px; font-weight:600;}
+.mailPopWrap .receiveArea {overflow:hidden; margin-bottom:30px;}
+.mailPopWrap .sendArea {overflow:hidden; margin-bottom:50px;}
+.mailPopWrap .writeForm .writeTit {float:none; width:100%; line-height:40px;}
+.mailPopWrap .writeForm .writeCont {float:none; width:100%; font-size:14px;}
+.mailPopWrap .writeForm .writeCont input[type="text"] {width:100%; height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
+.mailPopWrap .writeForm .writeCont input.email {float:left; width:46%;}
+.mailPopWrap .writeForm .writeCont .unit {float:left; width:8%; text-align:center; line-height:40px;}
+.mailPopWrap .writeForm .writeCont .selectTab {float:left; width:100%; margin:2% 0 0 0;}
+
 /* CSR > ACT */
 .actConts .imgArea .imgCont01 {display:block; float:none; width:100%; margin:0 0 20px 0;}
 .actConts .imgArea .imgCont02 {display:block; float:none; width:100%;}
@@ -361,37 +438,12 @@
 .actConts .pcImg {display:none;}
 .actConts .mImg {display:block;}
 
-/* 뉴스 > 리스트 */
-#CNT_K_013 .tabCtrlWrap{display:none;}
-#CNT_K_013 .boardSelect {display:block; margin-bottom:20px;}
-#CNT_K_013 .boardSelect .selectTab .select button {border-radius:0; border:2px solid #0c4da2; color:#0c4da2; font-weight:600;}
-#CNT_K_013 .boardSelect .selectTab .select button:after {background-image:url('/images/front/icon/ico_board_arrow_open.png');}
-#CNT_K_013 .boardSelect .selectTab.active .select button:after {background-image:url('/images/front/icon/ico_board_arrow_close.png');}
-#CNT_K_013 .boardSelect .selectTab.active ul {border:2px solid #0c4da2; border-top:0;}
-#CNT_K_013 .tabView ul li {padding-bottom:20px; border-bottom:1px solid #d9d9d9; margin-bottom:20px}
-#CNT_K_013 .tabView ul li .thum {float:none; width:100%; height:auto; margin:0 0 20px 0;}
-#CNT_K_013 .tabView ul li .text {float:none; width:100%; height:auto; padding:0;}
-#CNT_K_013 .tabView ul li .text .title {margin-bottom:10px;}
-#CNT_K_013 .tabView ul li .text .textCont {margin-bottom:10px;}
-#CNT_K_013 .tabView ul li .text .title .boardTit {display:block; width:100%; margin-top:8px; font-size:18px;}
-
-/* 뉴스 > 글보기 */
-#CNT_K_014 .tabCtrlWrap{display:none;}
-#CNT_K_014 .boardSelect {display:block; margin-bottom:20px;}
-#CNT_K_014 .boardSelect .selectTab .select button {border-radius:0; border:2px solid #0c4da2; color:#0c4da2; font-weight:600;}
-#CNT_K_014 .boardSelect .selectTab .select button:after {background-image:url('/images/front/icon/ico_board_arrow_open.png');}
-#CNT_K_014 .boardSelect .selectTab.active .select button:after {background-image:url('/images/front/icon/ico_board_arrow_close.png');}
-#CNT_K_014 .boardSelect .selectTab.active ul {border:2px solid #0c4da2; border-top:0;}
-
-.boardViewArea .boardViewTit {padding-bottom:25px; margin-bottom:25px;}
-.boardViewArea .boardViewTit .boardTit {font-size:20px; margin-bottom:15px;}
-.boardViewArea .boardContWrap {margin-bottom:25px; padding-bottom:25px;}
-.boardViewArea .boardContWrap p {margin-bottom:20px}
-.boardViewArea .boardViewbtnArea .utileBtn {display:none;}
-.boardViewArea .boardViewbtnArea .listGo {width:30%; height:40px; line-height:40px;}
-.boardViewArea .relationArticle {display:none;}
-.boardViewArea .boardViewbtnArea {margin-bottom:0;}
-
+/* CONTACT OUS > 오시는 길*/
+.mapArea h4 {font-size:20px; padding-bottom:10px; margin-bottom:15px; border-bottom:1px solid #d9d9d9; color:#111;}
+.mapArea ul {margin-bottom:10px; overflow:hidden;}
+.mapArea ul li {background:url('/images/front/icon/ico_listdot_type02.jpg') no-repeat left 7px; padding-left:2.5%; overflow:hidden; margin-bottom:15px; box-sizing:border-box;}
+.mapArea ul li .title {float:left; width:12%;}
+.mapArea ul li .txt {float:left; width:88%;}
 
 
 /* CONTACT OUS > 고객문의 */
