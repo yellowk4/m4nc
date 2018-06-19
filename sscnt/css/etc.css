@@ -24,7 +24,7 @@
 .errorCon .errorCont {width:700px;margin:112px auto;background: url(/images/front/icon/error_bg.png) no-repeat 41px top;padding-left:359px;box-sizing:border-box;font-size:16px;color:#666}
 .errorCon .errorCont .contTit {font-weight:700;color:#0c4da2;font-size:42px;margin-bottom:29px;}
 .errorCon .errorCont .btnArea {margin-top:58px}
-.errorCon .errorCont .btnArea .btnDefaultForm {display:inline-block;padding:18px 15px;background-color:#105d99;font-size:18px;color:#fff;border:none;border-radius:0;min-width:206px;text-align:center;margin-top:0}
+.errorCon .errorCont .btnArea .btnDefaultForm {display:inline-block;padding:18px 15px;background-color:#0c4da2;font-size:18px;color:#fff;border:none;border-radius:0;min-width:206px;text-align:center;margin-top:0}
 
 /* SEARCH */
 #CNT_K_070 .searchInfo {color:#111;font-size:36px;line-height:1.2;text-align:center;font-weight:700;margin-bottom:75px}
@@ -67,4 +67,13 @@
     .serachList li .result {padding:14px 0;font-size:14px;margin-bottom:25px}
     .serachList li .result ul li {margin-top:14px;padding-top:14px;}
 
+    /* 오류 */
+    .errorCon .errorHead {height:40px;border-bottom:1px solid #0c4da2;}
+    .errorCon .errorHead div {max-width:100%;}
+    .errorCon .errorHead .logo {width:105px;height:18px;top:11px;left:15px}
+    .errorCon .errorHead .logo img {width:100%;}
+    .errorCon .errorCont {width:100%;margin:33px auto 0 auto;background: url(/images/front/icon/error_bg.png) no-repeat top center;background-size:135px 94px;;padding-left:0px;font-size:16px;text-align:center;}
+    .errorCon .errorCont .contTit {font-size:24px;margin-bottom:19px;padding-top:113px}
+    .errorCon .errorCont .btnArea {margin-top:26px}
+    .errorCon .errorCont .btnArea .btnDefaultForm {padding:13px 0;font-size:14px;color:#fff;min-width:143px;margin-right:0}
 }
