@@ -686,8 +686,9 @@ gnbApp.event = function (){
 	});
 
 	$(window).on('resizeEnd', function() {
-		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true)); 
-		TweenMax.set($(".contents"), { paddingTop: vh + 'vh' })
+		var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
+		var gap = Math.round((14 * 100) / $(window).outerHeight(true));
+		TweenMax.set($(".contents"), { paddingTop: (vh - gap) + 'vh' })
 	});
 }
 
