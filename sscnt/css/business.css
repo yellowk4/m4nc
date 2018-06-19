@@ -11,14 +11,14 @@
 .businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
 .businessUnitGo ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center;}
 
-/* 연관정보 바로가기 */
-.relationInfo  {width:100%; overflow:hidden;}
+/* 연관정보 바로가기  */
+/* .relationInfo  {width:100%; overflow:hidden;}
 .relationInfo .title {display:block; margin-bottom:30px; font-size:24px; color:#000;}
 .relationInfo ul li {float:left; width:23%; height:54px; line-height:56px; font-size:18px; box-sizing:border-box; background:#e1e1e1; border:1px solid #bbbbbb; text-align:center; margin-right:2.66%; cursor:pointer;} 
 .relationInfo ul li:hover {border:1px solid #0c4da2; background:#fff;}
 .relationInfo ul li:last-child {margin-right:0;}
 .relationInfo ul li a {color:#333333; font-weight:600;}
-.relationInfo ul li:hover a {color:#0c4da2;}
+.relationInfo ul li:hover a {color:#0c4da2;} */
 
 /* 연혁 */
 #CNT_K_003 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
