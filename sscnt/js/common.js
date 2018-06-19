@@ -651,7 +651,7 @@ gnbApp.event = function (){
 		console.log('tabletMQ: '+ tabletMQ.matches)
 
 		$(window).off("scroll");
-		$(".serachWrap").removeClass("fixed");
+		$(".searchWrap").removeClass("fixed");
 		$(".pcMenuWrap").removeClass("fixed");
 
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
