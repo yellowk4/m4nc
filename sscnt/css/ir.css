@@ -60,7 +60,7 @@
 .tableBasicList, .tableBasicView {border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
 .tableBasicList thead th{padding: 23px 10px;}
 .tableBasicList th{background-color: #f8f8f8;}
-.tableBasicList th, .tableBasicList td {padding: 20px; color: #555555; line-height: 1.6;border-top: 1px solid #ddd; border-left: 1px solid #ddd; word-break: keep-all;}
+.tableBasicList th, .tableBasicList td {padding: 20px; color: #555555; line-height: 1.6; word-break: keep-all;}
 /* 바로가기 버튼 */
 .btnShortLink, a.btnShortLink{font-size: 14px;}
 /* content inner border-bottom */
@@ -72,7 +72,7 @@
 .listTit{padding-bottom: 10px; color: #111111; font-size: 18px; line-height: 1.6;}
 .listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
 /* margin */
-.mt_70{margin-top: 70px;}
+.mt_60{margin-top: 60px;}
 /* pText */
 .pText{line-height: 1.4;}
 
