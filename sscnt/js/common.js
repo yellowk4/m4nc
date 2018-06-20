@@ -616,7 +616,7 @@ gnbApp.event = function (){
 	init();
 
 	function matchedIsPC(){
-		console.log('pcMQ: '+ pcMQ.matches)
+		console.log('is PC')
 
 		$(".contents").removeAttr("style")
 		gnbApp.$megaMenuShowBtn.off("click");
@@ -648,7 +648,7 @@ gnbApp.event = function (){
 	};
 
 	function matchedIsTablet(){
-		console.log('tabletMQ: '+ tabletMQ.matches)
+		console.log('is Tablet')
 
 		$(window).off("scroll");
 		$(".searchWrap").removeClass("fixed");
@@ -665,7 +665,7 @@ gnbApp.event = function (){
 	}
 	
 	function matchedIsMobile(){
-		console.log('tabletMQ: '+ tabletMQ.matches)
+		console.log('is Mobile')
 
 		// var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
 		// var gap = Math.round((14 * 100) / $(window).outerHeight(true));
