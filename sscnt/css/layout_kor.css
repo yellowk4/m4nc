@@ -1194,7 +1194,6 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 	/* 모바일 가이드 정리 */
 	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,select,input,textarea,p,blockquote,th,td,figure,figcaption {line-height: 1.5 !important;}
 	.contents .historyTit {margin-bottom: 20px;}
-	.contents .historyTitDetail {margin-bottom: 15px; line-height: 1.5 !important;}
 	.contents .historyBtnWrap {margin: 30px 0; text-align: center;}
 	.contents .historyBtnWrap a {width: auto; min-width: 100px; padding: 0 20px; height: 45px; line-height: 45px; font-size: 16px;}
 	.defaultTab .tabCtrlWrap a {height: 40px; font-size: 15px;}
