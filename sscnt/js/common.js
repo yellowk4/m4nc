@@ -656,7 +656,7 @@ gnbApp.event = function (){
 
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
 		gnbApp.$utility.find("li").eq(0).off("focusin")
-		gnbApp.$header.off("mouseleave");
+		gnbApp.$header.off("mouseleave").removeAttr("style");
 
 		gnbApp.$megaMenuShowBtn.off().on("click",gnbApp.$megaMenuShowEvent);
 		gnbApp.$megaMenuHideBtn.off().on("click",gnbApp.$megaMenuHideEvent);
