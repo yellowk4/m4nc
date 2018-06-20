@@ -45,12 +45,13 @@
 .dataStandard span{position: absolute; right: 0; top: -40px; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
 #CNT_K_042 section{margin-bottom: 60px;}
 
-/* IR - 주주구성 CNT_K_043 */
+/* IR - 주주총회 CNT_K_043 */
 .listTit{margin-bottom: 20px; font-size: 18px; line-height: 1.6;}
 .listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
 .listTit + .listBu, .bthWrap, .btnArea{margin-bottom: 50px;}
 .listTit + .color01, .listBu + .color01 {margin-bottom: 20px;}
 .tableBasicList + .pText{margin-top: 20px;}
+.tableBasicList + .listTit {margin-top: 50px;}
 
 /* IR - FAQ CNT_K_045 */
 .faqWrap{padding-top: 60px; border-bottom: 1px solid #777777;}
@@ -78,10 +79,7 @@
 /* PDF icon */
 .pdfIcon{display: inline-block; width: 17px; height: 16px; background: url(/images/front/icon/ico_pdf01.png) no-repeat; vertical-align: middle;}
 /* table */
-.tableBasicList, .tableBasicView {border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
-.tableBasicList thead th{padding: 23px 10px;}
-.tableBasicList th{background-color: #f8f8f8;}
-.tableBasicList th, .tableBasicList td {padding: 20px; color: #555555; line-height: 1.6; word-break: keep-all;}
+.tableBasicList th, .tableBasicList td {padding: 20px; color: #555555;}
 /* 바로가기 버튼 */
 .btnShortLink, a.btnShortLink{font-size: 14px;}
 /* content inner border-bottom */
@@ -90,15 +88,17 @@
 .grayDotTxt{background-position: 0 9px; font-size: 16px; line-height: 1.4;}
 .planBu{padding-left: 16px; line-height: 1.6; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat left 12px; box-sizing: border-box; color: #555555;}
 
-/* margin */
-.mt_60{margin-top: 60px;}
 /* pText */
 .pText{line-height: 1.4;}
 /* 연관정보 바로가기 */
 .relationInfo{margin-top: 60px;}
 
+@media screen and (max-width: 1068px){
+    /* IR - IR일정 CNT_K_038, 감사보고서 CNT_K_032 */
+    .planImg, .reportimg {width: 44%; padding: 0 3%;}
+}
 /* MOBILE */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 812px){
     /* margin 좌우 -20px */
     .fullwidth{margin: 0 -20px;}
 
@@ -113,7 +113,6 @@
     /* IR - 감사보고서 CNT_K_032 */
     #CNT_K_032 .btnArea{padding-left: 10px;}
     #CNT_K_032 .btnArea button{margin-bottom: 10px;}
-    #CNT_K_032 .btnArea button:nth-child(3), #CNT_K_032 .btnArea button.last{margin-bottom: 0;}
     .reportimg, .reportTit{float: none;}
     .reportimg{display: none;}
     .reportTit{padding: 0 0 26px;}
@@ -140,6 +139,7 @@
     .listBu li{background-position: 1px 9px;}
     .listTit + .listBu, .bthWrap, .btnArea {margin-bottom: 15px;}
     .listTit + .color01, .listBu + .color01 {margin-bottom: 15px;}
+    .tableBasicList + .listTit {margin-top: 15px;}
 
     /* IR - FAQ CNT_K_045 */
     .faqWrap{padding-top: 0;}
@@ -165,11 +165,6 @@
 }
 
 @media screen and (max-width: 640px){
-    /* IR - 감사보고서 CNT_K_032 */
-    /* #CNT_K_032 .btnArea .whiteBtn.small, #CNT_K_038 .whiteBtn.small{width: 100%; padding: 0;}
-    #CNT_K_032 .btnArea button:nth-child(3){margin-bottom: 10px;}
-    #CNT_K_038 .whiteBtn.small{margin-bottom: 10px;} */
-
     /* IR - 주주구성 CNT_K_042 */
     .dataStandard{margin-top: 40px;}
     .dataStandard span{top: -30px;}
@@ -177,8 +172,6 @@
 
 @media screen and (max-width: 375px){
     /* button */
-    /* .btnArea .btnShortLink{margin-bottom: 5px;}
-    .whiteBtn.small{width: 100%; min-width: auto; margin-top: 5px;} */
 }
 
 
