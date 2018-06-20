@@ -17,13 +17,15 @@
 .overviewCont h4 {font-size:24px; margin-bottom:20px; font-weight:600; color:#111}
 
 /* corporate 정관 CNT_K_051 */
+.corporate{padding-top: 50px;}
+.corporate .color01, .corporate .smallTit{font-size: 20px; margin-bottom: 20px;}
+.corporate .smallTit{display: block; color: #333333;}
+.corporate section{margin-bottom: 40px;}
 .titleBox .left, .titleBox .right {float: left; width: 50%;}
 .titleBox .right{text-align: right;}
 .titleBox .selectTab .select button{padding: 19px 32px 18px 19px; max-width: 445px; font-size: 18px; font-weight: 600; color: #333333;}
 .titleBox .selectTab .select button:after{top: 24px; right: 19px;}
 .titleBox .selectTab ul{top: 58px; max-width: 445px;}
-.corporate{padding-top: 50px;}
-.corporate h4{padding-bottom: 12px; font-size: 20px;}
 .txt{line-height: 1.3;}
 /* numList */
 .txt + ul {margin-top: 5px;}
@@ -38,6 +40,8 @@
 /* corporate 이사회 구성 CNT_K_053 */
 .directorList {margin-top: 40px;}
 #CNT_K_053 .bigTit{line-height: 1.6;}
+.directorWrap h4, #CNT_K_054 h4{margin-bottom: 20px;}
+.txt + .listBu{margin-bottom: 60px;}
 .downBox{padding: 40px 0; margin-bottom: 50px; text-align: right; border-bottom: 1px solid #d9d9d9;}
 .dirListBox{float: left; width: 32%;}
 .dirListBox.middle{margin: 0 2%;}
@@ -55,7 +59,6 @@
 .career span{display: block; float: left;}
 .career span.year{padding: 0 25px 0 5px; min-width: 137px; color: #555;}
 #CNT_K_053 .topBox .txt{padding-top: 40px;}
-.txt.mt_20{margin-top: 20px;}
 /* directCon normal */
 .dirListImg{position: relative; max-height: 368px; overflow: hidden;}
 .dirListImg img{display: block; width: 100%; height: auto;}
@@ -75,20 +78,13 @@
 #CNT_K_053 .txt + ul, #CNT_K_054 .txt + ul {margin-top: 15px;}
 
 /* corporate 운영&역할 CNT_K_054 */
-#CNT_K_054 .mt_50{margin-top: 40px;}
-#CNT_K_054 .mb_80{margin-bottom: 80px;}
-
-
-
-
+#CNT_K_054 .boldTxt{margin: 40px 0 20px;}
+.txt + .listBu.type2{margin-bottom: 0;}
+.boldTxt + .listBu{margin-bottom: 60px;}
+#CNT_K_054 .shareList{margin-top: 60px;}
 
 
 /* COMMON STYLE */
-/* margin */
-.mt_50{margin-top: 50px;}
-.mt_40{margin-top: 40px;}
-.mt_30{margin-top: 30px;}
-.mt_20{margin-top: 20px;}
 /* list */
 .listBu li {
     padding-left: 12px;
@@ -104,18 +100,25 @@
 /* MOBILE */
 @media screen and (max-width: 1024px){
     /* corporate 정관 CNT_K_051 */
+    .corporate{padding-top: 30px;}
     .titleBox .left{float: none; width: 100%;}
     .titleBox .right {display: none;}
+    .corporate .color01, .corporate .smallTit{font-size: 16px; margin-bottom: 15px;}
+    .corporate section{margin-bottom: 30px;}
 
     /* corporate 이사회 구성 CNT_K_053 */
-    #CNT_K_053 .topBox .txt{padding-top: 20px;}
+    .directorWrap h4{margin-bottom: 15px;}
+    .txt + .listBu{margin-bottom: 30px;}
+    /* #CNT_K_053 .topBox .txt{padding-top: 20px;} */
     .directCon{position: static; width: auto;}
     .dirListBox{float: none; width: 100%; margin-bottom: 30px;}
     .dirListBox.middle{margin: 0 0 30px;}
     /* directCon location */
     .dirListBox.middle .directCon, .dirListBox.right .directCon{left: 0;}
 
-
+    /* corporate 운영&역할 CNT_K_054 */
+    #CNT_K_054 .boldTxt{margin: 20px 0 15px;}
+    .boldTxt + .listBu{margin-bottom: 30px;}
 
     /* pc block > mobile inline */
     #CNT_K_053 .bigTit > span {display: inline;}
