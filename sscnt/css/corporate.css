@@ -24,7 +24,7 @@
 .titleBox .selectTab ul{top: 58px; max-width: 445px;}
 .corporate{padding-top: 50px;}
 .corporate h4{padding-bottom: 12px; font-size: 20px;}
-.txt{line-height: 1.8;}
+.txt{line-height: 1.3;}
 /* numList */
 .txt + ul {margin-top: 5px;}
 .numList, #CNT_K_051 .roundNumList, #CNT_K_051 .sub{padding: 5px 0;}
@@ -55,7 +55,7 @@
 .career span{display: block; float: left;}
 .career span.year{padding: 0 25px 0 5px; min-width: 137px; color: #555;}
 #CNT_K_053 .topBox .txt{padding-top: 40px;}
-.txt.mt_20{margin-top: 10px;}
+.txt.mt_20{margin-top: 20px;}
 /* directCon normal */
 .dirListImg{position: relative; max-height: 368px; overflow: hidden;}
 .dirListImg img{display: block; width: 100%; height: auto;}
@@ -71,6 +71,8 @@
 /* directCon location */
 .dirListBox.middle .directCon{left: -374px;}
 .dirListBox.right .directCon{left: -748px;}
+
+#CNT_K_053 .txt + ul, #CNT_K_054 .txt + ul {margin-top: 15px;}
 
 /* corporate 운영&역할 CNT_K_054 */
 #CNT_K_054 .mt_50{margin-top: 40px;}

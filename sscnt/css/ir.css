@@ -4,9 +4,12 @@
 #contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_02.jpg);}
 
 /* IR - 신용등급 CNT_K_031 */
-#CNT_K_031 .contTit, #CNT_K_031 .contTitsub{padding-bottom: 15px;}
-#CNT_K_031 .contTitsub{padding-top: 50px; font-size: 20px; line-height: 1.6;}
-#CNT_K_031 p{margin-top: 20px;}
+#CNT_K_031 .tableBasicList, #CNT_K_042 .tableBasicList{margin-bottom: 20px;}
+#CNT_K_031 .txt, #CNT_K_042 .txt {margin-bottom: 20px;}
+#CNT_K_031 .txt + ul, #CNT_K_042 .txt + ul {margin-bottom: 40px;}
+#CNT_K_031 .contTit, #CNT_K_042 .contTit {margin-bottom: 20px;}
+#CNT_K_031 .contTitsub, #CNT_K_042 .contTitsub {margin-bottom: 20px; font-size: 20px; line-height: 1.6;}
+#CNT_K_031 .tableBasicList + p, #CNT_K_042 .tableBasicList + p{margin-bottom: 50px;}
 
 /* IR - 감사보고서 CNT_K_032 */
 .reportimg, .reportTit{float: left;}
@@ -36,6 +39,11 @@
 #CNT_K_038 .panel, #CNT_K_043 .panel{padding: 0 29px;} /* IR일정 아코디언*/
 #CNT_K_038 .accordion, #CNT_K_043 .accordion {font-weight: 600;} 
 #CNT_K_038 .whiteBtn.small{min-width: 159px;}
+
+/* IR - 주주구성 CNT_K_042 */
+.dataStandard{position: relative;}
+.dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
+#CNT_K_042 section{margin-bottom: 60px;}
 
 /* IR - FAQ CNT_K_045 */
 .faqWrap{padding-top: 60px; border-bottom: 1px solid #777777;}
@@ -86,6 +94,14 @@
 @media screen and (max-width: 1024px){
     /* margin 좌우 -20px */
     .fullwidth{margin: 0 -20px;}
+
+    /* IR - 신용등급 CNT_K_031 */
+    #CNT_K_031 .tableBasicList, #CNT_K_042 .tableBasicList{margin-bottom: 15px;}
+    #CNT_K_031 .txt, #CNT_K_042 .txt {margin-bottom: 15px;}
+    #CNT_K_031 .txt + ul, #CNT_K_042 .txt + ul {margin-bottom: 30px;}
+    #CNT_K_031 .contTit, #CNT_K_042 .contTit {margin-bottom: 15px;}
+    #CNT_K_031 .contTitsub, #CNT_K_042 .contTitsub {margin-bottom: 15px;}
+    #CNT_K_031 .tableBasicList + p, #CNT_K_042 .tableBasicList + p{margin-bottom: 30px;}
 
     /* IR - 감사보고서 CNT_K_032 */
     #CNT_K_032 .btnArea{padding-left: 10px;}
