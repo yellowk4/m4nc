@@ -93,7 +93,7 @@ em {font-style:normal;}
 strong,b {font-weight:normal;}
 textarea {resize:none;} /* 리사이징 초기화 : 리사이징을 원하면 해당영역을 주석처리 해주세요 */
 
-a, a:link, a:visited, a:active {color:#555;text-decoration:none;}
+a, a:link, a:visited, a:active {color:#555;text-decoration:none;     word-break: keep-all;}
 a:hover {color:#555;}
 a[class~="btn"] {vertical-align:middle;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;text-decoration:none;} /* 버튼의 경우에 언더라인 삭제 */
 

@@ -634,9 +634,6 @@ gnbApp.event = function (){
 		gnbApp.$megaMenuDepth.off("mouseenter").on("mouseenter", gnbApp.$megaMenuOverEvent01);
 		gnbApp.$header.off("mouseleave").on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
 
-		console.log($._data(gnbApp.$megaMenuDepth[0], "events"))
-		console.log($._data(gnbApp.$header[0], "events"))
-
 		gnbApp.$header.trigger("mouseleave")
 
 		gnbApp.$megaMenuDepth.off("focusin").on("focusin", function(){
@@ -670,9 +667,9 @@ gnbApp.event = function (){
 		gnbApp.$utility.find("li").eq(0).off("focusin")
 		
 
-		gnbApp.$megaMenuShowBtn.off().on("click",gnbApp.$megaMenuShowEvent);
-		gnbApp.$megaMenuHideBtn.off().on("click",gnbApp.$megaMenuHideEvent);
-		gnbApp.$megaMenuDepth.off().on("click", gnbApp.$megaMenuClickEvent01);
+		gnbApp.$megaMenuShowBtn.off("click").on("click",gnbApp.$megaMenuShowEvent);
+		gnbApp.$megaMenuHideBtn.off("click").on("click",gnbApp.$megaMenuHideEvent);
+		gnbApp.$megaMenuDepth.off("click").on("click", gnbApp.$megaMenuClickEvent01);
 
 
 		TweenMax.delayedCall(.35, function(){
@@ -684,6 +681,10 @@ gnbApp.event = function (){
 	
 	function matchedIsMobile(){
 		console.log('is Mobile')
+
+		gnbApp.$megaMenuShowBtn.off("click").on("click",gnbApp.$megaMenuShowEvent);
+		gnbApp.$megaMenuHideBtn.off("click").on("click",gnbApp.$megaMenuHideEvent);
+		gnbApp.$megaMenuDepth.off("click").on("click", gnbApp.$megaMenuClickEvent01);
 
 		// var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
 		// var gap = Math.round((14 * 100) / $(window).outerHeight(true));
