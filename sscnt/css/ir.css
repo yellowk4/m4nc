@@ -10,7 +10,7 @@
 
 /* IR - 감사보고서 CNT_K_032 */
 .reportimg, .reportTit{float: left;}
-.reportimg{width: 438px; /* 이미지교체되면 width 없애기 */ padding: 0 70px 0 95px; text-align: center;}
+.reportimg{width: 438px; padding: 0 70px 0 95px; text-align: center;}
 .reportTit{padding: 40px 0 77px;}
 .reportTit dt{padding-bottom: 40px; color: #0075c2; font-size: 42px;}
 .reportTit dt span{color: #0c4ca3;}
@@ -21,7 +21,7 @@
 
 /* IR - IR일정 CNT_K_038 */
 .planImg, .plan{float: left;}
-.planImg{padding: 0 122px 0 8.02%;}
+.planImg{width: 438px; padding: 0 70px 0 95px; text-align: center;}
 .planDl{padding-bottom: 88px;}
 .planDl .planTit{font-size: 38px; font-weight: bold; line-height: 1.6; vertical-align: top;}
 .planDate{padding-bottom: 39px; font-size: 24px;}
@@ -35,6 +35,7 @@
 .planBtn button{margin-left: 10px;}
 #CNT_K_038 .panel, #CNT_K_043 .panel{padding: 0 29px;} /* IR일정 아코디언*/
 #CNT_K_038 .accordion, #CNT_K_043 .accordion {font-weight: 600;} 
+#CNT_K_038 .whiteBtn.small{min-width: 159px;}
 
 /* IR - FAQ CNT_K_045 */
 .faqWrap{padding-top: 60px; border-bottom: 1px solid #777777;}
