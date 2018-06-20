@@ -587,6 +587,14 @@ gnbApp.event = function (){
 		} else {
 			$pcMenuWrap.removeClass("fixed");
 		}
+		if($(".wrap").hasClass("main")) {
+			if (sTop > ($(".mainVisual").outerHeight(true) - $(".searchWrap").outerHeight(true))) {
+				$searchWrap.addClass("fixed")
+			} else {
+				$searchWrap.removeClass("fixed")
+			}
+		}
+		
 
 	}
 
