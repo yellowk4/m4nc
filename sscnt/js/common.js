@@ -488,6 +488,8 @@ gnbApp.event = function (){
 
 	gnbApp.$utility = conApp.$wrap.find(".utility");
 
+	gnbApp.debounce = void 0;
+
 	gnbApp.$megaMenuShowEvent = function(e){
 		$("body").css("overflow-y","hidden");
 		gnbApp.$megaMenu.addClass("active");
@@ -542,20 +544,26 @@ gnbApp.event = function (){
 	}
 		
 	gnbApp.scrollEventHandler = function(){
-		var sTop = $(this).scrollTop();
+		
+		var $that = $(this);
 
-		var headerHeight = $("header").outerHeight(true);
-
-		if(sTop >= headerHeight) {
-			TweenMax.to(gnbApp.$header, .35, { y: - headerHeight, ease:Power1.easeOut})			
-		} else {
-			TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut, onComplete:function(){
-				gnbApp.$header.removeAttr("style");
-			}})
-			
+		if(gnbApp.debounce) {
+			clearTimeout(gnbApp.debounce)
 		}
 
 
+
+			var sTop = $that.scrollTop();
+
+			var headerHeight = $("header").outerHeight(true);
+
+			if(sTop >= headerHeight) {
+				TweenMax.to(gnbApp.$header, .35, { y: - headerHeight, ease:Power1.easeOut})			
+			} else {
+				TweenMax.to(gnbApp.$header, .35, { y: 0, ease:Power1.easeOut, onComplete:function(){
+					gnbApp.$header.removeAttr("style");
+				}})
+			}
 	}
 
 	gnbApp.headerFixedScrollEventHandler = function(){
@@ -623,20 +631,20 @@ gnbApp.event = function (){
 		gnbApp.$megaMenuHideBtn.off("click");
 		gnbApp.$megaMenuDepth.off("click");
 
-		gnbApp.$megaMenuDepth.on("mouseenter", gnbApp.$megaMenuOverEvent01);
-		gnbApp.$header.on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
+		gnbApp.$megaMenuDepth.off().on("mouseenter", gnbApp.$megaMenuOverEvent01);
+		gnbApp.$header.off().on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
 
 		gnbApp.$header.trigger("mouseleave")
 
-		gnbApp.$megaMenuDepth.on("focusin", function(){
+		gnbApp.$megaMenuDepth.off().on("focusin", function(){
 			$(this).trigger("mouseenter")
 		})
 
-		gnbApp.$utility.find("li").eq(0).on("focusin", function(){
+		gnbApp.$utility.find("li").eq(0).off().on("focusin", function(){
 			gnbApp.$header.trigger("mouseleave");
 		})
 
-		gnbApp.$utility.find("li").on("keydown", function(e){
+		gnbApp.$utility.find("li").off().on("keydown", function(e){
 			if(e.shiftKey && e.keyCode === 9){
 				gnbApp.$megaMenuDepth.trigger("mouseenter");
 				gnbApp.$megaMenuDepth02.trigger("mouseenter");
@@ -656,11 +664,16 @@ gnbApp.event = function (){
 
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
 		gnbApp.$utility.find("li").eq(0).off("focusin")
-		gnbApp.$header.off("mouseleave").removeAttr("style");
+		
 
 		gnbApp.$megaMenuShowBtn.off().on("click",gnbApp.$megaMenuShowEvent);
 		gnbApp.$megaMenuHideBtn.off().on("click",gnbApp.$megaMenuHideEvent);
 		gnbApp.$megaMenuDepth.off().on("click", gnbApp.$megaMenuClickEvent01);
+
+
+		TweenMax.delayedCall(.35, function(){
+			gnbApp.$header.off("mouseleave").removeAttr("style");
+		})
 
 	}
 	
@@ -676,7 +689,7 @@ gnbApp.event = function (){
 
 		$(".contents").css("padding-top", $moTopH + 30);
 
-		$(window).on("scroll", gnbApp.scrollEventHandler);
+		$(window).off("scroll").on("scroll", gnbApp.scrollEventHandler);
 	}
 
 	// 리사이즈 이벤트 후처리
