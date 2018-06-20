@@ -45,7 +45,7 @@
 .dirListName:after{content: ''; position: absolute; right: 30px; top: 50%; margin-top: -13px; display: block; width: 26px; height: 26px; background: url(/images/front/icon/ico_gray_plus.png) no-repeat ;}
 .dirListBox.active .dirListName:after{background-image: url(/images/front/icon/ico_blue_minus.png);}
 .dirListName span{display: inline-block; padding-bottom: 9px; font-size: 24px;}
-.directCon{display: none; position: relative; z-index: 1; width: 1040px; margin-top: 10px; padding: 30px; background-color: #fbfbfb; border-bottom: 1px solid #d9d9d9;} /* 내용숨김 */
+.directCon{display: none; position: relative; z-index: 1; width: 1100px; margin-top: 10px; padding: 30px; background-color: #fbfbfb; border-bottom: 1px solid #d9d9d9; box-sizing: border-box;} /* 내용숨김 */
 .dirInfo.first{padding-bottom: 30px; margin-bottom: 30px; border-bottom: 2px dotted #dbdbdb;}
 .dirInfo .dot{display: inline-block; padding-left: 16px; padding-right: 60px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat left 8px;}
 .dirInfo .subTit{display: inline-block; padding-bottom: 12px;}
@@ -56,24 +56,29 @@
 .career span.year{padding: 0 25px 0 5px; min-width: 137px; color: #555;}
 #CNT_K_053 .topBox .txt{padding-top: 40px;}
 .txt.mt_20{margin-top: 10px;}
-
-/* corporate 운영&역할 CNT_K_054 */
-#CNT_K_054 .mt_50{margin-top: 40px;}
-#CNT_K_054 .mb_80{margin-bottom: 80px;}
-
-
 /* directCon normal */
 .dirListImg{position: relative; max-height: 368px; overflow: hidden;}
 .dirListImg img{display: block; width: 100%; height: auto;}
 .dirListImg img.offImg{display: none;} /* 내용보임 */
 /* directCon "active" */
 .dirListBox.active .dirListImg:after{content: ''; position: absolute; left: 0; top: 0; z-index: 0; width: 100%; height: 100%; border: 3px solid #0c4da2; box-sizing: border-box;}
-.dirListBox.active .directCon{display: block;}
+.dirListBox.active .directCon{display: block; margin-bottom: 40px;}
 .dirListBox.off .dirListImg:after{display: none;}
 /* directCon "off" */
 .dirListBox.off .dirListImg img{display: none;} /* normal 이미지 none */ 
 .dirListBox.off .dirListImg img.offImg{display: block;} /* off 이미지 block */
 .dirListBox.off .dirListName{opacity: 0.4;} /* 이름 및 내용 0.4 투명 */
+/* directCon location */
+.dirListBox.middle .directCon{left: -374px;}
+.dirListBox.right .directCon{left: -748px;}
+
+/* corporate 운영&역할 CNT_K_054 */
+#CNT_K_054 .mt_50{margin-top: 40px;}
+#CNT_K_054 .mb_80{margin-bottom: 80px;}
+
+
+
+
 
 
 /* COMMON STYLE */
@@ -105,7 +110,16 @@
     .directCon{position: static; width: auto;}
     .dirListBox{float: none; width: 100%; margin-bottom: 30px;}
     .dirListBox.middle{margin: 0 0 30px;}
+    /* directCon location */
+    .dirListBox.middle .directCon, .dirListBox.right .directCon{left: 0;}
+
+
 
     /* pc block > mobile inline */
     #CNT_K_053 .bigTit > span {display: inline;}
+}
+
+/* MOBILE */
+@media screen and (max-width: 1100px){
+    /* directCon location */
 }
