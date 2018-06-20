@@ -360,7 +360,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 .defaultTab .select {display: none;}
 .defaultTab {position:relative;margin-bottom:20px;}
 	.defaultTab .tabCtrlWrap {display: table; width: 100%; table-layout: fixed;}
-	.defaultTab .tabCtrlWrap a {display: table-cell; height: 60px; background: #f8f8f8; border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; vertical-align: middle; text-align: center; box-sizing: border-box;}
+	.defaultTab .tabCtrlWrap a {display: table-cell; padding: 0 10px; height: 60px; background: #f8f8f8; border-right: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; vertical-align: middle; text-align: center; box-sizing: border-box;}
 	.defaultTab .tabCtrlWrap a:first-child {border-left: 1px solid #d9d9d9;}
 	.defaultTab .tabCtrlWrap.on a {border-bottom: 2px solid #0c4da2;}
 	.defaultTab .tabCtrlWrap a.current {border: 2px solid #0c4da2; border-bottom: 0 none; background: #fff; color: #0c4da2;}
@@ -1132,9 +1132,9 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 
 	/* 본문 하단 모바일 영역 */
 	.contentsBtm {display: block; background: #fff;} /* position: absolute; top: auto; bottom: 100px; left:0; */
-	.contentsBtm .viewTop {text-align: center;}
-	.contentsBtm .viewTop a {display:inline-block; position:relative; padding: 20px; font-size: 12px; font-weight: 700;  font-family:'SamsungOne', sans-serif; color: #333;}
-	.contentsBtm .viewTop a:after {display:block; content:''; position: absolute; top:23px; left: auto; right:4px; width: 11px; height: 11px; background: url(/images/front/icon/ico_top.png) no-repeat; background-size: 11px 11px;}
+	.contentsBtm .viewTop {margin: 30px 20px 40px; background: #f8f8f8; text-align: center;}
+	.contentsBtm .viewTop a {display:inline-block; position:relative; padding: 13px 20px; font-size: 15px; font-weight: 700;  font-family:'SamsungOne', sans-serif; color: #555;}
+	.contentsBtm .viewTop a:after {display:block; content:''; position: absolute; top:19px; left: auto; right:4px; width: 11px; height: 11px; background: url(/images/front/icon/ico_top.png) no-repeat; background-size: 11px 11px;}
 
 	.contentsBtm .moAcco {border-top: 1px solid #434757;}
 	.contentsBtm .moAcco button {padding: 12px 15px; width: 100%; border-bottom: 1px solid #e3e4eb; outline: none; color: #333; cursor: pointer; font-size: 15px; font-weight: 700; font-family: 'SamsungOne', sans-serif; text-align: left; transition: 0.4s;}
