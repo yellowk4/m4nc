@@ -44,7 +44,6 @@
 .serachList li .result ul li .location span:before {display:inline-block;content:'>';margin:0 2px} 
 .serachList li .result ul li .location span:first-child:before {display:none}
 
-
 /* MOBILE */
 @media screen and (max-width: 1024px){
 
