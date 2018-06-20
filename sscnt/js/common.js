@@ -658,10 +658,10 @@ gnbApp.event = function (){
 	function matchedIsTablet(){
 		console.log('is Tablet')
 
-		$(window).off("scroll");
+		$(window).off("scroll resize");
 		$(".searchWrap").removeClass("fixed");
 		$(".pcMenuWrap").removeClass("fixed");
-
+		
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
 		gnbApp.$utility.find("li").eq(0).off("focusin")
 		
@@ -673,6 +673,7 @@ gnbApp.event = function (){
 
 		TweenMax.delayedCall(.35, function(){
 			gnbApp.$header.off("mouseleave").removeAttr("style");
+			$(".contents").removeAttr("style");
 		})
 
 	}
@@ -690,29 +691,32 @@ gnbApp.event = function (){
 		$(".contents").css("padding-top", $moTopH + 30);
 
 		$(window).off("scroll").on("scroll", gnbApp.scrollEventHandler);
+
+
+		// 리사이즈 이벤트 후처리
+		$(window).resize(function() {
+			if(this.resizeTO) {
+				clearTimeout(this.resizeTO);
+			}
+
+			this.resizeTO = setTimeout(function() {
+				$(this).trigger('resizeEnd');
+			}, 300);
+		});
+
+		$(window).on('resizeEnd', function() {
+			// var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
+			// var gap = Math.round((14 * 100) / $(window).outerHeight(true));
+			// TweenMax.set($(".contents"), { paddingTop: (vh - gap) + 'vh' })
+
+			var $moTop = $(".moMenuWrap"),
+				$moTopH = $moTop.outerHeight(true);
+
+			$(".contents").css("padding-top", $moTopH + 30);
+		});
 	}
 
-	// 리사이즈 이벤트 후처리
-	$(window).resize(function() {
-		if(this.resizeTO) {
-			clearTimeout(this.resizeTO);
-		}
-
-		this.resizeTO = setTimeout(function() {
-			$(this).trigger('resizeEnd');
-		}, 300);
-	});
-
-	$(window).on('resizeEnd', function() {
-		// var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
-		// var gap = Math.round((14 * 100) / $(window).outerHeight(true));
-		// TweenMax.set($(".contents"), { paddingTop: (vh - gap) + 'vh' })
-
-		var $moTop = $(".moMenuWrap"),
-			$moTopH = $moTop.outerHeight(true);
-
-		$(".contents").css("padding-top", $moTopH + 30);
-	});
+	
 }
 
 
