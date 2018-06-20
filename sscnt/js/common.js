@@ -488,7 +488,7 @@ gnbApp.event = function (){
 
 	gnbApp.$utility = conApp.$wrap.find(".utility");
 
-	gnbApp.debounce = void 0;
+	gnbApp.debounce = null;
 
 	gnbApp.$megaMenuShowEvent = function(e){
 		$("body").css("overflow-y","hidden");
@@ -631,20 +631,23 @@ gnbApp.event = function (){
 		gnbApp.$megaMenuHideBtn.off("click");
 		gnbApp.$megaMenuDepth.off("click");
 
-		gnbApp.$megaMenuDepth.off().on("mouseenter", gnbApp.$megaMenuOverEvent01);
-		gnbApp.$header.off().on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
+		gnbApp.$megaMenuDepth.off("mouseenter").on("mouseenter", gnbApp.$megaMenuOverEvent01);
+		gnbApp.$header.off("mouseleave").on("mouseleave", gnbApp.$headerMouseLeaveHideEvent);
+
+		console.log($._data(gnbApp.$megaMenuDepth[0], "events"))
+		console.log($._data(gnbApp.$header[0], "events"))
 
 		gnbApp.$header.trigger("mouseleave")
 
-		gnbApp.$megaMenuDepth.off().on("focusin", function(){
+		gnbApp.$megaMenuDepth.off("focusin").on("focusin", function(){
 			$(this).trigger("mouseenter")
 		})
 
-		gnbApp.$utility.find("li").eq(0).off().on("focusin", function(){
+		gnbApp.$utility.find("li").eq(0).off("focusin").on("focusin", function(){
 			gnbApp.$header.trigger("mouseleave");
 		})
 
-		gnbApp.$utility.find("li").off().on("keydown", function(e){
+		gnbApp.$utility.find("li").off("keydown").on("keydown", function(e){
 			if(e.shiftKey && e.keyCode === 9){
 				gnbApp.$megaMenuDepth.trigger("mouseenter");
 				gnbApp.$megaMenuDepth02.trigger("mouseenter");
@@ -661,6 +664,7 @@ gnbApp.event = function (){
 		$(window).off("scroll resize");
 		$(".searchWrap").removeClass("fixed");
 		$(".pcMenuWrap").removeClass("fixed");
+		gnbApp.$header.off("mouseleave")
 		
 		gnbApp.$megaMenuDepth.off("mouseenter focusin");
 		gnbApp.$utility.find("li").eq(0).off("focusin")
@@ -672,7 +676,7 @@ gnbApp.event = function (){
 
 
 		TweenMax.delayedCall(.35, function(){
-			gnbApp.$header.off("mouseleave").removeAttr("style");
+			gnbApp.$header.removeAttr("style");
 			$(".contents").removeAttr("style");
 		})
 
