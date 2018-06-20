@@ -58,7 +58,8 @@
 /* 연혁 */
 #CNT_K_003 .tabCtrlWrap {width:100%; overflow:hidden; margin-bottom:60px;}
 .historyTit {font-size:28px; margin-bottom:40px; color:#000}
-.historyTitDetail {line-height:1.6; margin-bottom:40px;}
+.historyTitDetail {line-height:1.6; margin-bottom:40px; color:#333333}
+.historyTitDetail span {display:block;}
 .historyBtnWrap {text-align:right; margin-bottom:40px; overflow:hidden;}
 .historyBtnWrap a {display:inline-block; width:206px; height:56px; line-height:56px; text-align:center; color:#fff; font-size:18px; background:#0c4da2;}
 .historyList {overflow:hidden; border-top:1px solid #0c4da2;}
@@ -70,6 +71,7 @@
 .historyList > li .monthList > li .month {float:left; font-size:24px; margin-right:50px; font-weight:600; color:#0c4da2;}
 .historyList > li .monthList > li .detailList {float:left; overflow:hidden; color:#333333;}
 .historyList > li .monthList > li .detailList li {margin-bottom:8px;}
+.historyList > li .monthList > li .detailList li.historyImg img {width:100%; max-width:450px;}
 #CNT_K_003 .defaultTabCon {margin-bottom:50px;}
 
 /* 사업영역 > 건설부문 / 상사부문 / 패션부문 / 리조트 부문 */
@@ -335,10 +337,27 @@
 
 /* 모바일 */
 @media screen and (max-width:812px) {
+/* 연혁 */
+#CNT_K_003 .tabCtrlWrap {margin-bottom:20px;}
+#CNT_K_003 .businessUnitGo {margin-bottom:0;}
+.historyTit {font-size:21px; margin-bottom:20px;}
+.historyTitDetail {font-size:15px; margin-bottom:30px!important;;}
+.historyTitDetail span {display:inline;}
+.historyBtnWrap {display:none;}
+.historyList {overflow:hidden; border-top:1px solid #0c4da2;}
+.historyList > li {padding:20px 0; border-bottom:1px solid #d9d9d9; overflow:hidden;}
+.historyList > li .year {width:20%; font-size:18px; color:#000; margin-right:0; font-weight:600;}
+.historyList > li .monthList {float:left; width:80%;}
+.historyList > li .monthList > li {margin-bottom:18px;}
+.historyList > li .monthList > li .month {display:block; float:none; font-size:16px; margin-right:0; margin-bottom:4px;}
+.historyList > li .monthList > li .detailList {float:left; overflow:hidden; color:#333333;}
+.historyList > li .monthList > li .detailList li {font-size:15px; margin-bottom:4px;}
+#CNT_K_003 .defaultTabCon {margin-bottom:30px;}
+
 /* 사업부문별 바로가기 */
-#CNT_K_027 .businessUnitGo {padding:0 20px 30px 20px; box-sizing:border-box;}
-.businessUnitGo .title {font-size:20px; margin-bottom:10px;}
-.businessUnitGo ul li {float:left; width:49%; height:40px; line-height:40px; padding-left:20px; box-sizing:border-box; margin-bottom:2%;}
+#CNT_K_027 .businessUnitGo {padding:0 20px 30px 20px; box-sizing:border-box; margin-bottom:0;}
+.businessUnitGo .title {font-size:16px; margin-bottom:10px;}
+.businessUnitGo ul li {float:left; width:49%; height:40px; line-height:40px!important; padding-left:20px; box-sizing:border-box; margin-bottom:2%; font-size:16px;}
 .businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
 .businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:0;}
 .businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
