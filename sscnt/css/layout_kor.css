@@ -280,8 +280,8 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 *****************************************************************************************************************************************/
 /* pageArea */
 .pageArea {margin:20px auto 0; text-align:center;}
-.pageArea a, .pageArea strong {display:inline-block;width:33px;height:33px;margin-left:3px;font-size:18px;line-height:33px;color:#555;vertical-align:middle;}
-.pageArea strong, .pageArea a:hover,.pageArea a:focus {color:#0c4da2; text-decoration: underline;}
+.pageArea a, .pageArea strong {display:inline-block;width:33px;height:33px;margin-left:3px;font-size:18px;line-height:33px;color:#555;vertical-align:middle; }
+.pageArea strong span, .pageArea a:hover span,.pageArea a:focus span{border-bottom: 1px solid #0c4da2; color:#0c4da2; }
 .pageArea a[class*="btn"] {border: 1px solid #e1e1e1;}
 .pageArea a[class*="btn"]:hover {border: 1px solid #ccc;}
 .pageArea a[class*="btn"] span {font-size:0;position:absolute;top:-9999px;}
@@ -308,11 +308,11 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 .defaultTable .ellipsis {text-align:left;}
 
 /* 기본 리스트 타입 */
-.tableBasicList {border-top:2px solid #434343;border-bottom:2px solid #ccc;}
-.tableBasicList th {background-color:#fafafa;color:#222;}
-.tableBasicList th, .tableBasicList td {padding:11px 10px;border-top:1px solid #d9d9d9;border-left:1px solid #d9d9d9;text-align:center;}
+.tableBasicList {border-top: 1px solid #0c4da2; border-bottom: 1px solid #777;}
+.tableBasicList th {background-color:#f8f8f8;color:#111;}
+.tableBasicList th, .tableBasicList td {padding:20px 10px;border-top:1px solid #ddd;border-left:1px solid #ddd;text-align:center; box-sizing: border-box;}
 .tableBasicList tr th:first-child, .tableBasicList tr td:first-child {border-left:0;}
-.tableBasicList thead th {padding:12px 10px;border-top:0;font-weight:700;color:#222;}
+.tableBasicList thead th {padding:20px 10px;border-top:0;font-weight:700;color:#111;}
 .tableBasicList th {font-weight:400;}
 .tableBasicList td {background-color:#fff;}
 .tableBasicList tr [rowspan] {border-right:1px solid #d9d9d9;}
@@ -1197,7 +1197,22 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* 텍�
 	.contents .historyBtnWrap {margin: 30px 0; text-align: center;}
 	.contents .historyBtnWrap a {width: auto; min-width: 100px; padding: 0 20px; height: 45px; line-height: 45px; font-size: 16px;}
 	.defaultTab .tabCtrlWrap a {height: 40px; font-size: 15px;}
-	
+
+	.popTit {font-size: 25px;}
+	.bigTit {font-size: 21px;}
+	.contTit {font-size: 18px;}
+	.subTit {font-size: 16px;}
+	.contTxt {font-size: 15px;}
+	.hintTxt, .subTxt {font-size: 14px;}
+
+	.socialMedia li button {width: 50px; height: 50px;}
+	.shareList li {margin: 0 7px;}
+
+	/* 모바일 테이블 */
+	.tableBasicList {overflow-x: auto; overflow-y: hidden;}
+	.defaultTable {width: auto;  }
+	.tableBasicList thead th {padding: 8px 10px;}
+	.tableBasicList tbody th, .tableBasicList tbody td {padding: 8px 10px; font-size: 15px;} 
 
 }
 
