@@ -129,6 +129,45 @@
 .selectTabCon {position:relative;}
 	.selectTabCon > article {display:none;}
 
+/* 보안신고작성 */
+.mailPopWrap {width:100%;overflow:hidden;padding:50px 45px;box-sizing:border-box;}
+.mailPopWrap h1 {color:#0c4da2;font-size:42px;font-weight:700;line-height:1;margin-bottom:30px;}
+.mailPopWrap h2 {font-size:24px; margin-bottom:20px; color:#000;}
+.mailPopWrap .receiveArea {overflow:hidden; margin-bottom:30px;}
+.mailPopWrap .sendArea {overflow:hidden; margin-bottom:35px;}
+.mailPopWrap .writeForm {width:100%; display:inline-block; margin-bottom:5px;}
+.mailPopWrap .writeForm .writeTit {float:left; width:15%; line-height:40px;}
+.mailPopWrap .writeForm .writeCont {float:left; width:85%;}
+.mailPopWrap .writeForm .writeCont input[type="text"] {width:100%; height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
+.mailPopWrap .writeForm .writeCont input.col03 {float:left; width:31%;}
+.mailPopWrap .writeForm .writeCont .unit {float:left; width:3.5%; text-align:center; line-height:40px;}
+.mailPopWrap .buttonArea {text-align:center;clear:both;margin-top:60px;}
+.mailPopWrap .buttonArea button {margin:0 8px;}
+.textBoxWrap textarea {width:100%;height: 170px;padding:10px;box-sizing: border-box;border: 1px solid #dddddd;}
+.textBoxWrap .count {text-align:right;display:block;margin-top:10px;}
+.personalInforAgree .title {display:block; font-size:20px; color:#0c4da2; margin-bottom:15px}
+.personalInforAgree .title + p {margin-bottom:15px;padding-left:20px;position: relative;line-height:1.7;}
+.personalInforAgree .title + p:before {content:'※';position:absolute;top:0;left:0}
+.personalInforAgree .graybox {width:100%; padding:20px; box-sizing:border-box; background:#f8f8f8; line-height:28px; margin-bottom:20px;}
+.personalInforAgree .graybox ul {margin-bottom:10px;}
+.personalInforAgree .graybox ol > li > p {color:#111;font-size:18px;margin-bottom:10px}
+.personalInforAgree .graybox ol > li > span {display:block;}
+.mt8 {margin-top:8px}
+.personalInforAgree .graybox ul > li > ul {margin-left:10px}
+.personalInforAgree .graybox ul > li > ul > li {position:relative;padding-left:12px}
+.personalInforAgree .graybox ul > li > ul > li:before {content:'-';display:block;position: absolute;top:0;left:0}
+.agreeArea {line-height:28px;color:#555}
+.agreeArea .radioArea {display:block;text-align:center;margin:15px 0}
+.agreeArea .radioArea .radioWrap {margin-bottom:0;line-height:22px;}
+.agreeArea label {display:inline-block;}
+.agreeArea label:first-child {margin-right:30px;}
+.mailPopWrap .refreshWrap {margin-top:30px;}
+.mailPopWrap .refreshWrap > p {color:#111;font-size:18px;margin-bottom:14px;}
+.mailPopWrap .refreshWrap .prevention {float:left; width:186px; margin-right:10px;height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
+.mailPopWrap .refreshWrap .preventionImg {float:left; height:40px; overflow:hidden; margin-right:10px;}
+.mailPopWrap .refreshWrap .refresh {float:left; width:104px; height:40px; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 12px center; text-align:left; padding-left:38px;}
+
+
 /*****************************************************************************************************************************************
 	common Layout
 *****************************************************************************************************************************************/

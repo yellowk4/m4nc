@@ -947,7 +947,7 @@ textarea, .textArea {-webkit-appearance:none; -webkit-border-radius: 0;} /* ÌÖçÏ
   /* Style the indicator (dot/circle) */
   .radioWrap .checkmark:after {
 	top: 6px;
-	left: 7px;
+	left: 6px;
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
