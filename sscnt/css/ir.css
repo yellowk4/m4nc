@@ -22,6 +22,18 @@
 #CNT_K_032 .defaultTable th{background-color: #fbfbfb; color: #111111; font-size: 24px; line-height: 100px;}
 #CNT_K_032 .btnArea{padding-left: 40px; margin-bottom: 0;}
 
+/* 팝업 IR - 감사/검토 보고서 CNT_K_033 */
+#CT-PCK-033{margin: 29px 45px 0;}
+.popWrap #CT-PCK-033 .btnArea {padding: 0;}
+    /* table */
+    #CT-PCK-033 .defaultTable th {font-size: 24px; font-weight: 700; background-color: #fbfbfb;}
+    #CT-PCK-033 .tableBasicList tbody td {padding: 20px 0 20px 30px;}
+    /* button */
+    #CT-PCK-033 .whiteBtn {display: inline-block; min-width: 140px; height: 56px; padding: 0 20px; margin: 0 4px 0 0; background-color: #ffffff; color: #333333; font-size: 18px;}
+    #CT-PCK-033 .whiteBtn.small {padding: 0 15px; height: 40px; background-color: #ffffff; border: 1px solid #555; font-size: 14px;}
+    #CT-PCK-033 .whiteBtn .icoDownload{display: inline-block; width: 19px; height: 17px; margin-right: 6px; background: url(/images/front/icon/ico_download02.png)no-repeat; vertical-align: middle;}
+
+
 /* IR - IR일정 CNT_K_038 */
 .planImg, .plan{float: left;}
 .planImg{width: 438px; padding: 0 70px 0 95px; text-align: center;}
@@ -96,6 +108,9 @@
 @media screen and (max-width: 1068px){
     /* IR - IR일정 CNT_K_038, 감사보고서 CNT_K_032 */
     .planImg, .reportimg {width: 44%; padding: 0 3%;}
+    /* IR - 감사보고서 CNT_K_032 */
+    #CNT_K_032 .btnArea{padding-left: 10px;}
+    #CNT_K_032 .btnArea button{margin-bottom: 10px;}
 }
 /* MOBILE */
 @media screen and (max-width: 812px){
@@ -109,15 +124,17 @@
     #CNT_K_031 .contTit, #CNT_K_042 .contTit {margin-bottom: 15px;}
     #CNT_K_031 .contTitsub, #CNT_K_042 .contTitsub {margin-bottom: 15px;}
     #CNT_K_031 .tableBasicList + p, #CNT_K_042 .tableBasicList + p{margin-bottom: 30px;}
+    .defaultTable.minW100{min-width: 100%;}
 
     /* IR - 감사보고서 CNT_K_032 */
-    #CNT_K_032 .btnArea{padding-left: 10px;}
-    #CNT_K_032 .btnArea button{margin-bottom: 10px;}
     .reportimg, .reportTit{float: none;}
     .reportimg{display: none;}
     .reportTit{padding: 0 0 26px;}
     .reportTit dt{font-size: 25px; padding-bottom: 22px;}
     #CNT_K_032 .defaultTable th{font-size: 18px;}
+
+    /* 팝업 IR - 감사/검토 보고서 CNT_K_033 */
+    #CT-PCK-033 .whiteBtn.small{margin-bottom: 5px;}
 
     /* IR - IR일정 CNT_K_038 */
     .planImg, .plan{float: none;}
