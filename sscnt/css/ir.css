@@ -150,7 +150,14 @@
     /* IR - Overview CNT_K_028 */
     .irLinkWrap .irLink .irA:after{top: 4px;}
     .iframeWrap .iframeArea{background: #265b97;}
-
+    .irTitWrap{margin-bottom: 20px;}
+    .irTitWrap .irTit{margin-bottom: 10px; font-size: 24px;}
+    .irTitWrap .irInfo{margin-top: 0; font-size: 16px;}
+    .irLinkWrap {margin-bottom: 30px;}
+    .irLinkWrap .irLink{height: auto; font-size: 18px;}
+    .irLinkWrap .irLink .irA {padding: 15px 0 17.25%; background-size: 32%; background-position: center 75%;}
+    .relationArticle .title{margin-bottom: 15px;}
+    #CNT_K_028 .btnArea{margin-bottom: 30px;}
 
     /* IR - 신용등급 CNT_K_031 */
     #CNT_K_031 .tableBasicList, #CNT_K_042 .tableBasicList{margin-bottom: 15px;}
@@ -222,7 +229,6 @@
     .dataStandard span{top: -30px;}
 
     /* IR - Overview CNT_K_028 */
-    .irLinkWrap .irLink{height: auto; font-size: 18px;}
     .irLinkWrap .irLink .irA{width: 100%; float: none; padding: 15px 0 17.25%; background-size: 11%; background-position: center 78%;}
     .irLinkWrap .irLink .irA:after{top: -1px;}
 }
