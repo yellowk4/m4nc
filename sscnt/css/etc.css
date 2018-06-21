@@ -33,14 +33,17 @@
 #CNT_K_070 .searchInfo .pointColor {color:#0e4ea3}
 /* serach List */
 .serachList{width:100%;}
+.serachList .ttl {position:relative;}
+.serachList .ttl .moreBtn {position: absolute;top:-9px;right:0;min-width:92px;height:40px;background:#828a91;border:1px solid #555;color:#fff;font-size:14px;display:inline-block;text-align:center;line-height:40px;box-sizing:border-box}
+.serachList .ttl .moreBtn:after {content:'';width:7px;height:100%;display:inline-block;background: url(/images/front/icon/link_bu.png) center no-repeat;vertical-align:top;margin-left:19px;}
 .serachList li .categroy {display:block;padding-bottom:20px;border-bottom:1px solid #0c4da2;color:#0e4ea3;font-size:24px;font-weight:700;line-height:1}
 .serachList li .categroy span {color:#111;}
 .serachList li .result {position:relative;padding:24px 0;font-size:18px;line-height:1.6;color:#111;border-bottom:1px solid #777;margin-bottom:70px}
 .serachList li:last-child .result {margin-bottom:0}
 .serachList li .result ul li {margin-top:24px;padding-top:24px;border-top:1px solid #d9d9d9}
 .serachList li .result ul li:first-child {margin-top:0;padding-top:0;border-top:0;}
-.serachList li .result ul li > a {display:block;color:#111;word-break:break-all;}
-.serachList li .result ul li .location span {display:inline-block;color:#555}
+.serachList li .result ul li > a {display:block;color:#111;word-break:break-all;font-size:18px}
+.serachList li .result ul li .location span {display:inline-block;color:#555;font-size:16px}
 .serachList li .result ul li .location span:before {display:inline-block;content:'>';margin:0 2px} 
 .serachList li .result ul li .location span:first-child:before {display:none}
 
@@ -65,7 +68,8 @@
     .serachList li .categroy {font-size:17px;padding-bottom:10px}
     .serachList li .result {padding:14px 0;font-size:14px;margin-bottom:25px}
     .serachList li .result ul li {margin-top:14px;padding-top:14px;}
-
+    .serachList li .result ul li > a  {font-size:15px;}
+    .serachList li .result ul li .location span {font-size:14px;}
     /* 오류 */
     .errorCon .errorHead {height:40px;border-bottom:1px solid #0c4da2;}
     .errorCon .errorHead div {max-width:100%;}
