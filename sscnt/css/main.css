@@ -92,7 +92,7 @@
 .investorWrap .listLink li span { display:inline-block; min-width:92px; } 
 .arrList li a:after { content:''; display:inline-block; width:9px; height:14px; margin-left:10px; background:url(/images/front/icon/ico_arr_r.png) 0 0 no-repeat; background-size:100%; } 
 .investorWrap .stockInfo { float:right; width:47.3%; margin-top:20px; } 
-.investorWrap .stockInfo .iframeArea { overflow: hidden; overflow-x: auto; max-width: 100%; height:250px; } 
+.investorWrap .stockInfo .iframeArea { overflow: hidden; overflow-x: auto; max-width: 100%; height:250px;background:#265b97} 
 .investorWrap .stockInfo .iframeArea iframe { width: 100%; height: 250px; } 
 .investorWrap .stockInfo .iframeArea iframe div.main.mobile { display:none } 
 .investorWrap .stockInfo .iframeArea iframe div.main.desktop { display:block } 
@@ -189,7 +189,7 @@
  .investorWrap .listTbl li button { width:23px; height:23px; } 
  .investorWrap .listLink { padding-top:0; float:none; width:100%; } 
  .investorWrap .stockInfo { float:none; width:100% } 
- .investorWrap .stockInfo .iframeArea { height:250px; background:#265b97 } 
+ .investorWrap .stockInfo .iframeArea { height:250px;} 
  .investorWrap .stockInfo .iframeArea iframe { height:250px; }
  .investorWrap .listLink {overflow:hidden;margin:20px 0}
  .investorWrap .listLink li {float:left;margin-top:0;width:31.3%;margin-left:3%} 
