@@ -194,7 +194,7 @@
  .investorWrap .listLink li:first-child { margin-top:0;margin-left:0} 
 /*  .investorWrap .listLink li:first-child { background:#e7e8ef url(/images/front/main/ico_invest01.png) right 10px center no-repeat; background-size:27px auto; }  */
  .investorWrap .listLink li{background-position:center 16px !important;background-size:40px auto;}
- .investorWrap .listLink li a { height:100px; padding:14px 10px; font-size:15px; font-weight:700;box-sizing:border-box;text-align:center} 
+ .investorWrap .listLink li a { height:100px; padding:14px 10px; font-size:14px; font-weight:700;box-sizing:border-box;text-align:center} 
  .investorWrap .listLink li span { min-width:auto;margin-top:56px} 
  .arrList li a:after { width:4px; height:7px; margin-left:5px; } 
  .investorWrap .stockInfo { margin-top:10px; } 
