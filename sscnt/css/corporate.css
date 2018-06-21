@@ -82,9 +82,19 @@
 #CNT_K_054 .boldTxt{margin: 40px 0 20px;}
 .txt + .listBu.type2{margin-bottom: 0;}
 .boldTxt + .listBu{margin-bottom: 60px;}
-#CNT_K_054 .shareList, #CNT_K_064 .shareList{margin-top: 60px;}
 
-/*  corporate  CNT_K_056 */
+/*  corporate 개요  CNT_K_056 */
+#CNT_K_056 .txt{margin-top: 40px;}
+#CNT_K_056 .contTit{margin-top: 60px;}
+#CNT_K_056 .tableBasicList{margin-top: 20px;}
+.tableBasicList th.bgBlue, .tableBasicList td.bgBlue{background-color: #eff8fe;}
+.tableBasicList th.bgBlue{color: #0c4da2;}
+.whiteBtn.small.type01{margin-left: 47px;}
+    /* button */
+    .whiteBtn {display: inline-block; min-width: 140px; padding: 0 20px; margin: 0 4px 0 0; background-color: #ffffff; color: #333333; font-size: 18px;}
+    .whiteBtn.small {padding: 0 15px; height: 40px; border: 1px solid #555; font-size: 14px;}
+    .whiteBtn .icoMore{display: inline-block; width: 15px; height: 17px; margin-right: 6px; background: url(/images/front/icon/icoMore02.png) no-repeat; vertical-align: middle;}
+    #CNT_K_056 .whiteBtn.small{min-width: 159px;}
 
 /* corporate 운영&역할 CNT_K_064 */
 .listBu.type2 + .txt{margin-bottom: 40px;}
@@ -101,6 +111,8 @@
 .bigTit > span {display: block;}
 /* 연관정보 바로가기 */
 .relationInfo{margin-top: 60px;}
+/* shareList */
+#CNT_K_054 .shareList, #CNT_K_064 .shareList, #CNT_K_056 .shareList{margin-top: 60px;}
 
 /* MOBILE */
 @media screen and (max-width: 1024px){
@@ -124,12 +136,18 @@
     /* corporate 운영&역할 CNT_K_054 */
     #CNT_K_054 .boldTxt{margin: 20px 0 15px;}
     .boldTxt + .listBu{margin-bottom: 30px;}
-    #CNT_K_054 .shareList, #CNT_K_064 .shareList{margin-top: 30px;}
+    /*  corporate 개요  CNT_K_056 */
+    #CNT_K_056 .txt {margin-top: 15px;}
+    #CNT_K_056 .contTit{margin-top: 30px;}
+    .whiteBtn.small.type01{margin-left: auto;}
+    #CNT_K_056 .tableBasicList td{text-align: left !important}
     /* corporate 운영&역할 #CNT_K_064 */
     .listBu.type2 + .txt{margin-bottom: 30px;}
 
     /* pc block > mobile inline */
     .bigTit > span {display: inline;}
+    /* shareList */
+    #CNT_K_054 .shareList, #CNT_K_064 .shareList, #CNT_K_056 .shareList{margin-top: 30px;}
 }
 
 /* MOBILE */
