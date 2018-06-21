@@ -75,24 +75,25 @@
 .ourWrap .totalInfo li em { font-size:20px; } 
 /* INVESTOR */
 .investorWrap .cont { overflow:hidden; position:relative; } 
-.investorWrap .listWrap { position:absolute; top:0; left:0; width:50.9%; } 
+.investorWrap .listWrap { width:100%} 
 .investorWrap .listTit { font-size:20px; font-weight:bold; color:#333; line-height:1; } 
-.investorWrap .listTbl { margin-top:10px; border-top:2px solid #434757; } 
-.investorWrap .listTbl li { overflow:hidden; padding:12px 10px 12px 14px; border-bottom:1px solid #e3e4eb; } 
-.investorWrap .listTbl li .txt { overflow:hidden; float:left; width:55%; font-size:18px; color:#333; line-height:1.4; text-overflow:ellipsis; white-space:nowrap; } 
-.investorWrap .listTbl li .date { float:left; margin-left:14px; font-size:16px; color:#777; line-height:1.4; } 
+.investorWrap .listTbl { margin-top:10px; border-top:2px solid #0c4da2;border-bottom:1px solid #777} 
+.investorWrap .listTbl li { overflow:hidden; padding:18px 20px; border-bottom:1px solid #ddd;position: relative;}
+.investorWrap .listTbl li:last-child {border-bottom:0}
+.investorWrap .listTbl li .txt { overflow:hidden; float:left; width:55%; font-size:18px; color:#333; line-height:25px; text-overflow:ellipsis; white-space:nowrap; } 
+.investorWrap .listTbl li .date {position: absolute;right:147px;top:18px;font-size:16px; color:#777; line-height:25px; } 
 .investorWrap .listTbl li button { float:right; width:25px; height:25px; background:url(/images/front/icon/ico_down.png) 0 0 no-repeat; background-size:100%; } 
-.investorWrap .listLink { float:left; width:50.9%; padding-top:132px; } 
-.investorWrap .listLink li { margin-top:10px; background-position:100% 10px; background-repeat:no-repeat; background-color:#e7e8ef; } 
-.investorWrap .listLink li:first-child { margin-top:20px; background-image:url(/images/front/main/ico_invest01.png); } 
-.investorWrap .listLink li:nth-child(2) { background-image:url(/images/front/main/ico_invest02.png); } 
-.investorWrap .listLink li:nth-child(3) { background-image:url(/images/front/main/ico_invest03.png); background-position:100%; } 
-.investorWrap .listLink li a { display:block; box-sizing:border-box; width:100%; height:82px; padding:29px 10px 29px 24px; font-size:20px; font-weight:bold; color:#333; } 
+.investorWrap .listLink { float:left; width:50.9%; margin-top:20px; } 
+.investorWrap .listLink li { margin-top:10px;} 
+.investorWrap .listLink li:first-child { margin-top:0; background:#e7e8ef url(/images/front/main/ico_invest01.png) right 20px center no-repeat; } 
+.investorWrap .listLink li:nth-child(2) { background:#e7e8ef url(/images/front/main/ico_invest02.png) right 20px center no-repeat;} 
+.investorWrap .listLink li:nth-child(3) { background:#e7e8ef url(/images/front/main/ico_invest03.png) right 23px center no-repeat;} 
+.investorWrap .listLink li a { display:block; box-sizing:border-box; width:100%; height:77px; padding:29px 10px 29px 24px; font-size:20px; font-weight:bold; color:#333; } 
 .investorWrap .listLink li span { display:inline-block; min-width:92px; } 
 .arrList li a:after { content:''; display:inline-block; width:9px; height:14px; margin-left:10px; background:url(/images/front/icon/ico_arr_r.png) 0 0 no-repeat; background-size:100%; } 
-.investorWrap .stockInfo { float:right; width:47.3%; margin-top:30px; } 
-.investorWrap .stockInfo .iframeArea { overflow: hidden; overflow-x: auto; max-width: 100%; height:388px; } 
-.investorWrap .stockInfo .iframeArea iframe { width: 100%; height: 388px; } 
+.investorWrap .stockInfo { float:right; width:47.3%; margin-top:20px; } 
+.investorWrap .stockInfo .iframeArea { overflow: hidden; overflow-x: auto; max-width: 100%; height:250px; } 
+.investorWrap .stockInfo .iframeArea iframe { width: 100%; height: 250px; } 
 .investorWrap .stockInfo .iframeArea iframe div.main.mobile { display:none } 
 .investorWrap .stockInfo .iframeArea iframe div.main.desktop { display:block } 
 /* CORPORWRAP */
@@ -182,7 +183,8 @@
  .investorWrap .cont { margin-top:13px !important } 
  .investorWrap .listTbl { margin-top: 8px; border-top:1px solid #434757; } 
  .investorWrap .listTbl li { padding:8px 5px 8px 10px; } 
- .investorWrap .listTbl li .txt, .investorWrap .listTbl li .date { font-size:13px; line-height:23px !important; } 
+ .investorWrap .listTbl li .txt, .investorWrap .listTbl li .date { font-size:13px; line-height:23px !important; }
+ .investorWrap .listTbl li .date {right:40px;top:9px}
  .investorWrap .listTbl li .txt { width:168px; } 
  .investorWrap .listTbl li button { width:23px; height:23px; } 
  .investorWrap .listLink { padding-top:0; float:none; width:100%; } 
@@ -190,10 +192,9 @@
  .investorWrap .stockInfo .iframeArea { height:250px; background:#265b97 } 
  .investorWrap .stockInfo .iframeArea iframe { height:250px; }
  .investorWrap .listLink {overflow:hidden;margin:20px 0}
- .investorWrap .listLink li {float:left;margin-top:0;width:31%;margin-left:3%} 
+ .investorWrap .listLink li {float:left;margin-top:0;width:31.3%;margin-left:3%} 
  .investorWrap .listLink li:first-child { margin-top:0;margin-left:0} 
-/*  .investorWrap .listLink li:first-child { background:#e7e8ef url(/images/front/main/ico_invest01.png) right 10px center no-repeat; background-size:27px auto; }  */
- .investorWrap .listLink li{background-position:center 16px !important;background-size:40px auto;}
+ .investorWrap .listLink li{background-position:center 16px !important;background-size:40px auto !important;}
  .investorWrap .listLink li a { height:100px; padding:14px 10px; font-size:14px; font-weight:700;box-sizing:border-box;text-align:center} 
  .investorWrap .listLink li span { min-width:auto;margin-top:56px} 
  .arrList li a:after { width:4px; height:7px; margin-left:5px; } 
