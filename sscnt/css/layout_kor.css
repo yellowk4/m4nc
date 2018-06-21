@@ -748,6 +748,8 @@ common Layout - 공통적용되는 스타일은 작업하시면 안됩니다.
 
 
 
+
+
 /* 폼요소-체크박스 */
 /* Customize the label (the container) */
 .checkboxWrap {display: block;position: relative;padding-left: 32px;margin-bottom: 12px;cursor: pointer;font-size: 16px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; } 

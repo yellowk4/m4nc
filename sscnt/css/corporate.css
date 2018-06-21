@@ -61,7 +61,10 @@
 #CNT_K_053 .topBox .txt{padding-top: 40px;}
 /* directCon normal */
 .dirListImg{position: relative; max-height: 368px; overflow: hidden;}
-.dirListImg img{display: block; width: 100%; height: auto;}
+.dirListImg img{display: block; width: 100%; height: auto; transition: transform .3s ease-out;}
+.dirListImg:hover img {transform: scale(1.1);}
+
+
 .dirListImg img.offImg{display: none;} /* 내용보임 */
 /* directCon "active" */
 .dirListBox.active .dirListImg:after{content: ''; position: absolute; left: 0; top: 0; z-index: 0; width: 100%; height: 100%; border: 3px solid #0c4da2; box-sizing: border-box;}
