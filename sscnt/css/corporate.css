@@ -39,7 +39,7 @@
 
 /* corporate 이사회 구성 CNT_K_053 */
 .directorList {margin-top: 40px;}
-#CNT_K_053 .bigTit{line-height: 1.6;}
+.bigTit{line-height: 1.6;}
 .directorWrap h4, #CNT_K_054 h4, #CNT_K_064 h4{margin-bottom: 20px;}
 .txt + .listBu{margin-bottom: 60px;}
 .downBox{padding: 40px 0; margin-bottom: 50px; text-align: right; border-bottom: 1px solid #d9d9d9;}
@@ -84,6 +84,8 @@
 .boldTxt + .listBu{margin-bottom: 60px;}
 #CNT_K_054 .shareList, #CNT_K_064 .shareList{margin-top: 60px;}
 
+/*  corporate  CNT_K_056 */
+
 /* corporate 운영&역할 CNT_K_064 */
 .listBu.type2 + .txt{margin-bottom: 40px;}
 
@@ -96,7 +98,7 @@
     line-height: 1.6;
 }
 /* pc block > mobile inline */
-#CNT_K_053 .bigTit > span {display: block;}
+.bigTit > span {display: block;}
 /* 연관정보 바로가기 */
 .relationInfo{margin-top: 60px;}
 
@@ -127,7 +129,7 @@
     .listBu.type2 + .txt{margin-bottom: 30px;}
 
     /* pc block > mobile inline */
-    #CNT_K_053 .bigTit > span {display: inline;}
+    .bigTit > span {display: inline;}
 }
 
 /* MOBILE */
