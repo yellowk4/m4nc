@@ -270,10 +270,7 @@
 							</li>							
 						</ul>
 						<div class="mapCont">
-							<!-- 1. 약도 노드 -->
-							<div id="daumRoughmapContainer1529373780025" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-              <!-- 2. 설치 스크립트 -->
-              <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>             
+							<!-- // 2018-06-21 지도 자리 입니다-->   
 						</div>						
 					</div>
 					<ul class="shareList">
@@ -503,26 +500,5 @@
 		</div>
 	</div> <!-- // footer -->
 </div> <!-- // wrap -->
-<!-- 2018-06-20 스크립트 추가 확인 필요-->
-<script>
-	var $wrapWidth = $(window).width();
-  if ($wrapWidth>813)  {	
-		new daum.roughmap.Lander({
-			"timestamp" : "1529373780025",
-			"key" : "onfm",
-			"mapWidth" : "100%",
-			"mapHeight" : "417"
-		}).render();
-  }  
-  if ($wrapWidth<=812) {	
-		new daum.roughmap.Lander({
-			"timestamp" : "1529373780025",
-			"key" : "onfm",
-			"mapWidth" : "100%",
-			"mapHeight" : "200"
-		}).render();
-	}
-</script>
-<!--// 2018-06-20 스크립트 추가 확인 필요-->
 </body>
 </html>
