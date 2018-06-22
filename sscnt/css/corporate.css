@@ -17,27 +17,35 @@
 .overviewCont h4 {font-size:24px; margin-bottom:20px; font-weight:600; color:#111}
 
 
-/* 타이틀 영역 ~ CNT_K_063 */
+/* corporate 타이틀 bg 051 ~ CNT_K_063 */
 .corporate.type01{margin-top: 0;}
-.titleBox{padding: 106px 0 ; margin-bottom: 20px; text-align: center; background-repeat: no-repeat; background-size: cover;}
+.titleBox{padding: 106px 0 ; margin-bottom: 20px; background-repeat: no-repeat; background-size: cover;}
 .innerTxt{text-align: center; font-size: 18px; color: #ffffff; line-height: 1.4;}
 .innerTxt span, .txt span{display: block;}
 .titleBox + .btnArea{margin-bottom: 20px;}
 .titleBox + .btnArea button{margin-right: 0;}
-.titleBox.bg01{background-image: url(/images/front/contents/bg_CNT_K_051.png);}
-.titleBox.bg02{background-image: url(/images/front/contents/bg_CNT_K_051.png);}
-.titleBox.bg03{background-image: url(/images/front/contents/bg_CNT_K_051.png);}
-.titleBox.bg04{background-image: url(/images/front/contents/bg_CNT_K_051.png);}
+.titleBox .selectTab button{left: 50%; margin-left: -222.5px; background-color: #fff;}
+.titleBox .selectTab ul{left: 50%; margin-left: -222.5px; background-color: #fff;}
+.titleBox .selectTab ul li a{font-size: 18px;}
+.titleBox .selectTab ul li a:before{content: '-'; padding-right: 5px;}
+.titleBox.bg01{padding: 50px 0; background-image: url(/images/front/contents/bg_CNT_K_051.jpg);}
+.titleBox.bg02{background-image: url(/images/front/contents/bg_CNT_K_051.jpg);}
+.titleBox.bg03{background-image: url(/images/front/contents/bg_CNT_K_051.jpg);}
+.titleBox.bg04{background-image: url(/images/front/contents/bg_CNT_K_051.jpg);}
 .titleBox.bg05{background-image: url(/images/front/contents/bg_CNT_K_063.jpg);}
-.titleBox .selectTab .select button{display: inline-block;}
 .corporate.type01 .txt + .listBu{margin-top: 10px; margin-bottom: 20px;}
+.subTit + .listBu.type01 + .subTit{margin-top: 40px;}
 .corporate.type01 .txt + .listBu.type01{margin-bottom: 0;}
 #CNT_K_063 .listBu + .tableBasicList{margin-bottom: 40px;}
-.txt + .fieldTit {margin-top: 40px;}
+.txt + .subTit {margin-top: 40px;}
 .txt.type01{margin-bottom: 20px;}
 .pL20{padding-left: 20px;}
 .txt + .pL20{margin-bottom: 40px;}
+ul.noneBg{padding: 10px 0;}
+ul.noneBg li{padding-left: 0; background-image: none;}
 .corporate.type01 .accordionWrap{margin-bottom: 60px;}
+#CNT_K_052 .corporate{margin-bottom: 60px;}
+#CNT_K_052 .txt + section{margin-top: 40px;}
 
 /* corporate 거버넌스위원회 CNT_K_063 */
 .dataStandard{position: relative;}
@@ -45,7 +53,7 @@
 
 /* corporate 정관 CNT_K_051 */
 .corporate{margin-top: 50px;}
-.corporate .color01, .corporate .smallTit, .corporate .fieldTit{font-size: 20px; margin-bottom: 20px;}
+.corporate .color01, .corporate .smallTit, .corporate .subTit{font-size: 20px; margin-bottom: 20px;}
 .corporate .smallTit{display: block; color: #333333;}
 .corporate section{margin-bottom: 40px;}
 /* .titleBox .left, .titleBox .right {float: left; width: 50%;}
@@ -163,7 +171,7 @@
     .corporate{margin-top: 30px;}
     .titleBox .left{float: none; width: 100%;}
     .titleBox .right {display: none;}
-    .corporate .color01, .corporate .smallTit{font-size: 16px; margin-bottom: 15px;}
+    .corporate .color01, .corporate .smallTit, .corporate .subTit{font-size: 16px; margin-bottom: 15px;}
     .corporate section{margin-bottom: 30px;}
 
     /* corporate 이사회 구성 CNT_K_053 */
@@ -197,10 +205,16 @@
     .titleBox{margin-bottom: 10px;}
     .corporate.type01 .txt + .listBu{margin-top: 0; margin-bottom: 15px;}
     .txt.type01{margin-bottom: 15px;}
+    ul.noneBg{padding: 5px 0;}
+    #CNT_K_052 .corporate section{margin-bottom: 15px;}
+    #CNT_K_052 .corporate .subTit {margin-bottom: 15px;}
+    #CNT_K_052 .corporate{margin-bottom: 30px;}
+    #CNT_K_052 .txt + section{margin-top: 15px;}
 
     /* pc block > mobile inline */
-    .bigTit > span, .txt > span {display: inline;}
+    .bigTit > span, .txt > span, .innerTxt span, .txt span {display: inline;}
     .txt > .pL20{padding: 0;}
+    .txt + .pL20{margin-bottom: 15px;}
     /* shareList */
     #CNT_K_054 .shareList,#CNT_K_055 .shareList, #CNT_K_056 .shareList, #CNT_K_064 .shareList{margin-top: 30px;}
     /* 내용 짧은 테이블용 */
