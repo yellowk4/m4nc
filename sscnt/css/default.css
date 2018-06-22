@@ -100,7 +100,7 @@ input[type="text"]::-ms-clear { display:none; } /* 익스 10, 11에서 입풋창
 .flexItem12 { width:100%; -webkit-flex:12; flex:12; } 
 
 /* PC 버전 */
-@media print, screen and (min-width:1025px) { /* 2018-05-04 : 프린트 스타일 추가 */
+@media screen and (min-width:1025px) { /* 2018-05-04 : 프린트 스타일 추가 */
 .flexContainer { width:100%; } 
 .flexContainer:before, .flexContainer:after { display: table; line-height: 0; content: ""; } 
 .flexContainer:after { clear: both; } 
@@ -122,9 +122,9 @@ input[type="text"]::-ms-clear { display:none; } /* 익스 10, 11에서 입풋창
 .positionR { position:absolute; right:0; top:0; } 
 
 /* 2018-05-04 : 프린트 스타일 추가 */
-@media only print { .conTitWrap h2 {height: 20px; } 
+/* @media only print { .conTitWrap h2 {height: 20px; } 
 .conTitWrap .location span {height:30px;padding-bottom:10px;margin:0; } 
 .conTitWrap .location span::after {content: ">";display: inline-block;clear: both;position: relative;top: 1px;width: 6px;height: 11px;margin-left: 9px;color: #000; } 
 .conTitWrap .location .home { padding-left:0; } 
 .utility, .footer .footMenuWrap {display: none; } 
-}
+} */
