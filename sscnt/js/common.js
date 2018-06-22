@@ -5,8 +5,8 @@ function trace(){ try{ var args = [].join.call(arguments, ' '); console.log( "ui
 var Utils = {
 	getMediaQuery: function(type){
 		return {
-			pc: window.matchMedia("(min-width:1024px)"),
-			tablet: window.matchMedia("(min-width:812px) and (max-width:1023px)"),
+			pc: window.matchMedia("(min-width:1025px)"),
+			tablet: window.matchMedia("(min-width:812px) and (max-width:1024px)"),
 			mobile: window.matchMedia("all and (max-width:811px)")
 		}[type];
 	}
@@ -666,7 +666,7 @@ gnbApp.event = function (){
 	function matchedIsTablet(){
 		console.log('is Tablet')
 
-		$(window).off("scroll resize");
+		$(window).off("scroll resize.gnb");
 		$(".searchWrap").removeClass("fixed");
 		$(".pcMenuWrap").removeClass("fixed");
 		gnbApp.$header.off("mouseleave")
@@ -707,7 +707,7 @@ gnbApp.event = function (){
 
 
 		// 리사이즈 이벤트 후처리
-		$(window).resize(function() {
+		$(window).on("resize.gnb", function(){
 			if(this.resizeTO) {
 				clearTimeout(this.resizeTO);
 			}
@@ -715,7 +715,7 @@ gnbApp.event = function (){
 			this.resizeTO = setTimeout(function() {
 				$(this).trigger('resizeEnd');
 			}, 300);
-		});
+		})
 
 		$(window).on('resizeEnd', function() {
 			// var vh = Math.round(((gnbApp.$header.outerHeight(true)) * 100) / $(window).outerHeight(true));
@@ -1087,21 +1087,31 @@ conApp.imgTabEvent = function(){
 		imgClass = '.dirListImg',
 		anchorClass = '.dirListName',
 		activeClass = 'active',
-		offClass = 'off';
+		offClass = 'off',
+		directCon = '.directCon',
+		contents = '#CNT_K_053',
+		contentsWidth,
+		directConW = function() {
+			contentsWidth = $(contents).width();
+			$(directCon).css({width : contentsWidth});
+		};
 
 	var handler = function(){
 		if($(this).parent(wrapperClass).toggleClass(activeClass).hasClass(activeClass)) {
 			$(this).parent(wrapperClass).removeClass(offClass).siblings().removeClass(activeClass).addClass(offClass);
 		} else {
 			$(this).parent(wrapperClass).siblings().removeClass(offClass);
-		}
-	}
-
+		}		
+		directConW();
+	}	
+	
+	$(window).on('resize.imgTabEvent', directConW)
 	$(anchorClass).on("click", handler)
 	$(imgClass).on("click", handler)
 
 
 }
+
 
 
 $(function() {
