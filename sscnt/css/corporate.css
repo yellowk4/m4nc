@@ -95,7 +95,8 @@
 #CNT_K_056 .tableBasicList{margin-top: 20px;}
 .tableBasicList th.bgBlue, .tableBasicList td.bgBlue{background-color: #eff8fe;}
 .tableBasicList th.bgBlue{color: #0c4da2;}
-.whiteBtn.small.type01{margin-left: 47px;}
+.tableBasicList tbody td.noneBorder{border-left: 0;}
+.bgBlue.minWidth{min-width: 168px;}
     /* button */
     .whiteBtn {display: inline-block; min-width: 140px; padding: 0 20px; margin: 0 4px 0 0; background-color: #ffffff; color: #333333; font-size: 18px;}
     .whiteBtn.small {padding: 0 15px; height: 40px; border: 1px solid #555; font-size: 14px;}
@@ -162,8 +163,6 @@
     /*  corporate 개요  CNT_K_056 */
     #CNT_K_056 .txt {margin-top: 15px;}
     #CNT_K_056 .contTit{margin-top: 30px;}
-    .whiteBtn.small.type01{margin-left: auto;}
-    #CNT_K_056 .tableBasicList td{text-align: left !important}
     /* corporate 운영&역할 #CNT_K_064 */
     .listBu.type2 + .txt{margin-bottom: 30px;}
 
