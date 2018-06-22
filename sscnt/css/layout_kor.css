@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /*****************************************************************************************************************************************
 form 요소 공통정의
 *****************************************************************************************************************************************/
@@ -345,7 +344,7 @@ Ul style
 .selectTab a, .selectTab button { display:block; word-wrap:break-word; } 
 .selectTab a { padding: 10px; } 
 .selectTab li.active a, .selectTab li a:hover { color:#2a6eb6; } 
-.selectTab .select button { display:block; overflow:hidden; position: relative; width:100%; padding:10px 23px 10px 10px; border:1px solid #ddd;color:#555; text-align:left; text-overflow:ellipsis; white-space:nowrap; font-size: 16px; } 
+.selectTab .select button { display:block; overflow:hidden; position: relative; width:100%; padding:10px 23px 10px 10px; border:1px solid #ddd; color:#555; text-align:left; text-overflow:ellipsis; white-space:nowrap; font-size: 16px; } 
 .selectTab .select button:after { content:''; position: absolute; top:15px; left: auto; right:10px; display:inline-block; width: 13px; height: 7px; background:url('/images/front/icon/ico_arrow_open.png') no-repeat; background-size:13px 7px; } 
 .selectTab.active .select button:after { background-image:url('/images/front/icon/ico_arrow_close.png'); } 
 
@@ -739,10 +738,10 @@ common Layout - 공통적용되는 스타일은 작업하시면 안됩니다.
 핵 정의
 *****************************************************************************************************************************************/
 /* 파폭 핵 */
-@-moz-document url-prefix() {}
+@-moz-document url-prefix() { } 
 
 /* 크롬1+, 사파리3 핵 */
-@media screen and (-webkit-min-device-pixel-ratio:0) {}
+@media screen and (-webkit-min-device-pixel-ratio:0) { } 
 
 
 
@@ -752,84 +751,85 @@ common Layout - 공통적용되는 스타일은 작업하시면 안됩니다.
 
 /* 폼요소-체크박스 */
 /* Customize the label (the container) */
-.checkboxWrap {display: block;position: relative;padding-left: 32px;margin-bottom: 12px;cursor: pointer;font-size: 16px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; } 
+.checkboxWrap { display: block; position: relative; padding-left: 32px; margin-bottom: 12px; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } 
  
  /* Hide the browser's default checkbox */
- .checkboxWrap input {position: absolute;opacity: 0;cursor: pointer; } 
+ .checkboxWrap input { position: absolute; opacity: 0; cursor: pointer; } 
  
  /* Create a custom checkbox */
- .checkboxWrap .checkmark {position: absolute;top: 0;left: 0;height: 20px;width: 20px;border: 1px solid #bdbdbd; } 
+ .checkboxWrap .checkmark { position: absolute; top: 0; left: 0; height: 20px; width: 20px; border: 1px solid #bdbdbd; } 
  
  /* On mouse-over, add a grey background color */
- .checkboxWrap:hover input ~ .checkmark {/* background-color: #ccc; */}
+ .checkboxWrap:hover input ~ .checkmark { /* background-color: #ccc; */ } 
  
  /* When the checkbox is checked, add a blue background */
- .checkboxWrap input:checked ~ .checkmark {border: 1px solid #0c4da2; } 
+ .checkboxWrap input:checked ~ .checkmark { border: 1px solid #0c4da2; } 
  
  /* Create the checkmark/indicator (hidden when not checked) */
- .checkboxWrap .checkmark:after {content: "";position: absolute;/* display: none; */}
+ .checkboxWrap .checkmark:after { content: ""; position: absolute; /* display: none; */ } 
  
  /* Show the checkmark when checked */
- .checkboxWrap input:checked ~ .checkmark:after {display: block; } 
+ .checkboxWrap input:checked ~ .checkmark:after { display: block; } 
  
  /* Style the checkmark/indicator */
- .checkboxWrap .checkmark:after {left: 8px;top: 3px;width: 5px;height: 10px;border: solid #bdbdbd;border-width: 0 2px 2px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg); } 
- .checkboxWrap input:checked ~ .checkmark:after {border: solid #0c4da2;border-width: 0 2px 2px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg); } 
+ .checkboxWrap .checkmark:after { left: 8px; top: 3px; width: 5px; height: 10px; border: solid #bdbdbd; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); } 
+ .checkboxWrap input:checked ~ .checkmark:after { border: solid #0c4da2; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); } 
 
  /* 폼요소-라디오버튼 */
  /* Customize the label (the container) */
-.radioWrap {display: block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 16px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; } 
+.radioWrap { display: block; position: relative; padding-left: 35px; margin-bottom: 12px; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } 
  
  /* Hide the browser's default radio button */
- .radioWrap input {position: absolute;opacity: 0; } 
+ .radioWrap input { position: absolute; opacity: 0; } 
  
  /* Create a custom radio button */
- .radioWrap .checkmark {position: absolute;top: 0;left: 0;height: 20px;width: 20px;border: 1px solid #bdbdbd;border-radius: 50%; } 
+ .radioWrap .checkmark { position: absolute; top: 0; left: 0; height: 20px; width: 20px; border: 1px solid #bdbdbd; border-radius: 50%; } 
  
  /* On mouse-over, add a grey background color */
- .radioWrap:hover input ~ .checkmark {/* background-color: #ccc; */}
+ .radioWrap:hover input ~ .checkmark { /* background-color: #ccc; */ } 
  
  /* When the radio button is checked, add a blue background */
- .radioWrap input:checked ~ .checkmark {border: 1px solid #0c4da2; } 
+ .radioWrap input:checked ~ .checkmark { border: 1px solid #0c4da2; } 
  
  /* Create the indicator (the dot/circle - hidden when not checked) */
- .radioWrap .checkmark:after {content: "";position: absolute;display: none; } 
+ .radioWrap .checkmark:after { content: ""; position: absolute; display: none; } 
  
  /* Show the indicator (dot/circle) when checked */
- .radioWrap input:checked ~ .checkmark:after {display: block; } 
+ .radioWrap input:checked ~ .checkmark:after { display: block; } 
  
  /* Style the indicator (dot/circle) */
- .radioWrap .checkmark:after {top: 6px;left: 6px;width: 8px;height: 8px;border-radius: 50%;background: #0c4da2; } 
+ .radioWrap .checkmark:after { top: 6px; left: 6px; width: 8px; height: 8px; border-radius: 50%; background: #0c4da2; } 
 
 /* selectbox */
 /*the container must be positioned relative:*/
-.custom-select {position: relative;/* font-family: Arial; */}
- .custom-select select {display: none; /*hide original SELECT element:*/}
- .select-selected {background-color: #fff; } 
+.custom-select { position: relative; /* font-family: Arial; */ } 
+ .custom-select select { display: none; /*hide original SELECT element:*/ } 
+ .select-selected { background-color: #fff; } 
  /*style the arrow inside the select element:*/
- .select-selected:after {position: absolute;content: "";top: 12px;right: 10px;width: 13px;height: 7px;border: 6px solid transparent;/* border-color: red transparent transparent transparent; */
-background: url(/images/front/icon/ico_arrow_open.png) no-repeat;background-size: 13px 7px; } 
+ .select-selected:after { position: absolute; content: ""; top: 12px; right: 10px; width: 13px; height: 7px; border: 6px solid transparent; /* border-color: red transparent transparent transparent; */
+background: url(/images/front/icon/ico_arrow_open.png) no-repeat; background-size: 13px 7px; } 
  /*point the arrow upwards when the select box is open (active):*/
- .select-selected.select-arrow-active:after {/* border-color: transparent transparent red transparent; */
-background: url(/images/front/icon/ico_arrow_close.png) no-repeat;background-size: 13px 7px;top: 11px; } 
+ .select-selected.select-arrow-active:after { /* border-color: transparent transparent red transparent; */
+background: url(/images/front/icon/ico_arrow_close.png) no-repeat; background-size: 13px 7px; top: 11px; } 
  /*style the items (options), including the selected item:*/
- .select-items div,.select-selected {padding: 10px;border: 1px solid #ddd;cursor: pointer; } 
+ .select-items div,.select-selected { padding: 10px; border: 1px solid #ddd; cursor: pointer; } 
  .select-items div { border-top: 0 none; border-bottom: 0 none; } 
  .select-items div:last-child { border-bottom: 1px solid #ddd; } 
  /*style items (options):*/
- .select-items {position: absolute;background-color: #fff;top: 100%;left: 0;right: 0;z-index: 99; } 
+ .select-items { position: absolute; background-color: #fff; top: 100%; left: 0; right: 0; z-index: 99; } 
  /*hide the items when the select box is closed:*/
- .select-hide {display: none; } 
- .select-items div:hover, .same-as-selected {background-color: rgba(0, 0, 0, 0.1); } 
+ .select-hide { display: none; } 
+ .select-items div:hover, .same-as-selected { background-color: rgba(0, 0, 0, 0.1); } 
 
  /*****************************************************************************************************************************************
 반응형 처리 (모바일)
 *****************************************************************************************************************************************/
 /* 미디어퀴리 */
-@media screen and (max-width:1200px) {#contentsWrap .searchWrap .searchArea { width: 40%; } 
-#contentsWrap .searchWrap .searchArea input { width: 60%; } 
- }
-@media screen and (max-width:1024px) {/* 최상단 영역 */
+@media screen and (max-width:1200px){
+ #contentsWrap .searchWrap .searchArea { width: 40%; } 
+ #contentsWrap .searchWrap .searchArea input { width: 60%; } 
+}
+@media screen and (max-width:1024px) { /* 최상단 영역 */
 .header { position:fixed; width:100%; min-height:auto; } 
 .header:before,.header:after { display:none; } 
 .header header { max-width:none; margin:0; padding:0; height:70px; border-bottom: 1px solid #c3c3c3; } 
@@ -898,16 +898,18 @@ background: url(/images/front/icon/ico_arrow_close.png) no-repeat;background-siz
 
 #contentsWrap .contentsTop .inner,
 #contentsWrap .pcMenuWrap .inner { padding: 0 20px; } 
-.contents { padding: 40px 20px; } 
-.footer > .container { padding: 30px 20px 0; } 
+.contents { padding: 40px 20px; }
 #contentsWrap .searchWrap .searchArea input { width: 60%; } 
 #contentsWrap > .container { padding: 70px 0 100px; margin: 0 0 -100px; } 
 
 /* 푸터 -모바일 + 태블릿 */
+.footer > .container { padding: 30px 20px 0; } 
 .familyWrap .btnFamily { right: 20px; width: 15%; } 
 .familyWrap .familyArea { margin:0 20px; } 
 }
-@media screen and (max-width:812px) {#contentsWrap .contentsTop { display: none; } 
+
+@media screen and (max-width:812px){
+ #contentsWrap .contentsTop { display: none; } 
 #contentsWrap > .container { padding-top: 40px; } 
 .header { height:auto; } 
 .header header { height:40px; } 
@@ -1017,15 +1019,18 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,selec
 .defaultTable { width: auto; } 
 .tableBasicList thead th { padding: 8px 10px; } 
 .tableBasicList tbody th, .tableBasicList tbody td { padding: 8px 10px; font-size: 15px; } 
-}
+ }
 
-@media screen and (max-width:320px) {.moMenuWrap .location ol { padding: 10px 0 9px 25px; } 
+@media screen and (max-width:320px){
+.moMenuWrap .location ol { padding: 10px 0 9px 25px; } 
 .moMenuWrap .location ol:before { left: 6px; } 
  }
 
-@media print and (color) { /* 프린트시 컬러 처리 */
-   * {
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-   }
+@media print and (color) { /* 프린트시 컬러 처리 width: 538px */
+ * { -webkit-print-color-adjust: exact; print-color-adjust: exact; } 
+
+ .header, #contentsWrap .pcMenuWrap {position: static !important;}
+ #contentsWrap .searchWrap {position: absolute !important;}
+ #contentsWrap > .container {padding-top: 0;}
+
 }
