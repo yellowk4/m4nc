@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@media only print and (orientation: portrait) {
+  body {width:1100px; }
+  .header {position:relative;}
+  #contentsWrap > .container {padding-top:0;}
+  #contentsWrap .searchWrap.fixed {position:relative;}
+}
+
 /* 공통 CSS */
 .text-hidden {overflow:hidden !important; clip:rect(1px, 1px, 1px, 1px) !important; position:absolute !important; width:1px !important; height:1px !important;}
 .shareList {margin-bottom:60px;}
@@ -7,6 +14,8 @@
 .contents h4 {font-size:28px; line-height:1.6; color:#000; margin-bottom:40px;}
 .imgArea .mImg {display:none;}
 .imgArea img {width:100%; vertical-align:top;}
+.whiteBtn.small {padding: 0 15px; height: 40px; background: #ffffff; border: 1px solid #555; font-size: 14px; color:#333}
+.whiteBtn .icoDownload{display: inline-block; width: 19px; height: 17px; margin-right: 6px; background: url(/images/front/icon/ico_download02.png)no-repeat; vertical-align: middle;}
 
 /* 사업부문별 바로가기 */
 .businessUnitGo {width:100%; overflow:hidden; margin-bottom:60px;}
@@ -252,6 +261,18 @@
 /* CSR > CSR News > 글보기 */
 #CNT_K_014 .tabCtrlWrap {margin-bottom:60px;}
 
+/* CSR > Report*/
+.reportTit {background:url('/images/front/contents/bg_CNT_K_015.png') no-repeat center bottom; text-align:center; overflow:hidden;}
+.reportTit h4 {font-weight:600; font-size:42px; margin-bottom:30px;}
+.reportTit > span {display:block; font-size:18px; line-height:1.4;}
+.reportTit > span.last {margin-bottom:30px;}
+.reportTit .gray {color:#777777; font-size:16px; margin-bottom:50px;}
+.reportTit button {margin-bottom:80px;}
+#CNT_K_015 .tableBasicList {margin-bottom:20px;}
+#CNT_K_015 .tableBasicList th {font-weight:600; font-size:24px; padding:30px 0;}
+#CNT_K_015 .tableBasicList td {text-align:left; padding:30px 45px;}
+#CNT_K_015 .tableDatainfo {display:block; color:#777777; margin-bottom:60px;}
+
 /* 뉴스 > 리스트 */
 #CNT_K_016 .pageArea {margin-bottom:60px;}
 
@@ -419,11 +440,22 @@
 .boardViewArea .boardContWrap p {font-size:15px; margin-bottom:15px;}
 
 /* Overview */
-.overviewTit .partList li {width:49%; margin-right:2%; margin-bottom:2%; padding-top:25px; text-align:center; color:#fff;}
+.overviewTit {margin-bottom:30px;}
+.overviewTit .partList li {width:49%; margin-right:2%; margin-bottom:2%; padding-top:15px; text-align:center; color:#fff;}
 .overviewTit .partList li:nth-child(2n) {margin-right:0;}
-.overviewTit .partList .btnArea {line-height:56px !important;}
-.overviewTit .countInfo li {width:49%; margin-right:2%; margin-bottom:2%; margin-bottom:2%; padding-bottom:25px; border-bottom:1px solid #c8d4e4}
-.overviewTit .countInfo li:nth-child(2n) {margin-right:0}
+.overviewTit .partList li .title {margin-bottom:15px; font-size:18px; padding:0 5px 7px;}
+.overviewTit .partList li .icon {margin-bottom:10px;}
+.overviewTit .partList li .icon img {width:40%;}
+.overviewTit .partList li .btnArea a {background:none; padding-left:0; text-align:center; font-size:14px;}
+.overviewTit .partList li .btnArea {height:40px; line-height:40px !important;}
+.overviewTit .countInfo {padding:0;}
+.overviewTit .countInfo li {width:50%; padding:25px 0; border-bottom:1px solid #c8d4e4; box-sizing:border-box;}
+.overviewTit .countInfo li .number {font-size:20px;}
+.overviewTit .countInfo li .number .small {font-size:16px;}
+.overviewTit .countInfo li:nth-child(2n) {margin-right:0; border-right:0;}
+.overviewTit .countInfo li:nth-child(3), .overviewTit .countInfo li:nth-child(4) {border-bottom:0;}
+.overviewCont {margin-bottom:30px;}
+.overviewCont h4 {margin-bottom:5px;}
 
 /* 연혁 */
 #CNT_K_003 .businessUnitGo {margin-bottom:0;}
