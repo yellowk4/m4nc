@@ -106,8 +106,8 @@ ul.noneBg li{padding-left: 0; background-image: none;}
 .dirListBox.off .dirListImg img.offImg{display: block;} 2018-06-21 삭제 */
 .dirListBox.off .dirListName{opacity: 0.4;} /* 이름 및 내용 0.4 투명 */
 /* directCon location */
-.dirListBox.middle .directCon{left: -374px;}
-.dirListBox.right .directCon{left: -748px;}
+.dirListBox.middle .directCon{left:-106%}
+.dirListBox.right .directCon{left:-212%;}
 
 #CNT_K_053 .txt + ul, #CNT_K_054 .txt + ul {margin-top: 15px;}
 
