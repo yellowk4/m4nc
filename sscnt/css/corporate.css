@@ -16,13 +16,40 @@
 #CNT_K_050 .gray {display:block; margin-bottom:80px; color:#777777;}
 .overviewCont h4 {font-size:24px; margin-bottom:20px; font-weight:600; color:#111}
 
+
+/* 타이틀 영역 ~ CNT_K_063 */
+.corporate.type01{margin-top: 0;}
+.titleBox{padding: 106px 0 ; margin-bottom: 20px; text-align: center; background-repeat: no-repeat; background-size: cover;}
+.innerTxt{text-align: center; font-size: 18px; color: #ffffff; line-height: 1.4;}
+.innerTxt span, .txt span{display: block;}
+.titleBox + .btnArea{margin-bottom: 20px;}
+.titleBox + .btnArea button{margin-right: 0;}
+.titleBox.bg01{background-image: url(/images/front/contents/bg_CNT_K_051.png);}
+.titleBox.bg02{background-image: url(/images/front/contents/bg_CNT_K_051.png);}
+.titleBox.bg03{background-image: url(/images/front/contents/bg_CNT_K_051.png);}
+.titleBox.bg04{background-image: url(/images/front/contents/bg_CNT_K_051.png);}
+.titleBox.bg05{background-image: url(/images/front/contents/bg_CNT_K_063.jpg);}
+.titleBox .selectTab .select button{display: inline-block;}
+.corporate.type01 .txt + .listBu{margin-top: 10px; margin-bottom: 20px;}
+.corporate.type01 .txt + .listBu.type01{margin-bottom: 0;}
+#CNT_K_063 .listBu + .tableBasicList{margin-bottom: 40px;}
+.txt + .fieldTit {margin-top: 40px;}
+.txt.type01{margin-bottom: 20px;}
+.pL20{padding-left: 20px;}
+.txt + .pL20{margin-bottom: 40px;}
+.corporate.type01 .accordionWrap{margin-bottom: 60px;}
+
+/* corporate 거버넌스위원회 CNT_K_063 */
+.dataStandard{position: relative;}
+.dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
+
 /* corporate 정관 CNT_K_051 */
-.corporate{padding-top: 50px;}
-.corporate .color01, .corporate .smallTit{font-size: 20px; margin-bottom: 20px;}
+.corporate{margin-top: 50px;}
+.corporate .color01, .corporate .smallTit, .corporate .fieldTit{font-size: 20px; margin-bottom: 20px;}
 .corporate .smallTit{display: block; color: #333333;}
 .corporate section{margin-bottom: 40px;}
-.titleBox .left, .titleBox .right {float: left; width: 50%;}
-.titleBox .right{text-align: right;}
+/* .titleBox .left, .titleBox .right {float: left; width: 50%;}
+.titleBox .right{text-align: right;} */
 .titleBox .selectTab .select button{padding: 19px 32px 18px 19px; max-width: 445px; font-size: 18px; font-weight: 600; color: #333333;}
 .titleBox .selectTab .select button:after{top: 24px; right: 19px;}
 .titleBox .selectTab ul{top: 58px; max-width: 445px;}
@@ -131,9 +158,9 @@
 .accordion.active + .panel{border-top: 1px solid #d9d9d9;}
 
 /* MOBILE */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 812px){
     /* corporate 정관 CNT_K_051 */
-    .corporate{padding-top: 30px;}
+    .corporate{margin-top: 30px;}
     .titleBox .left{float: none; width: 100%;}
     .titleBox .right {display: none;}
     .corporate .color01, .corporate .smallTit{font-size: 16px; margin-bottom: 15px;}
@@ -166,8 +193,14 @@
     /* corporate 운영&역할 #CNT_K_064 */
     .listBu.type2 + .txt{margin-bottom: 30px;}
 
+    /* 타이틀 영역 ~ CNT_K_063 */
+    .titleBox{margin-bottom: 10px;}
+    .corporate.type01 .txt + .listBu{margin-top: 0; margin-bottom: 15px;}
+    .txt.type01{margin-bottom: 15px;}
+
     /* pc block > mobile inline */
     .bigTit > span, .txt > span {display: inline;}
+    .txt > .pL20{padding: 0;}
     /* shareList */
     #CNT_K_054 .shareList,#CNT_K_055 .shareList, #CNT_K_056 .shareList, #CNT_K_064 .shareList{margin-top: 30px;}
     /* 내용 짧은 테이블용 */
