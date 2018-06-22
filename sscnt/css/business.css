@@ -268,10 +268,13 @@
 .reportTit > span.last {margin-bottom:30px;}
 .reportTit .gray {color:#777777; font-size:16px; margin-bottom:50px;}
 .reportTit button {margin-bottom:80px;}
-#CNT_K_015 .tableBasicList {margin-bottom:20px;}
-#CNT_K_015 .tableBasicList th {font-weight:600; font-size:24px; padding:30px 0;}
-#CNT_K_015 .tableBasicList td {text-align:left; padding:30px 45px;}
-#CNT_K_015 .tableDatainfo {display:block; color:#777777; margin-bottom:60px;}
+.reportList {margin-bottom:20px; overflow:hidden; border-top:1px solid #0c4da2; border-bottom:1px solid #777777;}
+.reportList li {float:left; width:50%; height:100px; line-height:100px; overflow:hidden; border-bottom:1px solid #d9d9d9}
+.reportList li:last-child {border:0;}
+.reportList li .year {float:left; width:30%; text-align:center; background:#f8f8f8; font-weight:600; font-size:24px;}
+.reportList li .btnArea {float:left; width:70%; padding:0 45px; box-sizing:border-box;}
+.reportList li .btnArea button {margin-right:0;}
+.reportListinfo {display:block; color:#777777; margin-bottom:60px;}
 
 /* 뉴스 > 리스트 */
 #CNT_K_016 .pageArea {margin-bottom:60px;}
@@ -554,6 +557,14 @@ h4.actMainTitle {padding-bottom:12px;}
 .businessAreaBnr ul li.type12 {background:url('/images/front/contents/bg_CNT_K_008_02.jpg') no-repeat center center; background-size:100%; margin-bottom:10px;}
 .businessAreaBnr ul li.type13 {background:url('/images/front/contents/bg_CNT_K_008_03.jpg') no-repeat center center; background-size:100%; margin:0 0 10px 0;}
 .businessAreaBnr ul li.type14 {background:url('/images/front/contents/bg_CNT_K_008_04.jpg') no-repeat center center; background-size:100%;}
+
+/* CSR > Report */
+.reportTit > span {display:inline; font-size:15px; word-break: break-all;}
+.reportTit .gray {display:block; color:#777777; font-size:15px; margin:20px 0;}
+
+.reportList li {float:none; width:100%; overflow:hidden; height:60px; line-height:60px !important; }
+.reportList li .year {width:35%; font-size:18px;}
+.reportList li .btnArea {width:65%; padding:10px 15px;}
 
 /* 뉴스 > 팝업 이메일 공유*/
 .mailPopWrap {padding:6%;}

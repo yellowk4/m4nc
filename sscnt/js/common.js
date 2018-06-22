@@ -5,8 +5,8 @@ function trace(){ try{ var args = [].join.call(arguments, ' '); console.log( "ui
 var Utils = {
 	getMediaQuery: function(type){
 		return {
-			pc: window.matchMedia("(min-width:1024px)"),
-			tablet: window.matchMedia("(min-width:812px) and (max-width:1023px)"),
+			pc: window.matchMedia("(min-width:1025px)"),
+			tablet: window.matchMedia("(min-width:812px) and (max-width:1024px)"),
 			mobile: window.matchMedia("all and (max-width:811px)")
 		}[type];
 	}
