@@ -340,7 +340,8 @@ Ul style
 /* selectTab */
 .selectTab { position:relative; line-height: 1 !important; }
 .selectTab strong {line-height: 1 !important;}
-.selectTab ul { display:none; position:absolute; top:41px; left:0; z-index:5; width:100%; padding:3px 0; border:1px solid #ddd; background-color:#fafafa; line-height: 1 !important; } 
+.selectTab ul { display:none; position:absolute; top:39px; left:0; z-index:5; width:100%; padding:3px 0; border:1px solid #ddd; background-color:#fafafa; line-height: 1 !important; } 
+.selectTab ul li {line-height: 1 !important;}
 .selectTab.active ul { display:block; } 
 .selectTab a, .selectTab button { display:block; word-wrap:break-word; line-height: 1 !important;} 
 .selectTab a { padding: 10px; } 
