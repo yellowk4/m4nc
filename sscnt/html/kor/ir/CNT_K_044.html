@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>Overview : 삼성물산</title>
+<title>주주환원 : 삼성물산</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <link type="text/css" rel="stylesheet" href="/css/default.css" />
 <link type="text/css" rel="stylesheet" href="/css/layout_kor.css" />
-<link type="text/css" rel="stylesheet" href="/css/corporate.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
+<link type="text/css" rel="stylesheet" href="/css/ir.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="/js/media.match.min.js"></script>
@@ -16,17 +16,6 @@
 	<script src="/js/html5.js"></script>
 	<script src="/js/respond.js"></script>
 <![endif]-->
-<style>
-	@media screen and (max-width: 812px){
-		.overviewTit h4 {margin-bottom:20px; font-size:21px;}
-		.overviewTit h4 span {display:inline;}
-		.overviewTit p {margin-bottom:15px; font-size:15px;}
-		.overviewCont .buttonArea {text-align:center; margin-bottom:30px;}
-		.overviewCont .buttonArea button {height:40px; line-height:40px; font-size:14px;}
-		.overviewCont h4 {margin-bottom:20px; font-size:21px;}
-		#CNT_K_050 .gray {margin-bottom:30px;}
-	}
-</style>
 </head>
 <body>
 <div id="skipnavi">
@@ -175,9 +164,35 @@
 		<div class="moMenuWrap">
 			<div class="location">
 				<ol class="clfix">
-					<li>CORPORATE GOVERNANCE</li>
-					<li class="on">Overview</li>
+					<li>INVESTOR RELATIONS</li>
+					<li>주식 및 주주정보</li>
+					<li class="on">신용등급</li>
 				</ol>
+			</div>
+			<div class="selectTab typeBlue">
+				<strong class="select">
+					<button type="button">주주총회</button>
+				</strong>
+				<ul>
+					<li>
+						<a href="#none">기본정보</a>
+					</li>
+					<li>
+						<a href="#none">주가정보</a>
+					</li>
+					<li>
+						<a href="#none">주가지표</a>
+					</li>
+					<li>
+						<a href="#none">주주구성</a>
+					</li>
+					<li class="active">
+						<a href="#none">주주총회</a>
+					</li>
+					<li>
+						<a href="#none">주주환원</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div> <!-- // header -->
@@ -190,7 +205,7 @@
 					<div class="visualWrap">
 						<div class="inner">
 							<h3 class="visualTit">
-				  Overview <span><i class="home">home</i>CORPORATE GOVERNANCE</span>
+								주주환원 <span><i class="home">home</i>INVESTOR RELATIONS</span>
 							</h3>
 						</div>
 					</div>
@@ -209,179 +224,177 @@
 						</div>
 					</div>
 				</div>
-
-				
-
 				<div class="pcMenuWrap">
 					<div class="navbar inner">
-						<a href="javascript:;" class="on">Overview</a> <!-- 활성화 시 "on" 추가 -->
-						<a href="javascript:;" class="">정관</a>
-						<a href="javascript:;">윤리강령</a>
+						<a href="javascript:;">Overview</a> <!-- 활성화 시 "on" 추가 -->
 						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-							<button class="dropbtn">이사회 <i class="dropdownIcon"></i></button>
+							<button class="dropbtn">재무정보 <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
-								<a href="#">이사회 구성</a>
-								<a href="#">운영 &amp; 역할</a>
-								<a href="#">활동내역 &amp; 평가보상</a>
+								<a href="#">요약재무제표</a>
+								<a href="#">신용등급</a>
+								<a href="#">감사/검토보고서</a>
+								<a href="#">사업보고서</a>
+								<a href="#">실적발표 자료</a>
 							</div>
 						</div>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-							<button class="dropbtn">위원회 <i class="dropdownIcon"></i></button>
+						<a href="javascript:;">공시정보</a>
+						<a href="javascript:;">IR일정</a>
+						<div class="dropdown on"> <!-- 활성화 시 "on" 추가 -->
+							<button class="dropbtn">주식 및 주주정보 <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
-								<a href="#">개요</a>
-								<a href="#">경영위원회</a>
-								<a href="#">감사위원회</a>
-								<a href="#">사외이사후보추천위원회</a>
-								<a href="#">보상위원회</a>
-								<a href="#">내부거래위원회</a>
-								<a href="#">CSR위원회</a>
+								<a href="#">기본정보</a>
+								<a href="#">주가정보</a>
+								<a href="#">주가지표</a>
+								<a href="#">주주구성</a>
+								<a href="#">주주총회</a>
+								<a href="#">주주환원</a>
 							</div>
 						</div>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-							<button class="dropbtn">기타 위원회 <i class="dropdownIcon"></i></button>
-							<div class="dropdownCont">
-								<a href="#">거버넌스위원회</a>
-							</div>
-						</div>
-						<a href="javascript:;">외부감사인</a>
+						<a href="javascript:;">FAQ</a>
+						<a href="javascript:;">Contact IR</a>
 					</div>
 				</div>
-				<div id="CNT_K_050" class="contents"> <!-- 페이지별 ID -->
-					<div class="overviewTit">
-						<h4>삼성물산은 인재와 기술을 바탕으로 최고의 제품과 서비스를 창출하여 최고의 제품과 서비스를 창출 하여 인류사회에 공헌한다는 경영이념 아래 국내외에서 <span class="color01">존경받고 신뢰받는 기업이 되는 것을 목표로 합니다.</span></h4>
-						<p>삼성물산은 주주의 권리를 보호하고, 고객과 직원, 협력사 등 이해관계자에 대한 기업의 사회적 책임을 다하고자 노력하며, 독립적인 이사회 운영 등 투명하고 책임있는 경영을 통해 지속가능한 성장을 지향할 것입니다.</p>
-						<p>우리 모두는 건전한 기업지배구조와 깨끗한 조직문화 수립이 세계 초일류 기업의 초석이라는 믿음으로 "삼성물산 기업지배구조헌장"을 제정하여 우리의 행동과 가치판단의 일반 원칙으로 삼고자 합니다.</p>
+				<div id="CNT_K_044" class="contents"> <!-- 페이지별 ID -->
+          <div class="returnPolicyWrap">
+            <h4>주주환원정책</h4>
+            <div class="returnPolicyCont">
+              <p><span class="color01">['15.9월 발표]</span> 삼성물산은 주주친화 정책을 아래의 3가지를 축으로 추진</p>
+              <ul class="type01">
+                <li>- 주주와 직접 소통을 강화</li>
+                <li>- 주주환원을 통해 실질적 주주가치 제고: 배당성향 30% 지향</li>
+                <li>- 거버넌스위원회 및 CSR위원회 운영을 통해 주주권익을 보호하는 한편 사회적 책임을 이행</li>
+              </ul>
+              <p>또한, 거버넌스위원 중 1명을 주주권익보호 담당위원으로 명하여 투자자 및 시장의 Voice를 경청하여 거버넌스위원회 및 이사회에 보고하도록 역할 부여</p>
+              <ul class="type02">
+                <li>&#183; '17년에는 글로벌 지배구조 흐름에 대한 이해도를 높이기 위해 ICGN 컨퍼런스에도 참석</li>
+              </ul>
+            </div>
+            <div class="returnPolicyCont">
+              <p><span class="color01">['18.1월 발표]</span> 3개년('17년~'19년) 배당정책 발표</p>
+              <ul class="type01">
+                <li>- 배당에 대한 투자자의 예측가능성 및 주주가치 제고 차원에서 '17년부터 '19년까지 3년간매년 보통주 1주당 2,000원 지급 결정</li>
+                <li>- 주주환원을 통해 실질적 주주가치 제고: 배당성향 30% 지향</li>
+                <li>- 거버넌스위원회 및 CSR위원회 운영을 통해 주주권익을 보호하는 한편 사회적 책임을 이행</li>
+              </ul>
+              <ul class="type02">
+                <li>&#183; 이는 '16년 보통주당 550원 대비 3.6배 증가 </li>
+                <li>&#183; '17년 배당성향은 51.6% 수준, '17년 시가배당률은 '16년 0.4%대비 증가한 1.6% </li>
+              </ul>
+            </div>
+            <div class="bottomArea">
+              <button class="fillBtn"><span class="icoDownload"></span>배당정책 발표문 다운로드</button>
+            </div>
+          </div>
+          <div class="distributionList">
+            <h4>배당내역</h4>
+            <div class="tableBasicList">
+              <table class="defaultTable minW100">
+                <caption>주요 주주 현황 내용</caption>
+                <colgroup>
+                  <col style="width:21%">
+                  <col style="width:16%">
+                  <col style="width:21%">
+                  <col style="width:21%">
+                  <col style="width:21%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2">구분</th>
+                    <th scope="col">2015년</th>
+                    <th scope="col">2016년</th>
+                    <th scope="col">2017년</th>
+                  </tr>
+                </thead>               
+                <tbody>
+                  <tr>
+                    <th scope="row" rowspan="2">배당금</th>
+                    <td>보통주</td>
+                    <td class="alignR">500원</td>
+                    <td class="alignR">550원</td>
+                    <td class="alignR">2,000원</td>
+                  </tr>   
+                  <tr>
+                    <td>우선주</td>
+                    <td class="alignR">560원</td>
+                    <td class="alignR">600원</td>
+                    <td class="alignR">2,050원</td>
+                  </tr> 
+                  <tr>
+                    <th scope="row" rowspan="3">배당금액</th>
+                    <td>보통주</td>
+                    <td class="alignR">831억원</td>
+                    <td class="alignR">899억원</td>
+                    <td class="alignR">3,269억원</td>
+                  </tr>    
+                  <tr>
+                    <td>우선주</td>
+                    <td class="alignR">8억원</td>
+                    <td class="alignR">9억원</td>
+                    <td class="alignR">30억원</td>
+                  </tr>     
+                  <tr>
+                    <td>계</td>
+                    <td class="alignR">839억원</td>
+                    <td class="alignR">9억원</td>
+                    <td class="alignR">30억원</td>
+                  </tr>       
+                  <tr>
+                    <th scope="row" colspan="2">당기순이익 (지배지분)</th>
+                    <td class="alignR">* 27,468억원</td>
+                    <td class="alignR">1,073억원</td>
+                    <td class="alignR">6,398억원</td>
+                  </tr>          
+                  <tr>
+                    <th scope="row" colspan="2">배당성향</th>
+                    <td class="alignR">3.1%</td>
+                    <td class="alignR">84.6%</td>
+                    <td class="alignR">51.6%</td>
+                  </tr>    
+                  <tr>
+                    <th scope="row">주가</th>
+                    <td>보통주</td>
+                    <td class="alignR">140,000원</td>
+                    <td class="alignR">125,500원</td>
+                    <td class="alignR">126,000원</td>
+                  </tr>   
+                  <tr>
+                    <th scope="row">시가배당률</th>
+                    <td>보통주</td>
+                    <td class="alignR">0.36%</td>
+                    <td class="alignR">0.44%</td>
+                    <td class="alignR">1.59%</td>
+                  </tr>    
+                </tbody>
+              </table>              
+            </div>
+            <span class="addNotice">* 합병관련 구 삼성물산의 자산과 부채, 바이오 사업 등에 대한 공정가치를 재평가한 결과발생된 평가이익(2.9조원)이 반영되어 있음</span>
+          </div>
+          <div class="returnListWrap">
+            <h4>지가주식 매입 내역</h4>
+            <div class="returnPolicyCont">
+              <ul class="type01">
+                <li>- 매입 기간: 2015.7.24 ~ 2015.10.8</li>
+                <li>- 매입 주식수 및 매입액: 250만주, 4,090억원</li>
+                <li> '18년 현재 자기주식 보유현황</li>
+              </ul>
+              <ul class="type02">
+                <li>&#183; 보통주 26,225,503주(전체 발행주식수의 14%)</li>
+                <li>&#183; 우선주 159,849주(전체 발행주식수의 10%)</li>
+              </ul>
+            </div>           
+          </div>
+					<!-- 연관정보 바로가기 -->
+					<div class="relationInfo">
+						<h4 class="contTit">연관정보 바로가기</h4>
+						<div class="buttonWrap">
+							<button class="blankBtn">사업영역</button>
+							<button class="blankBtn">뉴스</button>
+							<button class="blankBtn">Our CSR</button>
+							<button class="blankBtn">거버넌스위원회</button>
+						</div>
 					</div>
-					<div class="overviewCont">
-						<div class="buttonArea">
-							<button class="fillBtn"><span class="icoDownload"></span>기업지배구조헌장 다운로드</button><!-- 2018-06-21 텍스트 수정 -->
-						</div>
-						<h4>기업지배구조 모범규준 권고사항 채택여부</h4>
-						<div class="tableBasicList">
-							<table class="defaultTable">
-								<caption>기업지배구조 모범규준 권고사항 채택여부</caption>
-								<colgroup>
-								<col style="width:60%" />
-								<col style="width:15%" />
-								<col style="width:25%" />
-								</colgroup>
-								<thead> <!-- 2018-06-21 thead 추가 -->
-									<tr>
-										<th>모범규준 권고사항</th>
-										<th>채택여부</th>
-										<th>비고</th>
-									</tr>
-								</thead>
-								<tbody> <!-- 2018-06-21 tbody 추가 -->
-									<tr>
-										<td class="title">기업지배구조헌장 도입</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">기업 및 임직원 윤리규정 도입</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>  
-									<tr>
-										<td class="title">집중투표제 도입</td>
-										<td>X</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">주주총회 관련 정보 주주에 사진 제공</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr> 
-									<tr>
-										<td class="title">이사회 구성(과반수 사외의사)</td>
-										<td>○</td>
-										<td>사외이사 5명, 사내이사 4명</td>
-									</tr>
-									<tr>
-										<td class="title">대표이사와 이사회의장의 분리</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">이사회 활동내역, 출석률 및 주요안건에 대한 찬반여부 공시</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">사외이사후보추천위원회 구성</td>
-										<td>○</td>
-										<td>사외이사 3명</td>
-									</tr>
-									<tr>
-										<td class="title">보상위원회 구성</td>
-										<td>○</td>
-										<td>사외이사 3명</td>
-									</tr>
-									<tr>
-										<td class="title">감사위원회 구성</td>
-										<td>○</td>
-										<td>사외이사 3명</td>
-									</tr>
-									<tr>
-										<td class="title">이사회 산하 위원회 구성 현황과 역할, 활동내역 공시</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">이사회 및 산하 위원회의 운영규정 도입 및 공시</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">회사의 비용으로 이사의 손해배상 책임보험 가입</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">이사회 활동내용 평가</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">외부감시인의 독립성 유지</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">대표이사 및 재무담당책임자의 재무보고에 대한 정확성과 완전성 인증</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">기업지배구조모범규준과의 차이 설명</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td class="title">감사보고서 및 중요 수시공시 사항의 공시</td>
-										<td>○</td>
-										<td>&nbsp;</td>
-									</tr>
-								</tbody>
-							</table>           
-						</div>
-						<span class="gray">※ 기업지배구조 모범규준은 한국기업지배구조원에서 제시한 규준을 의미합니다.</span>          
-						<ul class="shareList">
-							<li class="email"><button><span class="blind">이메일</span></button></li>
-							<li class="facebook"><button><span class="blind">페이스북</span></button></li>
-						</ul>
-						<div class="relationInfo">
-							<h4 class="contTit">연관정보 바로가기</h4>
-							<div class="buttonWrap">
-								<button class="blankBtn">사업영역</button>
-								<button class="blankBtn">CSR Act</button>
-								<button class="blankBtn">IR 일정</button>
-								<button class="blankBtn">주주환원</button>
-							</div>
-						</div>
-					</div>
-				</div> <!--// contents -->
+					<!-- // 연관정보 바로가기 -->
+				</div> <!-- // contents -->
 			</div>
 
 		</div> <!-- // container -->
@@ -504,25 +517,25 @@
 						<li><a href="#none">이메일주소무단수집거부</a></li>
 						<li><a href="#none">Legal Notice</a></li>
 						<li><a href="#none">개인정보 취급방침</a></li>
-						<li class="ethic-manage">
+                        <li class="ethic-manage">
 							<a href="#none" class="btnEthic">윤리경영</a>
 							<div class="ethicArea">
-								<div class="container">
-									<dl class="corp">
-										<dt>윤리경영 사이트</dt>
-										<dd>
-											<a href="http://www.withsamsung.co.kr/ko/html/main/index.html" target="_blank" title="새창">건설/상사부문</a>
-										</dd>
-										<dd>
-											<a href="http://www.samsungfashion.com/contents/ethics.jsp#tabs?main=1" target="_blank" title="새창">패션부문</a>
-										</dd>
-										<dd>
-											<a href="http://audit.everland.com/main.html" target="_blank" title="새창">리조트부문</a>
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</li>
+                                <div class="container">
+                                    <dl class="corp">
+                                        <dt>윤리경영 사이트</dt>
+                                        <dd>
+                                            <a href="http://www.withsamsung.co.kr/ko/html/main/index.html" target="_blank" title="새창">건설/상사부문</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="http://www.samsungfashion.com/contents/ethics.jsp#tabs?main=1" target="_blank" title="새창">패션부문</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="http://audit.everland.com/main.html" target="_blank" title="새창">리조트부문</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
 						<li class="contact"><a href="#none">Contact Us</a></li>
 						<li class="sitemap"><a href="#none">Sitemap</a></li>
 					</ul>
@@ -566,8 +579,8 @@
 								</dl>
 								<dl class="related">
 									<dt>관계사 사이트</dt>
-									<!-- 2017-03-09 패밀리사이트 삭제
-									<dd><a href="#none" target="_blank" title="새창">삼성</a></dd> -->
+                                    <!-- 2017-03-09 패밀리사이트 삭제
+                                    <dd><a href="#none" target="_blank" title="새창">삼성</a></dd> -->
 									<dd><a href="#none" target="_blank" title="새창">삼성전자</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">삼성SDI</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">삼성SDS</a></dd>
@@ -583,7 +596,7 @@
 								</dl>
 								<dl class="etc">
 									<dt>기타</dt>
-									<!-- 2017-03-09 패밀리사이트 삭제
+                                    <!-- 2017-03-09 패밀리사이트 삭제
 									<dd><a href="#none" target="_blank" title="새창">삼성채용사이트</a></dd> -->
 									<dd><a href="#none" target="_blank" title="새창">삼성사회봉사단</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">삼성장학회</a></dd> <!-- 2016-04-12 텍스트 수정 -->
