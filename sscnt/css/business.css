@@ -106,12 +106,12 @@
 .historyBtnWrap a {display:inline-block; width:206px; height:56px; line-height:56px; text-align:center; color:#fff; font-size:18px; background:#0c4da2;}
 .historyList {overflow:hidden; border-top:1px solid #0c4da2;}
 .historyList > li {padding:50px 0; border-bottom:1px solid #d9d9d9; overflow:hidden;}
-.historyList > li .year {float:left; font-size:36px; color:#000; margin-right:196px; font-weight:600;}
-.historyList > li .monthList {float:left;}
+.historyList > li .year {float:left; font-size:36px; color:#000; width:20%; font-weight:600;}
+.historyList > li .monthList {float:left; width:80%;}
 .historyList > li .monthList > li {overflow:hidden; margin-bottom:40px;}
 .historyList > li .monthList > li:last-child {margin-bottom:0;}
-.historyList > li .monthList > li .month {float:left; font-size:24px; margin-right:50px; font-weight:600; color:#0c4da2;}
-.historyList > li .monthList > li .detailList {float:left; overflow:hidden; color:#333333;}
+.historyList > li .monthList > li .month {float:left; font-size:24px; width:10%; font-weight:600; color:#0c4da2;}
+.historyList > li .monthList > li .detailList {float:left; width:90%; overflow:hidden; color:#333333;}
 .historyList > li .monthList > li .detailList li {margin-bottom:8px;}
 .historyList > li .monthList > li .detailList li.historyImg img {width:100%; max-width:450px; vertical-align:top;}
 #CNT_K_003 .defaultTabCon {margin-bottom:50px;}
@@ -469,11 +469,11 @@
 .historyBtnWrap {display:none;}
 .historyList {overflow:hidden; border-top:1px solid #0c4da2;}
 .historyList > li {padding:20px 0; border-bottom:1px solid #d9d9d9; overflow:hidden;}
-.historyList > li .year {width:20%; font-size:18px; color:#000; margin-right:0; font-weight:600;}
+.historyList > li .year {font-size:18px; color:#000;font-weight:600;}
 .historyList > li .monthList {float:left; width:80%;}
 .historyList > li .monthList > li {margin-bottom:18px;}
-.historyList > li .monthList > li .month {display:block; float:none; font-size:16px; margin-right:0; margin-bottom:4px;}
-.historyList > li .monthList > li .detailList {float:left; overflow:hidden; color:#333333;}
+.historyList > li .monthList > li .month {display:block; float:none; font-size:16px; width:100%; margin-bottom:4px;}
+.historyList > li .monthList > li .detailList {float:none; width:100%; overflow:hidden; color:#333333;}
 .historyList > li .monthList > li .detailList li {font-size:15px; margin-bottom:4px;}
 
 /* CSR > 인사말 */
