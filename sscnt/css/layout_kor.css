@@ -340,12 +340,12 @@ Ul style
 /* selectTab */
 .selectTab { position:relative; line-height: 1 !important; }
 .selectTab strong {line-height: 1 !important;}
-.selectTab ul { display:none; position:absolute; top:41px; left:0; z-index:5; width:100%; padding:3px 0; border:1px solid #ddd; background-color:#fafafa; } 
+.selectTab ul { display:none; position:absolute; top:41px; left:0; z-index:5; width:100%; padding:3px 0; border:1px solid #ddd; background-color:#fafafa; line-height: 1 !important; } 
 .selectTab.active ul { display:block; } 
-.selectTab a, .selectTab button { display:block; word-wrap:break-word; } 
+.selectTab a, .selectTab button { display:block; word-wrap:break-word; line-height: 1 !important;} 
 .selectTab a { padding: 10px; } 
 .selectTab li.active a, .selectTab li a:hover { color:#2a6eb6; } 
-.selectTab .select button { display:block; overflow:hidden; position: relative; width:100%; padding:10px 23px 10px 10px; border:1px solid #ddd; color:#555; text-align:left; text-overflow:ellipsis; white-space:nowrap; font-size: 16px; } 
+.selectTab .select button { display:block; overflow:hidden; position: relative; width:100%; padding:10px 23px 10px 10px; border:1px solid #ddd; color:#555; text-align:left; text-overflow:ellipsis; white-space:nowrap; font-size: 16px; line-height: 1 !important;} 
 .selectTab .select button:after { content:''; position: absolute; top:15px; left: auto; right:10px; display:inline-block; width: 13px; height: 7px; background:url('/images/front/icon/ico_arrow_open.png') no-repeat; background-size:13px 7px; } 
 .selectTab.active .select button:after { background-image:url('/images/front/icon/ico_arrow_close.png'); } 
 
