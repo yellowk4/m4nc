@@ -262,6 +262,15 @@
 
     /* notiTxt */
     .notiTxt{display: block;}
+
+    /* IR - Contact IR CNT_K_049 */
+    #CNT_K_049 {padding:0;}
+    .contactWrap {padding:0 20px; box-sizing:border-box;background:url('/images/front/contents/bg_CNT_K_049_m.png') no-repeat center bottom; background-size:100%; padding-bottom:50%; }
+    .contactWrap h4 {margin-bottom:25px; font-size:15px;text-align:left;}
+    .contactWrap h4 .emphasisTxt {font-size:21px; margin-bottom:20px; display:block;}
+    .contactWrap h4 > span {display:inline;}
+    .contactWrap .inquiryBtn {width:40%; height:45px; line-height:45px; background:#0c4da2; padding-left:0; box-sizing:border-box; color:#fff; font-size:16px;}
+
 }
 
 @media screen and (max-width: 640px){
