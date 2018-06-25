@@ -45,7 +45,7 @@ a, a:link, a:visited, a:active { color:#555; text-decoration:none; word-break: k
 a:hover { color:#555; } 
 a[class~="btn"] { vertical-align:middle; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box; text-decoration:none; } /* 버튼의 경우에 언더라인 삭제 */
 
-a, button { -webkit-tap-highlight-color : rgba(0, 0, 0, 0); -webkit-touch-callout : none; -webkit-user-select : none; } 
+a, button { margin: 0; -webkit-tap-highlight-color : rgba(0, 0, 0, 0); -webkit-touch-callout : none; -webkit-user-select : none; } 
 
 .clfix:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; } 
 .clfix { display: inline-block; } 
