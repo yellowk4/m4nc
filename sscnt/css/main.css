@@ -105,7 +105,7 @@
 .corporWrap li:nth-child(3) { background-image:url(/images/front/main/ico_coppor03.png); } 
 .corporWrap li a { display:inline; font-size:24px; font-weight:bold; color:#333; } 
 /* 미디어쿼리 */
-@media screen and (max-width:768px){
+@media screen and (max-width:812px){
  .header { transform: inherit !important; } 
  body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,select,input,textarea,p,blockquote,th,td,figure,figcaption { line-height:inherit !important; } 
  /* MAIN */
