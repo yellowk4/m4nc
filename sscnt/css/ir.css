@@ -120,6 +120,14 @@
 .faqWrap .panel{padding-left: 84px; line-height: 1.6; background: url(/images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
 .faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(/images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
 
+/* IR - Contact IR CNT_K_049 */
+.contactWrap {text-align:center; background:url('/images/front/contents/bg_CNT_K_049.png') no-repeat center bottom; padding-bottom:270px;}
+.contactWrap h4 {margin-bottom:25px; font-size:24px; line-height:1.4;}
+.contactWrap h4 .emphasisTxt {font-size:42px; font-weight:600; line-height:1.4; margin-bottom:20px;}
+.contactWrap h4 > span {display:block;}
+.contactWrap .inquiryBtn {display:inline-block; width:157px; height:56px; line-height:56px; background:#0c4da2 url('/images/front/icon/ico_inquiry.png') no-repeat 30px center; padding-left:40px; box-sizing:border-box; color:#fff; font-size:18px;}
+
+
 /* COMMON STYLE */
 /* 아코디언 */
 .accordion {position: relative; cursor: pointer; padding: 44px 29px 44px 30px; width: 100%; border: none; border-top: 1px solid #d9d9d9; color: #111; font-size: 24px; text-align: left; outline: none; word-break: keep-all; transition: 0.4s; } 
