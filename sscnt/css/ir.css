@@ -113,6 +113,17 @@
 .tableBasicList + .pText{margin-top: 20px;}
 .tableBasicList + .listTit {margin-top: 50px;}
 
+/* IR - 주주환원 CNT_K_044 */
+#CNT_K_044 h4 {font-size:24px; font-weight:600; margin-bottom:20px; color:#111;}
+.returnPolicyCont {margin-bottom:40px; line-height:1.6;} 
+.returnPolicyCont ul.type01 {margin-bottom:10px;}
+.returnPolicyCont p {margin-bottom:10px;}
+.returnPolicyCont ul.type02 li {text-indent:18px;}
+#CNT_K_044 .bottomArea {text-align:right; margin-bottom:40px;}
+#CNT_K_044 .distributionList {margin-bottom:40px;}
+#CNT_K_044 .tableBasicList {margin-bottom:20px; }
+#CNT_K_044 .addNotice {color:#555555;}
+
 /* IR - FAQ CNT_K_045 */
 .faqWrap{padding-top: 60px; border-bottom: 1px solid #777777;}
 .faqPart{display: block; padding-bottom: 10px; color: #0075c2; font-size: 16px;}
@@ -244,6 +255,8 @@
 
     /* IR - 주주구성 CNT_K_042 */
     #CNT_K_042 section, .fieldWrap {margin-bottom: 30px;}
+
+
 
     /* IR - FAQ CNT_K_045 */
     .faqWrap{padding-top: 0;}
