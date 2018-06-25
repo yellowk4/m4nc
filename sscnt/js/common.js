@@ -1158,12 +1158,6 @@ $(function() {
 });
 
 
-
-function newFunction() {
-	$(".pcMenuWrap").blur(function () {
-		alert(AA);
-	});
-}
 // function hideAddressBar()
 // {
 //   if(!window.location.hash)
