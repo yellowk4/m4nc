@@ -748,10 +748,19 @@ lnbApp.event = function(){
 	
 		if($this.hasClass("active")){
 			$this.toggleClass("active");
+
+
+			
 			return;
 		}
 		$this.siblings().removeClass("active")
 		$this.addClass("active");
+
+		//PC 드롭다운 영역 블러처리
+		lnbApp.$pcLnbDepth.on("mouseleave", function(){
+			$(this).removeClass("active");
+		});
+		
 	}
 	
 	// lnbApp.$moLnbListEvent = function(e){
@@ -774,6 +783,7 @@ lnbApp.event = function(){
 	//lnbApp.$moLnbSelect.on("click",lnbApp.$moLnbListEvent);
 	
 	//setTimeout(lnbApp.$moLnbListEvent(),10));
+	
 }
 
 
@@ -1144,6 +1154,12 @@ $(function() {
 });
 
 
+
+function newFunction() {
+	$(".pcMenuWrap").blur(function () {
+		alert(AA);
+	});
+}
 // function hideAddressBar()
 // {
 //   if(!window.location.hash)
