@@ -698,11 +698,6 @@ gnbApp.event = function (){
 		// var gap = Math.round((14 * 100) / $(window).outerHeight(true));
 		// TweenMax.set($(".contents"), { paddingTop: (vh - gap) + 'vh' })
 
-		var $moTop = $(".moMenuWrap"),
-			$moTopH = $moTop.outerHeight(true);
-
-		$(".contents").css("padding-top", $moTopH + 30);
-
 		$(window).off("scroll").on("scroll", gnbApp.scrollEventHandler);
 
 
@@ -727,6 +722,15 @@ gnbApp.event = function (){
 
 			$(".contents").css("padding-top", $moTopH + 30);
 		});
+
+		//아이폰 대응 setTimeout 추가
+		setTimeout(function() {
+			var $moTop = $(".moMenuWrap"),
+			$moTopH = $moTop.outerHeight(true);
+
+			$(".contents").css("padding-top", $moTopH + 30);
+		}, 300);
+		
 	}
 
 	
