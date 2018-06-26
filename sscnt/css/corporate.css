@@ -31,7 +31,6 @@
 .titleBox .selectTab + .innerTxt{margin-top: 30px;}
 .accordionWrap{border-bottom: 1px solid #777777;}
 .subTit + .accordionWrap{margin-top: 20px;}
-.corporate .accordionWrap{margin-bottom: 60px;}
 
 /* dataStandard span */
 .dataStandard{position: relative;}
@@ -63,7 +62,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .defaultGrayDotList li {background-position: 0 10px;}
 
 /* corporate 윤리강령 CNT_K_052 */
-#CNT_K_052 .corporate{margin-bottom: 60px;}
+#CNT_K_052 .corporate{margin-bottom: 80px;}
 #CNT_K_052 .txt + section, #CNT_K_052 section + .subTit{margin-top: 40px;}
  #CNT_K_052 ul.noneBg{padding: 10px 0;}
  #CNT_K_052 ul.noneBg li{padding-left: 0; background-image: none;}
@@ -192,7 +191,10 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 /* 연관정보 바로가기 */
 .relationInfo{margin-top: 60px;}
 /* shareList */
-#CNT_K_054 .shareList, #CNT_K_055 .shareList, #CNT_K_056 .shareList, #CNT_K_057 .shareList, #CNT_K_064 .shareList{margin-top: 60px;}
+#CNT_K_054 .shareList, #CNT_K_055 .shareList, #CNT_K_056 .shareList, 
+#CNT_K_057 .shareList, #CNT_K_058 .shareList, #CNT_K_059 .shareList, 
+#CNT_K_060 .shareList, #CNT_K_061 .shareList, #CNT_K_062 .shareList, 
+#CNT_K_063 .shareList, #CNT_K_064 .shareList{margin-top: 80px;}
 /* 아코디언 */
 .accordion {position: relative; cursor: pointer; padding: 44px 29px 44px 30px; width: 100%; border: none; border-top: 1px solid #d9d9d9; color: #111; font-size: 24px; text-align: left; font-weight: 700; outline: none; word-break: keep-all; transition: 0.4s; } 
 .accordion.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;}
@@ -332,7 +334,10 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     /* pc block > mobile inline */
     .bigTit > span, .txt > span, .innerTxt span, .txt span, .listBu .listSapn span{display: inline;}
     /* shareList */
-    #CNT_K_054 .shareList,#CNT_K_055 .shareList, #CNT_K_056 .shareList, #CNT_K_064 .shareList{margin-top: 30px;}
+    #CNT_K_054 .shareList, #CNT_K_055 .shareList, #CNT_K_056 .shareList, 
+    #CNT_K_057 .shareList, #CNT_K_058 .shareList, #CNT_K_059 .shareList, 
+    #CNT_K_060 .shareList, #CNT_K_061 .shareList, #CNT_K_062 .shareList, 
+    #CNT_K_063 .shareList, #CNT_K_064 .shareList{margin-top: 30px;}
     /* 내용 짧은 테이블용 */
     .defaultTable.minW100{min-width: 100%;}
 
