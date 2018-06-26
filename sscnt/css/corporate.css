@@ -211,6 +211,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .smallTit + .txt, .subTit + .txt, .subTit + ul {margin-top: 15px;}
     .txt + .subTit {margin-top: 30px;}
     .corporate .accordionWrap{margin-bottom: 30px;}
+    .btnArea.pcType{display: none;}
 
     /* 타이틀 영역 */
     .titleBox{margin-bottom: 10px;}
