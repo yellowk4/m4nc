@@ -217,6 +217,7 @@
     .irLinkWrap .irLink .irA {padding: 15px 0 17.25%; background-size: 32%; background-position: center 75%;}
     .relationArticle .title{margin-bottom: 15px;}
     #CNT_K_028 .btnArea{margin-bottom: 30px;}
+    .relationArticle ul li {background-position: left 6px center; padding: 10px 15px;}
 
     /* IR - 신용등급 CNT_K_031 */
     #CNT_K_031 .tableBasicList, #CNT_K_042 .tableBasicList{margin-bottom: 15px;}
@@ -234,7 +235,7 @@
     .reportTit dt{font-size: 25px; padding-bottom: 22px;}
     .report{margin-bottom: 10px;}
     .report .defaultTable th{font-size: 18px;}
-    .report .whiteBtn.small{min-width: auto;}
+    .report .whiteBtn.small{min-width: 140px;}
     .report + .pText {margin-bottom: 10px;}
     .grayBox{margin-bottom: 30px;}
     .rightBtn{display: none;}
@@ -252,8 +253,8 @@
     .yearPlanDiv div{float: none; width: 100%;}
     .planBu{font-size: 14px;}
     .ypDate{font-size: 15px;}
-    .planBtn{text-align: left; margin-top: 15px;}
-    .planBtn button {margin-left: 0;}
+    .planBtn{text-align: left; margin-top: 5px;}
+    .planBtn button {margin-left: 0; margin-top: 10px;}
     .yearWrap .panel{padding: 0 15px;} /* IR일정 아코디언*/
 
     #CNT_K_038 .panel, #CNT_K_043 .panel {padding: 0 10px;}
