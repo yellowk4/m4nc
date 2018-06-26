@@ -1033,4 +1033,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,selec
  #contentsWrap .searchWrap {position: absolute !important;}
  #contentsWrap > .container {padding-top: 0;}
 
+ .header, #contentsWrap .searchWrap, .footer {display: none;}
+ #contentsWrap > .container {padding-top: 0;}
+ #contentsWrap .pcMenuWrap .inner {padding: 0;}
+
 }
