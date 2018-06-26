@@ -227,6 +227,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .titleBox .left{float: none; width: 100%;}
     .titleBox .right {display: none;}
     .corporate .color01, .corporate .smallTit, .corporate .subTit{font-size: 16px;}
+    .smallTit + section, section + .smallTit{margin-top: 30px;} /*부 칙*/
 
     /* corporate 윤리강령 CNT_K_052 */
     #CNT_K_052 .corporate{margin-bottom: 30px;}

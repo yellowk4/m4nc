@@ -255,6 +255,7 @@
 
     /* IR - 주주구성 CNT_K_042 */
     #CNT_K_042 section, .fieldWrap {margin-bottom: 30px;}
+    #CNT_K_042 .tableBasicList tfoot td {padding: 8px 10px; font-size: 15px;}
 
 
 
