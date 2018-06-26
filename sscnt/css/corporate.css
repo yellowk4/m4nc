@@ -74,7 +74,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 #CNT_K_053 .listBu li{color: #777;}
 /* directCon */
 .downBox{padding: 40px 0; text-align: right; border-bottom: 1px solid #d9d9d9;}
-.dirListBox{float: left; width: 32%;}
+.dirListBox{float: left; width: 32%; cursor: pointer;}
 .dirListBox.middle{margin: 0 2%;}
 .dirListName{position: relative; padding: 30px;}
 .dirListName:after{content: ''; position: absolute; right: 30px; top: 50%; margin-top: -13px; display: block; width: 26px; height: 26px; background: url(/images/front/icon/ico_gray_plus.png) no-repeat ;}
