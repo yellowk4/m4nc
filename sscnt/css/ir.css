@@ -9,7 +9,7 @@
 .relationArticle ul {margin-bottom: 20px; border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
 .relationArticle ul li {width: 100%; line-height: 60px; line-height: 60px; overflow: hidden; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 30px center; box-sizing: border-box; padding: 0 30px 0 40px; border-bottom: 1px solid #d9d9d9;}
 .relationArticle ul li .boardTit {float: left; width: calc(100% - 100px); margin-right: 15px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap;}
-#CNT_K_028 .btnArea{margin-bottom: 60px;}
+#CNT_K_028 .btnArea{margin-bottom: 80px;}
 #CNT_K_028 .fillBtn.small{position: relative; padding-right: 42px; font-size: 14px; color: #fff; height: auto; line-height: 38px;}
 #CNT_K_028 .fillBtn.small:after{content: ''; position: absolute; right: 14px; top: 50%; margin-top: -7px; width: 7px; height: 11px; background: url(/images/front/icon/ico_arrow02.png) no-repeat center; background-size: 7px 11px;}
 .irTitWrap{margin-bottom: 40px;}
@@ -46,7 +46,7 @@
 .reportTit dt span{color: #0c4ca3;}
 .rightBtn{padding: 20px 0; text-align: right;}
 .rightBtn + .pText{margin-bottom: 21px;}
-.grayBox{padding: 21px 17px; margin-bottom: 60px; background-color: #f8f8f8; color: #555555; font-size: 14px; line-height: 1.4;}
+.grayBox{padding: 21px 17px; margin-bottom: 80px; background-color: #f8f8f8; color: #555555; font-size: 14px; line-height: 1.4;}
 .report.tableBasicList th, .report.tableBasicList td{padding: 30px 0;}
 .report .defaultTable th{background-color: #fbfbfb; color: #111111; font-size: 24px;}
 .report .btnArea{padding-left: 40px; margin-bottom: 0;}
@@ -82,14 +82,13 @@
 #CNT_K_038 .whiteBtn.small{min-width: 159px;}
 
 /* IR - 주식 및 주주정보 CNT_K_039 */
-#CNT_K_039 .tableBasicList {margin-bottom:60px;}
 #CNT_K_039 .tableBasicList table tbody th {background:none;}
 #CNT_K_039 .tableBasicList table {width:100%;}
 
 /* IR - 주주구성 CNT_K_042 */
 .dataStandard{position: relative;}
 .dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
-#CNT_K_042 section, .fieldWrap{margin-bottom: 60px;}
+.fieldWrap{margin-bottom: 60px;}
 .fieldWrap .fieldLeft{float: left; width: 431px; padding-left: 74px;}
 .fieldWrap .fieldRight{float: right; width: 399px;}
 #CNT_K_042 .fieldLeft img{display: inline-block; width: 100%; max-width: 431px;}
@@ -171,6 +170,11 @@
 
 /* pText */
 .pText{line-height: 1.4;}
+/* shareList */
+#CNT_K_038 .shareList, #CNT_K_039 .shareList, #CNT_K_042 .shareList
+, #CNT_K_043 .shareList, #CNT_K_044 .shareList, #CNT_K_045 .shareList
+, #CNT_K_046 .shareList, #CNT_K_047 .shareList, #CNT_K_048 .shareList
+, #CNT_K_049 .shareList{margin-top: 80px;}
 /* 연관정보 바로가기 */
 .relationInfo{margin-top: 60px;}
 
@@ -196,6 +200,11 @@
 @media screen and (max-width: 812px){
     /* margin 좌우 -20px */
     .fullwidth{margin: 0 -20px;}
+    /* shareList */
+    #CNT_K_038 .shareList, #CNT_K_039 .shareList, #CNT_K_042 .shareList
+    , #CNT_K_043 .shareList, #CNT_K_044 .shareList, #CNT_K_045 .shareList
+    , #CNT_K_046 .shareList, #CNT_K_047 .shareList, #CNT_K_048 .shareList
+    , #CNT_K_049 .shareList{margin-top: 30px;}
 
     /* IR - Overview CNT_K_028 */
     .irLinkWrap .irLink .irA:after{top: 4px;}
@@ -256,7 +265,7 @@
     .tableBasicList + .listTit {margin-top: 15px;}
 
     /* IR - 주주구성 CNT_K_042 */
-    #CNT_K_042 section, .fieldWrap {margin-bottom: 30px;}
+    .fieldWrap {margin-bottom: 30px;}
     #CNT_K_042 .tableBasicList tfoot td {padding: 8px 10px; font-size: 15px;}
     #CNT_K_042 .tableBasicList + .contTit{margin-top: 30px;}
 
