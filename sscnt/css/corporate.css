@@ -13,9 +13,10 @@
 /* corporate 타이틀 */
 .corporate section + section {margin-top: 40px;}
 .corporate.type01{margin-top: 0;}
-.titleBox{padding: 50px 30px; background: url(/images/front/contents/bg_CNT_K_051.jpg) no-repeat; background-size: cover;}
+.titleBox{padding: 50px 30px; background: url(/images/front/contents/bg_CNT_K_058.jpg) no-repeat; background-size: cover;}
 .titleBox.bg01{padding: 50px 65px;}
 .titleBox.bg02{background-image: url(/images/front/contents/bg_CNT_K_051.jpg);}
+.titleBox.bg03{background-image: url(/images/front/contents/bg_CNT_K_052.jpg);}
 .titleBox.bg04{background-image: url(/images/front/contents/bg_CNT_K_057.jpg);}
 .titleBox.bg05{padding: 106px 30px; background-image: url(/images/front/contents/bg_CNT_K_063.jpg);}
 .innerTxt{text-align: center; font-size: 18px; color: #ffffff; line-height: 1.4;}
