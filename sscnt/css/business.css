@@ -617,7 +617,8 @@ h4.actMainTitle {padding-bottom:12px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont {float:none; width:100%; padding:0; box-sizing:border-box; border-bottom:0;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont input.email {float:left; width:45%; margin-bottom:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .unit {float:left; width:10%; text-align:center; line-height:40px; margin-bottom:10px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont .selectTab {float:none; width:100%; margin:0; overflow:hidden;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont .selectTab {position: relative; float:none; width:100%; margin:0; clear:both;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont .selectTab ul li {margin-bottom: 0;}
 .inquiryWriteWrap ul.inquiryWrite li .preventionImg {float:none; display:block; width:100%; text-align:center;background:#f8f8f8; border:1px solid #dddddd; margin-bottom:10px; box-sizing:border-box;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont input.prevention {float:left; width:calc(100% - 100px); margin-right:5px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .refresh {float:left; width:95px; height:40px; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 10px center; text-align:left; padding-left:32px;}

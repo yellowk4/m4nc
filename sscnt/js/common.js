@@ -886,8 +886,17 @@ conApp.selectTabEvent = function(){
 	
 	var $selectTabCon = conApp.$body.find(".selectTabCon");
 	var $selectTabConList = $selectTabCon.find("article");
+
+	// 027화면 문의하기 내 selectbox 별도 처리
+	var $selectTabD = conApp.$body.find(".selectTab.direct");
+	var $selectTabBtnD = $selectTabD.find(".select button");
+	var $selectTabListD = $selectTabD.find("li");
+	var $selectTabActiveD = $selectTabListD.filter(".active");
+	var selectTabActiveIdxD = $selectTabListD.index($selectTabActiveD);
 	
-	$selectTabBtn.text($selectTabActive.text())
+	//$selectTabBtn.text($selectTabActive.text())
+	$selectTabBtn.text($selectTabList.eq(selectTabActiveIdx).text());
+	$selectTabBtnD.text($selectTabListD.eq(selectTabActiveIdxD).text());  // 027화면 문의하기 내 selectbox 별도 처리
 	$selectTabConList.eq(selectTabActiveIdx).show();
 	
 	
