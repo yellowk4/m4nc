@@ -117,8 +117,9 @@
 #CNT_K_044 h4 {font-size:24px; font-weight:600; margin-bottom:20px; color:#111;}
 .returnPolicyCont {margin-bottom:40px; line-height:1.6;} 
 .returnPolicyCont ul.type01 {margin-bottom:10px;}
+.returnPolicyCont ul.type01 li {background:url('/images/front/icon/ico_grayLine.png') no-repeat 0 12px; padding-left:15px;}
 .returnPolicyCont p {margin-bottom:10px;}
-.returnPolicyCont ul.type02 li {text-indent:18px;}
+.returnPolicyCont ul.type02 li {background:url('/images/front/icon/ico_grayDot.png') no-repeat 15px 12px; padding-left:25px;}
 #CNT_K_044 .bottomArea {text-align:right; margin-bottom:40px;}
 #CNT_K_044 .distributionList {margin-bottom:40px;}
 #CNT_K_044 .tableBasicList {margin-bottom:20px; }
@@ -132,10 +133,12 @@
 .faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(/images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
 
 /* IR - Contact IR CNT_K_049 */
-.contactWrap {text-align:center; background:url('/images/front/contents/bg_CNT_K_049.png') no-repeat center bottom; padding-bottom:270px;}
+.contactWrap {text-align:center; background:url('/images/front/contents/bg_CNT_K_049.png') no-repeat center bottom; padding-bottom:270px; margin-bottom:60px;}
 .contactWrap h4 {margin-bottom:25px; font-size:24px; line-height:1.4;}
 .contactWrap h4 .emphasisTxt {font-size:42px; font-weight:600; line-height:1.4; margin-bottom:20px;}
 .contactWrap h4 > span {display:block;}
+.contactWrap .telNum {display:block; margin-bottom:40px; font-size:24px; color:#000;}
+.contactWrap .telNum img {vertical-align:middle; margin-right:10px;}
 .contactWrap .inquiryBtn {display:inline-block; width:157px; height:56px; line-height:56px; background:#0c4da2 url('/images/front/icon/ico_inquiry.png') no-repeat 30px center; padding-left:40px; box-sizing:border-box; color:#fff; font-size:18px;}
 
 /* COMMON STYLE */
@@ -277,11 +280,13 @@
 
     /* IR - Contact IR CNT_K_049 */
     #CNT_K_049 {padding:0;}
-    .contactWrap {padding:0 20px; box-sizing:border-box;background:url('/images/front/contents/bg_CNT_K_049_m.png') no-repeat center bottom; background-size:100%; padding-bottom:50%; }
-    .contactWrap h4 {margin-bottom:25px; font-size:15px;text-align:left;}
+    .contactWrap {padding:0 20px; box-sizing:border-box;background:url('/images/front/contents/bg_CNT_K_049_m.png') no-repeat center bottom; background-size:100%; padding-bottom:50%; margin-bottom:20px;}
+    .contactWrap h4 {margin-bottom:15px; font-size:15px;text-align:left;}
     .contactWrap h4 .emphasisTxt {font-size:21px; margin-bottom:20px; display:block;}
     .contactWrap h4 > span {display:inline;}
+    .contactWrap .telNum {margin-bottom:20px;}
     .contactWrap .inquiryBtn {width:40%; height:45px; line-height:45px; background:#0c4da2; padding-left:0; box-sizing:border-box; color:#fff; font-size:16px;}
+    #CNT_K_049 .shareList {margin:0 20px;}
 
 }
 
