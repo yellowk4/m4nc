@@ -90,7 +90,7 @@
 .dataStandard{position: relative;}
 .dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
 #CNT_K_042 section, .fieldWrap{margin-bottom: 60px;}
-.fieldWrap .fieldLeft{float: left; width: 431px; padding-left: 55px;}
+.fieldWrap .fieldLeft{float: left; width: 431px; padding-left: 74px;}
 .fieldWrap .fieldRight{float: right; width: 399px;}
 #CNT_K_042 .fieldLeft img{display: inline-block; width: 100%; max-width: 431px;}
 .tableData{border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
@@ -98,12 +98,12 @@
 .tableData th{position: relative; padding-left: 48px; text-align: left}
 .tableData td{text-align: right;}
 .tableData th:before{content: ''; position: absolute; left: 20px; top: 50%; z-index: 1; margin-top: -4px; width: 8px; height: 8px;}
-.tableData th.icoColor01:before{background-color: #15397b;}
-.tableData th.icoColor02:before{background-color: #3ccea7;}
-.tableData th.icoColor03:before{background-color: #4b9abb;}
-.tableData th.icoColor04:before{background-color: #ffc86e;}
-.tableData th.icoColor05:before{background-color: #bec9da;}
-
+.tableData th.icoColor01:before{background-color: #0080d5;}
+.tableData th.icoColor02:before{background-color: #0c4da2;}
+.tableData th.icoColor03:before{background-color: #94c01d;}
+.tableData th.icoColor04:before{background-color: #765e93;}
+.tableData th.icoColor05:before{background-color: #27b0c4;}
+#CNT_K_042 .tableBasicList + .contTit{margin-top: 40px;}
 
 /* IR - 주주총회 CNT_K_043 */
 .listTit{margin-bottom: 20px; font-size: 18px; line-height: 1.6;}
@@ -137,7 +137,6 @@
 .contactWrap h4 .emphasisTxt {font-size:42px; font-weight:600; line-height:1.4; margin-bottom:20px;}
 .contactWrap h4 > span {display:block;}
 .contactWrap .inquiryBtn {display:inline-block; width:157px; height:56px; line-height:56px; background:#0c4da2 url('/images/front/icon/ico_inquiry.png') no-repeat 30px center; padding-left:40px; box-sizing:border-box; color:#fff; font-size:18px;}
-
 
 /* COMMON STYLE */
 /* 아코디언 */
@@ -256,8 +255,7 @@
     /* IR - 주주구성 CNT_K_042 */
     #CNT_K_042 section, .fieldWrap {margin-bottom: 30px;}
     #CNT_K_042 .tableBasicList tfoot td {padding: 8px 10px; font-size: 15px;}
-
-
+    #CNT_K_042 .tableBasicList + .contTit{margin-top: 30px;}
 
     /* IR - FAQ CNT_K_045 */
     .faqWrap{padding-top: 0;}
