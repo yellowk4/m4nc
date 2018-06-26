@@ -432,8 +432,8 @@
 .boardViewArea .boardContWrap {margin-bottom:20px; padding-bottom:20px;}
 .boardViewArea .boardViewbtnArea .utileBtn {display:none;}
 .boardViewArea .boardViewbtnArea .listGo {width:30%; height:40px; line-height:40px;}
-.boardViewArea .relationArticle {display:none;}
 .boardViewArea .boardViewbtnArea {margin-bottom:30px;}
+.boardViewArea .relationArticle ul li {height:40px; line-height:40px!important; padding:0 3% 0 6%; font-size:15px; background:#fbfbfb url('/images/front/icon/ico_listdot_type02.jpg') no-repeat 3% center}
 .boardViewArea .boardContWrap p {font-size:15px; margin-bottom:15px;}
 
 /* Overview */
