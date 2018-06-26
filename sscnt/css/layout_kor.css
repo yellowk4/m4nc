@@ -126,7 +126,7 @@ btn, icon
 /* 연관정보 바로가기 -버튼 */
 .relationInfo .contTit { margin-bottom: 20px; } 
 .relationInfo .buttonWrap { overflow: hidden; width: 100%; } 
-.relationInfo .buttonWrap .blankBtn { float: left; min-width: auto; width: 23.5%; padding: 0 10px; margin-right: 2%; border: 1px solid #bbb; background: #e1e1e1; color: #333; transition: 0.2s ease-out; } 
+.relationInfo .buttonWrap .blankBtn { float: left; min-width: auto; width: 23.5%; padding: 0 10px; margin-right: 2%; border: 1px solid #bbb; background: #fff; color: #333; transition: 0.2s ease-out; } 
 .relationInfo .buttonWrap .blankBtn:last-child { margin-right: 0; } 
 .relationInfo .buttonWrap .blankBtn:hover { background: #fff; border: 1px solid #0c4da2; color: #0c4da2; } 
 
@@ -352,6 +352,8 @@ Ul style
 .selectTab.typeBlue .select button { border: 1px solid #377dd5; background: #377dd5; color:#fff; } 
 .selectTab.typeBlue .select button:after { content:''; position: absolute; top:17px; left: auto; right:15px; display:inline-block; width: 10px; height: 5px; background:url('/images/front/icon/ico_arrowBlue_open.png') no-repeat 98% 50%; background-size:10px 5px; } 
 .selectTab.typeBlue.active .select button:after { background-image:url('/images/front/icon/ico_arrowBlue_close.png'); } 
+
+.selectTab.typeBlue .select span {display:block; overflow:hidden; position: relative; width:100%; padding:10px 23px 10px 10px; text-align:left; text-overflow:ellipsis; white-space:nowrap; font-size: 16px; box-sizing: border-box; border: 1px solid #377dd5; background: #377dd5; color:#fff; line-height:1.2;}
 
 
 /* selectTabCon - 상세 내용 */
@@ -962,6 +964,7 @@ background: url(/images/front/icon/ico_arrow_close.png) no-repeat; background-si
 .footer .footMenuWrap ul { display: none; } 
 .footer .footMenuWrap ul.moLink { display: block; text-align: center; } 
 .footer .footMenuWrap ul.moLink li { float: none; display: inline-block; } 
+.footer .footMenuWrap ul.moLink li:last-child a {padding-left: 4px;}
 .footer .copy { text-align: center; } 
 .footer .block { display: block !important; } 
 
@@ -980,7 +983,7 @@ background: url(/images/front/icon/ico_arrow_close.png) no-repeat; background-si
 /* 탭 -뉴스화면 */
 .defaultTab.moChange2 .tabCtrlWrap { overflow: hidden; display: block; } 
 .defaultTab.moChange2 .tabCtrlWrap a { float: left; display: table; width: 32%; margin: 0 2% 2% 0; border: 1px solid #d9d9d9; } 
-.defaultTab.moChange2 .tabCtrlWrap a:nth-child(3n) { margin-right: 0; } 
+.defaultTab.moChange2 .tabCtrlWrap a:nth-child(3n) { margin-right: 0; line-height: 1.2; } 
 .defaultTab.moChange2 .tabCtrlWrap a span { display: table-cell; vertical-align: middle; } 
 .defaultTab.moChange2 .tabCtrlWrap a.current { border-top: 2px solid #377dd5; } 
 
