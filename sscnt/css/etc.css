@@ -16,14 +16,15 @@
 
 /* 오류 */
 .errorCon {width:100%;height:100%;background:#f7f7f7}
-.errorCon .errorHead {width:100%;height:105px;box-sizing:border-box;border-bottom:2px solid #0c4da2;background:#fff}
+.errorCon .errorHead {width:100%;height:105px;box-sizing:border-box;border-bottom:2px solid #0c4da2;background:#fff;}
 .errorCon .errorHead div {max-width:1100px;margin:0 auto;position: relative;}
 .errorCon .errorHead .logo {width:162px;height:29px;top:53px;}
 .errorCon .errorHead .logo img {width:100%;}
-.errorCon .errorCont {width:700px;margin:112px auto;background: url(/images/front/icon/error_bg.png) no-repeat 41px top;padding-left:359px;box-sizing:border-box;font-size:16px;color:#666}
+.errorCon .errorCont {width:715px;margin:112px auto;background: url(/images/front/icon/error_bg.png) no-repeat left top;padding-left:320px;box-sizing:border-box;font-size:16px;color:#666;}
 .errorCon .errorCont .contTit {font-weight:700;color:#0c4da2;font-size:42px;margin-bottom:29px;}
-.errorCon .errorCont .btnArea {margin-top:58px}
-.errorCon .errorCont .btnArea .btnDefaultForm {display:inline-block;padding:18px 15px;background-color:#0c4da2;font-size:18px;color:#fff;border:none;border-radius:0;min-width:206px;text-align:center;margin-top:0}
+.errorCon .errorCont .btnArea {margin-top:45px;}
+.errorCon .errorCont .btnArea .btnDefaultForm {display:inline-block;padding:18px 15px;margin-right: 0;background-color:#0c4da2;font-size:18px;color:#fff;border:none;border-radius:0;min-width:190px;text-align:center;margin-top:0;box-sizing: border-box;}
+.errorCon .errorCont .btnArea .btnDefaultForm.left{margin-right: 11px;}
 
 /* SEARCH */
 #CNT_K_070 .searchInfo {color:#111;font-size:36px;line-height:1.2;text-align:center;font-weight:700;margin-bottom:75px}
@@ -75,7 +76,8 @@
     .errorCon .errorHead .logo {width:105px;height:18px;top:11px;left:15px}
     .errorCon .errorHead .logo img {width:100%;}
     .errorCon .errorCont {width:100%;margin:33px auto 0 auto;background: url(/images/front/icon/error_bg.png) no-repeat top center;background-size:135px 94px;;padding-left:0px;font-size:16px;text-align:center;}
-    .errorCon .errorCont .contTit {font-size:24px;margin-bottom:19px;padding-top:113px}
+    .errorCon .errorCont .contTit {font-size:24px;margin-bottom:15px;padding-top:113px}
     .errorCon .errorCont .btnArea {margin-top:26px}
     .errorCon .errorCont .btnArea .btnDefaultForm {padding:13px 0;font-size:14px;color:#fff;min-width:143px;margin-right:0}
+    .errorCon .errorCont .btnArea .btnDefaultForm.left {margin-right: 0px;}
 }
