@@ -85,9 +85,9 @@
 .investorWrap .listTbl li button { float:right; width:25px; height:25px; background:url(/images/front/icon/ico_down.png) 0 0 no-repeat; background-size:100%; } 
 .investorWrap .listLink { float:left; width:50.9%; margin-top:20px; } 
 .investorWrap .listLink li { margin-top:10px;} 
-.investorWrap .listLink li:first-child { margin-top:0; background:#e7e8ef url(/images/front/main/ico_invest01.png) right 20px center no-repeat; } 
-.investorWrap .listLink li:nth-child(2) { background:#e7e8ef url(/images/front/main/ico_invest02.png) right 20px center no-repeat;} 
-.investorWrap .listLink li:nth-child(3) { background:#e7e8ef url(/images/front/main/ico_invest03.png) right 23px center no-repeat;} 
+.investorWrap .listLink li:first-child { margin-top:0; background:#e7e8ef url(/images/front/main/ico_invest01.png) right 22px center no-repeat; } 
+.investorWrap .listLink li:nth-child(2) { background:#e7e8ef url(/images/front/main/ico_invest02.png) right 23px center no-repeat;} 
+.investorWrap .listLink li:nth-child(3) { background:#e7e8ef url(/images/front/main/ico_invest03.png) right 21px center no-repeat;} 
 .investorWrap .listLink li a { display:block; box-sizing:border-box; width:100%; height:77px; padding:29px 10px 29px 24px; font-size:20px; font-weight:bold; color:#333; } 
 .investorWrap .listLink li span { display:inline-block; min-width:92px; } 
 .arrList li a:after { content:''; display:inline-block; width:9px; height:14px; margin-left:10px; background:url(/images/front/icon/ico_arr_r.png) 0 0 no-repeat; background-size:100%; } 
