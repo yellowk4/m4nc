@@ -136,6 +136,9 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .whiteBtn.small {padding: 0 15px; height: 40px; border: 1px solid #555; font-size: 14px;}
     .whiteBtn .icoMore{display: inline-block; width: 15px; height: 17px; margin-right: 6px; background: url(/images/front/icon/icoMore02.png) no-repeat; vertical-align: middle;}
 
+#CNT_K_056 .tableWrap .tableBasicList{float: left; width: 50%;}
+#CNT_K_056 .tableWrap .tableBasicList.borderL{border-left: 1px solid #ddd; box-sizing: border-box;}
+
 /*  corporate 감사위원회 CNT_K_057 */
 #CNT_K_057 .txt + .tableBasicList{margin-top: 20px;}
 #CNT_K_057 .tableBasicList + .subTit, #CNT_K_057 .listBu + .subTit{margin-top: 40px;}
@@ -295,6 +298,10 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     #CNT_K_056 .txt {margin-top: 15px;}
     #CNT_K_056 .contTit{margin-top: 30px;}
     #CNT_K_056 .tableBasicList{margin-top: 15px;}
+    #CNT_K_056 .tableWrap .tableBasicList{float: none; width: 100%;}
+    #CNT_K_056 .tableWrap .tableBasicList.borderL{border-left: 0;}
+    #CNT_K_056 .pcType{display: none;}
+    #CNT_K_056 .tableWrap th, .blueTable th {min-width: 185px;}
 
     /*  corporate 감사위원회 CNT_K_057 */
     #CNT_K_057 .txt + .tableBasicList{margin-top: 15px;}
