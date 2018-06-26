@@ -88,7 +88,7 @@
 .overviewTit .countInfo li .standard {color:#555;}
 .overviewTit .countInfo li:last-child {border:0;}
 .overviewCont {margin-bottom:70px; overflow:hidden;}
-.overviewCont h4 {margin-bottom:20px;}
+.overviewCont h4 {margin-bottom:20px; text-transform:uppercase}
 .overviewCont p {margin-bottom:50px;}
 .imgArea.type02 {margin-bottom:30px;}
 
@@ -346,7 +346,7 @@
 .inquiryWriteWrap .inquiryWriteTit .addNotice {float:right; color:#777;}
 .inquiryWriteWrap ul.inquiryWrite {width:100%; border-top:1px solid #0c4da2; margin-bottom:50px; overflow:hidden;}
 .inquiryWriteWrap ul.inquiryWrite li {width:100%; box-sizing:border-box; clear: both;}
-.inquiryWriteWrap ul.inquiryWrite li .textWrite {height:232px;}
+.inquiryWriteWrap ul.inquiryWrite li .textWrite {height:260px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeTit {float:left; width:20%; line-height:80px; background:#f8f8f8; padding-left:20px; color: #000000; box-sizing:border-box; border-bottom:1px solid #d9d9d9;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont {float:left; width:80%; padding:20px 40px; box-sizing:border-box; position:relative; border-bottom:1px solid #d9d9d9;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont input[type="text"] {width:100%; height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
@@ -356,16 +356,18 @@
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .selectTab {float:left; width:170px; margin-left:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .preventionImg {float:left; height:40px; overflow:hidden; margin-right:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .refresh {float:left; width:104px; height:40px; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 12px center; text-align:left; padding-left:38px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont textarea {border:1px solid #dddddd; width:100%; height:191px; box-sizing:border-box; padding:10px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont .txtCount {position:absolute; bottom:30px; right:50px;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont textarea {border:1px solid #dddddd; width:100%; height:190px; margin-bottom:10px; box-sizing:border-box; padding:10px;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont .txtCount {display:block; text-align:right;}
 
 .personalInforAgree {width:100%; overflow:hidden;}
-.personalInforAgree .title {display:block; font-size:20px; color:#0c4da2; margin-bottom:15px}
+.personalInforAgree .title {display:block; font-size:20px; margin-bottom:15px}
 .personalInforAgree p {margin-bottom:15px;}
 .personalInforAgree .graybox {width:100%; padding:20px; box-sizing:border-box; background:#f8f8f8; line-height:28px; margin-bottom:20px;}
 .personalInforAgree .graybox ul {margin-bottom:10px;}
 .personalInforAgree .graybox .notice {display:block; font-size:14px;}
 .personalInforAgree .agreeArea {display:block; margin-bottom:50px;}
+.personalInforAgree .agreeArea .agreeSelect {overflow:hidden; text-align:center;}
+.personalInforAgree .agreeArea .agreeSelect .radioWrap {display:inline-block; line-height:22px; margin:0 15px;}
 .personalInforAgree .buttonArea {text-align:center;}
 
 
@@ -430,8 +432,8 @@
 .boardViewArea .boardContWrap {margin-bottom:20px; padding-bottom:20px;}
 .boardViewArea .boardViewbtnArea .utileBtn {display:none;}
 .boardViewArea .boardViewbtnArea .listGo {width:30%; height:40px; line-height:40px;}
-.boardViewArea .relationArticle {display:none;}
 .boardViewArea .boardViewbtnArea {margin-bottom:30px;}
+.boardViewArea .relationArticle ul li {height:40px; line-height:40px!important; padding:0 3% 0 6%; font-size:15px; background:#fbfbfb url('/images/front/icon/ico_listdot_type02.jpg') no-repeat 3% center}
 .boardViewArea .boardContWrap p {font-size:15px; margin-bottom:15px;}
 
 /* Overview */
@@ -617,9 +619,8 @@ h4.actMainTitle {padding-bottom:12px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .unit {float:left; width:10%; text-align:center; line-height:40px; margin-bottom:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .selectTab {float:none; width:100%; margin:0; overflow:hidden;}
 .inquiryWriteWrap ul.inquiryWrite li .preventionImg {float:none; display:block; width:100%; text-align:center;background:#f8f8f8; border:1px solid #dddddd; margin-bottom:10px; box-sizing:border-box;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont input.prevention {float:left; width:70%; margin-right:2%;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont .refresh {float:left; width:28%; height:40px; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 10px center; text-align:left; padding-left:32px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont .txtCount {display:none;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont input.prevention {float:left; width:calc(100% - 100px); margin-right:5px;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont .refresh {float:left; width:95px; height:40px; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 10px center; text-align:left; padding-left:32px;}
 
 .personalInforAgree .title {font-size:18px;}
 .personalInforAgree p {margin-bottom:15px; font-size:15px;}

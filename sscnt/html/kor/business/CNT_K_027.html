@@ -304,12 +304,21 @@
 								</ul>
 								<span class="notice color03">※ 문의에 대한 답변을 위해서 필요한 최소한의 개인정보 이므로 동의를 해 주셔야 서비스를 이용하실 수 있습니다.</span>
 							</div>
-							<span class="agreeArea">
-								<label class="checkboxWrap"> 위 사항에 동의합니다.
-									<input type="checkbox" />
-									<span class="checkmark"></span>
-								</label>              
-							</span>
+							<!-- 2018-06-26 UI 수정 -->
+							<div class="agreeArea">
+								<span class="title">위 사항에 동의하십니까?</span>
+								<div class="agreeSelect">
+									<label class="radioWrap">동의
+										<input type="radio" checked="checked" name="radio">
+										<span class="checkmark"></span>
+									</label>								
+									<label class="radioWrap">동의 하지 않음
+										<input type="radio" name="radio"> 
+										<span class="checkmark"></span>
+									</label>  
+								</div>
+							</div>
+							<!-- // 2018-06-26 UI 수정 -->
 							<div class="buttonArea"><button type="button" class="fillBtn">완료</button></div>
 						</div>          
 					</div>
