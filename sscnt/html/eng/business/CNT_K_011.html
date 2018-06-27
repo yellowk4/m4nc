@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>오시는 길 : 삼성물산</title>
+<title>Act : 삼성물산</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <link type="text/css" rel="stylesheet" href="/css/default.css" />
 <link type="text/css" rel="stylesheet" href="/css/layout_kor.css" />
-<link type="text/css" rel="stylesheet" href="/css/corporate.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
+<link type="text/css" rel="stylesheet" href="/css/business.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="/js/media.match.min.js"></script>
@@ -166,34 +164,41 @@
 		<div class="moMenuWrap">
 			<div class="location">
 				<ol class="clfix">
-					<li>CORPORATE GOVERNANCE</li>
-					<li>BOD Committees</li>
-					<li class="on">Independent Director Recommendation Committee</li>
+					<li>OUR BUSINESSES</li>
+					<li>CSR</li>
+					<li class="on">Act</li>
 				</ol>
 			</div>
 			<div class="selectTab typeBlue">
-				<strong class="select"><button type="button">건설부문</button></strong>
+				<strong class="select">
+					<button type="button">Act</button>
+				</strong>
 				<ul>
-					<li class="active"><a href="#none">건설부문</a></li>
-					<li><a href="#none">정도경영</a></li>
-					<li><a href="#none">임직원의 기본 윤리</a></li>
-					<li><a href="#none">임직원에 대한 책임</a></li>
-					<li><a href="#none">국가와 사회에 대한 책임</a></li>
-					<li><a href="#none">윤리강령 준수 의무</a></li>
+					<li>
+						<a href="#none">Our CSR</a>
+					</li>
+					<li class="active">
+						<a href="#none">Act</a>
+					</li>
+					<li>
+						<a href="#none">CSR News</a>
+					</li>
+					<li>
+						<a href="#none">Report</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div> <!-- // header -->
 
 	<div id="contentsWrap">
-		<div class="container">
-			
+		<div class="container">			
 			<div class="moLayout">
 				<div class="contentsTop">
 					<div class="visualWrap">
 						<div class="inner">
 							<h3 class="visualTit">
-								고객문의 <span><i class="home">home</i>OUR BUSINESSES</span>
+								Act <span><i class="home">home</i>OUR BUSINESSES</span>
 							</h3>
 						</div>
 					</div>
@@ -212,12 +217,10 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- 비즈니스 메뉴 -->
 				<div class="pcMenuWrap">
 					<div class="navbar inner">
 						<a href="javascript:;" class="">Overview</a> <!-- 활성화 시 "on" 추가 -->
-						<a href="javascript:;" class="on">연혁</a>
+						<a href="javascript:;" class="">연혁</a>
 						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
 							<button class="dropbtn">사업영역 <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
@@ -227,7 +230,7 @@
 								<a href="#">리조트부문</a>
 							</div>
 						</div>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
+						<div class="dropdown on"> <!-- 활성화 시 "on" 추가 -->
 							<button class="dropbtn">CSR <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
 								<a href="#">Our CSR</a>
@@ -248,112 +251,136 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- ir 메뉴 -->
-				<div class="pcMenuWrap">
-					<div class="navbar inner">
-						<a href="javascript:;" class="">Overview</a> <!-- 활성화 시 "on" 추가 -->
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-							<button class="dropbtn">재무정보 <i class="dropdownIcon"></i></button>
-							<div class="dropdownCont">
-								<a href="#">요약재무제표</a>
-								<a href="#">신용등급</a>
-								<a href="#">감사/검토보고서</a>
-								<a href="#">사업보고서</a>
-								<a href="#">실적발표 자료</a>
-							</div>
+				<div id="CNT_K_011" class="contents"> <!-- 페이지별 ID -->
+					<div class="defaultTab moChange">
+						<strong class="select">
+							<button type="button">전체</button>
+						</strong>
+						<div class="tabCtrlWrap on"> <!-- current 클래스 있을 시 추가 -->
+							<a href="javascript:;" class="tabCtrl">환경을 먼저 생각하는 기업</a>
+              <a href="javascript:;" class="tabCtrl">최우선의 가치, 안전</a>
+              <a href="javascript:;" class="tabCtrl">기본준수, 컴플라이언스</a>
+              <a href="javascript:;" class="tabCtrl">상생을 위한 공동체 인식</a>
+              <a href="javascript:;" class="tabCtrl">새로운 기회의 장</a>
+              <a href="javascript:;" class="tabCtrl">아름다운 가치 공유</a>
 						</div>
-						<a href="javascript:;">IR일정</a>
-						<a href="javascript:;" class="on">공시정보</a>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-							<button class="dropbtn">주식 및 주주정보 <i class="dropdownIcon"></i></button>
-							<div class="dropdownCont">
-								<a href="#">기본정보</a>
-								<a href="#">주가정보</a>
-								<a href="#">주가지표</a>
-								<a href="#">주주구성</a>
-								<a href="#">주주총회</a>
-								<a href="#">주주환원</a>
-							</div>
+					</div>        
+          <div class="actMainWrap">
+            <h4>What to do? <span class="color01">우리의 주요활동</span></h4>
+            <p class="color01">삼성물산은 UN이 채택한 지속가능발전목표(SDGs)에 따라 기업의 사회적 책임을 실천하기 위한 다양한 활동들을 전개하고 있습니다.</p>
+            <p class="type01">"SDGs는 인류의 지속가능한 발전을 위해 세계 각국의 정상들이 모여 설정한 17개 목표와 169개 세부과제로 이루어져 있으며, 2030년까지 유엔과 국제사회가 해결해야 할 공동의 목표를 의미합니다."</p>
+						<!-- 2018-06-21 UI 수정 -->
+						<div class="imgArea">
+							<span class="pcImg"><img src="/images/front/contents/img_CNT_K_011_01.jpg" alt="주요활동 이미지" /></span>
+							<span class="mImg"><img src="/images/front/contents/img_CNT_K_011_01_m.jpg" alt="주요활동 이미지" /></span> 
 						</div>
-						<a href="javascript:;">FAQ</a>
-						<a href="javascript:;">Contact IR</a>
+						<!--// 2018-06-21 UI 수정 -->
+            <p class="color01">삼성물산은 SDGs가 지향하는 공동의 목표를 실천하고 있습니다. </p>
+            <ul class="actMenuList">
+              <li>
+                <a href="#;" class="title">환경을 먼저 생각하는 기업</a>
+                <ul>
+                  <li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_02.jpg" alt="지속가능한 에너지 접근성 강화" /></span>
+										<span class="text">7. 지속가능한 에너지 접근성 강화</span>
+									</li>
+									<li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_03.jpg" alt="지속가능한 도시조성" /></span>
+										<span class="text">11. 지속가능한 도시조성</span>
+									</li>
+									<li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_04.jpg" alt="기후변화 대응" /></span>
+										<span class="text">13. 기후변화 대응</span>
+                  </li>
+                </ul>
+							</li>
+							<li>
+                <a href="#;" class="title">최우선의 가치, 안전</a>
+                <ul>
+                  <li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_05.jpg" alt="보건증진" /></span>
+										<span class="text">3. 보건증진</span>
+									</li>
+									<li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_06.jpg" alt="지속가능한 소비와 생산 증진" /></span>
+										<span class="text">12. 지속가능한 소비와 생산 증진</span>
+									</li>									
+                </ul>
+							</li>
+							<li>
+                <a href="#;" class="title">기본 준수, 컴플라이언스</a>
+                <ul>
+                  <li class="type01">
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_07.jpg" alt="평화로운 사회증진과 사법 접근성 확보, 제도 구축" /></span>
+										<span class="text">16. 평화로운 사회증진과 사법 접근성 확보, 제도 구축</span>
+									</li>																	
+                </ul>
+							</li>
+							<li>
+                <a href="#;" class="title">상생을 위한 공동체 인식</a>
+                <ul>
+                  <li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_08.jpg" alt="지속가능한 경제 성장과 양질의 일자리 제공" /></span>
+										<span class="text">8. 지속가능한 경제 성장과 양질의 일자리 제공</span>
+									</li>																	
+                </ul>
+							</li>
+							<li>
+                <a href="#;" class="title">새로운 기회의 장</a>
+                <ul>
+                  <li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_08.jpg" alt="지속가능한 경제 성장과 양질의 일자리 제공" /></span>
+										<span class="text">8. 지속가능한 경제 성장과 양질의 일자리 제공</span>
+									</li>	
+									<li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_04.jpg" alt="기후변화 대응" /></span>
+										<span class="text">13. 기후변화 대응</span>
+									</li>		
+									<li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_09.jpg" alt="생태계 보존, 사막화 방지" /></span>
+										<span class="text">15. 생태계 보존, 사막화 방지</span>
+									</li>																
+                </ul>
+							</li>
+							<li>
+                <a href="#;" class="title">아름다운 가치 공유</a>
+                <ul>
+                  <li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_10.jpg" alt="빈곤 종식" /></span>
+										<span class="text">1. 빈곤 종식</span>
+									</li>	
+									<li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_05.jpg" alt="보건 증진" /></span>
+										<span class="text">3. 보건 증진</span>
+									</li>				
+									<li>
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_11.jpg" alt="교육 보장" /></span>
+										<span class="text">4. 교육 보장</span>
+									</li>			
+									<li class="type01">
+										<span class="thum"><img src="/images/front/contents/img_CNT_K_011_12.jpg" alt="식수, 위생시설 접근성과 관리 강화" /></span>
+										<span class="text">6. 식수, 위생시설 접근성과 관리 강화</span>
+									</l>													
+                </ul>
+              </li>
+            </u>
 					</div>
-				</div>
-
-				<!-- corporate 메뉴 -->
-				<div class="pcMenuWrap">
-					<div class="navbar inner">
-						<a href="javascript:;" class="">Overview</a> <!-- 활성화 시 "on" 추가 -->
-						<a href="javascript:;" class="on">정관</a>
-						<a href="javascript:;" class="on">윤리강령</a>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-							<button class="dropbtn">이사회 <i class="dropdownIcon"></i></button>
-							<div class="dropdownCont">
-								<a href="#">이사회 구성</a>
-								<a href="#">운영 &amp; 역할</a>
-								<a href="#">활동내역 &amp; 평가보상</a>
-							</div>
+					<!-- 2018-06-26 UI 추가-->
+					<ul class="shareList">
+						<li class="email"><button><span class="blind">이메일</span></button></li>
+						<li class="facebook"><button><span class="blind">페이스북</span></button></li>
+					</ul>
+					<!-- // 2018-06-26 UI 추가-->
+					<div class="relationInfo">
+						<h4 class="contTit">연관정보 바로가기</h4>
+						<div class="buttonWrap">
+							<button class="blankBtn">INVESTOR RELATIONS</button>
+							<button class="blankBtn">요약재무제표</button>
+							<button class="blankBtn">CORPORATE GOVERNANCE</button>
+							<button class="blankBtn">이사회 구성</button>
 						</div>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-							<button class="dropbtn">위원회 <i class="dropdownIcon"></i></button>
-							<div class="dropdownCont">
-								<a href="#">개요</a>
-								<a href="#">경영위원회</a>
-								<a href="#">감사위원회</a>
-								<a href="#">사외이사후보추천위원회</a>
-								<a href="#">보상위원회</a>
-								<a href="#">내부거래위원회</a>
-								<a href="#">CSR위원회</a>
-							</div>
-						</div>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
-							<button class="dropbtn">기타 위원회 <i class="dropdownIcon"></i></button>
-							<div class="dropdownCont">
-								<a href="#">거버넌스위원회</a>
-							</div>
-						</div>
-						<a href="javascript:;">외부감사인</a>
 					</div>
-				</div>
-
-				<div id="CT-PCK-020" class="contents"> <!-- 페이지별 ID -->
-
-					1111111페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-					페이지내용입니다. 페이지내용입니다. 페이지내용입니다.
-					<br /><br />
-
 				</div> <!-- // contents -->
-
 				<div class="contentsBtm">
 					<p class="viewTop"><a href="#top">TOP</a></p>
 					<div class="moAcco menuWrap">
@@ -460,19 +487,15 @@
 						</ul>
 					</div>
 				</div>
-
 			</div>
-
 		</div> <!-- // container -->
-
 	</div> <!-- // contentsWrap -->
-
 	<div class="footer">
 		<div class="container">
 			<footer>
 				<div class="footMenuWrap">
 					<ul>
-						<li><a href="javascript:fn_SecurityReport('KOR');">보안신고</a></li>
+						<li><a href="#none">보안신고</a></li>
 						<li><a href="#none">이메일주소무단수집거부</a></li>
 						<li><a href="#none">Legal Notice</a></li>
 						<li><a href="#none">개인정보 취급방침</a></li>
@@ -481,7 +504,7 @@
 							<div class="ethicArea">
                                 <div class="container">
                                     <dl class="corp">
-                                        <dt><span>윤리경영</span> 사이트</dt>
+                                        <dt>윤리경영 사이트</dt>
                                         <dd>
                                             <a href="http://www.withsamsung.co.kr/ko/html/main/index.html" target="_blank" title="새창">건설/상사부문</a>
                                         </dd>
@@ -512,7 +535,7 @@
 						<div class="familyArea">
 							<div class="container">
 								<dl class="corp">
-									<dt><span>삼성물산</span> 사이트</dt>
+									<dt>삼성물산 사이트</dt>
 									<dd>
 										<a href="#none" target="_blank" title="새창">건설부분</a>
 										<ul>
@@ -537,7 +560,9 @@
 									</dd>
 								</dl>
 								<dl class="related">
-									<dt><span>관계사</span> 사이트</dt>
+									<dt>관계사 사이트</dt>
+                                    <!-- 2017-03-09 패밀리사이트 삭제
+                                    <dd><a href="#none" target="_blank" title="새창">삼성</a></dd> -->
 									<dd><a href="#none" target="_blank" title="새창">삼성전자</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">삼성SDI</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">삼성SDS</a></dd>
@@ -552,9 +577,11 @@
 									<dd><a href="#none" target="_blank" title="새창">삼성웰스토리</a></dd>
 								</dl>
 								<dl class="etc">
-									<dt><span>기타</span> 사이트</dt>
+									<dt>기타</dt>
+                                    <!-- 2017-03-09 패밀리사이트 삭제
+									<dd><a href="#none" target="_blank" title="새창">삼성채용사이트</a></dd> -->
 									<dd><a href="#none" target="_blank" title="새창">삼성사회봉사단</a></dd>
-									<dd><a href="#none" target="_blank" title="새창">삼성장학회</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성장학회</a></dd> <!-- 2016-04-12 텍스트 수정 -->
 									<dd><a href="#none" target="_blank" title="새창">삼성재단</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">호암재단</a></dd>
 								</dl>
