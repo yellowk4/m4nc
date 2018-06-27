@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 공통 CSS */
-.contents {word-break: keep-all;}
+.contents {word-break: keep-all; word-wrap:break-word;}
 .text-hidden {overflow:hidden !important; clip:rect(1px, 1px, 1px, 1px) !important; position:absolute !important; width:1px !important; height:1px !important;}
 .shareList {margin-bottom:60px;}
 .defaultTab {margin-bottom:60px;}
@@ -534,10 +534,11 @@ h4.actMainTitle {padding-bottom:12px;}
 .businessAreaBnr ul li .title {display:inline-block; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #fff; font-size:18px;}
 .businessAreaBnr ul li.titleBnr {height:auto; background:none; margin-bottom:10px;}
 .businessAreaBnr ul li.titleBnr img {display:block; width:100%;}
-.businessAreaBnr ul li.titleBnr .titleBnrTxt {position:absolute; bottom:0; left:0; width:100%; height:auto; background:rgba(21,57,123,0.75); padding:20px 5%; box-sizing:border-box;}
-.businessAreaBnr ul li.titleBnr .titleBnrTxt h4 {display:block; font-size:18px; color:#fff; margin-bottom:20px;}
+.businessAreaBnr ul li.titleBnr .titleBnrTxt {position:absolute; bottom:0; left:0; width:100%; height:auto; background:rgba(21,57,123,0.75); padding:15px 5%; box-sizing:border-box;}
+.businessAreaBnr ul li.titleBnr .titleBnrTxt h4 {display:block; font-size:18px; color:#fff; margin-bottom:10px;}
 .businessAreaBnr ul li.titleBnr .titleBnrTxt h4 span {display:inline;}
-.businessAreaBnr ul li.titleBnr .addView {display:inline-block; width:55%; height:40px; line-height:40px; background:#111 url('/images/front/icon/ico_arrow01.png') no-repeat 90% center; background-size:15px; color:#fff; font-size:14px; box-sizing:border-box; position:relative; bottom:auto; left:auto; padding-left:6%;}
+.businessAreaBnr ul li.titleBnr .titleBnrTxt p {font-size:14px; margin-bottom:10px;}
+.businessAreaBnr ul li.titleBnr .addView {display:inline-block; width:55%; min-width:156px; height:40px; line-height:40px; background:#111 url('/images/front/icon/ico_arrow01.png') no-repeat 90% center; background-size:15px; color:#fff; font-size:14px; box-sizing:border-box; position:relative; bottom:auto; left:auto; padding-left:6%;}
 .businessAreaBnr ul li.type01 {background:url('/images/front/contents/bg_CNT_K_005_02.jpg') no-repeat center center; background-size:100%; margin-bottom:10px;}
 .businessAreaBnr ul li.type02 {background:url('/images/front/contents/bg_CNT_K_005_03.jpg') no-repeat center center; background-size:100%; margin:0 0 10px 0;}
 .businessAreaBnr ul li.type03 {background:url('/images/front/contents/bg_CNT_K_005_04.jpg') no-repeat center center; background-size:100%;}
