@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+.red {color:red;}
 
 /*****************************************************************************************************************************************
 	form 요소 공통정의
@@ -163,9 +164,10 @@
 .agreeArea label:first-child {margin-right:30px;}
 .mailPopWrap .refreshWrap {margin-top:30px;}
 .mailPopWrap .refreshWrap > p {color:#111;font-size:18px;margin-bottom:14px;}
-.mailPopWrap .refreshWrap .prevention {float:left; width:186px; margin-right:10px;height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
-.mailPopWrap .refreshWrap .preventionImg {float:left; height:40px; overflow:hidden; margin-right:10px;}
-.mailPopWrap .refreshWrap .refresh {float:left; width:104px; height:40px; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 12px center; text-align:left; padding-left:38px;}
+.mailPopWrap .refreshWrap .prevention {float:left; width:186px; margin:5px 10px 5px 0;height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
+.mailPopWrap .refreshWrap .preventionImg {float:left; width:200px; height:50px; overflow:hidden; margin-right:10px;}
+.mailPopWrap .refreshWrap .preventionImg img {width:200px; height:50px;}
+.mailPopWrap .refreshWrap .refresh {float:left; width:104px; height:40px; margin:5px 0; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 12px center; text-align:left; padding-left:38px;}
 
 
 /*****************************************************************************************************************************************

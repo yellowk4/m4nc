@@ -14,12 +14,13 @@
 /* 사업부문별 바로가기 */
 .businessUnitGo {width:100%; overflow:hidden; margin-bottom:60px;}
 .businessUnitGo .title {display:block; margin-bottom:30px; font-size:24px; color:#000; font-weight:600;}
-.businessUnitGo ul li {float:left; width:23%; height:56px; line-height:56px; font-size:20px; padding-left:20px; box-sizing:border-box;}
+.businessUnitGo ul li {float:left; width:23%; height:66px; font-size:18px; padding:13px 0 13px 20px; box-sizing:border-box;}
+.businessUnitGo ul li span {display:block;}
 .businessUnitGo ul li a {display:block; width:100%; height:100%; color:#fff;}
 .businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
-.businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
-.businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%}
-.businessUnitGo ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center;}
+.businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%;}
+.businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2.66%; padding:23px 0 23px 20px;}
+.businessUnitGo ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; padding:23px 0 23px 20px;}
 
 /* 공통 게시판 리스트 */
 .baordList {width:100%; overflow:hidden; margin-bottom:10px;}
@@ -66,20 +67,25 @@
 .overviewTit {overflow:hidden; margin-bottom:70px;}
 .overviewTit p {margin-bottom:30px; line-height:1.6;}
 .overviewTit .partList {overflow:hidden; margin-bottom:20px;}
-.overviewTit .partList li {float:left; width:23%; margin-right:2.66%; padding-top:25px; text-align:center; color:#fff;}
-.overviewTit .partList li .title {display:inline-block; margin-bottom:35px; border-bottom:1px solid #fff; font-size:20px; padding:0 10px 15px;}
+.overviewTit .partList li {float:left; width:23%; margin-right:2.66%; padding-top:37px; text-align:center; color:#fff;}
+.overviewTit .partList li .title {display:inline-block; margin-bottom:35px; font-size:20px; padding:0 10px 15px;}
+.overviewTit .partList li .title::after {display:block; width:25px; height:12px; border-bottom:1px solid #fff; content:''; margin:0 auto;}
 .overviewTit .partList li .icon {display:block; margin-bottom:35px;}
+.overviewTit .partList li.type01 {padding-top:25px;}
+.overviewTit .partList li.type01 .title {margin-bottom:29px;}
+.overviewTit .partList li.type01 .icon {margin-bottom:29px;}
 .overviewTit .partList li .btnArea {height:56px; line-height:56px; overflow:hidden; text-align:left;}
-.overviewTit .partList li .btnArea a {float:left; width:50%; color:#fff; margin-right:0; background:url('/images/front/icon/ico_arrow02.png') no-repeat 80% center; background-size:6px; padding-left:10%; box-sizing:border-box;}
+.overviewTit .partList li .btnArea a {float:left; width:58%; color:#fff; margin-right:0; background:url('/images/front/icon/ico_arrow02.png') no-repeat 80% center; background-size:6px; padding-left:13%; box-sizing:border-box;}
+.overviewTit .partList li .btnArea a:last-child {float:left; width:42%; background:url('/images/front/icon/ico_arrow02.png') no-repeat 60% center; background-size:6px; }
 .overviewTit .partList li:last-child {margin-right:0;}
 .overviewTit .partList li.type01 {background:#4b99ba;}
 .overviewTit .partList li.type02 {background:#4179d0;}
 .overviewTit .partList li.type03 {background:#93b615;}
 .overviewTit .partList li.type04 {background:#765e93;}
-.overviewTit .partList li.type01 .btnArea {background:#227ea5 url('/images/front/contents/bg_CNT_K_001_01.png') no-repeat center center;}
-.overviewTit .partList li.type02 .btnArea {background:#205bb7 url('/images/front/contents/bg_CNT_K_001_01.png') no-repeat center center;}
-.overviewTit .partList li.type03 .btnArea {background:#739205 url('/images/front/contents/bg_CNT_K_001_01.png') no-repeat center center;}
-.overviewTit .partList li.type04 .btnArea {background:#5f4480 url('/images/front/contents/bg_CNT_K_001_01.png') no-repeat center center;}
+.overviewTit .partList li.type01 .btnArea {background:#227ea5 url('/images/front/contents/bg_CNT_K_001_01.png') no-repeat 58% center;}
+.overviewTit .partList li.type02 .btnArea {background:#205bb7 url('/images/front/contents/bg_CNT_K_001_01.png') no-repeat 58% center;}
+.overviewTit .partList li.type03 .btnArea {background:#739205 url('/images/front/contents/bg_CNT_K_001_01.png') no-repeat 58% center;}
+.overviewTit .partList li.type04 .btnArea {background:#5f4480 url('/images/front/contents/bg_CNT_K_001_01.png') no-repeat 58% center;}
 .overviewTit .countInfo {overflow:hidden; background:#dde3ec; padding:35px 0; text-align:center;}
 .overviewTit .countInfo li {float:left; width:25%; border-right:1px solid #c8d4e4;}
 .overviewTit .countInfo li .title {display:block; font-size:20px; font-weight:600; color:#000; margin-bottom:10px;}
@@ -348,16 +354,14 @@
 .inquiryWriteWrap ul.inquiryWrite li {width:100%; box-sizing:border-box; clear: both;}
 .inquiryWriteWrap ul.inquiryWrite li .textWrite {height:260px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeTit {float:left; width:20%; line-height:80px; background:#f8f8f8; padding-left:20px; color: #000000; box-sizing:border-box; border-bottom:1px solid #d9d9d9;}
-.inquiryWriteWrap ul.inquiryWrite li .writeTit.autoTitle {line-height:90px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont {float:left; width:80%; padding:20px 40px; box-sizing:border-box; position:relative; border-bottom:1px solid #d9d9d9;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont input[type="text"] {width:100%; height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont input.email {float:left; width:30%;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont input.prevention {float:left; width:186px; margin:5px 10px 5px 0;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont input.prevention {float:left; width:186px; margin-right:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .unit {float:left; width:25px; text-align:center; line-height:40px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .selectTab {float:left; width:170px; margin-left:10px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont .preventionImg {float:left; width:200px; height:50px; overflow:hidden; margin-right:10px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont .preventionImg img {width:200px; height:50px;}
-.inquiryWriteWrap ul.inquiryWrite li .writeCont .refresh {float:left; width:104px; height:40px; margin:5px 0;line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 12px center; text-align:left; padding-left:38px;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont .preventionImg {float:left; height:40px; overflow:hidden; margin-right:10px;}
+.inquiryWriteWrap ul.inquiryWrite li .writeCont .refresh {float:left; width:104px; height:40px; line-height:38px; border:1px solid #555555; box-sizing:border-box; font-size:14px; color:#333333; background:url('/images/front/icon/ico_refresh.png') no-repeat 12px center; text-align:left; padding-left:38px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont textarea {border:1px solid #dddddd; width:100%; height:190px; margin-bottom:10px; box-sizing:border-box; padding:10px;}
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .txtCount {display:block; text-align:right;}
 
@@ -372,6 +376,11 @@
 .personalInforAgree .agreeArea .agreeSelect .radioWrap {display:inline-block; line-height:22px; margin:0 15px;}
 .personalInforAgree .buttonArea {text-align:center;}
 
+@media screen and (max-width:1053px) {
+  .overviewTit .partList li.type01 {padding-top:25px;}
+.overviewTit .partList li.type01 .title {margin-bottom:29px;}
+.overviewTit .partList li.type01 .icon {margin-bottom:29px;}
+}
 
 @media screen and (max-width:1024px) {
 /* 사업영역 > 건설부문*/
@@ -413,11 +422,11 @@
 /* 사업부문별 바로가기 */
 #CNT_K_027 .businessUnitGo {padding:0 20px 0 20px; box-sizing:border-box; margin-bottom:0;}
 .businessUnitGo .title {font-size:21px; margin-bottom:10px;}
-.businessUnitGo ul li {float:left; width:49%; height:40px; line-height:40px!important; padding-left:20px; box-sizing:border-box; margin-bottom:2%; font-size:16px;}
-.businessUnitGo ul li.type01 {background:#4b99ba url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%;}
-.businessUnitGo ul li.type02 {background:#4179d0 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:0;}
-.businessUnitGo ul li.type03 {background:#93b615 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; margin-right:2%; margin-bottom:0;}
-.businessUnitGo ul li.type04 {margin-bottom:0;}
+.businessUnitGo ul li {float:left; width:49%; padding-left:0; text-align:center;  margin-bottom:2%; font-size:14px; line-height:1.2em !important;;}
+.businessUnitGo ul li.type01 {background:#4b99ba; margin-right:2%;}
+.businessUnitGo ul li.type02 {background:#4179d0; margin-right:0;}
+.businessUnitGo ul li.type03 {background:#93b615; margin-right:2%; margin-bottom:0; padding-left:0;}
+.businessUnitGo ul li.type04 {background:#765e93; margin-bottom:0; padding-left:0;}
 
 /* 공통 게시판 리스트 */
 .baordList ul li {padding-bottom:15px; border-bottom:1px solid #d9d9d9; margin-bottom:20px}
@@ -443,12 +452,17 @@
 .overviewTit .partList li {width:49%; margin-right:2%; margin-bottom:2%; padding-top:15px; text-align:center; color:#fff;}
 .overviewTit .partList li:nth-child(2n) {margin-right:0;}
 .overviewTit .partList li .title {margin-bottom:15px; font-size:18px; padding:0 5px 7px;}
+.overviewTit .partList li .title span {display:block;}
 .overviewTit .partList li .icon {margin-bottom:10px;}
 .overviewTit .partList li .icon img {width:40%;}
 .overviewTit .partList li .btnArea a {background:none; padding-left:0; text-align:center; font-size:14px;}
+.overviewTit .partList li .btnArea a:last-child {background:none; padding-left:0; text-align:center; font-size:14px;}
 .overviewTit .partList li .btnArea {height:40px; line-height:40px !important;}
+.overviewTit .partList li.type01 {padding-top:15px;}
+.overviewTit .partList li.type01 .title {margin-bottom:15px;}
+.overviewTit .partList li.type01 .icon {margin-bottom:10px;}
 .overviewTit .countInfo {padding:0;}
-.overviewTit .countInfo li {width:50%; padding:25px 0; border-bottom:1px solid #c8d4e4; box-sizing:border-box;}
+.overviewTit .countInfo li {width:50%; padding:25px 0; border-bottom:1px solid #c8d4e4; box-sizing:border-box; letter-spacing:-1px;}
 .overviewTit .countInfo li .number {font-size:20px;}
 .overviewTit .countInfo li .number .small {font-size:16px;}
 .overviewTit .countInfo li:nth-child(2n) {margin-right:0; border-right:0;}
@@ -500,8 +514,6 @@
 
 .actMainWrap .actMenuList > li ul li .thum {width:25%; display:table-cell; padding-right:5%;}
 .actMainWrap .actMenuList > li ul li .text {width:70%; display:table-cell; vertical-align:middle; line-height:1.6;}
-
-
 
 h4.actMainTitle {padding-bottom:12px;}
 .actContsWrap {margin-bottom:20px; padding-bottom:5px;}
@@ -636,4 +648,9 @@ h4.actMainTitle {padding-bottom:12px;}
 .personalInforAgree .buttonArea {text-align:center;}
 .personalInforAgree .buttonArea button {height:40px; line-height:40px;}
 
+}
+
+/* 모바일 */
+@media screen and (max-width:405px) {
+.overviewTit .countInfo li:last-child {padding:10px 0;}
 }
