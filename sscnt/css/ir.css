@@ -312,6 +312,9 @@
 
 @media screen and (max-width: 375px){
     /* button */
+    /* IR - 주주환원 CNT_K_043 */
+    #CNT_K_043 .bthWrap{margin-bottom: 5px;}
+    #CNT_K_043 .bthWrap .whiteBtn{margin-bottom: 10px;}
 }
 
 
