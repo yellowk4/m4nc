@@ -9,13 +9,16 @@
 .relationArticle ul {margin-bottom: 20px; border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
 .relationArticle ul li {width: 100%; line-height: 60px; line-height: 60px; overflow: hidden; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 30px center; box-sizing: border-box; padding: 0 30px 0 40px; border-bottom: 1px solid #d9d9d9;}
 .relationArticle ul li .boardTit {float: left; width: calc(100% - 100px); margin-right: 15px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap;}
+.relationArticle ul li:last-child{border-bottom: 0;}
+.relationArticle ul li span{color: #777;}
 #CNT_E_022 .btnArea{margin-bottom: 80px;}
 #CNT_E_022 .fillBtn.small{position: relative; padding-right: 42px; font-size: 14px; color: #fff; height: auto; line-height: 38px;}
 #CNT_E_022 .fillBtn.small:after{content: ''; position: absolute; right: 14px; top: 50%; margin-top: -7px; width: 7px; height: 11px; background: url(/images/front/icon/ico_arrow02.png) no-repeat center; background-size: 7px 11px;}
 .irTitWrap{margin-bottom: 40px;}
-.irTitWrap .irTit{margin-bottom: 23px; font-size: 42px; font-weight: 700; color: #111;}
-.irTitWrap .irInfo{margin-top: 13px; font-size: 20px;}
+.irTitWrap .irTit{font-size: 42px; font-weight: 700; color: #111;}
+.irTitWrap .irInfo{margin-top: 15px; font-size: 20px;}
 .irTitWrap .irInfo span {display: inline-block; min-width: 62px;}
+.irTit + .irInfo{margin-top: 25px;}
 
 .irLinkWrap{margin-bottom: 60px;}
 .iframeWrap .iframeArea {overflow: hidden; overflow-x: auto; max-width: 100%; height: 250px;}
@@ -30,12 +33,12 @@
 .irLinkWrap .irLink .irA:after{content: ''; position: relative; top: 12px; left: 50%; margin-left: -15px; display: block; width: 30px; height: 2px; background-color: #fff;}
 
 /* IR - 신용등급 CNT_E_024 */
-#CNT_E_024 .tableBasicList, #CNT_K_042 .tableBasicList{margin-bottom: 20px;}
-#CNT_E_024 .txt, #CNT_K_042 .txt {margin-bottom: 20px;}
-#CNT_E_024 .txt + ul, #CNT_K_042 .txt + ul {margin-bottom: 40px;}
-#CNT_E_024 .contTit, #CNT_K_042 .contTit {margin-bottom: 20px;}
-#CNT_E_024 .contTitsub, #CNT_K_042 .contTitsub {margin-bottom: 20px; font-size: 20px; line-height: 1.6;}
-#CNT_E_024 .tableBasicList + p, #CNT_K_042 .tableBasicList + p{margin-bottom: 50px;}
+#CNT_E_024 .tableBasicList, #CNT_E_034 .tableBasicList{margin-bottom: 20px;}
+#CNT_E_024 .txt, #CNT_E_034 .txt {margin-bottom: 20px;}
+#CNT_E_024 .txt + ul, #CNT_E_034 .txt + ul {margin-bottom: 40px;}
+#CNT_E_024 .contTit, #CNT_E_034 .contTit {margin-bottom: 20px;}
+#CNT_E_024 .contTitsub, #CNT_E_034 .contTitsub {margin-bottom: 20px; font-size: 20px; line-height: 1.6;}
+#CNT_E_024 .tableBasicList + p, #CNT_E_034 .tableBasicList + p{margin-bottom: 50px;}
 
 /* IR - 감사보고서 CNT_E_025, CNT_K_034, CNT_K_036 */
 .reportimg, .reportTit{float: left; width: 50%; box-sizing: border-box;}
@@ -62,7 +65,7 @@
     #CT-PCK-033 .whiteBtn.small {padding: 0 15px; height: 40px; background-color: #ffffff; border: 1px solid #555; font-size: 14px;}
     #CT-PCK-033 .whiteBtn .icoDownload{display: inline-block; width: 19px; height: 17px; margin-right: 6px; background: url(/images/front/icon/ico_download02.png)no-repeat; vertical-align: middle;}
 
-/* IR - IR일정 CNT_K_038 */
+/* IR - IR일정 CNT_E_029 */
 .planImg, .plan{float: left;}
 .planImg{padding: 0 70px 0 95px; text-align: center;}
 .planDl{padding-bottom: 88px;}
@@ -76,21 +79,21 @@
 .upComing.type1{margin-left: 14px;}
 .planBtn{margin-top: 10px; text-align: right;}
 .planBtn button{margin-left: 10px;}
-#CNT_K_038 .panel, #CNT_K_043 .panel{padding: 0 29px;} /* IR일정 아코디언*/
-#CNT_K_038 .accordion, #CNT_K_043 .accordion {font-weight: 600;} 
-#CNT_K_038 .whiteBtn.small{min-width: 159px;}
+#CNT_E_029 .panel, #CNT_E_035 .panel{padding: 0 29px;} /* IR일정 아코디언*/
+#CNT_E_029 .accordion, #CNT_E_035 .accordion {font-weight: 600;} 
+#CNT_E_029 .whiteBtn.small{min-width: 159px;}
 
 /* IR - 주식 및 주주정보 CNT_K_039 */
-#CNT_K_039 .tableBasicList table tbody th {background:none;}
-#CNT_K_039 .tableBasicList table {width:100%;}
+#CNT_E_031 .tableBasicList table tbody th {background:none;}
+#CNT_E_031 .tableBasicList table {width:100%;}
 
-/* IR - 주주구성 CNT_K_042 */
+/* IR - 주주구성 CNT_E_034 */
 .dataStandard{position: relative;}
 .dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
 .fieldWrap{margin-bottom: 60px;}
 .fieldWrap .fieldLeft{float: left; width: 431px; padding-left: 74px;}
 .fieldWrap .fieldRight{float: right; width: 399px;}
-#CNT_K_042 .fieldLeft img{display: inline-block; width: 100%; max-width: 431px;}
+#CNT_E_034 .fieldLeft img{display: inline-block; width: 100%; max-width: 431px;}
 .tableData{border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
 .tableData th, .tableData td{padding: 23px 20px; border-top: 1px solid #d9d9d9;}
 .tableData th{position: relative; padding-left: 48px; text-align: left}
@@ -101,9 +104,11 @@
 .tableData th.icoColor03:before{background-color: #94c01d;}
 .tableData th.icoColor04:before{background-color: #765e93;}
 .tableData th.icoColor05:before{background-color: #27b0c4;}
-#CNT_K_042 .tableBasicList + .contTit{margin-top: 40px;}
+#CNT_E_034 .tableBasicList + .contTit{margin-top: 40px;}
+.fieldRight {position: relative;}
+.fieldRight .data{position: absolute; top: -30px; right: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
 
-/* IR - 주주총회 CNT_K_043 */
+/* IR - 주주총회 CNT_E_035 */
 .listTit{margin-bottom: 20px; font-size: 18px; line-height: 1.6;}
 .listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
 .listTit + .listBu, .bthWrap, .btnArea{margin-bottom: 50px;}
@@ -111,17 +116,18 @@
 .tableBasicList + .pText{margin-top: 20px;}
 .tableBasicList + .listTit {margin-top: 50px;}
 
-/* IR - 주주환원 CNT_K_044 */
-#CNT_K_044 h4 {font-size:24px; font-weight:600; margin-bottom:20px; color:#111;}
+/* IR - 주주환원 CNT_E_036 */
+#CNT_E_036 h4 {font-size:24px; font-weight:600; margin-bottom:20px; color:#111;}
 .returnPolicyCont {margin-bottom:40px; line-height:1.6;} 
 .returnPolicyCont ul.type01 {margin-bottom:10px;}
 .returnPolicyCont ul.type01 li {background:url('/images/front/icon/ico_grayLine.png') no-repeat 0 12px; padding-left:15px;}
 .returnPolicyCont p {margin-bottom:10px;}
 .returnPolicyCont ul.type02 li {background:url('/images/front/icon/ico_grayDot.png') no-repeat 15px 12px; padding-left:25px;}
-#CNT_K_044 .bottomArea {text-align:right; margin-bottom:40px;}
-#CNT_K_044 .distributionList {margin-bottom:40px;}
-#CNT_K_044 .tableBasicList {margin-bottom:20px; }
-#CNT_K_044 .addNotice {color:#555555;}
+#CNT_E_036 .bottomArea {text-align:right; margin-bottom:40px;}
+#CNT_E_036 .distributionList {margin-bottom:40px;}
+#CNT_E_036 .tableBasicList {margin-bottom:20px; }
+#CNT_E_036 .addNotice {color:#555555;}
+#CNT_E_036 .tableBasicList tbody th{background-color: #fff;}
 
 /* IR - FAQ CNT_K_045 */
 .faqWrap{padding-top: 60px; border-bottom: 1px solid #777777;}
@@ -170,29 +176,33 @@
 /* pText */
 .pText{line-height: 1.4;}
 /* shareList */
-#CNT_K_038 .shareList, #CNT_K_039 .shareList, #CNT_K_042 .shareList
-, #CNT_K_043 .shareList, #CNT_K_044 .shareList, #CNT_K_045 .shareList
+#CNT_E_029 .shareList, #CNT_E_031 .shareList, #CNT_E_034 .shareList
+, #CNT_E_035 .shareList, #CNT_E_036 .shareList, #CNT_K_045 .shareList
 , #CNT_K_046 .shareList, #CNT_K_047 .shareList, #CNT_K_048 .shareList
 , #CNT_K_049 .shareList{margin-top: 80px;}
 /* 연관정보 바로가기 */
 .relationInfo{margin-top: 60px;}
 
+@media screen and (max-width: 1158px){
+    /* IR - IR일정 CNT_E_029 */
+    .planImg, .plan{width: 50%; box-sizing: border-box;}
+}
 @media screen and (max-width: 1068px){
     /* IR - Overview CNT_E_022 */
     .irLinkWrap .iframeWrap{float: none; width: 100%; margin-bottom: 10px;}
     .iframeWrap .iframeArea{height: 215px;}
     .irLinkWrap .irLink{float: none; width: 100%;}
 
-    /* IR - IR일정 CNT_K_038, 감사보고서 CNT_E_025 */
+    /* IR - IR일정 CNT_E_029, 감사보고서 CNT_E_025 */
     .planImg, .reportimg {width: 50%; padding: 0;}
 
     /* IR - 감사보고서 CNT_E_025 */
     .report .btnArea{padding-left: 10px;}
     .report .btnArea button{margin: 5px 0;}
 
-    /* IR - 주주구성 CNT_K_042 */
+    /* IR - 주주구성 CNT_E_034 */
     .fieldWrap .fieldLeft, .fieldWrap .fieldRight{float: none; width: 100%;}
-    .fieldWrap .fieldLeft {padding-left: 0; margin-bottom: 20px; text-align: center;}
+    .fieldWrap .fieldLeft {padding-left: 0; margin-bottom: 40px; text-align: center;}
 
 }
 /* MOBILE */
@@ -200,42 +210,46 @@
     /* margin 좌우 -20px */
     .fullwidth{margin: 0 -20px;}
     /* shareList */
-    #CNT_K_038 .shareList, #CNT_K_039 .shareList, #CNT_K_042 .shareList
-    , #CNT_K_043 .shareList, #CNT_K_044 .shareList, #CNT_K_045 .shareList
+    #CNT_E_029 .shareList, #CNT_E_031 .shareList, #CNT_E_034 .shareList
+    , #CNT_E_035 .shareList, #CNT_E_036 .shareList, #CNT_K_045 .shareList
     , #CNT_K_046 .shareList, #CNT_K_047 .shareList, #CNT_K_048 .shareList
     , #CNT_K_049 .shareList{margin-top: 30px;}
 
-    /* IR - Overview CNT_K_028 */
+    /* IR - Overview CNT_K_022 */
     .irLinkWrap .irLink .irA:after{top: 4px;}
     .iframeWrap .iframeArea{background: #265b97;}
     .irTitWrap{margin-bottom: 20px;}
-    .irTitWrap .irTit{margin-bottom: 10px; font-size: 24px;}
+    .irTitWrap .irTit{font-size: 24px;}
     .irTitWrap .irInfo span {min-width: 38px;}
-    .irTitWrap .irInfo{margin-top: 0; font-size: 16px;}
+    .irTitWrap .irInfo{margin-top: 0px; font-size: 16px;}
+    .irTit + .irInfo{margin-top: 15px;}
     .irLinkWrap {margin-bottom: 30px;}
     .irLinkWrap .irLink{height: auto; font-size: 18px;}
-    .irLinkWrap .irLink .irA {padding: 15px 0 17.25%; background-size: 32%; background-position: center 75%;}
+    .irLinkWrap .irLink .irA {float: none; width: 100%; padding: 33px 15px; background-size: 50px; background-position: right 30px center; font-size: 15px; text-align: left;}
+    .irLinkWrap .irLink .irA:after{display: none;}
+    .irLinkWrap .irLink .arrow {width: 6px; height: 10px; margin-left: 5px; background-size: 100%;}
     .relationArticle .title{margin-bottom: 15px;}
-    #CNT_E_022 .btnArea{margin-bottom: 30px;}
+    #CNT_K_028 .btnArea{margin-bottom: 30px;}
     .relationArticle ul li {background-position: left 6px center; padding: 10px 15px;}
 
     /* IR - 신용등급 CNT_K_031 */
-    #CNT_E_024 .tableBasicList, #CNT_K_042 .tableBasicList{margin-bottom: 15px;}
-    #CNT_E_024 .txt, #CNT_K_042 .txt {margin-bottom: 15px;}
-    #CNT_E_024 .txt + ul, #CNT_K_042 .txt + ul {margin-bottom: 30px;}
-    #CNT_E_024 .contTit, #CNT_K_042 .contTit {margin-bottom: 15px;}
-    #CNT_E_024 .contTitsub, #CNT_K_042 .contTitsub {margin-bottom: 15px;}
-    #CNT_E_024 .tableBasicList + p, #CNT_K_042 .tableBasicList + p{margin-bottom: 30px;}
+    #CNT_E_024 .tableBasicList, #CNT_E_034 .tableBasicList{margin-bottom: 15px;}
+    #CNT_E_024 .txt, #CNT_E_034 .txt {margin-bottom: 15px;}
+    #CNT_E_024 .txt + ul, #CNT_E_034 .txt + ul {margin-bottom: 30px;}
+    #CNT_E_024 .contTit, #CNT_E_034 .contTit {margin-bottom: 15px;}
+    #CNT_E_024 .contTitsub, #CNT_E_034 .contTitsub {margin-bottom: 15px;}
+    #CNT_E_024 .tableBasicList + p, #CNT_E_034 .tableBasicList + p{margin-bottom: 30px;}
     .defaultTable.minW100{min-width: 100%;}
 
     /* IR - 감사보고서 CNT_E_025, CNT_K_034, CNT_K_036 */
     .reportimg, .reportTit{float: none; width: 100%;}
-    .reportimg{display: none;}
+    .reportimg{margin-bottom: 20px;}
+    .reportimg img{display: block; width: 100%; height: auto;}
     .reportTit{padding: 0 0 26px;}
     .reportTit dt{font-size: 25px; padding-bottom: 22px;}
     .report{margin-bottom: 10px;}
     .report .defaultTable th{font-size: 18px;}
-    .report .whiteBtn.small{min-width: 140px;}
+    .report .whiteBtn.small{min-width: 159px;}
     .report + .pText {margin-bottom: 10px;}
     .grayBox{margin-bottom: 30px;}
     .rightBtn{display: none;}
@@ -243,8 +257,8 @@
     /* 팝업 IR - 감사/검토 보고서 CNT_K_033 */
     #CT-PCK-033 .whiteBtn.small{margin-bottom: 5px;}
 
-    /* IR - IR일정 CNT_K_038 */
-    .planImg, .plan{float: none;}
+    /* IR - IR일정 CNT_E_029 */
+    .planImg, .plan{float: none; width: 100%;}
     .planImg{display: none;}
     .planDl{padding-bottom: 26px;}
     .planDl .planTit{font-size: 25px;}
@@ -257,7 +271,7 @@
     .planBtn button {margin-left: 0; margin-top: 10px;}
     .yearWrap .panel{padding: 0 15px;} /* IR일정 아코디언*/
 
-    #CNT_K_038 .panel, #CNT_K_043 .panel {padding: 0 10px;}
+    #CNT_E_029 .panel, #CNT_E_035 .panel {padding: 0 10px;}
     .listTit, .listBu li{font-size: 15px;}
     .listTit{margin-bottom: 15px;}
     .listBu li{background-position: 1px 9px;}
@@ -265,10 +279,10 @@
     .listTit + .color01, .listBu + .color01 {margin-bottom: 15px;}
     .tableBasicList + .listTit {margin-top: 15px;}
 
-    /* IR - 주주구성 CNT_K_042 */
+    /* IR - 주주구성 CNT_E_034 */
     .fieldWrap {margin-bottom: 30px;}
-    #CNT_K_042 .tableBasicList tfoot td {padding: 8px 10px; font-size: 15px;}
-    #CNT_K_042 .tableBasicList + .contTit{margin-top: 30px;}
+    #CNT_E_034 .tableBasicList tfoot td {padding: 8px 10px; font-size: 15px;}
+    #CNT_E_034 .tableBasicList + .contTit{margin-top: 30px;}
 
     /* IR - FAQ CNT_K_045 */
     .faqWrap{padding-top: 0;}
@@ -301,20 +315,16 @@
 }
 
 @media screen and (max-width: 640px){
-    /* IR - 주주구성 CNT_K_042 */
-    #CNT_K_042 .dataStandard{margin-bottom: 35px;}
+    /* IR - 주주구성 CNT_E_034 */
+    #CNT_E_034 .dataStandard{margin-bottom: 35px;}
     .dataStandard span{bottom: -30px;}
-
-    /* IR - Overview CNT_K_028 */
-    .irLinkWrap .irLink .irA{width: 100%; float: none; padding: 15px 0 17.25%; background-size: 11%; background-position: center 78%;}
-    .irLinkWrap .irLink .irA:after{top: -1px;}
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 440px){
     /* button */
-    /* IR - 주주환원 CNT_K_043 */
-    #CNT_K_043 .bthWrap{margin-bottom: 5px;}
-    #CNT_K_043 .bthWrap .whiteBtn{margin-bottom: 10px;}
+    /* IR - 주주총회 CNT_E_035 */
+    #CNT_E_035 .bthWrap{margin-bottom: 5px;}
+    #CNT_E_035 .bthWrap .whiteBtn{margin-bottom: 10px;}
 }
 
 

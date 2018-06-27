@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-<title>주가정보 : 삼성물산</title>
+<title>Listing Information : 삼성물산</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <link type="text/css" rel="stylesheet" href="/css/default.css" />
 <link type="text/css" rel="stylesheet" href="/css/layout_kor.css" />
-<link type="text/css" rel="stylesheet" href="/css/ir.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
+<link type="text/css" rel="stylesheet" href="/css/ir_eng.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="/js/media.match.min.js"></script>
@@ -166,23 +166,23 @@
 				<ol class="clfix">
 					<li>INVESTOR RELATIONS</li>
 					<li>주식 및 주주정보</li>
-					<li class="on">주가정보</li>
+					<li class="on">기본정보</li><!-- 2018-06-26 텍스트 수정 -->
 				</ol>
 			</div>
 			<div class="selectTab typeBlue">
-				<strong class="select"><button type="button">주가정보</button></strong>
+				<strong class="select"><button type="button">기본정보</button></strong>
 				<ul>
-					<li>
+					<li class="active"><!-- 2018-06-26 active 클래스 추가 -->
 						<a href="#none">기본정보</a>
 					</li>
-					<li class="active">
+					<li>
 						<a href="#none">주가정보</a>
 					</li>
 					<li>
 						<a href="#none">주가지표</a>
 					</li>
 					<li>
-						<a href="#none">주주구성</a>
+						<a href="#none">주주구성</a><!-- 2018-06-26 active 클래스 삭제 -->
 					</li>
 					<li>
 						<a href="#none">주주총회</a>
@@ -203,7 +203,7 @@
 					<div class="visualWrap">
 						<div class="inner">
 							<h3 class="visualTit">
-								주가정보 <span><i class="home">home</i>INVESTOR RELATIONS</span>
+								기본정보 <span><i class="home">home</i>INVESTOR RELATIONS</span>
 							</h3>
 						</div>
 					</div>
@@ -255,8 +255,64 @@
 						<a href="javascript:;">Contact IR</a>
 					</div>
 				</div>
-				<div id="CNT_K_040" class="contents"> <!-- 페이지별 ID -->
-					<div>여기에 주가정보 넣어주시면 됩니다.</div>				
+
+				<div id="CNT_E_031" class="contents"> <!-- 페이지별 ID -->
+					<div class="tableBasicList">
+						<table class="defaultTable">
+							<caption>Listing Information</caption>
+							<colgroup>
+								<col style="width:25%">
+								<col style="width:25%">
+								<col style="width:50%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" colspan="3">Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="3">Shares outstanding</th>
+									<th scope="row">Total</th>
+									<td class="alignR">191,317,483</td>
+								</tr>
+								<tr>
+									<th scope="row">Common</th>
+									<td class="alignR">189,690,043</td>
+								</tr>
+								<tr>
+									<th scope="row">Preferred</th>
+									<td class="alignR">1,627,440</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2">Share Capital (KRW)</th>
+									<td class="alignR">19,131,748,300</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2">Par Value (KRW)</th>
+									<td class="alignR">100</td>
+								</tr>
+								<tr>
+									<th scope="row" colspan="2">Listing date of new entity</th>
+									<td class="alignR">September 15th, 2015</td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="2">Ticker</th>
+									<th scope="row">Common</th>
+									<td class="alignR">028260</td>
+								</tr>
+								<tr>
+									<th scope="row">Preferred</th>
+									<td class="alignR">02826K</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<ul class="shareList">
+						<li class="email"><button><span class="blind">이메일</span></button></li>
+						<li class="facebook"><button><span class="blind">페이스북</span></button></li>
+					</ul>						
 					<!-- 연관정보 바로가기 -->
 					<div class="relationInfo">
 						<h4 class="contTit">연관정보 바로가기</h4>

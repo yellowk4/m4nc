@@ -319,7 +319,6 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .reportList li:nth-child(5){border-bottom: 1px solid #d9d9d9;}
     .reportList li, .reportList li .btnArea{ line-height:80px !important;}
 
-
     /*  corporate 감사위원회 CNT_K_057 */
     #CNT_K_057 .txt + .tableBasicList{margin-top: 15px;}
     #CNT_K_057 .tableBasicList + .subTit, #CNT_K_057 .listBu + .subTit{margin-top: 30px;}
