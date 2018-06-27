@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+#contentsWrap{word-break: keep-all;}
 /* visual bg */
 #contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_02.jpg);}
 

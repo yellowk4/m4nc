@@ -346,6 +346,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     #CNT_K_063 .txt > .pL20{padding: 0;}
     #CNT_K_063 .txt + .pL20{margin-bottom: 15px;}
     #CNT_K_063 .subTit {margin-top: 30px;}
+    #CNT_K_063 .fillBtn{padding: 0 14px;}
 
     /* corporate 외부감사인 CNT_K_064 */
     #CNT_K_064 .txt, #CNT_K_064 .listBu, #CNT_K_064 .tableBasicList{margin-top: 15px;}
