@@ -564,16 +564,17 @@ h4.actMainTitle {padding-bottom:12px;}
 
 /* 뉴스 > 팝업 이메일 공유*/
 .mailPopWrap {padding:6%;}
-.mailPopWrap h1 {font-size:20px; color:#0c4da2; margin-bottom:30px;}
-.mailPopWrap h2 {font-size:18px; margin-bottom:10px; font-weight:600;}
-.mailPopWrap .receiveArea {overflow:hidden; margin-bottom:30px;}
-.mailPopWrap .sendArea {overflow:hidden; margin-bottom:50px;}
+.mailPopWrap h1 {font-size:20px; color:#0c4da2; margin-bottom:20px; letter-spacing:-1px;}
+.mailPopWrap h2 {font-size:18px; margin-bottom:0px; font-weight:600;}
+.mailPopWrap .receiveArea {overflow:hidden; margin-bottom:10px;}
+.mailPopWrap .sendArea {overflow:hidden; margin-bottom:30px;}
 .mailPopWrap .writeForm .writeTit {float:none; width:100%; line-height:40px;}
 .mailPopWrap .writeForm .writeCont {float:none; width:100%; font-size:14px;}
 .mailPopWrap .writeForm .writeCont input[type="text"] {width:100%; height:40px; padding:0 10px; line-height:38px; box-sizing:border-box; border:1px solid #dddddd;}
 .mailPopWrap .writeForm .writeCont input.email {float:left; width:46%;}
 .mailPopWrap .writeForm .writeCont .unit {float:left; width:8%; text-align:center; line-height:40px;}
 .mailPopWrap .writeForm .writeCont .selectTab {float:left; width:100%; margin:2% 0 0 0;}
+.mailPopWrap .buttonArea button {min-width:40%; height:45px; margin:0 2px;}
 
 /* 채용 */
 .recruitmentTit {text-align:center; padding-top:0; margin-bottom:30px;}
