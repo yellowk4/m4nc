@@ -96,8 +96,8 @@
 														<li><a href="#none">실적발표 자료</a></li>
 													</ul>
 												</li>
-												<li><a href="#none">IR 일정</a></li>
 												<li><a href="#none">공시정보</a></li>
+												<li><a href="#none">IR 일정</a></li>
 												<li><a href="#none" class="depth">주식 및 주주정보</a>
 													<ul class="depth03">
 														<li><a href="#none">기본정보</a></li>
@@ -431,8 +431,8 @@
 											<li><a href="#none">실적발표 자료</a></li>
 										</ul>
 									</li>
-									<li><a href="#none">IR 일정</a></li>
 									<li><a href="#none">공시정보</a></li>
+									<li><a href="#none">IR 일정</a></li>
 									<li><a href="#none" class="depth">주식 및 주주정보</a>
 										<ul class="depth03">
 											<li><a href="#none">기본정보</a></li>
@@ -590,28 +590,27 @@
 </div> <!-- // wrap -->
 <script>
 	var swiper = new Swiper('.swiper-container', {
-		slidesPerView:'auto',
-		autoplay: {
-			delay: 3500,
-			disableOnInteraction: false,
+		wrapperClass: "swiper-wrapper",
+		slideClass: "swiper-slide",
+		pagination: ".swiper-pagination",
+		paginationClickable: true,
+		autoplayDisableOnInteraction: false,
+		autoplay: 3000,
+		loop: true,
+		onInit: function (swiper) {
+			console.log(swiper.slides);
+			var len = swiper.slides.length-2; // total
+			var counter = $('.swiper-counter');
+			var count = $('<span class="count">1</span><span class="total"> / '+ len +'</span>');
+			counter.append(count);
 		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		on: {
-			init: function () {
-				var len = this.slides.length; // total
-				var counter = $('.swiper-counter');
-				var count = $('<span class="count">1</span><span class="total"> / '+ len +'</span>');
-				counter.append(count);
-			},
-			slideChangeTransitionStart: function () {
-				var index = swiper.activeIndex + 1; // 현재 활성화 idx
-				$('.count').text(index);
-			}
+		onSlideChangeStart: function (swiper) {
+			var index = swiper.realIndex+1 ; // 현재 활성화 idx
+			$('.count').text(index);
 		}
 	});
+
+
 	
 
 </script>
