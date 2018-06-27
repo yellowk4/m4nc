@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Act : 삼성물산</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<link type="text/css" rel="stylesheet" href="/css/default.css" />
+<link type="text/css" rel="stylesheet" href="/css/layout_kor.css" />
+<link type="text/css" rel="stylesheet" href="/css/business.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
+<script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="/js/media.match.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<!--[if lt IE 9]>
+	<script src="/js/html5.js"></script>
+	<script src="/js/respond.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="skipnavi">
+	<a href="#contentsWrap">본문 바로가기  </a>
+</div>
+<div class="wrap">
+	<div class="header" style="height:auto">
+		<header>
+			<h1 class="logo">
+				<a href="#none"><img src="/images/front/common/img_logo.png" alt="삼성물산" /></a>
+			</h1>
+
+			<div class="topMenuWrap">
+				<ul>
+					<li><a href="http://www.secc.co.kr/ko/html/index.asp" target="_blank" title="새창">건설부문</a></li>
+					<li><a href="http://trading.samsungcnt.com/KR/trading/index.do " target="_blank" title="새창">상사부문</a></li>
+					<li><a href="http://www.samsungfashion.com/contents/home.jsp" target="_blank" title="새창">패션부문</a></li>
+					<li><a href="http://rnc.samsungcnt.com/main.html" target="_blank" title="새창">리조트부문</a></li>
+				</ul>
+			</div>
+
+			<button type="button" class="btnMenuView"><span>전체메뉴 열기</span></button> <!-- .btnMenuView 클릭시 megaMenu에 다중클래스 active, .menuWrap .depth01 li:first-child에 클래스 active 추가 -->
+
+			<div class="megaMenu"> <!-- 1depth에 오버(PC)시 클래스 active 추가 -->
+				<div class="container">
+					<section>
+						<h2>전체메뉴</h2>
+						<button type="button" class="btnMenuClose"><span>전체메뉴 닫기</span></button>
+						<div class="menuWrap">
+							<nav>
+								<ul class="depth01">
+									<li class="gnb01"> <!-- a에 클릭(모바일)/오버(PC)시 li에 클래스 active 추가 -->
+										<a href="#none">OUR BUSINESSES</a>
+										<div class="depthWrap">
+											<ul class="depth02">
+												<li><a href="#none">Overview</a></li>
+												<li><a href="#none">연혁</a></li>
+												<li><a href="#none" class="depth">사업영역</a> <!-- class="depth"에 클릭(모바일)/오버(PC)시 li에 클래스 active 추가 -->
+													<ul class="depth03">
+														<li><a href="#none">건설부문</a></li>
+														<li><a href="#none">상사부문</a></li>
+														<li><a href="#none">패션부문</a></li>
+														<li><a href="#none">리조트부문</a></li>
+													</ul>
+												</li>
+												<li><a href="#none" class="depth">CSR</a>
+													<ul class="depth03">
+														<li><a href="#none">Our CSR</a></li>
+														<li><a href="#none">Act</a></li>
+														<li><a href="#none">CSR News</a></li>
+														<li><a href="#none">Report</a></li>
+													</ul>
+												</li>
+												<li><a href="#none">뉴스</a></li>
+												<li><a href="#none">소셜미디어</a></li>
+												<li><a href="#none">채용</a></li>
+												<li><a href="#none" class="depth">Contact Us</a> 
+													<ul class="depth03">
+														<li><a href="#none">오시는 길</a></li>
+														<li><a href="#none">고객문의</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="gnb02">
+										<a href="#none">INVESTOR RELATIONS</a>
+										<div class="depthWrap">
+											<ul class="depth02">
+												<li><a href="#none">Overview</a></li>
+												<li><a href="#none" class="depth">재무정보</a>
+													<ul class="depth03">
+														<li><a href="#none">요약재무재표</a></li>
+														<li><a href="#none">신용등급</a></li>
+														<li><a href="#none">감사/검토보고서</a></li>
+														<li><a href="#none">사업보고서</a></li>
+														<li><a href="#none">실적발표 자료</a></li>
+													</ul>
+												</li>
+												<li><a href="#none">IR 일정</a></li>
+												<li><a href="#none">공시정보</a></li>
+												<li><a href="#none" class="depth">주식 및 주주정보</a>
+													<ul class="depth03">
+														<li><a href="#none">기본정보</a></li>
+														<li><a href="#none">주가정보</a></li>
+														<li><a href="#none">주가지표</a></li>
+														<li><a href="#none">주주구성</a></li>
+														<li><a href="#none">주주총회</a></li>
+														<li><a href="#none">주주환원</a></li>
+													</ul>
+												</li>
+												<li><a href="#none">FAQ</a></li>
+												<li><a href="#none">Contact IR</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="gnb03">
+										<a href="#none">CORPORATE GOVERNANCE</a>
+										<div class="depthWrap">
+											<ul class="depth02">
+												<li><a href="#none">Overview</a></li>
+												<li><a href="#none">정관</a></li>
+												<li><a href="#none">윤리강령</a></li>
+												<li><a href="#none" class="depth">이사회</a>
+													<ul class="depth03">
+														<li><a href="#none">이사회 구성</a></li>
+														<li><a href="#none">운영 &amp; 역할</a></li>
+														<li><a href="#none">활동내역 &amp; 평가보상</a></li>
+													</ul>
+												</li>
+												<li><a href="#none" class="depth">위원회</a>
+													<ul class="depth03">
+														<li><a href="#none">개요</a></li>
+														<li><a href="#none">경영위원회</a></li>
+														<li><a href="#none">감사위원회</a></li>
+														<li><a href="#none">사외이사후보추천위원회</a></li>
+														<li><a href="#none">보상위원회</a></li>
+														<li><a href="#none">내부거래위원회</a></li>
+														<li><a href="#none">CSR위원회</a></li>
+													</ul>
+												</li>
+												<li><a href="#none" class="depth">기타 위원회</a>
+													<ul class="depth03">
+														<li><a href="#none">거버넌스위원회</a></li>
+													</ul>
+												</li>
+												<li><a href="#none">외부감사인</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="utility">
+				<ul>
+					<li class="eng"><a href="#none">ENG</a></li>
+					<li><a href="#none">Contact Us</a></li>
+					<li><a href="#none">Sitemap</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="moMenuWrap">
+			<div class="location">
+				<ol class="clfix">
+					<li>OUR BUSINESSES</li>
+					<li>CSR</li>
+					<li class="on">Act</li>
+				</ol>
+			</div>
+			<div class="selectTab typeBlue">
+				<strong class="select">
+					<button type="button">Act</button>
+				</strong>
+				<ul>
+					<li>
+						<a href="#none">Our CSR</a>
+					</li>
+					<li class="active">
+						<a href="#none">Act</a>
+					</li>
+					<li>
+						<a href="#none">CSR News</a>
+					</li>
+					<li>
+						<a href="#none">Report</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div> <!-- // header -->
+
+	<div id="contentsWrap">
+		<div class="container">			
+			<div class="moLayout">
+				<div class="contentsTop">
+					<div class="visualWrap">
+						<div class="inner">
+							<h3 class="visualTit">
+								Act <span><i class="home">home</i>OUR BUSINESSES</span>
+							</h3>
+						</div>
+					</div>
+					<div class="searchWrap">
+						<div class="inner clfix">
+							<ul class="hashtag">
+								<li><a href="javascript:;">#IR</a></li>
+								<li><a href="javascript:;">#CSR</a></li>
+								<li><a href="javascript:;">#주주정보</a></li>
+								<li><a href="javascript:;">#기업지배구조</a></li>
+							</ul>
+							<div class="searchArea">
+								<input type="text" class="inputText" title="무엇을 찾아드릴까요?" id="" name="" placeholder="무엇을 찾아드릴까요?">
+								<button class="searchBtn"><span class="blind">검색</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pcMenuWrap">
+					<div class="navbar inner">
+						<a href="javascript:;" class="">Overview</a> <!-- 활성화 시 "on" 추가 -->
+						<a href="javascript:;" class="">연혁</a>
+						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
+							<button class="dropbtn">사업영역 <i class="dropdownIcon"></i></button>
+							<div class="dropdownCont">
+								<a href="#">건설부문</a>
+								<a href="#">상사부문</a>
+								<a href="#">패션부문</a>
+								<a href="#">리조트부문</a>
+							</div>
+						</div>
+						<div class="dropdown on"> <!-- 활성화 시 "on" 추가 -->
+							<button class="dropbtn">CSR <i class="dropdownIcon"></i></button>
+							<div class="dropdownCont">
+								<a href="#">Our CSR</a>
+								<a href="#">Act</a>
+								<a href="#">CSR News</a>
+								<a href="#">Report</a>
+							</div>
+						</div>
+						<a href="javascript:;">뉴스</a>
+						<a href="javascript:;">소셜미디어</a>
+						<a href="javascript:;">채용</a>
+						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
+							<button class="dropbtn">Contact Us <i class="dropdownIcon"></i></button>
+							<div class="dropdownCont">
+								<a href="#">오시는 길</a>
+								<a href="#">고객문의</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="CNT_K_012" class="contents"> <!-- 페이지별 ID -->
+					<div class="defaultTab moChange">
+						<strong class="select">
+							<button type="button">전체</button>
+						</strong>
+						<div class="tabCtrlWrap on"> <!-- current 클래스 있을 시 추가 -->
+							<a href="javascript:;" class="tabCtrl current">환경을 먼저 생각하는 기업</a>
+              <a href="javascript:;" class="tabCtrl">최우선의 가치, 안전</a>
+              <a href="javascript:;" class="tabCtrl">기본준수, 컴플라이언스</a>
+              <a href="javascript:;" class="tabCtrl">상생을 위한 공동체 인식</a>
+              <a href="javascript:;" class="tabCtrl">새로운 기회의 장</a>
+              <a href="javascript:;" class="tabCtrl">아름다운 가치 공유</a>
+						</div>
+					</div>         
+					<div class="defaultTabCon">
+						<!-- 환경을 먼저 생각하는 기업 -->
+						<article >
+							<h4 class="actMainTitle">환경을 먼저 생각하는 기업</h4>
+							<div class="actContsWrap">
+								<span class="actTit">Why this is important</span>
+								<p class="color01">환경영향을 최소화하고 생태계 유지에 앞장서온 삼성물산은 미래 세대를 위한 기업의 역할을 먼저 생각합니다.</p>
+							</div>
+							<div class="actContsWrap">
+								<span class="actTit">How to manage this</span>
+								<p class="color01">삼성물산은 글로벌 수준의 탄소경영 실천, 친환경 건축물을 통한 에너지 절감 등 글로벌 현안인 기후변화 대응에 적극적으로 동참하고 있습니다.</p>
+							</div>
+							<div class="actContsWrap last">
+								<span class="actTit">Our Activities</span>
+								<div class="actConts">
+									<p class="color01 actSubTit">글로벌 탄소경영 선도기업</p>
+									<div class="imgArea">
+										<span class="imgCont01"><img src="/images/front/contents/img_CNT_K_012_01.jpg" alt="CDP" /></span>
+										<span class="imgCont02"><img src="/images/front/contents/img_CNT_K_012_02.jpg" alt="CDP 상패이미지" /></span>
+									</div>
+									<p>삼성물산은 기후변화 대응 및 탄소정보공개에 대한 성과를 인정받아 2017년 CDP(Carbon Disclosure Project) 평가에서 2년 연속으로 「명예의 전당 - 골드클럽」 에 선정되었습니다. 2012년 이후 6년 연속 탄소경영 최우수기업으로 선정된 삼성물산은 글로벌탄소경영 선도기업으로서 온실가스 저감 활동을 적극적으로 실천할 것입니다.</p>
+								</div> 
+								<div class="actConts">
+									<p class="actSubTit color01">친환경 건축물을 통한 에너지 절감</p>
+									<p>건설부문은 에너지 효율 개선 분야의 기술력을 바탕으로 친환경 건축물 인증 프로젝트를 지속적으로 수행하고 있습니다. 미국 전자 DS 총괄 오피스 프로젝트에서 LEED&#42; 인증 Silver 등급을 획득했으며, 인도네시아 IFC2 타워 및 Rasuna 타워 프로젝트에서 각각 Gold plus 및 Gold 등급을 획득하는 성과를 거두었습니다. 이 외에도 고덕 시영 아파트 프로젝트에서 G-SEED&#42; 인증 최우수 등급을 확보하는 등 총 10개의 국내외 친환경 건축물 인증을 획득하여 친환경 기업으로서 선도적 역할을 수행하고 있습니다.</p>
+									<p class="gray">&#42; LEED(Leadership in Energy and Environmental Design) : 미국 그린빌딩 위원회(USGBC) 주도로 개발된 전세계적으로 가장 인지도 높은 친환경 건물 인증 제도로 총 72가지 항목을 평가하며, Platinum, Gold, Silver, Certified 등급으로 이루어져 있음 </p>
+									<p class="gray">&#42; G-SEED(Green Standard for Energy and Environmental Design) : 한국의 녹색 건축물 인증제도로 물순환관리, 재료 및 자원 등 7가지 전문 분야에 대한 평가를 통해 등급을 부여하고 있음 </p>
+								</div>  
+								<div class="actConts">
+									<p>LEED인증 건축물</p>
+									<ul class="imgList">
+										<li>
+											<img src="/images/front/contents/img_CNT_K_012_03.jpg" alt="인도네시아 IFC2 타워" />
+											<span class="name">인도네시아 IFC2 타워</span>
+										</li>
+										<li>
+											<img src="/images/front/contents/img_CNT_K_012_04.jpg" alt="인도네시아 Rasuna 타워" />
+											<span class="name">인도네시아 Rasuna 타워</span>
+										</li>
+										<li>
+											<img src="/images/front/contents/img_CNT_K_012_05.jpg" alt="미국 전자 DS총괄 오피스" />
+											<span class="name">미국 전자 DS총괄 오피스</span>
+										</li>
+									</ul>
+								</div>    
+								<div class="actConts last">
+									<p class="actSubTit">친환경 건축물 인증 획득 현황</p>
+									<!-- 2018-06-20 UI 수정 -->
+									<div class="tableBasicList">
+										<table class="defaultTable">
+											<caption>친환경 건축물 인증 획득 현황</caption>
+											<colgroup>
+												<col style="width:25%" />
+												<col style="width:25%" />
+												<col style="width:25%" />
+												<col style="width:25%" />
+											</colgroup>
+											<tr>
+												<th>구분</th>
+												<th>등급</th>
+												<th colspan="2" class="last">프로젝트명</th>
+											</tr>
+											<tr>
+												<th rowspan="3">LEED</th>
+												<td>Gold Plus</td>
+												<td colspan="2" class="last">인도네시아 IFC2 타워</td>
+											</tr>
+											<tr>
+												<td>Gold</td>
+												<td colspan="2" class="last">인도네시아 Rasuna 타워</td>
+											</tr>
+											<tr>
+												<td>Silver</td>
+												<td colspan="2" class="last">미국 전자 DS총괄 오피스</td>
+											</tr>
+											<tr>
+												<th rowspan="4">G-SEED</th>
+												<td>최우수</td>
+												<td colspan="2" class="last">고덕시영 아파트</td>
+											</tr>
+											<tr>
+												<td rowspan="3">우수</td>
+												<td>수원 디지털시티 중앙광장</td>
+												<td class="last">현석2 재개발 아파트</td>
+											</tr>
+											<tr>
+												<td>위례 2차 아파트</td>
+												<td class="last">안양덕천 재개발 아파트</td>
+											</tr>
+											<tr>
+												<td>서초우성 3차 아파트</td>
+												<td class="last">잠원대림 재건축 아파트</td>
+											</tr>
+										</table>
+									</div>
+									<!--// 2018-06-20 UI 수정 -->
+								</div>           
+							</div>
+						</article>
+						<!-- // 환경을 먼저 생각하는 기업-->
+						<!-- 최우선의 가치, 안전 -->
+						<article>
+							<h4 class="actMainTitle">최우선의 가치, 안전</h4>
+							<div class="actContsWrap">
+								<span class="actTit">Why this is important</span>
+								<p class="color01">삼성물산에게 안전은 기업이 지켜야 할 최우선의 가치입니다.</p>
+							</div>
+							<div class="actContsWrap">
+								<span class="actTit">How to manage this</span>
+								<p class="color01">임직원, 고객을 대상으로 안전교육 시설을 운영하고 있으며 건설장비, 어트랙션 등 각 부문 업의 특성을 반영한 사고예방 점검체계를 강화하고 있습니다.</p>
+							</div>
+							<div class="actContsWrap last">
+								<span class="actTit">Our Activities</span>
+								<div class="actConts">
+									<p class="color01 actSubTit">체험형 교육으로 임직원과 고객의 안전의식 제고</p>
+									<!-- 2018-06-21 UI 수정-->
+									<ul class="imgList">
+										<li>
+											<div class="imgArea">
+												<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_06.jpg" alt="체험형 교육" /></span>
+												<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_06_m.jpg" alt="체험형 교육" /></span>
+											</div>
+										</li>
+										<li>
+											<div class="imgArea">
+												<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_07.jpg" alt="체험형 교육" /></span>
+												<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_07_m.jpg" alt="체험형 교육" /></span>
+											</div>
+										</li>
+										<li>
+											<div class="imgArea">
+												<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_08.jpg" alt="체험형 교육" /></span>
+												<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_08_m.jpg" alt="체험형 교육" /></span>
+											</div>
+										</li>
+									</ul>
+									<!-- // 2018-06-21 UI 수정-->
+									<p>건설부문은 내부 및 협력회사 임직원을 대상으로 ‘Safety Academy’를 운영 중입니다. 현장체험관, 화재체험관, 응급체험관 및 지진체험관의 4개 체험관 중심의 교육을 통해 안전의식 고취 및 사고예방에 앞장서고 있습니다.</p>
+									<p>리조트부문은 생활안전, 응급처치, 재난 등 일상에 밀접한 콘텐츠 중심의 테마체험관인 ‘레니의 안전체험관’을 오픈하여 운영 중입니다. 지진체험관, 영상관, 응급처치관 및 화재 피난 체험관으로 구성되어 있어 에버랜드를 방문하는 고객 누구나 다양한 상황별 대처법을 습득할 수 있습니다.</p>
+								</div> 
+								<div class="actConts">
+									<p class="color01 actSubTit">현장 장비안전 강화로 중대재해 예방</p>
+									<!-- 2018-06-20 UI 수정-->
+									<ul class="imgList">
+										<li class="type01">
+											<div class="imgArea">
+												<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_09.jpg" alt="현장 장비안전 강화" /></span>
+												<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_09_m.jpg" alt="현장 장비안전 강화" /></span>
+											</div>
+										</li>
+										<li class="type02">
+												<div class="imgArea">
+													<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_10.jpg" alt="현장 장비안전 강화" /></span>
+													<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_10_m.jpg" alt="현장 장비안전 강화" /></span>
+												</div>
+										</li>
+										<li>
+											<div class="imgArea">
+													<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_11.jpg" alt="현장 장비안전 강화" /></span>
+													<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_11_m.jpg" alt="현장 장비안전 강화" /></span>
+												</div>
+										</li>
+									</ul>
+									<!--// 2018-06-20 UI 수정-->
+									<p>안전사고 발생 가능성이 높은 건설현장에서 Near miss에 대한 적시 대응은 중대위험 사고 예방에 필수적입니다. 건설부문은 특히 장비 Near miss가 중대사고, 공정 지연 등 공사에 미치는 영향이 크다는 점을 파악하고, 장비 Near miss 발생시 대응체계 점검, 개선과제 도출, 모니터링 및 정보 공유 강화를 통해 안전관리 수준을 높여 나가고 있습니다.</p>
+								</div>                    
+								<div class="actConts last">
+									<p class="color01 actSubTit">어트랙션 통합 모니터링 체계 구축</p>
+									<div class="imgArea">
+										<img src="/images/front/contents/img_CNT_K_012_12.jpg" alt="어트랙션 통합 모니터링 체계 구축" />
+									</div>
+									<p>리조트부문은 세계 최초로 어트랙션 종합예방관리 시스템을 통해 통합 모니터링 체계를 구축하였습니다. 어트랙션 종합 예방관리 시스템은 놀이기구의 운행 상태 모니터링, 경향 관리, 알람 설정 및 트러블 슈팅 기능을 통해 고장을 예방하고 제어시스템 고장 시 원인을 바로 확인하여 어트랙션의 정지시간을 최소화하고 있습니다.</p>
+								</div>           
+							</div>
+						</article>
+						<!-- // 최우선의 가치, 안전-->
+						<!-- 기본준수 컴플라이언스 -->
+						<article>
+							<h4 class="actMainTitle">기본 준수, 컴플라이언스</h4>
+							<div class="actContsWrap">
+								<span class="actTit">Why this is important</span>
+								<p class="color01">부정, 부패는 사회의 근간을 흔드는 중요한 문제로서, 청렴한 기업경영에 대한 사회적 요구 또한 증가하고 있습니다.</p>
+							</div>
+							<div class="actContsWrap">
+								<span class="actTit">How to manage this</span>
+								<p class="color01">삼성물산은 컴플라이언스 관리 체계를 확립하고, 주기적인 사업장 점검과 맞춤형 교육을 통해 준법경영을 실천하고 있습니다.</p>
+							</div>
+							<div class="actContsWrap last">
+								<span class="actTit">Our Activities</span>
+								<div class="actConts">
+									<p class="color01 actSubTit">컴플라이언스 리스크 관리 수준 제고</p>
+									<p>삼성물산은 통합 컴플라이언스 리스크 분류체계를 확립함으로써 선제적 관리를 통한 컴플라이언스 수준 향상을 위해 노력하고 있습니다. 공정거래, 정보보호, 하도급 등 11개 주요 분야별 리스크 인자를 파악하고, 부문별 특성을 감안하여 차별적으로 적용하고 있습니다.</p>
+									<div class="imgArea">
+										<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_13.jpg" alt="컴플라이언스 리스크 관리 수준 제고" /></span>
+										<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_13_m.jpg" alt="컴플라이언스 리스크 관리 수준 제고" /></span>
+									</div>									
+								</div> 
+								<div class="actConts">
+									<p class="color01 actSubTit">해외 사업장 컴플라이언스 점검 강화</p>
+									<ul class="imgTxtList">
+										<li>
+											<span class="imgCont"><img src="/images/front/contents/img_CNT_K_012_14.jpg" alt="해외 사업장 컴플라이언스 점검 강화" /></span>
+											<div class="txtCont">
+												<p>상사부문은 해외사업장에 대한 컴플라이언스 점검을 매년 시행 중이며, 이를 통해 잠재적 리스크를 사전에 발굴 및 대응할 수 있는 시스템을 운영하고 있습니다. </p>
+												<p>패션부문은 상해법인 내 컴플라이언스 체계를 새롭게 구축하고, 중국의 주요 법률을 반영한 컴플라이언스 가이드라인을 수립하였습니다.</p>
+											</div>
+										</li>
+									</ul>
+								</div>   
+								<div class="actConts last">
+									<p class="color01 actSubTit">임직원 맞춤형 컴플라이언스 교육 실시</p>
+									<ul class="imgTxtList">
+										<li>
+											<span class="imgCont"><img src="/images/front/contents/img_CNT_K_012_15.jpg" alt="임직원 맞춤형 컴플라이언스 교육 실시" /></span>
+											<div class="txtCont">
+												<p>패션부문은 영업 직군에게는 대리점법 교육을, 구매생산 직군에게는 하도급, 부패방지, 기술자료 교육을 실시하고 있습니다. 직군별 소규모 단위로 진행되며, 토론과정을 포함한 사례 위주의 교육을 통해 효과를 극대화하고 있습니다. </p>
+												<p>리조트부문은 저작권 및 상표권에 대한 주요 쟁점사항을 신규 입사자 및 주요 임직원들을 대상으로 계층별로 교육하고 있습니다.</p>
+											</div>
+										</li>
+									</ul>
+								</div>       
+							</div>
+						</article>
+						<!-- // 기본준수 컴플라이언스 -->
+						<!-- 상생을 위한 공동체 인식 -->
+						<article>
+							<h4 class="actMainTitle">상생을 위한 공동체 인식</h4>
+							<div class="actContsWrap">
+								<span class="actTit">Why this is important</span>
+								<p class="color01">상생과 협력의 새로운 경영 패러다임 속에서, 삼성물산은 파트너로서 협력회사와의 동반성장을 위해 노력하고 있습니다.</p>
+							</div>
+							<div class="actContsWrap">
+								<span class="actTit">How to manage this</span>
+								<p class="color01">삼성물산은 공정하고 투명한 거래 문화가 조성될 수 있도록 지속적으로 노력하고 있으며, 다양한 동반성장 프로그램을 통해 협력회사의 성장을 도모하고 있습니다.</p>
+							</div>
+							<div class="actContsWrap last">
+								<span class="actTit">Our Activities</span>
+								<div class="actConts">
+									<p class="color01 actSubTit">공정거래 및 동반성장 체계</p>
+									<div class="imgArea type02">
+										<div class="imgCont01">
+											<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_16.jpg" alt="공정거래 및 동반성장 체계" /></span>
+											<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_16_m.jpg" alt="공정거래 및 동반성장 체계" /></span>
+										</div>
+										<div class="imgCont02">
+											<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_17.jpg" alt="공정거래 및 동반성장 체계" /></span>
+											<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_17_m.jpg" alt="공정거래 및 동반성장 체계" /></span>
+										</div>										
+									</div>
+									<p>삼성물산은 협력회사와의 계약 체결 및 이행 과정에서 발생할 수 있는 불공정한 거래행위를 사전에 예방하고 있습니다. 건설부문은 협력회사 선정 시 평가 결과를 실시간 공개함으로써 평가의 투명성을 높여왔고, 하도급 거래에서 발생할 수 있는 분쟁조정 절차를 마련하여 운영하고 있습니다. </p>
+									<p>또한 삼성물산은 자금, 기술, 교육 등을 지원하는 다양한 동반성장 프로그램을 통해 협력회사가 경쟁력을 확보할 수 있도록 돕고 있으며, Partner’s Day 를 우수성과를 공유하고, 공동이익 창출에 기여하는 상생의 장으로 활용하고 있습니다.</p>
+								</div> 
+								<div class="actConts last">
+									<p class="color01 actSubTit">공정거래 및 동반성장 문화 확산</p>
+									<!-- 2018-06-21 UI 수정-->
+									<div class="imgArea">
+										<div class="imgCont01">
+											<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_18.jpg" alt="공정거래 및 동반성장 문화 확산" /></span>
+											<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_18_m.jpg" alt="공정거래 및 동반성장 문화 확산" /></span>
+										</div>
+										<div class="imgCont02">
+											<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_19.jpg" alt="공정거래 및 동반성장 문화 확산" /></span>
+											<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_19_m.jpg" alt="공정거래 및 동반성장 문화 확산" /></span>
+										</div>
+									</div>
+									<!--// 2018-06-21 UI 수정-->
+									<p>삼성물산은 계약체결 과정의 공정성을 향상시키고자 제도 및 프로세스를 지속적으로 개선하고 있습니다.</p>
+									<p>건설부문은 협력회사 등록 절차, 선정 및 운영 기준 등을 협력회사 등록·관리 시스템인 Partners Portal을 통해 공개하여 공정한 거래문화 정착에 힘쓰고 있으며,</p>
+									<p>패션부문은 1차 협력회사 중심으로 추진되었던 동반성장 지원 프로그램을 2차 협력회사까지 확산하고자 노력하고 있습니다. 2016년 48개의 1차 협력회사와 67개의 2차 협력회사 간 공정거래 및 동반성장 협약을 체결하여 1·2차 협력회사 간 공정하고 투명한 거래환경을 조성하고, 동반성장 문화가 패션산업 전반에 확산되는데 기여하고 있습니다.	</p>
+								</div>       
+							</div>
+						</article>
+						<!-- // 상생을 위한 공동체 인식-->
+						<!-- 새로운 기회의 장 -->
+						<article>
+							<h4 class="actMainTitle">새로운 기회의 장</h4>
+							<div class="actContsWrap">
+								<span class="actTit">Why this is important</span>
+								<p class="color01">삼성물산은 급변하는 대외환경을 위기가 아닌 기회로 인식하고 다양한 비즈니스 기회에 주목하고 있습니다.</p>
+							</div>
+							<div class="actContsWrap">
+								<span class="actTit">How to manage this</span>
+								<p class="color01">삼성물산은 건설과 상사라는 업의 특성을 활용한 새로운 사업적 기회를 모색하고 있으며 패션과 리조트부문은 IT 기술의 변화, 서비스산업 성장, 고객 요구사항 변화 등을 새로운 상품 개발과 연계시키고 있습니다.</p>
+							</div>
+							<div class="actContsWrap last">
+								<span class="actTit">Our Activities</span>
+								<div class="actConts">
+									<p class="color01 actSubTit">기후변화 위기를 사업의 기회로 활용</p>
+									<div class="imgArea">
+										<img src="/images/front/contents/img_CNT_K_012_20.jpg" alt="기후변화 위기를 사업의 기회로 활용" />
+									</div>
+									<p>건설부문은 세계 최대 규모인 영국 티스 바이오매스 열병합발전소 프로젝트 수주를 통해 신재생 에너지 분야의 기술력을 확보하는 기회를 갖게 되었습니다. 본 프로젝트에 참여한 경험을 활용하여 향후 성장이 예상되는 바이오매스 발전 프로젝트에 지속 참여할 예정입니다.</p>
+									<p>상사부문은 인도네시아에서 팜농장 운영 및 팜유 트레이딩을 통해 구축된 노하우와 네트워크를 바탕으로 일본의 바이오매스 발전소와 PKS&#42; 장기공급계약을 체결하였습니다. 본 계약은 삼성물산이 일본 바이오매스 시장에 진출한 첫 사례로 향후 일본 전역의 신규 바이오매스 발전소와의 공급계약을 추진할 수 있는 계기가 되었다는 점에서 높이 평가할 수 있습니다. </p>
+									<p class="gray"> &#42;PKS(Palm Kernel Shell) : 팜 열매의 껍질로 바이오매스 발전소에서 화석연료를 대체하여 연료로 사용함.</p>
+								</div> 
+								<div class="actConts">
+									<p class="color01 actSubTit">동&#183;식물 콘텐츠 강화</p>
+									<div class="imgArea">
+										<span class="imgCont01"><img src="/images/front/contents/img_CNT_K_012_21.jpg" alt="동&#183;식물 콘텐츠 강화" /></span>
+										<span class="imgCont02"><img src="/images/front/contents/img_CNT_K_012_22.jpg" alt="동&#183;식물 콘텐츠 강화" /></span>
+									</div>
+									<p>삼성물산은 계약체결 과정의 공정성을 향상시키고자 제도 및 프로세스를 지속적으로 개선하고 있습니다.</p>
+									<p>건설부문은 협력회사 등록 절차, 선정 및 운영 기준 등을 협력회사 등록·관리 시스템인 Partners Portal을 통해 공개하여 공정한 거래문화 정착에 힘쓰고 있으며,</p>
+									<p>패션부문은 1차 협력회사 중심으로 추진되었던 동반성장 지원 프로그램을 2차 협력회사까지 확산하고자 노력하고 있습니다. 2016년 48개의 1차 협력회사와 67개의 2차 협력회사 간 공정거래 및 동반성장 협약을 체결하여 1·2차 협력회사 간 공정하고 투명한 거래환경을 조성하고, 동반성장 문화가 패션산업 전반에 확산되는데 기여하고 있습니다.	</p>
+								</div>    
+								<div class="actConts last">
+									<p class="color01 actSubTit">4차 산업혁명 시대에 맞춘 신상품 개발</p>
+									<div class="imgArea">
+										<span class="imgCont01"><img src="/images/front/contents/img_CNT_K_012_23.jpg" alt="4차 산업혁명 시대에 맞춘 신상품 개발" /></span>
+										<span class="imgCont02"><img src="/images/front/contents/img_CNT_K_012_24.jpg" alt="4차 산업혁명 시대에 맞춘 신상품 개발" /></span>
+									</div>
+									<p>패션부문은 IT 기술과 패션을 융합한 웨어러블 플랫폼 브랜드 ‘더휴먼핏(The Humanfit)’을 공개한 이후 태양광을 이용하여 휴대폰을 충전할 수 있는 솔백(Sol Bag)과 IoT 기술을 접목하여 착용자의 생활습관 데이터를 수집할 수 있는 웰트(Welt) 등 혁신적인 제품을 소개하였습니다.</p>
+								</div>         
+							</div>							 
+						</article>
+						<!-- // 새로운 기회의 장 -->
+						<!-- 아름다운 가치 공유 -->
+						<article>
+							<h4 class="actMainTitle">아름다운 가치 공유</h4>
+							<div class="actContsWrap">
+								<span class="actTit">Why this is important</span>
+								<p class="color01">삼성물산은 진정성 있는 나눔의 실천을 통해 기업과 공동체가 함께 성장하는 환경을 추구합니다.</p>
+							</div>
+							<div class="actContsWrap">
+								<span class="actTit">How to manage this</span>
+								<p class="color01">삼성물산은 4개 부문이 함께 참여하는 통합 사회공헌활동과 더불어, 각 부문별로 지역사회와 함께하는 봉사활동을 통해 나눔의 가치를 실현하고 있습니다.</p>
+							</div>
+							<div class="actContsWrap last">
+								<span class="actTit">Our Activities</span>
+								<div class="actConts">
+									<p class="color01 actSubTit">통합 사회공헌체계 구축</p>
+									<p>삼성물산은 건설, 상사, 패션, 리조트 전 부문이 함께 참여하는 통합 사회공헌 체계를 구축하고, 미래세대(개인), 지역사회(공동체), 환경(지구)의 3대 분야를 중심으로 사회공헌 활동을 진행하고 있습니다.</p>
+									<div class="imgArea">
+										<span class="pcImg"><img src="/images/front/contents/img_CNT_K_012_25.jpg" alt="삼성물산 사회공헌 전략방향" /></span>
+										<span class="mImg"><img src="/images/front/contents/img_CNT_K_012_25_m.jpg" alt="삼성물산 사회공헌 전략방향" /></span>
+									</div>									
+								</div> 
+								<div class="actConts last">
+									<p class="color01 actSubTit">해외 사업장 컴플라이언스 점검 강화</p>		
+									<ul class="imgTxtList">
+										<li>
+											<span class="imgCont"><img src="/images/front/contents/img_CNT_K_012_26.jpg" /></span>
+											<p class="txtCont">건설부문은 ‘Samsung Village’라는 브랜드로 국내외 지역사회의 주거환경 개선사업을 지속적으로 시행하고 있습니다. 2017년에는 인도 챠르가온 2호 마을, 베트남 냐미/반닷 3호 마을을 차례로 준공했습니다. 한편 국내에서는 강원도 강릉시 강동면의 저소득가정 15세대를 선정하고 주택 개보수 활동을 실시하여 지역 주민의 삶의 질 향상에 기여하였습니다.</p>
+										</li>
+										<li>
+											<span class="imgCont"><img src="/images/front/contents/img_CNT_K_012_27.jpg" /></span>
+											<p class="txtCont">상사부문은 세이프 커뮤니티(Safe Communities)와 세이프 하우스(Safe House) 활동을 통해 지역사회와의 상생을 추구하고 있습니다. 세이프 커뮤니티는 ‘컨테이너 박스를 부탁해’라는 프로그램으로 송파구 내 우범지역의 환경을 개선하여 주민들에게 안전한 생활 영역을 제공하였습니다. 세이프하우스는 독거노인의 주거환경 개선에 실질적으로 필요한 부분을 지원하는 프로그램입니다.</p>
+										</li>
+										<li>
+											<span class="imgCont"><img src="/images/front/contents/img_CNT_K_012_28.jpg" /></span>
+											<p class="txtCont">패션부문은 2013년부터 'Heart For Art'를 통해 지역사회 저소득 및 다문화가정 아동·청소년, 시각장애 아동을 대상으로 예술 교육 후원 프로그램을 진행하고 있습니다. 패션과 미술을 접목한 커리큘럼을 개발하여 미술전반에 대한 오감적 접근으로 패션을 배우고 일상에서 적용해보는 'Heart For Art'는 창의적인 미술교육으로 아이들의 자신감 회복과 아름다움에 대해 공부하는 기회입니다.</p>
+										</li>
+										<li>
+											<span class="imgCont"><img src="/images/front/contents/img_CNT_K_012_29.jpg" /></span>
+											<p class="txtCont">리조트부문은 ‘캐리비안 베이’ 라이프가드로 구성된 ‘희망지킴이 봉사팀’을 통해 지역사회 장애아동 대상으로 수중 재활치료를 실시하고 있습니다. 임직원과 장애아동을 1:1로 매칭한 후 장애아동의 특성에 맞는 수영, 수중체조 등 안전한 재활치료를 지원하고 있습니다.</p>
+										</li>
+									</ul>						
+								</div>         
+							</div>
+						</article>
+						<!-- // 아름다운 가치 공유 -->
+					</div>      
+					<!-- 2018-06-26 UI 추가-->
+					<ul class="shareList">
+						<li class="email"><button><span class="blind">이메일</span></button></li>
+						<li class="facebook"><button><span class="blind">페이스북</span></button></li>
+					</ul>
+					<!-- // 2018-06-26 UI 추가-->
+					<div class="relationInfo">
+						<h4 class="contTit">연관정보 바로가기</h4>
+						<div class="buttonWrap">
+							<button class="blankBtn">INVESTOR RELATIONS</button>
+							<button class="blankBtn">요약재무제표</button>
+							<button class="blankBtn">CORPORATE GOVERNANCE</button>
+							<button class="blankBtn">이사회 구성</button>
+						</div>
+					</div>  
+				</div> <!-- // contents -->
+				<div class="contentsBtm">
+					<p class="viewTop"><a href="#top">TOP</a></p>
+					<div class="moAcco menuWrap">
+						<ul class="depth01">
+							<li class="gnb01"> <!-- a에 클릭(모바일)/오버(PC)시 li에 클래스 active 추가 -->
+								<a href="#none">OUR BUSINESSES</a>
+								<div class="depthWrap">
+									<ul class="depth02">
+										<li><a href="#none">Overview</a></li>
+										<li><a href="#none">연혁</a></li>
+										<li><a href="#none" class="depth">사업영역</a> <!-- class="depth"에 클릭(모바일)/오버(PC)시 li에 클래스 active 추가 -->
+											<ul class="depth03">
+												<li><a href="#none">건설부문</a></li>
+												<li><a href="#none">상사부문</a></li>
+												<li><a href="#none">패션부문</a></li>
+												<li><a href="#none">리조트부문</a></li>
+											</ul>
+										</li>
+										<li><a href="#none" class="depth">CSR</a>
+											<ul class="depth03">
+												<li><a href="#none">Our CSR</a></li>
+												<li><a href="#none">Act</a></li>
+												<li><a href="#none">CSR News</a></li>
+												<li><a href="#none">Report</a></li>
+											</ul>
+										</li>
+										<li><a href="#none">뉴스</a></li>
+										<li><a href="#none">소셜미디어</a></li>
+										<li><a href="#none">채용</a></li>
+										<li><a href="#none" class="depth">Contact Us</a> 
+											<ul class="depth03">
+												<li><a href="#none">오시는 길</a></li>
+												<li><a href="#none">고객문의</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="gnb02">
+								<a href="#none">INVESTOR RELATIONS</a>
+								<div class="depthWrap">
+									<ul class="depth02">
+										<li><a href="#none">Overview</a></li>
+										<li><a href="#none" class="depth">재무정보</a>
+											<ul class="depth03">
+												<li><a href="#none">요약재무재표</a></li>
+												<li><a href="#none">신용등급</a></li>
+												<li><a href="#none">감사/검토보고서</a></li>
+												<li><a href="#none">사업보고서</a></li>
+												<li><a href="#none">실적발표 자료</a></li>
+											</ul>
+										</li>
+										<li><a href="#none">IR 일정</a></li>
+										<li><a href="#none">공시정보</a></li>
+										<li><a href="#none" class="depth">주식 및 주주정보</a>
+											<ul class="depth03">
+												<li><a href="#none">기본정보</a></li>
+												<li><a href="#none">주가정보</a></li>
+												<li><a href="#none">주가지표</a></li>
+												<li><a href="#none">주주구성</a></li>
+												<li><a href="#none">주주총회</a></li>
+												<li><a href="#none">주주환원</a></li>
+											</ul>
+										</li>
+										<li><a href="#none">FAQ</a></li>
+										<li><a href="#none">Contact IR</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="gnb03">
+								<a href="#none">CORPORATE GOVERNANCE</a>
+								<div class="depthWrap">
+									<ul class="depth02">
+										<li><a href="#none">Overview</a></li>
+										<li><a href="#none">정관</a></li>
+										<li><a href="#none">윤리강령</a></li>
+										<li><a href="#none" class="depth">이사회</a>
+											<ul class="depth03">
+												<li><a href="#none">이사회 구성</a></li>
+												<li><a href="#none">운영 &amp; 역할</a></li>
+												<li><a href="#none">활동내역 &amp; 평가보상</a></li>
+											</ul>
+										</li>
+										<li><a href="#none" class="depth">위원회</a>
+											<ul class="depth03">
+												<li><a href="#none">개요</a></li>
+												<li><a href="#none">경영위원회</a></li>
+												<li><a href="#none">감사위원회</a></li>
+												<li><a href="#none">사외이사후보추천위원회</a></li>
+												<li><a href="#none">보상위원회</a></li>
+												<li><a href="#none">내부거래위원회</a></li>
+												<li><a href="#none">CSR위원회</a></li>
+											</ul>
+										</li>
+										<li><a href="#none" class="depth">기타 위원회</a>
+											<ul class="depth03">
+												<li><a href="#none">거버넌스위원회</a></li>
+											</ul>
+										</li>
+										<li><a href="#none">외부감사인</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> <!-- // container -->
+	</div> <!-- // contentsWrap -->
+	<div class="footer">
+		<div class="container">
+			<footer>
+				<div class="footMenuWrap">
+					<ul>
+						<li><a href="#none">보안신고</a></li>
+						<li><a href="#none">이메일주소무단수집거부</a></li>
+						<li><a href="#none">Legal Notice</a></li>
+						<li><a href="#none">개인정보 취급방침</a></li>
+                        <li class="ethic-manage">
+							<a href="#none" class="btnEthic">윤리경영</a>
+							<div class="ethicArea">
+                                <div class="container">
+                                    <dl class="corp">
+                                        <dt>윤리경영 사이트</dt>
+                                        <dd>
+                                            <a href="http://www.withsamsung.co.kr/ko/html/main/index.html" target="_blank" title="새창">건설/상사부문</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="http://www.samsungfashion.com/contents/ethics.jsp#tabs?main=1" target="_blank" title="새창">패션부문</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="http://audit.everland.com/main.html" target="_blank" title="새창">리조트부문</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+						<li class="contact"><a href="#none">Contact Us</a></li>
+						<li class="sitemap"><a href="#none">Sitemap</a></li>
+					</ul>
+					<ul class="moLink">
+						<li><a href="#none">오시는 길</a></li>
+						<li><a href="#none">고객문의</a></li>
+					</ul>
+				</div>
+
+				<p class="copy">Copyright (C) 2018 Samsung C&amp;T Corporation. <span class="block">All rights reserved</span></p>
+
+				<div class="familyWrap"> <!-- .btnFamily 버튼 클릭시 다중클래스 active 추가 -->
+					<section>
+						<h2><button type="button" class="btnFamily">FAMILY MAP</button></h2>
+						<div class="familyArea">
+							<div class="container">
+								<dl class="corp">
+									<dt>삼성물산 사이트</dt>
+									<dd>
+										<a href="#none" target="_blank" title="새창">건설부분</a>
+										<ul>
+											<li><a href="#none" target="_blank" title="새창">래미안</a></li>
+										</ul>
+									</dd>
+									<dd>
+										<a href="#none" target="_blank" title="새창">상사부분</a>
+
+									</dd>
+									<dd>
+										<a href="#none" target="_blank" title="새창">패션부분</a>
+										<ul>
+											<li><a href="#none" target="_blank" title="새창">SSF SHOP</a></li>
+										</ul>
+									</dd>
+									<dd>
+										<a href="#none" target="_blank" title="새창">리조트부분</a>
+										<ul>
+											<li><a href="#none" target="_blank" title="새창">에버랜드</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="related">
+									<dt>관계사 사이트</dt>
+                                    <!-- 2017-03-09 패밀리사이트 삭제
+                                    <dd><a href="#none" target="_blank" title="새창">삼성</a></dd> -->
+									<dd><a href="#none" target="_blank" title="새창">삼성전자</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성SDI</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성SDS</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성생명</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성화재</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성카드</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성증권</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성중공업</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성엔지니어링</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성바이오로직스</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성바이오에피스</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성웰스토리</a></dd>
+								</dl>
+								<dl class="etc">
+									<dt>기타</dt>
+                                    <!-- 2017-03-09 패밀리사이트 삭제
+									<dd><a href="#none" target="_blank" title="새창">삼성채용사이트</a></dd> -->
+									<dd><a href="#none" target="_blank" title="새창">삼성사회봉사단</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성장학회</a></dd> <!-- 2016-04-12 텍스트 수정 -->
+									<dd><a href="#none" target="_blank" title="새창">삼성재단</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">호암재단</a></dd>
+								</dl>
+							</div>
+						</div>
+					</section>
+				</div>
+			</footer>
+		</div>
+	</div> <!-- // footer -->
+</div> <!-- // wrap -->
+</body>
+</html>
