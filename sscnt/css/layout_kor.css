@@ -1025,11 +1025,16 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,selec
 .defaultTable { width: auto; } 
 .tableBasicList thead th { padding: 8px 10px; } 
 .tableBasicList tbody th, .tableBasicList tbody td { padding: 8px 10px; font-size: 15px; } 
+
+/* 페이징처리 */
+.pageArea a, .pageArea strong {margin-left: 0;}
  }
 
 @media screen and (max-width:320px){
 .moMenuWrap .location ol { padding: 10px 0 9px 25px; } 
 .moMenuWrap .location ol:before { left: 6px; } 
+.pageArea a, .pageArea strong {width: 30px; height: 30px; line-height: 30px;}
+.pageArea .btnNext, .pageArea .btnPrev {margin: 0;}
  }
 
 @media print and (color) { /* 프린트시 컬러 처리 width: 538px */
