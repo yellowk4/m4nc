@@ -127,6 +127,17 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 #CNT_K_056 .contTit{margin-top: 60px;}
 #CNT_K_056 .tableBasicList{margin-top: 20px;}
 #CNT_K_056 .whiteBtn.small{min-width: 159px;}
+/* ul table */
+.reportList {margin-top: 20px; overflow:hidden; border-top:1px solid #0c4da2; border-bottom:1px solid #777777;}
+.reportList li {float:left; width:50%; height:80px; line-height:80px; overflow:hidden; border-bottom:1px solid #d9d9d9; border-right: 1px solid #d9d9d9;}
+.reportList li:nth-child(2n) {border-right:0;}
+.reportList li:nth-child(5), .reportList li:last-child{border-bottom: 0;}
+.reportList li .tit {float:left; width:50%; text-align:center; box-sizing:border-box; background:#f8f8f8; font-size:16px;border-right: 1px solid #d9d9d9;}
+.reportList li .btnArea {float: left; width: 50%; text-align:center;}
+/* bg blue ul */
+.reportList.bgBlue li{border-right: 0;}
+.reportList.bgBlue .tit{background-color: #eff8fe; color: #0c4da2;}
+/* bg blue table */
 .tableBasicList th.bgBlue, .tableBasicList td.bgBlue{background-color: #eff8fe;}
 .tableBasicList th.bgBlue{color: #0c4da2;}
 .tableBasicList tbody td.noneBorder{border-left: 0;}
@@ -232,7 +243,6 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     /* none bg */
     .titleBox.bg02, .titleBox.bg03{background-image: none; padding: 0;}/*윤리강령*/
     .titleBox.bg02 .selectTab .select button, .titleBox.bg03 .selectTab .select button{border: 1px solid #0c4da2;}
-    .selectTab .select button:after{background-image: url(/images/front/icon/)}
 
     /* corporate Overview CNT_K_050 */
     .overviewTit h4 {margin-bottom:20px; font-size:21px;}
@@ -301,7 +311,14 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     #CNT_K_056 .tableWrap .tableBasicList{float: none; width: 100%;}
     #CNT_K_056 .tableWrap .tableBasicList.borderL{border-left: 0;}
     #CNT_K_056 .pcType{display: none;}
-    #CNT_K_056 .tableWrap th, .blueTable th {min-width: 185px;}
+    /* ul table */
+    .responWrap{overflow-x: scroll; width: 100%;}
+    .reportList {min-width: 375px; margin-top: 15px;}
+    .reportList li{width:100%; border-right: 0;}
+    .reportList li:nth-child(2n){border-right:0;}
+    .reportList li:nth-child(5){border-bottom: 1px solid #d9d9d9;}
+    .reportList li, .reportList li .btnArea{ line-height:80px !important;}
+
 
     /*  corporate 감사위원회 CNT_K_057 */
     #CNT_K_057 .txt + .tableBasicList{margin-top: 15px;}

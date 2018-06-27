@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>공시정보 : 삼성물산</title>
+<title>신용등급 : 삼성물산</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <link type="text/css" rel="stylesheet" href="/css/default.css" />
 <link type="text/css" rel="stylesheet" href="/css/layout_kor.css" />
-<link type="text/css" rel="stylesheet" href="/css/ir.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
+<link type="text/css" rel="stylesheet" href="/css/ir_eng.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="/js/media.match.min.js"></script>
@@ -165,11 +165,19 @@
 			<div class="location">
 				<ol class="clfix">
 					<li>INVESTOR RELATIONS</li>
-					<li class="on">공시정보</li>
+					<li>재무정보</li>
+					<li class="on">신용등급</li>
 				</ol>
 			</div>
 			<div class="selectTab typeBlue">
-				<strong class="select"><span>공시정보</span></strong>
+				<strong class="select"><button type="button">신용등급</button></strong>
+				<ul>
+					<li><a href="#none">요약재무제표</a></li>
+					<li class="active"><a href="#none">신용등급</a></li>
+					<li><a href="#none">감사/검토보고서</a></li>
+					<li><a href="#none">사업보고서</a></li>
+					<li><a href="#none">실적발표 자료</a></li>
+				</ul>
 			</div>
 		</div>
 	</div> <!-- // header -->
@@ -182,7 +190,7 @@
 					<div class="visualWrap">
 						<div class="inner">
 							<h3 class="visualTit">
-								공시정보 <span><i class="home">home</i>INVESTOR RELATIONS</span>
+								신용등급 <span><i class="home">home</i>INVESTOR RELATIONS</span>
 							</h3>
 						</div>
 					</div>
@@ -202,12 +210,12 @@
 					</div>
 				</div>
 
-
+				
 
 				<div class="pcMenuWrap">
 					<div class="navbar inner">
-						<a href="javascript:;" class="">Overview</a> <!-- 활성화 시 "on" 추가 -->
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
+						<a href="javascript:;">Overview</a> <!-- 활성화 시 "on" 추가 -->
+						<div class="dropdown on"> <!-- 활성화 시 "on" 추가 -->
 							<button class="dropbtn">재무정보 <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
 								<a href="#">요약재무제표</a>
@@ -218,7 +226,7 @@
 							</div>
 						</div>
 						<a href="javascript:;">IR일정</a>
-						<a href="javascript:;" class="on">공시정보</a>
+						<a href="javascript:;">공시정보</a>
 						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
 							<button class="dropbtn">주식 및 주주정보 <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
@@ -235,8 +243,260 @@
 					</div>
 				</div>
 
-				<div id="CNT_K_029" class="contents"> <!-- 페이지별 ID -->
-					<div>여기에 공시정보 넣어주시면 됩니다.</div>
+				<div id="CNT_E_024" class="contents"> <!-- 페이지별 ID -->
+					<section>
+						<h4 class="contTit">Korean Credit Rating</h4>
+						<div class="tableBasicList"> 
+							<table class="defaultTable minW100">
+								<caption>신용등급현황 - 기업어음, 회사채, 2014년말, 2015년말, 2016년말, 2017년말</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">Subject</th>
+										<th scope="col">2014</th>
+										<th scope="col">2015</th>
+										<th scope="col">2016</th>
+										<th scope="col">2017</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">Commercial paper</th>
+										<td>A1</td>
+										<td>A1</td>
+										<td>A1</td>
+										<td>A1</td>
+									</tr>
+									<tr>
+										<th scope="row">Corporate Bond</th>
+										<td>AA+</td>
+										<td>AA+</td>
+										<td>AA+</td>
+										<td>AA+</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="mcolor04">※ Credit rating for 2014 only show results for pre-merger Cheil Industries.</p>
+	
+						<h5 class="contTitsub color01">Korean credit rating definition</h5>
+						<div class="tableBasicList">
+							<table class="defaultTable">
+								<caption>Commercial paper</caption>
+								<colgroup>
+									<col style="width:18%">
+									<col style="width:18%">
+									<col style="width:auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="2">Rating</th>
+										<th scope="col">Definition</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="6">Commercial<br>paper</th>
+										<th scope="row">A1</th>
+										<td class="alignL">The ability to repay at the right time is at the highest level and its stability is high enough not to be affected by environmental changes in the reasonably predictable future</td>
+									</tr>
+									<tr>
+										<th scope="row">A2</th>
+										<td class="alignL">The ability for repayment of borrowings on time remains high, but the stability is somewhat inferior to A1</td>
+									</tr>
+									<tr>
+										<th scope="row">A3</th>
+										<td class="alignL">The ability for repayment of borrowings on time remains good, but the stability may be affected by an abrupt change in environment</td>
+									</tr>
+									<tr>
+										<th scope="row">B</th>
+										<td class="alignL">The ability for repayment of borrowings on time maintains a reasonable level, but the stability is vulnerable to a change in environment. Thus, there is a speculative factor</td>
+									</tr>
+									<tr>
+										<th scope="row">C</th>
+										<td class="alignL">The ability for repayment of borrowings and the stability remain volatile. Thus, there is a strong speculative factor</td>
+									</tr>
+									<tr>
+										<th scope="row">D</th>
+										<td class="alignL">At present, the company is unable to pay its debts</td>
+									</tr>
+
+									<tr>
+										<th scope="row" rowspan="10">Corporate Bond</th>
+										<th scope="row">AAA</th>
+										<td class="alignL">The overall repayment ability is at the highest level and the investment risk is extremely low. It is stable enough not to be affected by any environmental changes in the reasonably predictable future from the current state</td>
+									</tr>
+									<tr>
+										<th scope="row">AA</th>
+										<td class="alignL">The investment risk is very low with extremely high overall repayment ability, but there are some inferior elements compared to the AAA grade</td>
+									</tr>
+									<tr>
+										<th scope="row">A</th>
+										<td class="alignL">The investment risk is low with high overall repayment ability, but there is a possibility of being affected by abrupt environmental changes in the future</td>
+									</tr>
+									<tr>
+										<th scope="row">BBB</th>
+										<td class="alignL">The overall repayment ability is satisfactory, but there is a possibility of decreased overall repayment ability from environmental changes in the future</td>
+									</tr>
+									<tr>
+										<th scope="row">BB</th>
+										<td class="alignL">There are no immediate problems in the overall repayment ability, but there are speculative elements in stability in the future</td>
+									</tr>
+									<tr>
+										<th scope="row">B</th>
+										<td class="alignL">Due to insufficient overall repayment ability, it is speculative and stability in the future cannot be decided in the current state</td>
+									</tr>
+									<tr>
+										<th scope="row">CCC</th>
+										<td class="alignL">Obligor's capacity to meet financial commitments is currently vulnerable, and may contain possibility of default</td>
+									</tr>
+									<tr>
+										<th scope="row">CC</th>
+										<td class="alignL">Obligor's capacity to meet financial commitments is currently highly vulnerable and is more susceptible to adverse economic conditions or changing circumstances than higher ratings</td>
+									</tr>
+									<tr>
+										<th scope="row">C</th>
+										<td class="alignL">Obligor's capacity to meet financial commitments is currently highly vulnerable and the obligor is regarded to have little chance of recovery</td>
+									</tr>
+									<tr>
+										<th scope="row">D</th>
+										<td class="alignL">All financial obligations of an issuer are considered in default</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="mcolor04 grayDotTxt">The ratings from AA to CCC in long-term credit ratings may be modified by the addition of a plus (+) or minus (-) to show relative standing within the major rating categories.</p>
+						
+						<h4 class="contTit">International Credit Rating</h4>
+						<div class="tableBasicList">
+							<table class="defaultTable">
+								<caption>International Credit Rating</caption>
+								<colgroup>
+									<col style="width:16%">
+									<col style="width:20%">
+									<col style="width:16%">
+									<col style="width:16%">
+									<col style="width:16%">
+									<col style="width:16%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">Subject</th>
+										<th scope="col">Evaluation company</th>
+										<th scope="col">2014</th>
+										<th scope="col">2015</th>
+										<th scope="col">2016</th>
+										<th scope="col">2017</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">Short-term</th>
+										<td rowspan="2" class="alignL">R&amp;I (JAPAN)<br>Rating and Investment Information</td>
+										<td>a-2</td>
+										<td>a-1</td>
+										<td>a-1</td>
+										<td>a-1</td>
+									</tr>
+									<tr>
+										<th scope="row">Long-term</th>
+										<td>BBB+</td>
+										<td>A-</td>
+										<td>A-</td>
+										<td>A-</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="mcolor04">※ Credit rating for 2014 only show results for pre-merger Samsung C&amp;T.</p>
+	
+						<h5 class="contTitsub color01">International credit rating definition</h5>
+						<div class="tableBasicList">
+							<table class="defaultTable">
+								<caption>Short-term Debts</caption>
+								<colgroup>
+									<col style="width:18%">
+									<col style="width:18%">
+									<col style="width:auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="2">Rating</th>
+										<th scope="col">Definition</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" rowspan="5&quot;&quot;">Short-term<br>Debts</th>
+										<th scope="row">a-1</th>
+										<td class="alignL">Certainty of the fulfillment of a short-term obligation is high</td>
+									</tr>
+									<tr>
+										<th scope="row">a-2</th>
+										<td class="alignL">Certainty of the fulfillment of a short-term obligation is high, though some factors require attention</td>
+									</tr>
+									<tr>
+										<th scope="row">a-3</th>
+										<td class="alignL">Certainty of the fulfillment of a short-term obligation is sufficient for the time being, though some factors require attention in times of major environmental changes</td>
+									</tr>
+									<tr>
+										<th scope="row">b</th>
+										<td class="alignL">Certainty of the fulfillment of a short-term obligation is not equal to that of a short-term obligation rated in the 'a' categories and some factors require attention</td>
+									</tr>
+									<tr>
+										<th scope="row">c</th>
+										<td class="alignL">The lowest rating. A short-term obligation is in default or is highly likely to default</td>
+									</tr>
+
+									<tr>
+										<th scope="row" rowspan="9">Issuer<br>Rating</th>
+										<th scope="row">AAA</th>
+										<td class="alignL">Highest creditworthiness supported by many excellent factors</td>
+									</tr>
+									<tr>
+										<th scope="row">AA</th>
+										<td class="alignL">Very high creditworthiness supported by some excellent factors</td>
+									</tr>
+									<tr>
+										<th scope="row">A</th>
+										<td class="alignL">High creditworthiness supported by a few excellent factors</td>
+									</tr>
+									<tr>
+										<th scope="row">BBB</th>
+										<td class="alignL">Creditworthiness is sufficient, though some factors require attention in times of major environmental changes</td>
+									</tr>
+									<tr>
+										<th scope="row">BB</th>
+										<td class="alignL">Creditworthiness is sufficient for the time being, though some factors require due attention in times of environmental changes</td>
+									</tr>
+									<tr>
+										<th scope="row">B</th>
+										<td class="alignL">Creditworthiness is questionable and some factors require constant attention</td>
+									</tr>
+									<tr>
+										<th scope="row">CCC</th>
+										<td class="alignL">Creditworthiness is highly questionable and a financial obligation of an issuer is likely to default</td>
+									</tr>
+									<tr>
+										<th scope="row">CC</th>
+										<td class="alignL">All of the financial obligations of an issuer are likely to default</td>
+									</tr>
+									<tr>
+										<th scope="row">D</th>
+										<td class="alignL">R&amp;I believes that all of the financial obligations of an issuer are in default</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="mcolor04 grayDotTxt">A plus (+) or minus (-) sign may be appended to the categories from AA to CCC to indicate relative standing within each rating category.</p>
+					</section>	
+					
 					<!-- 연관정보 바로가기 -->
 					<div class="relationInfo">
 						<h4 class="contTit">연관정보 바로가기</h4>
@@ -249,7 +509,6 @@
 					</div>
 					<!-- // 연관정보 바로가기 -->
 				</div> <!-- // contents -->
-
 				<div class="contentsBtm">
 					<p class="viewTop"><a href="#top">TOP</a></p>
 					<div class="moAcco menuWrap">
@@ -356,7 +615,6 @@
 						</ul>
 					</div>
 				</div>
-
 			</div>
 
 		</div> <!-- // container -->
@@ -377,7 +635,7 @@
 							<div class="ethicArea">
                                 <div class="container">
                                     <dl class="corp">
-                                        <dt><span>윤리경영</span> 사이트</dt>
+                                        <dt>윤리경영 사이트</dt>
                                         <dd>
                                             <a href="http://www.withsamsung.co.kr/ko/html/main/index.html" target="_blank" title="새창">건설/상사부문</a>
                                         </dd>
@@ -408,7 +666,7 @@
 						<div class="familyArea">
 							<div class="container">
 								<dl class="corp">
-									<dt><span>삼성물산</span> 사이트</dt>
+									<dt>삼성물산 사이트</dt>
 									<dd>
 										<a href="#none" target="_blank" title="새창">건설부분</a>
 										<ul>
@@ -433,7 +691,9 @@
 									</dd>
 								</dl>
 								<dl class="related">
-									<dt><span>관계사</span> 사이트</dt>
+									<dt>관계사 사이트</dt>
+                                    <!-- 2017-03-09 패밀리사이트 삭제
+                                    <dd><a href="#none" target="_blank" title="새창">삼성</a></dd> -->
 									<dd><a href="#none" target="_blank" title="새창">삼성전자</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">삼성SDI</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">삼성SDS</a></dd>
@@ -448,9 +708,11 @@
 									<dd><a href="#none" target="_blank" title="새창">삼성웰스토리</a></dd>
 								</dl>
 								<dl class="etc">
-									<dt><span>기타</span> 사이트</dt>
+									<dt>기타</dt>
+                                    <!-- 2017-03-09 패밀리사이트 삭제
+									<dd><a href="#none" target="_blank" title="새창">삼성채용사이트</a></dd> -->
 									<dd><a href="#none" target="_blank" title="새창">삼성사회봉사단</a></dd>
-									<dd><a href="#none" target="_blank" title="새창">삼성장학회</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성장학회</a></dd> <!-- 2016-04-12 텍스트 수정 -->
 									<dd><a href="#none" target="_blank" title="새창">삼성재단</a></dd>
 									<dd><a href="#none" target="_blank" title="새창">호암재단</a></dd>
 								</dl>
