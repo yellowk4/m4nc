@@ -36,17 +36,17 @@
 .dataStandard{position: relative;}
 .dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
 
-/* corporate Overview CNT_K_050 */
+/* corporate Overview CNT_E_042 */
 .overviewTit {overflow:hidden;}
 .overviewTit h4 {font-size:28px; line-height:1.4; color:#111; margin-bottom:40px;}
 .overviewTit h4 span {display:block;}
 .overviewTit p {margin-bottom:40px;}
 .overviewCont .buttonArea {text-align:right; margin-bottom:60px;}
-#CNT_K_050 .tableBasicList {border-bottom:1px solid #777777; margin-bottom:20px;}
-#CNT_K_050 .tableBasicList th {height:60px; box-sizing:border-box;}
-#CNT_K_050 .tableBasicList td {height:60px; box-sizing:border-box;}
-#CNT_K_050 .tableBasicList td.title {text-align:left; padding-left:20px;}
-#CNT_K_050 .gray {display:block; color:#777777;}
+#CNT_E_042 .tableBasicList {border-bottom:1px solid #777777; margin-bottom:20px;}
+#CNT_E_042 .tableBasicList th {height:60px; box-sizing:border-box;}
+#CNT_E_042 .tableBasicList td {height:60px; box-sizing:border-box;}
+#CNT_E_042 .tableBasicList td.title {text-align:left; padding-left:20px;}
+#CNT_E_042 .gray {display:block; color:#777777;}
 .overviewCont h4 {font-size:24px; margin-bottom:20px; font-weight:600; color:#111}
 
 /* corporate 정관 CNT_K_051 */
@@ -206,7 +206,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 /* 연관정보 바로가기 */
 .relationInfo{margin-top: 60px;}
 /* shareList */
-#CNT_K_050 .shareList,
+#CNT_E_042 .shareList,
 #CNT_K_054 .shareList, #CNT_K_055 .shareList, #CNT_K_056 .shareList, 
 #CNT_K_057 .shareList, #CNT_K_058 .shareList, #CNT_K_059 .shareList, 
 #CNT_K_060 .shareList, #CNT_K_061 .shareList, #CNT_K_062 .shareList, 
@@ -245,7 +245,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .titleBox.bg02, .titleBox.bg03{background-image: none; padding: 0;}/*윤리강령*/
     .titleBox.bg02 .selectTab .select button, .titleBox.bg03 .selectTab .select button{border: 1px solid #0c4da2;}
 
-    /* corporate Overview CNT_K_050 */
+    /* corporate Overview CNT_E_042 */
     .overviewTit h4 {margin-bottom:20px; font-size:21px;}
     .overviewTit h4 span {display:inline;}
     .overviewTit p {margin-bottom:15px; font-size:15px;}
@@ -371,7 +371,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     /* pc block > mobile inline */
     .bigTit > span, .txt > span, .innerTxt span, .txt span, .listBu .listSapn span{display: inline;}
     /* shareList */
-    #CNT_K_050 .shareList,
+    #CNT_E_042 .shareList,
     #CNT_K_054 .shareList, #CNT_K_055 .shareList, #CNT_K_056 .shareList, 
     #CNT_K_057 .shareList, #CNT_K_058 .shareList, #CNT_K_059 .shareList, 
     #CNT_K_060 .shareList, #CNT_K_061 .shareList, #CNT_K_062 .shareList, 

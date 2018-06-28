@@ -25,12 +25,12 @@
 .irLinkWrap .iframeWrap{float: left; width: 29.818%; max-height: 250px;}
 .iframeArea iframe {width: 100%; height: 250px;}
 .irLinkWrap .irLink{float: right; width: 68.363%; height: 250px; text-align: center; font-size: 24px;}
-.irLinkWrap .irLink .irA{display: block; float: left; width: 33.333%; height: 100%; padding: 31px 0 38px; background-repeat: no-repeat; background-position: center 130px; color: #fff; box-sizing: border-box;}
+.irLinkWrap .irLink .irA{display: block; float: left; width: 33.333%; height: 100%; padding: 50px 0 38px; background-repeat: no-repeat; background-position: center bottom 49px; color: #fff; box-sizing: border-box;}
 .irLinkWrap .irLink .irA01{background-image: url(/images/front/contents/bg_CNT_K_028_01.png); background-color: #46d1ab;}
 .irLinkWrap .irLink .irA02{background-image: url(/images/front/contents/bg_CNT_K_028_02.png); background-color: #30aea6;}
 .irLinkWrap .irLink .irA03{background-image: url(/images/front/contents/bg_CNT_K_028_03.png); background-color: #1c8fe7;}
 .irLinkWrap .irLink .arrow{display: inline-block; width: 9px; height: 14px; margin-left: 10px; background: url(/images/front/icon/ico_arrow02.png) no-repeat center; background-size: 9px 14px;}
-.irLinkWrap .irLink .irA:after{content: ''; position: relative; top: 12px; left: 50%; margin-left: -15px; display: block; width: 30px; height: 2px; background-color: #fff;}
+/* .irLinkWrap .irLink .irA:after{content: ''; position: relative; top: 12px; left: 50%; margin-left: -15px; display: block; width: 30px; height: 2px; background-color: #fff;} */
 
 /* IR - 신용등급 CNT_K_031 */
 #CNT_K_031 .tableBasicList, #CNT_K_042 .tableBasicList{margin-bottom: 20px;}
@@ -41,9 +41,9 @@
 #CNT_K_031 .tableBasicList + p, #CNT_K_042 .tableBasicList + p{margin-bottom: 50px;}
 
 /* IR - 감사보고서 CNT_K_032, CNT_K_034, CNT_K_036 */
-.reportimg, .reportTit{float: left;}
-.reportimg{padding: 0 70px 0 95px; text-align: center;}
-.reportTit{padding: 40px 0 77px;}
+.reportimg, .reportTit{float: left; box-sizing: border-box;}
+.reportimg{width: 55%; padding: 0 0 0 95px; text-align: center;}
+.reportTit{width: 45%; padding: 40px 0 77px;}
 .reportTit dt{padding-bottom: 40px; color: #0075c2; font-size: 42px;}
 .reportTit dt span{color: #0c4ca3;}
 .rightBtn{padding: 20px 0; text-align: right;}
@@ -66,8 +66,9 @@
     #CT-PCK-033 .whiteBtn .icoDownload{display: inline-block; width: 19px; height: 17px; margin-right: 6px; background: url(/images/front/icon/ico_download02.png)no-repeat; vertical-align: middle;}
 
 /* IR - IR일정 CNT_K_038 */
-.planImg, .plan{float: left;}
-.planImg{padding: 0 70px 0 95px; text-align: center;}
+.planImg, .plan{float: left; box-sizing: border-box;}
+.planImg{width: 55%; padding: 0 0 0 95px; text-align: center;}
+.plan{width: 45%}
 .planDl{padding-bottom: 88px;}
 .planDl .planTit{font-size: 38px; font-weight: bold; line-height: 1.6; vertical-align: top;}
 .planDate{padding-bottom: 39px; font-size: 24px;}

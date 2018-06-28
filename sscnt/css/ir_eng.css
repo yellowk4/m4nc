@@ -25,12 +25,12 @@
 .irLinkWrap .iframeWrap{float: left; width: 29.818%; max-height: 250px;}
 .iframeArea iframe {width: 100%; height: 250px;}
 .irLinkWrap .irLink{float: right; width: 68.363%; height: 250px; text-align: center; font-size: 24px;}
-.irLinkWrap .irLink .irA{display: block; float: left; width: 33.333%; height: 100%; padding: 31px 0 38px; background-repeat: no-repeat; background-position: center 130px; color: #fff; box-sizing: border-box;}
+.irLinkWrap .irLink .irA{display: block; float: left; width: 33.333%; height: 100%; padding: 32px 0 38px; background-repeat: no-repeat; background-position: center bottom 38px; color: #fff; box-sizing: border-box;}
 .irLinkWrap .irLink .irA01{background-image: url(/images/front/contents/bg_CNT_K_028_01.png); background-color: #46d1ab;}
 .irLinkWrap .irLink .irA02{background-image: url(/images/front/contents/bg_CNT_K_028_02.png); background-color: #30aea6;}
 .irLinkWrap .irLink .irA03{background-image: url(/images/front/contents/bg_CNT_K_028_03.png); background-color: #1c8fe7;}
 .irLinkWrap .irLink .arrow{display: inline-block; width: 9px; height: 14px; margin-left: 10px; background: url(/images/front/icon/ico_arrow02.png) no-repeat center; background-size: 9px 14px;}
-.irLinkWrap .irLink .irA:after{content: ''; position: relative; top: 12px; left: 50%; margin-left: -15px; display: block; width: 30px; height: 2px; background-color: #fff;}
+/* .irLinkWrap .irLink .irA:after{content: ''; position: relative; top: 12px; left: 50%; margin-left: -15px; display: block; width: 30px; height: 2px; background-color: #fff;} */
 
 /* IR - 신용등급 CNT_E_024 */
 #CNT_E_024 .tableBasicList, #CNT_E_034 .tableBasicList{margin-bottom: 20px;}
@@ -41,10 +41,10 @@
 #CNT_E_024 .tableBasicList + p, #CNT_E_034 .tableBasicList + p{margin-bottom: 50px;}
 
 /* IR - 감사보고서 CNT_E_025, CNT_K_034, CNT_K_036 */
-.reportimg, .reportTit{float: left; width: 50%; box-sizing: border-box;}
-.reportimg{padding: 0 70px 0 95px; text-align: center;}
-.reportTit{padding: 40px 0 77px;}
-.reportTit dt{padding-bottom: 40px; color: #0075c2; font-size: 41px;}
+.reportimg, .reportTit{float: left; box-sizing: border-box;}
+.reportimg{width: 55%; padding: 0 0 0 95px; text-align: center;}
+.reportTit{width: 45%; padding: 40px 0 77px;}
+.reportTit dt{padding-bottom: 40px; color: #0075c2; font-size: 42px;}
 .reportTit dt span{color: #0c4ca3;}
 .rightBtn{padding: 20px 0; text-align: right;}
 .rightBtn + .pText{margin-bottom: 21px;}
@@ -52,7 +52,6 @@
 .report.tableBasicList th, .report.tableBasicList td{padding: 30px 0;}
 .report .defaultTable th{background-color: #fbfbfb; color: #111111; font-size: 24px;}
 .report .btnArea{padding-left: 40px; margin-bottom: 0;}
-
 
 /* 팝업 IR - 감사/검토 보고서 CNT_K_033 */
 #CT-PCK-033{margin: 29px 45px 0;}
@@ -66,8 +65,9 @@
     #CT-PCK-033 .whiteBtn .icoDownload{display: inline-block; width: 19px; height: 17px; margin-right: 6px; background: url(/images/front/icon/ico_download02.png)no-repeat; vertical-align: middle;}
 
 /* IR - IR일정 CNT_E_029 */
-.planImg, .plan{float: left;}
-.planImg{padding: 0 70px 0 95px; text-align: center;}
+.planImg, .plan{float: left; box-sizing: border-box;}
+.planImg{width: 55%; padding: 0 0 0 95px; text-align: center;}
+.plan{width: 45%}
 .planDl{padding-bottom: 88px;}
 .planDl .planTit{font-size: 38px; font-weight: bold; line-height: 1.6; vertical-align: top;}
 .planDate{padding-bottom: 39px; font-size: 24px;}
@@ -129,14 +129,14 @@
 #CNT_E_036 .addNotice {color:#555555;}
 #CNT_E_036 .tableBasicList tbody th{background-color: #fff;}
 
-/* IR - FAQ CNT_K_045 */
+/* IR - FAQ CNT_E */
 .faqWrap{padding-top: 60px; border-bottom: 1px solid #777777;}
 .faqPart{display: block; padding-bottom: 10px; color: #0075c2; font-size: 16px;}
 .faqPartMo{display: none; color: #0075c2;}
 .faqWrap .panel{padding-left: 84px; line-height: 1.6; background: url(/images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
 .faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(/images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
 
-/* IR - Contact IR CNT_K_049 */
+/* IR - Contact IR CNT_E_041 */
 .contactWrap {text-align:center; background:url('/images/front/contents/bg_CNT_K_049.png') no-repeat center bottom; padding-bottom:270px; margin-bottom:60px;}
 .contactWrap h4 {margin-bottom:25px; font-size:24px; line-height:1.4;}
 .contactWrap h4 .emphasisTxt {font-size:42px; font-weight:600; line-height:1.4; margin-bottom:20px;}
@@ -177,9 +177,9 @@
 .pText{line-height: 1.4;}
 /* shareList */
 #CNT_E_029 .shareList, #CNT_E_031 .shareList, #CNT_E_034 .shareList
-, #CNT_E_035 .shareList, #CNT_E_036 .shareList, #CNT_K_045 .shareList
+, #CNT_E_035 .shareList, #CNT_E_036 .shareList, #CNT_E_037 .shareList
 , #CNT_K_046 .shareList, #CNT_K_047 .shareList, #CNT_K_048 .shareList
-, #CNT_K_049 .shareList{margin-top: 80px;}
+, #CNT_E_041 .shareList{margin-top: 80px;}
 /* 연관정보 바로가기 */
 .relationInfo{margin-top: 60px;}
 
@@ -211,9 +211,9 @@
     .fullwidth{margin: 0 -20px;}
     /* shareList */
     #CNT_E_029 .shareList, #CNT_E_031 .shareList, #CNT_E_034 .shareList
-    , #CNT_E_035 .shareList, #CNT_E_036 .shareList, #CNT_K_045 .shareList
+    , #CNT_E_035 .shareList, #CNT_E_036 .shareList, #CNT_E_037 .shareList
     , #CNT_K_046 .shareList, #CNT_K_047 .shareList, #CNT_K_048 .shareList
-    , #CNT_K_049 .shareList{margin-top: 30px;}
+    , #CNT_E_041 .shareList{margin-top: 30px;}
 
     /* IR - Overview CNT_K_022 */
     .irLinkWrap .irLink .irA:after{top: 4px;}
@@ -284,7 +284,7 @@
     #CNT_E_034 .tableBasicList tfoot td {padding: 8px 10px; font-size: 15px;}
     #CNT_E_034 .tableBasicList + .contTit{margin-top: 30px;}
 
-    /* IR - FAQ CNT_K_045 */
+    /* IR - FAQ CNT_E_037 */
     .faqWrap{padding-top: 0;}
     .faqPartMo{display: inline-block;}
     .faqPart{display: none;}
@@ -302,15 +302,15 @@
     /* notiTxt */
     .notiTxt{display: block;}
 
-    /* IR - Contact IR CNT_K_049 */
-    #CNT_K_049 {padding:0;}
+    /* IR - Contact IR CNT_E_041 */
+    #CNT_E_041 {padding:0;}
     .contactWrap {padding:0 20px; box-sizing:border-box;background:url('/images/front/contents/bg_CNT_K_049_m.png') no-repeat center bottom; background-size:100%; padding-bottom:50%; margin-bottom:20px;}
     .contactWrap h4 {margin-bottom:15px; font-size:15px;text-align:left;}
     .contactWrap h4 .emphasisTxt {font-size:21px; margin-bottom:20px; display:block;}
     .contactWrap h4 > span {display:inline;}
     .contactWrap .telNum {margin-bottom:20px;}
     .contactWrap .inquiryBtn {width:40%; height:45px; line-height:45px; background:#0c4da2; padding-left:0; box-sizing:border-box; color:#fff; font-size:16px;}
-    #CNT_K_049 .shareList {margin:0 20px;}
+    #CNT_E_041 .shareList {margin:0 20px;}
 
 }
 
