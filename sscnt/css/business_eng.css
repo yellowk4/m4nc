@@ -251,6 +251,7 @@
 .actConts .imgTxtList li .imgCont img {width:100%;}
 .actConts .imgTxtList li .txtCont {width:49%; display:table-cell; vertical-align: middle;}
 .actConts.last {padding:0; margin:0; border:0;}
+.actConts p:last-child {margin-bottom:0;}
 .actConts .mImg {display:none;}
 
 /* CSR > CSR News > 리스트 */
