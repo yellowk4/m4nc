@@ -5,7 +5,7 @@ form 요소 공통정의
 .inputText, .selectText, .textArea, .inputFile, label { color:#555; } 
 .inputText, .selectText, .textArea { height:40px; padding:0 10px; border:1px solid #ddd; line-height:1; outline: 0 none; } 
 
-.inputText:focus, .selectText:focus, .textArea:focus { border:1px solid #0c4da2; color:#0c4da2; } 
+/* .inputText:focus, .selectText:focus, .textArea:focus { border:1px solid #0c4da2; color:#0c4da2; }  */
 input:disabled { background: #f8f8f8; color: #c4c4c4; } 
 
 input, .inputText { -webkit-appearance:none; -webkit-border-radius: 0; border-radius: 0; } /* 입력 폼 */
