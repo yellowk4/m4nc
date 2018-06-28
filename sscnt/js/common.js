@@ -954,24 +954,27 @@ conApp.selectTabEvent = function(){
 //아코디언
 conApp.accordionEvent = function(){
 	
-	var $accordion = $(".accordion");
-
-	$accordion.on("click", function(){
-		var $next = $(this).next();
-
-		if($(this).toggleClass("active").hasClass("active")) {
-			$next.css({maxHeight: $next.prop("scrollHeight") })
-		} else {
-			$next.css({maxHeight:0})
-		}
-	})
-
-	$accordion.each(function(){
-		if($(this).hasClass("active")){
-			$(this).trigger("click")
-		}
-
-	})
+	var acc = $(".accordion");
+    var i;
+ 
+    for (i = 0; i < acc.length; i++) {
+ 
+        // 첫번째 아코디언 open
+        if (acc.eq(i).hasClass("active")) {
+            var panelOpen = $(".accordion.active").next();
+            panelOpen.css({"max-height" : panelOpen.prop("scrollHeight") + "px"}); //열기
+        }
+ 
+        acc.eq(i).on("click", function() {
+            $(this).toggleClass("active");
+            var panel = $(this).next();
+            if ( $(this).hasClass("active") ){
+                panel.css({"max-height" : panel.prop("scrollHeight") + "px"}); //열기
+            } else { 
+                panel.css({"max-height" : 0}); //닫기
+            } 
+        });
+    }
 
 	
 

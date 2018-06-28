@@ -26,7 +26,7 @@
 .titleBox .selectTab button{left: 50%; margin-left: -222.5px; padding: 19px 32px 18px 19px; max-width: 445px; font-size: 18px; font-weight: 600; color: #333333; background-color: #fff;}
 .titleBox .selectTab .select button:after{top: 24px; right: 19px;}
 .titleBox .selectTab ul{top: 58px; left: 50%; margin-left: -222.5px; max-width: 445px; background-color: #fff;}
-.titleBox .selectTab ul li a{font-size: 18px;}
+.titleBox .selectTab ul li a{font-size: 18px; padding-left: 30px; text-indent: -17px;}
 .titleBox .selectTab ul li a:before{content: '-'; padding-right: 5px;}
 .titleBox .selectTab + .innerTxt{margin-top: 30px;}
 .accordionWrap{border-bottom: 1px solid #777777;}
@@ -52,6 +52,7 @@
 /* corporate 정관 CNT_K_051 */
 .smallTit + section{margin-top: 40px;} /*부 칙(2015.3.13)*/
 section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
+.revision{margin-top: 20px;}
 /* numList */
 .numList, #CNT_K_051 .roundNumList, #CNT_K_051 .sub{padding: 5px 0;}
 .numList.pT0, #CNT_K_051 .roundNumList.pT0{padding: 0;}
@@ -59,7 +60,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .roundNumList > li {padding-left: 18px; text-indent: -18px; line-height: 1.8;}
 .revision ul {overflow: hidden;}
 .revision ul li {float: left; width: 33%; line-height: 1.6;}
-.defaultGrayDotList li {background-position: 0 10px;}
+#CNT_K_051 .defaultGrayDotList li {background-image: none; padding-left: 0;}
 
 /* corporate 윤리강령 CNT_K_052 */
 #CNT_K_052 .corporate{margin-bottom: 80px;}
@@ -238,6 +239,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .titleBox .selectTab ul{top: 41px; max-width: 100%; margin-left: -50%;}
     .titleBox .selectTab .select button:after{top: 50%; margin-top: -3px;}
     .titleBox .selectTab + .innerTxt {margin-top: 20px;}
+    .titleBox .selectTab ul li a{text-indent: -15px;}
     .innerTxt{font-size: 15px;}
     .titleBox + .btnArea .fillBtn {margin-top: 10px;}
     .titleBox + .btnArea {margin-top: 10px;}
@@ -258,6 +260,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .titleBox .right {display: none;}
     .corporate .color01, .corporate .smallTit, .corporate .subTit{font-size: 16px;}
     .smallTit + section, section + .smallTit{margin-top: 30px;} /*부 칙*/
+    .revision{margin-top: 15px;}
 
     /* corporate 윤리강령 CNT_K_052 */
     #CNT_K_052 .corporate{margin-bottom: 30px;}

@@ -93,7 +93,7 @@
 .fieldWrap{margin-bottom: 60px;}
 .fieldWrap .fieldLeft{float: left; width: 431px; padding-left: 74px;}
 .fieldWrap .fieldRight{float: right; width: 399px;}
-#CNT_E_034 .fieldLeft img{display: inline-block; width: 100%; max-width: 431px;}
+#CNT_E_034 .fieldLeft img{display: inline-block; width: 100%; max-width: 387px;}
 .tableData{border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
 .tableData th, .tableData td{padding: 23px 20px; border-top: 1px solid #d9d9d9;}
 .tableData th{position: relative; padding-left: 48px; text-align: left}
@@ -151,7 +151,7 @@
 .accordion.active, .accordion:hover {color: #0c4da2; border-top: 1px solid #0c4da2;}
 .accordion:after{position: absolute; right: 29px; top: 50%; z-index: 1; content: ''; display: block; margin-top: -13px; width: 26px; height: 26px; float: right; background: url(/images/front/icon/ico_gray_plus.png) no-repeat center;}
 .accordion.active:after { content: ""; background-image: url(/images/front/icon/ico_blue_minus.png)}
-.panel {padding: 0 15px; background-color: #fbfbfb; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
+.panel {padding: 0 15px; background-color: #fbfbfb;  max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;}
 .accordion + .panel .panelIn {padding: 41px 0;}
 .accordion.active + .panel{border-top: 1px solid #d9d9d9;}
 
@@ -253,13 +253,14 @@
     .report + .pText {margin-bottom: 10px;}
     .grayBox{margin-bottom: 30px;}
     .rightBtn{display: none;}
+    .report.tableBasicList th, .report.tableBasicList td{padding: 8px 10px;}
 
     /* 팝업 IR - 감사/검토 보고서 CNT_K_033 */
     #CT-PCK-033 .whiteBtn.small{margin-bottom: 5px;}
 
     /* IR - IR일정 CNT_E_029 */
     .planImg, .plan{float: none; width: 100%;}
-    .planImg{display: none;}
+    .planImg img{display: block; width: 100%; height: auto;}
     .planDl{padding-bottom: 26px;}
     .planDl .planTit{font-size: 25px;}
     .planDate{padding-bottom: 22px; font-size: 18px;}
