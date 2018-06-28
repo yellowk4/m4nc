@@ -91,7 +91,8 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .career li{clear: both; overflow: hidden; padding-bottom: 16px;}
 .career li:last-child{padding-bottom: 0;}
 .career span{display: block; float: left;}
-.career span.year{padding: 0 25px 0 5px; min-width: 137px; color: #555;}
+.career .year{width: 21%; max-width: 165px; padding: 0 0 0 5px; color: #555; box-sizing: border-box;}
+.career .text{width: 79%;}
 .career + .subTit{margin-top: 30px;}
 /* directCon normal */
 .dirListImg{position: relative; overflow: hidden;}
@@ -109,19 +110,20 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .dirListBox.middle .directCon{left:-106%}
 .dirListBox.right .directCon{left:-212%;}
 
-/* corporate 운영&역할 CNT_K_054 */
-#CNT_K_054 ul + .contTit, #CNT_K_054 .txt + .contTit{margin-top: 40px;}
-#CNT_K_054 .contTit + .txt{margin-top: 20px;}
-#CNT_K_054 .boldTxt{margin-top: 40px;}
-#CNT_K_054 .boldTxt + .listBu{margin-top: 20px;}
-#CNT_K_054 .contTit + ul {margin-top: 20px;}
+/* corporate 운영&역할 CNT_E_046 */
+#CNT_E_046 ul + .contTit, #CNT_E_046 .txt + .contTit{margin-top: 40px;}
+#CNT_E_046 .contTit + .txt{margin-top: 20px;}
+#CNT_E_046 .boldTxt{margin-top: 40px;}
+#CNT_E_046 .boldTxt + .listBu{margin-top: 20px;}
+#CNT_E_046 .contTit + ul {margin-top: 20px;}
+.dataStandard02{display: block; height: 0; position: relative; bottom: 40px; z-index: 1; padding-left: 30%; text-align: right; font-size: 16px; font-weight: 400; color: #777;}
 
-/* corporate 활동내역 & 평가보상 CNT_K_055 */
-#CNT_K_055 .contTit{margin-bottom: 20px;}
-#CNT_K_055 .accordionWrap + .contTit{margin-top: 40px;}
-#CNT_K_055 .contTit + .tableBasicList, #CNT_K_055 .txt + .listBu{margin-bottom: 40px;}
-#CNT_K_055 .txt + .contTit{margin-top: 40px;}
-#CNT_K_055 .tableBasicList td{padding: 20px;}
+/* corporate 활동내역 & 평가보상 CNT_E_047 */
+#CNT_E_047 .contTit{margin-bottom: 20px;}
+#CNT_E_047 .accordionWrap + .contTit{margin-top: 40px;}
+#CNT_E_047 .contTit + .tableBasicList, #CNT_E_047 .txt + .listBu{margin-bottom: 40px;}
+#CNT_E_047 .txt + .contTit{margin-top: 40px;}
+#CNT_E_047 .tableBasicList td{padding: 20px;}
 
 /*  corporate 개요  CNT_K_056 */
 #CNT_K_056 .txt{margin-top: 40px;}
@@ -208,7 +210,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .relationInfo{margin-top: 60px;}
 /* shareList */
 #CNT_E_042 .shareList,
-#CNT_K_054 .shareList, #CNT_K_055 .shareList, #CNT_K_056 .shareList, 
+#CNT_E_046 .shareList, #CNT_E_047 .shareList, #CNT_K_056 .shareList, 
 #CNT_K_057 .shareList, #CNT_K_058 .shareList, #CNT_K_059 .shareList, 
 #CNT_K_060 .shareList, #CNT_K_061 .shareList, #CNT_K_062 .shareList, 
 #CNT_K_063 .shareList, #CNT_K_064 .shareList{margin-top: 80px;}
@@ -293,19 +295,20 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .career span.year{padding: 0; width: 30%; min-width: auto; max-width: 130px;}
     .career span.text{width: 70%;}
 
-    /* corporate 운영&역할 CNT_K_054 */
-    #CNT_K_054 ul + .contTit, #CNT_K_054 .txt + .contTit{margin-top: 30px;}
-    #CNT_K_054 .contTit + .txt{margin-top: 15px;}
-    #CNT_K_054 .boldTxt{margin-top: 15px;}
-    #CNT_K_054 .boldTxt + .listBu{margin-top: 10px;}
-    #CNT_K_054 .contTit + ul {margin-top: 10px;}
+    /* corporate 운영&역할 CNT_E_046 */
+    #CNT_E_046 ul + .contTit, #CNT_E_046 .txt + .contTit{margin-top: 30px;}
+    #CNT_E_046 .contTit + .txt{margin-top: 15px;}
+    #CNT_E_046 .boldTxt{margin-top: 15px;}
+    #CNT_E_046 .boldTxt + .listBu{margin-top: 10px;}
+    #CNT_E_046 .contTit + ul {margin-top: 10px;}
 
-    /* corporate 활동내역 & 평가보상 CNT_K_055 */
-    #CNT_K_055 .contTit{margin-bottom: 15px;}
-    #CNT_K_055 .accordionWrap + .contTit{margin-top: 30px;}
-    #CNT_K_055 .txt + .contTit{margin-top: 30px;}
-    #CNT_K_055 .contTit + .tableBasicList{margin-bottom: 30px;}
-    #CNT_K_055 .txt + .listBu{margin-bottom: 20px;}
+    /* corporate 활동내역 & 평가보상 CNT_E_047 */
+    #CNT_E_047 .contTit{margin-bottom: 15px;}
+    #CNT_E_047 .accordionWrap + .contTit{margin-top: 30px;}
+    #CNT_E_047 .txt + .contTit{margin-top: 30px;}
+    #CNT_E_047 .contTit + .tableBasicList{margin-bottom: 30px;}
+    #CNT_E_047 .txt + .listBu{margin-bottom: 20px;}
+    .dataStandard02{height: auto; bottom: 0; padding: 0; text-align: left;}
 
     /*  corporate 개요  CNT_K_056 */
     #CNT_K_056 .txt {margin-top: 15px;}
@@ -375,7 +378,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .bigTit > span, .txt > span, .innerTxt span, .txt span, .listBu .listSapn span{display: inline;}
     /* shareList */
     #CNT_E_042 .shareList,
-    #CNT_K_054 .shareList, #CNT_K_055 .shareList, #CNT_K_056 .shareList, 
+    #CNT_E_046 .shareList, #CNT_E_047 .shareList, #CNT_K_056 .shareList, 
     #CNT_K_057 .shareList, #CNT_K_058 .shareList, #CNT_K_059 .shareList, 
     #CNT_K_060 .shareList, #CNT_K_061 .shareList, #CNT_K_062 .shareList, 
     #CNT_K_063 .shareList, #CNT_K_064 .shareList{margin-top: 30px;}

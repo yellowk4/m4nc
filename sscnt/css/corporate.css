@@ -91,7 +91,8 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .career li{clear: both; overflow: hidden; padding-bottom: 16px;}
 .career li:last-child{padding-bottom: 0;}
 .career span{display: block; float: left;}
-.career span.year{padding: 0 25px 0 5px; min-width: 137px; color: #555;}
+.career .year{width: 21%; max-width: 165px; padding: 0 0 0 5px; color: #555; box-sizing: border-box;}
+.career .text{width: 79%;}
 .career + .subTit{margin-top: 30px;}
 /* directCon normal */
 .dirListImg{position: relative; overflow: hidden;}
@@ -122,6 +123,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 #CNT_K_055 .contTit + .tableBasicList, #CNT_K_055 .txt + .listBu{margin-bottom: 40px;}
 #CNT_K_055 .txt + .contTit{margin-top: 40px;}
 #CNT_K_055 .tableBasicList td{padding: 20px;}
+.dataStandard02{display: block; height: 0; position: relative; bottom: 40px; z-index: 1; padding-left: 30%; text-align: right; font-size: 16px; font-weight: 400; color: #777;}
 
 /*  corporate 개요  CNT_K_056 */
 #CNT_K_056 .txt{margin-top: 40px;}
@@ -306,6 +308,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     #CNT_K_055 .txt + .contTit{margin-top: 30px;}
     #CNT_K_055 .contTit + .tableBasicList{margin-bottom: 30px;}
     #CNT_K_055 .txt + .listBu{margin-bottom: 20px;}
+    .dataStandard02{height: auto; bottom: 0; padding: 0; text-align: left;}
 
     /*  corporate 개요  CNT_K_056 */
     #CNT_K_056 .txt {margin-top: 15px;}

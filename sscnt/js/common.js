@@ -1115,7 +1115,7 @@ conApp.imgTabEvent = function(){
 		activeClass = 'active',
 		offClass = 'off',
 		directCon = '.directCon',
-		contents = '#CNT_K_053',
+		contents = '.layerList',
 		contentsWidth,
 		directConW = function() {
 			contentsWidth = $(contents).width();
