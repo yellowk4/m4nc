@@ -113,7 +113,6 @@
 .historyAllList {width:100%; overflow:hidden; padding:50px 45px; box-sizing:border-box;}
 .historyAllList h1 {font-size:42px; font-weight:600; margin-bottom:30px; color:#0c4da2;}
 .historyAllList .tableBasicList { margin-bottom:60px;}
-.historyAllList .tableBasicList tbody th, .tableBasicList tbody td {padding:20px 30px;}
 .historyAllList .tableBasicList tbody th {background:none; font-weight:600;}
 .historyAllList .tableBasicList tbody td {text-align:left; line-height:1.4;}
 .historyAllList .buttonArea {text-align:center;}
