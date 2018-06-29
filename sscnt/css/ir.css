@@ -108,6 +108,7 @@
 #CNT_K_042 .tableBasicList + .contTit{margin-top: 40px;}
 .fieldRight {position: relative;}
 .fieldRight .data{position: absolute; top: -30px; right: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
+#CNT_K_042 .defaultTable{width: 100%;}
 
 /* IR - 주주총회 CNT_K_043 */
 .listTit{margin-bottom: 20px; font-size: 18px; line-height: 1.6;}
@@ -315,8 +316,8 @@
 
 @media screen and (max-width: 640px){
     /* IR - 주주구성 CNT_K_042 */
-    #CNT_K_042 .dataStandard{margin-bottom: 35px;}
-    .dataStandard span{bottom: -30px;}
+    .dataStandard{margin-bottom: 0;}
+    .dataStandard span{position: static; display: block; text-align: right;}
 }
 
 @media screen and (max-width: 375px){
