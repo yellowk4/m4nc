@@ -344,7 +344,7 @@ Ul style
 .selectTab a, .selectTab button { display:block; word-wrap:break-word; } 
 .selectTab a { padding: 10px; } 
 .selectTab li.active a, .selectTab li a:hover { color:#2a6eb6; } 
-.selectTab .select button { display:block; overflow:hidden; position: relative; width:100%; padding:10px 23px 10px 10px; border:1px solid #ddd; color:#555; text-align:left; text-overflow:ellipsis; white-space:nowrap; font-size: 16px; box-sizing: border-box;} 
+.selectTab .select button { display:block; overflow:hidden; position: relative; width:100%; padding:10px 30px 10px 10px; border:1px solid #ddd; color:#555; text-align:left; text-overflow:ellipsis; white-space:nowrap; font-size: 16px; box-sizing: border-box;} 
 .selectTab .select button:after { content:''; position: absolute; top:15px; left: auto; right:10px; display:inline-block; width: 13px; height: 7px; background:url('/images/front/icon/ico_arrow_open.png') no-repeat; background-size:13px 7px; } 
 .selectTab.active .select button:after { background-image:url('/images/front/icon/ico_arrow_close.png'); } 
 
@@ -909,6 +909,8 @@ background: url(/images/front/icon/ico_arrow_close.png) no-repeat; background-si
 .footer > .container { padding: 30px 20px 0; } 
 .familyWrap .btnFamily { right: 20px; width: 15%; } 
 .familyWrap .familyArea { margin:0 20px; } 
+
+#contentsWrap .searchWrap {display: none;}
 }
 
 @media screen and (max-width:812px){

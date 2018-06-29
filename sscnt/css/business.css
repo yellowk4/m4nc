@@ -36,7 +36,7 @@
 .baordList ul li .partIcon04 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #765e93; color:#765e93; text-align:center; font-size:13px; margin-right:5px;}
 .baordList ul li .partIcon05 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #f1751a; color:#f1751a; text-align:center; font-size:13px; margin-right:5px;}
 .baordList ul li .partIcon06 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #b65515; color:#b65515; text-align:center; font-size:13px; margin-right:5px;}
-.baordList ul li .text .textCont {line-height:1.6; margin-bottom:20px;}
+.baordList ul li .text .textCont {height:44px; overflow:hidden; line-height:1.6; margin-bottom:20px;}
 .baordList ul li .date {font-size:14px; color:#777777;}
 
 /* 공통 게시판 글보기 */
@@ -113,7 +113,6 @@
 .historyAllList {width:100%; overflow:hidden; padding:50px 45px; box-sizing:border-box;}
 .historyAllList h1 {font-size:42px; font-weight:600; margin-bottom:30px; color:#0c4da2;}
 .historyAllList .tableBasicList { margin-bottom:60px;}
-.historyAllList .tableBasicList tbody th, .tableBasicList tbody td {padding:20px 30px;}
 .historyAllList .tableBasicList tbody th {background:none; font-weight:600;}
 .historyAllList .tableBasicList tbody td {text-align:left; line-height:1.4;}
 .historyAllList .buttonArea {text-align:center;}
