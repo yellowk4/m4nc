@@ -88,7 +88,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .dirInfo .dot{float: left; padding-left: 16px; padding-right: 60px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat left 8px;}
 .dirInfo .subTit{display: block; margin-bottom: 12px;}
 .career{padding: 0 16px;}
-.career li{clear: both; overflow: hidden; padding-bottom: 16px;}
+.career li{clear: both; overflow: hidden; padding-bottom: 16px; padding-left: 9px; text-indent: -9px;}
 .career li:last-child{padding-bottom: 0;}
 .career span{display: block; float: left;}
 .career .year{width: 21%; max-width: 165px; padding: 0 0 0 5px; color: #555; box-sizing: border-box;}
@@ -279,21 +279,26 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .dirListImg img{display: none;}
     .dirListImg img.moImg{display: block;}
     /* directCon */
+    .directCon{margin-top: 0;}
     .dirListBox.middle .directCon, .dirListBox.right .directCon{left: 0;}
-    .dirListName{padding: 20px 0;}
+    .dirListName{padding: 20px 0; font-size: 15px;}
     .dirListName span{font-size: 18px; font-weight: 700;}
     .dirListName:after{top: -38px; width: 17px; height: 17px; padding: 10px;}
+    .dirListBox.active .directCon{margin-bottom: 30px;}
     .downBox{text-align: left;}
     #CNT_E_045 .directorList + .contTit{margin-top: 0;}
     .dirInfo .dot{float: none; padding-left: 8px; padding-right: 0; font-size: 15px;}
+    .dirInfo.first{padding-bottom: 0; margin-bottom: 15px;}
     .dirInfo.first .subTit{display: block; position: absolute; left: 8px; top: 0; z-index: 1; font-size: 15px;}
-    .dirInfo.first .dot{position: relative; padding-left: 90px;}
+    .dirInfo.first .dot{position: relative; padding-left: 150px; padding-bottom: 15px;}
     .dirInfo .subTit{margin-bottom: 15px;}
     ul.career{margin-top: 0;}
     .career li{padding-bottom: 15px;}
     .career span{font-size: 14px;}
     .career span.year{padding: 0; width: 30%; min-width: auto; max-width: 130px;}
     .career span.text{width: 70%;}
+    .dirInfo .subTit{margin-bottom: 10px;}
+    .career + .subTit{margin-top: 15px;margin-bottom: 10px;}
 
     /* corporate 운영&역할 CNT_E_046 */
     #CNT_E_046 ul + .contTit, #CNT_E_046 .txt + .contTit{margin-top: 30px;}
