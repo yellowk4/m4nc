@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>고객문의 : 삼성물산</title>
+<title>채용 : 삼성물산</title>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <link type="text/css" rel="stylesheet" href="/css/default.css" />
 <link type="text/css" rel="stylesheet" href="/css/layout_kor.css" />
-<link type="text/css" rel="stylesheet" href="/css/business.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
+<link type="text/css" rel="stylesheet" href="/css/business_eng.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="/js/media.match.min.js"></script>
@@ -65,7 +65,7 @@
 													<ul class="depth03">
 														<li><a href="#none">Our CSR</a></li>
 														<li><a href="#none">Act</a></li>
-														<li><a href="#none">CSR News</a></li>
+														<li><a href="#none">News</a></li>
 														<li><a href="#none">Report</a></li>
 													</ul>
 												</li>
@@ -108,7 +108,7 @@
 													</ul>
 												</li>
 												<li><a href="#none">FAQ</a></li>
-												<li><a href="#none">Contact IR</a></li>
+												<li><a href="#none">CONTACT IR</a></li>
 											</ul>
 										</div>
 									</li>
@@ -165,22 +165,11 @@
 			<div class="location">
 				<ol class="clfix">
 					<li>OUR BUSINESSES</li>
-					<li>Contact Us</li>
-					<li class="on">고객문의</li>
+					<li class="on">채용</li>
 				</ol>
 			</div>
 			<div class="selectTab typeBlue">
-				<strong class="select">
-					<button type="button">고객문의</button>
-				</strong>
-				<ul>
-					<li>
-						<a href="#none">오시는 길</a>
-					</li>
-					<li class="active">
-						<a href="#none">고객문의</a>
-					</li>
-				</ul>
+				<strong class="select"><span>채용</span></strong>
 			</div>
 		</div>
 	</div> <!-- // header -->
@@ -192,7 +181,7 @@
 					<div class="visualWrap">
 						<div class="inner">
 							<h3 class="visualTit">
-								고객문의 <span><i class="home">home</i>OUR BUSINESSES</span>
+								채용 <span><i class="home">home</i>OUR BUSINESSES</span>
 							</h3>
 						</div>
 					</div>
@@ -224,19 +213,19 @@
 								<a href="#">리조트부문</a>
 							</div>
 						</div>
-						<div class="dropdown"> <!-- 활성화 시 "on" 추가 --> <!--// 2018-06-26 클래스명 수정 -->
+						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
 							<button class="dropbtn">CSR <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
 								<a href="#">Our CSR</a>
 								<a href="#">Act</a>
-								<a href="#">CSR News</a>
+								<a href="#">News</a>
 								<a href="#">Report</a>
 							</div>
 						</div>
 						<a href="javascript:;">뉴스</a>
 						<a href="javascript:;">소셜미디어</a>
-						<a href="javascript:;">채용</a>
-						<div class="dropdown on"> <!-- 활성화 시 "on" 추가 --> <!--// 2018-06-26 클래스명 수정 -->
+						<a href="javascript:;" class="on">채용</a>
+						<div class="dropdown"> <!-- 활성화 시 "on" 추가 -->
 							<button class="dropbtn">Contact Us <i class="dropdownIcon"></i></button>
 							<div class="dropdownCont">
 								<a href="#">오시는 길</a>
@@ -245,103 +234,45 @@
 						</div>
 					</div>
 				</div>
-				<div id="CNT_K_027" class="contents"> <!-- 페이지별 ID -->
-					<div class="inquiryTit">
-						<span class="title color01">삼성물산 홈페이지를</span>
-						<span class="title color02">방문해 주셔서 감사합니다.</span>
-						<p>문의가 있으시면 아래 버튼을 클릭하신 후 내용 및 정확한 이메일 정보를 남겨주십시오.<br /> 최대한 신속하게 답변 드리도록 하겠습니다. 감사합니다.</p>
-						<button type="button" id="inquiryOpen">문의하기</button>
-					</div>        
-					<div class="inquiryWriteWrap" style="display:none;">
-						<h4 class="text-hidden">삼성물산 고객문의 글쓰기</h4>
-						<div class="inquiryWriteTit">
-							<span class="title">고객정보</span>
-							<span class="addNotice">&#42; 전 항목 필수 입력 사항입니다.</span>
-						</div>
-						<ul class="inquiryWrite">
-							<li>
-								<span class="writeTit">이메일 주소</span>
-								<div class="writeCont">
-									<input type="text" id="" name="" class="email" placeholder="아이디입력" /><span class="unit"> @ </span> <input type="text" id="" name="" class="email" placeholder="이메일 도메인 입력"/> 
-									<div class="selectTab direct"> <!-- //2018-06-26 클래스 추가 -->
-										<strong class="select"><button type="button">선택하세요</button></strong>
-										<ul>
-											<li class="active"><a href="#none">선택하세요</a></li>
-											<li><a href="#none">선택하세요</a></li>                    
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<span class="writeTit">제목</span>
-								<div class="writeCont"><input type="text" id="" name="" /></div>
-							</li>
-							<li class="textWrite">
-								<span class="writeTit textWrite">문의 내용</span>
-								<div class="writeCont">
-									<textarea></textarea>
-									<span class="txtCount">0/1000 자</span> <!-- // 2018-06-27 텍스트 수정 -->
-								</div>							
-							</li>
-							<li>
-								<span class="writeTit autoTitle">자동입력방지</span>
-								<div class="writeCont">
-									<span class="preventionImg"><img src="/images/front/contents/img_CNT_K_027.jpg" alt="자동입력방지 이미지" /></span>
-									<input type="text" id="" name="" class="prevention" />
-									<button type="button" class="refresh">새로고침</button>
-								</div>
-							</li>
-						</ul>
-						<h4 class="text-hidden">개인정보 활용동의</h4>
-						<div class="personalInforAgree">
-							<span class="title color01">&#91;필수&#93; 개인정보 활용동의</span>
-							<p>삼성물산은 고객님들의 의견 접수와 관련하여 성실한 답변을 드리기 위해 필요한 최소한의 개인정보를 수집하고 있습니다.</p> <!-- // 2018-06-25 내용수정 -->
-							<div class="graybox">
-								<ul>
-									<li>&#183; 수집 항목 : 이메일</li>                                                                           
-									<li>&#183; 수집 및 이용목적 : 접수 문의에 대한 답변/안내</li>
-									<li>&#183; 보유 및 이용기간 : 수집∙이용 목적 달성 시 까지</li>
-								</ul>
-								<span class="notice color03">※ 문의에 대한 답변을 위해서 필요한 최소한의 개인정보 이므로 동의를 해 주셔야 서비스를 이용하실 수 있습니다.</span>
-							</div>
-							<!-- 2018-06-26 UI 수정 -->
-							<div class="agreeArea">
-								<span class="title">위 사항에 동의하십니까?</span>
-								<div class="agreeSelect">
-									<label class="radioWrap">동의
-										<input type="radio" checked="checked" name="radio">
-										<span class="checkmark"></span>
-									</label>								
-									<label class="radioWrap">동의 하지 않음
-										<input type="radio" name="radio"> 
-										<span class="checkmark"></span>
-									</label>  
-								</div>
-							</div>
-							<!-- // 2018-06-26 UI 수정 -->
-							<div class="buttonArea"><button type="button" class="fillBtn">완료</button></div>
-						</div>          
-					</div>
-					<div class="businessUnitGo">
-						<h4 class="title">사업부문별 고객문의 바로가기</h4>
-						<ul>
-							<li class="type01"><a href="http://www.secc.co.kr/html/customer/counsel_write.asp" target="_blank">건설부문</a></li>
-							<li class="type02"><a href="http://www.samsungcnt.com/KR/trading/co/106020/form.do" target="_blank">상사부문</a></li>
-							<li class="type03"><a href="http://www.samsungfashion.com/contents/customer.jsp#tabs?main=1" target="_blank">패션부문</a></li>
-							<li class="type04"><a href="http://rnc.samsungcnt.com/etc/supprt/index.html" target="_blank">리조트부문</a></li>
-						</ul>
-					</div>
-					<!-- 2018-06-25 연관정보 추가 -->
-					<div class="relationInfo">
-						<h4 class="contTit">연관정보 바로가기</h4>
-						<div class="buttonWrap">
-							<button class="blankBtn">INVESTOR RELATIONS</button>
-							<button class="blankBtn">요약재무제표</button>
-							<button class="blankBtn">CORPORATE GOVERNANCE</button>
-							<button class="blankBtn">이사회 구성</button>
-						</div>
-					</div>  
-					<!-- 2018-06-25 연관정보 추가-->
+				<div id="CNT_E_016" class="contents"> <!-- 페이지별 ID -->
+          <div class="recruitmentTit">
+            <h4>Global Corporation, Global DNA! <span class="color01">Waiting for someone like you.</span></h4>
+            <span>The most talented men and women from Korea and around the world have joined</span>
+            <span>Samsung C&T Corporation throughout its 70 years of history.</span>
+            <span>The dreams of creative, challenging, and passionate individuals are being realized here</span>
+						<span>Your dreams can become reality with Samsung C&T Corporation.</span>
+          </div>
+          <ul class="recruitmentList">
+            <li class="type01">
+              <span class="title">Engineering & Construction Group Careers</span>
+              <a href="http://www.secc.co.kr/html/recruit/value02.asp" target="_blank" class="addview">Go</a>
+            </li>
+            <li class="type02">
+              <span class="title">Trading & Investment Group Careers</span>
+              <a href="http://www.samsungcnt.com/KR/trading/re/401000/html.do" target="_blank" class="addview">Go</a>
+            </li>
+            <li class="type03">
+              <span class="title">Fashion Group Careers</span>
+              <a href="http://www.samsungfashion.com/contents/recruit.jsp#tabs?main=1&sub=1" target="_blank" class="addview">Go</a>
+            </li>
+            <li class="type04">
+              <span class="title">Resort Group Careers</span>
+              <a href="http://rnc.samsungcnt.com/careers/index.html" target="_blank" class="addview">Go</a>
+            </li>
+          </ul>
+          <ul class="shareList">
+            <li class="email"><button><span class="blind">이메일</span></button></li>
+            <li class="facebook"><button><span class="blind">페이스북</span></button></li>
+			  	</ul>
+          <div class="relationInfo">
+            <h4 class="contTit">연관정보 바로가기</h4>
+            <div class="buttonWrap">
+              <button class="blankBtn">INVESTOR RELATIONS</button>
+              <button class="blankBtn">요약재무제표</button>
+              <button class="blankBtn">CORPORATE GOVERNANCE</button>
+              <button class="blankBtn">이사회 구성</button>
+            </div>
+          </div>
 				</div> <!-- // contents -->
 				<div class="contentsBtm">
 					<p class="viewTop"><a href="#top">TOP</a></p>
@@ -365,7 +296,7 @@
 											<ul class="depth03">
 												<li><a href="#none">Our CSR</a></li>
 												<li><a href="#none">Act</a></li>
-												<li><a href="#none">CSR News</a></li>
+												<li><a href="#none">News</a></li>
 												<li><a href="#none">Report</a></li>
 											</ul>
 										</li>
@@ -408,7 +339,7 @@
 											</ul>
 										</li>
 										<li><a href="#none">FAQ</a></li>
-										<li><a href="#none">Contact IR</a></li>
+										<li><a href="#none">CONTACT IR</a></li>
 									</ul>
 								</div>
 							</li>
@@ -449,119 +380,109 @@
 						</ul>
 					</div>
 				</div>
+
 			</div>
 		</div> <!-- // container -->
 	</div> <!-- // contentsWrap -->
 
-<div class="footer">
-	<div class="container">
-		<footer>
-			<div class="footMenuWrap">
-				<ul>
-					<li><a href="#none">보안신고</a></li>
-					<li><a href="#none">이메일주소무단수집거부</a></li>
-					<li><a href="#none">Legal Notice</a></li>
-					<li><a href="#none">개인정보 취급방침</a></li>
-											<li class="ethic-manage">
-						<a href="#none" class="btnEthic">윤리경영</a>
-						<div class="ethicArea">
-															<div class="container">
-																	<dl class="corp">
-																			<dt>윤리경영 사이트</dt>
-																			<dd>
-																					<a href="http://www.withsamsung.co.kr/ko/html/main/index.html" target="_blank" title="새창">건설/상사부문</a>
-																			</dd>
-																			<dd>
-																					<a href="http://www.samsungfashion.com/contents/ethics.jsp#tabs?main=1" target="_blank" title="새창">패션부문</a>
-																			</dd>
-																			<dd>
-																					<a href="http://audit.everland.com/main.html" target="_blank" title="새창">리조트부문</a>
-																			</dd>
-																	</dl>
-															</div>
-													</div>
-											</li>
-					<li class="contact"><a href="#none">Contact Us</a></li>
-					<li class="sitemap"><a href="#none">Sitemap</a></li>
-				</ul>
-				<ul class="moLink">
-					<li><a href="#none">오시는 길</a></li>
-					<li><a href="#none">고객문의</a></li>
-				</ul>
-			</div>
+	<div class="footer">
+		<div class="container">
+			<footer>
+				<div class="footMenuWrap">
+					<ul>
+						<li><a href="javascript:fn_SecurityReport('KOR');">보안신고</a></li>
+						<li><a href="#none">이메일주소무단수집거부</a></li>
+						<li><a href="#none">Legal Notice</a></li>
+						<li><a href="#none">개인정보 취급방침</a></li>
+                        <li class="ethic-manage">
+							<a href="#none" class="btnEthic">윤리경영</a>
+							<div class="ethicArea">
+                                <div class="container">
+                                    <dl class="corp">
+                                        <dt><span>윤리경영</span> 사이트</dt>
+                                        <dd>
+                                            <a href="http://www.withsamsung.co.kr/ko/html/main/index.html" target="_blank" title="새창">건설/상사부문</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="http://www.samsungfashion.com/contents/ethics.jsp#tabs?main=1" target="_blank" title="새창">패션부문</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="http://audit.everland.com/main.html" target="_blank" title="새창">리조트부문</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+						<li class="contact"><a href="#none">CONTACT US</a></li>
+						<li class="sitemap"><a href="#none">Sitemap</a></li>
+					</ul>
+					<ul class="moLink">
+						<li><a href="#none">오시는 길</a></li>
+						<li><a href="#none">고객문의</a></li>
+					</ul>
+				</div>
 
-			<p class="copy">Copyright (C) 2018 Samsung C&amp;T Corporation. <span class="block">All rights reserved</span></p>
+				<p class="copy">Copyright (C) 2018 Samsung C&amp;T Corporation. <span class="block">All rights reserved</span></p>
 
-			<div class="familyWrap"> <!-- .btnFamily 버튼 클릭시 다중클래스 active 추가 -->
-				<section>
-					<h2><button type="button" class="btnFamily">FAMILY MAP</button></h2>
-					<div class="familyArea">
-						<div class="container">
-							<dl class="corp">
-								<dt>삼성물산 사이트</dt>
-								<dd>
-									<a href="#none" target="_blank" title="새창">건설부분</a>
-									<ul>
-										<li><a href="#none" target="_blank" title="새창">래미안</a></li>
-									</ul>
-								</dd>
-								<dd>
-									<a href="#none" target="_blank" title="새창">상사부분</a>
+				<div class="familyWrap"> <!-- .btnFamily 버튼 클릭시 다중클래스 active 추가 -->
+					<section>
+						<h2><button type="button" class="btnFamily">FAMILY MAP</button></h2>
+						<div class="familyArea">
+							<div class="container">
+								<dl class="corp">
+									<dt><span>삼성물산</span> 사이트</dt>
+									<dd>
+										<a href="#none" target="_blank" title="새창">건설부분</a>
+										<ul>
+											<li><a href="#none" target="_blank" title="새창">래미안</a></li>
+										</ul>
+									</dd>
+									<dd>
+										<a href="#none" target="_blank" title="새창">상사부분</a>
 
-								</dd>
-								<dd>
-									<a href="#none" target="_blank" title="새창">패션부분</a>
-									<ul>
-										<li><a href="#none" target="_blank" title="새창">SSF SHOP</a></li>
-									</ul>
-								</dd>
-								<dd>
-									<a href="#none" target="_blank" title="새창">리조트부분</a>
-									<ul>
-										<li><a href="#none" target="_blank" title="새창">에버랜드</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="related">
-								<dt>관계사 사이트</dt>
-																	<!-- 2017-03-09 패밀리사이트 삭제
-																	<dd><a href="#none" target="_blank" title="새창">삼성</a></dd> -->
-								<dd><a href="#none" target="_blank" title="새창">삼성전자</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성SDI</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성SDS</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성생명</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성화재</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성카드</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성증권</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성중공업</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성엔지니어링</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성바이오로직스</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성바이오에피스</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성웰스토리</a></dd>
-							</dl>
-							<dl class="etc">
-								<dt>기타</dt>
-																	<!-- 2017-03-09 패밀리사이트 삭제
-								<dd><a href="#none" target="_blank" title="새창">삼성채용사이트</a></dd> -->
-								<dd><a href="#none" target="_blank" title="새창">삼성사회봉사단</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">삼성장학회</a></dd> <!-- 2016-04-12 텍스트 수정 -->
-								<dd><a href="#none" target="_blank" title="새창">삼성재단</a></dd>
-								<dd><a href="#none" target="_blank" title="새창">호암재단</a></dd>
-							</dl>
+									</dd>
+									<dd>
+										<a href="#none" target="_blank" title="새창">패션부분</a>
+										<ul>
+											<li><a href="#none" target="_blank" title="새창">SSF SHOP</a></li>
+										</ul>
+									</dd>
+									<dd>
+										<a href="#none" target="_blank" title="새창">리조트부분</a>
+										<ul>
+											<li><a href="#none" target="_blank" title="새창">에버랜드</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="related">
+									<dt><span>관계사</span> 사이트</dt>
+									<dd><a href="#none" target="_blank" title="새창">삼성전자</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성SDI</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성SDS</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성생명</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성화재</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성카드</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성증권</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성중공업</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성엔지니어링</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성바이오로직스</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성바이오에피스</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성웰스토리</a></dd>
+								</dl>
+								<dl class="etc">
+									<dt><span>기타</span> 사이트</dt>
+									<dd><a href="#none" target="_blank" title="새창">삼성사회봉사단</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성장학회</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">삼성재단</a></dd>
+									<dd><a href="#none" target="_blank" title="새창">호암재단</a></dd>
+								</dl>
+							</div>
 						</div>
-					</div>
-				</section>
-			</div>
-		</footer>
-	</div>
-</div> <!-- // footer -->
+					</section>
+				</div>
+			</footer>
+		</div>
+	</div> <!-- // footer -->
 </div> <!-- // wrap -->
-<script>
-	var $inquiryOpen = $('#inquiryOpen'),
-			$inquiryWrite = $('.inquiryWriteWrap');
-	$inquiryOpen.on('click', function(){
-		$inquiryWrite.show();
-	})
-</script>
 </body>
 </html>
