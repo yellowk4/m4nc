@@ -79,9 +79,9 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .downBox{padding: 40px 0; text-align: right; border-bottom: 1px solid #d9d9d9;}
 .dirListBox{float: left; width: 32%; cursor: pointer;}
 .dirListBox.middle{margin: 0 2%;}
-.dirListName{position: relative; padding: 30px;}
-.dirListName:after{content: ''; position: absolute; right: 30px; top: 50%; margin-top: -13px; display: block; width: 26px; height: 26px; background: url(/images/front/icon/ico_gray_plus.png) no-repeat ;}
-.dirListBox.active .dirListName:after{background-image: url(/images/front/icon/ico_blue_minus.png);}
+.dirListName{position: relative; padding: 30px; box-sizing: border-box;}
+.dirListName:after{content: ''; position: absolute; right: 0; top: -52px; display: block; width: 18px; height: 18px; padding: 17px; background: url(/images/front/icon/ico_white_plus.png) no-repeat center #b9c0c5;}
+.dirListBox.active .dirListName:after{background-image: url(/images/front/icon/ico_white_minus.png); background-color: #0c4da2;}
 .dirListName span{display: block; padding-bottom: 9px; font-size: 24px;}
 .directCon{display: none; position: relative; z-index: 1; width: 1100px; margin-top: 10px; padding: 30px; background-color: #fbfbfb; border-bottom: 1px solid #d9d9d9; box-sizing: border-box;} /* 내용숨김 */
 .dirInfo.first{clear: both; overflow: hidden; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 2px dotted #dbdbdb;}
@@ -282,7 +282,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .dirListBox.middle .directCon, .dirListBox.right .directCon{left: 0;}
     .dirListName{padding: 20px 0;}
     .dirListName span{font-size: 18px; font-weight: 700;}
-    .dirListName:after{top: 20px; margin-top: 0; right: 0; width: 20px; height: 20px; background-size: 100%;}
+    .dirListName:after{top: -38px; width: 17px; height: 17px; padding: 10px;}
     .downBox{text-align: left;}
     #CNT_E_045 .directorList + .contTit{margin-top: 0;}
     .dirInfo .dot{float: none; padding-left: 8px; padding-right: 0; font-size: 15px;}
