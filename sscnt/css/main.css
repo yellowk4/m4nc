@@ -105,7 +105,22 @@
 .corporWrap li:nth-child(3) { background-image:url(/images/front/main/ico_coppor03.png); } 
 .corporWrap li a { display:inline; font-size:24px; font-weight:bold; color:#333; } 
 /* 미디어쿼리 */
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
+    #contentsWrap .searchWrap { display:block; padding:10px 0 10px 15px; box-sizing:border-box } 
+    #contentsWrap .searchWrap .hashtag { display:none } 
+    #contentsWrap .searchWrap { height:40px; background:#377dd5 } 
+    #contentsWrap .searchWrap .searchArea { float:none; width:auto; text-align:left; position:relative; margin-right:50px; box-sizing:border-box; height:20px } 
+    #contentsWrap .searchWrap .searchArea input { position:absolute; top:0; left:0; width:100%; max-width:100%; border:0; border-radius:0; height:20px; line-height:20px; padding-left:0; color:#fff; background:#377dd5; font-size:14px; } 
+    #contentsWrap .searchWrap .searchArea input:focus { border-radius:0; border:0; color:#fff }
+    #contentsWrap .searchWrap .searchArea .searchBtn { position:absolute; top:0; right:-50px; background-size:20px; background-position:center; width:50px; height:20px }
+
+    /* placeholder color 적용 */
+    ::-webkit-input-placeholder { color:#fff; } /* WebKit, Blink, Edge */
+    :-moz-placeholder { color:#fff; } /* Mozilla Firefox 4 to 18 */
+    ::-moz-placeholder { color:#fff; } /* Mozilla Firefox 19+ */
+    :-ms-input-placeholder { color:#fff; } /* Internet Explorer 10-11 */
+}
+@media screen and (max-width:812px){
     .header { transform: inherit !important; } 
     body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,select,input,textarea,p,blockquote,th,td,figure,figcaption { line-height:inherit !important; } 
     /* MAIN */
@@ -126,18 +141,7 @@
     .mainVisual .swiper-pagination .swiper-pagination-bullet-active { width:26px; } 
     .mainVisual .swiper-counter { left:87px; width:38px; height:20px; font-size:12px; background:url(/images/front/main/m_visual_num.png) no-repeat; background-size:100% } 
     .mainVisual .swiper-counter span { padding:3px 0; } 
-    #contentsWrap .searchWrap { display:block; padding:10px 0 10px 15px; box-sizing:border-box } 
-    #contentsWrap .searchWrap .hashtag { display:none } 
-    #contentsWrap .searchWrap { height:40px; background:#377dd5 } 
-    #contentsWrap .searchWrap .searchArea { float:none; width:auto; text-align:left; position:relative; margin-right:50px; box-sizing:border-box; height:20px } 
-    #contentsWrap .searchWrap .searchArea input { position:absolute; top:0; left:0; width:100%; max-width:100%; border:0; border-radius:0; height:20px; line-height:20px; padding-left:0; color:#fff; background:#377dd5; font-size:14px; } 
-    #contentsWrap .searchWrap .searchArea input:focus { border-radius:0; border:0; color:#fff } 
-    /* placeholder color 적용 */
-    ::-webkit-input-placeholder { color:#fff; } /* WebKit, Blink, Edge */
-    :-moz-placeholder { color:#fff; } /* Mozilla Firefox 4 to 18 */
-    ::-moz-placeholder { color:#fff; } /* Mozilla Firefox 19+ */
-    :-ms-input-placeholder { color:#fff; } /* Internet Explorer 10-11 */
-    #contentsWrap .searchWrap .searchArea .searchBtn { position:absolute; top:0; right:-50px; background-size:20px; background-position:center; width:50px; height:20px } 
+    
     #CNT_M_K .titWrap .icoTitMore.koNewRoomLink { right:0 } 
     #CNT_M_K .titWrap .icoTitMore.engNewRoomLink { display:none } 
     #CNT_M_K > div { padding:24px 0; } 
