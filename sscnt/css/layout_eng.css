@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.logo a {width: 204px;}
+#contentsWrap .searchWrap .searchArea {width: 34%}
+#contentsWrap .searchWrap .searchArea input {max-width: 300px;}
+#contentsWrap .searchWrap .hashtag li {margin-right: 5px;}
+#contentsWrap .searchWrap .hashtag li a {padding: 10px 15px;}
+#contentsWrap .searchWrap .hashtag li:nth-child(3) a, #contentsWrap .searchWrap .hashtag li:nth-child(4) a {padding: 10px;}
+#contentsWrap .pcMenuWrap .inner {padding-right: 0;}
+
+/* 메인 */
+.ourWrap .sectorInfo .sector {display: none;}
+.ourWrap .sectorInfo .sector + span {font-size: 20px !important; letter-spacing: initial !important;}
+
+@media screen and (max-width:1200px){
+    #contentsWrap .searchWrap .searchArea {width: 28%}
+#contentsWrap .searchWrap .searchArea input {max-width: 270px;}
+ }
+
+@media screen and (max-width: 1024px) {
+    #contentsWrap .searchWrap .hashtag {width: 60%;}
+    #contentsWrap .searchWrap .searchArea {width: 40%;}
+    #contentsWrap .searchWrap .searchArea input {max-width: 250px;}
+    #contentsWrap .searchWrap .hashtag li a {margin-bottom: 10px;}
+}
+
+@media screen and (max-width: 812px) {
+    .logo a {width: 134px;}
+    #contentsWrap .searchWrap .hashtag li a {margin-bottom: 0;}
+
+    /* 메인 */
+    .arrList li a:after {display: none !important;}
+}
