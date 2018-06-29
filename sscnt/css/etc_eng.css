@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* visual bg */
+#contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_03.jpg);}
+
+/* etc - Site map */
+#CNT_E_057:after{content: ''; display: block; clear: both; overflow: hidden;}
+#CNT_E_057 article{float: left; width: 30.9%;}
+#CNT_E_057 article:nth-child(2){padding: 0 3.65%;}
+.sMapTit{padding-bottom: 20px; border-bottom: 1px solid #0c4da2; font-size: 24px; color: #0c4da2;font-weight:700;margin-bottom:15px;}
+.smDepth02 > li > a{display: block;font-size: 18px; color: #111;padding:15px 30px}
+.smDepth03{display:block !important; padding:15px 30px; background-color: #fbfbfb; border-bottom: 1px solid #eaeaea;}
+.smDepth03 li{padding-left: 15px; margin-bottom: 16px; background: url(/images/front/icon/ico_listdot_type01.png) no-repeat left 8px;}
+.smDepth03 li a {color:#555;font-size:16px;}
+.smDepth03 li:last-child{margin-bottom: 0;}
+
+/* 오류 */
+.errorCon {width:100%;height:100%;background:#f7f7f7}
+.errorCon .errorHead {width:100%;height:105px;box-sizing:border-box;border-bottom:2px solid #0c4da2;background:#fff;}
+.errorCon .errorHead div {max-width:1100px;margin:0 auto;position: relative;}
+.errorCon .errorHead .logo {width:162px;height:29px;top:53px;}
+.errorCon .errorHead .logo img {width:100%;}
+.errorCon .errorCont {width:715px;margin:112px auto;background: url(/images/front/icon/error_bg.png) no-repeat left top;padding-left:320px;box-sizing:border-box;font-size:16px;color:#666;}
+.errorCon .errorCont .contTit {font-weight:700;color:#0c4da2;font-size:42px;margin-bottom:29px;}
+.errorCon .errorCont .btnArea {margin-top:45px;}
+.errorCon .errorCont .btnArea .btnDefaultForm {display:inline-block;padding:18px 15px;margin-right: 0;background-color:#0c4da2;font-size:18px;color:#fff;border:none;border-radius:0;min-width:190px;text-align:center;margin-top:0;box-sizing: border-box;}
+.errorCon .errorCont .btnArea .btnDefaultForm.left{margin-right: 11px;}
+
+/* SEARCH */
+#CNT_E_061 .searchInfo {color:#111;font-size:36px;line-height:1.2;text-align:center;font-weight:700;margin-bottom:75px}
+#CNT_E_061 .searchInfo > .pointColor:first-child {background: url(/images/front/icon/srch_bu.png) left center no-repeat;background-size:32px 33px;padding-left:50px;
+}
+#CNT_E_061 .searchInfo .pointColor {color:#0e4ea3}
+
+#CNT_E_061_1 .serachList .result {margin-bottom:30px;}
+#CNT_E_061_1 .btnArea {text-align:right;}
+
+/* serach List */
+.serachList{width:100%;}
+.serachList .ttl {position:relative;}
+.serachList .ttl .moreBtn {position: absolute;top:-9px;right:0;min-width:92px; padding:0 15px; height:40px;background:#828a91;border:1px solid #555;color:#fff;font-size:14px;display:inline-block;text-align:center;line-height:40px;box-sizing:border-box}
+.serachList .ttl .moreBtn:after {content:'';width:7px;height:100%;display:inline-block;background: url(/images/front/icon/link_bu.png) center no-repeat;vertical-align:top;margin-left:19px;}
+.serachList .categroy {display:block;padding-bottom:20px;border-bottom:1px solid #0c4da2;color:#0e4ea3;font-size:24px;font-weight:700;line-height:1}
+.serachList .categroy span {color:#111;}
+.serachList .result {position:relative;padding:24px 0;font-size:18px;line-height:1.6;color:#111;border-bottom:1px solid #777;margin-bottom:70px}
+.serachList li:last-child .result {margin-bottom:0}
+.serachList .result ul li {margin-top:24px;padding-top:24px;border-top:1px solid #d9d9d9}
+.serachList .result ul li:first-child {margin-top:0;padding-top:0;border-top:0;}
+.serachList .result ul li > a {display:block;color:#111;word-break:break-all;font-size:18px}
+.serachList .result ul li .location span {display:inline-block;color:#555;font-size:16px}
+.serachList .result ul li .location span:before {display:inline-block;content:'>';margin:0 2px} 
+.serachList .result ul li .location span:first-child:before {display:none}
+
+/* MOBILE */
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width:812px) { 
+    #CNT_E_057 article {float:none;width:100%;padding:0 !important}
+    .sMapTit {font-size:18px;margin-bottom:10px;padding-bottom:15px}
+    .smDepth02 > li > a {font-size: 16px;color: #111;padding:10px 15px;}
+    .smDepth02 li:last-child ul {border-bottom:0}
+    .smDepth03 {padding:10px 15px;}
+    .smDepth03 li a {font-size:15px;}
+    #CNT_E_057 article:nth-child(2),#CNT_E_057 article:nth-child(3) {padding-top:20px !important;border-top:1px solid #777}
+    #CNT_E_057 article:nth-child(3) {border-bottom:1px solid #777}
+
+    /* 검색결과 */
+    #CNT_K_070 .searchInfo {font-size:24px;margin-bottom:25px;padding-top:45px;background: url(/images/front/icon/srch_bu.png) center top no-repeat;background-size:32px 33px;}
+    #CNT_K_070 .searchInfo > .pointColor:first-child {background:none;padding-left:0;
+    }
+    .serachList li .categroy {font-size:17px;padding-bottom:10px}
+    .serachList li .result {padding:14px 0;font-size:14px;margin-bottom:25px}
+    .serachList li .result ul li {margin-top:14px;padding-top:14px;}
+    .serachList li .result ul li > a  {font-size:15px;}
+    .serachList li .result ul li .location span {font-size:14px;}
+
+    #CNT_K_070_1 .serachList .result {margin-bottom:20px;}
+    #CNT_K_070_1 .btnArea {text-align:center;}
+    #CNT_K_070_1 .btnArea button {margin-right:0;}
+    
+    /* 오류 */
+    .errorCon .errorHead {height:40px;border-bottom:1px solid #0c4da2;}
+    .errorCon .errorHead div {max-width:100%;}
+    .errorCon .errorHead .logo {width:105px;height:18px;top:11px;left:15px}
+    .errorCon .errorHead .logo img {width:100%;}
+    .errorCon .errorCont {width:100%;margin:33px auto 0 auto;background: url(/images/front/icon/error_bg.png) no-repeat top center;background-size:135px 94px;;padding-left:0px;font-size:16px;text-align:center;}
+    .errorCon .errorCont .contTit {font-size:24px;margin-bottom:15px;padding-top:113px}
+    .errorCon .errorCont .btnArea {margin-top:26px}
+    .errorCon .errorCont .btnArea .btnDefaultForm {padding:13px 0;font-size:14px;color:#fff;min-width:143px;margin-right:0}
+    .errorCon .errorCont .btnArea .btnDefaultForm.left {margin-right: 0px;}
+}
