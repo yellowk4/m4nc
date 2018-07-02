@@ -526,9 +526,27 @@ common Layout - 공통적용되는 스타일은 작업하시면 안됩니다.
 #contentsWrap { position:relative; min-height: 100%; } 
 #contentsWrap > .container { padding: 104px 0 100px; margin: 0 0 -100px; } 
 #contentsWrap .contentsTop { position: relative; } 
-#contentsWrap .contentsTop .inner { max-width:1200px; padding:0 50px; margin:0 auto; box-sizing: border-box; } 
-#contentsWrap .visualWrap { min-height: 312px; background: url(/images/front/common/pic_visual.jpg) no-repeat 50% 50%; background-size: cover; } 
-#contentsWrap .visualWrap .visualTit { padding-top: 170px; font-weight: 700; color: #fff; } 
+#contentsWrap .contentsTop .inner { max-width:1200px; padding:0 50px; margin:0 auto; box-sizing: border-box; }
+
+#contentsWrap .visualWrap {position:relative;overflow:hidden;width:100%;height:312px;}
+#contentsWrap .visualWrap .swiper-wrapper {height:100%;font-size:0;line-height:0;white-space:nowrap;}
+#contentsWrap .visualWrap .swiper-slide {position:relative;display:inline-block;position:relative;width:100%;height:100%;text-align:left;min-height: 312px; background: url(/images/front/common/pic_visual.jpg) no-repeat 50% 50%; background-size: cover;}
+#contentsWrap .visualWrap .visual02 {background-image: url(/images/front/common/pic_visual_02.jpg);}
+#contentsWrap .visualWrap .visual03 {background-image: url(/images/front/common/pic_visual_03.jpg);}
+#contentsWrap .visualWrap .visual04 {background-image: url(/images/front/common/pic_visual_04.jpg);}
+#contentsWrap .visualWrap .inner {overflow:hidden; max-width:1200px; padding:0 50px; box-sizing:border-box; position:relative; bottom:165px; left:0; margin:0 auto}
+
+.swiper-page-wrap { overflow:hidden; max-width:1200px; padding:0 50px; box-sizing:border-box; position:relative; bottom:155px; left:0; height:30px; margin:0 auto } 
+.swiper-page-wrap > div { float:left } 
+.visualWrap .swiper-pagination { position:absolute; top:13px; left:50px; } 
+.visualWrap .swiper-pagination .swiper-pagination-bullet { vertical-align:top; width:16px; height:3px; display:inline-block; margin-left:2px; background:#666666; } 
+.visualWrap .swiper-pagination .swiper-pagination-bullet-active { width:40px; background:#febd32; transition:0.2s } 
+.visualWrap .swiper-pagination .swiper-pagination-bullet:first-child { margin-left:0; } 
+.visualWrap .swiper-counter { position: absolute; top:0; left:155px; width:58px; height:30px; font-size:16px; color:#ddd; text-align:center; background:url(/images/front/main/visual_num.png) no-repeat } 
+.visualWrap .swiper-counter span { padding:6px 0; display:inline-block; opacity:1 } 
+.visualWrap .swiper-counter span.count { color:#febd32; } 
+
+#contentsWrap .visualWrap .visualTit { padding-top: 0; font-weight: 700; color: #fff; } 
 #contentsWrap .visualWrap .visualTit span { display: block; margin-top: 10px; font-size: 30px; font-weight: 400; line-height: 1; } 
 #contentsWrap .visualWrap .visualTit span .home { position:relative; display: inline-block; width: 42px; height: 21px; margin-right: 15px; background: url(/images/front/icon/ico_home.png) no-repeat; background-size: auto 21px; text-indent:-9999px; } 
 #contentsWrap .visualWrap .visualTit span .home:after { content:''; display: block; position:absolute; top:5px; left: auto; right:0; width: 7px; height: 15px; background: url(/images/front/common/bul_arrow.png) no-repeat; background-size: auto 15px; } 
