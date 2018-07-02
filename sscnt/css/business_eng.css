@@ -119,7 +119,7 @@
 .historyAllList {width:100%; overflow:hidden; padding:50px 45px; box-sizing:border-box;}
 .historyAllList h1 {font-size:42px; font-weight:600; margin-bottom:30px; color:#0c4da2;}
 .historyAllList .tableBasicList { margin-bottom:60px;}
-.historyAllList .tableBasicList tbody th, .tableBasicList tbody td {padding:20px 30px;}
+.historyAllList .tableBasicList tbody th, .historyAllList .tableBasicList tbody td {padding:20px 30px;}
 .historyAllList .tableBasicList tbody th {background:none; font-weight:600;}
 .historyAllList .tableBasicList tbody td {text-align:left; line-height:1.4;}
 .historyAllList .buttonArea {text-align:center;}
@@ -599,4 +599,6 @@ h4.actMainTitle {padding-bottom:12px;}
 /* 모바일 */
 @media screen and (max-width:405px) {
 .overviewTit .countInfo li:last-child {padding:10px 0;}
+.actMainWrap .actMenuList > li:first-child .title::after {display:none;}
+.recruitmentList li .addview {background:#111;}
 }

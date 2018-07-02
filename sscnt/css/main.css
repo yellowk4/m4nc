@@ -83,7 +83,7 @@
 .investorWrap .listTbl li .txt { overflow:hidden; float:left; width:55%; font-size:18px; color:#333; line-height:25px; text-overflow:ellipsis; white-space:nowrap; } 
 .investorWrap .listTbl li .date {position: absolute;right:147px;top:18px;font-size:16px; color:#777; line-height:25px; } 
 .investorWrap .listTbl li button { float:right; width:25px; height:25px; background:url(/images/front/icon/ico_down.png) 0 0 no-repeat; background-size:100%; } 
-.investorWrap .listLink { float:left; width:50.9%; margin-top:20px; } 
+.investorWrap .listLink {float:left; width:50.9%; margin-top:20px; } 
 .investorWrap .listLink li { margin-top:10px;} 
 .investorWrap .listLink li:first-child { margin-top:0; background:#e7e8ef url(/images/front/main/ico_invest01.png) right 20px center no-repeat; } 
 .investorWrap .listLink li:nth-child(2) { background:#e7e8ef url(/images/front/main/ico_invest02.png) right 20px center no-repeat;} 
@@ -191,16 +191,15 @@
     .investorWrap .listTbl li .date {right:40px;top:9px}
     .investorWrap .listTbl li .txt { width:168px; } 
     .investorWrap .listTbl li button { width:23px; height:23px; } 
-    .investorWrap .listLink { padding-top:0; float:none; width:100%; } 
     .investorWrap .stockInfo { float:none; width:100% } 
     .investorWrap .stockInfo .iframeArea { height:250px;} 
     .investorWrap .stockInfo .iframeArea iframe { height:250px; }
-    .investorWrap .listLink {overflow:hidden;margin:20px 0}
-    .investorWrap .listLink li {float:left;margin-top:0;width:31.3%;margin-left:3%} 
-    .investorWrap .listLink li:first-child { margin-top:0;margin-left:0} 
-    .investorWrap .listLink li{background-position:center 16px !important;background-size:40px auto !important;}
-    .investorWrap .listLink li a { height:100px; padding:14px 10px; font-size:14px; font-weight:700;box-sizing:border-box;text-align:center} 
-    .investorWrap .listLink li span { min-width:auto;margin-top:56px} 
+    .investorWrap .listLink {width:100%; float:none;}
+    .investorWrap .listLink li a {height:55px; padding:0 0 0 4%; line-height:55px; font-size:14px;}
+    .investorWrap .listLink li span {min-width:auto;}
+    .investorWrap .listLink li:first-child {background-size:auto 38px;} 
+    .investorWrap .listLink li:nth-child(2) {background-size:auto 38px;} 
+    .investorWrap .listLink li:nth-child(3) {background-size:auto 38px; background-position:right 20px center;} 
     .arrList li a:after { width:4px; height:7px; margin-left:5px; } 
     .investorWrap .stockInfo { margin-top:10px; } 
     .investorWrap .stockInfo li { padding:10px 0; } 
