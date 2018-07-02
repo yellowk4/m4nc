@@ -83,6 +83,23 @@
 #CNT_E_029 .accordion, #CNT_E_035 .accordion {font-weight: 600;} 
 #CNT_E_029 .whiteBtn.small{min-width: 159px;}
 
+/* IR -  */
+.discWrap .tableBasicList th{text-align: left;}
+.discWrap .tableBasicList td{border-left: 0;}
+.discBtn, .discPeriod{display: inline-block;}
+.discBtn{margin-left: 11px;}
+.discBtn button{margin-left: 8px; padding: 14px 0 13px; min-width: 79px; text-align: center; background-color: #fff; font-size: 14px; color: #333; border: 1px solid #555555;}
+.discPeriod input{margin: 0 7px; padding: 14px 10px 13px; max-width: 135px; font-size: 14px; border: 1px solid #dddddd;}
+.discKey{margin-left: 27px; width: calc(100% - 42px);}
+.discKey input{display: block; width: 100%; box-sizing: border-box; padding: 14px 10px 13px; font-size: 14px; border: 1px solid #dddddd;}
+.discWrap .bthWrap{margin: 40px 0 0; text-align: center;}
+.discResult{margin-top: 40px; border-top: 1px solid #0c4da2; border-bottom: 1px solid #777777;}
+.discResult li {padding: 20px 30px; border-top: 1px solid #d9d9d9; background-color: #fbfbfb;}
+.discResult li:first-child{border-top: 0;}
+.discResult li a{display: inline-block; width: calc(100% - 100px); padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat left 8px;}
+.discResult li a:hover{text-decoration: underline; color: #0c4da2;}
+
+.discResult li .date{color: #777777;}
 /* IR - 주식 및 주주정보 CNT_K_039 */
 #CNT_E_031 .tableBasicList table tbody th {background:none;}
 #CNT_E_031 .tableBasicList table {width:100%;}
