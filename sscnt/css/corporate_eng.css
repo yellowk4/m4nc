@@ -135,7 +135,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 #CNT_E_048 .whiteBtn.small{min-width: 159px;}
 /* ul table */
 .reportList {margin-top: 20px; overflow:hidden; border-top:1px solid #0c4da2; border-bottom:1px solid #777777;}
-.reportList li {display: table; table-layout: fixed; float: left; width:50%;  overflow:hidden; border-bottom:1px solid #d9d9d9; border-right: 1px solid #d9d9d9;}
+.reportList li {display: table; table-layout: fixed; float: left; width:50%; min-height: 80px; overflow:hidden; border-bottom:1px solid #d9d9d9; border-right: 1px solid #d9d9d9;}
 .reportList li:nth-child(2n) {border-right:0;}
 .reportList li:nth-child(5), .reportList li:last-child{border-bottom: 0;}
 .reportList li .tit {display: table-cell; width:50%; padding: 20px 4px; text-align:center;vertical-align: middle; box-sizing:border-box; background:#f8f8f8; font-size:16px;border-right: 1px solid #d9d9d9;}
@@ -226,6 +226,12 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .accordion + .panel .panelIn {padding: 40px 0;}
 .accordion.active + .panel{border-top: 1px solid #d9d9d9;}
 
+@media screen and (max-width: 927px){
+    /*  corporate 개요  CNT_E_048 */
+   .reportList li:nth-child(4) .tit{padding: 20px 26px;}
+   .reportList li:nth-child(5) .tit{padding: 20px 15px;}
+   .reportList li:nth-child(6) .tit{padding: 20px 13%;}
+}
 /* MOBILE */
 @media screen and (max-width: 812px){
     .corporate section + section {margin-top: 30px;}
@@ -338,6 +344,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .reportList li .tit{font-size: 15px;}
     .reportList li:nth-child(2n){border-right:0;}
     .reportList li:nth-child(5){border-bottom: 1px solid #d9d9d9;}
+    .reportList li:nth-child(4) .tit, .reportList li:nth-child(5) .tit, .reportList li:nth-child(6) .tit{padding: 20px 5px;}
 
     /*  corporate 경영위원회 CNT_E_049 */
     #CNT_E_049 .txt + .tableBasicList{margin-top: 15px;}
@@ -407,10 +414,6 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     
 }
 
-@media screen and (max-width: 920px){
-    /*  corporate 개요  CNT_E_048 */
-   .reportList li:nth-child(4) .tit{padding: 20px 25px;}
-}
 @media screen and (max-width: 480px){
     /* corporate 이사회 구성 CNT_E_045 */
     .career span.year{width: 50%;}
