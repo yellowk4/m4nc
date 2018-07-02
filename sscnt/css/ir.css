@@ -32,6 +32,7 @@
 .irLinkWrap .irLink .arrow{display: inline-block; width: 9px; height: 14px; margin-left: 10px; background: url(/images/front/icon/ico_arrow02.png) no-repeat center; background-size: 9px 14px;}
 /* .irLinkWrap .irLink .irA:after{content: ''; position: relative; top: 12px; left: 50%; margin-left: -15px; display: block; width: 30px; height: 2px; background-color: #fff;} */
 
+/* IR - 공시정보 CNT_K_029 */
 #CNT_K_029 .iframeContsWrap {width:744px; margin:0 auto;}
 
 /* IR - 신용등급 CNT_K_031 */
