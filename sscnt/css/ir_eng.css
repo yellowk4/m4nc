@@ -256,7 +256,7 @@ td.periodWrap{text-align: left;}
     .discList{margin: 0 -20px;}
     .discList .tableBasicList th, .discList .tableBasicList td{padding: 16px 15px 0; border-top: 0;}
     .discList .tableBasicList td{padding: 11px 15px;}
-    .discPeriod input{width: calc(50% - 39px); max-width: auto;}
+    .discPeriod input{width: calc(50% - 39px); max-width: 100%; padding: 8px;}
     .discList .bthWrap{margin-top: 20px;}
     .discResult{margin: 20px 20px 0;}
     .discResult li{padding: 14px 11px;}
