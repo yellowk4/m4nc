@@ -257,11 +257,13 @@ td.periodWrap{text-align: left;}
     .discList .tableBasicList th, .discList .tableBasicList td{padding: 16px 15px 0; border-top: 0;}
     .discList .tableBasicList td{padding: 11px 15px;}
     .discPeriod input{width: calc(50% - 39px); max-width: 100%; padding: 8px;}
+    .discKey input{padding: 8px;}
     .discList .bthWrap{margin-top: 20px;}
     .discResult{margin: 20px 20px 0;}
     .discResult li{padding: 14px 11px;}
     .discResult li a{padding-left: 6px; background-position: left 9px;}
     .discList .pageArea{margin: 20px auto 0;}
+    .discList .fillBtn{font-size: 16px;}
 
     /* IR - Overview CNT_K_022 */
     .irLinkWrap .irLink .irA:after{top: 4px;}
