@@ -116,7 +116,7 @@ btn, icon
 
 .blankBtn { display:inline-block; padding:0 20px; min-width:140px; height: 56px; border: 1px solid #ccc; background:#fff; color:#555; font-size:18px; } 
 .blankBtn:hover { background:#f8f8f8; } 
-.fillBtn.small { padding:0 15px; min-width: initial; height: 40px; background: #828a91; border: 1px solid #555; font-size: 14px; } 
+.fillBtn.small { padding:0 15px; min-width: auto; height: 40px; background: #828a91; border: 1px solid #555; font-size: 14px; } 
 .fillBtn.small:hover { background: #697279; } 
 .fillBtn.small.disable { border-color: #ccc; } 
 .blankBtn.small { padding:0 15px; min-width:initial; height: 40px; border-color: #555; color: #333; font-size: 14px; } 
