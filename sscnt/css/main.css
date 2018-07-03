@@ -43,10 +43,10 @@
 .newsWrap li:first-child { margin-left:0; } 
 .newsWrap li .sector { font-size:16px; font-weight:bold; color:#0075c2; } 
 .newsWrap li .eng { position: absolute; top:12px; right:0; display:inline-block; min-width:34px; height:22px; box-sizing:border-box; border:1px solid #bbb; color:#333; font-size:13px; font-weight:700; text-align:center; line-height:22px; } 
-.newsWrap li p { margin:10px 0 6px; font-size:20px; color:#111; line-height:1.3; word-break:keep-all; } 
+.newsWrap li p { margin:10px 0 6px; height:52px; overflow:hidden; font-size:20px; color:#111; line-height:1.3; word-break:keep-all; } 
 .newsWrap li .date { display:block; margin-bottom:18px; font-size:16px; color:#777; } 
 .newsWrap li a { display:inline-block; padding-left:30px; font-size:14px; font-weight:bold; color:#333; line-height:1.8; } 
-.newsWrap li a.icoMore { background:url(/images/front/icon/ico_more.png) 0 0 no-repeat; background-size:24px; } 
+.newsWrap li a.icoMore { background:url(/images/front/icon/ico_more_site.png) 0 0 no-repeat; background-size:24px; } 
 .newsWrap li a.icoMoreSite { background:url(/images/front/icon/ico_more_site.png) 0 0 no-repeat; background-size:24px; } 
 /* OURWRAP */
 .ourWrap .sectorInfo { overflow:hidden; } 
