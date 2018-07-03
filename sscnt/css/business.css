@@ -205,7 +205,6 @@
 .actMainWrap .actMenuList > li {float:left; width:32%; min-height:264px; margin-right:2%; margin-bottom:35px;}
 .actMainWrap .actMenuList > li:nth-child(3n) {margin-right:0;}
 .actMainWrap .actMenuList > li .title {display:block; padding-bottom:15px; margin-bottom:15px; border-bottom:2px solid #434757; font-size:18px; color:#111; font-weight:600;}
-.actMainWrap .actMenuList > li .title::after {display:inline-block; width:19px; height:16px; background:url('/images/front/icon/ico_arr_r.png') no-repeat right 3px; background-size:9px; content:" ";}
 .actMainWrap .actMenuList > li ul li {width:100%; display:table; overflow:hidden; margin-bottom:10px; table-layout:fixed;}
 .actMainWrap .actMenuList > li ul li .thum {width:20%; display:table-cell; padding-right:5%;}
 .actMainWrap .actMenuList > li ul li .thum img {vertical-align:top; width:100%;}
@@ -494,7 +493,6 @@
 .actMainWrap .actMenuList > li .title {font-size:16px;}
 .actMainWrap .actMenuList > li ul li .text {font-size:15px;}
 .actMainWrap .actMenuList > li {float:none; width:100%; margin:0 0 20px 0; min-height:auto;}
-.actMainWrap .actMenuList > li .title::after {background-size:7px; background-position:right 5px;}
 .actMainWrap .actMenuList > li ul li:last-child {margin-bottom:0;}
 
 .actMainWrap .actMenuList > li ul li .thum {width:25%; display:table-cell; padding-right:5%;}
