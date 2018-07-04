@@ -1002,8 +1002,8 @@ background: url(/images/front/icon/ico_arrow_close.png) no-repeat; background-si
 .defaultTab.moChange.active .select button:after { background-image: url(/images/front/icon/ico_arrow_close.png); } 
 
 /* 탭 -뉴스화면 */
-.defaultTab.moChange2 .tabCtrlWrap { overflow: hidden; display: block; } 
-.defaultTab.moChange2 .tabCtrlWrap a { float: left; display: table; width: 32%; margin: 0 2% 2% 0; border: 1px solid #d9d9d9; } 
+.defaultTab.moChange2 .tabCtrlWrap { overflow: hidden; display: block;font-size:0} 
+.defaultTab.moChange2 .tabCtrlWrap a { display: inline-table; width: 32%; margin: 0 2% 2% 0; border: 1px solid #d9d9d9;box-sizing:border-box;} 
 .defaultTab.moChange2 .tabCtrlWrap a:nth-child(3n) { margin-right: 0; line-height: 1.2; } 
 .defaultTab.moChange2 .tabCtrlWrap a span { display: table-cell; vertical-align: middle; } 
 .defaultTab.moChange2 .tabCtrlWrap a.current { border-top: 2px solid #377dd5; } 
