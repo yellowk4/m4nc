@@ -11,6 +11,7 @@
 <link type="text/css" rel="stylesheet" href="/css/business_eng.css" /> <!-- 해당 대메뉴 기준 css 삽입 -->
 <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="/js/swiper.min.js"></script> <!-- 2018-07-04 서브 비주얼화면 -->
 <script type="text/javascript" src="/js/media.match.min.js"></script>
 <script type="text/javascript" src="/js/common.js"></script>
 <!--[if lt IE 9]>
@@ -188,13 +189,30 @@
 		<div class="container">			
 			<div class="moLayout">
 				<div class="contentsTop">
-					<div class="visualWrap">
+					<!-- 2018-07-04 서브 비주얼화면 -->
+					<div class="visualWrap swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide visual01">
+							</div>
+							<div class="swiper-slide visual02">
+							</div>
+							<div class="swiper-slide visual03">
+							</div>
+							<div class="swiper-slide visual04">
+							</div>
+						</div>
 						<div class="inner">
 							<h3 class="visualTit">
-								상사부문 <span><i class="home">home</i>OUR BUSINESSES</span>
+								Trading &amp; Investment Group <span><i class="home">home</i>OUR BUSINESSES</span>
 							</h3>
 						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-page-wrap">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-counter"></div>
+						</div>
 					</div>
+					<!-- //2018-07-04 서브 비주얼화면 -->
 					<div class="searchWrap">
 						<div class="inner clfix">
 							<ul class="hashtag">

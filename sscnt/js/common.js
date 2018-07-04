@@ -1138,6 +1138,33 @@ conApp.imgTabEvent = function(){
 
 }
 
+//서브 비주얼 영역
+conApp.swiper = function(){
+
+	var swiper = new Swiper('.swiper-container', {
+		wrapperClass: "swiper-wrapper",
+		slideClass: "swiper-slide",
+		pagination: ".swiper-pagination",
+		paginationClickable: true,
+		autoplayDisableOnInteraction: false,
+		autoplay: 3000,
+		loop: true,
+		speed: 1000, // 2018-07-02 옵션 추가
+		effect: 'fade',  // 화면전환 변경
+		onInit: function (swiper) {
+			console.log(swiper.slides);
+			var len = swiper.slides.length-2; // total
+			var counter = $('.swiper-counter');
+			var count = $('<span class="count">1</span><span class="total"> / '+ len +'</span>');
+			counter.append(count);
+		},
+		onSlideChangeStart: function (swiper) {
+			var index = swiper.realIndex+1 ; // 현재 활성화 idx
+			$('.count').text(index);
+		}
+	});
+
+}
 
 
 $(function() {
@@ -1163,6 +1190,7 @@ $(function() {
 	if (hasJqObject(conApp.$body.find(".btnSearchView"))){ conApp.btnSearchView();} //formToggle
 	if (hasJqObject(conApp.$body.find(".layerList"))){ conApp.layerEvent();} //layerPopup
 	if (hasJqObject(conApp.$body.find(".directorList"))){ conApp.imgTabEvent(); } // 위원회 image Tab Toggle
+	if (hasJqObject(conApp.$body.find(".swiper-container"))){ conApp.swiper(); } //서브 비주얼 영역
 
 	conApp.openSelectHide();
 	
@@ -1170,21 +1198,6 @@ $(function() {
 });
 
 
-// function hideAddressBar()
-// {
-//   if(!window.location.hash)
-//   {
-//       if(document.height < window.outerHeight)
-//       {
-//           document.body.style.height = (window.outerHeight + 50) + 'px';
-//       }
-
-//       setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
-//   }
-// }
-
-// window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
-// window.addEventListener("orientationchange", hideAddressBar );
 
 	
 	
