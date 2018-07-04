@@ -12,6 +12,9 @@
 .ourWrap .sectorInfo .sector {display: none;}
 .ourWrap .sectorInfo .sector + span {font-size: 20px !important; letter-spacing: initial !important;}
 
+/* 서브 */
+.visualTit {font-size: 43px;}
+
 @media screen and (max-width:1200px){
     #contentsWrap .searchWrap .searchArea {width: 28%}
 #contentsWrap .searchWrap .searchArea input {max-width: 270px;}
