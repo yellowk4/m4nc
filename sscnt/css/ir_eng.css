@@ -58,7 +58,7 @@
 .popWrap #CT-PCK-033 .btnArea {padding: 0; margin-bottom: 0;}
     /* table */
     #CT-PCK-033 .defaultTable th {font-size: 24px; font-weight: 700; background-color: #fbfbfb;}
-    #CT-PCK-033 .tableBasicList tbody td {padding: 20px 0 20px 30px;}
+    #CT-PCK-033 .tableBasicList tbody td {padding: 20px 0 20px 25px;}
     /* button */
     #CT-PCK-033 .whiteBtn {display: inline-block; min-width: 140px; height: 56px; padding: 0 20px; margin: 0 4px 0 0; background-color: #ffffff; color: #333333; font-size: 18px;}
     #CT-PCK-033 .whiteBtn.small {padding: 0 15px; height: 40px; background-color: #ffffff; border: 1px solid #555; font-size: 14px;}
