@@ -111,11 +111,11 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 .dirListBox.right .directCon{left:-212%;}
 
 /* corporate 운영&역할 CNT_E_046 */
-#CNT_E_046 ul + .contTit, #CNT_E_046 .txt + .contTit{margin-top: 40px;}
+#CNT_E_046 ul + .contTit, #CNT_E_046 .txt + .contTit{margin-top: 50px;}
 #CNT_E_046 .contTit + .txt{margin-top: 20px;}
 #CNT_E_046 .boldTxt{margin-top: 40px;}
 #CNT_E_046 .boldTxt + .listBu{margin-top: 20px;}
-#CNT_E_046 .contTit + ul {margin-top: 20px;}
+#CNT_E_046 .contTit + ul {margin-top: 15px;}
 #CNT_E_046 .listBu + .txt{margin-top: 5px;}
 
 /* corporate 활동내역 & 평가보상 CNT_E_047 */
@@ -240,6 +240,9 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .txt + .subTit {margin-top: 30px;}
     .corporate .accordionWrap{margin-bottom: 30px;}
     .btnArea.pcType{display: none;}
+    #CNT_K_051 .txt, #CNT_K_051 .numList li, #CNT_K_051 .roundNumList li{font-size: 15px;}
+    #CNT_K_052 .txt, #CNT_K_052 .numList li, #CNT_K_052 .roundNumList li{font-size: 15px;}
+
 
     /* dataStandard span */
     .dataStandard{position: relative;}
@@ -276,11 +279,13 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .corporate .color01, .corporate .smallTit, .corporate .subTit{font-size: 16px;}
     .smallTit + section, section + .smallTit{margin-top: 30px;} /*부 칙*/
     .revision{margin-top: 15px;}
+    .titleBox.bg02 .selectTab .select button{color: #0c4da2; font-weight: normal;}
 
     /* corporate 윤리강령 CNT_E_044 */
     #CNT_E_044 .corporate{margin-bottom: 30px;}
     #CNT_E_044 .txt + section, #CNT_E_044 section + .subTit{margin-top: 30px;}
     #CNT_E_044 ul.noneBg{padding: 5px 0;}
+    .titleBox.bg03 .selectTab .select button{color: #0c4da2; font-weight: normal;}
 
     /* corporate 이사회 구성 CNT_E_045 */
     #CNT_E_045 .contTit + .txt {margin-top: 15px;}
