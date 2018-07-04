@@ -22,14 +22,14 @@
 .businessUnitGo ul li.type04 {background:#765e93 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center;}
 
 /* 공통 게시판 리스트 */
-.baordList {width:100%; overflow:hidden; margin-bottom:10px;}
+.baordList {width:100%; overflow:hidden;}
 .baordList ul li {width:100%; overflow:hidden; padding-bottom:30px; border-bottom:1px solid #d9d9d9; margin-bottom:30px}
 .baordList ul li:last-child {border-color:#777777;}
-.baordList ul li .thum {float:left; width:30%; height:200px; overflow:hidden; margin-right:3%;}
+.baordList ul li .thum {float:left; width:30%; height:225px; overflow:hidden; margin-right:3%;}
 .baordList ul li .thum img {width:100%; vertical-align:top;} 
 .baordList ul li .text {float:left; width:67%; height:200px; overflow:hidden; padding:35px 0; box-sizing:border-box;}
-.baordList ul li .text .title {display:block; margin-bottom:20px; overflow:hidden; line-height:22px;}
-.baordList ul li .text .title .boardTit {float:left; width:calc(100% - 90px); overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap; color:#000}
+.baordList ul li .text .title {display:block; margin-bottom:20px; overflow:hidden; line-height:20px;}
+.baordList ul li .text .title .boardTit {float:left; line-height:25px; width:calc(100% - 90px); overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; white-space: nowrap; color:#000; font-size:24px;}
 .baordList ul li .partIcon01 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4b99ba; color:#4b99ba; text-align:center; font-size:13px; margin-right:5px;}
 .baordList ul li .partIcon02 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #4179d0; color:#4179d0; text-align:center; font-size:13px; margin-right:5px;}
 .baordList ul li .partIcon03 {float:left; width:80px; height:22px; line-height:22px; border:1px solid #93b615; color:#93b615; text-align:center; font-size:13px; margin-right:5px;}
@@ -64,13 +64,15 @@
 
 /* Overview */
 .overviewTit {overflow:hidden; margin-bottom:70px;}
-.overviewTit p {margin-bottom:30px; line-height:1.6;}
-.overviewTit .partList {overflow:hidden; margin-bottom:20px;}
-.overviewTit .partList li {float:left; width:23%; margin-right:2.66%; padding-top:25px; text-align:center; color:#fff;}
-.overviewTit .partList li .title {display:inline-block; margin-bottom:35px; border-bottom:1px solid #fff; font-size:20px; padding:0 10px 15px;}
-.overviewTit .partList li .icon {display:block; margin-bottom:35px;}
+.overviewTit h4 {font-size:42px; line-height:1.4; margin-bottom:25px;}
+.overviewTit p {margin-bottom:20px; line-height:1.6; font-size:16px;}
+.overviewTit p:nth-child(2) {font-size:18px;}
+.overviewTit .partList {overflow:hidden; margin-bottom:2%;}
+.overviewTit .partList li {float:left; width:23.5%; margin-right:2%; padding-top:25px; text-align:center; color:#fff;}
+.overviewTit .partList li .title {display:inline-block; margin-bottom:25px; border-bottom:1px solid rgba(255,255,255,0.5); font-size:20px; padding:0 10px 15px;}
+.overviewTit .partList li .icon {display:block; margin-bottom:25px;}
 .overviewTit .partList li .btnArea {height:56px; line-height:56px; overflow:hidden; text-align:left;}
-.overviewTit .partList li .btnArea a {float:left; width:50%; color:#fff; margin-right:0; background:url('/images/front/icon/ico_arrow02.png') no-repeat 80% center; background-size:6px; padding-left:10%; box-sizing:border-box;}
+.overviewTit .partList li .btnArea a {float:left; width:50%; color:#fff; margin-right:0; background:url('/images/front/icon/ico_arrow02.png') no-repeat 75% 21px; background-size:auto 12px; padding-left:11%; box-sizing:border-box;}
 .overviewTit .partList li:last-child {margin-right:0;}
 .overviewTit .partList li.type01 {background:#4b99ba;}
 .overviewTit .partList li.type02 {background:#4179d0;}
@@ -88,7 +90,7 @@
 .overviewTit .countInfo li .standard {color:#555;}
 .overviewTit .countInfo li:last-child {border:0;}
 .overviewCont {margin-bottom:70px; overflow:hidden;}
-.overviewCont h4 {margin-bottom:20px; text-transform:uppercase}
+.overviewCont h4 {text-transform:uppercase; font-size:42px; margin-bottom:0;}
 .overviewCont p {margin-bottom:50px;}
 .imgArea.type02 {margin-bottom:30px;}
 
@@ -166,14 +168,15 @@
 
 /* CSR > 인사말 */
 #CNT_K_009 .defaultTabCon {width:100%; overflow:hidden; margin-bottom:60px;}
-.csrTitle {overflow:hidden; margin-bottom:100px;}
+.csrTitle {overflow:hidden; margin-bottom:80px;}
 .csrTitle p {line-height:1.6; margin-bottom:20px;}
+.csrTitle p:nth-child(2) {font-size:18px;}
 .csrTitle p.last {margin-bottom:70px;}
 .csrTitle .imgArea {display:block;}
 
 .greetingWrap {padding-bottom:40px; border-bottom:1px solid #777777; margin-bottom:40px;  color:#333}
 .greetingWrap h4 span {display:block;}
-.greetingWrap p {line-height:1.6; margin-bottom:20px;}
+.greetingWrap p {line-height:1.6; margin-bottom:30px;}
 .greetingWrap p.last {margin-bottom:50px;}
 .greetingWrap .signature {text-align:right; color:#111}
 .greetingWrap .signature span {display:block; line-height:28px;}
@@ -184,7 +187,7 @@
 .greetingBtnWrap a {display:inline-block; line-height:40px; color:#fff; text-align:center; background:#828a91 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; font-size:14px; box-sizing:border-box; border:1px solid #555555; padding:0 38px 0 15px;}
 
 .visionStrategy {color:#333}
-.visionStrategy p {line-height:1.6; margin-bottom:20px;}
+.visionStrategy p {line-height:1.6; margin-bottom:30px;}
 .visionStrategy p.last {margin-bottom:50px;}
 .visionStrategy ul {width:100%; border-top:1px solid #0c4da2; margin-bottom:50px;}
 .visionStrategy ul li {overflow:hidden; min-height:98px; border-bottom:1px solid #d9d9d9;}
@@ -312,6 +315,7 @@
 /* 채용 */
 .recruitmentTit {text-align:center; padding-top:40px; margin-bottom:60px;}
 .recruitmentTit span {display:block; font-size:18px; line-height:1.6}
+.recruitmentTit h4 {margin-bottom:30px;}
 .recruitmentTit h4, .recruitmentTit h4 span {font-size:42px; line-height:1.4;}
 .recruitmentList {width:100%; overflow:hidden; margin-bottom:60px;}
 .recruitmentList li {float:left; width:24%; margin-right:1.33%; padding:60px 2%; box-sizing:border-box; text-align:center; color:#fff;}
@@ -421,9 +425,9 @@
 .baordList ul li {padding-bottom:15px; border-bottom:1px solid #d9d9d9; margin-bottom:20px}
 .baordList ul li .thum {float:none; width:100%; height:auto; margin:0 0 10px 0;}
 .baordList ul li .text {float:none; width:100%; height:auto; padding:0;}
-.baordList ul li .text .title {margin-bottom:10px; font-size:18px;}
+.baordList ul li .text .title {margin-bottom:8px; font-size:18px;}
 .baordList ul li .text .textCont {margin-bottom:10px; font-size:15px;}
-.baordList ul li .text .title .boardTit {display:block; width:100%; margin-top:8px;}
+.baordList ul li .text .title .boardTit {display:block; width:100%; margin-top:8px; font-size:20px;}
 
 /* 공통 게시판 글보기 */
 .boardViewArea .boardViewTit {padding-bottom:20px; margin-bottom:20px;}
@@ -438,11 +442,13 @@
 
 /* Overview */
 .overviewTit {margin-bottom:30px;}
+.overviewTit h4 {font-size:25px; margin-bottom:10px;}
+.overviewTit p:nth-child(2) {font-size:15px;}
 .overviewTit .partList li {width:49%; margin-right:2%; margin-bottom:2%; padding-top:15px; text-align:center; color:#fff;}
 .overviewTit .partList li:nth-child(2n) {margin-right:0;}
 .overviewTit .partList li .title {margin-bottom:15px; font-size:18px; padding:0 5px 7px;}
 .overviewTit .partList li .icon {margin-bottom:10px;}
-.overviewTit .partList li .icon img {width:40%;}
+.overviewTit .partList li .icon img {width:40%; max-width:90px;}
 .overviewTit .partList li .btnArea a {background:none; padding-left:0; text-align:center; font-size:14px;}
 .overviewTit .partList li .btnArea {height:40px; line-height:40px !important;}
 .overviewTit .countInfo {padding:0;}
@@ -452,7 +458,7 @@
 .overviewTit .countInfo li:nth-child(2n) {margin-right:0; border-right:0;}
 .overviewTit .countInfo li:nth-child(3), .overviewTit .countInfo li:nth-child(4) {border-bottom:0;}
 .overviewCont {margin-bottom:30px;}
-.overviewCont h4 {margin-bottom:5px;}
+.overviewCont h4 {margin-bottom:5px; font-size:25px;}
 
 /* 연혁 */
 #CNT_K_003 .businessUnitGo {margin-bottom:0;}
