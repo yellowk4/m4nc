@@ -41,13 +41,13 @@
 .overviewTit h4 {font-size:28px; line-height:1.4; color:#111; margin-bottom:40px;}
 .overviewTit h4 span {display:block;}
 .overviewTit p {margin-bottom:40px;}
-.overviewCont .buttonArea {text-align:right; margin-bottom:60px;}
-#CNT_K_050 .tableBasicList {border-bottom:1px solid #777777; margin-bottom:20px;}
+.overviewCont .buttonArea {margin-bottom:60px; text-align:right;}
+#CNT_K_050 .tableBasicList {margin-bottom:18px; border-bottom:1px solid #777777;}
 #CNT_K_050 .tableBasicList th {height:60px; box-sizing:border-box;}
 #CNT_K_050 .tableBasicList td {height:60px; box-sizing:border-box;}
 #CNT_K_050 .tableBasicList td.title {text-align:left; padding-left:20px;}
 #CNT_K_050 .gray {display:block; color:#777777;}
-.overviewCont h4 {font-size:24px; margin-bottom:20px; font-weight:600; color:#111}
+.overviewCont h4 {font-size:24px; margin-bottom:16px; font-weight:600; color:#111}
 
 /* corporate 정관 CNT_K_051 */
 .smallTit + section{margin-top: 40px;} /*부 칙(2015.3.13)*/

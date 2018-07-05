@@ -1,5 +1,7 @@
 @charset "utf-8";
 #contentsWrap{word-break: keep-all;}
+.txt {line-height: 1.6;}
+p.mcolor04{line-height: 1.6;}
 /* visual bg */
 #contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_02.jpg);}
 
@@ -32,12 +34,13 @@
 .irLinkWrap .irLink .arrow{display: inline-block; width: 9px; height: 14px; margin-left: 10px; background: url(/images/front/icon/ico_arrow02.png) no-repeat center; background-size: 9px 14px;}
 
 /* IR - 신용등급 CNT_E_024 */
-#CNT_E_024 .tableBasicList{margin-bottom: 20px;}
+#CNT_E_024 .contTit{margin-bottom: 12px;}
+#CNT_E_024 .tableBasicList{margin-bottom: 12px;}
 #CNT_E_024 .txt{margin-bottom: 20px;}
 #CNT_E_024 .txt + ul{margin-bottom: 40px;}
-#CNT_E_024 .contTit{margin-bottom: 20px;}
-#CNT_E_024 .contTitsub{margin-bottom: 20px; font-size: 20px; line-height: 1.6;}
+#CNT_E_024 .contTitsub{margin-bottom: 12px; font-size: 20px;}
 #CNT_E_024 .tableBasicList + p{margin-bottom: 50px;}
+#CNT_E_024 .mcolor04.grayDotTxt{margin-top: 0;}
 
 /* IR - 감사보고서 CNT_E_025, CNT_K_034, CNT_K_036 */
 .reportimg, .reportTit{float: left; box-sizing: border-box; font-weight: 600;}
@@ -134,21 +137,21 @@ td.periodWrap{text-align: left;}
 .fieldRight {position: relative;}
 .fieldRight .data{position: absolute; top: -30px; right: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
 #CNT_E_034 .defaultTable{width: 100%;}
-#CNT_E_034 .contTit + .tableBasicList{margin-top: 20px;}
+#CNT_E_034 .contTit + .tableBasicList{margin-top: 16px;}
 #CNT_E_034 .tableBasicList + .contTit, #CNT_E_034 .fieldWrap + .contTit, #CNT_E_034 p + .contTit{margin-top: 60px;}
-#CNT_E_034 .tableBasicList + p{margin-top: 20px;}
-#CNT_E_034 .contTit + .contTitsub{margin-top: 20px;}
+#CNT_E_034 .tableBasicList + p{margin-top: 12px;}
+#CNT_E_034 .contTit + .contTitsub{margin-top: 14px;}
 
 /* IR - 주주총회 CNT_E_035 */
-.listTit{margin-bottom: 20px; font-size: 18px; line-height: 1.6;}
+.listTit{margin-bottom: 12px; font-size: 18px; line-height: 1.6;}
 .listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
 .listTit + .listBu, .bthWrap, .btnArea{margin-bottom: 50px;}
-.listTit + .color01, .listBu + .color01 {margin-bottom: 20px;}
-.tableBasicList + .pText{margin-top: 20px;}
+.listTit + .color01, .listBu + .color01 {margin-bottom: 12px;}
+.tableBasicList + .pText{margin-top: 16px;}
 .tableBasicList + .listTit {margin-top: 50px;}
 
 /* IR - 주주환원 CNT_E_036 */
-#CNT_E_036 h4 {font-size:24px; font-weight:600; margin-bottom:20px; color:#111;}
+#CNT_E_036 h4 {margin-bottom:12px; font-size:24px; font-weight:600; color:#111;}
 .returnPolicyCont {margin-bottom:20px; line-height:1.6;} 
 .returnPolicyCont ul.type01 {margin-bottom:10px;}
 .returnPolicyCont ul.type01 li {background:url('/images/front/icon/ico_grayLine.png') no-repeat 0 12px; padding-left:15px;}
