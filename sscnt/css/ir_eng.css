@@ -143,10 +143,11 @@ td.periodWrap{text-align: left;}
 #CNT_E_034 .contTit + .contTitsub{margin-top: 14px;}
 
 /* IR - 주주총회 CNT_E_035 */
-.listTit{margin-bottom: 12px; font-size: 18px; line-height: 1.6;}
+.listTit{margin-bottom: 8px; font-size: 18px; line-height: 1.6;}
 .listBu li{padding-left: 12px; background: url(/images/front/icon/ico_listdot_type02.jpg) no-repeat 1px 11px; color: #555555; line-height: 1.6;}
 .listTit + .listBu, .bthWrap, .btnArea{margin-bottom: 50px;}
-.listTit + .color01, .listBu + .color01 {margin-bottom: 12px;}
+.listBu + .color01 {margin-bottom: 12px;}
+.listTit + .color01{margin-bottom: 16px;}
 .tableBasicList + .pText{margin-top: 16px;}
 .tableBasicList + .listTit {margin-top: 50px;}
 
