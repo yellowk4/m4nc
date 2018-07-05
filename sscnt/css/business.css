@@ -176,7 +176,7 @@
 
 .greetingWrap {padding-bottom:40px; border-bottom:1px solid #777777; margin-bottom:40px;  color:#333}
 .greetingWrap h4 span {display:block;}
-.greetingWrap p {line-height:1.6; margin-bottom:30px;}
+.greetingWrap p {line-height:1.6; margin-bottom:20px;}
 .greetingWrap p.last {margin-bottom:50px;}
 .greetingWrap .signature {text-align:right; color:#111}
 .greetingWrap .signature span {display:block; line-height:28px;}
@@ -187,7 +187,7 @@
 .greetingBtnWrap a {display:inline-block; line-height:40px; color:#fff; text-align:center; background:#828a91 url('/images/front/icon/ico_arrow02.png') no-repeat 90% center; font-size:14px; box-sizing:border-box; border:1px solid #555555; padding:0 38px 0 15px;}
 
 .visionStrategy {color:#333}
-.visionStrategy p {line-height:1.6; margin-bottom:30px;}
+.visionStrategy p {line-height:1.6; margin-bottom:20px;}
 .visionStrategy p.last {margin-bottom:50px;}
 .visionStrategy ul {width:100%; border-top:1px solid #0c4da2; margin-bottom:50px;}
 .visionStrategy ul li {overflow:hidden; min-height:98px; border-bottom:1px solid #d9d9d9;}
@@ -612,7 +612,7 @@ h4.actMainTitle {padding-bottom:12px;}
 /* CONTACT OUS > 고객문의 */
 #CNT_K_027 {padding:0;}
 .inquiryTit {padding:0 20px 30px 20px; height:auto; background:none; font-size:21px; border-bottom:1px solid #dddddd; margin-bottom:20px; box-sizing:border-box;}
-.inquiryTit .title {display:inline; font-size:25px; font-weight:400; line-height:1.4;}
+.inquiryTit .title {display:inline; font-size:25px; font-weight:400;}
 .inquiryTit .title.color02 {margin-bottom:0px; color:#0c4da2}
 .inquiryTit #inquiryOpen {width:40%; height:40px; line-height:40px; background:#0c4da2 url('/images/front/icon/ico_inquiry.png') no-repeat 15px center; padding-left:30px; box-sizing:border-box; color:#fff; font-size:15px;}
 
