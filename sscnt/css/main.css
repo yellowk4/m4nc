@@ -35,7 +35,8 @@
 #CNT_M_K .titWrap { position:relative; } 
 #CNT_M_K .titWrap .icoTitMore { display:block; position:absolute; top:3px; right:0; width:34px; height:34px; background:url(/images/front/icon/ico_tit_more.png) 0 0 no-repeat; background-size:100%; } 
 #CNT_M_K .titWrap .icoTitMore.koNewRoomLink { right:26% } 
-#CNT_M_K .cont { margin-top:25px; } 
+#CNT_M_K .cont { margin-top:35px;} 
+
 /* NEWSWRAP */
 #CNT_M_K > div.newsWrap { padding:76px 0 70px; } 
 .newsWrap ul { overflow:hidden; } 
@@ -48,6 +49,7 @@
 .newsWrap li a { display:inline-block; padding-left:30px; font-size:14px; font-weight:bold; color:#333; line-height:1.8; } 
 .newsWrap li a.icoMore { background:url(/images/front/icon/ico_more_site.png) 0 0 no-repeat; background-size:24px; } 
 .newsWrap li a.icoMoreSite { background:url(/images/front/icon/ico_more_site.png) 0 0 no-repeat; background-size:24px; } 
+
 /* OURWRAP */
 .ourWrap .sectorInfo { overflow:hidden; } 
 .ourWrap .sectorInfo li { float:left; position:relative; overflow: hidden; box-sizing:border-box; width:23.6%; height:264px; margin-left:1.8%; padding:20px; z-index: 0; } 
@@ -58,7 +60,7 @@
 .ourWrap .sectorInfo li:nth-child(4):after { background-image:url(/images/front/main/bg_our04_w.jpg); }
 .ourWrap .sectorInfo li:after { content:''; display: block; position: absolute; top:0; left:0; width:100%; height: 100%; background: #ddd; background-position:0 0; background-repeat:no-repeat; background-size:auto 100%; z-index: -1; transition: transform .3s ease-out;}
 .ourWrap .sectorInfo li:hover:after {transform: scale(1.2);}
-.ourWrap .sectorInfo .sector { margin-bottom:6px; padding-bottom:6px; font-size:20px; font-weight:bold; color:#fff; border-bottom:1px solid #fff; line-height:1.3; } 
+.ourWrap .sectorInfo .sector {font-size:20px; font-weight:bold; color:#fff; line-height:1.3; } 
 .ourWrap .sectorInfo .sector + span { font-size:13px; color:#fff; letter-spacing:-0.01em; } 
 .ourWrap .sectorInfo .btnWrap { position:absolute; bottom:22px; left:0; box-sizing:border-box; width:100%; padding:0 20px; } 
 .ourWrap .sectorInfo .btnWrap a { display:block; box-sizing:border-box; width:100%; height:44px; margin-top:10px; font-size:16px; text-align:center; line-height:44px; } 

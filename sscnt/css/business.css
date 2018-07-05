@@ -115,8 +115,8 @@
 .historyAllList {width:100%; overflow:hidden; padding:50px 45px; box-sizing:border-box;}
 .historyAllList h1 {font-size:42px; font-weight:600; margin-bottom:30px; color:#0c4da2;}
 .historyAllList .tableBasicList { margin-bottom:60px;}
-.historyAllList .tableBasicList tbody th {background:none; font-weight:600;}
-.historyAllList .tableBasicList tbody td {text-align:left; line-height:1.4;}
+.historyAllList .tableBasicList tbody th {background:none; font-weight:600; padding:20px 0;}
+.historyAllList .tableBasicList tbody td {text-align:left; line-height:1.4; padding:20px 10px;}
 .historyAllList .buttonArea {text-align:center;}
 
 /* 사업영역 > 건설부문 / 상사부문 / 패션부문 / 리조트 부문 */
@@ -188,6 +188,7 @@
 
 .visionStrategy {color:#333}
 .visionStrategy p {line-height:1.6; margin-bottom:20px;}
+.visionStrategy p.color01 {font-size:18px;}
 .visionStrategy p.last {margin-bottom:50px;}
 .visionStrategy ul {width:100%; border-top:1px solid #0c4da2; margin-bottom:50px;}
 .visionStrategy ul li {overflow:hidden; min-height:98px; border-bottom:1px solid #d9d9d9;}
@@ -256,7 +257,7 @@
 
 /* CSR > Report*/
 .reportTit {background:url('/images/front/contents/bg_CNT_K_015.png') no-repeat center bottom; text-align:center; overflow:hidden;}
-.reportTit h4 {font-weight:600; font-size:42px; margin-bottom:20px;}
+.reportTit h4 {font-weight:600; font-size:42px; margin-bottom:20px; line-height: 42px;}
 .reportTit > span {display:block; font-size:18px; line-height:1.4;}
 .reportTit > span.last {margin-bottom:20px;}
 .reportTit .gray {color:#777777; font-size:16px; margin-bottom:40px;}
@@ -313,7 +314,7 @@
 .socialConts.type02 .txtArea .socialMedia {position:absolute; bottom:0; left:0;}
 
 /* 채용 */
-.recruitmentTit {text-align:center; padding-top:40px; margin-bottom:50px;}
+.recruitmentTit {text-align:center; margin-bottom:50px;}
 .recruitmentTit span {display:block; font-size:18px; line-height:1.6}
 .recruitmentTit h4 {margin-bottom:20px;}
 .recruitmentTit h4, .recruitmentTit h4 span {font-size:42px; line-height:1.3;}
@@ -332,19 +333,19 @@
 .mapArea h4 {font-size:24px; padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #d9d9d9; color:#111;}
 .mapArea ul {margin-bottom:10px; overflow:hidden;}
 .mapArea ul li {background:url('/images/front/icon/ico_listdot_type02.jpg') no-repeat left center; padding-left:1%; overflow:hidden; margin-bottom:15px; box-sizing:border-box;}
-.mapArea ul li .title {float:left; width:7%;}
+.mapArea ul li .title {float:left; width:7%; color:#111; font-size:18px;}
 .mapArea ul li .txt {float:left; width:92%;}
 
 /* CONTACT OUS > 고객문의 */
 .inquiryTit {width:100%; height:315px; overflow:hidden; padding-left:370px; box-sizing:border-box; background:url('/images/front/contents/tit_CNT_K_027.png')no-repeat left center; margin-bottom:70px;}
 .inquiryTit .title {display:block; font-size:42px; font-weight:600; line-height:50px;}
 .inquiryTit .title.color02 {margin-bottom:20px;}
-.inquiryTit p {font-size:18px; line-height:26px; margin-bottom:50px;}
+.inquiryTit p {font-size:18px; line-height:26px; margin-bottom:40px;}
 .inquiryTit #inquiryOpen {width:157px; height:56px; line-height:56px; background:#0c4da2 url('/images/front/icon/ico_inquiry.png') no-repeat 30px center; padding-left:30px; box-sizing:border-box; color:#fff; font-size:18px;}
 
 .inquiryWriteWrap {width:100%; overflow:hidden; margin-bottom:70px; border-bottom:1px solid #d9d9d9; padding-bottom:70px}
 .inquiryWriteWrap .inquiryWriteTit {overflow:hidden; margin-bottom:20px;}
-.inquiryWriteWrap .inquiryWriteTit .title {float:left; font-size:34px; color:#000;}
+.inquiryWriteWrap .inquiryWriteTit .title {float:left; font-size:24px; color:#000; font-weight:600;}
 .inquiryWriteWrap .inquiryWriteTit .addNotice {float:right; color:#777;}
 .inquiryWriteWrap ul.inquiryWrite {width:100%; border-top:1px solid #0c4da2; margin-bottom:50px; overflow:hidden;}
 .inquiryWriteWrap ul.inquiryWrite li {width:100%; box-sizing:border-box; clear: both;}
@@ -364,7 +365,7 @@
 .inquiryWriteWrap ul.inquiryWrite li .writeCont .txtCount {display:block; text-align:right;}
 
 .personalInforAgree {width:100%; overflow:hidden;}
-.personalInforAgree .title {display:block; font-size:20px; margin-bottom:15px}
+.personalInforAgree .title {display:block; font-size:18px; margin-bottom:15px}
 .personalInforAgree p {margin-bottom:15px;}
 .personalInforAgree .graybox {width:100%; padding:20px; box-sizing:border-box; background:#f8f8f8; line-height:28px; margin-bottom:20px;}
 .personalInforAgree .graybox ul {margin-bottom:10px;}
