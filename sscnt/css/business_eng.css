@@ -4,7 +4,7 @@
 .contents {word-break: keep-all; word-wrap:break-word;}
 .text-hidden {overflow:hidden !important; clip:rect(1px, 1px, 1px, 1px) !important; position:absolute !important; width:1px !important; height:1px !important;}
 .shareList {margin-bottom:60px;}
-.defaultTab {margin-bottom:55px;}
+.defaultTab {margin-bottom:60px;}
 .contents h4 {font-size:28px; line-height:1.6; color:#000; margin-bottom:40px;}
 .imgArea .mImg {display:none;}
 .imgArea img {width:100%; vertical-align:top;}
@@ -101,8 +101,8 @@
 .imgArea.type02 {margin-bottom:30px;}
 
 /* 연혁 */
-.historyTit {font-size:28px; margin-bottom:40px; color:#000}
-.historyTitDetail {line-height:1.6; margin-bottom:40px; color:#333333}
+.historyTit {font-size:28px; margin-bottom:30px; color:#000}
+.historyTitDetail {line-height:1.6; margin-bottom:30px; color:#333333}
 .historyTitDetail span {display:block;}
 .historyBtnWrap {text-align:right; margin-bottom:40px; overflow:hidden;}
 .historyBtnWrap a {display:inline-block; width:206px; height:56px; line-height:56px; text-align:center; color:#fff; font-size:18px; background:#0c4da2;}
@@ -128,8 +128,8 @@
 
 /* 사업영역 > 건설부문 / 상사부문 / 패션부문 / 리조트 부문 */
 .businessAreaIntro {width:100%; overflow:hidden; margin-bottom:10px;}
-.businessAreaIntro .bigTit {margin-bottom:40px; line-height:1.4;}
-.businessAreaIntro p {margin-bottom:30px; line-height:1.6;}
+.businessAreaIntro .bigTit {margin-bottom:30px; line-height:1.4;}
+.businessAreaIntro p {margin-bottom:20px; line-height:1.6;}
 .businessAreaBnr {width:100%; overflow:hidden; margin-bottom:70px;}
 .businessAreaBnr ul li {float:left; width:32%; height:260px; overflow:hidden; text-align:center; padding:30px 4% 0; color:#fff;}
 .businessAreaBnr ul li .title {display:inline-block; font-size:28px; padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #fff;}
@@ -205,7 +205,7 @@
 
 /* CSR > ACT */
 .actMainWrap {margin-bottom:15px;}
-.actMainWrap p {line-height:1.6; margin-bottom:25px;}
+.actMainWrap p {line-height:1.6; margin-bottom:20px;}
 .actMainWrap p.type01 {margin-bottom:50px;}
 .actMainWrap p.color01 {font-size:18px;}
 .actMainWrap .imgArea {display:block; margin-bottom:50px;}
