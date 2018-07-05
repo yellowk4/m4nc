@@ -75,7 +75,7 @@ p.mcolor04{line-height: 1.6;}
 .planDate{padding-bottom: 39px; font-size: 24px;}
 .yearPlanDiv{padding: 34px 0; border-top: 1px dashed #cbcbcb;}
 .yearPlanDiv div{float: left; width: 50%;}
-.yearPlanDiv.first{border-top: 0;}
+.yearPlanDiv:first-of-type{border-top: 0;}
 .ypDate{color: #111111; font-size: 18px; vertical-align: middle;}
 .upComing{display: inline-block; padding: 0 3px; border: 1px solid #f8c18c; background-color: #fff; color: #f1841a; font-size: 13px; line-height: 20px; vertical-align: middle;}
 .upComing.type1{margin-left: 14px;}
