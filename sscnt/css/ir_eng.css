@@ -18,7 +18,7 @@ p.mcolor04{line-height: 1.6;}
 #CNT_E_022 .fillBtn.small:after{content: ''; position: absolute; right: 14px; top: 50%; margin-top: -7px; width: 7px; height: 11px; background: url(/images/front/icon/ico_arrow02.png) no-repeat center; background-size: 7px 11px;}
 .irTitWrap{margin-bottom: 40px;}
 .irTitWrap .irTit{font-size: 42px; font-weight: 700; color: #111;}
-.irTitWrap .irInfo{margin-top: 30px; font-size: 20px;}
+.irTitWrap .irInfo{margin-top: 10px; font-size: 20px;}
 .irTitWrap .irInfo span {display: inline-block; min-width: 62px;}
 .irTit + .irInfo{margin-top: 33px;}
 
@@ -154,7 +154,6 @@ td.periodWrap{text-align: left;}
 /* IR - 주주환원 CNT_E_036 */
 #CNT_E_036 h4 {margin-bottom:12px; font-size:24px; font-weight:600; color:#111;}
 .returnPolicyCont {margin-bottom:20px; line-height:1.6;} 
-.returnPolicyCont ul.type01 {margin-bottom:10px;}
 .returnPolicyCont ul.type01 li {background:url('/images/front/icon/ico_grayLine.png') no-repeat 0 12px; padding-left:15px;}
 .returnPolicyCont p {margin-bottom:10px;}
 .returnPolicyCont ul.type02 li {background:url('/images/front/icon/ico_grayDot.png') no-repeat 15px 12px; padding-left:25px;}
@@ -168,6 +167,7 @@ td.periodWrap{text-align: left;}
 .faqWrap{padding-top: 40px; border-bottom: 1px solid #777777;}
 .faqPart{display: block; padding-bottom: 10px; color: #0075c2; font-size: 16px;}
 .faqPartMo{display: none; color: #0075c2;}
+.faqWrap .panelIn p{ word-break: break-all;}
 .faqWrap .panel{padding-left: 84px; line-height: 1.6; background: url(/images/front/contents/ico02_CNT_K-057.png) no-repeat 35px 52px #fbfbfb;} /* FAQ 아코디언*/
 .faqWrap .accordion{padding: 42px 45px 42px 84px; background: url(/images/front/contents/ico01_CNT_K-057.png) no-repeat 35px center;}
 

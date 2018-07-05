@@ -38,9 +38,9 @@
 
 /* corporate Overview CNT_K_050 */
 .overviewTit {overflow:hidden;}
-.overviewTit h4 {font-size:28px; line-height:1.4; color:#111; margin-bottom:40px;}
+.overviewTit h4 {font-size:28px; line-height:1.4; color:#111; margin-bottom:30px;}
 .overviewTit h4 span {display:block;}
-.overviewTit p {margin-bottom:40px;}
+.overviewTit p {margin-bottom:20px; line-height:1.6;}
 .overviewCont .buttonArea {margin-bottom:60px; text-align:right;}
 #CNT_K_050 .tableBasicList {margin-bottom:18px; border-bottom:1px solid #777777;}
 #CNT_K_050 .tableBasicList th {height:60px; box-sizing:border-box;}
