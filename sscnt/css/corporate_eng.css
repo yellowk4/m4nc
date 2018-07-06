@@ -105,7 +105,7 @@ section + .smallTit{display: block; margin-top: 35px;} /*부 칙 (2015.9.2)*/
 .dirListBox.active .directCon{display: block; margin-bottom: 40px;}
 .dirListBox.off .dirListImg:after{display: none;}
 /* directCon "off" */
-.dirListBox.off .dirListImg img{opacity: 0.4;}
+.dirListBox.off .dirListImg img, .dirListBox.off .dirListName{opacity: 0.4;}
 /* directCon location */
 .dirListBox.middle .directCon{left:-106%}
 .dirListBox.right .directCon{left:-212%;}
