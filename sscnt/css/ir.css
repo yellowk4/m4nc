@@ -97,7 +97,7 @@ p.mcolor04{line-height: 1.6;}
 
 /* IR - 주주구성 CNT_K_042 */
 .dataStandard{position: relative;}
-.dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
+.dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 0; font-size: 16px; font-weight: 400; color: #777;}
 .fieldWrap .fieldLeft{float: left; width: 431px; padding-left: 74px;}
 .fieldWrap .fieldRight{float: right; width: 399px;}
 #CNT_K_042 .fieldLeft img{display: inline-block; width: 100%; max-width: 387px;}

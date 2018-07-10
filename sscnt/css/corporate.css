@@ -121,7 +121,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 #CNT_K_055 .contTit + .tableBasicList, #CNT_K_055 .txt + .listBu{margin-bottom: 40px;}
 #CNT_K_055 .txt + .contTit{margin-top: 40px;}
 #CNT_K_055 .tableBasicList td{padding: 20px;}
-.dataStandard02{display: block; height: 0; position: relative; bottom: 40px; z-index: 1; padding-left: 30%; text-align: right; font-size: 16px; font-weight: 400; color: #777;}
+.dataStandard02{display: block; height: 0; position: relative; bottom: 40px; z-index: 0; padding-left: 30%; text-align: right; font-size: 16px; font-weight: 400; color: #777;}
 
 /*  corporate 개요  CNT_K_056 */
 #CNT_K_056 .txt{margin-top: 30px;}
