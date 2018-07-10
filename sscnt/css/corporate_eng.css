@@ -34,7 +34,7 @@
 
 /* dataStandard span */
 .dataStandard{position: relative;}
-.dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
+.dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 0; font-size: 16px; font-weight: 400; color: #777;}
 
 /* corporate Overview CNT_E_042 */
 .overviewTit {overflow:hidden;}

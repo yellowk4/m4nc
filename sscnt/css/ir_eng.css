@@ -120,7 +120,7 @@ td.periodWrap{text-align: left;}
 
 /* IR - 주주구성 CNT_E_034 */
 .dataStandard{position: relative;}
-.dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 1; font-size: 16px; font-weight: 400; color: #777;}
+.dataStandard span{position: absolute; right: 0; bottom: 0; z-index: 0; font-size: 16px; font-weight: 400; color: #777;}
 .fieldWrap .fieldLeft{float: left; width: 431px; padding-left: 74px;}
 .fieldWrap .fieldRight{float: right; width: 399px;}
 #CNT_E_034 .fieldLeft img{display: inline-block; width: 100%; max-width: 387px;}
