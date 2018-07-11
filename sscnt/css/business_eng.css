@@ -566,8 +566,8 @@ h4.actMainTitle {padding-bottom:12px;}
 .mapArea h4 {padding-bottom:10px; border-bottom:1px solid #d9d9d9;}
 .mapArea ul {margin-bottom:10px; overflow:hidden;}
 .mapArea ul li {background:url('/images/front/icon/ico_listdot_type02.jpg') no-repeat left 7px; padding-left:2.5%; overflow:hidden; margin-bottom:10px; box-sizing:border-box; font-size:15px;}
-.mapArea ul li .title {float:left; width:12%; color:#111; font-size:18px;}
-.mapArea ul li .txt {float:left; width:88%;}
+.mapArea ul li .title {float:left; width:30%; max-width:82px; color:#111; font-size:16px;}
+.mapArea ul li .txt {float:left; width:70%;}
 
 /* CONTACT OUS > 고객문의 */
 #CNT_E_021 {padding:0;}
