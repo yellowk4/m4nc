@@ -267,7 +267,7 @@ td.periodWrap{text-align: left;}
     .discPeriod input{width: calc(50% - 39px); max-width: 100%; padding: 8px;}
     .discKey input{padding: 8px;}
     .discList .bthWrap{margin-top: 20px;}
-    .discResult{margin: 20px 20px 0;}
+    .discResult{margin:20px 0 0 0;}
     .discResult li{padding: 14px 11px;}
     .discResult li a{padding-left: 6px; background-position: left 9px;}
     .discList .pageArea{margin: 20px auto 0;}
