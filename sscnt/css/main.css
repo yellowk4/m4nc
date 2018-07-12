@@ -47,7 +47,7 @@
 .newsWrap li p { margin:10px 0 6px; height:52px; overflow:hidden; font-size:20px; color:#111; line-height:1.3; word-break:keep-all; } 
 .newsWrap li .date { display:block; margin-bottom:18px; font-size:16px; color:#777; } 
 .newsWrap li a { display:inline-block; padding-left:30px; font-size:14px; font-weight:bold; color:#333; line-height:1.8; } 
-.newsWrap li a.icoMore { background:url(/images/front/icon/ico_more_site.png) 0 0 no-repeat; background-size:24px; } 
+.newsWrap li a.icoMore { background:url(/images/front/icon/ico_more.png) 0 0 no-repeat; background-size:24px;} 
 .newsWrap li a.icoMoreSite { background:url(/images/front/icon/ico_more_site.png) 0 0 no-repeat; background-size:24px; } 
 
 /* OURWRAP */
