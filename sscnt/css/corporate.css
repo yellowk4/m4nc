@@ -1,4 +1,5 @@
 @charset "utf-8";
+#contentsWrap{word-break: keep-all;}
 
 /* visual bg */
 #contentsWrap .visualWrap{background-image: url(/images/front/common/pic_visual_03.jpg);}
@@ -70,9 +71,11 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 /* corporate 이사회 구성 CNT_K_053 */
 .directorList {margin-top: 40px;}
 .bigTit{line-height: 1.6;}
+#CNT_K_053 .bigTit span.color01{display: inline;}
 #CNT_K_053 .contTit{margin-top: 35px;}
 #CNT_K_053 .contTit + .txt{margin-top: 12px;}
 #CNT_K_053 .topBox .txt{margin-top: 30px;}
+#CNT_K_053 .topBox .txt + .txt{margin-top: 15px;} /* 간격추가 */
 #CNT_K_053 .listBu li{color: #777;}
 /* directCon */
 .downBox{padding: 40px 0; text-align: right; border-bottom: 1px solid #d9d9d9;}
@@ -113,7 +116,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 #CNT_K_054 .contTit + .txt, #CNT_K_054 .boldTxt + .listBu{margin-top: 12px;}
 #CNT_K_054 .boldTxt{margin-top: 35px;}
 #CNT_K_054 .contTit + ul {margin-top: 8px;}
-#CNT_K_054 .listBu + .txt{margin-top: 5px;}
+#CNT_K_054 .listBu + .txt{margin-top: 5px; padding-left: 13px;}
 
 /* corporate 활동내역 & 평가보상 CNT_K_055 */
 #CNT_K_055 .contTit{margin-bottom: 12px;}
@@ -172,7 +175,7 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
 #CNT_K_060 .listBu + .subTit{margin-top: 40px;}
 #CNT_K_060 .tableBasicList + .subTit{margin-top: 40px;}
 #CNT_K_060 .listBu + .tableBasicList{margin-top: 12px;}
-#CNT_K_060 .listBu + .txt {margin-top: 5px;}
+#CNT_K_060 .listBu + .txt {margin-top: 10px;}
 
 /*  corporate 내부거래위원회 CNT_K_061 */
 #CNT_K_061 .listBu + .subTit{margin-top: 40px;}

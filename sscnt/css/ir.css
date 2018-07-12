@@ -139,6 +139,8 @@ p.mcolor04{line-height: 1.6;}
 #CNT_K_044 .tableBasicList {margin-bottom:20px; }
 #CNT_K_044 .addNotice {color:#555555;}
 #CNT_K_044 .tableBasicList tbody th{background-color: #fff;}
+#CNT_K_044 .type01 + p{padding-left: 15px;}
+.returnPolicyWrap h4 + .returnPolicyCont{margin-bottom: 30px;}
 
 /* IR - FAQ CNT_K_045 */
 .faqWrap{padding-top: 40px; border-bottom: 1px solid #777777;}
