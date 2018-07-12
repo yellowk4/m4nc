@@ -160,8 +160,10 @@ td.periodWrap{text-align: left;}
 #CNT_E_036 .bottomArea {text-align:right; margin-bottom:40px;}
 #CNT_E_036 .distributionList {margin-bottom:40px;}
 #CNT_E_036 .tableBasicList {margin-bottom:20px; }
-#CNT_E_036 .addNotice {color:#555555;}
+#CNT_E_036 .addNotice {display: inline-block; padding-left: 10px; text-indent: -10px; color:#555555;}
 #CNT_E_036 .tableBasicList tbody th{background-color: #fff;}
+#CNT_E_036 .type01 + p{padding-left: 15px;}
+.returnPolicyWrap h4 + .returnPolicyCont{margin-bottom: 30px;}
 
 /* IR - FAQ CNT_E_37~40 */
 .faqWrap{padding-top: 40px; border-bottom: 1px solid #777777;}

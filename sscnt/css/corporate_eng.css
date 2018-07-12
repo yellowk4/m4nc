@@ -74,12 +74,14 @@ section + .smallTit{display: block; margin-top: 35px;} /*부 칙 (2015.9.2)*/
 #CNT_E_045 .contTit{margin-top: 35px;}
 #CNT_E_045 .contTit + .txt{margin-top: 12px;}
 #CNT_E_045 .topBox .txt{margin-top: 30px;}
+#CNT_E_045 .topBox .txt + .txt{margin-top: 15px;}
 #CNT_E_045 .listBu li{color: #777;}
+.directorWrap .contTit + .mcolor02.txt{padding-right: 6px;}
 /* directCon */
 .downBox{padding: 40px 0; text-align: right; border-bottom: 1px solid #d9d9d9;}
 .dirListBox{float: left; width: 32%; cursor: pointer;}
 .dirListBox.middle{margin: 0 2%;}
-.dirListName{position: relative; padding: 30px; box-sizing: border-box;}
+.dirListName{position: relative; padding: 30px 28px; box-sizing: border-box;}
 .dirListName:after{content: ''; position: absolute; right: 0; top: -52px; display: block; width: 18px; height: 18px; padding: 17px; background: url(/images/front/icon/ico_white_plus.png) no-repeat center #b9c0c5;}
 .dirListBox.active .dirListName:after{background-image: url(/images/front/icon/ico_white_minus.png); background-color: #0c4da2;}
 .dirListName span{display: block; padding-bottom: 9px; font-size: 20px;}
@@ -129,6 +131,7 @@ section + .smallTit{display: block; margin-top: 35px;} /*부 칙 (2015.9.2)*/
 #CNT_E_048 .txt{margin-top: 30px;}
 #CNT_E_048 .contTit{margin-top: 60px;}
 #CNT_E_048 .tableBasicList{margin-top: 20px;}
+#CNT_E_048 .tableBasicList thead th{padding: 20px 0; word-break: keep-all;}
 #CNT_E_048 .whiteBtn.small{min-width: 159px;}
 /* ul table */
 .reportList {margin-top: 20px; overflow:hidden; border-top:1px solid #0c4da2; border-bottom:1px solid #777777;}
@@ -196,6 +199,7 @@ section + .smallTit{display: block; margin-top: 35px;} /*부 칙 (2015.9.2)*/
 #CNT_E_055 .boldTxt{margin-top: 12px;}
 #CNT_E_055 .pL20{padding-left: 20px;}
 #CNT_E_055 .subTit {margin-top: 40px;}
+#CNT_E_055 .txt.boldTxt + .listBu + .txt {padding-left: 15px; text-indent: -15px;}
 
 /* corporate 외부감사인 CNT_E_056 */
 #CNT_E_056 .txt, #CNT_E_056 .listBu, #CNT_E_056 .tableBasicList{margin-top: 20px;}
