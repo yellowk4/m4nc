@@ -213,6 +213,8 @@
 .actMainWrap .actMenuList > li ul li .thum {width:20%; display:table-cell; padding-right:5%;}
 .actMainWrap .actMenuList > li ul li .thum img {vertical-align:top; width:100%;}
 .actMainWrap .actMenuList > li ul li .text {width:75%; display:table-cell; vertical-align:middle; line-height:1.6;}
+.actMainWrap .actMenuList > li ul li .text.type01 {text-indent:-18px; padding-left:13px; box-sizing:border-box;}
+.actMainWrap .actMenuList > li ul li .text.type02 {text-indent:-28px; padding-left:23px; box-sizing:border-box;}
 
 
 #CNT_K_012 .defaultTabCon {width:100%; overflow:hidden; margin-bottom:60px;}
@@ -223,7 +225,7 @@
 .actContsWrap .actTit {display:block; font-size:24px; margin-bottom:20px; color:#111; font-weight:600;}
 .actContsWrap p {line-height:1.6; margin-bottom:20px;}
 .actContsWrap p.last {margin:0;}
-.actContsWrap p.gray {color:#777; margin-bottom:15px;}
+.actContsWrap p.gray {color:#777; margin-bottom:15px; text-indent:-10px; padding-left:10px; box-sizing:border-box;}
 
 .actConts {width:100%; overflow:hidden; padding-bottom:10px; margin-bottom:40px; border-bottom:1px dashed #d9d9d9;}
 .actConts .actSubTit {font-size:18px;}
