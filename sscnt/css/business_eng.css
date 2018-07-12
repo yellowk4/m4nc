@@ -220,6 +220,10 @@
 .actMainWrap .actMenuList > li ul li .thum {width:16%; display:table-cell; padding-right:5%;}
 .actMainWrap .actMenuList > li ul li .thum img {vertical-align:top; width:100%;}
 .actMainWrap .actMenuList > li ul li .text {width:79%; display:table-cell; vertical-align:middle; line-height:1.6;}
+.actMainWrap .actMenuList > li ul li .text.type01 {text-indent:-20px; padding-left:15px; box-sizing:border-box;}
+.actMainWrap .actMenuList > li ul li .text.type02 {text-indent:-28px; padding-left:23px; box-sizing:border-box;}
+
+
 
 #CNT_E_012 .defaultTabCon {width:100%; overflow:hidden; margin-bottom:60px;}
 .actMainTitle {font-size:28px; padding-bottom:40px; border-bottom:1px solid #0c4da2; color:#000; margin-bottom:40px;}
@@ -229,7 +233,8 @@
 .actContsWrap .actTit {display:block; font-size:24px; margin-bottom:20px; color:#111; font-weight:600;}
 .actContsWrap p {line-height:1.6; margin-bottom:20px;}
 .actContsWrap p.last {margin:0;}
-.actContsWrap p.gray {color:#777; margin-bottom:15px;}
+.actContsWrap p.gray {color:#777; margin-bottom:15px; text-indent:-10px; padding-left:10px; box-sizing:border-box;}
+
 
 .actConts {width:100%; overflow:hidden; padding-bottom:10px; margin-bottom:40px; border-bottom:1px dashed #d9d9d9;}
 .actConts .actSubTit {font-size:18px;}
@@ -298,6 +303,7 @@
 .inquiryTit .title {display:block; font-size:42px; font-weight:600; line-height:50px;}
 .inquiryTit .title.color02 {margin-bottom:20px;}
 .inquiryTit p {font-size:18px; line-height:26px; margin-bottom:40px;}
+.inquiryTit p span {display:block;}
 .inquiryTit #inquiryOpen {width:157px; height:56px; line-height:56px; background:#0c4da2 url('/images/front/icon/ico_inquiry.png') no-repeat 30px center; padding-left:30px; box-sizing:border-box; color:#fff; font-size:18px;}
 
 .inquiryWriteWrap {width:100%; overflow:hidden; margin-bottom:70px; border-bottom:1px solid #d9d9d9; padding-bottom:70px}
@@ -327,7 +333,7 @@
 .personalInforAgree .graybox {width:100%; padding:35px 30px; box-sizing:border-box; background:#f8f8f8; line-height:28px; margin-bottom:20px;}
 .personalInforAgree .graybox > ol > li {margin-bottom:40px; font-weight:600;}
 .personalInforAgree .graybox > ol > li:last-child {margin-bottom:0;}
-.personalInforAgree .graybox > ol > li > ol {padding-left:1.5%; box-sizing:border-box; font-weight:400;}
+.personalInforAgree .graybox > ol > li > ol {box-sizing:border-box; font-weight:400; text-indent:-18px; padding-left:35px; box-sizing:border-box;}
 .personalInforAgree .agreeArea {display:block; margin-bottom:50px;}
 .personalInforAgree .agreeArea .agreeSelect {overflow:hidden; text-align:center;}
 .personalInforAgree .agreeArea .agreeSelect .radioWrap {display:inline-block; line-height:22px; margin:0 15px;}
@@ -481,6 +487,9 @@
 
 .actMainWrap .actMenuList > li ul li .thum {width:25%; display:table-cell; padding-right:5%;}
 .actMainWrap .actMenuList > li ul li .text {width:70%; display:table-cell; vertical-align:middle; line-height:1.6;}
+.actMainWrap .actMenuList > li ul li .text.type01 {text-indent:-16px; padding-left:10px; box-sizing:border-box;}
+.actMainWrap .actMenuList > li ul li .text.type02 {text-indent:-24px; padding-left:18px; box-sizing:border-box;}
+
 
 h4.actMainTitle {padding-bottom:12px;}
 .actContsWrap {margin-bottom:20px; padding-bottom:5px;}
@@ -572,8 +581,9 @@ h4.actMainTitle {padding-bottom:12px;}
 /* CONTACT OUS > 고객문의 */
 #CNT_E_021 {padding:0;}
 .inquiryTit {padding:0 20px 30px 20px; height:auto; background:none; font-size:21px; border-bottom:1px solid #dddddd; margin-bottom:20px; box-sizing:border-box;}
-.inquiryTit .title {display:inline; font-size:24px; font-weight:400; letter-spacing:-0.5px;}
-.inquiryTit .title.color02 {margin-bottom:0px; color:#0c4da2}
+.inquiryTit .title {display:inline; font-size:24px; font-weight:400; letter-spacing:-0.5px; line-height:1.4;}
+.inquiryTit .title.color02 {margin-bottom:0px; color:#0c4da2;}
+.inquiryTit p span {display:inline;}
 .inquiryTit #inquiryOpen {width:40%; height:40px; line-height:40px; background:#0c4da2 url('/images/front/icon/ico_inquiry.png') no-repeat 15px center; padding-left:30px; box-sizing:border-box; color:#fff; font-size:15px;}
 
 .inquiryWriteWrap {width:100%; overflow:hidden; margin-bottom:30px; border-bottom:1px solid #d9d9d9; padding:0 20px 30px 20px; box-sizing:border-box;}
@@ -600,7 +610,8 @@ h4.actMainTitle {padding-bottom:12px;}
 .personalInforAgree .graybox {width:100%; padding:20px; box-sizing:border-box; background:#f8f8f8; font-size:14px; margin-bottom:20px;}
 .personalInforAgree .graybox > ol > li {margin-bottom:20px; font-weight:600;}
 .personalInforAgree .graybox > ol > li:last-child {margin-bottom:0;}
-.personalInforAgree .graybox > ol > li > ol {padding-left:4%; box-sizing:border-box; font-weight:400; margin-top:5px;}
+.personalInforAgree .graybox > ol > li > ol {padding-left:25px; box-sizing:border-box; font-weight:400; margin-top:5px; text-indent:-16px;}
+
 .personalInforAgree .agreeArea {display:block; margin-bottom:50px;}
 .personalInforAgree .agreeArea .agreeSelect {overflow:hidden; text-align:center;}
 .personalInforAgree .agreeArea .agreeSelect .radioWrap {display:inline-block; line-height:22px; margin:0 15px;}
