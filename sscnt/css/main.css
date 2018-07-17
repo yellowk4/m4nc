@@ -127,7 +127,7 @@
     body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,select,input,textarea,p,blockquote,th,td,figure,figcaption { line-height:inherit !important; } 
     /* MAIN */
     .mainVisual { height:240px; } 
-    .mainVisual .visual01 { background:url(/images/front/main/m_visual01.jpg) no-repeat 50% 50%;background-size:cover} 
+    .mainVisual .visual01 { background:url(/images/front/main/m_visual01.jpg) no-repeat 50% top;background-size:cover} 
     .mainVisual .visual02 { background:url(/images/front/main/m_visual02.jpg) no-repeat 50% 50%;background-size:cover}
     .mainVisual .visual03 { background:url(/images/front/main/m_visual03.jpg) no-repeat 50% 50%;background-size:cover}
     .mainVisual .visual04 { background:url(/images/front/main/m_visual04.jpg) no-repeat 50% 50%;background-size:cover}
