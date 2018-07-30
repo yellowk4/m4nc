@@ -1,4 +1,4 @@
-## 리뉴얼 
+## 삼성물산 리뉴얼 
 
 어드민 Path - http://wpsamsungcrops2018.m4nc.net/admin_path.html
 
