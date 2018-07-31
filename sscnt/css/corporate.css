@@ -335,9 +335,11 @@ section + .smallTit{display: block; margin-top: 40px;} /*부 칙 (2015.9.2)*/
     .responWrap{overflow-x: scroll; width: 100%;}
     .reportList {min-width: 375px; margin-top: 15px;}
     .reportList li{width:100%; border-right: 0;}
+    .reportList li .tit{font-size: 15px;}
     .reportList li:nth-child(2n){border-right:0;}
     .reportList li:nth-child(5){border-bottom: 1px solid #d9d9d9;}
-    .reportList li, .reportList li .btnArea{ line-height:80px !important;}
+    .reportList li:nth-child(4) .tit, .reportList li:nth-child(5) .tit, .reportList li:nth-child(6) .tit{padding: 20px 5px;}
+
 
     /*  corporate 감사위원회 CNT_K_057 */
     #CNT_K_057 .txt + .tableBasicList{margin-top: 15px;}
