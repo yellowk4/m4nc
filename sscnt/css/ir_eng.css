@@ -351,6 +351,7 @@ td.periodWrap{text-align: left;}
     .viewArea .viewBtn{float: none; width: 100%; max-width: 100%; margin-top: 18px; text-align: center;}
     .discView .bthWrap{margin: 20px 0 0;}
     .discView .bthWrap .fillBtn{min-width: 100px;}
+    .viewArea img {display: inline-block; max-width: 100%; height: auto !important;}/* 2018-07-31 게시물 이미지 width조정 */
 
     /* IR - 주주구성 CNT_E_034 */
     #CNT_E_034 .tableBasicList tfoot td {padding: 8px 10px; font-size: 15px;}

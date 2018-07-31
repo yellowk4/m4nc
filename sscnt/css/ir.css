@@ -228,7 +228,6 @@ p.mcolor04{line-height: 1.6;}
     , #CNT_K_046 .shareList, #CNT_K_047 .shareList, #CNT_K_048 .shareList
     , #CNT_K_049 .shareList{margin-top: 30px;}
     
-
     /* IR - Overview CNT_K_028 */
     .irLinkWrap .irLink .irA:after{top: 4px;}
     .iframeWrap .iframeArea{background: #265b97;}
@@ -245,7 +244,9 @@ p.mcolor04{line-height: 1.6;}
     .relationArticle .title{margin-bottom: 10px; font-size: 16px; font-weight: 700;}
     #CNT_K_028 .btnArea{margin-bottom: 30px;}
     .relationArticle ul li {background-position: left 6px center; padding: 10px 15px; font-size: 14px;}
-    
+
+    /* IR - 공시정보 CNT_K_029 */
+    #CNT_K_029{overflow-x: auto;} /* 2018-07-31 iframe wrap scroll */
 
     /* IR - 신용등급 CNT_K_031 */
     #CNT_K_031 .tableBasicList{margin-bottom: 15px;}
