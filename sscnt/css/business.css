@@ -256,7 +256,8 @@
 
 /* CSR > CSR News > 글보기 */
 #CNT_K_014 .tabCtrlWrap {margin-bottom:60px;}
-
+#CNT_K_014 .boardViewArea .boardContWrap p {margin-bottom:0;}
+#CNT_K_017 .boardViewArea .boardContWrap p {margin-bottom:0;}
 /* CSR > Report*/
 .reportTit {background:url('/images/front/contents/bg_CNT_K_015.png') no-repeat center bottom; text-align:center; overflow:hidden;}
 .reportTit h4 {font-weight:600; font-size:42px; margin-bottom:20px; line-height: 42px;}

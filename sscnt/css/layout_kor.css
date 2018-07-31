@@ -1015,9 +1015,6 @@ background: url(/images/front/icon/ico_arrow_close.png) no-repeat; background-si
 .shareList li.facebook button, .shareList li.facebook button:hover { background-size: auto 15px; } 
 .shareList li.print button, .shareList li.print button:hover { background-size: auto 15px; } 
 
-/* 소셜미디어 아이콘 */
-.socialMedia li { margin-right: 0; } 
-
 /* 연관정보 바로가기 */
 .relationInfo { display: none; } 
 
